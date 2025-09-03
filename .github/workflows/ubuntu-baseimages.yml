@@ -1,5 +1,7 @@
 name: 'Check Ubuntu Repos and Rebuild Base Images'
 
+name: 'Check Ubuntu Repos, Rebuild Base Images, and Update Badges'
+
 on:
   schedule:
     - cron: '0,20,40 * * * *'
@@ -28,6 +30,32 @@ jobs:
             os_name: "xenial"
           - os_version: "14.04"
             os_name: "trusty"
+
+    outputs:
+      noble-crit:  ${{ steps.scan-noble.outputs.crit }}
+      noble-high:  ${{ steps.scan-noble.outputs.high }}
+      noble-med:   ${{ steps.scan-noble.outputs.med }}
+      noble-low:   ${{ steps.scan-noble.outputs.low }}
+      jammy-crit:  ${{ steps.scan-jammy.outputs.crit }}
+      jammy-high:  ${{ steps.scan-jammy.outputs.high }}
+      jammy-med:   ${{ steps.scan-jammy.outputs.med }}
+      jammy-low:   ${{ steps.scan-jammy.outputs.low }}
+      focal-crit:  ${{ steps.scan-focal.outputs.crit }}
+      focal-high:  ${{ steps.scan-focal.outputs.high }}
+      focal-med:   ${{ steps.scan-focal.outputs.med }}
+      focal-low:   ${{ steps.scan-focal.outputs.low }}
+      bionic-crit: ${{ steps.scan-bionic.outputs.crit }}
+      bionic-high: ${{ steps.scan-bionic.outputs.high }}
+      bionic-med:  ${{ steps.scan-bionic.outputs.med }}
+      bionic-low:  ${{ steps.scan-bionic.outputs.low }}
+      xenial-crit: ${{ steps.scan-xenial.outputs.crit }}
+      xenial-high: ${{ steps.scan-xenial.outputs.high }}
+      xenial-med:  ${{ steps.scan-xenial.outputs.med }}
+      xenial-low:  ${{ steps.scan-xenial.outputs.low }}
+      trusty-crit: ${{ steps.scan-trusty.outputs.crit }}
+      trusty-high: ${{ steps.scan-trusty.outputs.high }}
+      trusty-med:  ${{ steps.scan-trusty.outputs.med }}
+      trusty-low:  ${{ steps.scan-trusty.outputs.low }}
 
     steps:
       - name: 'Check out the repo'
@@ -99,24 +127,6 @@ jobs:
             anchorlayer/ubuntu:${{ matrix.os_name }}-latest
             anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
 
-      - name: 'Scan image with Grype'
-        if: steps.check_changes.outputs.changed == 'true'
-        run: |
-          curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
-          IMAGE_TAG="anchorlayer/ubuntu-${{ matrix.os_name }}:latest"
-          grype $IMAGE_TAG -o table
-          grype $IMAGE_TAG -o json > grype-report-${{ matrix.os_name }}.json
-          grype $IMAGE_TAG -o sarif > grype-report-${{ matrix.os_name }}.sarif
-
-      - name: 'Upload vulnerability reports'
-        if: steps.check_changes.outputs.changed == 'true'
-        uses: actions/upload-artifact@v4
-        with:
-          name: vuln-reports-${{ matrix.os_name }}
-          path: |
-            grype-report-${{ matrix.os_name }}.json
-            grype-report-${{ matrix.os_name }}.sarif
-
       - name: 'Push Docker image'
         if: ${{ steps.check_changes.outputs.changed == 'true' && success() }}
         uses: docker/build-push-action@v5
@@ -137,3 +147,58 @@ jobs:
             anchorlayer/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
             anchorlayer/ubuntu:${{ matrix.os_name }}-latest
             anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
+
+      - name: 'Scan image with Grype'
+        id: scan-${{ matrix.os_name }}
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
+          IMAGE_TAG="anchorlayer/ubuntu-${{ matrix.os_name }}:latest"
+          grype $IMAGE_TAG -o json > vulns.json
+
+          CRIT=$(jq '.matches[] | select(.vulnerability.severity=="Critical")' vulns.json | wc -l)
+          HIGH=$(jq '.matches[] | select(.vulnerability.severity=="High")' vulns.json | wc -l)
+          MED=$(jq '.matches[] | select(.vulnerability.severity=="Medium")' vulns.json | wc -l)
+          LOW=$(jq '.matches[] | select(.vulnerability.severity=="Low")' vulns.json | wc -l)
+
+          echo "crit=$CRIT" >> $GITHUB_OUTPUT
+          echo "high=$HIGH" >> $GITHUB_OUTPUT
+          echo "med=$MED"   >> $GITHUB_OUTPUT
+          echo "low=$LOW"   >> $GITHUB_OUTPUT
+
+  update-readme:
+    runs-on: ubuntu-latest
+    needs: check-and-build
+    steps:
+      - name: 'Check out the repo'
+        uses: actions/checkout@v4
+
+      - name: 'Update README badges'
+        run: |
+          update_badge () {
+            name=$1; crit=$2; high=$3; med=$4; low=$5
+            crit_color="red";    [ "$crit" -eq 0 ] && crit_color="brightgreen"
+            high_color="orange"; [ "$high" -eq 0 ] && high_color="brightgreen"
+            med_color="yellow";  [ "$med"  -eq 0 ] && med_color="brightgreen"
+            low_color="lightgrey"; [ "$low" -eq 0 ] && low_color="brightgreen"
+
+            sed -i "s|\(<!-- ${name}-critical -->\)[0-9]*-[a-z]*|\1${crit}-${crit_color}|" README.md
+            sed -i "s|\(<!-- ${name}-high -->\)[0-9]*-[a-z]*|\1${high}-${high_color}|" README.md
+            sed -i "s|\(<!-- ${name}-medium -->\)[0-9]*-[a-z]*|\1${med}-${med_color}|" README.md
+            sed -i "s|\(<!-- ${name}-low -->\)[0-9]*-[a-z]*|\1${low}-${low_color}|" README.md
+          }
+
+          update_badge noble  ${{ needs.check-and-build.outputs.noble-crit }}  ${{ needs.check-and-build.outputs.noble-high }}  ${{ needs.check-and-build.outputs.noble-med }}  ${{ needs.check-and-build.outputs.noble-low }}
+          update_badge jammy  ${{ needs.check-and-build.outputs.jammy-crit }}  ${{ needs.check-and-build.outputs.jammy-high }}  ${{ needs.check-and-build.outputs.jammy-med }}  ${{ needs.check-and-build.outputs.jammy-low }}
+          update_badge focal  ${{ needs.check-and-build.outputs.focal-crit }}  ${{ needs.check-and-build.outputs.focal-high }}  ${{ needs.check-and-build.outputs.focal-med }}  ${{ needs.check-and-build.outputs.focal-low }}
+          update_badge bionic ${{ needs.check-and-build.outputs.bionic-crit }} ${{ needs.check-and-build.outputs.bionic-high }} ${{ needs.check-and-build.outputs.bionic-med }} ${{ needs.check-and-build.outputs.bionic-low }}
+          update_badge xenial ${{ needs.check-and-build.outputs.xenial-crit }} ${{ needs.check-and-build.outputs.xenial-high }} ${{ needs.check-and-build.outputs.xenial-med }} ${{ needs.check-and-build.outputs.xenial-low }}
+          update_badge trusty ${{ needs.check-and-build.outputs.trusty-crit }} ${{ needs.check-and-build.outputs.trusty-high }} ${{ needs.check-and-build.outputs.trusty-med }} ${{ needs.check-and-build.outputs.trusty-low }}
+
+      - name: 'Commit README changes'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "Update vuln badges for all images"
+          git push
