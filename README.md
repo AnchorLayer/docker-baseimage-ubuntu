@@ -10,36 +10,36 @@ The following badges display the number of vulnerabilities found in the latest b
 
 ### Ubuntu 24.04 Noble
 
-| Critical | High | Medium | Low |
-|:---:|:---:|:---:|:---:|
+| 0 | 0 | 2620 | 2244 |
+| 0 | 0 | 2620 | 2244 |
 39663-lightgrey.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
 
 ### Ubuntu 22.04 Jammy
 
-| Critical | High | Medium | Low |
-|:---:|:---:|:---:|:---:|
+| 0 | 0 | 1856 | 4620 |
+| 0 | 0 | 1856 | 4620 |
 39663-lightgrey.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
 
 ### Ubuntu 20.04 Focal
 
-| Critical | High | Medium | Low |
-|:---:|:---:|:---:|:---:|
+| 0 | 0 | 1042 | 4540 |
+| 0 | 0 | 1042 | 4540 |
 39663-lightgrey.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
 
 ### Ubuntu 18.04 Bionic
 
-| Critical | High | Medium | Low |
-|:---:|:---:|:---:|:---:|
+| 0 | 1258 | 13731 | 12865 |
+| 0 | 1258 | 13731 | 12865 |
 39663-lightgrey.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
 
 ### Ubuntu 16.04 Xenial
 
-| Critical | High | Medium | Low |
-|:---:|:---:|:---:|:---:|
+| 0 | 1808 | 46782 | 39663 |
+| 0 | 1808 | 46782 | 39663 |
 39663-lightgrey.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
 
 ### Ubuntu 14.04 Trusty
 
-| Critical | High | Medium | Low |
-|:---:|:---:|:---:|:---:|
+| 0 | 6664 | 154038 | 94333 |
+| 0 | 6664 | 154038 | 94333 |
 39663-lightgrey.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
