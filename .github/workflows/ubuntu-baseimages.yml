@@ -154,7 +154,6 @@ jobs:
         run: |
           for report_dir in vuln-reports-*; do
               OS_NAME=$(echo "$report_dir" | sed 's/vuln-reports-//')
-              report_path="$report_dir/grype-report-$OS_NAME.json"
 
               if [ ! -f "$report_path" ]; then
                 echo "Vulnerability report not found for $OS_NAME. Skipping."
