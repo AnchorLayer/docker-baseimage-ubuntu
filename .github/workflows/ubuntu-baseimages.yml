@@ -166,31 +166,27 @@ jobs:
               MEDIUM=$(jq -r '.matches[] | select(.vulnerability.severity == "Medium") | .vulnerability.id' "$report_path" | sort -u | wc -l)
               LOW=$(jq -r '.matches[] | select(.vulnerability.severity == "Low") | .vulnerability.id' "$report_path" | sort -u | wc -l)
               
-              CRITICAL_BADGE="![Critical Vulns](https://img.shields.io/badge/Critical-$CRITICAL-red.svg)"
-              HIGH_BADGE="![High Vulns](https://img.shields.io/badge/High-$HIGH-orange.svg)"
-              MEDIUM_BADGE="![Medium Vulns](https://img.shields.io/badge/Medium-$MEDIUM-yellow.svg)"
-              LOW_BADGE="![Low Vulns](https://img.shields.io/badge/Low-$LOW-blue.svg)"
+              VULN_BADGES_LINE="![Critical Vulns](https://img.shields.io/badge/Critical-$CRITICAL-red.svg) ![High Vulns](https://img.shields.io/badge/High-$HIGH-orange.svg) ![Medium Vulns](https://img.shields.io/badge/Medium-$MEDIUM-yellow.svg) ![Low Vulns](https://img.shields.io/badge/Low-$LOW-blue.svg)"
               
-              VULN_BADGES="$CRITICAL_BADGE $HIGH_BADGE $MEDIUM_BADGE $LOW_BADGE"
-              
+              # This sed command finds the heading, deletes the following 2 lines (the table header and separator), and then inserts the new badge line.
               case "$OS_NAME" in
                   noble)
-                      sed -i "/### Ubuntu 24.04 Noble/,/\\|:---:\\|/s#\\| .* \\| .* \\| .* \\| .* \\|#$VULN_BADGES#" README.md
+                      sed -i "/### Ubuntu 24.04 Noble/{n;d;n;d;a$VULN_BADGES_LINE}" README.md
                       ;;
                   jammy)
-                      sed -i "/### Ubuntu 22.04 Jammy/,/\\|:---:\\|/s#\\| .* \\| .* \\| .* \\| .* \\|#$VULN_BADGES#" README.md
+                      sed -i "/### Ubuntu 22.04 Jammy/{n;d;n;d;a$VULN_BADGES_LINE}" README.md
                       ;;
                   focal)
-                      sed -i "/### Ubuntu 20.04 Focal/,/\\|:---:\\|/s#\\| .* \\| .* \\| .* \\| .* \\|#$VULN_BADGES#" README.md
+                      sed -i "/### Ubuntu 20.04 Focal/{n;d;n;d;a$VULN_BADGES_LINE}" README.md
                       ;;
                   bionic)
-                      sed -i "/### Ubuntu 18.04 Bionic/,/\\|:---:\\|/s#\\| .* \\| .* \\| .* \\| .* \\|#$VULN_BADGES#" README.md
+                      sed -i "/### Ubuntu 18.04 Bionic/{n;d;n;d;a$VULN_BADGES_LINE}" README.md
                       ;;
                   xenial)
-                      sed -i "/### Ubuntu 16.04 Xenial/,/\\|:---:\\|/s#\\| .* \\| .* \\| .* \\| .* \\|#$VULN_BADGES#" README.md
+                      sed -i "/### Ubuntu 16.04 Xenial/{n;d;n;d;a$VULN_BADGES_LINE}" README.md
                       ;;
                   trusty)
-                      sed -i "/### Ubuntu 14.04 Trusty/,/\\|:---:\\|/s#\\| .* \\| .* \\| .* \\| .* \\|#$VULN_BADGES#" README.md
+                      sed -i "/### Ubuntu 14.04 Trusty/{n;d;n;d;a$VULN_BADGES_LINE}" README.md
                       ;;
               esac
           done
