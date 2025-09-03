@@ -67,37 +67,28 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Get current date
-        if: steps.check_changes.outputs.changed == 'true'
+        if: steps.check-changes.outputs.changed == 'true'
         id: get_date
         run: echo "date=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
 
-      - name: 'Build Docker image'
+      - name: 'Build and push Docker image'
         if: steps.check_changes.outputs.changed == 'true'
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          file: ./Dockerfile.ubuntu
-          push: false
-          load: true
-          build-args: |
-            UBUNTU_VERSION=${{ matrix.os_version }}
-          tags: |
-            anchorlayer/ubuntu-${{ matrix.os_name }}:latest
-
-      - name: 'Push Docker image'
-        if: ${{ steps.check_changes.outputs.changed == 'true' && success() }}
         uses: docker/build-push-action@v5
         with:
           context: .
           file: ./Dockerfile.ubuntu
           push: true
-          load: true
           build-args: |
             UBUNTU_VERSION=${{ matrix.os_version }}
           tags: |
             anchorlayer/ubuntu-${{ matrix.os_name }}:latest
 
+      - name: 'Download latest Docker image'
+        if: ${{ always() }}
+        run: docker pull anchorlayer/ubuntu-${{ matrix.os_name }}:latest
+
       - name: 'Scan image with Grype'
+        if: ${{ always() }}
         run: |
           curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
           IMAGE_TAG="anchorlayer/ubuntu-${{ matrix.os_name }}:latest"
@@ -111,6 +102,7 @@ jobs:
           echo "${{ matrix.os_name }},$CRIT,$HIGH,$MED,$LOW" > results.csv
 
       - name: 'Upload scan results'
+        if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
           name: scan-${{ matrix.os_name }}
@@ -119,6 +111,7 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     needs: check-and-build
+    if: ${{ always() }}
     permissions:
       contents: write
     steps:
@@ -139,10 +132,10 @@ jobs:
             med_color="yellow";  [ "$med"  -eq 0 ] && med_color="brightgreen"
             low_color="lightgrey"; [ "$low" -eq 0 ] && low_color="brightgreen"
 
-            sed -i "s|\(<!-- ${name}-critical -->\)[0-9]*-[a-z]*|\1${crit}-${crit_color}|" README.md
-            sed -i "s|\(<!-- ${name}-high -->\)[0-9]*-[a-z]*|\1${high}-${high_color}|" README.md
-            sed -i "s|\(<!-- ${name}-medium -->\)[0-9]*-[a-z]*|\1${med}-${med_color}|" README.md
-            sed -i "s|\(<!-- ${name}-low -->\)[0-9]*-[a-z]*|\1${low}-${low_color}|" README.md
+            sed -i "s|\(\)[0-9]*-[a-z]*|\1${crit}-${crit_color}|" README.md
+            sed -i "s|\(\)[0-9]*-[a-z]*|\1${high}-${high_color}|" README.md
+            sed -i "s|\(\)[0-9]*-[a-z]*|\1${med}-${med_color}|" README.md
+            sed -i "s|\(\)[0-9]*-[a-z]*|\1${low}-${low_color}|" README.md
           }
 
           for f in scans/*/results.csv; do
