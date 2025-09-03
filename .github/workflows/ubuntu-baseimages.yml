@@ -175,22 +175,22 @@ jobs:
               
               case "$OS_NAME" in
                   noble)
-                      sed -i "/### Ubuntu 24.04 Noble/!b;n;c$VULN_BADGES" README.md
+                      sed -i "/### Ubuntu 24.04 Noble/,/\\|:---:\\|/s#\\| .* \\| .* \\| .* \\| .* \\|#$VULN_BADGES#" README.md
                       ;;
                   jammy)
-                      sed -i "/### Ubuntu 22.04 Jammy/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/$VULN_BADGES/" README.md
+                      sed -i "/### Ubuntu 22.04 Jammy/,/\\|:---:\\|/s#\\| .* \\| .* \\| .* \\| .* \\|#$VULN_BADGES#" README.md
                       ;;
                   focal)
-                      sed -i "/### Ubuntu 20.04 Focal/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/$VULN_BADGES/" README.md
+                      sed -i "/### Ubuntu 20.04 Focal/,/\\|:---:\\|/s#\\| .* \\| .* \\| .* \\| .* \\|#$VULN_BADGES#" README.md
                       ;;
                   bionic)
-                      sed -i "/### Ubuntu 18.04 Bionic/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/$VULN_BADGES/" README.md
+                      sed -i "/### Ubuntu 18.04 Bionic/,/\\|:---:\\|/s#\\| .* \\| .* \\| .* \\| .* \\|#$VULN_BADGES#" README.md
                       ;;
                   xenial)
-                      sed -i "/### Ubuntu 16.04 Xenial/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/$VULN_BADGES/" README.md
+                      sed -i "/### Ubuntu 16.04 Xenial/,/\\|:---:\\|/s#\\| .* \\| .* \\| .* \\| .* \\|#$VULN_BADGES#" README.md
                       ;;
                   trusty)
-                      sed -i "/### Ubuntu 14.04 Trusty/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/$VULN_BADGES/" README.md
+                      sed -i "/### Ubuntu 14.04 Trusty/,/\\|:---:\\|/s#\\| .* \\| .* \\| .* \\| .* \\|#$VULN_BADGES#" README.md
                       ;;
               esac
           done
