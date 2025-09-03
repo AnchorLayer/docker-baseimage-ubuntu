@@ -137,3 +137,42 @@ jobs:
             anchorlayer/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
             anchorlayer/ubuntu:${{ matrix.os_name }}-latest
             anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
+
+  update-readme:
+    needs: check-and-build
+    if: success() && needs.check-and-build.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: 'Check out the repo'
+        uses: actions/checkout@v4
+        
+      - name: 'Download vulnerability reports'
+        uses: actions/download-artifact@v4
+        with:
+          name: vuln-reports-${{ matrix.os_name }}
+          path: grype-reports
+          
+      - name: 'Update README with vuln counts'
+        run: |
+          for report in grype-reports/grype-report-*.json; do
+            OS_NAME=$(echo $report | sed 's/grype-reports\/grype-report-\(.*\)\.json/\1/')
+            
+            CRITICAL=$(jq '.matches[] | select(.vulnerability.severity == "Critical")' $report | wc -l)
+            HIGH=$(jq '.matches[] | select(.vulnerability.severity == "High")' $report | wc -l)
+            MEDIUM=$(jq '.matches[] | select(.vulnerability.severity == "Medium")' $report | wc -l)
+            LOW=$(jq '.matches[] | select(.vulnerability.severity == "Low")' $report | wc -l)
+            
+            sed -i "/### Ubuntu 24\.04 Noble/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+            sed -i "/### Ubuntu 22\.04 Jammy/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+            sed -i "/### Ubuntu 20\.04 Focal/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+            sed -i "/### Ubuntu 18\.04 Bionic/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+            sed -i "/### Ubuntu 16\.04 Xenial/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+            sed -i "/### Ubuntu 14\.04 Trusty/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+          done
+          
+      - name: 'Commit and push changes'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update vulnerability counts in README.md"
