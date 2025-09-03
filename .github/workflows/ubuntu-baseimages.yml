@@ -150,7 +150,7 @@ jobs:
       - name: 'Download vulnerability reports'
         uses: actions/download-artifact@v4
         
-      - name: 'Update README with vuln counts'
+      - name: 'Update README with vuln badges'
         run: |
           for report_dir in vuln-reports-*; do
               OS_NAME=$(echo "$report_dir" | sed 's/vuln-reports-//')
@@ -166,24 +166,31 @@ jobs:
               MEDIUM=$(jq '.matches[] | select(.vulnerability.severity == "Medium")' "$report_path" | wc -l)
               LOW=$(jq '.matches[] | select(.vulnerability.severity == "Low")' "$report_path" | wc -l)
               
+              CRITICAL_BADGE="![Critical Vulns](https://img.shields.io/badge/Critical-$CRITICAL-red.svg)"
+              HIGH_BADGE="![High Vulns](https://img.shields.io/badge/High-$HIGH-orange.svg)"
+              MEDIUM_BADGE="![Medium Vulns](https://img.shields.io/badge/Medium-$MEDIUM-yellow.svg)"
+              LOW_BADGE="![Low Vulns](https://img.shields.io/badge/Low-$LOW-blue.svg)"
+              
+              VULN_BADGES="$CRITICAL_BADGE $HIGH_BADGE $MEDIUM_BADGE $LOW_BADGE"
+              
               case "$OS_NAME" in
                   noble)
-                      sed -i "/### Ubuntu 24.04 Noble/,/|:---:|/s/|.*|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+                      sed -i "/### Ubuntu 24.04 Noble/!b;n;c$VULN_BADGES" README.md
                       ;;
                   jammy)
-                      sed -i "/### Ubuntu 22.04 Jammy/,/|:---:|/s/|.*|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+                      sed -i "/### Ubuntu 22.04 Jammy/!b;n;c$VULN_BADGES" README.md
                       ;;
                   focal)
-                      sed -i "/### Ubuntu 20.04 Focal/,/|:---:|/s/|.*|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+                      sed -i "/### Ubuntu 20.04 Focal/!b;n;c$VULN_BADGES" README.md
                       ;;
                   bionic)
-                      sed -i "/### Ubuntu 18.04 Bionic/,/|:---:|/s/|.*|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+                      sed -i "/### Ubuntu 18.04 Bionic/!b;n;c$VULN_BADGES" README.md
                       ;;
                   xenial)
-                      sed -i "/### Ubuntu 16.04 Xenial/,/|:---:|/s/|.*|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+                      sed -i "/### Ubuntu 16.04 Xenial/!b;n;c$VULN_BADGES" README.md
                       ;;
                   trusty)
-                      sed -i "/### Ubuntu 14.04 Trusty/,/|:---:|/s/|.*|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+                      sed -i "/### Ubuntu 14.04 Trusty/!b;n;c$VULN_BADGES" README.md
                       ;;
               esac
           done
@@ -191,4 +198,4 @@ jobs:
       - name: 'Commit and push changes'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update vulnerability counts in README.md"
+          commit_message: "Update vulnerability badges in README.md"
