@@ -1,0 +1,121 @@
+name: 'Check Ubuntu Repos and Rebuild Base Images'
+
+on:
+  schedule:
+    - cron: '0,20,40 * * * *'
+  workflow_dispatch:
+
+jobs:
+  check-and-build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      security-events: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os_version: "24.04"
+            os_name: "noble"
+          - os_version: "22.04"
+            os_name: "jammy"
+          - os_version: "20.04"
+            os_name: "focal"
+          - os_version: "18.04"
+            os_name: "bionic"
+          - os_version: "16.04"
+            os_name: "xenial"
+          - os_version: "14.04"
+            os_name: "trusty"
+
+    steps:
+      - name: 'Check out the repo'
+        uses: actions/checkout@v4
+
+      - name: 'Cache APT state hash for Ubuntu ${{ matrix.os_version }}'
+        uses: actions/cache@v4
+        id: cache-apt-state
+        with:
+          path: apt-state-${{ matrix.os_version }}.hash
+          key: ubuntu-repo-state-${{ matrix.os_version }}
+
+      - name: 'Generate current APT state hash for Ubuntu ${{ matrix.os_version }}'
+        id: generate_hash
+        run: |
+          echo "Checking APT lists for Ubuntu:${{ matrix.os_version }}..."
+          CURRENT_HASH=$(docker run --rm ubuntu:${{ matrix.os_version }} bash -c "apt-get update > /dev/null && find /var/lib/apt/lists/ -type f -print0 | xargs -0 sha256sum | sort | sha256sum | awk '{print \$1}'")
+          echo "Current state hash: $CURRENT_HASH"
+          echo "new_hash=$CURRENT_HASH" >> $GITHUB_OUTPUT
+
+      - name: 'Compare hashes for Ubuntu ${{ matrix.os_version }}'
+        id: check_changes
+        run: |
+          OLD_HASH=$(cat apt-state-${{ matrix.os_version }}.hash 2>/dev/null || echo "no-previous-hash")
+          NEW_HASH="${{ steps.generate_hash.outputs.new_hash }}"
+          if [ "$OLD_HASH" == "$NEW_HASH" ]; then
+            echo "✅ No changes detected for Ubuntu ${{ matrix.os_version }}."
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "🚨 Changes detected for Ubuntu ${{ matrix.os_version }}! Triggering rebuild."
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo $NEW_HASH > apt-state-${{ matrix.os_version }}.hash
+          fi
+
+      - name: 'Set up Docker Buildx'
+        if: steps.check_changes.outputs.changed == 'true'
+        uses: docker/setup-buildx-action@v3
+
+      - name: 'Log in to Docker Hub'
+        if: steps.check_changes.outputs.changed == 'true'
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          
+      - name: Get current date
+        if: steps.check_changes.outputs.changed == 'true'
+        id: get_date
+        run: echo "date=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
+
+      - name: 'Build Docker image'
+        if: steps.check_changes.outputs.changed == 'true'
+        id: build-image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile.ubuntu
+          push: false
+          load: true
+          build-args: |
+            UBUNTU_VERSION=${{ matrix.os_version }}
+          tags: |
+            anchorlayer/ubuntu-${{ matrix.os_name }}:latest
+            anchorlayer/ubuntu-${{ matrix.os_name }}:${{ steps.get_date.outputs.date }}
+            anchorlayer/ubuntu-${{ matrix.os_version }}:latest
+            anchorlayer/ubuntu-${{ matrix.os_version }}:${{ steps.get_date.outputs.date }}
+            anchorlayer/ubuntu:${{ matrix.os_version }}-latest
+            anchorlayer/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
+            anchorlayer/ubuntu:${{ matrix.os_name }}-latest
+            anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
+
+      - name: 'Push Docker image'
+        if: ${{ steps.check_changes.outputs.changed == 'true' && success() }}
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile.ubuntu
+          push: true
+          load: true
+          build-args: |
+            UBUNTU_VERSION=${{ matrix.os_version }}
+          # The tag remains dynamic as before
+          tags: |
+            anchorlayer/ubuntu-${{ matrix.os_name }}:latest
+            anchorlayer/ubuntu-${{ matrix.os_name }}:${{ steps.get_date.outputs.date }}
+            anchorlayer/ubuntu-${{ matrix.os_version }}:latest
+            anchorlayer/ubuntu-${{ matrix.os_version }}:${{ steps.get_date.outputs.date }}
+            anchorlayer/ubuntu:${{ matrix.os_version }}-latest
+            anchorlayer/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
+            anchorlayer/ubuntu:${{ matrix.os_name }}-latest
+            anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
