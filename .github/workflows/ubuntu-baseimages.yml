@@ -104,9 +104,9 @@ jobs:
         run: |
           curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
           IMAGE_TAG="anchorlayer/ubuntu-${{ matrix.os_name }}:latest"
-          grype $IMAGE_TAG -o table
-          grype $IMAGE_TAG -o json > grype-report-${{ matrix.os_name }}.json
-          grype $IMAGE_TAG -o sarif > grype-report-${{ matrix.os_name }}.sarif
+          grype --scope all-layers $IMAGE_TAG -o table
+          grype --scope all-layers $IMAGE_TAG -o json > grype-report-${{ matrix.os_name }}.json
+          grype --scope all-layers $IMAGE_TAG -o sarif > grype-report-${{ matrix.os_name }}.sarif
 
       - name: 'Upload vulnerability reports'
         if: steps.check_changes.outputs.changed == 'true'
