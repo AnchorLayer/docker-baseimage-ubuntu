@@ -140,7 +140,6 @@ jobs:
 
   update-readme:
     needs: check-and-build
-    if: success() && needs.check-and-build.outputs.changed == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -150,26 +149,43 @@ jobs:
         
       - name: 'Download vulnerability reports'
         uses: actions/download-artifact@v4
-        with:
-          name: vuln-reports-${{ matrix.os_name }}
-          path: grype-reports
-          
+        
       - name: 'Update README with vuln counts'
         run: |
-          for report in grype-reports/grype-report-*.json; do
-            OS_NAME=$(echo $report | sed 's/grype-reports\/grype-report-\(.*\)\.json/\1/')
-            
-            CRITICAL=$(jq '.matches[] | select(.vulnerability.severity == "Critical")' $report | wc -l)
-            HIGH=$(jq '.matches[] | select(.vulnerability.severity == "High")' $report | wc -l)
-            MEDIUM=$(jq '.matches[] | select(.vulnerability.severity == "Medium")' $report | wc -l)
-            LOW=$(jq '.matches[] | select(.vulnerability.severity == "Low")' $report | wc -l)
-            
-            sed -i "/### Ubuntu 24\.04 Noble/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
-            sed -i "/### Ubuntu 22\.04 Jammy/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
-            sed -i "/### Ubuntu 20\.04 Focal/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
-            sed -i "/### Ubuntu 18\.04 Bionic/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
-            sed -i "/### Ubuntu 16\.04 Xenial/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
-            sed -i "/### Ubuntu 14\.04 Trusty/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+          for report_dir in vuln-reports-*; do
+              OS_NAME=$(echo "$report_dir" | sed 's/vuln-reports-//')
+              report_path="$report_dir/grype-report-$OS_NAME.json"
+
+              if [ ! -f "$report_path" ]; then
+                echo "Vulnerability report not found for $OS_NAME. Skipping."
+                continue
+              fi
+
+              CRITICAL=$(jq '.matches[] | select(.vulnerability.severity == "Critical")' "$report_path" | wc -l)
+              HIGH=$(jq '.matches[] | select(.vulnerability.severity == "High")' "$report_path" | wc -l)
+              MEDIUM=$(jq '.matches[] | select(.vulnerability.severity == "Medium")' "$report_path" | wc -l)
+              LOW=$(jq '.matches[] | select(.vulnerability.severity == "Low")' "$report_path" | wc -l)
+              
+              case "$OS_NAME" in
+                  noble)
+                      sed -i "/### Ubuntu 24.04 Noble/,/|:---:|/s/|.*|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+                      ;;
+                  jammy)
+                      sed -i "/### Ubuntu 22.04 Jammy/,/|:---:|/s/|.*|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+                      ;;
+                  focal)
+                      sed -i "/### Ubuntu 20.04 Focal/,/|:---:|/s/|.*|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+                      ;;
+                  bionic)
+                      sed -i "/### Ubuntu 18.04 Bionic/,/|:---:|/s/|.*|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+                      ;;
+                  xenial)
+                      sed -i "/### Ubuntu 16.04 Xenial/,/|:---:|/s/|.*|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+                      ;;
+                  trusty)
+                      sed -i "/### Ubuntu 14.04 Trusty/,/|:---:|/s/|.*|/| $CRITICAL | $HIGH | $MEDIUM | $LOW |/" README.md
+                      ;;
+              esac
           done
           
       - name: 'Commit and push changes'
