@@ -1,8 +1,8 @@
-# docker39663-lightgrey-ubuntu
+# docker-baseimage-ubuntu
 
 This repository provides Docker base images for various Ubuntu versions, with vulnerability scanning performed by Grype.
 
-39663-lightgrey--
+---
 
 ## Vulnerability Scan Results
 
@@ -11,35 +11,35 @@ The following badges display the number of vulnerabilities found in the latest b
 ### Ubuntu 24.04 Noble
 
 | Critical | High | Medium | Low |
-|:39663-lightgrey--:|:---:|:---:|:---:|
-| ![Critical Vulns](https://img.shields.io/badge/39663-lightgrey.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
+|:---:|:---:|:---:|:---:|
+| ![Critical Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
 
 ### Ubuntu 22.04 Jammy
 
 | Critical | High | Medium | Low |
-|:39663-lightgrey--:|:---:|:---:|:---:|
-| ![Critical Vulns](https://img.shields.io/badge/39663-lightgrey.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
+|:---:|:---:|:---:|:---:|
+| ![Critical Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
 
 ### Ubuntu 20.04 Focal
 
 | Critical | High | Medium | Low |
-|:39663-lightgrey--:|:---:|:---:|:---:|
-| ![Critical Vulns](https://img.shields.io/badge/39663-lightgrey.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
+|:---:|:---:|:---:|:---:|
+| ![Critical Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
 
 ### Ubuntu 18.04 Bionic
 
 | Critical | High | Medium | Low |
-|:39663-lightgrey--:|:---:|:---:|:---:|
-| ![Critical Vulns](https://img.shields.io/badge/39663-lightgrey.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
+|:---:|:---:|:---:|:---:|
+| ![Critical Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
 
 ### Ubuntu 16.04 Xenial
 
 | Critical | High | Medium | Low |
-|:39663-lightgrey--:|:---:|:---:|:---:|
-| ![Critical Vulns](https://img.shields.io/badge/39663-lightgrey.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
+|:---:|:---:|:---:|:---:|
+| ![Critical Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
 
 ### Ubuntu 14.04 Trusty
 
 | Critical | High | Medium | Low |
-|:39663-lightgrey--:|:---:|:---:|:---:|
-| ![Critical Vulns](https://img.shields.io/badge/39663-lightgrey.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
+|:---:|:---:|:---:|:---:|
+| ![Critical Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![High Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Medium Vulns](https://img.shields.io/badge/0-brightgreen.svg) | ![Low Vulns](https://img.shields.io/badge/0-brightgreen.svg) |
