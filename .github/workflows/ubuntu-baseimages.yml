@@ -66,24 +66,21 @@ jobs:
           path: apt-state-${{ matrix.os_version }}.hash
           key: ubuntu-repo-state-${{ matrix.os_version }}
 
-      - name: 'Generate current APT state hash for Ubuntu ${{ matrix.os_version }}'
+      - name: 'Generate current APT state hash'
         id: generate_hash
         run: |
           echo "Checking APT lists for Ubuntu:${{ matrix.os_version }}..."
           CURRENT_HASH=$(docker run --rm ubuntu:${{ matrix.os_version }} bash -c "apt-get update > /dev/null && find /var/lib/apt/lists/ -type f -print0 | xargs -0 sha256sum | sort | sha256sum | awk '{print \$1}'")
-          echo "Current state hash: $CURRENT_HASH"
           echo "new_hash=$CURRENT_HASH" >> $GITHUB_OUTPUT
 
-      - name: 'Compare hashes for Ubuntu ${{ matrix.os_version }}'
+      - name: 'Compare hashes'
         id: check_changes
         run: |
           OLD_HASH=$(cat apt-state-${{ matrix.os_version }}.hash 2>/dev/null || echo "no-previous-hash")
           NEW_HASH="${{ steps.generate_hash.outputs.new_hash }}"
           if [ "$OLD_HASH" == "$NEW_HASH" ]; then
-            echo "✅ No changes detected for Ubuntu ${{ matrix.os_version }}."
             echo "changed=false" >> $GITHUB_OUTPUT
           else
-            echo "🚨 Changes detected for Ubuntu ${{ matrix.os_version }}! Triggering rebuild."
             echo "changed=true" >> $GITHUB_OUTPUT
             echo $NEW_HASH > apt-state-${{ matrix.os_version }}.hash
           fi
@@ -98,7 +95,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          
+
       - name: Get current date
         if: steps.check_changes.outputs.changed == 'true'
         id: get_date
@@ -117,13 +114,6 @@ jobs:
             UBUNTU_VERSION=${{ matrix.os_version }}
           tags: |
             anchorlayer/ubuntu-${{ matrix.os_name }}:latest
-            anchorlayer/ubuntu-${{ matrix.os_name }}:${{ steps.get_date.outputs.date }}
-            anchorlayer/ubuntu-${{ matrix.os_version }}:latest
-            anchorlayer/ubuntu-${{ matrix.os_version }}:${{ steps.get_date.outputs.date }}
-            anchorlayer/ubuntu:${{ matrix.os_version }}-latest
-            anchorlayer/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
-            anchorlayer/ubuntu:${{ matrix.os_name }}-latest
-            anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
 
       - name: 'Push Docker image'
         if: ${{ steps.check_changes.outputs.changed == 'true' && success() }}
@@ -135,16 +125,8 @@ jobs:
           load: true
           build-args: |
             UBUNTU_VERSION=${{ matrix.os_version }}
-          # The tag remains dynamic as before
           tags: |
             anchorlayer/ubuntu-${{ matrix.os_name }}:latest
-            anchorlayer/ubuntu-${{ matrix.os_name }}:${{ steps.get_date.outputs.date }}
-            anchorlayer/ubuntu-${{ matrix.os_version }}:latest
-            anchorlayer/ubuntu-${{ matrix.os_version }}:${{ steps.get_date.outputs.date }}
-            anchorlayer/ubuntu:${{ matrix.os_version }}-latest
-            anchorlayer/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
-            anchorlayer/ubuntu:${{ matrix.os_name }}-latest
-            anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
 
       - name: 'Scan image with Grype'
         id: scan-${{ matrix.os_name }}
