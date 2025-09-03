@@ -154,16 +154,17 @@ jobs:
         run: |
           for report_dir in vuln-reports-*; do
               OS_NAME=$(echo "$report_dir" | sed 's/vuln-reports-//')
+              report_path="$report_dir/grype-report-$OS_NAME.json"
 
               if [ ! -f "$report_path" ]; then
                 echo "Vulnerability report not found for $OS_NAME. Skipping."
                 continue
               fi
 
-              CRITICAL=$(jq '.matches[] | select(.vulnerability.severity == "Critical")' "$report_path" | wc -l)
-              HIGH=$(jq '.matches[] | select(.vulnerability.severity == "High")' "$report_path" | wc -l)
-              MEDIUM=$(jq '.matches[] | select(.vulnerability.severity == "Medium")' "$report_path" | wc -l)
-              LOW=$(jq '.matches[] | select(.vulnerability.severity == "Low")' "$report_path" | wc -l)
+              CRITICAL=$(jq -r '.matches[] | select(.vulnerability.severity == "Critical") | .vulnerability.id' "$report_path" | sort -u | wc -l)
+              HIGH=$(jq -r '.matches[] | select(.vulnerability.severity == "High") | .vulnerability.id' "$report_path" | sort -u | wc -l)
+              MEDIUM=$(jq -r '.matches[] | select(.vulnerability.severity == "Medium") | .vulnerability.id' "$report_path" | sort -u | wc -l)
+              LOW=$(jq -r '.matches[] | select(.vulnerability.severity == "Low") | .vulnerability.id' "$report_path" | sort -u | wc -l)
               
               CRITICAL_BADGE="![Critical Vulns](https://img.shields.io/badge/Critical-$CRITICAL-red.svg)"
               HIGH_BADGE="![High Vulns](https://img.shields.io/badge/High-$HIGH-orange.svg)"
@@ -177,19 +178,19 @@ jobs:
                       sed -i "/### Ubuntu 24.04 Noble/!b;n;c$VULN_BADGES" README.md
                       ;;
                   jammy)
-                      sed -i "/### Ubuntu 22.04 Jammy/!b;n;c$VULN_BADGES" README.md
+                      sed -i "/### Ubuntu 22.04 Jammy/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/$VULN_BADGES/" README.md
                       ;;
                   focal)
-                      sed -i "/### Ubuntu 20.04 Focal/!b;n;c$VULN_BADGES" README.md
+                      sed -i "/### Ubuntu 20.04 Focal/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/$VULN_BADGES/" README.md
                       ;;
                   bionic)
-                      sed -i "/### Ubuntu 18.04 Bionic/!b;n;c$VULN_BADGES" README.md
+                      sed -i "/### Ubuntu 18.04 Bionic/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/$VULN_BADGES/" README.md
                       ;;
                   xenial)
-                      sed -i "/### Ubuntu 16.04 Xenial/!b;n;c$VULN_BADGES" README.md
+                      sed -i "/### Ubuntu 16.04 Xenial/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/$VULN_BADGES/" README.md
                       ;;
                   trusty)
-                      sed -i "/### Ubuntu 14.04 Trusty/!b;n;c$VULN_BADGES" README.md
+                      sed -i "/### Ubuntu 14.04 Trusty/,/\\|:---:\\|/s/\\| .* \\| .* \\| .* \\| .* \\|/$VULN_BADGES/" README.md
                       ;;
               esac
           done
