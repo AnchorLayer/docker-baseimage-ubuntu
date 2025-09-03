@@ -132,10 +132,10 @@ jobs:
             med_color="yellow";  [ "$med"  -eq 0 ] && med_color="brightgreen"
             low_color="lightgrey"; [ "$low" -eq 0 ] && low_color="brightgreen"
 
-            sed -i "s|\(\)[0-9]*-[a-z]*|\1${crit}-${crit_color}|" README.md
-            sed -i "s|\(\)[0-9]*-[a-z]*|\1${high}-${high_color}|" README.md
-            sed -i "s|\(\)[0-9]*-[a-z]*|\1${med}-${med_color}|" README.md
-            sed -i "s|\(\)[0-9]*-[a-z]*|\1${low}-${low_color}|" README.md
+            sed -i "s|\(\)[^)]*)|\1${crit}-${crit_color}.svg)|" README.md
+            sed -i "s|\(\)[^)]*)|\1${high}-${high_color}.svg)|" README.md
+            sed -i "s|\(\)[^)]*)|\1${med}-${med_color}.svg)|" README.md
+            sed -i "s|\(\)[^)]*)|\1${low}-${low_color}.svg)|" README.md
           }
 
           for f in scans/*/results.csv; do
