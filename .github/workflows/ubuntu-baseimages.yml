@@ -147,7 +147,7 @@ jobs:
             anchorlayer/ubuntu:${{ matrix.os_name }}-latest
             anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
             
-update-readme:
+  update-readme:
     needs: check-and-build
     runs-on: ubuntu-latest
     permissions:
