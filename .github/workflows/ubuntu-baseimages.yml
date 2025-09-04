@@ -163,17 +163,17 @@ jobs:
         run: |
           for report_dir in vuln-reports-*; do
               OS_NAME=$(echo "$report_dir" | sed 's/vuln-reports-//')
-              report_path="$report_dir/grype-report-$OS_NAME.json"
+              report_path="$report_dir/grype-report-$OS_NAME.csv"
 
               if [ ! -f "$report_path" ]; then
                 echo "Vulnerability report not found for $OS_NAME. Skipping."
                 continue
               fi
 
-              CRITICAL=$(jq -r '.matches[] | select(.vulnerability.severity == "Critical") | .vulnerability.id' "$report_path" | sort -u | wc -l)
-              HIGH=$(jq -r '.matches[] | select(.vulnerability.severity == "High") | .vulnerability.id' "$report_path" | sort -u | wc -l)
-              MEDIUM=$(jq -r '.matches[] | select(.vulnerability.severity == "Medium") | .vulnerability.id' "$report_path" | sort -u | wc -l)
-              LOW=$(jq -r '.matches[] | select(.vulnerability.severity == "Low") | .vulnerability.id' "$report_path" | sort -u | wc -l)
+              CRITICAL=$(grep -c "Critical" "$report_path" || true)
+              HIGH=$(grep -c "High" "$report_path" || true)
+              MEDIUM=$(grep -c "Medium" "$report_path" || true)
+              LOW=$(grep -c "Low" "$report_path" || true)
 
               VULN_BADGES_LINE="![Critical Vulns](https://img.shields.io/badge/Critical-$CRITICAL-red.svg) ![High Vulns](https://img.shields.io/badge/High-$HIGH-orange.svg) ![Medium Vulns](https://img.shields.io/badge/Medium-$MEDIUM-yellow.svg) ![Low Vulns](https://img.shields.io/badge/Low-$LOW-blue.svg)"
 
