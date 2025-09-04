@@ -9,7 +9,7 @@ jobs:
   check-and-build:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
       security-events: write
     strategy:
@@ -107,6 +107,8 @@ jobs:
           grype --scope all-layers $IMAGE_TAG -o table
           grype --scope all-layers $IMAGE_TAG -o json > grype-report-${{ matrix.os_name }}.json
           grype --scope all-layers $IMAGE_TAG -o sarif > grype-report-${{ matrix.os_name }}.sarif
+          grype --scope all-layers $IMAGE_TAG -o csv > grype-report-${{ matrix.os_name }}.csv
+          grype --scope all-layers $IMAGE_TAG -o html > grype-report-${{ matrix.os_name }}.html
 
       - name: 'Upload vulnerability reports'
         if: steps.check_changes.outputs.changed == 'true'
@@ -116,6 +118,8 @@ jobs:
           path: |
             grype-report-${{ matrix.os_name }}.json
             grype-report-${{ matrix.os_name }}.sarif
+            grype-report-${{ matrix.os_name }}.csv
+            grype-report-${{ matrix.os_name }}.html
 
       - name: 'Push Docker image'
         if: ${{ steps.check_changes.outputs.changed == 'true' && success() }}
