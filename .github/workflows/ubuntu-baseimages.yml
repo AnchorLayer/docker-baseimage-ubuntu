@@ -105,14 +105,37 @@ jobs:
           curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
           git clone --depth 1 https://github.com/anchore/grype.git
           
-      - name: 'Scan image with Grype and generate reports'
+      - name: 'Scan image with Grype and generate all reports'
         if: steps.check_changes.outputs.changed == 'true'
         run: |
           IMAGE_TAG="anchorlayer/ubuntu-${{ matrix.os_name }}:latest"
+        
+          # Human-readable summary for the logs (doesn't save a file)
+          echo "--- Generating Grype Table Report (for logs) ---"
           grype --scope all-layers $IMAGE_TAG -o table
+
+          # JSON report (machine-readable, most detailed)
+          echo "--- Generating Grype JSON Report ---"
           grype --scope all-layers $IMAGE_TAG -o json > grype-report-${{ matrix.os_name }}.json
+
+          # SARIF report for security dashboards (e.g., GitHub Security tab)
+          echo "--- Generating Grype SARIF Report ---"
           grype --scope all-layers $IMAGE_TAG -o sarif > grype-report-${{ matrix.os_name }}.sarif
+
+          # CycloneDX XML report (SBOM format)
+          echo "--- Generating Grype CycloneDX XML Report ---"
+          grype --scope all-layers $IMAGE_TAG -o cyclonedx > grype-report-${{ matrix.os_name }}.cyclonedx.xml
+
+          # CycloneDX JSON report (SBOM format)
+          echo "--- Generating Grype CycloneDX JSON Report ---"
+          grype --scope all-layers $IMAGE_TAG -o cyclonedx-json > grype-report-${{ matrix.os_name }}.cyclonedx.json
+
+          # Custom CSV template report
+          echo "--- Generating Grype Custom CSV Report ---"
           grype --scope all-layers $IMAGE_TAG -o template -t grype/templates/csv.tmpl > grype-report-${{ matrix.os_name }}.csv
+
+          # Custom HTML template report
+          echo "--- Generating Grype Custom HTML Report ---"
           grype --scope all-layers $IMAGE_TAG -o template -t grype/templates/html.tmpl > grype-report-${{ matrix.os_name }}.html
 
       - name: 'Upload vulnerability reports'
@@ -123,6 +146,8 @@ jobs:
           path: |
             grype-report-${{ matrix.os_name }}.json
             grype-report-${{ matrix.os_name }}.sarif
+            grype-report-${{ matrix.os_name }}.cyclonedx.xml
+            grype-report-${{ matrix.os_name }}.cyclonedx.json
             grype-report-${{ matrix.os_name }}.csv
             grype-report-${{ matrix.os_name }}.html
 
