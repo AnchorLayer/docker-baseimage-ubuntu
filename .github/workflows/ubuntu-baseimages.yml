@@ -147,7 +147,7 @@ jobs:
             anchorlayer/ubuntu:${{ matrix.os_name }}-latest
             anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
             
-  update-readme:
+update-readme:
     needs: check-and-build
     runs-on: ubuntu-latest
     permissions:
@@ -155,10 +155,10 @@ jobs:
     steps:
       - name: 'Check out the repo'
         uses: actions/checkout@v4
-        
+
       - name: 'Download vulnerability reports'
         uses: actions/download-artifact@v4
-        
+
       - name: 'Update README with vuln badges'
         run: |
           for report_dir in vuln-reports-*; do
@@ -174,32 +174,32 @@ jobs:
               HIGH=$(jq -r '.matches[] | select(.vulnerability.severity == "High") | .vulnerability.id' "$report_path" | sort -u | wc -l)
               MEDIUM=$(jq -r '.matches[] | select(.vulnerability.severity == "Medium") | .vulnerability.id' "$report_path" | sort -u | wc -l)
               LOW=$(jq -r '.matches[] | select(.vulnerability.severity == "Low") | .vulnerability.id' "$report_path" | sort -u | wc -l)
-              
+
               VULN_BADGES_LINE="![Critical Vulns](https://img.shields.io/badge/Critical-$CRITICAL-red.svg) ![High Vulns](https://img.shields.io/badge/High-$HIGH-orange.svg) ![Medium Vulns](https://img.shields.io/badge/Medium-$MEDIUM-yellow.svg) ![Low Vulns](https://img.shields.io/badge/Low-$LOW-blue.svg)"
-              
-              # This sed command finds the heading, deletes the following 2 lines (the table header and separator), and then inserts the new badge line.
+
+              # This sed command finds the heading and replaces the line immediately after it.
               case "$OS_NAME" in
                   noble)
-                      sed -i "/### Ubuntu 24.04 Noble/,/\\|:---:\\|/{/|/d; /^$/!d}; /### Ubuntu 24.04 Noble/a$VULN_BADGES_LINE" README.md
+                      sed -i "/### Ubuntu 24.04 Noble/!b;n;c$VULN_BADGES_LINE" README.md
                       ;;
                   jammy)
-                      sed -i "/### Ubuntu 22.04 Jammy/,/\\|:---:\\|/{/|/d; /^$/!d}; /### Ubuntu 22.04 Jammy/a$VULN_BADGES_LINE" README.md
+                      sed -i "/### Ubuntu 22.04 Jammy/!b;n;c$VULN_BADGES_LINE" README.md
                       ;;
                   focal)
-                      sed -i "/### Ubuntu 20.04 Focal/,/\\|:---:\\|/{/|/d; /^$/!d}; /### Ubuntu 20.04 Focal/a$VULN_BADGES_LINE" README.md
+                      sed -i "/### Ubuntu 20.04 Focal/!b;n;c$VULN_BADGES_LINE" README.md
                       ;;
                   bionic)
-                      sed -i "/### Ubuntu 18.04 Bionic/,/\\|:---:\\|/{/|/d; /^$/!d}; /### Ubuntu 18.04 Bionic/a$VULN_BADGES_LINE" README.md
+                      sed -i "/### Ubuntu 18.04 Bionic/!b;n;c$VULN_BADGES_LINE" README.md
                       ;;
                   xenial)
-                      sed -i "/### Ubuntu 16.04 Xenial/,/\\|:---:\\|/{/|/d; /^$/!d}; /### Ubuntu 16.04 Xenial/a$VULN_BADGES_LINE" README.md
+                      sed -i "/### Ubuntu 16.04 Xenial/!b;n;c$VULN_BADGES_LINE" README.md
                       ;;
                   trusty)
-                      sed -i "/### Ubuntu 14.04 Trusty/,/\\|:---:\\|/{/|/d; /^$/!d}; /### Ubuntu 14.04 Trusty/a$VULN_BADGES_LINE" README.md
+                      sed -i "/### Ubuntu 14.04 Trusty/!b;n;c$VULN_BADGES_LINE" README.md
                       ;;
               esac
           done
-          
+
       - name: 'Commit and push changes'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
