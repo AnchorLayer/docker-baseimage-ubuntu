@@ -98,17 +98,22 @@ jobs:
             anchorlayer/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
             anchorlayer/ubuntu:${{ matrix.os_name }}-latest
             anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
-
-      - name: 'Scan image with Grype'
+      
+      - name: 'Install Grype and clone templates'
         if: steps.check_changes.outputs.changed == 'true'
         run: |
           curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
+          git clone --depth 1 https://github.com/anchore/grype.git
+          
+      - name: 'Scan image with Grype and generate reports'
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
           IMAGE_TAG="anchorlayer/ubuntu-${{ matrix.os_name }}:latest"
           grype --scope all-layers $IMAGE_TAG -o table
           grype --scope all-layers $IMAGE_TAG -o json > grype-report-${{ matrix.os_name }}.json
           grype --scope all-layers $IMAGE_TAG -o sarif > grype-report-${{ matrix.os_name }}.sarif
-          grype --scope all-layers $IMAGE_TAG -o csv > grype-report-${{ matrix.os_name }}.csv
-          grype --scope all-layers $IMAGE_TAG -o html > grype-report-${{ matrix.os_name }}.html
+          grype --scope all-layers $IMAGE_TAG -o template -t grype/templates/csv.tmpl > grype-report-${{ matrix.os_name }}.csv
+          grype --scope all-layers $IMAGE_TAG -o template -t grype/templates/html.tmpl > grype-report-${{ matrix.os_name }}.html
 
       - name: 'Upload vulnerability reports'
         if: steps.check_changes.outputs.changed == 'true'
@@ -141,7 +146,7 @@ jobs:
             anchorlayer/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
             anchorlayer/ubuntu:${{ matrix.os_name }}-latest
             anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
-
+            
   update-readme:
     needs: check-and-build
     runs-on: ubuntu-latest
