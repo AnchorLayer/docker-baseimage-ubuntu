@@ -183,6 +183,19 @@ jobs:
 
       - name: 'Download vulnerability reports'
         uses: actions/download-artifact@v4
+        with:
+          path: ./reports-tmp
+
+      - name: 'Move reports into repo'
+        run: |
+          mkdir -p vuln-reports
+          for report_dir in reports-tmp/vuln-reports-*; do
+            OS_NAME=$(basename "$report_dir" | sed 's/vuln-reports-//')
+            TARGET_DIR="vuln-reports-$OS_NAME"
+            rm -rf "$TARGET_DIR"
+            mv "$report_dir" "$TARGET_DIR"
+          done
+          rm -rf reports-tmp
 
       - name: 'Update README with vuln badges'
         run: |
@@ -200,10 +213,9 @@ jobs:
               MEDIUM=$(grep -c "Medium" "$report_path" || true)
               LOW=$(grep -c "Low" "$report_path" || true)
 
-              REPORT_URL="https://htmlpreview.github.io/?https://github.com/anchorlayer/docker-baseimage-ubuntu/blob/main/vuln-reports-$OS_NAME/grype-report-$OS_NAME.html"
+              REPORT_URL="https://htmlpreview.github.io/?https://github.com/anchorlayer/docker-baseimage-ubuntu/blob/main/$report_dir/grype-report-$OS_NAME.html"
               VULN_BADGES_LINE="[![Critical Vulns](https://img.shields.io/badge/Critical-$CRITICAL-red.svg)]($REPORT_URL) [![High Vulns](https://img.shields.io/badge/High-$HIGH-orange.svg)]($REPORT_URL) [![Medium Vulns](https://img.shields.io/badge/Medium-$MEDIUM-yellow.svg)]($REPORT_URL) [![Low Vulns](https://img.shields.io/badge/Low-$LOW-blue.svg)]($REPORT_URL)"
 
-              # This sed command finds the heading and replaces the line immediately after it.
               case "$OS_NAME" in
                   noble)
                       sed -i "/### Ubuntu 24.04 Noble/!b;n;c$VULN_BADGES_LINE" README.md
@@ -229,4 +241,5 @@ jobs:
       - name: 'Commit and push changes'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update vulnerability badges in README.md"
+          commit_message: "Update vulnerability badges and reports"
+          file_pattern: "README.md vuln-reports-*"
