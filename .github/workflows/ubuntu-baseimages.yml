@@ -11,8 +11,23 @@ on:
 
 # Defines the jobs to be run
 jobs:
+  # Job to determine the latest version
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      latest_version: ${{ steps.get_latest.outputs.latest_version }}
+    steps:
+      - name: 'Check out the repo'
+        uses: actions/checkout@v4
+      - name: 'Determine latest Ubuntu version'
+        id: get_latest
+        run: |
+          latest_version=$(grep -oP 'os_version: "\K[^"]+' .github/workflows/ubuntu-baseimages.yml | sort -Vr | head -n 1)
+          echo "latest_version=$latest_version" >> $GITHUB_OUTPUT
+
   # Job to check for updates and build images
   check-and-build:
+    needs: prepare
     # Runner environment
     runs-on: ubuntu-latest
     # Permissions for the job
@@ -68,6 +83,28 @@ jobs:
         id: lowercase_owner
         run: echo "owner=$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_OUTPUT
 
+      # Generate Docker tags
+      - name: 'Generate Docker tags'
+        id: docker_tags
+        run: |
+          tags="ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:latest
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:${{ steps.get_date.outputs.date }}
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_version }}:latest
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_version }}:${{ steps.get_date.outputs.date }}
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_version }}-latest
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_name }}-latest
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}"
+          if [ "${{ matrix.os_version }}" == "${{ needs.prepare.outputs.latest_version }}" ]; then
+            tags="$tags
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:latest"
+          fi
+          {
+            echo "tags<<EOF"
+            echo "$tags"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
       # Builds the Docker image but does not push it
       - name: 'Build Docker image'
         id: build-image
@@ -79,15 +116,7 @@ jobs:
           load: true
           build-args: |
             UBUNTU_VERSION=${{ matrix.os_version }}
-          tags: |
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:latest
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:${{ steps.get_date.outputs.date }}
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_version }}:latest
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_version }}:${{ steps.get_date.outputs.date }}
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_version }}-latest
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_name }}-latest
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
+          tags: ${{ steps.docker_tags.outputs.tags }}
           cache-from: type=gha,scope=${{ github.workflow }}-${{ matrix.os_version }}
           cache-to: type=gha,mode=max,scope=${{ github.workflow }}-${{ matrix.os_version }}
 
@@ -104,7 +133,7 @@ jobs:
         id: generate_hash
         run: |
           echo "Generating package list hash for ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:latest..."
-          CURRENT_HASH=$(docker run --rm ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:latest dpkg-query -W -f='${Package}\\t${Version}\\n' | sort | sha256sum | cut -d' ' -f1)
+          CURRENT_HASH=$(docker run --rm ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:latest dpkg-query -W -f='${Package}\t${Version}\n' | sort | sha256sum | cut -d' ' -f1)
           echo "Current package hash: $CURRENT_HASH"
           echo "new_hash=$CURRENT_HASH" >> $GITHUB_OUTPUT
 
@@ -188,16 +217,7 @@ jobs:
           push: true
           build-args: |
             UBUNTU_VERSION=${{ matrix.os_version }}
-          # The tag remains dynamic as before
-          tags: |
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:latest
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:${{ steps.get_date.outputs.date }}
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_version }}:latest
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_version }}:${{ steps.get_date.outputs.date }}
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_version }}-latest
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_name }}-latest
-            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
+          tags: ${{ steps.docker_tags.outputs.tags }}
           cache-from: type=gha,scope=${{ github.workflow }}-${{ matrix.os_version }}
           cache-to: type=gha,mode=max,scope=${{ github.workflow }}-${{ matrix.os_version }}
 
