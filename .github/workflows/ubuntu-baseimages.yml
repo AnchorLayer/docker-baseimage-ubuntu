@@ -1,6 +1,7 @@
 # Workflow name
 name: 'Check Ubuntu Repos and Rebuild Base Images'
 
+
 # Triggers for the workflow
 on:
   # Runs on a schedule (at 1 and 31 minutes past the hour)
@@ -150,20 +151,38 @@ jobs:
           git clone --depth 1 https://github.com/anchore/grype.git
           
       # Scans the image with Grype and generates various vulnerability reports
-      # Simplified Grype command to debug issues with multiple output formats.
-      # If this works, you can re-introduce other formats by running Grype
-      # multiple times or by carefully combining output options if supported.
       - name: 'Scan image with Grype and generate all reports'
         if: steps.check_changes.outputs.changed == 'true'
         run: |
           IMAGE_TAG="ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.codename }}:latest"
         
-          echo "--- Generating Grype JSON report for $IMAGE_TAG ---"
+          # Human-readable summary for the logs (doesn't save a file)
+          echo "--- Generating Grype Table Report (for logs) ---"
+          grype --scope all-layers $IMAGE_TAG -o table
 
-          # Run Grype to generate a JSON report
+          # JSON report (machine-readable, most detailed)
+          echo "--- Generating Grype JSON Report ---"
           grype --scope all-layers $IMAGE_TAG -o json > grype-report-${{ matrix.codename }}.json
 
-          echo "--- JSON report generated successfully. ---"
+          # SARIF report for security dashboards (e.g., GitHub Security tab)
+          echo "--- Generating Grype SARIF Report ---"
+          grype --scope all-layers $IMAGE_TAG -o sarif > grype-report-${{ matrix.codename }}.sarif
+
+          # CycloneDX XML report (SBOM format)
+          echo "--- Generating Grype CycloneDX XML Report ---"
+          grype --scope all-layers $IMAGE_TAG -o cyclonedx > grype-report-${{ matrix.codename }}.cyclonedx.xml
+
+          # CycloneDX JSON report (SBOM format)
+          echo "--- Generating Grype CycloneDX JSON Report ---"
+          grype --scope all-layers $IMAGE_TAG -o cyclonedx-json > grype-report-${{ matrix.codename }}.cyclonedx.json
+
+          # Custom CSV template report
+          echo "--- Generating Grype Custom CSV Report ---"
+          grype --scope all-layers $IMAGE_TAG -o template -t grype/templates/csv.tmpl > grype-report-${{ matrix.codename }}.csv
+
+          # Custom HTML template report
+          echo "--- Generating Grype Custom HTML Report ---"
+          grype --scope all-layers $IMAGE_TAG -o template -t grype/templates/html.tmpl > grype-report-${{ matrix.codename }}.html
 
       # Uploads the generated vulnerability reports as artifacts
       - name: 'Upload vulnerability reports'
@@ -171,14 +190,13 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: vuln-reports-${{ matrix.codename }}
-          path: |\
+          path: |
             grype-report-${{ matrix.codename }}.json
-            # Uncomment and add other report paths here if you re-enable them
-            # grype-report-${{ matrix.codename }}.sarif
-            # grype-report-${{ matrix.codename }}.cyclonedx.xml
-            # grype-report-${{ matrix.codename }}.cyclonedx.json
-            # grype-report-${{ matrix.codename }}.csv
-            # grype-report-${{ matrix.codename }}.html
+            grype-report-${{ matrix.codename }}.sarif
+            grype-report-${{ matrix.codename }}.cyclonedx.xml
+            grype-report-${{ matrix.codename }}.cyclonedx.json
+            grype-report-${{ matrix.codename }}.csv
+            grype-report-${{ matrix.codename }}.html
 
       # Pushes the Docker image to the registry
       - name: 'Push Docker image'
