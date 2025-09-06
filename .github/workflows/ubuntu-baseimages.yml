@@ -97,6 +97,14 @@ jobs:
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
 
+      # Generate content hash for cache busting
+      - name: 'Generate content hash'
+        id: content_hash
+        run: |
+          DOCKERFILE_HASH=$(git ls-tree HEAD docker/Dockerfile.ubuntu | awk '{print $3}')
+          VERSIONS_ENV_HASH=$(git ls-tree HEAD versions.env | awk '{print $3}')
+          echo "hash=${DOCKERFILE_HASH}-${VERSIONS_ENV_HASH}" >> $GITHUB_OUTPUT
+
       # Builds the Docker image but does not push it
       - name: 'Build Docker image'
         id: build-image
@@ -109,8 +117,8 @@ jobs:
           build-args: |
             UBUNTU_VERSION=${{ matrix.version }}
           tags: ${{ steps.docker_tags.outputs.tags }}
-          cache-from: type=gha,scope=${{ github.workflow }}-${{ matrix.version }}
-          cache-to: type=gha,mode=max,scope=${{ github.workflow }}-${{ matrix.version }}
+          cache-from: type=gha,scope=${{ github.workflow }}-${{ matrix.version }}-${{ steps.content_hash.outputs.hash }}
+          cache-to: type=gha,mode=max,scope=${{ github.workflow }}-${{ matrix.version }}-${{ steps.content_hash.outputs.hash }}
 
       # Caches the package list hash to speed up subsequent runs
       - name: 'Cache package list hash for Ubuntu ${{ matrix.version }}'
@@ -125,7 +133,7 @@ jobs:
         id: generate_hash
         run: |
           echo "Generating package list hash for ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.codename }}:latest..."
-          CURRENT_HASH=$(docker run --rm ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.codename }}:latest dpkg-query -W -f='${Package}\t${Version}\n' | sort | sha256sum | cut -d' ' -f1)
+          CURRENT_HASH=$(docker run --rm ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.codename }}:latest dpkg-query -W -f='%P\t${Version}\n' | sort | sha256sum | cut -d' ' -f1)
           echo "Current package hash: $CURRENT_HASH"
           echo "new_hash=$CURRENT_HASH" >> $GITHUB_OUTPUT
 
@@ -210,8 +218,8 @@ jobs:
           build-args: |
             UBUNTU_VERSION=${{ matrix.version }}
           tags: ${{ steps.docker_tags.outputs.tags }}
-          cache-from: type=gha,scope=${{ github.workflow }}-${{ matrix.version }}
-          cache-to: type=gha,mode=max,scope=${{ github.workflow }}-${{ matrix.version }}
+          cache-from: type=gha,scope=${{ github.workflow }}-${{ matrix.version }}-${{ steps.content_hash.outputs.hash }}
+          cache-to: type=gha,mode=max,scope=${{ github.workflow }}-${{ matrix.version }}-${{ steps.content_hash.outputs.hash }}
 
   make-packages-public:
     name: Make Packages Public
