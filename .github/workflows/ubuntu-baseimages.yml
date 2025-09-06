@@ -46,46 +46,12 @@ jobs:
       - name: 'Check out the repo'
         uses: actions/checkout@v4
 
-      # Caches the APT state hash to speed up subsequent runs
-      - name: 'Cache APT state hash for Ubuntu ${{ matrix.os_version }}'
-        uses: actions/cache@v4
-        id: cache-apt-state
-        with:
-          path: apt-state-${{ matrix.os_version }}.hash
-          key: ubuntu-repo-state-${{ matrix.os_version }}
-
-      # Generates the current APT state hash
-      - name: 'Generate current APT state hash for Ubuntu ${{ matrix.os_version }}'
-        id: generate_hash
-        run: |
-          echo "Checking APT lists for Ubuntu:${{ matrix.os_version }}..."
-          CURRENT_HASH=$(docker run --rm ubuntu:${{ matrix.os_version }} bash -c "apt-get update > /dev/null && find /var/lib/apt/lists/ -type f -print0 | xargs -0 sha256sum | sort | sha256sum | awk '{print \$1}'")
-          echo "Current state hash: $CURRENT_HASH"
-          echo "new_hash=$CURRENT_HASH" >> $GITHUB_OUTPUT
-
-      # Compares the new hash with the old one to detect changes
-      - name: 'Compare hashes for Ubuntu ${{ matrix.os_version }}'
-        id: check_changes
-        run: |
-          OLD_HASH=$(cat apt-state-${{ matrix.os_version }}.hash 2>/dev/null || echo "no-previous-hash")
-          NEW_HASH="${{ steps.generate_hash.outputs.new_hash }}"
-          if [ "$OLD_HASH" == "$NEW_HASH" ]; then
-            echo "✅ No changes detected for Ubuntu ${{ matrix.os_version }}."
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "🚨 Changes detected for Ubuntu ${{ matrix.os_version }}! Triggering rebuild."
-            echo "changed=true" >> $GITHUB_OUTPUT
-            echo $NEW_HASH > apt-state-${{ matrix.os_version }}.hash
-          fi
-
       # Sets up Docker Buildx for building images
       - name: 'Set up Docker Buildx'
-        if: steps.check_changes.outputs.changed == 'true'
         uses: docker/setup-buildx-action@v3
 
       # Logs in to Docker Hub
       - name: 'Log in to Docker Hub'
-        if: steps.check_changes.outputs.changed == 'true'
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
@@ -93,13 +59,11 @@ jobs:
           
       # Gets the current date for tagging
       - name: Get current date
-        if: steps.check_changes.outputs.changed == 'true'
         id: get_date
         run: echo "date=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
 
-      # Builds the Docker image
+      # Builds the Docker image but does not push it
       - name: 'Build Docker image'
-        if: steps.check_changes.outputs.changed == 'true'
         id: build-image
         uses: docker/build-push-action@v5
         with:
@@ -118,6 +82,38 @@ jobs:
             anchorlayer/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
             anchorlayer/ubuntu:${{ matrix.os_name }}-latest
             anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
+
+      # Caches the package list hash to speed up subsequent runs
+      - name: 'Cache package list hash for Ubuntu ${{ matrix.os_version }}'
+        uses: actions/cache@v4
+        id: cache-pkg-state
+        with:
+          path: package-state-${{ matrix.os_version }}.hash
+          key: ubuntu-pkg-state-${{ matrix.os_version }}
+
+      # Generates the current package list hash
+      - name: 'Generate package list hash for Ubuntu ${{ matrix.os_version }}'
+        id: generate_hash
+        run: |
+          echo "Generating package list hash for anchorlayer/ubuntu-${{ matrix.os_name }}:latest..."
+          CURRENT_HASH=$(docker run --rm anchorlayer/ubuntu-${{ matrix.os_name }}:latest dpkg-query -W -f='${Package}\t${Version}\n' | sort | sha256sum | awk '{print \$1}')
+          echo "Current package hash: $CURRENT_HASH"
+          echo "new_hash=$CURRENT_HASH" >> $GITHUB_OUTPUT
+
+      # Compares the new hash with the old one to detect changes
+      - name: 'Compare hashes for Ubuntu ${{ matrix.os_version }}'
+        id: check_changes
+        run: |
+          OLD_HASH=$(cat package-state-${{ matrix.os_version }}.hash 2>/dev/null || echo "no-previous-hash")
+          NEW_HASH="${{ steps.generate_hash.outputs.new_hash }}"
+          if [ "$OLD_HASH" == "$NEW_HASH" ]; then
+            echo "✅ No package changes detected for Ubuntu ${{ matrix.os_version }}."
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "🚨 Package changes detected for Ubuntu ${{ matrix.os_version }}! Triggering rebuild."
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo $NEW_HASH > package-state-${{ matrix.os_version }}.hash
+          fi
       
       # Installs Grype and clones templates for vulnerability scanning
       - name: 'Install Grype and clone templates'
@@ -216,9 +212,22 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: ./reports-tmp
+        continue-on-error: true
+
+      - name: 'Check for downloaded reports'
+        id: check_reports
+        run: |
+          if [ -d "reports-tmp" ] && [ -n "$(ls -A reports-tmp)" ]; then
+            echo "reports_downloaded=true"
+            echo "reports_downloaded=true" >> $GITHUB_OUTPUT
+          else
+            echo "reports_downloaded=false"
+            echo "reports_downloaded=false" >> $GITHUB_OUTPUT
+          fi
 
       # Moves the reports into the repository for processing
       - name: 'Move reports into repo'
+        if: steps.check_reports.outputs.reports_downloaded == 'true'
         run: |
           mkdir -p vuln-reports
           for report_dir in reports-tmp/vuln-reports-*; do
@@ -231,6 +240,7 @@ jobs:
 
       # Updates the README with vulnerability badges based on the scan results
       - name: 'Update README with vuln badges'
+        if: steps.check_reports.outputs.reports_downloaded == 'true'
         run: |
           for report_dir in vuln-reports-*; do
               OS_NAME=$(echo "$report_dir" | sed 's/vuln-reports-//')
@@ -273,6 +283,7 @@ jobs:
 
       # Commits and pushes the changes to the repository
       - name: 'Commit and push changes'
+        if: steps.check_reports.outputs.reports_downloaded == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update vulnerability badges and reports"
