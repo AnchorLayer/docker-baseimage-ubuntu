@@ -6,6 +6,8 @@ on:
 jobs:
   clear-cache:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write
     steps:
       - name: Clear GitHub Actions Cache
         uses: actions/github-script@v6
