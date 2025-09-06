@@ -96,7 +96,7 @@ jobs:
         id: generate_hash
         run: |
           echo "Generating package list hash for anchorlayer/ubuntu-${{ matrix.os_name }}:latest..."
-          CURRENT_HASH=$(docker run --rm anchorlayer/ubuntu-${{ matrix.os_name }}:latest dpkg-query -W -f='${Package}\t${Version}\n' | sort | sha256sum | awk '{print \$1}')
+          CURRENT_HASH=$(docker run --rm anchorlayer/ubuntu-${{ matrix.os_name }}:latest dpkg-query -W -f='${Package}\t${Version}\n' | sort | sha256sum | cut -d' ' -f1)
           echo "Current package hash: $CURRENT_HASH"
           echo "new_hash=$CURRENT_HASH" >> $GITHUB_OUTPUT
 
