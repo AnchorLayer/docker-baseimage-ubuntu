@@ -11,20 +11,23 @@ on:
 
 # Defines the jobs to be run
 jobs:
-  # Job to determine the latest version
+  # Job to determine the latest version and matrix
   prepare:
     runs-on: ubuntu-latest
     outputs:
-      latest_version: ${{ steps.get_latest.outputs.latest_version }}
+      latest_version: ${{ steps.get_versions.outputs.latest_version }}
+      matrix: ${{ steps.get_versions.outputs.matrix }}
     steps:
       - name: 'Check out the repo'
         uses: actions/checkout@v4
-      - name: 'Determine and log latest Ubuntu version'
-        id: get_latest
+      - name: 'Generate matrix and get latest version'
+        id: get_versions
         run: |
-          latest_version=$(grep -oP 'os_version: "\K[^\"]+' .github/workflows/ubuntu-baseimages.yml | sort -Vr | head -n 1)
-          echo "The latest version is $latest_version"
-          echo "latest_version=$latest_version" >> $GITHUB_OUTPUT
+          MATRIX=$(jq -c '{include: .}' versions.env)
+          LATEST_VERSION=$(jq -r '.[0].version' versions.env)
+          echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
+          echo "latest_version=$LATEST_VERSION" >> $GITHUB_OUTPUT
+          echo "The latest version is $LATEST_VERSION"
 
   # Job to check for updates and build images
   check-and-build:
@@ -41,20 +44,7 @@ jobs:
       # Don't cancel other jobs if one fails
       fail-fast: false
       # Matrix of OS versions to run the job against
-      matrix:
-        include:
-          - os_version: "24.04"
-            os_name: "noble"
-          - os_version: "22.04"
-            os_name: "jammy"
-          - os_version: "20.04"
-            os_name: "focal"
-          - os_version: "18.04"
-            os_name: "bionic"
-          - os_version: "16.04"
-            os_name: "xenial"
-          - os_version: "14.04"
-            os_name: "trusty"
+      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
 
     # Steps to be executed in the job
     steps:
@@ -88,15 +78,15 @@ jobs:
       - name: 'Generate Docker tags'
         id: docker_tags
         run: |
-          tags="ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:latest
-          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:${{ steps.get_date.outputs.date }}
-          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_version }}:latest
-          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_version }}:${{ steps.get_date.outputs.date }}
-          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_version }}-latest
-          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
-          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_name }}-latest
-          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}"
-          if [ "${{ matrix.os_version }}" == "${{ needs.prepare.outputs.latest_version }}" ]; then
+          tags="ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.codename }}:latest
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.codename }}:${{ steps.get_date.outputs.date }}
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.version }}:latest
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.version }}:${{ steps.get_date.outputs.date }}
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.version }}-latest
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.version }}-${{ steps.get_date.outputs.date }}
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.codename }}-latest
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.codename }}-${{ steps.get_date.outputs.date }}"
+          if [ "${{ matrix.version }}" == "${{ needs.prepare.outputs.latest_version }}" ]; then
             tags="$tags
           ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:latest"
           fi
@@ -116,41 +106,41 @@ jobs:
           push: false
           load: true
           build-args: |
-            UBUNTU_VERSION=${{ matrix.os_version }}
+            UBUNTU_VERSION=${{ matrix.version }}
           tags: ${{ steps.docker_tags.outputs.tags }}
-          cache-from: type=gha,scope=${{ github.workflow }}-${{ matrix.os_version }}
-          cache-to: type=gha,mode=max,scope=${{ github.workflow }}-${{ matrix.os_version }}
+          cache-from: type=gha,scope=${{ github.workflow }}-${{ matrix.version }}
+          cache-to: type=gha,mode=max,scope=${{ github.workflow }}-${{ matrix.version }}
 
       # Caches the package list hash to speed up subsequent runs
-      - name: 'Cache package list hash for Ubuntu ${{ matrix.os_version }}'
+      - name: 'Cache package list hash for Ubuntu ${{ matrix.version }}'
         uses: actions/cache@v4
         id: cache-pkg-state
         with:
-          path: package-state-${{ matrix.os_version }}.hash
-          key: ubuntu-pkg-state-${{ matrix.os_version }}
+          path: package-state-${{ matrix.version }}.hash
+          key: ubuntu-pkg-state-${{ matrix.version }}
 
       # Generates the current package list hash
-      - name: 'Generate package list hash for Ubuntu ${{ matrix.os_version }}'
+      - name: 'Generate package list hash for Ubuntu ${{ matrix.version }}'
         id: generate_hash
         run: |
-          echo "Generating package list hash for ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:latest..."
-          CURRENT_HASH=$(docker run --rm ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:latest dpkg-query -W -f='${Package}\t${Version}\n' | sort | sha256sum | cut -d' ' -f1)
+          echo "Generating package list hash for ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.codename }}:latest..."
+          CURRENT_HASH=$(docker run --rm ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.codename }}:latest dpkg-query -W -f='${Package}\t${Version}\n' | sort | sha256sum | cut -d' ' -f1)
           echo "Current package hash: $CURRENT_HASH"
           echo "new_hash=$CURRENT_HASH" >> $GITHUB_OUTPUT
 
       # Compares the new hash with the old one to detect changes
-      - name: 'Compare hashes for Ubuntu ${{ matrix.os_version }}'
+      - name: 'Compare hashes for Ubuntu ${{ matrix.version }}'
         id: check_changes
         run: |
-          OLD_HASH=$(cat package-state-${{ matrix.os_version }}.hash 2>/dev/null || echo "no-previous-hash")
+          OLD_HASH=$(cat package-state-${{ matrix.version }}.hash 2>/dev/null || echo "no-previous-hash")
           NEW_HASH="${{ steps.generate_hash.outputs.new_hash }}"
           if [ "$OLD_HASH" == "$NEW_HASH" ]; then
-            echo "✅ No package changes detected for Ubuntu ${{ matrix.os_version }}."
+            echo "✅ No package changes detected for Ubuntu ${{ matrix.version }}."
             echo "changed=false" >> $GITHUB_OUTPUT
           else
-            echo "🚨 Package changes detected for Ubuntu ${{ matrix.os_version }}! Triggering rebuild."
+            echo "🚨 Package changes detected for Ubuntu ${{ matrix.version }}! Triggering rebuild."
             echo "changed=true" >> $GITHUB_OUTPUT
-            echo $NEW_HASH > package-state-${{ matrix.os_version }}.hash
+            echo $NEW_HASH > package-state-${{ matrix.version }}.hash
           fi
       
       # Installs Grype and clones templates for vulnerability scanning
@@ -164,7 +154,7 @@ jobs:
       - name: 'Scan image with Grype and generate all reports'
         if: steps.check_changes.outputs.changed == 'true'
         run: |
-          IMAGE_TAG="ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:latest"
+          IMAGE_TAG="ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.codename }}:latest"
         
           # Human-readable summary for the logs (doesn't save a file)
           echo "--- Generating Grype Table Report (for logs) ---"
@@ -172,41 +162,41 @@ jobs:
 
           # JSON report (machine-readable, most detailed)
           echo "--- Generating Grype JSON Report ---"
-          grype --scope all-layers $IMAGE_TAG -o json > grype-report-${{ matrix.os_name }}.json
+          grype --scope all-layers $IMAGE_TAG -o json > grype-report-${{ matrix.codename }}.json
 
           # SARIF report for security dashboards (e.g., GitHub Security tab)
           echo "--- Generating Grype SARIF Report ---"
-          grype --scope all-layers $IMAGE_TAG -o sarif > grype-report-${{ matrix.os_name }}.sarif
+          grype --scope all-layers $IMAGE_TAG -o sarif > grype-report-${{ matrix.codename }}.sarif
 
           # CycloneDX XML report (SBOM format)
           echo "--- Generating Grype CycloneDX XML Report ---"
-          grype --scope all-layers $IMAGE_TAG -o cyclonedx > grype-report-${{ matrix.os_name }}.cyclonedx.xml
+          grype --scope all-layers $IMAGE_TAG -o cyclonedx > grype-report-${{ matrix.codename }}.cyclonedx.xml
 
           # CycloneDX JSON report (SBOM format)
           echo "--- Generating Grype CycloneDX JSON Report ---"
-          grype --scope all-layers $IMAGE_TAG -o cyclonedx-json > grype-report-${{ matrix.os_name }}.cyclonedx.json
+          grype --scope all-layers $IMAGE_TAG -o cyclonedx-json > grype-report-${{ matrix.codename }}.cyclonedx.json
 
           # Custom CSV template report
           echo "--- Generating Grype Custom CSV Report ---"
-          grype --scope all-layers $IMAGE_TAG -o template -t grype/templates/csv.tmpl > grype-report-${{ matrix.os_name }}.csv
+          grype --scope all-layers $IMAGE_TAG -o template -t grype/templates/csv.tmpl > grype-report-${{ matrix.codename }}.csv
 
           # Custom HTML template report
           echo "--- Generating Grype Custom HTML Report ---"
-          grype --scope all-layers $IMAGE_TAG -o template -t grype/templates/html.tmpl > grype-report-${{ matrix.os_name }}.html
+          grype --scope all-layers $IMAGE_TAG -o template -t grype/templates/html.tmpl > grype-report-${{ matrix.codename }}.html
 
       # Uploads the generated vulnerability reports as artifacts
       - name: 'Upload vulnerability reports'
         if: steps.check_changes.outputs.changed == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: vuln-reports-${{ matrix.os_name }}
+          name: vuln-reports-${{ matrix.codename }}
           path: |
-            grype-report-${{ matrix.os_name }}.json
-            grype-report-${{ matrix.os_name }}.sarif
-            grype-report-${{ matrix.os_name }}.cyclonedx.xml
-            grype-report-${{ matrix.os_name }}.cyclonedx.json
-            grype-report-${{ matrix.os_name }}.csv
-            grype-report-${{ matrix.os_name }}.html
+            grype-report-${{ matrix.codename }}.json
+            grype-report-${{ matrix.codename }}.sarif
+            grype-report-${{ matrix.codename }}.cyclonedx.xml
+            grype-report-${{ matrix.codename }}.cyclonedx.json
+            grype-report-${{ matrix.codename }}.csv
+            grype-report-${{ matrix.codename }}.html
 
       # Pushes the Docker image to the registry
       - name: 'Push Docker image'
@@ -217,10 +207,10 @@ jobs:
           file: ./Dockerfile.ubuntu
           push: true
           build-args: |
-            UBUNTU_VERSION=${{ matrix.os_version }}
+            UBUNTU_VERSION=${{ matrix.version }}
           tags: ${{ steps.docker_tags.outputs.tags }}
-          cache-from: type=gha,scope=${{ github.workflow }}-${{ matrix.os_version }}
-          cache-to: type=gha,mode=max,scope=${{ github.workflow }}-${{ matrix.os_version }}
+          cache-from: type=gha,scope=${{ github.workflow }}-${{ matrix.version }}
+          cache-to: type=gha,mode=max,scope=${{ github.workflow }}-${{ matrix.version }}
 
   make-packages-public:
     name: Make Packages Public
@@ -229,6 +219,8 @@ jobs:
     permissions:
       packages: write
     steps:
+      - name: 'Check out the repo'
+        uses: actions/checkout@v4
       - name: 'Convert repository owner to lowercase'
         id: lowercase_owner
         run: echo "owner=$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_OUTPUT
@@ -244,7 +236,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           LOWERCASE_OWNER="${{ steps.lowercase_owner.outputs.owner }}"
-          PACKAGE_NAMES="ubuntu ubuntu-noble ubuntu-24.04 ubuntu-jammy ubuntu-22.04 ubuntu-focal ubuntu-20.04 ubuntu-bionic ubuntu-18.04 ubuntu-xenial ubuntu-16.04 ubuntu-trusty ubuntu-14.04"
+          PACKAGE_NAMES="ubuntu $(jq -r '.[] | "ubuntu-" + .codename, "ubuntu-" + .version' versions.env | tr '\n' ' ')"
 
           if [ "${{ steps.owner_type.outputs.type }}" == "Organization" ]; then
             API_BASE_URL="https://api.github.com/orgs/$LOWERCASE_OWNER/packages/container"
@@ -313,6 +305,12 @@ jobs:
         run: |
           for report_dir in vuln-reports-*; do
               OS_NAME=$(echo "$report_dir" | sed 's/vuln-reports-//')
+              OS_VERSION=$(jq -r --arg OS_NAME "$OS_NAME" '.[] | select(.codename == $OS_NAME) | .version' versions.env)
+              if [ -z "$OS_VERSION" ]; then
+                  echo "Could not find version for OS name $OS_NAME. Skipping."
+                  continue
+              fi
+              OS_NAME_CAPITALIZED="$(tr '[:lower:]' '[:upper:]' <<< ${OS_NAME:0:1})${OS_NAME:1}"
               report_path="$report_dir/grype-report-$OS_NAME.csv"
 
               if [ ! -f "$report_path" ]; then
@@ -328,26 +326,7 @@ jobs:
               REPORT_URL="https://htmlpreview.github.io/?https://github.com/${{ github.repository }}/blob/main/$report_dir/grype-report-$OS_NAME.html"
               VULN_BADGES_LINE="[![Critical Vulns](https://img.shields.io/badge/Critical-$CRITICAL-red.svg)]($REPORT_URL) [![High Vulns](https://img.shields.io/badge/High-$HIGH-orange.svg)]($REPORT_URL) [![Medium Vulns](https://img.shields.io/badge/Medium-$MEDIUM-yellow.svg)]($REPORT_URL) [![Low Vulns](https://img.shields.io/badge/Low-$LOW-blue.svg)]($REPORT_URL)"
 
-              case "$OS_NAME" in
-                  noble)
-                      sed -i "/### Ubuntu 24.04 Noble/!b;n;c$VULN_BADGES_LINE" README.md
-                      ;;
-                  jammy)
-                      sed -i "/### Ubuntu 22.04 Jammy/!b;n;c$VULN_BADGES_LINE" README.md
-                      ;;
-                  focal)
-                      sed -i "/### Ubuntu 20.04 Focal/!b;n;c$VULN_BADGES_LINE" README.md
-                      ;;
-                  bionic)
-                      sed -i "/### Ubuntu 18.04 Bionic/!b;n;c$VULN_BADGES_LINE" README.md
-                      ;;
-                  xenial)
-                      sed -i "/### Ubuntu 16.04 Xenial/!b;n;c$VULN_BADGES_LINE" README.md
-                      ;;
-                  trusty)
-                      sed -i "/### Ubuntu 14.04 Trusty/!b;n;c$VULN_BADGES_LINE" README.md
-                      ;;
-              esac
+              sed -i "/### Ubuntu $OS_VERSION $OS_NAME_CAPITALIZED/!b;n;c$VULN_BADGES_LINE" README.md
           done
 
       # Commits and pushes the changes to the repository
