@@ -1,7 +1,5 @@
 ## Vulnerability Scan Results
 
-The following badges display the number of vulnerabilities found in the latest build of each Ubuntu base image. The scan is run automatically via GitHub Actions.
-
 ### Ubuntu 24.04 Noble
 [![Critical Vulns](https://img.shields.io/badge/Critical-0-red.svg)](https://htmlpreview.github.io/?https://github.com/AnchorLayer/docker-baseimage-ubuntu/blob/main/vuln-reports-noble/grype-report-noble.html) [![High Vulns](https://img.shields.io/badge/High-0-orange.svg)](https://htmlpreview.github.io/?https://github.com/AnchorLayer/docker-baseimage-ubuntu/blob/main/vuln-reports-noble/grype-report-noble.html) [![Medium Vulns](https://img.shields.io/badge/Medium-17-yellow.svg)](https://htmlpreview.github.io/?https://github.com/AnchorLayer/docker-baseimage-ubuntu/blob/main/vuln-reports-noble/grype-report-noble.html) [![Low Vulns](https://img.shields.io/badge/Low-15-blue.svg)](https://htmlpreview.github.io/?https://github.com/AnchorLayer/docker-baseimage-ubuntu/blob/main/vuln-reports-noble/grype-report-noble.html)
 
