@@ -13,15 +13,23 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const caches = await github.rest.actions.getActionsCacheList({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-            })
-            for (const cache of caches.data.actions_caches) {
-              console.log(`Attempting to delete cache with ID: ${cache.id} and Key: ${cache.key}`)
-              await github.rest.actions.deleteActionsCacheById({
+            let page = 1;
+            let caches;
+            do {
+              caches = await github.rest.actions.getActionsCacheList({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                cache_id: cache.id,
-              })
-            }
+                per_page: 100, // Fetch 100 caches per page
+                page: page,
+              });
+
+              for (const cache of caches.data.actions_caches) {
+                console.log(`Attempting to delete cache with ID: ${cache.id} and Key: ${cache.key}`);
+                await github.rest.actions.deleteActionsCacheById({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  cache_id: cache.id,
+                });
+              }
+              page++;
+            } while (caches.data.actions_caches.length === 100);
