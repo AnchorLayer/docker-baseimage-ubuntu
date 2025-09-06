@@ -110,7 +110,6 @@ jobs:
             UBUNTU_VERSION=${{ matrix.version }}
           tags: ${{ steps.docker_tags.outputs.tags }}
           cache-from: type=gha,scope=${{ github.workflow }}-${{ matrix.version }}
-          cache-to: type=gha,mode=max,scope=${{ github.workflow }}-${{ matrix.version }}
 
       # Caches the package list hash to speed up subsequent runs
       - name: 'Cache package list hash for Ubuntu ${{ matrix.version }}'
