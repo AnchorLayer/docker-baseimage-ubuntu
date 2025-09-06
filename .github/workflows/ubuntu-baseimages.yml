@@ -1,19 +1,30 @@
+# Workflow name
 name: 'Check Ubuntu Repos and Rebuild Base Images'
 
+# Triggers for the workflow
 on:
+  # Runs on a schedule (at 1 and 31 minutes past the hour)
   schedule:
-    - cron: '00,31 * * * *'
+    - cron: '01,31 * * * *'
+  # Allows manual triggering of the workflow
   workflow_dispatch:
 
+# Defines the jobs to be run
 jobs:
+  # Job to check for updates and build images
   check-and-build:
+    # Runner environment
     runs-on: ubuntu-latest
+    # Permissions for the job
     permissions:
       contents: write
       packages: write
       security-events: write
+    # Strategy for running the job
     strategy:
+      # Don't cancel other jobs if one fails
       fail-fast: false
+      # Matrix of OS versions to run the job against
       matrix:
         include:
           - os_version: "24.04"
@@ -29,10 +40,13 @@ jobs:
           - os_version: "14.04"
             os_name: "trusty"
 
+    # Steps to be executed in the job
     steps:
+      # Checks out the repository code
       - name: 'Check out the repo'
         uses: actions/checkout@v4
 
+      # Caches the APT state hash to speed up subsequent runs
       - name: 'Cache APT state hash for Ubuntu ${{ matrix.os_version }}'
         uses: actions/cache@v4
         id: cache-apt-state
@@ -40,6 +54,7 @@ jobs:
           path: apt-state-${{ matrix.os_version }}.hash
           key: ubuntu-repo-state-${{ matrix.os_version }}
 
+      # Generates the current APT state hash
       - name: 'Generate current APT state hash for Ubuntu ${{ matrix.os_version }}'
         id: generate_hash
         run: |
@@ -48,6 +63,7 @@ jobs:
           echo "Current state hash: $CURRENT_HASH"
           echo "new_hash=$CURRENT_HASH" >> $GITHUB_OUTPUT
 
+      # Compares the new hash with the old one to detect changes
       - name: 'Compare hashes for Ubuntu ${{ matrix.os_version }}'
         id: check_changes
         run: |
@@ -62,10 +78,12 @@ jobs:
             echo $NEW_HASH > apt-state-${{ matrix.os_version }}.hash
           fi
 
+      # Sets up Docker Buildx for building images
       - name: 'Set up Docker Buildx'
         if: steps.check_changes.outputs.changed == 'true'
         uses: docker/setup-buildx-action@v3
 
+      # Logs in to Docker Hub
       - name: 'Log in to Docker Hub'
         if: steps.check_changes.outputs.changed == 'true'
         uses: docker/login-action@v3
@@ -73,11 +91,13 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           
+      # Gets the current date for tagging
       - name: Get current date
         if: steps.check_changes.outputs.changed == 'true'
         id: get_date
         run: echo "date=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
 
+      # Builds the Docker image
       - name: 'Build Docker image'
         if: steps.check_changes.outputs.changed == 'true'
         id: build-image
@@ -99,12 +119,14 @@ jobs:
             anchorlayer/ubuntu:${{ matrix.os_name }}-latest
             anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
       
+      # Installs Grype and clones templates for vulnerability scanning
       - name: 'Install Grype and clone templates'
         if: steps.check_changes.outputs.changed == 'true'
         run: |
           curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
           git clone --depth 1 https://github.com/anchore/grype.git
           
+      # Scans the image with Grype and generates various vulnerability reports
       - name: 'Scan image with Grype and generate all reports'
         if: steps.check_changes.outputs.changed == 'true'
         run: |
@@ -138,6 +160,7 @@ jobs:
           echo "--- Generating Grype Custom HTML Report ---"
           grype --scope all-layers $IMAGE_TAG -o template -t grype/templates/html.tmpl > grype-report-${{ matrix.os_name }}.html
 
+      # Uploads the generated vulnerability reports as artifacts
       - name: 'Upload vulnerability reports'
         if: steps.check_changes.outputs.changed == 'true'
         uses: actions/upload-artifact@v4
@@ -151,6 +174,7 @@ jobs:
             grype-report-${{ matrix.os_name }}.csv
             grype-report-${{ matrix.os_name }}.html
 
+      # Pushes the Docker image to the registry
       - name: 'Push Docker image'
         if: ${{ steps.check_changes.outputs.changed == 'true' && success() }}
         uses: docker/build-push-action@v5
@@ -172,20 +196,28 @@ jobs:
             anchorlayer/ubuntu:${{ matrix.os_name }}-latest
             anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
             
+  # Job to update the README file
   update-readme:
+    # Depends on the completion of the check-and-build job
     needs: check-and-build
+    # Runner environment
     runs-on: ubuntu-latest
+    # Permissions for the job
     permissions:
       contents: write
+    # Steps to be executed in the job
     steps:
+      # Checks out the repository code
       - name: 'Check out the repo'
         uses: actions/checkout@v4
 
+      # Downloads the vulnerability reports from the previous job
       - name: 'Download vulnerability reports'
         uses: actions/download-artifact@v4
         with:
           path: ./reports-tmp
 
+      # Moves the reports into the repository for processing
       - name: 'Move reports into repo'
         run: |
           mkdir -p vuln-reports
@@ -197,6 +229,7 @@ jobs:
           done
           rm -rf reports-tmp
 
+      # Updates the README with vulnerability badges based on the scan results
       - name: 'Update README with vuln badges'
         run: |
           for report_dir in vuln-reports-*; do
@@ -238,6 +271,7 @@ jobs:
               esac
           done
 
+      # Commits and pushes the changes to the repository
       - name: 'Commit and push changes'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
