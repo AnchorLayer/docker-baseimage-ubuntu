@@ -63,6 +63,11 @@ jobs:
         id: get_date
         run: echo "date=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
 
+      # Convert repository owner to lowercase
+      - name: 'Convert repository owner to lowercase'
+        id: lowercase_owner
+        run: echo "owner=$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_OUTPUT
+
       # Builds the Docker image but does not push it
       - name: 'Build Docker image'
         id: build-image
@@ -75,14 +80,14 @@ jobs:
           build-args: |
             UBUNTU_VERSION=${{ matrix.os_version }}
           tags: |
-            ghcr.io/${{ github.repository_owner }}/ubuntu-${{ matrix.os_name }}:latest
-            ghcr.io/${{ github.repository_owner }}/ubuntu-${{ matrix.os_name }}:${{ steps.get_date.outputs.date }}
-            ghcr.io/${{ github.repository_owner }}/ubuntu-${{ matrix.os_version }}:latest
-            ghcr.io/${{ github.repository_owner }}/ubuntu-${{ matrix.os_version }}:${{ steps.get_date.outputs.date }}
-            ghcr.io/${{ github.repository_owner }}/ubuntu:${{ matrix.os_version }}-latest
-            ghcr.io/${{ github.repository_owner }}/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
-            ghcr.io/${{ github.repository_owner }}/ubuntu:${{ matrix.os_name }}-latest
-            ghcr.io/${{ github.repository_owner }}/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:latest
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:${{ steps.get_date.outputs.date }}
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_version }}:latest
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_version }}:${{ steps.get_date.outputs.date }}
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_version }}-latest
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_name }}-latest
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
           cache-from: type=gha,scope=${{ github.workflow }}-${{ matrix.os_version }}
           cache-to: type=gha,mode=max,scope=${{ github.workflow }}-${{ matrix.os_version }}
 
@@ -98,8 +103,8 @@ jobs:
       - name: 'Generate package list hash for Ubuntu ${{ matrix.os_version }}'
         id: generate_hash
         run: |
-          echo "Generating package list hash for ghcr.io/${{ github.repository_owner }}/ubuntu-${{ matrix.os_name }}:latest..."
-          CURRENT_HASH=$(docker run --rm ghcr.io/${{ github.repository_owner }}/ubuntu-${{ matrix.os_name }}:latest dpkg-query -W -f='${Package}\t${Version}\n' | sort | sha256sum | cut -d' ' -f1)
+          echo "Generating package list hash for ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:latest..."
+          CURRENT_HASH=$(docker run --rm ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:latest dpkg-query -W -f='${Package}\t${Version}\n' | sort | sha256sum | cut -d' ' -f1)
           echo "Current package hash: $CURRENT_HASH"
           echo "new_hash=$CURRENT_HASH" >> $GITHUB_OUTPUT
 
@@ -129,7 +134,7 @@ jobs:
       - name: 'Scan image with Grype and generate all reports'
         if: steps.check_changes.outputs.changed == 'true'
         run: |
-          IMAGE_TAG="ghcr.io/${{ github.repository_owner }}/ubuntu-${{ matrix.os_name }}:latest"
+          IMAGE_TAG="ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:latest"
         
           # Human-readable summary for the logs (doesn't save a file)
           echo "--- Generating Grype Table Report (for logs) ---"
@@ -186,14 +191,14 @@ jobs:
             UBUNTU_VERSION=${{ matrix.os_version }}
           # The tag remains dynamic as before
           tags: |
-            ghcr.io/${{ github.repository_owner }}/ubuntu-${{ matrix.os_name }}:latest
-            ghcr.io/${{ github.repository_owner }}/ubuntu-${{ matrix.os_name }}:${{ steps.get_date.outputs.date }}
-            ghcr.io/${{ github.repository_owner }}/ubuntu-${{ matrix.os_version }}:latest
-            ghcr.io/${{ github.repository_owner }}/ubuntu-${{ matrix.os_version }}:${{ steps.get_date.outputs.date }}
-            ghcr.io/${{ github.repository_owner }}/ubuntu:${{ matrix.os_version }}-latest
-            ghcr.io/${{ github.repository_owner }}/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
-            ghcr.io/${{ github.repository_owner }}/ubuntu:${{ matrix.os_name }}-latest
-            ghcr.io/${{ github.repository_owner }}/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:latest
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_name }}:${{ steps.get_date.outputs.date }}
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_version }}:latest
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.os_version }}:${{ steps.get_date.outputs.date }}
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_version }}-latest
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_name }}-latest
+            ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
           cache-from: type=gha,scope=${{ github.workflow }}-${{ matrix.os_version }}
           cache-to: type=gha,mode=max,scope=${{ github.workflow }}-${{ matrix.os_version }}
             
@@ -261,7 +266,7 @@ jobs:
               MEDIUM=$(grep -c "Medium" "$report_path" || true)
               LOW=$(grep -c "Low" "$report_path" || true)
 
-              REPORT_URL="https://htmlpreview.github.io/?https://github.com/anchorlayer/docker-baseimage-ubuntu/blob/main/$report_dir/grype-report-$OS_NAME.html"
+              REPORT_URL="https://htmlpreview.github.io/?https://github.com/${{ github.repository }}/blob/main/$report_dir/grype-report-$OS_NAME.html"
               VULN_BADGES_LINE="[![Critical Vulns](https://img.shields.io/badge/Critical-$CRITICAL-red.svg)]($REPORT_URL) [![High Vulns](https://img.shields.io/badge/High-$HIGH-orange.svg)]($REPORT_URL) [![Medium Vulns](https://img.shields.io/badge/Medium-$MEDIUM-yellow.svg)]($REPORT_URL) [![Low Vulns](https://img.shields.io/badge/Low-$LOW-blue.svg)]($REPORT_URL)"
 
               case "$OS_NAME" in
