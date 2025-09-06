@@ -1,0 +1,18 @@
+# 1. Define an argument for the Ubuntu version with a default value.
+# This allows the Dockerfile to be built manually without arguments.
+ARG UBUNTU_VERSION=22.04
+
+# 2. Use the argument in the FROM instruction to set the base image dynamically.
+FROM ubuntu:${UBUNTU_VERSION}
+
+# Set non-interactive to avoid prompts during package installation
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Update, upgrade, and install some basic packages
+RUN apt-get update && apt-get upgrade -y && \
+    apt-get install -y --no-install-recommends \
+    curl \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Set a working directory
+WORKDIR /app
