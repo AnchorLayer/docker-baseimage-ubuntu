@@ -19,13 +19,12 @@ jobs:
     steps:
       - name: 'Check out the repo'
         uses: actions/checkout@v4
-      - name: 'Determine latest Ubuntu version'
+      - name: 'Determine and log latest Ubuntu version'
         id: get_latest
         run: |
-          latest_version=$(grep -oP 'os_version: "\K[^"]+' .github/workflows/ubuntu-baseimages.yml | sort -Vr | head -n 1)
+          latest_version=$(grep -oP 'os_version: "\K[^\"]+' .github/workflows/ubuntu-baseimages.yml | sort -Vr | head -n 1)
+          echo "The latest version is $latest_version"
           echo "latest_version=$latest_version" >> $GITHUB_OUTPUT
-      - name: 'Log latest version'
-        run: echo "The latest version is ${{ steps.get_latest.outputs.latest_version }}"
 
   # Job to check for updates and build images
   check-and-build:
