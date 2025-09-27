@@ -493,6 +493,27 @@
               }
             },
             {
+              "id": "CVE-2025-5278-coreutils",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-5278 low vulnerability for coreutils package"
+              },
+              "fullDescription": {
+                "text": "Version 9.4-3ubuntu6.1 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-5278\nSeverity: low\nPackage: coreutils\nVersion: 9.4-3ubuntu6.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)",
+                "markdown": "**Vulnerability CVE-2025-5278**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 9.4-3ubuntu6.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/coreutils@9.4-3ubuntu6.1?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "4.4"
+              }
+            },
+            {
               "id": "CVE-2025-6141-libncursesw6",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -574,27 +595,6 @@
                   "pkg:deb/ubuntu/ncurses-bin@6.4%2B20240113-1ubuntu2?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=ncurses"
                 ],
                 "security-severity": "4.8"
-              }
-            },
-            {
-              "id": "CVE-2025-5278-coreutils",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-5278 low vulnerability for coreutils package"
-              },
-              "fullDescription": {
-                "text": "Version 9.4-3ubuntu6.1 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-5278\nSeverity: low\nPackage: coreutils\nVersion: 9.4-3ubuntu6.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)",
-                "markdown": "**Vulnerability CVE-2025-5278**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 9.4-3ubuntu6.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/coreutils@9.4-3ubuntu6.1?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "4.4"
               }
             },
             {
@@ -1763,6 +1763,49 @@
           }
         },
         {
+          "ruleId": "CVE-2025-5278-coreutils",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: coreutils, version 9.4-3ubuntu6.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:43be7a6229ca6aa124d0d5162251c21d69f5db13fc64c620f71f3de21a7788ab:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/coreutils/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f9f52dc133e2af9188960e5a5165cafaa51657ef740ff20219e45a561d78c591:/usr/share/doc/coreutils/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f9f52dc133e2af9188960e5a5165cafaa51657ef740ff20219e45a561d78c591:/var/lib/dpkg/info/coreutils.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f9f52dc133e2af9188960e5a5165cafaa51657ef740ff20219e45a561d78c591:/var/lib/dpkg/info/coreutils.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d302fcb16ddb88c98d0477f96af952c897c9693c10356ae34f2d4940c834798e:1"
+          }
+        },
+        {
           "ruleId": "CVE-2025-6141-libncursesw6",
           "level": "note",
           "message": {
@@ -1928,49 +1971,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "eff31827b40e2d7c8bb77abcc22549860f0b00af9c1feb42510b9d77b67159fc:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-5278-coreutils",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: coreutils, version 9.4-3ubuntu6.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:43be7a6229ca6aa124d0d5162251c21d69f5db13fc64c620f71f3de21a7788ab:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/coreutils/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f9f52dc133e2af9188960e5a5165cafaa51657ef740ff20219e45a561d78c591:/usr/share/doc/coreutils/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f9f52dc133e2af9188960e5a5165cafaa51657ef740ff20219e45a561d78c591:/var/lib/dpkg/info/coreutils.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f9f52dc133e2af9188960e5a5165cafaa51657ef740ff20219e45a561d78c591:/var/lib/dpkg/info/coreutils.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d302fcb16ddb88c98d0477f96af952c897c9693c10356ae34f2d4940c834798e:1"
           }
         },
         {
