@@ -680,6 +680,27 @@
                 ],
                 "security-severity": "3.3"
               }
+            },
+            {
+              "id": "CVE-2025-9230-libssl3t64",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-9230 medium vulnerability for libssl3t64 package"
+              },
+              "fullDescription": {
+                "text": "Version 3.0.13-0ubuntu3.5 is affected with an available fix in versions 3.0.13-0ubuntu3.6"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-9230\nSeverity: medium\nPackage: libssl3t64\nVersion: 3.0.13-0ubuntu3.5\nFix Version: 3.0.13-0ubuntu3.6\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-9230](https://ubuntu.com/security/CVE-2025-9230)",
+                "markdown": "**Vulnerability CVE-2025-9230**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssl3t64  | 3.0.13-0ubuntu3.5  | 3.0.13-0ubuntu3.6  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-9230](https://ubuntu.com/security/CVE-2025-9230)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.5?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
+                ],
+                "security-severity": "7.5"
+              }
             }
           ]
         }
@@ -2151,6 +2172,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "d0f32ecf6640e13c35f3c68446ab52fb423eba3b8d26353ea65e079c674873b7:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-9230-libssl3t64",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libssl3t64, version 3.0.13-0ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:43be7a6229ca6aa124d0d5162251c21d69f5db13fc64c620f71f3de21a7788ab:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3t64/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f9f52dc133e2af9188960e5a5165cafaa51657ef740ff20219e45a561d78c591:/usr/share/doc/libssl3t64/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3t64:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f9f52dc133e2af9188960e5a5165cafaa51657ef740ff20219e45a561d78c591:/var/lib/dpkg/info/libssl3t64:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "ece2d56bb099db0da4151875f8f17072a64f9553b99f026961b0297630f2008d:1"
           }
         }
       ]
