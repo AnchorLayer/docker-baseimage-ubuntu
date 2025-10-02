@@ -6,7 +6,7 @@
       "tool": {
         "driver": {
           "name": "grype",
-          "version": "0.99.1",
+          "version": "0.100.0",
           "informationUri": "https://github.com/anchore/grype",
           "rules": [
             {
@@ -142,39 +142,18 @@
                 "text": "CVE-2024-41996 low vulnerability for libssl3 package"
               },
               "fullDescription": {
-                "text": "Version 3.0.2-0ubuntu1.19 is affected with no fixes reported yet."
+                "text": "Version 3.0.2-0ubuntu1.20 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2024-41996\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.19\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2024-41996](https://ubuntu.com/security/CVE-2024-41996)",
-                "markdown": "**Vulnerability CVE-2024-41996**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.19  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2024-41996](https://ubuntu.com/security/CVE-2024-41996)  |\n"
+                "text": "Vulnerability CVE-2024-41996\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.20\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2024-41996](https://ubuntu.com/security/CVE-2024-41996)",
+                "markdown": "**Vulnerability CVE-2024-41996**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.20  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2024-41996](https://ubuntu.com/security/CVE-2024-41996)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.19?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.20?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
                 ],
                 "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2025-58050-libpcre2-8-0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-58050 medium vulnerability for libpcre2-8-0 package"
-              },
-              "fullDescription": {
-                "text": "Version 10.39-3ubuntu0.1 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-58050\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.39-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-58050](https://ubuntu.com/security/CVE-2025-58050)",
-                "markdown": "**Vulnerability CVE-2025-58050**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.39-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-58050](https://ubuntu.com/security/CVE-2025-58050)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
-                ],
-                "security-severity": "6.9"
               }
             },
             {
@@ -196,27 +175,6 @@
                   "pkg:deb/ubuntu/libzstd1@1.4.8%2Bdfsg-3build1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=libzstd"
                 ],
                 "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2025-6297-dpkg",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-6297 low vulnerability for dpkg package"
-              },
-              "fullDescription": {
-                "text": "Version 1.21.1ubuntu2.3 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-6297\nSeverity: low\nPackage: dpkg\nVersion: 1.21.1ubuntu2.3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-6297](https://ubuntu.com/security/CVE-2025-6297)",
-                "markdown": "**Vulnerability CVE-2025-6297**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | dpkg  | 1.21.1ubuntu2.3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-6297](https://ubuntu.com/security/CVE-2025-6297)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/dpkg@1.21.1ubuntu2.3?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "8.2"
               }
             },
             {
@@ -247,16 +205,16 @@
                 "text": "CVE-2025-0167 low vulnerability for curl package"
               },
               "fullDescription": {
-                "text": "Version 7.81.0-1ubuntu1.20 is affected with no fixes reported yet."
+                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2025-0167\nSeverity: low\nPackage: curl\nVersion: 7.81.0-1ubuntu1.20\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-0167](https://ubuntu.com/security/CVE-2025-0167)",
-                "markdown": "**Vulnerability CVE-2025-0167**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 7.81.0-1ubuntu1.20  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-0167](https://ubuntu.com/security/CVE-2025-0167)  |\n"
+                "text": "Vulnerability CVE-2025-0167\nSeverity: low\nPackage: curl\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-0167](https://ubuntu.com/security/CVE-2025-0167)",
+                "markdown": "**Vulnerability CVE-2025-0167**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-0167](https://ubuntu.com/security/CVE-2025-0167)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.20?arch=amd64\u0026distro=ubuntu-22.04"
+                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
                 "security-severity": "3.4"
               }
@@ -268,18 +226,60 @@
                 "text": "CVE-2025-0167 low vulnerability for libcurl4 package"
               },
               "fullDescription": {
-                "text": "Version 7.81.0-1ubuntu1.20 is affected with no fixes reported yet."
+                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2025-0167\nSeverity: low\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.20\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-0167](https://ubuntu.com/security/CVE-2025-0167)",
-                "markdown": "**Vulnerability CVE-2025-0167**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4  | 7.81.0-1ubuntu1.20  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-0167](https://ubuntu.com/security/CVE-2025-0167)  |\n"
+                "text": "Vulnerability CVE-2025-0167\nSeverity: low\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-0167](https://ubuntu.com/security/CVE-2025-0167)",
+                "markdown": "**Vulnerability CVE-2025-0167**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-0167](https://ubuntu.com/security/CVE-2025-0167)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.20?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
+                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
                 ],
                 "security-severity": "3.4"
+              }
+            },
+            {
+              "id": "CVE-2025-9086-curl",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-9086 low vulnerability for curl package"
+              },
+              "fullDescription": {
+                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-9086\nSeverity: low\nPackage: curl\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)",
+                "markdown": "**Vulnerability CVE-2025-9086**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2025-9086-libcurl4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-9086 low vulnerability for libcurl4 package"
+              },
+              "fullDescription": {
+                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-9086\nSeverity: low\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)",
+                "markdown": "**Vulnerability CVE-2025-9086**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
+                ],
+                "security-severity": "7.5"
               }
             },
             {
@@ -331,102 +331,18 @@
                 "text": "CVE-2025-27587 low vulnerability for libssl3 package"
               },
               "fullDescription": {
-                "text": "Version 3.0.2-0ubuntu1.19 is affected with no fixes reported yet."
+                "text": "Version 3.0.2-0ubuntu1.20 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2025-27587\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.19\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-27587](https://ubuntu.com/security/CVE-2025-27587)",
-                "markdown": "**Vulnerability CVE-2025-27587**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.19  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-27587](https://ubuntu.com/security/CVE-2025-27587)  |\n"
+                "text": "Vulnerability CVE-2025-27587\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.20\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-27587](https://ubuntu.com/security/CVE-2025-27587)",
+                "markdown": "**Vulnerability CVE-2025-27587**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.20  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-27587](https://ubuntu.com/security/CVE-2025-27587)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.19?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.20?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
                 ],
                 "security-severity": "5.3"
-              }
-            },
-            {
-              "id": "CVE-2024-10041-libpam-modules",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2024-10041 medium vulnerability for libpam-modules package"
-              },
-              "fullDescription": {
-                "text": "Version 1.4.0-11ubuntu2.6 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2024-10041\nSeverity: medium\nPackage: libpam-modules\nVersion: 1.4.0-11ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041)",
-                "markdown": "**Vulnerability CVE-2024-10041**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpam-modules  | 1.4.0-11ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpam-modules@1.4.0-11ubuntu2.6?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pam"
-                ],
-                "security-severity": "4.7"
-              }
-            },
-            {
-              "id": "CVE-2024-10041-libpam-modules-bin",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2024-10041 medium vulnerability for libpam-modules-bin package"
-              },
-              "fullDescription": {
-                "text": "Version 1.4.0-11ubuntu2.6 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2024-10041\nSeverity: medium\nPackage: libpam-modules-bin\nVersion: 1.4.0-11ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041)",
-                "markdown": "**Vulnerability CVE-2024-10041**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpam-modules-bin  | 1.4.0-11ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpam-modules-bin@1.4.0-11ubuntu2.6?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pam"
-                ],
-                "security-severity": "4.7"
-              }
-            },
-            {
-              "id": "CVE-2024-10041-libpam-runtime",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2024-10041 medium vulnerability for libpam-runtime package"
-              },
-              "fullDescription": {
-                "text": "Version 1.4.0-11ubuntu2.6 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2024-10041\nSeverity: medium\nPackage: libpam-runtime\nVersion: 1.4.0-11ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041)",
-                "markdown": "**Vulnerability CVE-2024-10041**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpam-runtime  | 1.4.0-11ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpam-runtime@1.4.0-11ubuntu2.6?arch=all\u0026distro=ubuntu-22.04\u0026upstream=pam"
-                ],
-                "security-severity": "4.7"
-              }
-            },
-            {
-              "id": "CVE-2024-10041-libpam0g",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2024-10041 medium vulnerability for libpam0g package"
-              },
-              "fullDescription": {
-                "text": "Version 1.4.0-11ubuntu2.6 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2024-10041\nSeverity: medium\nPackage: libpam0g\nVersion: 1.4.0-11ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041)",
-                "markdown": "**Vulnerability CVE-2024-10041**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpam0g  | 1.4.0-11ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2024-10041](https://ubuntu.com/security/CVE-2024-10041)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpam0g@1.4.0-11ubuntu2.6?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pam"
-                ],
-                "security-severity": "4.7"
               }
             },
             {
@@ -598,6 +514,27 @@
               }
             },
             {
+              "id": "CVE-2017-11164-libpcre3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2017-11164 low vulnerability for libpcre3 package"
+              },
+              "fullDescription": {
+                "text": "Version 2:8.39-13ubuntu0.22.04.1 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2017-11164\nSeverity: low\nPackage: libpcre3\nVersion: 2:8.39-13ubuntu0.22.04.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2017-11164](https://ubuntu.com/security/CVE-2017-11164)",
+                "markdown": "**Vulnerability CVE-2017-11164**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libpcre3  | 2:8.39-13ubuntu0.22.04.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2017-11164](https://ubuntu.com/security/CVE-2017-11164)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libpcre3@2%3A8.39-13ubuntu0.22.04.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre3"
+                ],
+                "security-severity": "7.8"
+              }
+            },
+            {
               "id": "CVE-2025-8941-libpam-modules",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -682,24 +619,24 @@
               }
             },
             {
-              "id": "CVE-2017-11164-libpcre3",
+              "id": "CVE-2025-8277-libssh-4",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2017-11164 low vulnerability for libpcre3 package"
+                "text": "CVE-2025-8277 low vulnerability for libssh-4 package"
               },
               "fullDescription": {
-                "text": "Version 2:8.39-13ubuntu0.22.04.1 is affected with no fixes reported yet."
+                "text": "Version 0.9.6-2ubuntu0.22.04.4 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2017-11164\nSeverity: low\nPackage: libpcre3\nVersion: 2:8.39-13ubuntu0.22.04.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2017-11164](https://ubuntu.com/security/CVE-2017-11164)",
-                "markdown": "**Vulnerability CVE-2017-11164**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libpcre3  | 2:8.39-13ubuntu0.22.04.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2017-11164](https://ubuntu.com/security/CVE-2017-11164)  |\n"
+                "text": "Vulnerability CVE-2025-8277\nSeverity: low\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-8277](https://ubuntu.com/security/CVE-2025-8277)",
+                "markdown": "**Vulnerability CVE-2025-8277**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssh-4  | 0.9.6-2ubuntu0.22.04.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-8277](https://ubuntu.com/security/CVE-2025-8277)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/libpcre3@2%3A8.39-13ubuntu0.22.04.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre3"
+                  "pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.4?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=libssh"
                 ],
-                "security-severity": "7.8"
+                "security-severity": "3.1"
               }
             },
             {
@@ -745,66 +682,24 @@
               }
             },
             {
-              "id": "CVE-2025-8058-libc-bin",
-              "name": "DpkgMatcherExactIndirectMatch",
+              "id": "CVE-2025-5278-coreutils",
+              "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
-                "text": "CVE-2025-8058 medium vulnerability for libc-bin package"
+                "text": "CVE-2025-5278 low vulnerability for coreutils package"
               },
               "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.10 is affected with no fixes reported yet."
+                "text": "Version 8.32-4.1ubuntu1.2 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2025-8058\nSeverity: medium\nPackage: libc-bin\nVersion: 2.35-0ubuntu3.10\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-8058](https://ubuntu.com/security/CVE-2025-8058)",
-                "markdown": "**Vulnerability CVE-2025-8058**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.35-0ubuntu3.10  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-8058](https://ubuntu.com/security/CVE-2025-8058)  |\n"
+                "text": "Vulnerability CVE-2025-5278\nSeverity: low\nPackage: coreutils\nVersion: 8.32-4.1ubuntu1.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)",
+                "markdown": "**Vulnerability CVE-2025-5278**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 8.32-4.1ubuntu1.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.10?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
+                  "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.2?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
-                "security-severity": "5.9"
-              }
-            },
-            {
-              "id": "CVE-2025-8058-libc6",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-8058 medium vulnerability for libc6 package"
-              },
-              "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.10 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-8058\nSeverity: medium\nPackage: libc6\nVersion: 2.35-0ubuntu3.10\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-8058](https://ubuntu.com/security/CVE-2025-8058)",
-                "markdown": "**Vulnerability CVE-2025-8058**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.35-0ubuntu3.10  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-8058](https://ubuntu.com/security/CVE-2025-8058)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.10?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
-                ],
-                "security-severity": "5.9"
-              }
-            },
-            {
-              "id": "CVE-2025-8114-libssh-4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-8114 medium vulnerability for libssh-4 package"
-              },
-              "fullDescription": {
-                "text": "Version 0.9.6-2ubuntu0.22.04.4 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-8114\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-8114](https://ubuntu.com/security/CVE-2025-8114)",
-                "markdown": "**Vulnerability CVE-2025-8114**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-8114](https://ubuntu.com/security/CVE-2025-8114)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.4?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=libssh"
-                ],
-                "security-severity": "4.7"
+                "security-severity": "4.4"
               }
             },
             {
@@ -913,24 +808,24 @@
               }
             },
             {
-              "id": "CVE-2025-5278-coreutils",
-              "name": "DpkgMatcherExactDirectMatch",
+              "id": "CVE-2025-8114-libssh-4",
+              "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2025-5278 low vulnerability for coreutils package"
+                "text": "CVE-2025-8114 low vulnerability for libssh-4 package"
               },
               "fullDescription": {
-                "text": "Version 8.32-4.1ubuntu1.2 is affected with no fixes reported yet."
+                "text": "Version 0.9.6-2ubuntu0.22.04.4 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2025-5278\nSeverity: low\nPackage: coreutils\nVersion: 8.32-4.1ubuntu1.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)",
-                "markdown": "**Vulnerability CVE-2025-5278**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 8.32-4.1ubuntu1.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)  |\n"
+                "text": "Vulnerability CVE-2025-8114\nSeverity: low\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-8114](https://ubuntu.com/security/CVE-2025-8114)",
+                "markdown": "**Vulnerability CVE-2025-8114**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssh-4  | 0.9.6-2ubuntu0.22.04.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-8114](https://ubuntu.com/security/CVE-2025-8114)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.2?arch=amd64\u0026distro=ubuntu-22.04"
+                  "pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.4?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=libssh"
                 ],
-                "security-severity": "4.4"
+                "security-severity": "4.7"
               }
             },
             {
@@ -980,39 +875,39 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/login/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/login/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/login/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/login.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/login.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/login.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/login.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/login.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/login.list"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/login.postinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/login.postinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/login.postrm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/login.postrm"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/login.preinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/login.preinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/login.prerm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/login.prerm"
                 }
               ]
             }
@@ -1043,39 +938,39 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/passwd/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/passwd/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/passwd/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/passwd.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/passwd.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/passwd.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/passwd.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/passwd.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/passwd.list"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/passwd.postinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/passwd.postinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/passwd.postrm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/passwd.postrm"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/passwd.preinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/passwd.preinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/passwd.prerm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/passwd.prerm"
                 }
               ]
             }
@@ -1106,15 +1001,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libgcrypt20/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libgcrypt20/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libgcrypt20/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libgcrypt20:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libgcrypt20:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libgcrypt20:amd64.md5sums"
                 }
               ]
             }
@@ -1145,15 +1040,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libsystemd0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libsystemd0/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libsystemd0/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libsystemd0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libsystemd0:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libsystemd0:amd64.md5sums"
                 }
               ]
             }
@@ -1184,15 +1079,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libudev1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libudev1/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libudev1/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libudev1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libudev1:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libudev1:amd64.md5sums"
                 }
               ]
             }
@@ -1223,15 +1118,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libtasn1-6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libtasn1-6/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libtasn1-6/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libtasn1-6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libtasn1-6:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libtasn1-6:amd64.md5sums"
                 }
               ]
             }
@@ -1244,7 +1139,7 @@
           "ruleId": "CVE-2024-41996-libssl3",
           "level": "note",
           "message": {
-            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.19 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.20 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -1262,60 +1157,21 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libssl3/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libssl3/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libssl3/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libssl3:amd64.md5sums"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "071080d83c05757e38ab0ca0b96bcfaa3d0880ef99b482be3e4d38a6822c4d92:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-58050-libpcre2-8-0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.39-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libpcre2-8-0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
+            "primaryLocationLineHash": "18e1a30692c05b205b801fd45b93d1bb4badd02775a91ae04cc4bc1850761afc:1"
           }
         },
         {
@@ -1340,80 +1196,21 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libzstd1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libzstd1/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libzstd1/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libzstd1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libzstd1:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libzstd1:amd64.md5sums"
                 }
               ]
             }
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "8a260d886d2647af2db4d40886722e24759502990f9e5fc951586886c53ce715:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-6297-dpkg",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: dpkg, version 1.21.1ubuntu2.3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/dpkg/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/dpkg/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dpkg.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/dpkg.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dpkg.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/dpkg.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dpkg.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/dpkg.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dpkg.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/dpkg.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dpkg.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/dpkg.postrm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dpkg.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/dpkg.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "f223e5ada12c1e47be918e8bd6790843e583f00229f1bcfda7b1f5184da29f94:1"
           }
         },
         {
@@ -1438,27 +1235,27 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/tar/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/tar/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/tar/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/tar.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/tar.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/tar.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/tar.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/tar.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/tar.list"
                 },
                 {
                   "name": "/var/lib/dpkg/info/tar.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/tar.postinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/tar.postinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/tar.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/tar.prerm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/tar.prerm"
                 }
               ]
             }
@@ -1471,7 +1268,7 @@
           "ruleId": "CVE-2025-0167-curl",
           "level": "note",
           "message": {
-            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.20 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -1489,32 +1286,32 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/usr/share/doc/curl/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/usr/share/doc/curl/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/info/curl.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/curl.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/info/curl.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/curl.list"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "919c93c0d21e72f048921dc977e55c6b7006cd6e113650dc359b820682d62133:1"
+            "primaryLocationLineHash": "78fa2620bf6efe74c1cdc32e8e1dba3741389df4bc3c318de9a6f2efff08098f:1"
           }
         },
         {
           "ruleId": "CVE-2025-0167-libcurl4",
           "level": "note",
           "message": {
-            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.20 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -1532,21 +1329,103 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libcurl4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/usr/share/doc/libcurl4/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/usr/share/doc/libcurl4/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "7c2ae6017fc228e1573bc13ef1e6a77b4c3cb209143e8c7254472c397223d5e3:1"
+            "primaryLocationLineHash": "9e1f786ed6a8a183340a2d141be0101a597f5afed8f7cd977d21950470dda6b2:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-9086-curl",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/curl/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/usr/share/doc/curl/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/curl.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/curl.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "78fa2620bf6efe74c1cdc32e8e1dba3741389df4bc3c318de9a6f2efff08098f:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-9086-libcurl4",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libcurl4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/usr/share/doc/libcurl4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "9e1f786ed6a8a183340a2d141be0101a597f5afed8f7cd977d21950470dda6b2:1"
           }
         },
         {
@@ -1571,27 +1450,27 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/coreutils/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/coreutils/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/coreutils/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/coreutils.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/coreutils.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/coreutils.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/coreutils.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/coreutils.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/coreutils.list"
                 },
                 {
                   "name": "/var/lib/dpkg/info/coreutils.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/coreutils.postinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/coreutils.postinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/coreutils.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/coreutils.postrm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/coreutils.postrm"
                 }
               ]
             }
@@ -1622,15 +1501,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libpcre2-8-0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libpcre2-8-0/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libpcre2-8-0/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
                 }
               ]
             }
@@ -1643,7 +1522,7 @@
           "ruleId": "CVE-2025-27587-libssl3",
           "level": "note",
           "message": {
-            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.19 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.20 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -1661,209 +1540,21 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libssl3/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libssl3/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libssl3/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libssl3:amd64.md5sums"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "071080d83c05757e38ab0ca0b96bcfaa3d0880ef99b482be3e4d38a6822c4d92:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2024-10041-libpam-modules",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libpam-modules, version 1.4.0-11ubuntu2.6 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libpam-modules/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libpam-modules/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpam-modules:amd64.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-modules:amd64.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpam-modules:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-modules:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "3a583ee43a5ecc7822f9a677ce9e335ca54f6bf31b9d5006f0ba03d02a9b0b89:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2024-10041-libpam-modules-bin",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libpam-modules-bin, version 1.4.0-11ubuntu2.6 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libpam-modules-bin/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libpam-modules-bin/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpam-modules-bin.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-modules-bin.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpam-modules-bin.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-modules-bin.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "f11c72de52db51df8ff5fa0099fc2eba5a09daa2b4f30d5435ecd0489e2f0ead:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2024-10041-libpam-runtime",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libpam-runtime, version 1.4.0-11ubuntu2.6 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libpam-runtime/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libpam-runtime/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpam-runtime.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-runtime.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpam-runtime.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-runtime.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpam-runtime.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-runtime.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpam-runtime.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-runtime.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpam-runtime.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-runtime.postrm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpam-runtime.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-runtime.prerm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpam-runtime.templates",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-runtime.templates"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "f5363a326bbed10d7307a160a8261133b9bde6f758021b6f9e4d1dac9a5e9075:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2024-10041-libpam0g",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libpam0g, version 1.4.0-11ubuntu2.6 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libpam0g/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libpam0g/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpam0g:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam0g:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "08b227b3669d751179c953ad2ec79ee6385242f1c708fa69d8e2435bc8a23bef:1"
+            "primaryLocationLineHash": "18e1a30692c05b205b801fd45b93d1bb4badd02775a91ae04cc4bc1850761afc:1"
           }
         },
         {
@@ -1888,15 +1579,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libtinfo6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libncurses6/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libncurses6/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libncurses6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libncurses6:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libncurses6:amd64.md5sums"
                 }
               ]
             }
@@ -1927,15 +1618,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libtinfo6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libncursesw6/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libncursesw6/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libncursesw6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libncursesw6:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libncursesw6:amd64.md5sums"
                 }
               ]
             }
@@ -1966,15 +1657,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libtinfo6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libtinfo6/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libtinfo6/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libtinfo6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libtinfo6:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libtinfo6:amd64.md5sums"
                 }
               ]
             }
@@ -2005,23 +1696,23 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/ncurses-base/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/ncurses-base/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/ncurses-base/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-base.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/ncurses-base.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/ncurses-base.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-base.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/ncurses-base.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/ncurses-base.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-base.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/ncurses-base.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/ncurses-base.list"
                 }
               ]
             }
@@ -2052,19 +1743,19 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/ncurses-bin/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/ncurses-bin/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/ncurses-bin/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-bin.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/ncurses-bin.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/ncurses-bin.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-bin.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/ncurses-bin.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/ncurses-bin.list"
                 }
               ]
             }
@@ -2095,15 +1786,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/gcc-12-base/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/gcc-12-base/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/gcc-12-base/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/gcc-12-base:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/gcc-12-base:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/gcc-12-base:amd64.md5sums"
                 }
               ]
             }
@@ -2134,15 +1825,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/gcc-12-base/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libgcc-s1/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libgcc-s1/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libgcc-s1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libgcc-s1:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libgcc-s1:amd64.md5sums"
                 }
               ]
             }
@@ -2173,21 +1864,60 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/gcc-12-base/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libstdc++6/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libstdc++6/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libstdc++6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libstdc++6:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libstdc++6:amd64.md5sums"
                 }
               ]
             }
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "4140db4128acd8971a48ed272604f007ba045f2645947196ac6f260778afbd54:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2017-11164-libpcre3",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libpcre3, version 2:8.39-13ubuntu0.22.04.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libpcre3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libpcre3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libpcre3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "b6bc3a09697de67083081963dadc5ee23a7fd77cecd81e5eb59f4086c5ddf260:1"
           }
         },
         {
@@ -2212,19 +1942,19 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libpam-modules/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libpam-modules/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libpam-modules/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libpam-modules:amd64.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-modules:amd64.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libpam-modules:amd64.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libpam-modules:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-modules:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libpam-modules:amd64.md5sums"
                 }
               ]
             }
@@ -2255,19 +1985,19 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libpam-modules-bin/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libpam-modules-bin/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libpam-modules-bin/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libpam-modules-bin.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-modules-bin.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libpam-modules-bin.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libpam-modules-bin.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-modules-bin.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libpam-modules-bin.list"
                 }
               ]
             }
@@ -2298,39 +2028,39 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libpam-runtime/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libpam-runtime/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libpam-runtime/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libpam-runtime.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-runtime.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libpam-runtime.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libpam-runtime.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-runtime.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libpam-runtime.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libpam-runtime.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-runtime.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libpam-runtime.list"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libpam-runtime.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-runtime.postinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libpam-runtime.postinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libpam-runtime.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-runtime.postrm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libpam-runtime.postrm"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libpam-runtime.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-runtime.prerm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libpam-runtime.prerm"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libpam-runtime.templates",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam-runtime.templates"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libpam-runtime.templates"
                 }
               ]
             }
@@ -2361,15 +2091,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libpam0g/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libpam0g/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libpam0g/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libpam0g:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpam0g:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libpam0g:amd64.md5sums"
                 }
               ]
             }
@@ -2379,10 +2109,10 @@
           }
         },
         {
-          "ruleId": "CVE-2017-11164-libpcre3",
+          "ruleId": "CVE-2025-8277-libssh-4",
           "level": "note",
           "message": {
-            "text": "A low vulnerability in deb package: libpcre3, version 2:8.39-13ubuntu0.22.04.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: libssh-4, version 0.9.6-2ubuntu0.22.04.4 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -2400,21 +2130,21 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
-                  "name": "/usr/share/doc/libpcre3/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libpcre3/copyright"
+                  "name": "/usr/share/doc/libssh-4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/usr/share/doc/libssh-4/copyright"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/libpcre3:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libpcre3:amd64.md5sums"
+                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "b6bc3a09697de67083081963dadc5ee23a7fd77cecd81e5eb59f4086c5ddf260:1"
+            "primaryLocationLineHash": "b115fcaf2535909c3029c93af715db889f0cb01ae5324e0bdbfec9078c95a96f:1"
           }
         },
         {
@@ -2439,39 +2169,39 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/login/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/login/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/login/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/login.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/login.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/login.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/login.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/login.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/login.list"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/login.postinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/login.postinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/login.postrm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/login.postrm"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/login.preinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/login.preinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/login.prerm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/login.prerm"
                 }
               ]
             }
@@ -2502,39 +2232,39 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/passwd/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/passwd/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/passwd/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/passwd.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/passwd.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/passwd.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/passwd.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/passwd.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/passwd.list"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/passwd.postinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/passwd.postinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/passwd.postrm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/passwd.postrm"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/passwd.preinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/passwd.preinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/passwd.prerm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/passwd.prerm"
                 }
               ]
             }
@@ -2544,10 +2274,10 @@
           }
         },
         {
-          "ruleId": "CVE-2025-8058-libc-bin",
-          "level": "warning",
+          "ruleId": "CVE-2025-5278-coreutils",
+          "level": "note",
           "message": {
-            "text": "A medium vulnerability in deb package: libc-bin, version 2.35-0ubuntu3.10 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: coreutils, version 8.32-4.1ubuntu1.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -2565,119 +2295,33 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
-                  "name": "/usr/share/doc/libc-bin/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libc-bin/copyright"
+                  "name": "/usr/share/doc/coreutils/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/coreutils/copyright"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/libc-bin.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libc-bin.conffiles"
+                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/coreutils.md5sums"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/libc-bin.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libc-bin.md5sums"
+                  "name": "/var/lib/dpkg/info/coreutils.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/coreutils.list"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/libc-bin.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libc-bin.list"
+                  "name": "/var/lib/dpkg/info/coreutils.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/coreutils.postinst"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/libc-bin.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libc-bin.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.triggers",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libc-bin.triggers"
+                  "name": "/var/lib/dpkg/info/coreutils.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/coreutils.postrm"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "5d8d62b5cb89cd3d2c4484c5a6e9f9589320798f522135a8685bf18789a562f2:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-8058-libc6",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libc6, version 2.35-0ubuntu3.10 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libc6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libc6/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc6:amd64.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libc6:amd64.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libc6:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "4ba02de8e43e286bb025c3c7c9731ff940b7d95fedfd94acd63f992a716a8133:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-8114-libssh-4",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libssh-4, version 0.9.6-2ubuntu0.22.04.4 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssh-4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/usr/share/doc/libssh-4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "b115fcaf2535909c3029c93af715db889f0cb01ae5324e0bdbfec9078c95a96f:1"
+            "primaryLocationLineHash": "d2563673446a5c8e3caa966bf450f0b1748e5915c89be1545fdffb4ebe2b5cce:1"
           }
         },
         {
@@ -2702,15 +2346,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libtinfo6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libncurses6/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libncurses6/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libncurses6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libncurses6:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libncurses6:amd64.md5sums"
                 }
               ]
             }
@@ -2741,15 +2385,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libtinfo6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libncursesw6/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libncursesw6/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libncursesw6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libncursesw6:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libncursesw6:amd64.md5sums"
                 }
               ]
             }
@@ -2780,15 +2424,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libtinfo6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/libtinfo6/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libtinfo6/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libtinfo6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/libtinfo6:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libtinfo6:amd64.md5sums"
                 }
               ]
             }
@@ -2819,23 +2463,23 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/ncurses-base/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/ncurses-base/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/ncurses-base/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-base.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/ncurses-base.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/ncurses-base.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-base.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/ncurses-base.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/ncurses-base.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-base.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/ncurses-base.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/ncurses-base.list"
                 }
               ]
             }
@@ -2866,19 +2510,19 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/ncurses-bin/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/ncurses-bin/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/ncurses-bin/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-bin.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/ncurses-bin.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/ncurses-bin.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-bin.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/ncurses-bin.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/ncurses-bin.list"
                 }
               ]
             }
@@ -2888,10 +2532,10 @@
           }
         },
         {
-          "ruleId": "CVE-2025-5278-coreutils",
+          "ruleId": "CVE-2025-8114-libssh-4",
           "level": "note",
           "message": {
-            "text": "A low vulnerability in deb package: coreutils, version 8.32-4.1ubuntu1.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: libssh-4, version 0.9.6-2ubuntu0.22.04.4 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -2909,33 +2553,21 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
-                  "name": "/usr/share/doc/coreutils/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/coreutils/copyright"
+                  "name": "/usr/share/doc/libssh-4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/usr/share/doc/libssh-4/copyright"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/coreutils.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/coreutils.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/coreutils.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/coreutils.postrm"
+                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "d2563673446a5c8e3caa966bf450f0b1748e5915c89be1545fdffb4ebe2b5cce:1"
+            "primaryLocationLineHash": "b115fcaf2535909c3029c93af715db889f0cb01ae5324e0bdbfec9078c95a96f:1"
           }
         },
         {
@@ -2960,19 +2592,19 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:672c93ec9f86ccfbfaa2d1aae6803ddf30954ff9df21aaf406ea412d47df0f51:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/gpgv/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/usr/share/doc/gpgv/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/gpgv/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/gpgv.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/gpgv.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/gpgv.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/gpgv.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:dc6eb6dad5f9e332f00af553440e857b1467db1be43dd910cdb6830ba0898d50:/var/lib/dpkg/info/gpgv.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/gpgv.list"
                 }
               ]
             }
