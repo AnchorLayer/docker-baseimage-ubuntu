@@ -52,6 +52,27 @@
               }
             },
             {
+              "id": "CVE-2024-41996-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2024-41996 low vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "Version 3.0.2-0ubuntu1.20 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2024-41996\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.20\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2024-41996](https://ubuntu.com/security/CVE-2024-41996)",
+                "markdown": "**Vulnerability CVE-2024-41996**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.20  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2024-41996](https://ubuntu.com/security/CVE-2024-41996)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.20?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
               "id": "CVE-2024-2236-libgcrypt20",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -136,24 +157,45 @@
               }
             },
             {
-              "id": "CVE-2024-41996-libssl3",
+              "id": "CVE-2022-4899-libzstd1",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2024-41996 low vulnerability for libssl3 package"
+                "text": "CVE-2022-4899 low vulnerability for libzstd1 package"
               },
               "fullDescription": {
-                "text": "Version 3.0.2-0ubuntu1.20 is affected with no fixes reported yet."
+                "text": "Version 1.4.8+dfsg-3build1 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2024-41996\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.20\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2024-41996](https://ubuntu.com/security/CVE-2024-41996)",
-                "markdown": "**Vulnerability CVE-2024-41996**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.20  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2024-41996](https://ubuntu.com/security/CVE-2024-41996)  |\n"
+                "text": "Vulnerability CVE-2022-4899\nSeverity: low\nPackage: libzstd1\nVersion: 1.4.8+dfsg-3build1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2022-4899](https://ubuntu.com/security/CVE-2022-4899)",
+                "markdown": "**Vulnerability CVE-2022-4899**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libzstd1  | 1.4.8+dfsg-3build1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2022-4899](https://ubuntu.com/security/CVE-2022-4899)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.20?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                  "pkg:deb/ubuntu/libzstd1@1.4.8%2Bdfsg-3build1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=libzstd"
                 ],
                 "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2025-45582-tar",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-45582 medium vulnerability for tar package"
+              },
+              "fullDescription": {
+                "text": "Version 1.34+dfsg-1ubuntu0.1.22.04.2 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-45582\nSeverity: medium\nPackage: tar\nVersion: 1.34+dfsg-1ubuntu0.1.22.04.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)",
+                "markdown": "**Vulnerability CVE-2025-45582**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.34+dfsg-1ubuntu0.1.22.04.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/tar@1.34%2Bdfsg-1ubuntu0.1.22.04.2?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "4.1"
               }
             },
             {
@@ -199,45 +241,45 @@
               }
             },
             {
-              "id": "CVE-2022-4899-libzstd1",
-              "name": "DpkgMatcherExactIndirectMatch",
+              "id": "CVE-2025-9086-curl",
+              "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
-                "text": "CVE-2022-4899 low vulnerability for libzstd1 package"
+                "text": "CVE-2025-9086 low vulnerability for curl package"
               },
               "fullDescription": {
-                "text": "Version 1.4.8+dfsg-3build1 is affected with no fixes reported yet."
+                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2022-4899\nSeverity: low\nPackage: libzstd1\nVersion: 1.4.8+dfsg-3build1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2022-4899](https://ubuntu.com/security/CVE-2022-4899)",
-                "markdown": "**Vulnerability CVE-2022-4899**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libzstd1  | 1.4.8+dfsg-3build1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2022-4899](https://ubuntu.com/security/CVE-2022-4899)  |\n"
+                "text": "Vulnerability CVE-2025-9086\nSeverity: low\nPackage: curl\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)",
+                "markdown": "**Vulnerability CVE-2025-9086**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/libzstd1@1.4.8%2Bdfsg-3build1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=libzstd"
+                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
                 "security-severity": "7.5"
               }
             },
             {
-              "id": "CVE-2025-45582-tar",
-              "name": "DpkgMatcherExactDirectMatch",
+              "id": "CVE-2025-9086-libcurl4",
+              "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2025-45582 medium vulnerability for tar package"
+                "text": "CVE-2025-9086 low vulnerability for libcurl4 package"
               },
               "fullDescription": {
-                "text": "Version 1.34+dfsg-1ubuntu0.1.22.04.2 is affected with no fixes reported yet."
+                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2025-45582\nSeverity: medium\nPackage: tar\nVersion: 1.34+dfsg-1ubuntu0.1.22.04.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)",
-                "markdown": "**Vulnerability CVE-2025-45582**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.34+dfsg-1ubuntu0.1.22.04.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)  |\n"
+                "text": "Vulnerability CVE-2025-9086\nSeverity: low\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)",
+                "markdown": "**Vulnerability CVE-2025-9086**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/tar@1.34%2Bdfsg-1ubuntu0.1.22.04.2?arch=amd64\u0026distro=ubuntu-22.04"
+                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
                 ],
-                "security-severity": "4.1"
+                "security-severity": "7.5"
               }
             },
             {
@@ -469,48 +511,6 @@
                   "pkg:deb/ubuntu/libstdc%2B%2B6@12.3.0-1ubuntu1~22.04.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gcc-12"
                 ],
                 "security-severity": "5.5"
-              }
-            },
-            {
-              "id": "CVE-2025-9086-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-9086 low vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-9086\nSeverity: low\nPackage: curl\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)",
-                "markdown": "**Vulnerability CVE-2025-9086**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2025-9086-libcurl4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-9086 low vulnerability for libcurl4 package"
-              },
-              "fullDescription": {
-                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-9086\nSeverity: low\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)",
-                "markdown": "**Vulnerability CVE-2025-9086**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
-                ],
-                "security-severity": "7.5"
               }
             },
             {
@@ -980,6 +980,45 @@
           }
         },
         {
+          "ruleId": "CVE-2024-41996-libssl3",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.20 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "18e1a30692c05b205b801fd45b93d1bb4badd02775a91ae04cc4bc1850761afc:1"
+          }
+        },
+        {
           "ruleId": "CVE-2024-2236-libgcrypt20",
           "level": "note",
           "message": {
@@ -1136,127 +1175,6 @@
           }
         },
         {
-          "ruleId": "CVE-2024-41996-libssl3",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.20 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssl3/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libssl3/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libssl3:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "18e1a30692c05b205b801fd45b93d1bb4badd02775a91ae04cc4bc1850761afc:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-0167-curl",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "78fa2620bf6efe74c1cdc32e8e1dba3741389df4bc3c318de9a6f2efff08098f:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-0167-libcurl4",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/usr/share/doc/libcurl4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "9e1f786ed6a8a183340a2d141be0101a597f5afed8f7cd977d21950470dda6b2:1"
-          }
-        },
-        {
           "ruleId": "CVE-2022-4899-libzstd1",
           "level": "note",
           "message": {
@@ -1344,6 +1262,170 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "e9d7b0f3b06685ab171c4091c5717117256811c703df5354afd7c8b118540c08:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-0167-curl",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/curl/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/usr/share/doc/curl/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/curl.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/curl.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "78fa2620bf6efe74c1cdc32e8e1dba3741389df4bc3c318de9a6f2efff08098f:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-0167-libcurl4",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libcurl4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/usr/share/doc/libcurl4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "9e1f786ed6a8a183340a2d141be0101a597f5afed8f7cd977d21950470dda6b2:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-9086-curl",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/curl/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/usr/share/doc/curl/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/curl.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/curl.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "78fa2620bf6efe74c1cdc32e8e1dba3741389df4bc3c318de9a6f2efff08098f:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-9086-libcurl4",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libcurl4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/usr/share/doc/libcurl4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "9e1f786ed6a8a183340a2d141be0101a597f5afed8f7cd977d21950470dda6b2:1"
           }
         },
         {
@@ -1797,88 +1879,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "4140db4128acd8971a48ed272604f007ba045f2645947196ac6f260778afbd54:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-9086-curl",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "78fa2620bf6efe74c1cdc32e8e1dba3741389df4bc3c318de9a6f2efff08098f:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-9086-libcurl4",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/usr/share/doc/libcurl4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "9e1f786ed6a8a183340a2d141be0101a597f5afed8f7cd977d21950470dda6b2:1"
           }
         },
         {
