@@ -73,27 +73,6 @@
               }
             },
             {
-              "id": "CVE-2024-2236-libgcrypt20",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2024-2236 low vulnerability for libgcrypt20 package"
-              },
-              "fullDescription": {
-                "text": "Version 1.9.4-3ubuntu3 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2024-2236\nSeverity: low\nPackage: libgcrypt20\nVersion: 1.9.4-3ubuntu3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2024-2236](https://ubuntu.com/security/CVE-2024-2236)",
-                "markdown": "**Vulnerability CVE-2024-2236**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libgcrypt20  | 1.9.4-3ubuntu3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2024-2236](https://ubuntu.com/security/CVE-2024-2236)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libgcrypt20@1.9.4-3ubuntu3?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "5.9"
-              }
-            },
-            {
               "id": "CVE-2021-46848-libtasn1-6",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -152,6 +131,27 @@
               "properties": {
                 "purls": [
                   "pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.16?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=systemd"
+                ],
+                "security-severity": "5.9"
+              }
+            },
+            {
+              "id": "CVE-2024-2236-libgcrypt20",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2024-2236 low vulnerability for libgcrypt20 package"
+              },
+              "fullDescription": {
+                "text": "Version 1.9.4-3ubuntu3 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2024-2236\nSeverity: low\nPackage: libgcrypt20\nVersion: 1.9.4-3ubuntu3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2024-2236](https://ubuntu.com/security/CVE-2024-2236)",
+                "markdown": "**Vulnerability CVE-2024-2236**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libgcrypt20  | 1.9.4-3ubuntu3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2024-2236](https://ubuntu.com/security/CVE-2024-2236)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libgcrypt20@1.9.4-3ubuntu3?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
                 "security-severity": "5.9"
               }
@@ -1019,45 +1019,6 @@
           }
         },
         {
-          "ruleId": "CVE-2024-2236-libgcrypt20",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libgcrypt20, version 1.9.4-3ubuntu3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libgcrypt20/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libgcrypt20/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libgcrypt20:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libgcrypt20:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "6b304b33b2ccb0eda8f4166272c6be39a81dfbfcbbb64a7ed7c0cf6a16ba3729:1"
-          }
-        },
-        {
           "ruleId": "CVE-2021-46848-libtasn1-6",
           "level": "note",
           "message": {
@@ -1172,6 +1133,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "a74d9354b61cecc6cd94c3398b4d4ce940272a7703a87d54c266c475686a89cc:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2024-2236-libgcrypt20",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libgcrypt20, version 1.9.4-3ubuntu3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libgcrypt20/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libgcrypt20/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libgcrypt20:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libgcrypt20:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "6b304b33b2ccb0eda8f4166272c6be39a81dfbfcbbb64a7ed7c0cf6a16ba3729:1"
           }
         },
         {
