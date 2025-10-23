@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.6" serialNumber="urn:uuid:95e7efb8-f2d8-4371-a34f-caafb6da6f8c" version="1">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.6" serialNumber="urn:uuid:da63e02d-bee5-46de-a539-42d18ddcd625" version="1">
   <metadata>
-    <timestamp>2025-10-23T10:44:22Z</timestamp>
+    <timestamp>2025-10-23T11:16:40Z</timestamp>
     <tools>
       <components>
         <component type="application">
           <author>anchore</author>
           <name>grype</name>
-          <version>0.101.1</version>
+          <version>0.102.0</version>
         </component>
       </components>
     </tools>
@@ -4444,7 +4444,7 @@
         <property name="syft:metadata:source">shadow</property>
       </properties>
     </component>
-    <component bom-ref="pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.2?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=96699ee758f1e615&amp;upstream=perl" type="library">
+    <component bom-ref="pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.2?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=c4aa126a69f7c083&amp;upstream=perl" type="library">
       <publisher>Ubuntu Developers &lt;ubuntu-devel-discuss@lists.ubuntu.com&gt;</publisher>
       <name>perl-base</name>
       <version>5.38.2-3.2ubuntu0.2</version>
@@ -4478,9 +4478,6 @@
         </license>
         <license>
           <name>Artistic</name>
-        </license>
-        <license>
-          <name>Artistic-dist</name>
         </license>
         <license>
           <name>BSD-3-clause-GENERIC</name>
@@ -4517,6 +4514,9 @@
         </license>
         <license>
           <name>Unicode</name>
+        </license>
+        <license>
+          <name>Artistic-dist</name>
         </license>
       </licenses>
       <cpe>cpe:2.3:a:perl-base:perl-base:5.38.2-3.2ubuntu0.2:*:*:*:*:*:*:*</cpe>
@@ -19415,7 +19415,7 @@
       <dependency ref="pkg:deb/ubuntu/libselinux1@3.5-2ubuntu2.1?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=cb2b78b10156ba3f&amp;upstream=libselinux"></dependency>
       <dependency ref="pkg:deb/ubuntu/libsemanage2@3.5-1build5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=e0cbcfc82f8353e2&amp;upstream=libsemanage"></dependency>
     </dependency>
-    <dependency ref="pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.2?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=96699ee758f1e615&amp;upstream=perl">
+    <dependency ref="pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.2?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=c4aa126a69f7c083&amp;upstream=perl">
       <dependency ref="pkg:deb/ubuntu/dpkg@1.22.6ubuntu6.5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=ec3b43637a287302"></dependency>
       <dependency ref="pkg:deb/ubuntu/libc6@2.39-0ubuntu8.6?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=3db3e8698c7ab8e5&amp;upstream=glibc"></dependency>
       <dependency ref="pkg:deb/ubuntu/libcrypt1@1%3A4.4.36-4build1?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=7172158587c8e198&amp;upstream=libxcrypt"></dependency>
@@ -19461,7 +19461,7 @@
     </dependency>
   </dependencies>
   <vulnerabilities>
-    <vulnerability bom-ref="urn:uuid:16f1a54b-66ac-4cf3-a11e-afbd12e6165d">
+    <vulnerability bom-ref="urn:uuid:fb1b6fbe-fd32-4880-b53b-aa064b7713f6">
       <id>CVE-2024-56433</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19496,7 +19496,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:43c0cb4b-6e46-462f-99a0-b96a1c52e831">
+    <vulnerability bom-ref="urn:uuid:312767df-944d-4aa6-a9fe-48fec8cb94ac">
       <id>CVE-2024-56433</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19531,7 +19531,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:2219ac1b-6c49-4e79-b642-804c4dba7de4">
+    <vulnerability bom-ref="urn:uuid:befac387-2428-4dab-9569-245d5b3493d4">
       <id>CVE-2024-41996</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19566,7 +19566,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:425cb52a-9b23-4d8a-8757-1b92c5208c3d">
+    <vulnerability bom-ref="urn:uuid:5d2cfd29-520b-437f-b591-2df685ee0941">
       <id>CVE-2024-2236</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19601,7 +19601,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:1859e1c5-873e-495f-8de4-15b7bff9eb4f">
+    <vulnerability bom-ref="urn:uuid:4f428cbf-8327-4844-b67e-d0c0769cdbbe">
       <id>CVE-2025-0167</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19636,7 +19636,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:1f79693a-3aa7-461e-b4f4-78ce408d9eea">
+    <vulnerability bom-ref="urn:uuid:4fb6b054-8d8d-4e08-b6c1-dc0f03a3bc7c">
       <id>CVE-2025-0167</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19671,7 +19671,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:f4b8a0d5-19f3-42bb-815c-65e50cc32340">
+    <vulnerability bom-ref="urn:uuid:cf086465-2632-40b4-bcfb-bd3eee078697">
       <id>CVE-2025-45582</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19706,7 +19706,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:3f9a879d-5e33-450f-b2bf-0d39f04ee743">
+    <vulnerability bom-ref="urn:uuid:0ef22147-2059-4e84-b499-85cb4d4b6195">
       <id>CVE-2025-9086</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19741,7 +19741,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:5853e888-afb0-4e84-a3a1-a40e6d7eaf3a">
+    <vulnerability bom-ref="urn:uuid:33f30fc8-6082-482b-9c0f-c4bf13a78b8d">
       <id>CVE-2025-9086</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19776,7 +19776,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:0463c1eb-015d-46c0-b9e5-5e0e691daaf1">
+    <vulnerability bom-ref="urn:uuid:07684670-eef6-4118-9ae1-64f38cd6d51f">
       <id>CVE-2016-2781</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19811,7 +19811,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:347696bd-a8ee-4026-bc5b-cc40bbd14896">
+    <vulnerability bom-ref="urn:uuid:6080adfc-b91d-4f76-8c51-1063e23a1710">
       <id>CVE-2025-8277</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19846,7 +19846,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:9438de4d-33c8-4cd3-91de-0bbcce5dd929">
+    <vulnerability bom-ref="urn:uuid:7a7c94d5-661a-4d6f-9d9e-fb09ed82eff9">
       <id>CVE-2025-8941</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19881,7 +19881,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:671876fe-08ec-4cdc-a840-2ede6d9d1bff">
+    <vulnerability bom-ref="urn:uuid:4aaa39f3-d2c3-4b28-b587-b7d8c1b4b904">
       <id>CVE-2025-8941</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19916,7 +19916,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:420e4f29-47d3-4957-a917-e53be85f2c6e">
+    <vulnerability bom-ref="urn:uuid:91d5f6f0-fbb1-4925-97ab-f2f50fcdaa2b">
       <id>CVE-2025-8941</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19951,7 +19951,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:179ecc0c-1775-4da8-8a4e-6c1817759e3c">
+    <vulnerability bom-ref="urn:uuid:634aabba-ef15-4fc4-94b1-b7b4db997943">
       <id>CVE-2025-8941</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19986,7 +19986,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:2ccc2ad2-2816-4f51-ad75-567555c1bc25">
+    <vulnerability bom-ref="urn:uuid:f2e97da2-1a9e-40ea-b8ad-ff70c33eaf2e">
       <id>CVE-2025-10148</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20021,7 +20021,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:88e4faca-d36e-4bef-82fa-3c8f5c322c2c">
+    <vulnerability bom-ref="urn:uuid:91b45b96-80e1-40b0-9287-04798546319d">
       <id>CVE-2025-10148</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20056,7 +20056,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:42e9960b-a7f3-42c9-8496-6c7d9c01ca45">
+    <vulnerability bom-ref="urn:uuid:ecf429e4-1ad4-45a2-b85f-ea547fd8a66b">
       <id>CVE-2025-27587</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20091,7 +20091,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:6f86e7b1-d669-4eec-bcd1-80359961a517">
+    <vulnerability bom-ref="urn:uuid:89cc19ca-8b66-461f-92a3-e1486506e71b">
       <id>CVE-2025-5278</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20126,7 +20126,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:ab576f58-7b90-4932-8ce1-ed0a475abf0f">
+    <vulnerability bom-ref="urn:uuid:52c346ac-cd70-4879-be2f-cb53c3fcf4da">
       <id>CVE-2025-6141</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20161,7 +20161,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:133f7798-bd00-458f-a530-8b24456413c6">
+    <vulnerability bom-ref="urn:uuid:a1707519-2425-4623-b48f-b3a40209b823">
       <id>CVE-2025-6141</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20196,7 +20196,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:f0e5fda5-1908-4489-bed0-425d96281806">
+    <vulnerability bom-ref="urn:uuid:e8e61da7-df3b-48b9-bc7d-9103922319ca">
       <id>CVE-2025-6141</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20231,7 +20231,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:f52448c7-0495-495b-84f3-8aea13fbb89e">
+    <vulnerability bom-ref="urn:uuid:db8c218b-da33-4bc5-a900-140791a883e1">
       <id>CVE-2025-6141</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20266,7 +20266,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:386cbaae-4876-4d3f-b70d-af0cc32b09ab">
+    <vulnerability bom-ref="urn:uuid:e10b2dda-66c6-4488-8daa-dca81d27e4c8">
       <id>CVE-2025-8114</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20301,7 +20301,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:3e0cbae5-5399-499f-a298-ccb0d61f7b9d">
+    <vulnerability bom-ref="urn:uuid:0cc87510-c40d-4e0b-a777-36473725fc6f">
       <id>CVE-2022-3219</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
