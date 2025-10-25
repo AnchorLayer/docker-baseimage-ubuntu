@@ -388,6 +388,27 @@
               }
             },
             {
+              "id": "CVE-2025-62813-liblz4-1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-62813 medium vulnerability for liblz4-1 package"
+              },
+              "fullDescription": {
+                "text": "Version 1.9.4-1build1.1 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-62813\nSeverity: medium\nPackage: liblz4-1\nVersion: 1.9.4-1build1.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-62813](https://ubuntu.com/security/CVE-2025-62813)",
+                "markdown": "**Vulnerability CVE-2025-62813**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | liblz4-1  | 1.9.4-1build1.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-62813](https://ubuntu.com/security/CVE-2025-62813)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/liblz4-1@1.9.4-1build1.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=lz4"
+                ],
+                "security-severity": "5.9"
+              }
+            },
+            {
               "id": "CVE-2025-6141-libncursesw6",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1358,6 +1379,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "fdd6fcc9dd197e0360cff5ea16334bafb32f04a68c4f2fe0a0c4e9010daead29:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-62813-liblz4-1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: liblz4-1, version 1.9.4-1build1.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:05978c9e42f5df784d944509b48eca8273fe7558775230014522d7f98443dc0c:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/liblz4-1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:073ec47a8c22dcaa4d6e5758799ccefe2f9bde943685830b1bf6fd2395f5eabc:/usr/share/doc/liblz4-1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/liblz4-1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:073ec47a8c22dcaa4d6e5758799ccefe2f9bde943685830b1bf6fd2395f5eabc:/var/lib/dpkg/info/liblz4-1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "419730d2b8b9ed7c86daf5c18006af35b207333294671315e1e0397815c4e4d1:1"
           }
         },
         {
