@@ -73,27 +73,6 @@
               }
             },
             {
-              "id": "CVE-2021-46848-libtasn1-6",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2021-46848 low vulnerability for libtasn1-6 package"
-              },
-              "fullDescription": {
-                "text": "Version 4.18.0-4ubuntu0.1 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2021-46848\nSeverity: low\nPackage: libtasn1-6\nVersion: 4.18.0-4ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2021-46848](https://ubuntu.com/security/CVE-2021-46848)",
-                "markdown": "**Vulnerability CVE-2021-46848**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libtasn1-6  | 4.18.0-4ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2021-46848](https://ubuntu.com/security/CVE-2021-46848)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libtasn1-6@4.18.0-4ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "9.1"
-              }
-            },
-            {
               "id": "CVE-2023-7008-libsystemd0",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -133,6 +112,27 @@
                   "pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.16?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=systemd"
                 ],
                 "security-severity": "5.9"
+              }
+            },
+            {
+              "id": "CVE-2021-46848-libtasn1-6",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2021-46848 low vulnerability for libtasn1-6 package"
+              },
+              "fullDescription": {
+                "text": "Version 4.18.0-4ubuntu0.1 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2021-46848\nSeverity: low\nPackage: libtasn1-6\nVersion: 4.18.0-4ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2021-46848](https://ubuntu.com/security/CVE-2021-46848)",
+                "markdown": "**Vulnerability CVE-2021-46848**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libtasn1-6  | 4.18.0-4ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2021-46848](https://ubuntu.com/security/CVE-2021-46848)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libtasn1-6@4.18.0-4ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "9.1"
               }
             },
             {
@@ -1040,45 +1040,6 @@
           }
         },
         {
-          "ruleId": "CVE-2021-46848-libtasn1-6",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libtasn1-6, version 4.18.0-4ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libtasn1-6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libtasn1-6/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libtasn1-6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libtasn1-6:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "ccbf897744a3281ac0646f543399f3efcb8eb2abef21641c1057ebf318ea2d69:1"
-          }
-        },
-        {
           "ruleId": "CVE-2023-7008-libsystemd0",
           "level": "note",
           "message": {
@@ -1154,6 +1115,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "a74d9354b61cecc6cd94c3398b4d4ce940272a7703a87d54c266c475686a89cc:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2021-46848-libtasn1-6",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libtasn1-6, version 4.18.0-4ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libtasn1-6/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/libtasn1-6/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libtasn1-6:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/libtasn1-6:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "ccbf897744a3281ac0646f543399f3efcb8eb2abef21641c1057ebf318ea2d69:1"
           }
         },
         {

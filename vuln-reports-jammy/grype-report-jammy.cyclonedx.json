@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:877b6dcc-f60c-48cd-8b9d-c62deeb01da7",
+  "serialNumber": "urn:uuid:b9b954e7-366f-4a04-82f5-4b8afd58487b",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-10-28T09:19:50Z",
+    "timestamp": "2025-10-28T09:42:26Z",
     "tools": {
       "components": [
         {
@@ -37398,7 +37398,7 @@
   ],
   "vulnerabilities": [
     {
-      "bom-ref": "urn:uuid:7ac701f3-3df7-43c6-a0bf-26f68ee41213",
+      "bom-ref": "urn:uuid:3fa61b7f-cce4-4858-b784-a505cb7f3871",
       "id": "CVE-2024-56433",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -37434,7 +37434,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:ad7ae6d2-9280-4bff-88fe-3ba39820354c",
+      "bom-ref": "urn:uuid:651e1902-73b6-47f6-aca9-bc3c47e873bc",
       "id": "CVE-2024-56433",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -37470,7 +37470,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:8cd22508-76db-41a9-8e06-d6d6986b3d8a",
+      "bom-ref": "urn:uuid:762dd6ce-c82d-440f-ab20-59f143f901fd",
       "id": "CVE-2024-41996",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -37506,7 +37506,79 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:237d92d6-5212-4e20-9c31-759d97e4d4d9",
+      "bom-ref": "urn:uuid:c30edbdd-72f0-4764-8be4-26e5dc131ee8",
+      "id": "CVE-2023-7008",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-22.04",
+        "url": "https://ubuntu.com/security/CVE-2023-7008"
+      },
+      "references": [
+        {
+          "id": "CVE-2023-7008",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-22.04",
+            "url": "https://ubuntu.com/security/CVE-2023-7008"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "low",
+          "method": "other"
+        },
+        {
+          "source": {
+            "name": "FIRST",
+            "url": "https://www.first.org/epss/"
+          },
+          "score": 0.00304,
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libsystemd0@249.11-0ubuntu3.16?arch=amd64&distro=ubuntu-22.04&package-id=ab8bb5596ea7d97b&upstream=systemd"
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:fcbc021d-cbd3-469d-b736-20957647eb2e",
+      "id": "CVE-2023-7008",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-22.04",
+        "url": "https://ubuntu.com/security/CVE-2023-7008"
+      },
+      "references": [
+        {
+          "id": "CVE-2023-7008",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-22.04",
+            "url": "https://ubuntu.com/security/CVE-2023-7008"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "low",
+          "method": "other"
+        },
+        {
+          "source": {
+            "name": "FIRST",
+            "url": "https://www.first.org/epss/"
+          },
+          "score": 0.00304,
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.16?arch=amd64&distro=ubuntu-22.04&package-id=0a080d362aab61a3&upstream=systemd"
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:f84cf343-b265-4015-8715-84b7a7e1d88d",
       "id": "CVE-2021-46848",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -37542,79 +37614,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:b4420de2-2e56-4478-a6e7-db6b67ea7011",
-      "id": "CVE-2023-7008",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-22.04",
-        "url": "https://ubuntu.com/security/CVE-2023-7008"
-      },
-      "references": [
-        {
-          "id": "CVE-2023-7008",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-22.04",
-            "url": "https://ubuntu.com/security/CVE-2023-7008"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "low",
-          "method": "other"
-        },
-        {
-          "source": {
-            "name": "FIRST",
-            "url": "https://www.first.org/epss/"
-          },
-          "score": 0.00266,
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libsystemd0@249.11-0ubuntu3.16?arch=amd64&distro=ubuntu-22.04&package-id=ab8bb5596ea7d97b&upstream=systemd"
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:98b561ce-838b-47fa-8570-1763dd292cd5",
-      "id": "CVE-2023-7008",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-22.04",
-        "url": "https://ubuntu.com/security/CVE-2023-7008"
-      },
-      "references": [
-        {
-          "id": "CVE-2023-7008",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-22.04",
-            "url": "https://ubuntu.com/security/CVE-2023-7008"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "low",
-          "method": "other"
-        },
-        {
-          "source": {
-            "name": "FIRST",
-            "url": "https://www.first.org/epss/"
-          },
-          "score": 0.00266,
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.16?arch=amd64&distro=ubuntu-22.04&package-id=0a080d362aab61a3&upstream=systemd"
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:5395b807-798d-4589-910e-d9192d9ca67c",
+      "bom-ref": "urn:uuid:b658473b-90bd-4c66-9e7c-446ddc86df0f",
       "id": "CVE-2024-2236",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -37650,7 +37650,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:9139ee79-b7b9-463e-86f4-7402335aa16d",
+      "bom-ref": "urn:uuid:4d67f322-5831-410a-abae-b0ebd1382e7a",
       "id": "CVE-2022-4899",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -37686,7 +37686,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:b08e827b-dac4-4753-b8af-4acfc6be5215",
+      "bom-ref": "urn:uuid:b4814e7f-dbb8-4e2d-91a2-e31d212a552b",
       "id": "CVE-2025-0167",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -37722,7 +37722,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:84e1914f-cc7d-4e2f-addc-4510248070cf",
+      "bom-ref": "urn:uuid:17a878bd-6bf1-4707-bcda-358de1ad26bf",
       "id": "CVE-2025-0167",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -37758,7 +37758,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:ab317c66-0f41-41af-bc1a-9529a2f52834",
+      "bom-ref": "urn:uuid:cfac2ebe-5a6c-4b04-b1e4-617172bf6ca7",
       "id": "CVE-2025-45582",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -37794,7 +37794,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:7a861ec4-6f36-4d75-b60d-3cfda2e833ae",
+      "bom-ref": "urn:uuid:02316f72-659e-4e5c-aa1d-d9138ea4c47b",
       "id": "CVE-2025-9086",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -37830,7 +37830,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:f866a4f3-a159-4530-bd0f-7b108be91b88",
+      "bom-ref": "urn:uuid:4678e15d-b4d1-4ccc-ada2-0c77aeefd1f8",
       "id": "CVE-2025-9086",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -37866,7 +37866,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:3c9abb3f-69d5-430b-b318-05a20bcd5a47",
+      "bom-ref": "urn:uuid:f7cec5fe-e120-4f40-8886-3ffee7fb090d",
       "id": "CVE-2016-2781",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -37902,7 +37902,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:e3d7d87b-7e99-4004-ae5c-99226fccbc62",
+      "bom-ref": "urn:uuid:ac7732ea-baf3-4f7b-a8f5-d96c0d1c8e62",
       "id": "CVE-2022-41409",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -37938,7 +37938,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:b3408ed7-0e4b-41b2-807c-939e046582f5",
+      "bom-ref": "urn:uuid:0ab626e1-955a-4b80-bda0-df17c4f77736",
       "id": "CVE-2023-50495",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -37974,7 +37974,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:6c83615e-8122-4b84-829f-7d53d0a69ef8",
+      "bom-ref": "urn:uuid:6f9b9963-b74d-40db-b177-f8ff44fb43ac",
       "id": "CVE-2023-50495",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38010,7 +38010,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:4130488f-6ad7-4b63-8155-2d8a7efe5092",
+      "bom-ref": "urn:uuid:d2d03ec9-29da-407a-bdc3-278d390d4837",
       "id": "CVE-2023-50495",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38046,7 +38046,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:00928e46-a2a6-457a-a177-3241206d3ea8",
+      "bom-ref": "urn:uuid:55a6efe6-9ac5-4194-96eb-1e4e0034508e",
       "id": "CVE-2023-50495",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38082,7 +38082,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:95bd1a97-b5a1-414f-aa40-694a7b3a5145",
+      "bom-ref": "urn:uuid:72cd2265-967f-4873-a83e-9024a3ad56a1",
       "id": "CVE-2023-50495",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38118,7 +38118,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:2511cf88-b224-468f-bc86-4511c0ab07ac",
+      "bom-ref": "urn:uuid:515528b4-99f9-4c3d-91e8-97f158933ad5",
       "id": "CVE-2022-27943",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38154,7 +38154,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:c7ede43c-bd88-4e5d-8bed-d5ac27072afd",
+      "bom-ref": "urn:uuid:2bdb1ceb-edfa-4189-98da-b25128453080",
       "id": "CVE-2022-27943",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38190,7 +38190,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:3b37c83d-33bf-4c90-8723-567a027e61ee",
+      "bom-ref": "urn:uuid:04e40241-3e6e-49b0-89ac-edca8cafa282",
       "id": "CVE-2022-27943",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38226,7 +38226,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:85263712-426c-4850-ab00-ded4f0a55e76",
+      "bom-ref": "urn:uuid:0cdb50e2-1b6a-4653-a48b-fff1c26e1842",
       "id": "CVE-2025-8277",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38262,7 +38262,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:521b8d33-0fb1-4ac1-97d6-f059af8da4ea",
+      "bom-ref": "urn:uuid:2cf38dce-1cfe-42ff-aaf6-a555cd6e7c97",
       "id": "CVE-2017-11164",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38298,7 +38298,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:8e5eee11-74db-4c7f-b602-2b075c3ef927",
+      "bom-ref": "urn:uuid:a570873d-2a56-4e5c-b8c0-5fbc7f3c04e4",
       "id": "CVE-2025-8941",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38334,7 +38334,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:18011b94-b095-49f9-b783-4371524741ff",
+      "bom-ref": "urn:uuid:fdacc56c-cb1b-40c0-af43-1662a6b3e2cd",
       "id": "CVE-2025-8941",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38370,7 +38370,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:d71736b9-e8da-424b-af95-5f91dc6c2511",
+      "bom-ref": "urn:uuid:94a2d84b-d0e9-4a3e-a87e-eec38674d622",
       "id": "CVE-2025-8941",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38406,7 +38406,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:79301a4d-f6bd-4815-b78c-86c3c4a074ea",
+      "bom-ref": "urn:uuid:bb493b46-e262-4654-959e-be3c4bbe4637",
       "id": "CVE-2025-8941",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38442,7 +38442,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:a66c160a-d0a8-465e-84b7-32fa36a7d0dc",
+      "bom-ref": "urn:uuid:e7a00b60-2d68-45ae-b1c5-b956688a0813",
       "id": "CVE-2025-27587",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38478,7 +38478,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:2a5edb3a-1e81-48ed-994e-1a29fab418b6",
+      "bom-ref": "urn:uuid:68733265-b203-4d2b-bde6-e90615fba891",
       "id": "CVE-2025-62813",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38514,7 +38514,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:b31b7923-1725-46a0-8f19-b73ffe78c48c",
+      "bom-ref": "urn:uuid:71cbc6f0-1301-48cb-a284-e718933fe1c9",
       "id": "CVE-2025-6141",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38550,7 +38550,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:1f477496-6a25-411e-9050-40ce53c50060",
+      "bom-ref": "urn:uuid:4cea738f-c42b-4801-9a85-ae166b7000e9",
       "id": "CVE-2025-6141",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38586,7 +38586,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:c7476bc0-4e04-4a7b-b7c2-3a2f592b1295",
+      "bom-ref": "urn:uuid:eeb8c5f6-70f3-4383-a8cb-e1443ea8dca0",
       "id": "CVE-2025-6141",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38622,7 +38622,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:f89a3ff6-823f-4904-aa22-99e1da593c3a",
+      "bom-ref": "urn:uuid:757ada01-f000-4139-8bec-d71860a2014d",
       "id": "CVE-2025-6141",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38658,7 +38658,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:731aba48-11a9-4c85-b47e-35712dad134b",
+      "bom-ref": "urn:uuid:b0d87317-1a92-4a26-b74c-6a54c4dfeb9a",
       "id": "CVE-2025-6141",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38694,7 +38694,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:2b40fc6b-ad36-4724-8313-b644214dd607",
+      "bom-ref": "urn:uuid:50cf4be8-ae80-4584-83e3-6ac65de5c332",
       "id": "CVE-2023-29383",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38730,7 +38730,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:f31e3e9d-8840-4ebe-bbc2-36db87c9b2f8",
+      "bom-ref": "urn:uuid:e0ddf65c-8d19-463e-8046-2e5640678d06",
       "id": "CVE-2023-29383",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38766,7 +38766,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:80d5db79-ce00-450a-8d5c-a36fc303a840",
+      "bom-ref": "urn:uuid:6f300763-b4bd-48aa-b8ac-a8130790844f",
       "id": "CVE-2025-8114",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38802,7 +38802,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:d8652cf9-5693-4a62-8030-5b25729efc0f",
+      "bom-ref": "urn:uuid:07e26cff-130b-4f94-8aba-651d2ace1071",
       "id": "CVE-2022-3219",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
@@ -38838,7 +38838,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:e11cfe4e-7979-4a7d-8179-d6aad72ca16d",
+      "bom-ref": "urn:uuid:cc872c54-0a74-4f56-af07-35446e6454bf",
       "id": "CVE-2025-5278",
       "source": {
         "name": "ubuntu-distro-ubuntu-22.04",
