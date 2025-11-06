@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.6" serialNumber="urn:uuid:f09bcb42-95e5-4f7f-a26e-7af452c8b97b" version="1">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.6" serialNumber="urn:uuid:fe8509c7-a833-41c0-a0e3-18b792753f9f" version="1">
   <metadata>
-    <timestamp>2025-11-06T07:39:11Z</timestamp>
+    <timestamp>2025-11-06T08:25:39Z</timestamp>
     <tools>
       <components>
         <component type="application">
@@ -19037,7 +19037,7 @@
     </dependency>
   </dependencies>
   <vulnerabilities>
-    <vulnerability bom-ref="urn:uuid:898f6f39-a0f4-4c44-bd21-dd9a80ab0a05">
+    <vulnerability bom-ref="urn:uuid:aa525e0b-4b43-4e58-9e13-91196a2c1cf5">
       <id>CVE-2024-56433</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19072,7 +19072,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:5c7a6c23-3b58-44e8-8a77-7674b63cc5d4">
+    <vulnerability bom-ref="urn:uuid:b9ea0ae0-7aae-4cd7-af64-a57bc6be0bb2">
       <id>CVE-2024-56433</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19107,7 +19107,77 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:10814584-b402-4ef9-a847-59134b3e6fb9">
+    <vulnerability bom-ref="urn:uuid:9ca71fcd-da17-43e5-acc8-706b22d5f95c">
+      <id>CVE-2023-7008</id>
+      <source>
+        <name>ubuntu-distro-ubuntu-22.04</name>
+        <url>https://ubuntu.com/security/CVE-2023-7008</url>
+      </source>
+      <references>
+        <reference>
+          <id>CVE-2023-7008</id>
+          <source>
+            <name>ubuntu-distro-ubuntu-22.04</name>
+            <url>https://ubuntu.com/security/CVE-2023-7008</url>
+          </source>
+        </reference>
+      </references>
+      <ratings>
+        <rating>
+          <severity>low</severity>
+          <method>other</method>
+        </rating>
+        <rating>
+          <source>
+            <name>FIRST</name>
+            <url>https://www.first.org/epss/</url>
+          </source>
+          <score>0.00477</score>
+          <method>other</method>
+        </rating>
+      </ratings>
+      <affects>
+        <target>
+          <ref>pkg:deb/ubuntu/libsystemd0@249.11-0ubuntu3.16?arch=amd64&amp;distro=ubuntu-22.04&amp;package-id=ab8bb5596ea7d97b&amp;upstream=systemd</ref>
+        </target>
+      </affects>
+    </vulnerability>
+    <vulnerability bom-ref="urn:uuid:00135024-407d-4ef4-a825-4825249664d7">
+      <id>CVE-2023-7008</id>
+      <source>
+        <name>ubuntu-distro-ubuntu-22.04</name>
+        <url>https://ubuntu.com/security/CVE-2023-7008</url>
+      </source>
+      <references>
+        <reference>
+          <id>CVE-2023-7008</id>
+          <source>
+            <name>ubuntu-distro-ubuntu-22.04</name>
+            <url>https://ubuntu.com/security/CVE-2023-7008</url>
+          </source>
+        </reference>
+      </references>
+      <ratings>
+        <rating>
+          <severity>low</severity>
+          <method>other</method>
+        </rating>
+        <rating>
+          <source>
+            <name>FIRST</name>
+            <url>https://www.first.org/epss/</url>
+          </source>
+          <score>0.00477</score>
+          <method>other</method>
+        </rating>
+      </ratings>
+      <affects>
+        <target>
+          <ref>pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.16?arch=amd64&amp;distro=ubuntu-22.04&amp;package-id=0a080d362aab61a3&amp;upstream=systemd</ref>
+        </target>
+      </affects>
+    </vulnerability>
+    <vulnerability bom-ref="urn:uuid:5fd53302-d193-46d5-898a-e05592366674">
       <id>CVE-2024-41996</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19142,7 +19212,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:101e150a-a1a7-4a3b-8f79-4996b63a35f5">
+    <vulnerability bom-ref="urn:uuid:cfaeb606-0dad-45c2-9d2f-f0ee883205e4">
       <id>CVE-2021-46848</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19177,77 +19247,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:a29eca96-d2d7-4965-aa28-52aa113e3344">
-      <id>CVE-2023-7008</id>
-      <source>
-        <name>ubuntu-distro-ubuntu-22.04</name>
-        <url>https://ubuntu.com/security/CVE-2023-7008</url>
-      </source>
-      <references>
-        <reference>
-          <id>CVE-2023-7008</id>
-          <source>
-            <name>ubuntu-distro-ubuntu-22.04</name>
-            <url>https://ubuntu.com/security/CVE-2023-7008</url>
-          </source>
-        </reference>
-      </references>
-      <ratings>
-        <rating>
-          <severity>low</severity>
-          <method>other</method>
-        </rating>
-        <rating>
-          <source>
-            <name>FIRST</name>
-            <url>https://www.first.org/epss/</url>
-          </source>
-          <score>0.00259</score>
-          <method>other</method>
-        </rating>
-      </ratings>
-      <affects>
-        <target>
-          <ref>pkg:deb/ubuntu/libsystemd0@249.11-0ubuntu3.16?arch=amd64&amp;distro=ubuntu-22.04&amp;package-id=ab8bb5596ea7d97b&amp;upstream=systemd</ref>
-        </target>
-      </affects>
-    </vulnerability>
-    <vulnerability bom-ref="urn:uuid:a0f1ca21-da97-4756-9107-4ee0e3d28966">
-      <id>CVE-2023-7008</id>
-      <source>
-        <name>ubuntu-distro-ubuntu-22.04</name>
-        <url>https://ubuntu.com/security/CVE-2023-7008</url>
-      </source>
-      <references>
-        <reference>
-          <id>CVE-2023-7008</id>
-          <source>
-            <name>ubuntu-distro-ubuntu-22.04</name>
-            <url>https://ubuntu.com/security/CVE-2023-7008</url>
-          </source>
-        </reference>
-      </references>
-      <ratings>
-        <rating>
-          <severity>low</severity>
-          <method>other</method>
-        </rating>
-        <rating>
-          <source>
-            <name>FIRST</name>
-            <url>https://www.first.org/epss/</url>
-          </source>
-          <score>0.00259</score>
-          <method>other</method>
-        </rating>
-      </ratings>
-      <affects>
-        <target>
-          <ref>pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.16?arch=amd64&amp;distro=ubuntu-22.04&amp;package-id=0a080d362aab61a3&amp;upstream=systemd</ref>
-        </target>
-      </affects>
-    </vulnerability>
-    <vulnerability bom-ref="urn:uuid:1073d318-318f-4e2b-a439-361ca53dfc67">
+    <vulnerability bom-ref="urn:uuid:d4f0ee4c-395f-4e55-87c1-6cc7a4315cff">
       <id>CVE-2024-2236</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19282,7 +19282,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:fa3b05a0-80c4-42c9-9238-7fe3a2024ebe">
+    <vulnerability bom-ref="urn:uuid:71c15542-b36c-404a-b41d-5c7be8ad9d91">
       <id>CVE-2022-4899</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19317,7 +19317,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:5ce138b8-ec3e-4cb4-b2f6-d846f7ec849e">
+    <vulnerability bom-ref="urn:uuid:d974dd90-9b11-4e8d-918a-f2f4942c2204">
       <id>CVE-2025-0167</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19352,7 +19352,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:43213fba-8bc3-479b-a3a5-538fd6bacde2">
+    <vulnerability bom-ref="urn:uuid:fb43fc2e-e3c2-4707-a0b8-3ecbc0eceebd">
       <id>CVE-2025-0167</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19387,7 +19387,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:34f83dbf-4407-406a-bc39-657ac2113ab9">
+    <vulnerability bom-ref="urn:uuid:0efa9644-3088-4a5a-b87e-015e1e3397c6">
       <id>CVE-2025-45582</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19422,7 +19422,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:596d4d0f-a176-4a71-b21a-43621e01b6dc">
+    <vulnerability bom-ref="urn:uuid:2c285675-e9b5-4f2b-a86d-cae1ce1762a9">
       <id>CVE-2016-2781</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19457,7 +19457,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:aaaeee87-9217-47e8-acc1-b0f562cd1443">
+    <vulnerability bom-ref="urn:uuid:3efc09ba-ae05-4538-8e7d-c5c1c8871a0b">
       <id>CVE-2025-9086</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19482,7 +19482,7 @@
             <name>FIRST</name>
             <url>https://www.first.org/epss/</url>
           </source>
-          <score>0.00077</score>
+          <score>0.00073</score>
           <method>other</method>
         </rating>
       </ratings>
@@ -19492,7 +19492,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:4aa2c4ff-e192-455e-a984-7b8f90f83487">
+    <vulnerability bom-ref="urn:uuid:404f211a-08d2-403b-b06c-b0e3968d160a">
       <id>CVE-2025-9086</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19517,7 +19517,7 @@
             <name>FIRST</name>
             <url>https://www.first.org/epss/</url>
           </source>
-          <score>0.00077</score>
+          <score>0.00073</score>
           <method>other</method>
         </rating>
       </ratings>
@@ -19527,7 +19527,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:fdc4eb96-9717-4050-a98f-3665e2ff353c">
+    <vulnerability bom-ref="urn:uuid:44a96213-1c61-4297-a476-c89f6d60f2d2">
       <id>CVE-2022-41409</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19562,7 +19562,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:a71261a8-d22c-427b-8623-167c5ac5424b">
+    <vulnerability bom-ref="urn:uuid:88c81cdc-6c9d-4dab-bd00-cb8831ad9540">
       <id>CVE-2023-50495</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19587,7 +19587,7 @@
             <name>FIRST</name>
             <url>https://www.first.org/epss/</url>
           </source>
-          <score>0.0005</score>
+          <score>0.00052</score>
           <method>other</method>
         </rating>
       </ratings>
@@ -19597,7 +19597,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:fbec7b7d-1fc3-4ef0-84c3-f467e8966593">
+    <vulnerability bom-ref="urn:uuid:f31a0415-f249-4c79-aa4a-bb4edc301f09">
       <id>CVE-2023-50495</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19622,7 +19622,7 @@
             <name>FIRST</name>
             <url>https://www.first.org/epss/</url>
           </source>
-          <score>0.0005</score>
+          <score>0.00052</score>
           <method>other</method>
         </rating>
       </ratings>
@@ -19632,7 +19632,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:8793703b-b703-4b15-9a09-37cc003f724d">
+    <vulnerability bom-ref="urn:uuid:54002461-017a-4658-8011-ce36884c138c">
       <id>CVE-2023-50495</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19657,7 +19657,7 @@
             <name>FIRST</name>
             <url>https://www.first.org/epss/</url>
           </source>
-          <score>0.0005</score>
+          <score>0.00052</score>
           <method>other</method>
         </rating>
       </ratings>
@@ -19667,7 +19667,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:497a0d1d-3252-44f6-84a1-291b534df778">
+    <vulnerability bom-ref="urn:uuid:5ffcc2a3-a897-4837-bbda-c2982b717000">
       <id>CVE-2023-50495</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19692,7 +19692,7 @@
             <name>FIRST</name>
             <url>https://www.first.org/epss/</url>
           </source>
-          <score>0.0005</score>
+          <score>0.00052</score>
           <method>other</method>
         </rating>
       </ratings>
@@ -19702,7 +19702,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:f4fd27eb-7d69-49f3-bdb5-edbf1515e3b5">
+    <vulnerability bom-ref="urn:uuid:4b05244b-eb69-42ac-afb9-59d99ee7610b">
       <id>CVE-2023-50495</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19727,7 +19727,7 @@
             <name>FIRST</name>
             <url>https://www.first.org/epss/</url>
           </source>
-          <score>0.0005</score>
+          <score>0.00052</score>
           <method>other</method>
         </rating>
       </ratings>
@@ -19737,7 +19737,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:053bcf1b-3911-44e3-aed5-25393dae6afa">
+    <vulnerability bom-ref="urn:uuid:551b5610-8250-4e53-8d46-183b42832091">
       <id>CVE-2022-27943</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19772,7 +19772,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:8b93a2cc-db81-4e61-a1f8-92c780ccf00c">
+    <vulnerability bom-ref="urn:uuid:ab4717f3-e80a-4d85-b6ca-16a1ecb5f8d1">
       <id>CVE-2022-27943</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19807,7 +19807,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:a17dd5e4-7f03-4c4a-a045-b46439c7ae90">
+    <vulnerability bom-ref="urn:uuid:f6882045-92aa-45f5-8d94-64aeb012625b">
       <id>CVE-2022-27943</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19842,7 +19842,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:a3771d82-53d1-445e-9a68-de1c607d25de">
+    <vulnerability bom-ref="urn:uuid:632adebd-ac0f-40d3-98be-95f7e4bc3112">
       <id>CVE-2025-8277</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19877,7 +19877,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:dc374a26-2058-4140-b62e-108958f2ea62">
+    <vulnerability bom-ref="urn:uuid:14937b73-1266-48aa-aca5-dd8e8eca8c18">
       <id>CVE-2017-11164</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19912,7 +19912,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:89486c2e-6872-4c40-9929-da12952a50e1">
+    <vulnerability bom-ref="urn:uuid:e4ba886d-69b4-440e-b1bf-06623dbb7a15">
       <id>CVE-2025-8941</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19947,7 +19947,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:3cab2b25-0ad3-4c90-b107-246fdccf51e5">
+    <vulnerability bom-ref="urn:uuid:e052995d-99f6-4787-8536-a614c0ad78b2">
       <id>CVE-2025-8941</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -19982,7 +19982,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:b3e04b76-7689-4102-9c67-22d6af380a33">
+    <vulnerability bom-ref="urn:uuid:7ce58585-ebc5-4a46-80d2-5e2814fa3bca">
       <id>CVE-2025-8941</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -20017,7 +20017,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:87c8d4f7-fcbc-472e-b7d1-3fcfb7864737">
+    <vulnerability bom-ref="urn:uuid:6782fd98-c1ff-4d50-8102-fe6ec01ae7cc">
       <id>CVE-2025-8941</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -20052,7 +20052,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:fed7691a-2180-4260-af2e-3697b4f80046">
+    <vulnerability bom-ref="urn:uuid:b05326f3-0396-46b0-a682-3fe02968b973">
       <id>CVE-2025-27587</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -20087,7 +20087,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:d008e4b0-444a-4c00-8d6b-0acbef9a1afd">
+    <vulnerability bom-ref="urn:uuid:0a8acc36-efdf-4117-a352-037f17792c65">
       <id>CVE-2023-29383</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -20122,7 +20122,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:bc5843e6-e2d9-4d2f-a296-318e3e2097c0">
+    <vulnerability bom-ref="urn:uuid:c56d1853-bbc6-4c14-a3e7-daefd21a168b">
       <id>CVE-2023-29383</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -20157,7 +20157,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:ac7223dc-8011-41a1-bd1f-6bdfd0eb458e">
+    <vulnerability bom-ref="urn:uuid:077ad330-8274-4459-8bd3-e362f65c63cf">
       <id>CVE-2025-6141</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -20192,7 +20192,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:513763cc-79c2-4713-848f-310424deaa33">
+    <vulnerability bom-ref="urn:uuid:0c1cfb79-9c71-4140-a4cc-4c1932d52a61">
       <id>CVE-2025-6141</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -20227,7 +20227,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:0e0cda2e-4e2d-41e9-b9a3-9e8054da74d2">
+    <vulnerability bom-ref="urn:uuid:9faa409e-56a3-474a-ae7c-d8b1430c3daf">
       <id>CVE-2025-6141</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -20262,7 +20262,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:b4335bf1-5819-484c-8f78-01f4865c1b63">
+    <vulnerability bom-ref="urn:uuid:13fc05d8-6447-4114-95cf-912165f961ce">
       <id>CVE-2025-6141</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -20297,7 +20297,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:e945aef5-e4d9-41ef-b3ba-2c227b0e3e2e">
+    <vulnerability bom-ref="urn:uuid:4e05e18f-5fc2-492d-802f-af12ddca0302">
       <id>CVE-2025-6141</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -20332,7 +20332,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:ea1067c4-1e2c-4986-aa3f-904f99c70f19">
+    <vulnerability bom-ref="urn:uuid:cf6a4a9c-d257-455f-9e4f-1f5802d2abe2">
       <id>CVE-2025-8114</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -20367,7 +20367,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:bf22929c-217b-42c6-8279-152c948e1504">
+    <vulnerability bom-ref="urn:uuid:915edaf0-6c85-401b-a4e1-3ffededb2ed7">
       <id>CVE-2025-5278</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -20402,7 +20402,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:a366bd46-92f4-4483-8e55-10604b7938f4">
+    <vulnerability bom-ref="urn:uuid:b729d455-6264-464d-a05c-4515bcc0aed5">
       <id>CVE-2022-3219</id>
       <source>
         <name>ubuntu-distro-ubuntu-22.04</name>
@@ -20434,6 +20434,60 @@
       <affects>
         <target>
           <ref>pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.4?arch=amd64&amp;distro=ubuntu-22.04&amp;package-id=61f1e396cd623205&amp;upstream=gnupg2</ref>
+        </target>
+      </affects>
+    </vulnerability>
+    <vulnerability bom-ref="urn:uuid:b2680a21-00a8-4061-8e48-d97836cf52f7">
+      <id>CVE-2025-11563</id>
+      <source>
+        <name>ubuntu-distro-ubuntu-22.04</name>
+        <url>https://ubuntu.com/security/CVE-2025-11563</url>
+      </source>
+      <references>
+        <reference>
+          <id>CVE-2025-11563</id>
+          <source>
+            <name>ubuntu-distro-ubuntu-22.04</name>
+            <url>https://ubuntu.com/security/CVE-2025-11563</url>
+          </source>
+        </reference>
+      </references>
+      <ratings>
+        <rating>
+          <severity>medium</severity>
+          <method>other</method>
+        </rating>
+      </ratings>
+      <affects>
+        <target>
+          <ref>pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.21?arch=amd64&amp;distro=ubuntu-22.04&amp;package-id=f56c8615a8617536</ref>
+        </target>
+      </affects>
+    </vulnerability>
+    <vulnerability bom-ref="urn:uuid:4cdc8d72-6c14-4565-b15c-40ff020959a2">
+      <id>CVE-2025-11563</id>
+      <source>
+        <name>ubuntu-distro-ubuntu-22.04</name>
+        <url>https://ubuntu.com/security/CVE-2025-11563</url>
+      </source>
+      <references>
+        <reference>
+          <id>CVE-2025-11563</id>
+          <source>
+            <name>ubuntu-distro-ubuntu-22.04</name>
+            <url>https://ubuntu.com/security/CVE-2025-11563</url>
+          </source>
+        </reference>
+      </references>
+      <ratings>
+        <rating>
+          <severity>medium</severity>
+          <method>other</method>
+        </rating>
+      </ratings>
+      <affects>
+        <target>
+          <ref>pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64&amp;distro=ubuntu-22.04&amp;package-id=74a8bf5dc3ee53b9&amp;upstream=curl</ref>
         </target>
       </affects>
     </vulnerability>
