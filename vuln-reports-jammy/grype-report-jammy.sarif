@@ -178,6 +178,27 @@
               }
             },
             {
+              "id": "CVE-2025-45582-tar",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-45582 medium vulnerability for tar package"
+              },
+              "fullDescription": {
+                "text": "Version 1.34+dfsg-1ubuntu0.1.22.04.2 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-45582\nSeverity: medium\nPackage: tar\nVersion: 1.34+dfsg-1ubuntu0.1.22.04.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)",
+                "markdown": "**Vulnerability CVE-2025-45582**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.34+dfsg-1ubuntu0.1.22.04.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/tar@1.34%2Bdfsg-1ubuntu0.1.22.04.2?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "4.1"
+              }
+            },
+            {
               "id": "CVE-2025-0167-curl",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -217,27 +238,6 @@
                   "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
                 ],
                 "security-severity": "3.4"
-              }
-            },
-            {
-              "id": "CVE-2025-45582-tar",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-45582 medium vulnerability for tar package"
-              },
-              "fullDescription": {
-                "text": "Version 1.34+dfsg-1ubuntu0.1.22.04.2 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-45582\nSeverity: medium\nPackage: tar\nVersion: 1.34+dfsg-1ubuntu0.1.22.04.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)",
-                "markdown": "**Vulnerability CVE-2025-45582**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.34+dfsg-1ubuntu0.1.22.04.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/tar@1.34%2Bdfsg-1ubuntu0.1.22.04.2?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "4.1"
               }
             },
             {
@@ -1214,6 +1214,57 @@
           }
         },
         {
+          "ruleId": "CVE-2025-45582-tar",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: tar, version 1.34+dfsg-1ubuntu0.1.22.04.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/tar/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/tar/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/tar.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/tar.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/tar.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/tar.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "e9d7b0f3b06685ab171c4091c5717117256811c703df5354afd7c8b118540c08:1"
+          }
+        },
+        {
           "ruleId": "CVE-2025-0167-curl",
           "level": "note",
           "message": {
@@ -1293,57 +1344,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "9e1f786ed6a8a183340a2d141be0101a597f5afed8f7cd977d21950470dda6b2:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-45582-tar",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: tar, version 1.34+dfsg-1ubuntu0.1.22.04.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:bcf40a9f701d4744c7dc2359588b1a7807f2cae5182feca7795769db06193c86:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/tar/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/usr/share/doc/tar/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/tar.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/tar.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/tar.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:767e56ba346ae714b6e6b816baa839051145ed78cfa0e4524a86cc287b0c4b00:/var/lib/dpkg/info/tar.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e9d7b0f3b06685ab171c4091c5717117256811c703df5354afd7c8b118540c08:1"
           }
         },
         {
