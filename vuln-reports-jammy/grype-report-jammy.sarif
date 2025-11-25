@@ -703,27 +703,6 @@
               }
             },
             {
-              "id": "CVE-2022-3219-gpgv",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2022-3219 low vulnerability for gpgv package"
-              },
-              "fullDescription": {
-                "text": "Version 2.2.27-3ubuntu2.4 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2022-3219\nSeverity: low\nPackage: gpgv\nVersion: 2.2.27-3ubuntu2.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)",
-                "markdown": "**Vulnerability CVE-2022-3219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | gpgv  | 2.2.27-3ubuntu2.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.4?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnupg2"
-                ],
-                "security-severity": "3.3"
-              }
-            },
-            {
               "id": "CVE-2025-6141-libncurses6",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -829,24 +808,45 @@
               }
             },
             {
+              "id": "CVE-2022-3219-gpgv",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-3219 low vulnerability for gpgv package"
+              },
+              "fullDescription": {
+                "text": "Version 2.2.27-3ubuntu2.4 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-3219\nSeverity: low\nPackage: gpgv\nVersion: 2.2.27-3ubuntu2.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)",
+                "markdown": "**Vulnerability CVE-2022-3219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | gpgv  | 2.2.27-3ubuntu2.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.4?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnupg2"
+                ],
+                "security-severity": "3.3"
+              }
+            },
+            {
               "id": "CVE-2025-9820-libgnutls30",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2025-9820 medium vulnerability for libgnutls30 package"
+                "text": "CVE-2025-9820 low vulnerability for libgnutls30 package"
               },
               "fullDescription": {
                 "text": "Version 3.7.3-4ubuntu1.7 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2025-9820\nSeverity: medium\nPackage: libgnutls30\nVersion: 3.7.3-4ubuntu1.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9820](https://ubuntu.com/security/CVE-2025-9820)",
-                "markdown": "**Vulnerability CVE-2025-9820**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30  | 3.7.3-4ubuntu1.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9820](https://ubuntu.com/security/CVE-2025-9820)  |\n"
+                "text": "Vulnerability CVE-2025-9820\nSeverity: low\nPackage: libgnutls30\nVersion: 3.7.3-4ubuntu1.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9820](https://ubuntu.com/security/CVE-2025-9820)",
+                "markdown": "**Vulnerability CVE-2025-9820**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libgnutls30  | 3.7.3-4ubuntu1.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9820](https://ubuntu.com/security/CVE-2025-9820)  |\n"
               },
               "properties": {
                 "purls": [
                   "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "1.0"
               }
             }
           ]
@@ -2325,49 +2325,6 @@
           }
         },
         {
-          "ruleId": "CVE-2022-3219-gpgv",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: gpgv, version 2.2.27-3ubuntu2.4 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/gpgv/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/usr/share/doc/gpgv/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/gpgv.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gpgv.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/gpgv.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "dd67f878a21a228af311c9cc81480cc6b162a224f83c6e6ac4cd6d76de7900ca:1"
-          }
-        },
-        {
           "ruleId": "CVE-2025-6141-libncurses6",
           "level": "note",
           "message": {
@@ -2575,10 +2532,53 @@
           }
         },
         {
-          "ruleId": "CVE-2025-9820-libgnutls30",
-          "level": "warning",
+          "ruleId": "CVE-2022-3219-gpgv",
+          "level": "note",
           "message": {
-            "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: gpgv, version 2.2.27-3ubuntu2.4 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/gpgv/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/usr/share/doc/gpgv/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/gpgv.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/gpgv.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "dd67f878a21a228af311c9cc81480cc6b162a224f83c6e6ac4cd6d76de7900ca:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-9820-libgnutls30",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
