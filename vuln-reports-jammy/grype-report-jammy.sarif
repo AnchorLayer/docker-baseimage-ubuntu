@@ -241,27 +241,6 @@
               }
             },
             {
-              "id": "CVE-2016-2781-coreutils",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2016-2781 low vulnerability for coreutils package"
-              },
-              "fullDescription": {
-                "text": "Version 8.32-4.1ubuntu1.2 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2016-2781\nSeverity: low\nPackage: coreutils\nVersion: 8.32-4.1ubuntu1.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)",
-                "markdown": "**Vulnerability CVE-2016-2781**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 8.32-4.1ubuntu1.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.2?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "6.5"
-              }
-            },
-            {
               "id": "CVE-2025-9086-curl",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -301,6 +280,27 @@
                   "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
                 ],
                 "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2016-2781-coreutils",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2016-2781 low vulnerability for coreutils package"
+              },
+              "fullDescription": {
+                "text": "Version 8.32-4.1ubuntu1.2 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2016-2781\nSeverity: low\nPackage: coreutils\nVersion: 8.32-4.1ubuntu1.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)",
+                "markdown": "**Vulnerability CVE-2016-2781**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 8.32-4.1ubuntu1.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.2?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "6.5"
               }
             },
             {
@@ -1347,57 +1347,6 @@
           }
         },
         {
-          "ruleId": "CVE-2016-2781-coreutils",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: coreutils, version 8.32-4.1ubuntu1.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/coreutils/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/usr/share/doc/coreutils/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/coreutils.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/coreutils.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/coreutils.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/coreutils.postrm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d2563673446a5c8e3caa966bf450f0b1748e5915c89be1545fdffb4ebe2b5cce:1"
-          }
-        },
-        {
           "ruleId": "CVE-2025-9086-curl",
           "level": "note",
           "message": {
@@ -1477,6 +1426,57 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "9e1f786ed6a8a183340a2d141be0101a597f5afed8f7cd977d21950470dda6b2:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2016-2781-coreutils",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: coreutils, version 8.32-4.1ubuntu1.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/coreutils/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/usr/share/doc/coreutils/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/coreutils.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/coreutils.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/coreutils.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/coreutils.postrm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d2563673446a5c8e3caa966bf450f0b1748e5915c89be1545fdffb4ebe2b5cce:1"
           }
         },
         {
