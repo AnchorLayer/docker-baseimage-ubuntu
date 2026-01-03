@@ -640,6 +640,27 @@
               }
             },
             {
+              "id": "CVE-2025-68973-gpgv",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-68973 high vulnerability for gpgv package"
+              },
+              "fullDescription": {
+                "text": "Version 2.2.27-3ubuntu2.4 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-68973\nSeverity: high\nPackage: gpgv\nVersion: 2.2.27-3ubuntu2.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-68973](https://ubuntu.com/security/CVE-2025-68973)",
+                "markdown": "**Vulnerability CVE-2025-68973**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | gpgv  | 2.2.27-3ubuntu2.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-68973](https://ubuntu.com/security/CVE-2025-68973)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.4?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnupg2"
+                ],
+                "security-severity": "7.8"
+              }
+            },
+            {
               "id": "CVE-2025-14104-bsdutils",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -973,6 +994,27 @@
                   "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.4?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnupg2"
                 ],
                 "security-severity": "3.3"
+              }
+            },
+            {
+              "id": "CVE-2025-68972-gpgv",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-68972 medium vulnerability for gpgv package"
+              },
+              "fullDescription": {
+                "text": "Version 2.2.27-3ubuntu2.4 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-68972\nSeverity: medium\nPackage: gpgv\nVersion: 2.2.27-3ubuntu2.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-68972](https://ubuntu.com/security/CVE-2025-68972)",
+                "markdown": "**Vulnerability CVE-2025-68972**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gpgv  | 2.2.27-3ubuntu2.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-68972](https://ubuntu.com/security/CVE-2025-68972)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.4?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnupg2"
+                ],
+                "security-severity": "5.9"
               }
             },
             {
@@ -2339,6 +2381,49 @@
           }
         },
         {
+          "ruleId": "CVE-2025-68973-gpgv",
+          "level": "error",
+          "message": {
+            "text": "A high vulnerability in deb package: gpgv, version 2.2.27-3ubuntu2.4 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/gpgv/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/usr/share/doc/gpgv/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/gpgv.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/gpgv.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "dd67f878a21a228af311c9cc81480cc6b162a224f83c6e6ac4cd6d76de7900ca:1"
+          }
+        },
+        {
           "ruleId": "CVE-2025-14104-bsdutils",
           "level": "warning",
           "message": {
@@ -2988,6 +3073,49 @@
           "level": "note",
           "message": {
             "text": "A low vulnerability in deb package: gpgv, version 2.2.27-3ubuntu2.4 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/gpgv/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/usr/share/doc/gpgv/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/gpgv.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/gpgv.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "dd67f878a21a228af311c9cc81480cc6b162a224f83c6e6ac4cd6d76de7900ca:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-68972-gpgv",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: gpgv, version 2.2.27-3ubuntu2.4 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
