@@ -325,27 +325,6 @@
               }
             },
             {
-              "id": "CVE-2025-27587-libssl3t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-27587 low vulnerability for libssl3t64 package"
-              },
-              "fullDescription": {
-                "text": "Version 3.0.13-0ubuntu3.6 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-27587\nSeverity: low\nPackage: libssl3t64\nVersion: 3.0.13-0ubuntu3.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-27587](https://ubuntu.com/security/CVE-2025-27587)",
-                "markdown": "**Vulnerability CVE-2025-27587**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3t64  | 3.0.13-0ubuntu3.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-27587](https://ubuntu.com/security/CVE-2025-27587)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
-                ],
-                "security-severity": "5.3"
-              }
-            },
-            {
               "id": "CVE-2025-68973-gpgv",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -364,6 +343,27 @@
                   "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17.3?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnupg2"
                 ],
                 "security-severity": "7.8"
+              }
+            },
+            {
+              "id": "CVE-2025-27587-libssl3t64",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-27587 low vulnerability for libssl3t64 package"
+              },
+              "fullDescription": {
+                "text": "Version 3.0.13-0ubuntu3.6 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-27587\nSeverity: low\nPackage: libssl3t64\nVersion: 3.0.13-0ubuntu3.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-27587](https://ubuntu.com/security/CVE-2025-27587)",
+                "markdown": "**Vulnerability CVE-2025-27587**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3t64  | 3.0.13-0ubuntu3.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-27587](https://ubuntu.com/security/CVE-2025-27587)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
+                ],
+                "security-severity": "5.3"
               }
             },
             {
@@ -1429,45 +1429,6 @@
           }
         },
         {
-          "ruleId": "CVE-2025-27587-libssl3t64",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libssl3t64, version 3.0.13-0ubuntu3.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:632646258a62d61dfe019bf5140fbbd14197f22e0433761b2f16f96d0d6748f5:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssl3t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:e8bce0aabd687e9ee90e0bada33884f40b277196f72aac9934357472863a80ae:/usr/share/doc/libssl3t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssl3t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:e8bce0aabd687e9ee90e0bada33884f40b277196f72aac9934357472863a80ae:/var/lib/dpkg/info/libssl3t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "fdd6fcc9dd197e0360cff5ea16334bafb32f04a68c4f2fe0a0c4e9010daead29:1"
-          }
-        },
-        {
           "ruleId": "CVE-2025-68973-gpgv",
           "level": "error",
           "message": {
@@ -1508,6 +1469,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "d0f32ecf6640e13c35f3c68446ab52fb423eba3b8d26353ea65e079c674873b7:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-27587-libssl3t64",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssl3t64, version 3.0.13-0ubuntu3.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:632646258a62d61dfe019bf5140fbbd14197f22e0433761b2f16f96d0d6748f5:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3t64/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:e8bce0aabd687e9ee90e0bada33884f40b277196f72aac9934357472863a80ae:/usr/share/doc/libssl3t64/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3t64:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:e8bce0aabd687e9ee90e0bada33884f40b277196f72aac9934357472863a80ae:/var/lib/dpkg/info/libssl3t64:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "fdd6fcc9dd197e0360cff5ea16334bafb32f04a68c4f2fe0a0c4e9010daead29:1"
           }
         },
         {
