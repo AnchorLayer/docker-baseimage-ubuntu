@@ -121,12 +121,12 @@
                 "text": "CVE-2021-46848 low vulnerability for libtasn1-6 package"
               },
               "fullDescription": {
-                "text": "Version 4.18.0-4ubuntu0.1 is affected with no fixes reported yet."
+                "text": "Version 4.18.0-4ubuntu0.1 is affected with an available fix in versions 4.18.0-4ubuntu0.2"
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2021-46848\nSeverity: low\nPackage: libtasn1-6\nVersion: 4.18.0-4ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2021-46848](https://ubuntu.com/security/CVE-2021-46848)",
-                "markdown": "**Vulnerability CVE-2021-46848**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libtasn1-6  | 4.18.0-4ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2021-46848](https://ubuntu.com/security/CVE-2021-46848)  |\n"
+                "text": "Vulnerability CVE-2021-46848\nSeverity: low\nPackage: libtasn1-6\nVersion: 4.18.0-4ubuntu0.1\nFix Version: 4.18.0-4ubuntu0.2\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2021-46848](https://ubuntu.com/security/CVE-2021-46848)",
+                "markdown": "**Vulnerability CVE-2021-46848**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libtasn1-6  | 4.18.0-4ubuntu0.1  | 4.18.0-4ubuntu0.2  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2021-46848](https://ubuntu.com/security/CVE-2021-46848)  |\n"
               },
               "properties": {
                 "purls": [
@@ -289,12 +289,12 @@
                 "text": "CVE-2025-13151 medium vulnerability for libtasn1-6 package"
               },
               "fullDescription": {
-                "text": "Version 4.18.0-4ubuntu0.1 is affected with no fixes reported yet."
+                "text": "Version 4.18.0-4ubuntu0.1 is affected with an available fix in versions 4.18.0-4ubuntu0.2"
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2025-13151\nSeverity: medium\nPackage: libtasn1-6\nVersion: 4.18.0-4ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-13151](https://ubuntu.com/security/CVE-2025-13151)",
-                "markdown": "**Vulnerability CVE-2025-13151**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libtasn1-6  | 4.18.0-4ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-13151](https://ubuntu.com/security/CVE-2025-13151)  |\n"
+                "text": "Vulnerability CVE-2025-13151\nSeverity: medium\nPackage: libtasn1-6\nVersion: 4.18.0-4ubuntu0.1\nFix Version: 4.18.0-4ubuntu0.2\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-13151](https://ubuntu.com/security/CVE-2025-13151)",
+                "markdown": "**Vulnerability CVE-2025-13151**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libtasn1-6  | 4.18.0-4ubuntu0.1  | 4.18.0-4ubuntu0.2  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-13151](https://ubuntu.com/security/CVE-2025-13151)  |\n"
               },
               "properties": {
                 "purls": [
@@ -703,6 +703,48 @@
               }
             },
             {
+              "id": "CVE-2025-9086-curl",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-9086 low vulnerability for curl package"
+              },
+              "fullDescription": {
+                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-9086\nSeverity: low\nPackage: curl\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)",
+                "markdown": "**Vulnerability CVE-2025-9086**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2025-9086-libcurl4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-9086 low vulnerability for libcurl4 package"
+              },
+              "fullDescription": {
+                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-9086\nSeverity: low\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)",
+                "markdown": "**Vulnerability CVE-2025-9086**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
               "id": "CVE-2025-14524-curl",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -847,195 +889,6 @@
                   "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
                 ],
                 "security-severity": "5.3"
-              }
-            },
-            {
-              "id": "CVE-2025-9086-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-9086 low vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-9086\nSeverity: low\nPackage: curl\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)",
-                "markdown": "**Vulnerability CVE-2025-9086**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2025-9086-libcurl4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-9086 low vulnerability for libcurl4 package"
-              },
-              "fullDescription": {
-                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-9086\nSeverity: low\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)",
-                "markdown": "**Vulnerability CVE-2025-9086**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2025-14104-bsdutils",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-14104 medium vulnerability for bsdutils package"
-              },
-              "fullDescription": {
-                "text": "Version 1:2.37.2-4ubuntu3.4 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-14104\nSeverity: medium\nPackage: bsdutils\nVersion: 1:2.37.2-4ubuntu3.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-14104](https://ubuntu.com/security/CVE-2025-14104)",
-                "markdown": "**Vulnerability CVE-2025-14104**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | bsdutils  | 1:2.37.2-4ubuntu3.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-14104](https://ubuntu.com/security/CVE-2025-14104)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/bsdutils@1%3A2.37.2-4ubuntu3.4?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux%402.37.2-4ubuntu3.4"
-                ],
-                "security-severity": "6.1"
-              }
-            },
-            {
-              "id": "CVE-2025-14104-libblkid1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-14104 medium vulnerability for libblkid1 package"
-              },
-              "fullDescription": {
-                "text": "Version 2.37.2-4ubuntu3.4 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-14104\nSeverity: medium\nPackage: libblkid1\nVersion: 2.37.2-4ubuntu3.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-14104](https://ubuntu.com/security/CVE-2025-14104)",
-                "markdown": "**Vulnerability CVE-2025-14104**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libblkid1  | 2.37.2-4ubuntu3.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-14104](https://ubuntu.com/security/CVE-2025-14104)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libblkid1@2.37.2-4ubuntu3.4?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux"
-                ],
-                "security-severity": "6.1"
-              }
-            },
-            {
-              "id": "CVE-2025-14104-libmount1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-14104 medium vulnerability for libmount1 package"
-              },
-              "fullDescription": {
-                "text": "Version 2.37.2-4ubuntu3.4 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-14104\nSeverity: medium\nPackage: libmount1\nVersion: 2.37.2-4ubuntu3.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-14104](https://ubuntu.com/security/CVE-2025-14104)",
-                "markdown": "**Vulnerability CVE-2025-14104**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libmount1  | 2.37.2-4ubuntu3.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-14104](https://ubuntu.com/security/CVE-2025-14104)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3.4?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux"
-                ],
-                "security-severity": "6.1"
-              }
-            },
-            {
-              "id": "CVE-2025-14104-libsmartcols1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-14104 medium vulnerability for libsmartcols1 package"
-              },
-              "fullDescription": {
-                "text": "Version 2.37.2-4ubuntu3.4 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-14104\nSeverity: medium\nPackage: libsmartcols1\nVersion: 2.37.2-4ubuntu3.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-14104](https://ubuntu.com/security/CVE-2025-14104)",
-                "markdown": "**Vulnerability CVE-2025-14104**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsmartcols1  | 2.37.2-4ubuntu3.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-14104](https://ubuntu.com/security/CVE-2025-14104)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3.4?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux"
-                ],
-                "security-severity": "6.1"
-              }
-            },
-            {
-              "id": "CVE-2025-14104-libuuid1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-14104 medium vulnerability for libuuid1 package"
-              },
-              "fullDescription": {
-                "text": "Version 2.37.2-4ubuntu3.4 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-14104\nSeverity: medium\nPackage: libuuid1\nVersion: 2.37.2-4ubuntu3.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-14104](https://ubuntu.com/security/CVE-2025-14104)",
-                "markdown": "**Vulnerability CVE-2025-14104**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libuuid1  | 2.37.2-4ubuntu3.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-14104](https://ubuntu.com/security/CVE-2025-14104)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3.4?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux"
-                ],
-                "security-severity": "6.1"
-              }
-            },
-            {
-              "id": "CVE-2025-14104-mount",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-14104 medium vulnerability for mount package"
-              },
-              "fullDescription": {
-                "text": "Version 2.37.2-4ubuntu3.4 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-14104\nSeverity: medium\nPackage: mount\nVersion: 2.37.2-4ubuntu3.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-14104](https://ubuntu.com/security/CVE-2025-14104)",
-                "markdown": "**Vulnerability CVE-2025-14104**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | mount  | 2.37.2-4ubuntu3.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-14104](https://ubuntu.com/security/CVE-2025-14104)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/mount@2.37.2-4ubuntu3.4?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux"
-                ],
-                "security-severity": "6.1"
-              }
-            },
-            {
-              "id": "CVE-2025-14104-util-linux",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-14104 medium vulnerability for util-linux package"
-              },
-              "fullDescription": {
-                "text": "Version 2.37.2-4ubuntu3.4 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-14104\nSeverity: medium\nPackage: util-linux\nVersion: 2.37.2-4ubuntu3.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-14104](https://ubuntu.com/security/CVE-2025-14104)",
-                "markdown": "**Vulnerability CVE-2025-14104**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | util-linux  | 2.37.2-4ubuntu3.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-14104](https://ubuntu.com/security/CVE-2025-14104)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.4?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "6.1"
               }
             },
             {
@@ -2733,6 +2586,88 @@
           }
         },
         {
+          "ruleId": "CVE-2025-9086-curl",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/curl/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/usr/share/doc/curl/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/info/curl.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/info/curl.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "78fa2620bf6efe74c1cdc32e8e1dba3741389df4bc3c318de9a6f2efff08098f:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-9086-libcurl4",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libcurl4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/usr/share/doc/libcurl4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "9e1f786ed6a8a183340a2d141be0101a597f5afed8f7cd977d21950470dda6b2:1"
+          }
+        },
+        {
           "ruleId": "CVE-2025-14524-curl",
           "level": "note",
           "message": {
@@ -3019,393 +2954,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "9e1f786ed6a8a183340a2d141be0101a597f5afed8f7cd977d21950470dda6b2:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-9086-curl",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "78fa2620bf6efe74c1cdc32e8e1dba3741389df4bc3c318de9a6f2efff08098f:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-9086-libcurl4",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/usr/share/doc/libcurl4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "9e1f786ed6a8a183340a2d141be0101a597f5afed8f7cd977d21950470dda6b2:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-14104-bsdutils",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: bsdutils, version 1:2.37.2-4ubuntu3.4 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/bsdutils/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/usr/share/doc/bsdutils/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/bsdutils.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/bsdutils.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/bsdutils.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/bsdutils.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "6050f568fdd1fb9af1dd2d68e836ea02030b92bf752cf56a80e9472c75da5528:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-14104-libblkid1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libblkid1, version 2.37.2-4ubuntu3.4 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libblkid1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/usr/share/doc/libblkid1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libblkid1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/libblkid1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "4ac2818ede44361530e0afde7a057a1723fe86c722daf4c6f56e8b305c9d49dd:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-14104-libmount1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libmount1, version 2.37.2-4ubuntu3.4 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libmount1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/usr/share/doc/libmount1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libmount1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/libmount1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "52241c6ad3799bb1fd76b7d5b4bbaa108aba401d05d8a284d518f1331dbd853c:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-14104-libsmartcols1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libsmartcols1, version 2.37.2-4ubuntu3.4 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libsmartcols1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/usr/share/doc/libsmartcols1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libsmartcols1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/libsmartcols1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "5b1dcf76cb3d76aed640b53cc3295ebec3f03d19a5e374fd96d38d80e9d2ddb7:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-14104-libuuid1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libuuid1, version 2.37.2-4ubuntu3.4 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libuuid1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/usr/share/doc/libuuid1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libuuid1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/libuuid1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "77d2154647c2cf3e44fb10b8ec1ea1f136d5fb5864a44c6f27b323579b262d27:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-14104-mount",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: mount, version 2.37.2-4ubuntu3.4 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/mount/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/usr/share/doc/mount/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/mount.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/mount.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/mount.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/mount.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "f1001e865782d963ca1a6c5bf189cd581b3e85ab1e66336414a6797683fdc646:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-14104-util-linux",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: util-linux, version 2.37.2-4ubuntu3.4 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2f14538926c193d1f4a925efcf663284ba31f182deab861967a7388691d8cd41:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/util-linux/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/usr/share/doc/util-linux/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/util-linux.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/util-linux.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/util-linux.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/util-linux.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/util-linux.postrm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/util-linux.preinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:73974f74b436f39a2fdb6461b1e3f7c3e41c73325776fa71d16b942a5b4a365b:/var/lib/dpkg/info/util-linux.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "dae143caee2fa32db6d09da6256ee9f34027ef112848bd609f3eca4b77716c56:1"
           }
         },
         {
