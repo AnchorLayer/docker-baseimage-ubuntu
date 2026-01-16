@@ -787,6 +787,48 @@
               }
             },
             {
+              "id": "CVE-2026-0861-libc-bin",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-0861 medium vulnerability for libc-bin package"
+              },
+              "fullDescription": {
+                "text": "Version 2.35-0ubuntu3.11 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2026-0861\nSeverity: medium\nPackage: libc-bin\nVersion: 2.35-0ubuntu3.11\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-0861](https://ubuntu.com/security/CVE-2026-0861)",
+                "markdown": "**Vulnerability CVE-2026-0861**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.35-0ubuntu3.11  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-0861](https://ubuntu.com/security/CVE-2026-0861)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.11?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
+                ],
+                "security-severity": "8.4"
+              }
+            },
+            {
+              "id": "CVE-2026-0861-libc6",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-0861 medium vulnerability for libc6 package"
+              },
+              "fullDescription": {
+                "text": "Version 2.35-0ubuntu3.11 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2026-0861\nSeverity: medium\nPackage: libc6\nVersion: 2.35-0ubuntu3.11\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-0861](https://ubuntu.com/security/CVE-2026-0861)",
+                "markdown": "**Vulnerability CVE-2026-0861**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.35-0ubuntu3.11  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-0861](https://ubuntu.com/security/CVE-2026-0861)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.11?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
+                ],
+                "security-severity": "8.4"
+              }
+            },
+            {
               "id": "CVE-2025-14017-curl",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -2650,6 +2692,104 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "9e1f786ed6a8a183340a2d141be0101a597f5afed8f7cd977d21950470dda6b2:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-0861-libc-bin",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libc-bin, version 2.35-0ubuntu3.11 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:77c7f3d038f68c83724c618be7a8b5c82a80331aff5365d53747c12a2393d500:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libc-bin/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/usr/share/doc/libc-bin/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/libc-bin.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/libc-bin.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/libc-bin.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/libc-bin.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.triggers",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/libc-bin.triggers"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "095ca73e808f0108ce1e01c1af7feaf9dc5b329e3d44edbbfff6836f4242387f:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-0861-libc6",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libc6, version 2.35-0ubuntu3.11 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:77c7f3d038f68c83724c618be7a8b5c82a80331aff5365d53747c12a2393d500:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libc6/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/usr/share/doc/libc6/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc6:amd64.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/libc6:amd64.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc6:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/libc6:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "310c6d45dcb9278241faba19f0499f44fbe44e15faf545a1431337d91f546b0b:1"
           }
         },
         {
