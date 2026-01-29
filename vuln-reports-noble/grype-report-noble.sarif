@@ -90,7 +90,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "9.8"
               }
             },
             {
@@ -133,27 +133,6 @@
                   "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
                 ],
                 "security-severity": "3.4"
-              }
-            },
-            {
-              "id": "CVE-2026-24881-gpgv",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-24881 medium vulnerability for gpgv package"
-              },
-              "fullDescription": {
-                "text": "Version 2.4.4-2ubuntu17.4 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2026-24881\nSeverity: medium\nPackage: gpgv\nVersion: 2.4.4-2ubuntu17.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-24881](https://ubuntu.com/security/CVE-2026-24881)",
-                "markdown": "**Vulnerability CVE-2026-24881**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gpgv  | 2.4.4-2ubuntu17.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-24881](https://ubuntu.com/security/CVE-2026-24881)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnupg2"
-                ],
-                "security-severity": "8.1"
               }
             },
             {
@@ -552,7 +531,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
                 ],
-                "security-severity": "1.0"
+                "security-severity": "7.4"
               }
             },
             {
@@ -615,7 +594,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
                 ],
-                "security-severity": "1.0"
+                "security-severity": "4.7"
               }
             },
             {
@@ -934,27 +913,6 @@
               }
             },
             {
-              "id": "CVE-2026-24883-gpgv",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-24883 medium vulnerability for gpgv package"
-              },
-              "fullDescription": {
-                "text": "Version 2.4.4-2ubuntu17.4 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2026-24883\nSeverity: medium\nPackage: gpgv\nVersion: 2.4.4-2ubuntu17.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-24883](https://ubuntu.com/security/CVE-2026-24883)",
-                "markdown": "**Vulnerability CVE-2026-24883**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gpgv  | 2.4.4-2ubuntu17.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-24883](https://ubuntu.com/security/CVE-2026-24883)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnupg2"
-                ],
-                "security-severity": "3.7"
-              }
-            },
-            {
               "id": "CVE-2025-69418-libssl3t64",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -972,7 +930,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
                 ],
-                "security-severity": "1.0"
+                "security-severity": "4.0"
               }
             },
             {
@@ -1368,49 +1326,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "dd087a0306298263f0a7f3cee79c5dc6f1bb7c18494f314180cf3bb9a29330b1:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-24881-gpgv",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: gpgv, version 2.4.4-2ubuntu17.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:1d7ae50002b94f17fef17fb13e91eb01773a873984100c2033f6f228bc070702:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/gpgv/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/usr/share/doc/gpgv/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/var/lib/dpkg/info/gpgv.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gpgv.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/var/lib/dpkg/info/gpgv.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "0602e32bad6cb4809b22006401a465e1606bcbf282e43a725a2d73e129575186:1"
           }
         },
         {
@@ -3018,49 +2933,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "eff31827b40e2d7c8bb77abcc22549860f0b00af9c1feb42510b9d77b67159fc:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-24883-gpgv",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: gpgv, version 2.4.4-2ubuntu17.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:1d7ae50002b94f17fef17fb13e91eb01773a873984100c2033f6f228bc070702:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/gpgv/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/usr/share/doc/gpgv/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/var/lib/dpkg/info/gpgv.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gpgv.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/var/lib/dpkg/info/gpgv.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "0602e32bad6cb4809b22006401a465e1606bcbf282e43a725a2d73e129575186:1"
           }
         },
         {
