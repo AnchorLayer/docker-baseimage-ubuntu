@@ -451,6 +451,27 @@
               }
             },
             {
+              "id": "CVE-2025-69420-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-69420 low vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "Version 3.0.2-0ubuntu1.20 is affected with an available fix in versions 3.0.2-0ubuntu1.21"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-69420\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.20\nFix Version: 3.0.2-0ubuntu1.21\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-69420](https://ubuntu.com/security/CVE-2025-69420)",
+                "markdown": "**Vulnerability CVE-2025-69420**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.20  | 3.0.2-0ubuntu1.21  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-69420](https://ubuntu.com/security/CVE-2025-69420)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.20?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
               "id": "CVE-2023-50495-libncurses6",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -699,7 +720,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.20?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
                 ],
-                "security-severity": "1.0"
+                "security-severity": "5.5"
               }
             },
             {
@@ -742,27 +763,6 @@
                   "pkg:deb/ubuntu/passwd@1%3A4.8.1-2ubuntu2.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=shadow"
                 ],
                 "security-severity": "3.3"
-              }
-            },
-            {
-              "id": "CVE-2025-69420-libssl3",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-69420 low vulnerability for libssl3 package"
-              },
-              "fullDescription": {
-                "text": "Version 3.0.2-0ubuntu1.20 is affected with an available fix in versions 3.0.2-0ubuntu1.21"
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-69420\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.20\nFix Version: 3.0.2-0ubuntu1.21\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-69420](https://ubuntu.com/security/CVE-2025-69420)",
-                "markdown": "**Vulnerability CVE-2025-69420**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.20  | 3.0.2-0ubuntu1.21  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-69420](https://ubuntu.com/security/CVE-2025-69420)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.20?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
-                ],
-                "security-severity": "7.5"
               }
             },
             {
@@ -2251,6 +2251,45 @@
           }
         },
         {
+          "ruleId": "CVE-2025-69420-libssl3",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.20 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:77c7f3d038f68c83724c618be7a8b5c82a80331aff5365d53747c12a2393d500:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "18e1a30692c05b205b801fd45b93d1bb4badd02775a91ae04cc4bc1850761afc:1"
+          }
+        },
+        {
           "ruleId": "CVE-2023-50495-libncurses6",
           "level": "note",
           "message": {
@@ -2866,45 +2905,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "cc167791f8b11d1202651f2e4331be7d979fe61fc8c832a52af396093187a7be:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-69420-libssl3",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.20 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:77c7f3d038f68c83724c618be7a8b5c82a80331aff5365d53747c12a2393d500:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssl3/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/usr/share/doc/libssl3/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/libssl3:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "18e1a30692c05b205b801fd45b93d1bb4badd02775a91ae04cc4bc1850761afc:1"
           }
         },
         {
