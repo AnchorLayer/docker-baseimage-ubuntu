@@ -955,27 +955,6 @@
               }
             },
             {
-              "id": "CVE-2026-24882-gpgv",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-24882 medium vulnerability for gpgv package"
-              },
-              "fullDescription": {
-                "text": "Version 2.4.4-2ubuntu17.4 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2026-24882\nSeverity: medium\nPackage: gpgv\nVersion: 2.4.4-2ubuntu17.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-24882](https://ubuntu.com/security/CVE-2026-24882)",
-                "markdown": "**Vulnerability CVE-2026-24882**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gpgv  | 2.4.4-2ubuntu17.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-24882](https://ubuntu.com/security/CVE-2026-24882)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnupg2"
-                ],
-                "security-severity": "8.4"
-              }
-            },
-            {
               "id": "CVE-2025-68972-gpgv",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -994,6 +973,27 @@
                   "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnupg2"
                 ],
                 "security-severity": "5.9"
+              }
+            },
+            {
+              "id": "CVE-2026-24882-gpgv",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-24882 medium vulnerability for gpgv package"
+              },
+              "fullDescription": {
+                "text": "Version 2.4.4-2ubuntu17.4 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2026-24882\nSeverity: medium\nPackage: gpgv\nVersion: 2.4.4-2ubuntu17.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-24882](https://ubuntu.com/security/CVE-2026-24882)",
+                "markdown": "**Vulnerability CVE-2026-24882**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gpgv  | 2.4.4-2ubuntu17.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-24882](https://ubuntu.com/security/CVE-2026-24882)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnupg2"
+                ],
+                "security-severity": "8.4"
               }
             },
             {
@@ -3018,7 +3018,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-24882-gpgv",
+          "ruleId": "CVE-2025-68972-gpgv",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: gpgv, version 2.4.4-2ubuntu17.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
@@ -3061,7 +3061,7 @@
           }
         },
         {
-          "ruleId": "CVE-2025-68972-gpgv",
+          "ruleId": "CVE-2026-24882-gpgv",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: gpgv, version 2.4.4-2ubuntu17.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
