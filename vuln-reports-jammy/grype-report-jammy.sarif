@@ -577,6 +577,27 @@
               }
             },
             {
+              "id": "CVE-2025-14831-libgnutls30",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-14831 medium vulnerability for libgnutls30 package"
+              },
+              "fullDescription": {
+                "text": "Version 3.7.3-4ubuntu1.7 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-14831\nSeverity: medium\nPackage: libgnutls30\nVersion: 3.7.3-4ubuntu1.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-14831](https://ubuntu.com/security/CVE-2025-14831)",
+                "markdown": "**Vulnerability CVE-2025-14831**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30  | 3.7.3-4ubuntu1.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-14831](https://ubuntu.com/security/CVE-2025-14831)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
+                ],
+                "security-severity": "5.3"
+              }
+            },
+            {
               "id": "CVE-2022-27943-gcc-12-base",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -829,6 +850,27 @@
               }
             },
             {
+              "id": "CVE-2025-5278-coreutils",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-5278 low vulnerability for coreutils package"
+              },
+              "fullDescription": {
+                "text": "Version 8.32-4.1ubuntu1.2 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-5278\nSeverity: low\nPackage: coreutils\nVersion: 8.32-4.1ubuntu1.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)",
+                "markdown": "**Vulnerability CVE-2025-5278**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 8.32-4.1ubuntu1.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.2?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "4.4"
+              }
+            },
+            {
               "id": "CVE-2025-14524-curl",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -994,27 +1036,6 @@
                   "pkg:deb/ubuntu/libpam0g@1.4.0-11ubuntu2.6?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pam"
                 ],
                 "security-severity": "7.8"
-              }
-            },
-            {
-              "id": "CVE-2025-5278-coreutils",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-5278 low vulnerability for coreutils package"
-              },
-              "fullDescription": {
-                "text": "Version 8.32-4.1ubuntu1.2 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-5278\nSeverity: low\nPackage: coreutils\nVersion: 8.32-4.1ubuntu1.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)",
-                "markdown": "**Vulnerability CVE-2025-5278**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 8.32-4.1ubuntu1.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.2?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "4.4"
               }
             },
             {
@@ -2501,6 +2522,45 @@
           }
         },
         {
+          "ruleId": "CVE-2025-14831-libgnutls30",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:77c7f3d038f68c83724c618be7a8b5c82a80331aff5365d53747c12a2393d500:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libgnutls30/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/usr/share/doc/libgnutls30/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libgnutls30:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/libgnutls30:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "f20f79722c289b0465e6369d08ddfec67c910e3b6ee0b6be47a0c376355d713a:1"
+          }
+        },
+        {
           "ruleId": "CVE-2022-27943-gcc-12-base",
           "level": "note",
           "message": {
@@ -3045,6 +3105,57 @@
           }
         },
         {
+          "ruleId": "CVE-2025-5278-coreutils",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: coreutils, version 8.32-4.1ubuntu1.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:77c7f3d038f68c83724c618be7a8b5c82a80331aff5365d53747c12a2393d500:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/coreutils/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/usr/share/doc/coreutils/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/coreutils.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/coreutils.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/coreutils.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/coreutils.postrm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d2563673446a5c8e3caa966bf450f0b1748e5915c89be1545fdffb4ebe2b5cce:1"
+          }
+        },
+        {
           "ruleId": "CVE-2025-14524-curl",
           "level": "note",
           "message": {
@@ -3394,57 +3505,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "08b227b3669d751179c953ad2ec79ee6385242f1c708fa69d8e2435bc8a23bef:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-5278-coreutils",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: coreutils, version 8.32-4.1ubuntu1.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:77c7f3d038f68c83724c618be7a8b5c82a80331aff5365d53747c12a2393d500:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/coreutils/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/usr/share/doc/coreutils/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/coreutils.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/coreutils.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/coreutils.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/coreutils.postrm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d2563673446a5c8e3caa966bf450f0b1748e5915c89be1545fdffb4ebe2b5cce:1"
           }
         },
         {
