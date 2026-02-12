@@ -1039,27 +1039,6 @@
               }
             },
             {
-              "id": "CVE-2022-3219-gpgv",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2022-3219 low vulnerability for gpgv package"
-              },
-              "fullDescription": {
-                "text": "Version 2.2.27-3ubuntu2.5 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2022-3219\nSeverity: low\nPackage: gpgv\nVersion: 2.2.27-3ubuntu2.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)",
-                "markdown": "**Vulnerability CVE-2022-3219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | gpgv  | 2.2.27-3ubuntu2.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnupg2"
-                ],
-                "security-severity": "3.3"
-              }
-            },
-            {
               "id": "CVE-2025-6141-libncurses6",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1225,6 +1204,27 @@
                   "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.20?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
                 ],
                 "security-severity": "4.7"
+              }
+            },
+            {
+              "id": "CVE-2022-3219-gpgv",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-3219 low vulnerability for gpgv package"
+              },
+              "fullDescription": {
+                "text": "Version 2.2.27-3ubuntu2.5 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-3219\nSeverity: low\nPackage: gpgv\nVersion: 2.2.27-3ubuntu2.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)",
+                "markdown": "**Vulnerability CVE-2022-3219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | gpgv  | 2.2.27-3ubuntu2.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnupg2"
+                ],
+                "security-severity": "3.3"
               }
             },
             {
@@ -3508,49 +3508,6 @@
           }
         },
         {
-          "ruleId": "CVE-2022-3219-gpgv",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: gpgv, version 2.2.27-3ubuntu2.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:77c7f3d038f68c83724c618be7a8b5c82a80331aff5365d53747c12a2393d500:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/gpgv/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/usr/share/doc/gpgv/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/gpgv.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gpgv.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/gpgv.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "bd783673eac9120da5bf221fb768630cf9ee9292075e70b1892dece867631f11:1"
-          }
-        },
-        {
           "ruleId": "CVE-2025-6141-libncurses6",
           "level": "note",
           "message": {
@@ -3872,6 +3829,49 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "18e1a30692c05b205b801fd45b93d1bb4badd02775a91ae04cc4bc1850761afc:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-3219-gpgv",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: gpgv, version 2.2.27-3ubuntu2.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:77c7f3d038f68c83724c618be7a8b5c82a80331aff5365d53747c12a2393d500:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/gpgv/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/usr/share/doc/gpgv/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/gpgv.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fbb9bbbaf4d2b027acd15252897d5043386eea7121e0e0433e697714bb14beac:/var/lib/dpkg/info/gpgv.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "bd783673eac9120da5bf221fb768630cf9ee9292075e70b1892dece867631f11:1"
           }
         },
         {

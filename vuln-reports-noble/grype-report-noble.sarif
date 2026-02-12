@@ -787,27 +787,6 @@
               }
             },
             {
-              "id": "CVE-2022-3219-gpgv",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2022-3219 low vulnerability for gpgv package"
-              },
-              "fullDescription": {
-                "text": "Version 2.4.4-2ubuntu17.4 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2022-3219\nSeverity: low\nPackage: gpgv\nVersion: 2.4.4-2ubuntu17.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)",
-                "markdown": "**Vulnerability CVE-2022-3219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | gpgv  | 2.4.4-2ubuntu17.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnupg2"
-                ],
-                "security-severity": "3.3"
-              }
-            },
-            {
               "id": "CVE-2025-6141-libncursesw6",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -931,6 +910,27 @@
                   "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
                 ],
                 "security-severity": "4.7"
+              }
+            },
+            {
+              "id": "CVE-2022-3219-gpgv",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-3219 low vulnerability for gpgv package"
+              },
+              "fullDescription": {
+                "text": "Version 2.4.4-2ubuntu17.4 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2022-3219\nSeverity: low\nPackage: gpgv\nVersion: 2.4.4-2ubuntu17.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)",
+                "markdown": "**Vulnerability CVE-2022-3219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | gpgv  | 2.4.4-2ubuntu17.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnupg2"
+                ],
+                "security-severity": "3.3"
               }
             },
             {
@@ -2690,49 +2690,6 @@
           }
         },
         {
-          "ruleId": "CVE-2022-3219-gpgv",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: gpgv, version 2.4.4-2ubuntu17.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:1d7ae50002b94f17fef17fb13e91eb01773a873984100c2033f6f228bc070702:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/gpgv/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/usr/share/doc/gpgv/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/var/lib/dpkg/info/gpgv.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gpgv.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/var/lib/dpkg/info/gpgv.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "0602e32bad6cb4809b22006401a465e1606bcbf282e43a725a2d73e129575186:1"
-          }
-        },
-        {
           "ruleId": "CVE-2025-6141-libncursesw6",
           "level": "note",
           "message": {
@@ -2976,6 +2933,49 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "fdd6fcc9dd197e0360cff5ea16334bafb32f04a68c4f2fe0a0c4e9010daead29:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2022-3219-gpgv",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: gpgv, version 2.4.4-2ubuntu17.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:1d7ae50002b94f17fef17fb13e91eb01773a873984100c2033f6f228bc070702:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/gpgv/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/usr/share/doc/gpgv/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/var/lib/dpkg/info/gpgv.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/var/lib/dpkg/info/gpgv.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "0602e32bad6cb4809b22006401a465e1606bcbf282e43a725a2d73e129575186:1"
           }
         },
         {
