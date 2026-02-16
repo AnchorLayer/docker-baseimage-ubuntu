@@ -346,6 +346,27 @@
               }
             },
             {
+              "id": "CVE-2025-14831-libgnutls30t64",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-14831 medium vulnerability for libgnutls30t64 package"
+              },
+              "fullDescription": {
+                "text": "Version 3.8.3-1.1ubuntu3.4 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-14831\nSeverity: medium\nPackage: libgnutls30t64\nVersion: 3.8.3-1.1ubuntu3.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-14831](https://ubuntu.com/security/CVE-2025-14831)",
+                "markdown": "**Vulnerability CVE-2025-14831**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30t64  | 3.8.3-1.1ubuntu3.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-14831](https://ubuntu.com/security/CVE-2025-14831)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libgnutls30t64@3.8.3-1.1ubuntu3.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnutls28"
+                ],
+                "security-severity": "5.3"
+              }
+            },
+            {
               "id": "CVE-2025-69421-libssl3t64",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -427,27 +448,6 @@
                   "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
                 ],
                 "security-severity": "3.1"
-              }
-            },
-            {
-              "id": "CVE-2025-14831-libgnutls30t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-14831 medium vulnerability for libgnutls30t64 package"
-              },
-              "fullDescription": {
-                "text": "Version 3.8.3-1.1ubuntu3.4 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-14831\nSeverity: medium\nPackage: libgnutls30t64\nVersion: 3.8.3-1.1ubuntu3.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-14831](https://ubuntu.com/security/CVE-2025-14831)",
-                "markdown": "**Vulnerability CVE-2025-14831**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30t64  | 3.8.3-1.1ubuntu3.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-14831](https://ubuntu.com/security/CVE-2025-14831)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libgnutls30t64@3.8.3-1.1ubuntu3.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnutls28"
-                ],
-                "security-severity": "5.3"
               }
             },
             {
@@ -1884,6 +1884,49 @@
           }
         },
         {
+          "ruleId": "CVE-2025-14831-libgnutls30t64",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libgnutls30t64, version 3.8.3-1.1ubuntu3.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:1d7ae50002b94f17fef17fb13e91eb01773a873984100c2033f6f228bc070702:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libgnutls30t64/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/usr/share/doc/libgnutls30t64/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libgnutls30t64:amd64.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/var/lib/dpkg/info/libgnutls30t64:amd64.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libgnutls30t64:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/var/lib/dpkg/info/libgnutls30t64:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "ecfa88a776404b13854cf2c6eb69ca6fb0d90b895c3457dc1b17b81e9e55cc0b:1"
+          }
+        },
+        {
           "ruleId": "CVE-2025-69421-libssl3t64",
           "level": "note",
           "message": {
@@ -2041,49 +2084,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "dd087a0306298263f0a7f3cee79c5dc6f1bb7c18494f314180cf3bb9a29330b1:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-14831-libgnutls30t64",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libgnutls30t64, version 3.8.3-1.1ubuntu3.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:1d7ae50002b94f17fef17fb13e91eb01773a873984100c2033f6f228bc070702:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libgnutls30t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/usr/share/doc/libgnutls30t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libgnutls30t64:amd64.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/var/lib/dpkg/info/libgnutls30t64:amd64.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libgnutls30t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:123a078714d5ea9382d4d9f550753aefce8b34ec5ae11ae8273038d3bcbb943f:/var/lib/dpkg/info/libgnutls30t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "ecfa88a776404b13854cf2c6eb69ca6fb0d90b895c3457dc1b17b81e9e55cc0b:1"
           }
         },
         {
