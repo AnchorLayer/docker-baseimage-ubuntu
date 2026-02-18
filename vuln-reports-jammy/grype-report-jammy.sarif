@@ -283,6 +283,27 @@
               }
             },
             {
+              "id": "CVE-2025-8277-libssh-4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-8277 low vulnerability for libssh-4 package"
+              },
+              "fullDescription": {
+                "text": "Version 0.9.6-2ubuntu0.22.04.5 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-8277\nSeverity: low\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-8277](https://ubuntu.com/security/CVE-2025-8277)",
+                "markdown": "**Vulnerability CVE-2025-8277**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssh-4  | 0.9.6-2ubuntu0.22.04.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-8277](https://ubuntu.com/security/CVE-2025-8277)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=libssh"
+                ],
+                "security-severity": "3.1"
+              }
+            },
+            {
               "id": "CVE-2023-50495-libncurses6",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -448,27 +469,6 @@
                   "pkg:deb/ubuntu/libstdc%2B%2B6@12.3.0-1ubuntu1~22.04.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gcc-12"
                 ],
                 "security-severity": "5.5"
-              }
-            },
-            {
-              "id": "CVE-2025-8277-libssh-4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-8277 low vulnerability for libssh-4 package"
-              },
-              "fullDescription": {
-                "text": "Version 0.9.6-2ubuntu0.22.04.5 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-8277\nSeverity: low\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-8277](https://ubuntu.com/security/CVE-2025-8277)",
-                "markdown": "**Vulnerability CVE-2025-8277**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssh-4  | 0.9.6-2ubuntu0.22.04.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-8277](https://ubuntu.com/security/CVE-2025-8277)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=libssh"
-                ],
-                "security-severity": "3.1"
               }
             },
             {
@@ -1693,6 +1693,45 @@
           }
         },
         {
+          "ruleId": "CVE-2025-8277-libssh-4",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssh-4, version 0.9.6-2ubuntu0.22.04.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssh-4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/usr/share/doc/libssh-4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "e3fb8e3606d9e81dc43b7d413744f6f1429ea2f1924096a7317a5ab203a4ca55:1"
+          }
+        },
+        {
           "ruleId": "CVE-2023-50495-libncurses6",
           "level": "note",
           "message": {
@@ -2014,45 +2053,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "4140db4128acd8971a48ed272604f007ba045f2645947196ac6f260778afbd54:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-8277-libssh-4",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libssh-4, version 0.9.6-2ubuntu0.22.04.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssh-4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/usr/share/doc/libssh-4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e3fb8e3606d9e81dc43b7d413744f6f1429ea2f1924096a7317a5ab203a4ca55:1"
           }
         },
         {
