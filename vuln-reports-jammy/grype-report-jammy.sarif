@@ -289,12 +289,12 @@
                 "text": "CVE-2025-8277 low vulnerability for libssh-4 package"
               },
               "fullDescription": {
-                "text": "Version 0.9.6-2ubuntu0.22.04.5 is affected with no fixes reported yet."
+                "text": "Version 0.9.6-2ubuntu0.22.04.5 is affected with an available fix in versions 0.9.6-2ubuntu0.22.04.6"
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2025-8277\nSeverity: low\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-8277](https://ubuntu.com/security/CVE-2025-8277)",
-                "markdown": "**Vulnerability CVE-2025-8277**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssh-4  | 0.9.6-2ubuntu0.22.04.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-8277](https://ubuntu.com/security/CVE-2025-8277)  |\n"
+                "text": "Vulnerability CVE-2025-8277\nSeverity: low\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.5\nFix Version: 0.9.6-2ubuntu0.22.04.6\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-8277](https://ubuntu.com/security/CVE-2025-8277)",
+                "markdown": "**Vulnerability CVE-2025-8277**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssh-4  | 0.9.6-2ubuntu0.22.04.5  | 0.9.6-2ubuntu0.22.04.6  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-8277](https://ubuntu.com/security/CVE-2025-8277)  |\n"
               },
               "properties": {
                 "purls": [
@@ -556,48 +556,6 @@
               }
             },
             {
-              "id": "CVE-2025-9086-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-9086 low vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-9086\nSeverity: low\nPackage: curl\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)",
-                "markdown": "**Vulnerability CVE-2025-9086**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2025-9086-libcurl4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-9086 low vulnerability for libcurl4 package"
-              },
-              "fullDescription": {
-                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-9086\nSeverity: low\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)",
-                "markdown": "**Vulnerability CVE-2025-9086**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
               "id": "CVE-2025-5278-coreutils",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -784,6 +742,48 @@
                   "pkg:deb/ubuntu/libpam0g@1.4.0-11ubuntu2.6?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pam"
                 ],
                 "security-severity": "7.8"
+              }
+            },
+            {
+              "id": "CVE-2025-9086-curl",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-9086 low vulnerability for curl package"
+              },
+              "fullDescription": {
+                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-9086\nSeverity: low\nPackage: curl\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)",
+                "markdown": "**Vulnerability CVE-2025-9086**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2025-9086-libcurl4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-9086 low vulnerability for libcurl4 package"
+              },
+              "fullDescription": {
+                "text": "Version 7.81.0-1ubuntu1.21 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-9086\nSeverity: low\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.21\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)",
+                "markdown": "**Vulnerability CVE-2025-9086**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4  | 7.81.0-1ubuntu1.21  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-9086](https://ubuntu.com/security/CVE-2025-9086)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
+                ],
+                "security-severity": "7.5"
               }
             },
             {
@@ -1003,12 +1003,12 @@
                 "text": "CVE-2026-0964 medium vulnerability for libssh-4 package"
               },
               "fullDescription": {
-                "text": "Version 0.9.6-2ubuntu0.22.04.5 is affected with no fixes reported yet."
+                "text": "Version 0.9.6-2ubuntu0.22.04.5 is affected with an available fix in versions 0.9.6-2ubuntu0.22.04.6"
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2026-0964\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-0964](https://ubuntu.com/security/CVE-2026-0964)",
-                "markdown": "**Vulnerability CVE-2026-0964**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-0964](https://ubuntu.com/security/CVE-2026-0964)  |\n"
+                "text": "Vulnerability CVE-2026-0964\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.5\nFix Version: 0.9.6-2ubuntu0.22.04.6\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-0964](https://ubuntu.com/security/CVE-2026-0964)",
+                "markdown": "**Vulnerability CVE-2026-0964**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.5  | 0.9.6-2ubuntu0.22.04.6  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-0964](https://ubuntu.com/security/CVE-2026-0964)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1024,12 +1024,12 @@
                 "text": "CVE-2026-0967 medium vulnerability for libssh-4 package"
               },
               "fullDescription": {
-                "text": "Version 0.9.6-2ubuntu0.22.04.5 is affected with no fixes reported yet."
+                "text": "Version 0.9.6-2ubuntu0.22.04.5 is affected with an available fix in versions 0.9.6-2ubuntu0.22.04.6"
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2026-0967\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-0967](https://ubuntu.com/security/CVE-2026-0967)",
-                "markdown": "**Vulnerability CVE-2026-0967**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-0967](https://ubuntu.com/security/CVE-2026-0967)  |\n"
+                "text": "Vulnerability CVE-2026-0967\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.5\nFix Version: 0.9.6-2ubuntu0.22.04.6\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-0967](https://ubuntu.com/security/CVE-2026-0967)",
+                "markdown": "**Vulnerability CVE-2026-0967**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.5  | 0.9.6-2ubuntu0.22.04.6  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-0967](https://ubuntu.com/security/CVE-2026-0967)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1045,12 +1045,12 @@
                 "text": "CVE-2026-0968 medium vulnerability for libssh-4 package"
               },
               "fullDescription": {
-                "text": "Version 0.9.6-2ubuntu0.22.04.5 is affected with no fixes reported yet."
+                "text": "Version 0.9.6-2ubuntu0.22.04.5 is affected with an available fix in versions 0.9.6-2ubuntu0.22.04.6"
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2026-0968\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-0968](https://ubuntu.com/security/CVE-2026-0968)",
-                "markdown": "**Vulnerability CVE-2026-0968**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-0968](https://ubuntu.com/security/CVE-2026-0968)  |\n"
+                "text": "Vulnerability CVE-2026-0968\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.5\nFix Version: 0.9.6-2ubuntu0.22.04.6\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-0968](https://ubuntu.com/security/CVE-2026-0968)",
+                "markdown": "**Vulnerability CVE-2026-0968**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.5  | 0.9.6-2ubuntu0.22.04.6  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-0968](https://ubuntu.com/security/CVE-2026-0968)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1066,12 +1066,12 @@
                 "text": "CVE-2026-0965 low vulnerability for libssh-4 package"
               },
               "fullDescription": {
-                "text": "Version 0.9.6-2ubuntu0.22.04.5 is affected with no fixes reported yet."
+                "text": "Version 0.9.6-2ubuntu0.22.04.5 is affected with an available fix in versions 0.9.6-2ubuntu0.22.04.6"
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2026-0965\nSeverity: low\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-0965](https://ubuntu.com/security/CVE-2026-0965)",
-                "markdown": "**Vulnerability CVE-2026-0965**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssh-4  | 0.9.6-2ubuntu0.22.04.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-0965](https://ubuntu.com/security/CVE-2026-0965)  |\n"
+                "text": "Vulnerability CVE-2026-0965\nSeverity: low\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.5\nFix Version: 0.9.6-2ubuntu0.22.04.6\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-0965](https://ubuntu.com/security/CVE-2026-0965)",
+                "markdown": "**Vulnerability CVE-2026-0965**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssh-4  | 0.9.6-2ubuntu0.22.04.5  | 0.9.6-2ubuntu0.22.04.6  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-0965](https://ubuntu.com/security/CVE-2026-0965)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1087,12 +1087,12 @@
                 "text": "CVE-2026-0966 low vulnerability for libssh-4 package"
               },
               "fullDescription": {
-                "text": "Version 0.9.6-2ubuntu0.22.04.5 is affected with no fixes reported yet."
+                "text": "Version 0.9.6-2ubuntu0.22.04.5 is affected with an available fix in versions 0.9.6-2ubuntu0.22.04.6"
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2026-0966\nSeverity: low\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-0966](https://ubuntu.com/security/CVE-2026-0966)",
-                "markdown": "**Vulnerability CVE-2026-0966**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssh-4  | 0.9.6-2ubuntu0.22.04.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-0966](https://ubuntu.com/security/CVE-2026-0966)  |\n"
+                "text": "Vulnerability CVE-2026-0966\nSeverity: low\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.5\nFix Version: 0.9.6-2ubuntu0.22.04.6\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-0966](https://ubuntu.com/security/CVE-2026-0966)",
+                "markdown": "**Vulnerability CVE-2026-0966**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssh-4  | 0.9.6-2ubuntu0.22.04.5  | 0.9.6-2ubuntu0.22.04.6  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-0966](https://ubuntu.com/security/CVE-2026-0966)  |\n"
               },
               "properties": {
                 "purls": [
@@ -2264,88 +2264,6 @@
           }
         },
         {
-          "ruleId": "CVE-2025-9086-curl",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "78fa2620bf6efe74c1cdc32e8e1dba3741389df4bc3c318de9a6f2efff08098f:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-9086-libcurl4",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/usr/share/doc/libcurl4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "9e1f786ed6a8a183340a2d141be0101a597f5afed8f7cd977d21950470dda6b2:1"
-          }
-        },
-        {
           "ruleId": "CVE-2025-5278-coreutils",
           "level": "note",
           "message": {
@@ -2746,6 +2664,88 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "08b227b3669d751179c953ad2ec79ee6385242f1c708fa69d8e2435bc8a23bef:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-9086-curl",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/curl/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/usr/share/doc/curl/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/var/lib/dpkg/info/curl.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/var/lib/dpkg/info/curl.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "78fa2620bf6efe74c1cdc32e8e1dba3741389df4bc3c318de9a6f2efff08098f:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-9086-libcurl4",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.21 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libcurl4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/usr/share/doc/libcurl4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:2fe8b36a1ca4ff38d1da61e875a6ac01d147f1e39f1402a5dbbe460c807589a0:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "9e1f786ed6a8a183340a2d141be0101a597f5afed8f7cd977d21950470dda6b2:1"
           }
         },
         {
