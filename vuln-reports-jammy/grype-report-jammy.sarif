@@ -979,15 +979,15 @@
               "id": "CVE-2026-27171-zlib1g",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-27171 medium vulnerability for zlib1g package"
+                "text": "CVE-2026-27171 low vulnerability for zlib1g package"
               },
               "fullDescription": {
                 "text": "Version 1:1.2.11.dfsg-2ubuntu9.2 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2026-27171\nSeverity: medium\nPackage: zlib1g\nVersion: 1:1.2.11.dfsg-2ubuntu9.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-27171](https://ubuntu.com/security/CVE-2026-27171)",
-                "markdown": "**Vulnerability CVE-2026-27171**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | zlib1g  | 1:1.2.11.dfsg-2ubuntu9.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-27171](https://ubuntu.com/security/CVE-2026-27171)  |\n"
+                "text": "Vulnerability CVE-2026-27171\nSeverity: low\nPackage: zlib1g\nVersion: 1:1.2.11.dfsg-2ubuntu9.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-27171](https://ubuntu.com/security/CVE-2026-27171)",
+                "markdown": "**Vulnerability CVE-2026-27171**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | zlib1g  | 1:1.2.11.dfsg-2ubuntu9.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-27171](https://ubuntu.com/security/CVE-2026-27171)  |\n"
               },
               "properties": {
                 "purls": [
@@ -3142,9 +3142,9 @@
         },
         {
           "ruleId": "CVE-2026-27171-zlib1g",
-          "level": "warning",
+          "level": "note",
           "message": {
-            "text": "A medium vulnerability in deb package: zlib1g, version 1:1.2.11.dfsg-2ubuntu9.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: zlib1g, version 1:1.2.11.dfsg-2ubuntu9.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
