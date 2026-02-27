@@ -745,7 +745,7 @@
                     <dd id="typeValue">image</dd><dt>Checksum:</dt>
                     <dd id="checksumValue">sha256:3bbd61480270745cbb0c2b75e98a7203fc42fcb3233a1ce1bc347ce8e34dc07e</dd><dt>Date:</dt>
                     <dd>
-                        <span id="dateElement">2026-02-27T05:35:21.023409465Z</span>
+                        <span id="dateElement">2026-02-27T06:52:47.10765212Z</span>
                         <span id="prettyDateElement" style="display: none;"></span>
                     </dd>
                 </dl>
@@ -766,11 +766,11 @@
             </div>
             <div class="severity-box" id="medium">
                 <div class="severity-title">Medium</div>
-                <div class="severity-count" id="mediumCount">11</div>
+                <div class="severity-count" id="mediumCount">9</div>
             </div>
             <div class="severity-box" id="low">
                 <div class="severity-title">Low</div>
-                <div class="severity-count" id="lowCount">37</div>
+                <div class="severity-count" id="lowCount">39</div>
             </div>
             <div class="severity-box" id="unknown">
                 <div class="severity-title">Unknown</div>
@@ -827,6 +827,22 @@
                         <td>pkg:deb/ubuntu/passwd@1%3A4.8.1-2ubuntu2.2?arch=amd64&distro=ubuntu-22.04&upstream=shadow</td>
                     </tr>
                     <tr>
+                        <td>libgcrypt20</td>
+                        <td>1.9.4-3ubuntu3</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2024-2236">CVE-2024-2236</a>
+                        </td>
+                        <td>Low</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libgcrypt20@1.9.4-3ubuntu3?arch=amd64&distro=ubuntu-22.04</td>
+                    </tr>
+                    <tr>
                         <td>libsystemd0</td>
                         <td>249.11-0ubuntu3.17</td>
                         <td>deb</td>
@@ -857,22 +873,6 @@
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.17?arch=amd64&distro=ubuntu-22.04&upstream=systemd</td>
-                    </tr>
-                    <tr>
-                        <td>libgcrypt20</td>
-                        <td>1.9.4-3ubuntu3</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2024-2236">CVE-2024-2236</a>
-                        </td>
-                        <td>Low</td>
-                        <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libgcrypt20@1.9.4-3ubuntu3?arch=amd64&distro=ubuntu-22.04</td>
                     </tr>
                     <tr>
                         <td>libzstd1</td>
@@ -962,11 +962,9 @@
                             <a href="https://ubuntu.com/security/CVE-2025-15224">CVE-2025-15224</a>
                         </td>
                         <td>Low</td>
-                        <td>fixed</td>
+                        <td>not-fixed</td>
                         <td>
-                            <ul>
-                                <li>7.81.0-1ubuntu1.22</li>
-                            </ul>
+                            N/A
                         </td>
                         <td></td>
                         <td>[]</td>
@@ -980,15 +978,29 @@
                             <a href="https://ubuntu.com/security/CVE-2025-15224">CVE-2025-15224</a>
                         </td>
                         <td>Low</td>
-                        <td>fixed</td>
+                        <td>not-fixed</td>
                         <td>
-                            <ul>
-                                <li>7.81.0-1ubuntu1.22</li>
-                            </ul>
+                            N/A
                         </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64&distro=ubuntu-22.04&upstream=curl</td>
+                    </tr>
+                    <tr>
+                        <td>libgnutls30</td>
+                        <td>3.7.3-4ubuntu1.8</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2025-14831">CVE-2025-14831</a>
+                        </td>
+                        <td>Medium</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64&distro=ubuntu-22.04&upstream=gnutls28</td>
                     </tr>
                     <tr>
                         <td>libssh-4</td>
@@ -998,11 +1010,9 @@
                             <a href="https://ubuntu.com/security/CVE-2025-8277">CVE-2025-8277</a>
                         </td>
                         <td>Low</td>
-                        <td>fixed</td>
+                        <td>not-fixed</td>
                         <td>
-                            <ul>
-                                <li>0.9.6-2ubuntu0.22.04.6</li>
-                            </ul>
+                            N/A
                         </td>
                         <td></td>
                         <td>[]</td>
@@ -1153,6 +1163,38 @@
                         <td>pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64&distro=ubuntu-22.04&upstream=pcre2</td>
                     </tr>
                     <tr>
+                        <td>curl</td>
+                        <td>7.81.0-1ubuntu1.21</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2025-14819">CVE-2025-14819</a>
+                        </td>
+                        <td>Low</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.21?arch=amd64&distro=ubuntu-22.04</td>
+                    </tr>
+                    <tr>
+                        <td>libcurl4</td>
+                        <td>7.81.0-1ubuntu1.21</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2025-14819">CVE-2025-14819</a>
+                        </td>
+                        <td>Low</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64&distro=ubuntu-22.04&upstream=curl</td>
+                    </tr>
+                    <tr>
                         <td>login</td>
                         <td>1:4.8.1-2ubuntu2.2</td>
                         <td>deb</td>
@@ -1189,14 +1231,44 @@
                         <td>7.81.0-1ubuntu1.21</td>
                         <td>deb</td>
                         <td>
+                            <a href="https://ubuntu.com/security/CVE-2025-9086">CVE-2025-9086</a>
+                        </td>
+                        <td>Low</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.21?arch=amd64&distro=ubuntu-22.04</td>
+                    </tr>
+                    <tr>
+                        <td>libcurl4</td>
+                        <td>7.81.0-1ubuntu1.21</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2025-9086">CVE-2025-9086</a>
+                        </td>
+                        <td>Low</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64&distro=ubuntu-22.04&upstream=curl</td>
+                    </tr>
+                    <tr>
+                        <td>curl</td>
+                        <td>7.81.0-1ubuntu1.21</td>
+                        <td>deb</td>
+                        <td>
                             <a href="https://ubuntu.com/security/CVE-2025-14524">CVE-2025-14524</a>
                         </td>
                         <td>Low</td>
-                        <td>fixed</td>
+                        <td>not-fixed</td>
                         <td>
-                            <ul>
-                                <li>7.81.0-1ubuntu1.22</li>
-                            </ul>
+                            N/A
                         </td>
                         <td></td>
                         <td>[]</td>
@@ -1210,11 +1282,9 @@
                             <a href="https://ubuntu.com/security/CVE-2025-15079">CVE-2025-15079</a>
                         </td>
                         <td>Low</td>
-                        <td>fixed</td>
+                        <td>not-fixed</td>
                         <td>
-                            <ul>
-                                <li>7.81.0-1ubuntu1.22</li>
-                            </ul>
+                            N/A
                         </td>
                         <td></td>
                         <td>[]</td>
@@ -1228,11 +1298,9 @@
                             <a href="https://ubuntu.com/security/CVE-2025-14524">CVE-2025-14524</a>
                         </td>
                         <td>Low</td>
-                        <td>fixed</td>
+                        <td>not-fixed</td>
                         <td>
-                            <ul>
-                                <li>7.81.0-1ubuntu1.22</li>
-                            </ul>
+                            N/A
                         </td>
                         <td></td>
                         <td>[]</td>
@@ -1246,11 +1314,9 @@
                             <a href="https://ubuntu.com/security/CVE-2025-15079">CVE-2025-15079</a>
                         </td>
                         <td>Low</td>
-                        <td>fixed</td>
+                        <td>not-fixed</td>
                         <td>
-                            <ul>
-                                <li>7.81.0-1ubuntu1.22</li>
-                            </ul>
+                            N/A
                         </td>
                         <td></td>
                         <td>[]</td>
@@ -1440,11 +1506,9 @@
                             <a href="https://ubuntu.com/security/CVE-2025-14017">CVE-2025-14017</a>
                         </td>
                         <td>Medium</td>
-                        <td>fixed</td>
+                        <td>not-fixed</td>
                         <td>
-                            <ul>
-                                <li>7.81.0-1ubuntu1.22</li>
-                            </ul>
+                            N/A
                         </td>
                         <td></td>
                         <td>[]</td>
@@ -1458,22 +1522,20 @@
                             <a href="https://ubuntu.com/security/CVE-2025-14017">CVE-2025-14017</a>
                         </td>
                         <td>Medium</td>
-                        <td>fixed</td>
+                        <td>not-fixed</td>
                         <td>
-                            <ul>
-                                <li>7.81.0-1ubuntu1.22</li>
-                            </ul>
+                            N/A
                         </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.21?arch=amd64&distro=ubuntu-22.04&upstream=curl</td>
                     </tr>
                     <tr>
-                        <td>zlib1g</td>
-                        <td>1:1.2.11.dfsg-2ubuntu9.2</td>
+                        <td>libgnutls30</td>
+                        <td>3.7.3-4ubuntu1.8</td>
                         <td>deb</td>
                         <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-27171">CVE-2026-27171</a>
+                            <a href="https://ubuntu.com/security/CVE-2025-9820">CVE-2025-9820</a>
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
@@ -1482,7 +1544,7 @@
                         </td>
                         <td></td>
                         <td>[]</td>
-                        <td>pkg:deb/ubuntu/zlib1g@1%3A1.2.11.dfsg-2ubuntu9.2?arch=amd64&distro=ubuntu-22.04&upstream=zlib</td>
+                        <td>pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64&distro=ubuntu-22.04&upstream=gnutls28</td>
                     </tr>
                     <tr>
                         <td>gpgv</td>
@@ -1499,96 +1561,6 @@
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.5?arch=amd64&distro=ubuntu-22.04&upstream=gnupg2</td>
-                    </tr>
-                    <tr>
-                        <td>libssh-4</td>
-                        <td>0.9.6-2ubuntu0.22.04.5</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-0964">CVE-2026-0964</a>
-                        </td>
-                        <td>Medium</td>
-                        <td>fixed</td>
-                        <td>
-                            <ul>
-                                <li>0.9.6-2ubuntu0.22.04.6</li>
-                            </ul>
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.5?arch=amd64&distro=ubuntu-22.04&upstream=libssh</td>
-                    </tr>
-                    <tr>
-                        <td>libssh-4</td>
-                        <td>0.9.6-2ubuntu0.22.04.5</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-0967">CVE-2026-0967</a>
-                        </td>
-                        <td>Medium</td>
-                        <td>fixed</td>
-                        <td>
-                            <ul>
-                                <li>0.9.6-2ubuntu0.22.04.6</li>
-                            </ul>
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.5?arch=amd64&distro=ubuntu-22.04&upstream=libssh</td>
-                    </tr>
-                    <tr>
-                        <td>libssh-4</td>
-                        <td>0.9.6-2ubuntu0.22.04.5</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-0968">CVE-2026-0968</a>
-                        </td>
-                        <td>Medium</td>
-                        <td>fixed</td>
-                        <td>
-                            <ul>
-                                <li>0.9.6-2ubuntu0.22.04.6</li>
-                            </ul>
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.5?arch=amd64&distro=ubuntu-22.04&upstream=libssh</td>
-                    </tr>
-                    <tr>
-                        <td>libssh-4</td>
-                        <td>0.9.6-2ubuntu0.22.04.5</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-0965">CVE-2026-0965</a>
-                        </td>
-                        <td>Low</td>
-                        <td>fixed</td>
-                        <td>
-                            <ul>
-                                <li>0.9.6-2ubuntu0.22.04.6</li>
-                            </ul>
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.5?arch=amd64&distro=ubuntu-22.04&upstream=libssh</td>
-                    </tr>
-                    <tr>
-                        <td>libssh-4</td>
-                        <td>0.9.6-2ubuntu0.22.04.5</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-0966">CVE-2026-0966</a>
-                        </td>
-                        <td>Low</td>
-                        <td>fixed</td>
-                        <td>
-                            <ul>
-                                <li>0.9.6-2ubuntu0.22.04.6</li>
-                            </ul>
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.5?arch=amd64&distro=ubuntu-22.04&upstream=libssh</td>
                     </tr>
                 </tbody>
             </table>
