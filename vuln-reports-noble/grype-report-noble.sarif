@@ -178,6 +178,27 @@
               }
             },
             {
+              "id": "CVE-2016-2781-coreutils",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2016-2781 low vulnerability for coreutils package"
+              },
+              "fullDescription": {
+                "text": "Version 9.4-3ubuntu6.1 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2016-2781\nSeverity: low\nPackage: coreutils\nVersion: 9.4-3ubuntu6.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)",
+                "markdown": "**Vulnerability CVE-2016-2781**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 9.4-3ubuntu6.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/coreutils@9.4-3ubuntu6.1?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "6.5"
+              }
+            },
+            {
               "id": "CVE-2025-15224-curl",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -220,27 +241,6 @@
               }
             },
             {
-              "id": "CVE-2016-2781-coreutils",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2016-2781 low vulnerability for coreutils package"
-              },
-              "fullDescription": {
-                "text": "Version 9.4-3ubuntu6.1 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2016-2781\nSeverity: low\nPackage: coreutils\nVersion: 9.4-3ubuntu6.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)",
-                "markdown": "**Vulnerability CVE-2016-2781**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 9.4-3ubuntu6.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/coreutils@9.4-3ubuntu6.1?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "6.5"
-              }
-            },
-            {
               "id": "CVE-2025-8277-libssh-4",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -259,6 +259,48 @@
                   "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
                 ],
                 "security-severity": "3.1"
+              }
+            },
+            {
+              "id": "CVE-2025-14819-curl",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-14819 low vulnerability for curl package"
+              },
+              "fullDescription": {
+                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.7"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-14819\nSeverity: low\nPackage: curl\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-14819](https://ubuntu.com/security/CVE-2025-14819)",
+                "markdown": "**Vulnerability CVE-2025-14819**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-14819](https://ubuntu.com/security/CVE-2025-14819)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "5.3"
+              }
+            },
+            {
+              "id": "CVE-2025-14819-libcurl4t64",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-14819 low vulnerability for libcurl4t64 package"
+              },
+              "fullDescription": {
+                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.7"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-14819\nSeverity: low\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-14819](https://ubuntu.com/security/CVE-2025-14819)",
+                "markdown": "**Vulnerability CVE-2025-14819**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4t64  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-14819](https://ubuntu.com/security/CVE-2025-14819)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
+                ],
+                "security-severity": "5.3"
               }
             },
             {
@@ -337,48 +379,6 @@
               "help": {
                 "text": "Vulnerability CVE-2025-15079\nSeverity: low\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-15079](https://ubuntu.com/security/CVE-2025-15079)",
                 "markdown": "**Vulnerability CVE-2025-15079**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4t64  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-15079](https://ubuntu.com/security/CVE-2025-15079)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
-                ],
-                "security-severity": "5.3"
-              }
-            },
-            {
-              "id": "CVE-2025-14819-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-14819 low vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.7"
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-14819\nSeverity: low\nPackage: curl\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-14819](https://ubuntu.com/security/CVE-2025-14819)",
-                "markdown": "**Vulnerability CVE-2025-14819**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-14819](https://ubuntu.com/security/CVE-2025-14819)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "5.3"
-              }
-            },
-            {
-              "id": "CVE-2025-14819-libcurl4t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-14819 low vulnerability for libcurl4t64 package"
-              },
-              "fullDescription": {
-                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.7"
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-14819\nSeverity: low\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-14819](https://ubuntu.com/security/CVE-2025-14819)",
-                "markdown": "**Vulnerability CVE-2025-14819**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4t64  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-14819](https://ubuntu.com/security/CVE-2025-14819)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1318,6 +1318,49 @@
           }
         },
         {
+          "ruleId": "CVE-2016-2781-coreutils",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: coreutils, version 9.4-3ubuntu6.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/coreutils/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/usr/share/doc/coreutils/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/coreutils.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/coreutils.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d302fcb16ddb88c98d0477f96af952c897c9693c10356ae34f2d4940c834798e:1"
+          }
+        },
+        {
           "ruleId": "CVE-2025-15224-curl",
           "level": "note",
           "message": {
@@ -1400,49 +1443,6 @@
           }
         },
         {
-          "ruleId": "CVE-2016-2781-coreutils",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: coreutils, version 9.4-3ubuntu6.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/coreutils/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/usr/share/doc/coreutils/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/coreutils.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/coreutils.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d302fcb16ddb88c98d0477f96af952c897c9693c10356ae34f2d4940c834798e:1"
-          }
-        },
-        {
           "ruleId": "CVE-2025-8277-libssh-4",
           "level": "note",
           "message": {
@@ -1479,6 +1479,88 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "1b6fdf273f05ac23d4c75a07d517f1ebf6628eeb603b87fc66844136a3632d1b:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-14819-curl",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: curl, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/curl/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/usr/share/doc/curl/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/curl.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/curl.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "6cde137c42f65993d0e4aeadc9c245c12da738fe0cdc66d3e39d7f550cf175f6:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2025-14819-libcurl4t64",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libcurl4t64/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/usr/share/doc/libcurl4t64/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "dd087a0306298263f0a7f3cee79c5dc6f1bb7c18494f314180cf3bb9a29330b1:1"
           }
         },
         {
@@ -1608,88 +1690,6 @@
         },
         {
           "ruleId": "CVE-2025-15079-libcurl4t64",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/usr/share/doc/libcurl4t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "dd087a0306298263f0a7f3cee79c5dc6f1bb7c18494f314180cf3bb9a29330b1:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-14819-curl",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: curl, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "6cde137c42f65993d0e4aeadc9c245c12da738fe0cdc66d3e39d7f550cf175f6:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-14819-libcurl4t64",
           "level": "note",
           "message": {
             "text": "A low vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
