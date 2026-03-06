@@ -640,27 +640,6 @@
               }
             },
             {
-              "id": "CVE-2026-27171-zlib1g",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-27171 low vulnerability for zlib1g package"
-              },
-              "fullDescription": {
-                "text": "Version 1:1.3.dfsg-3.1ubuntu2.1 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2026-27171\nSeverity: low\nPackage: zlib1g\nVersion: 1:1.3.dfsg-3.1ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-27171](https://ubuntu.com/security/CVE-2026-27171)",
-                "markdown": "**Vulnerability CVE-2026-27171**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | zlib1g  | 1:1.3.dfsg-3.1ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-27171](https://ubuntu.com/security/CVE-2026-27171)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/zlib1g@1%3A1.3.dfsg-3.1ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=zlib"
-                ],
-                "security-severity": "5.5"
-              }
-            },
-            {
               "id": "CVE-2025-68972-gpgv",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -682,6 +661,27 @@
               }
             },
             {
+              "id": "CVE-2026-27171-zlib1g",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-27171 low vulnerability for zlib1g package"
+              },
+              "fullDescription": {
+                "text": "Version 1:1.3.dfsg-3.1ubuntu2.1 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2026-27171\nSeverity: low\nPackage: zlib1g\nVersion: 1:1.3.dfsg-3.1ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-27171](https://ubuntu.com/security/CVE-2026-27171)",
+                "markdown": "**Vulnerability CVE-2026-27171**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | zlib1g  | 1:1.3.dfsg-3.1ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-27171](https://ubuntu.com/security/CVE-2026-27171)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/zlib1g@1%3A1.3.dfsg-3.1ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=zlib"
+                ],
+                "security-severity": "5.5"
+              }
+            },
+            {
               "id": "CVE-2026-3184-bsdutils",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -698,6 +698,27 @@
               "properties": {
                 "purls": [
                   "pkg:deb/ubuntu/bsdutils@1%3A2.39.3-9ubuntu6.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=util-linux%402.39.3-9ubuntu6.4"
+                ],
+                "security-severity": "4.0"
+              }
+            },
+            {
+              "id": "CVE-2026-2219-dpkg",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-2219 medium vulnerability for dpkg package"
+              },
+              "fullDescription": {
+                "text": "Version 1.22.6ubuntu6.5 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2026-2219\nSeverity: medium\nPackage: dpkg\nVersion: 1.22.6ubuntu6.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-2219](https://ubuntu.com/security/CVE-2026-2219)",
+                "markdown": "**Vulnerability CVE-2026-2219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | dpkg  | 1.22.6ubuntu6.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-2219](https://ubuntu.com/security/CVE-2026-2219)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/dpkg@1.22.6ubuntu6.5?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
                 "security-severity": "4.0"
               }
@@ -2264,45 +2285,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-27171-zlib1g",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: zlib1g, version 1:1.3.dfsg-3.1ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/zlib1g/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/usr/share/doc/zlib1g/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/zlib1g:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/zlib1g:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d27c1e0cdc3fe703dd6cc9bf8a6e04730f3af0116eb2378f1d1b057606da727d:1"
-          }
-        },
-        {
           "ruleId": "CVE-2025-68972-gpgv",
           "level": "warning",
           "message": {
@@ -2346,6 +2328,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-27171-zlib1g",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: zlib1g, version 1:1.3.dfsg-3.1ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/zlib1g/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/usr/share/doc/zlib1g/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/zlib1g:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/zlib1g:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d27c1e0cdc3fe703dd6cc9bf8a6e04730f3af0116eb2378f1d1b057606da727d:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-3184-bsdutils",
           "level": "warning",
           "message": {
@@ -2386,6 +2407,61 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "24bd458ec9ade9efa992d4367c95cbd9b868db1df39dd0ef94165a8d734ce91a:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-2219-dpkg",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: dpkg, version 1.22.6ubuntu6.5 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/dpkg/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/usr/share/doc/dpkg/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dpkg.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/dpkg.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dpkg.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/dpkg.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dpkg.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/dpkg.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dpkg.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/dpkg.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dpkg.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/dpkg.postrm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "018589fbd44d3531246cf1c30d60d880cd60d1c1db70dd69d3c58b2941d37b75:1"
           }
         },
         {
