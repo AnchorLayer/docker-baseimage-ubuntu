@@ -132,7 +132,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
                 ],
-                "security-severity": "9.8"
+                "security-severity": "7.5"
               }
             },
             {
@@ -175,6 +175,48 @@
                   "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
                 ],
                 "security-severity": "5.3"
+              }
+            },
+            {
+              "id": "CVE-2026-1965-curl",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-1965 medium vulnerability for curl package"
+              },
+              "fullDescription": {
+                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.8"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2026-1965\nSeverity: medium\nPackage: curl\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-1965](https://ubuntu.com/security/CVE-2026-1965)",
+                "markdown": "**Vulnerability CVE-2026-1965**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-1965](https://ubuntu.com/security/CVE-2026-1965)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "6.5"
+              }
+            },
+            {
+              "id": "CVE-2026-1965-libcurl4t64",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-1965 medium vulnerability for libcurl4t64 package"
+              },
+              "fullDescription": {
+                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.8"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2026-1965\nSeverity: medium\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-1965](https://ubuntu.com/security/CVE-2026-1965)",
+                "markdown": "**Vulnerability CVE-2026-1965**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4t64  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-1965](https://ubuntu.com/security/CVE-2026-1965)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
+                ],
+                "security-severity": "6.5"
               }
             },
             {
@@ -262,48 +304,6 @@
               }
             },
             {
-              "id": "CVE-2026-1965-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-1965 medium vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.8"
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2026-1965\nSeverity: medium\nPackage: curl\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-1965](https://ubuntu.com/security/CVE-2026-1965)",
-                "markdown": "**Vulnerability CVE-2026-1965**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-1965](https://ubuntu.com/security/CVE-2026-1965)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "6.5"
-              }
-            },
-            {
-              "id": "CVE-2026-1965-libcurl4t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-1965 medium vulnerability for libcurl4t64 package"
-              },
-              "fullDescription": {
-                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.8"
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2026-1965\nSeverity: medium\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-1965](https://ubuntu.com/security/CVE-2026-1965)",
-                "markdown": "**Vulnerability CVE-2026-1965**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4t64  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-1965](https://ubuntu.com/security/CVE-2026-1965)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
-                ],
-                "security-severity": "6.5"
-              }
-            },
-            {
               "id": "CVE-2025-8277-libssh-4",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -322,6 +322,48 @@
                   "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
                 ],
                 "security-severity": "3.1"
+              }
+            },
+            {
+              "id": "CVE-2026-3783-curl",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-3783 medium vulnerability for curl package"
+              },
+              "fullDescription": {
+                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.8"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2026-3783\nSeverity: medium\nPackage: curl\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3783](https://ubuntu.com/security/CVE-2026-3783)",
+                "markdown": "**Vulnerability CVE-2026-3783**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3783](https://ubuntu.com/security/CVE-2026-3783)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "5.3"
+              }
+            },
+            {
+              "id": "CVE-2026-3783-libcurl4t64",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-3783 medium vulnerability for libcurl4t64 package"
+              },
+              "fullDescription": {
+                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.8"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2026-3783\nSeverity: medium\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3783](https://ubuntu.com/security/CVE-2026-3783)",
+                "markdown": "**Vulnerability CVE-2026-3783**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4t64  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3783](https://ubuntu.com/security/CVE-2026-3783)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
+                ],
+                "security-severity": "5.3"
               }
             },
             {
@@ -472,45 +514,45 @@
               }
             },
             {
-              "id": "CVE-2026-3783-curl",
+              "id": "CVE-2026-3784-curl",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-3783 medium vulnerability for curl package"
+                "text": "CVE-2026-3784 low vulnerability for curl package"
               },
               "fullDescription": {
                 "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.8"
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2026-3783\nSeverity: medium\nPackage: curl\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3783](https://ubuntu.com/security/CVE-2026-3783)",
-                "markdown": "**Vulnerability CVE-2026-3783**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3783](https://ubuntu.com/security/CVE-2026-3783)  |\n"
+                "text": "Vulnerability CVE-2026-3784\nSeverity: low\nPackage: curl\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)",
+                "markdown": "**Vulnerability CVE-2026-3784**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)  |\n"
               },
               "properties": {
                 "purls": [
                   "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
-                "security-severity": "5.3"
+                "security-severity": "6.5"
               }
             },
             {
-              "id": "CVE-2026-3783-libcurl4t64",
+              "id": "CVE-2026-3784-libcurl4t64",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-3783 medium vulnerability for libcurl4t64 package"
+                "text": "CVE-2026-3784 low vulnerability for libcurl4t64 package"
               },
               "fullDescription": {
                 "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.8"
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2026-3783\nSeverity: medium\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3783](https://ubuntu.com/security/CVE-2026-3783)",
-                "markdown": "**Vulnerability CVE-2026-3783**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4t64  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3783](https://ubuntu.com/security/CVE-2026-3783)  |\n"
+                "text": "Vulnerability CVE-2026-3784\nSeverity: low\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)",
+                "markdown": "**Vulnerability CVE-2026-3784**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4t64  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)  |\n"
               },
               "properties": {
                 "purls": [
                   "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
                 ],
-                "security-severity": "5.3"
+                "security-severity": "6.5"
               }
             },
             {
@@ -703,45 +745,45 @@
               }
             },
             {
-              "id": "CVE-2026-3784-curl",
-              "name": "DpkgMatcherExactDirectMatch",
+              "id": "CVE-2026-3904-libc-bin",
+              "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-3784 low vulnerability for curl package"
+                "text": "CVE-2026-3904 medium vulnerability for libc-bin package"
               },
               "fullDescription": {
-                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.8"
+                "text": "Version 2.39-0ubuntu8.7 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2026-3784\nSeverity: low\nPackage: curl\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)",
-                "markdown": "**Vulnerability CVE-2026-3784**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)  |\n"
+                "text": "Vulnerability CVE-2026-3904\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3904](https://ubuntu.com/security/CVE-2026-3904)",
+                "markdown": "**Vulnerability CVE-2026-3904**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3904](https://ubuntu.com/security/CVE-2026-3904)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04"
+                  "pkg:deb/ubuntu/libc-bin@2.39-0ubuntu8.7?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=glibc"
                 ],
-                "security-severity": "6.5"
+                "security-severity": "6.2"
               }
             },
             {
-              "id": "CVE-2026-3784-libcurl4t64",
+              "id": "CVE-2026-3904-libc6",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-3784 low vulnerability for libcurl4t64 package"
+                "text": "CVE-2026-3904 medium vulnerability for libc6 package"
               },
               "fullDescription": {
-                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.8"
+                "text": "Version 2.39-0ubuntu8.7 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2026-3784\nSeverity: low\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)",
-                "markdown": "**Vulnerability CVE-2026-3784**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4t64  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)  |\n"
+                "text": "Vulnerability CVE-2026-3904\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3904](https://ubuntu.com/security/CVE-2026-3904)",
+                "markdown": "**Vulnerability CVE-2026-3904**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3904](https://ubuntu.com/security/CVE-2026-3904)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
+                  "pkg:deb/ubuntu/libc6@2.39-0ubuntu8.7?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=glibc"
                 ],
-                "security-severity": "6.5"
+                "security-severity": "6.2"
               }
             },
             {
@@ -1327,6 +1369,88 @@
           }
         },
         {
+          "ruleId": "CVE-2026-1965-curl",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: curl, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/curl/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/usr/share/doc/curl/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/curl.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/curl.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "6cde137c42f65993d0e4aeadc9c245c12da738fe0cdc66d3e39d7f550cf175f6:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-1965-libcurl4t64",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libcurl4t64/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/usr/share/doc/libcurl4t64/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "dd087a0306298263f0a7f3cee79c5dc6f1bb7c18494f314180cf3bb9a29330b1:1"
+          }
+        },
+        {
           "ruleId": "CVE-2025-45582-tar",
           "level": "warning",
           "message": {
@@ -1503,7 +1627,46 @@
           }
         },
         {
-          "ruleId": "CVE-2026-1965-curl",
+          "ruleId": "CVE-2025-8277-libssh-4",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.2 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssh-4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/usr/share/doc/libssh-4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "1b6fdf273f05ac23d4c75a07d517f1ebf6628eeb603b87fc66844136a3632d1b:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-3783-curl",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: curl, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
@@ -1546,7 +1709,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-1965-libcurl4t64",
+          "ruleId": "CVE-2026-3783-libcurl4t64",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
@@ -1582,45 +1745,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "dd087a0306298263f0a7f3cee79c5dc6f1bb7c18494f314180cf3bb9a29330b1:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-8277-libssh-4",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.2 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssh-4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/usr/share/doc/libssh-4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "1b6fdf273f05ac23d4c75a07d517f1ebf6628eeb603b87fc66844136a3632d1b:1"
           }
         },
         {
@@ -1913,10 +2037,10 @@
           }
         },
         {
-          "ruleId": "CVE-2026-3783-curl",
-          "level": "warning",
+          "ruleId": "CVE-2026-3784-curl",
+          "level": "note",
           "message": {
-            "text": "A medium vulnerability in deb package: curl, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: curl, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -1956,10 +2080,10 @@
           }
         },
         {
-          "ruleId": "CVE-2026-3783-libcurl4t64",
-          "level": "warning",
+          "ruleId": "CVE-2026-3784-libcurl4t64",
+          "level": "note",
           "message": {
-            "text": "A medium vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -2418,10 +2542,10 @@
           }
         },
         {
-          "ruleId": "CVE-2026-3784-curl",
-          "level": "note",
+          "ruleId": "CVE-2026-3904-libc-bin",
+          "level": "warning",
           "message": {
-            "text": "A low vulnerability in deb package: curl, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+            "text": "A medium vulnerability in deb package: libc-bin, version 2.39-0ubuntu8.7 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -2442,29 +2566,41 @@
                   "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
                 },
                 {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/usr/share/doc/curl/copyright"
+                  "name": "/usr/share/doc/libc-bin/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/usr/share/doc/libc-bin/copyright"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/curl.md5sums"
+                  "name": "/var/lib/dpkg/info/libc-bin.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/libc-bin.conffiles"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/curl.list"
+                  "name": "/var/lib/dpkg/info/libc-bin.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/libc-bin.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/libc-bin.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/libc-bin.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.triggers",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/libc-bin.triggers"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "6cde137c42f65993d0e4aeadc9c245c12da738fe0cdc66d3e39d7f550cf175f6:1"
+            "primaryLocationLineHash": "0f4e05ca683c08fd7727a0aaa0d552ba2fcc961fb78a8d4e67501163c63196b5:1"
           }
         },
         {
-          "ruleId": "CVE-2026-3784-libcurl4t64",
-          "level": "note",
+          "ruleId": "CVE-2026-3904-libc6",
+          "level": "warning",
           "message": {
-            "text": "A low vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+            "text": "A medium vulnerability in deb package: libc6, version 2.39-0ubuntu8.7 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -2485,18 +2621,22 @@
                   "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
                 },
                 {
-                  "name": "/usr/share/doc/libcurl4t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/usr/share/doc/libcurl4t64/copyright"
+                  "name": "/usr/share/doc/libc6/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/usr/share/doc/libc6/copyright"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
+                  "name": "/var/lib/dpkg/info/libc6:amd64.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/libc6:amd64.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc6:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/libc6:amd64.md5sums"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "dd087a0306298263f0a7f3cee79c5dc6f1bb7c18494f314180cf3bb9a29330b1:1"
+            "primaryLocationLineHash": "42a254a0ff30fbe0b6067799ba5df4b5c259924a10f0ab683d76ccf4b54e753c:1"
           }
         },
         {
