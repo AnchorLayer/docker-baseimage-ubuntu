@@ -178,6 +178,27 @@
               }
             },
             {
+              "id": "CVE-2025-45582-tar",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-45582 medium vulnerability for tar package"
+              },
+              "fullDescription": {
+                "text": "Version 1.35+dfsg-3build1 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-45582\nSeverity: medium\nPackage: tar\nVersion: 1.35+dfsg-3build1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)",
+                "markdown": "**Vulnerability CVE-2025-45582**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.35+dfsg-3build1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/tar@1.35%2Bdfsg-3build1?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "4.1"
+              }
+            },
+            {
               "id": "CVE-2026-1965-curl",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -217,27 +238,6 @@
                   "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
                 ],
                 "security-severity": "6.5"
-              }
-            },
-            {
-              "id": "CVE-2025-45582-tar",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-45582 medium vulnerability for tar package"
-              },
-              "fullDescription": {
-                "text": "Version 1.35+dfsg-3build1 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-45582\nSeverity: medium\nPackage: tar\nVersion: 1.35+dfsg-3build1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)",
-                "markdown": "**Vulnerability CVE-2025-45582**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.35+dfsg-3build1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/tar@1.35%2Bdfsg-3build1?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "4.1"
               }
             },
             {
@@ -514,45 +514,24 @@
               }
             },
             {
-              "id": "CVE-2026-3784-curl",
+              "id": "CVE-2026-2219-dpkg",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-3784 low vulnerability for curl package"
+                "text": "CVE-2026-2219 medium vulnerability for dpkg package"
               },
               "fullDescription": {
-                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.8"
+                "text": "Version 1.22.6ubuntu6.5 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2026-3784\nSeverity: low\nPackage: curl\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)",
-                "markdown": "**Vulnerability CVE-2026-3784**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)  |\n"
+                "text": "Vulnerability CVE-2026-2219\nSeverity: medium\nPackage: dpkg\nVersion: 1.22.6ubuntu6.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-2219](https://ubuntu.com/security/CVE-2026-2219)",
+                "markdown": "**Vulnerability CVE-2026-2219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | dpkg  | 1.22.6ubuntu6.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-2219](https://ubuntu.com/security/CVE-2026-2219)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04"
+                  "pkg:deb/ubuntu/dpkg@1.22.6ubuntu6.5?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
-                "security-severity": "6.5"
-              }
-            },
-            {
-              "id": "CVE-2026-3784-libcurl4t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-3784 low vulnerability for libcurl4t64 package"
-              },
-              "fullDescription": {
-                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.8"
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2026-3784\nSeverity: low\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)",
-                "markdown": "**Vulnerability CVE-2026-3784**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4t64  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
-                ],
-                "security-severity": "6.5"
+                "security-severity": "7.5"
               }
             },
             {
@@ -640,6 +619,48 @@
               }
             },
             {
+              "id": "CVE-2026-3784-curl",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-3784 low vulnerability for curl package"
+              },
+              "fullDescription": {
+                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.8"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2026-3784\nSeverity: low\nPackage: curl\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)",
+                "markdown": "**Vulnerability CVE-2026-3784**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "6.5"
+              }
+            },
+            {
+              "id": "CVE-2026-3784-libcurl4t64",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-3784 low vulnerability for libcurl4t64 package"
+              },
+              "fullDescription": {
+                "text": "Version 8.5.0-2ubuntu10.6 is affected with an available fix in versions 8.5.0-2ubuntu10.8"
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2026-3784\nSeverity: low\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.6\nFix Version: 8.5.0-2ubuntu10.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)",
+                "markdown": "**Vulnerability CVE-2026-3784**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4t64  | 8.5.0-2ubuntu10.6  | 8.5.0-2ubuntu10.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3784](https://ubuntu.com/security/CVE-2026-3784)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
+                ],
+                "security-severity": "6.5"
+              }
+            },
+            {
               "id": "CVE-2025-8941-libpam-modules",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -721,69 +742,6 @@
                   "pkg:deb/ubuntu/libpam0g@1.5.3-5ubuntu5.5?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pam"
                 ],
                 "security-severity": "7.8"
-              }
-            },
-            {
-              "id": "CVE-2026-2219-dpkg",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-2219 medium vulnerability for dpkg package"
-              },
-              "fullDescription": {
-                "text": "Version 1.22.6ubuntu6.5 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2026-2219\nSeverity: medium\nPackage: dpkg\nVersion: 1.22.6ubuntu6.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-2219](https://ubuntu.com/security/CVE-2026-2219)",
-                "markdown": "**Vulnerability CVE-2026-2219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | dpkg  | 1.22.6ubuntu6.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-2219](https://ubuntu.com/security/CVE-2026-2219)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/dpkg@1.22.6ubuntu6.5?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-3904-libc-bin",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-3904 medium vulnerability for libc-bin package"
-              },
-              "fullDescription": {
-                "text": "Version 2.39-0ubuntu8.7 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2026-3904\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3904](https://ubuntu.com/security/CVE-2026-3904)",
-                "markdown": "**Vulnerability CVE-2026-3904**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3904](https://ubuntu.com/security/CVE-2026-3904)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libc-bin@2.39-0ubuntu8.7?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=glibc"
-                ],
-                "security-severity": "6.2"
-              }
-            },
-            {
-              "id": "CVE-2026-3904-libc6",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-3904 medium vulnerability for libc6 package"
-              },
-              "fullDescription": {
-                "text": "Version 2.39-0ubuntu8.7 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2026-3904\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-3904](https://ubuntu.com/security/CVE-2026-3904)",
-                "markdown": "**Vulnerability CVE-2026-3904**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-3904](https://ubuntu.com/security/CVE-2026-3904)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libc6@2.39-0ubuntu8.7?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=glibc"
-                ],
-                "security-severity": "6.2"
               }
             },
             {
@@ -1369,6 +1327,57 @@
           }
         },
         {
+          "ruleId": "CVE-2025-45582-tar",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: tar, version 1.35+dfsg-3build1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/tar/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/usr/share/doc/tar/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/tar.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/tar.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/tar.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/tar.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "448872803634e3b1d0feab52698d85d4b41dc0210fd5b015cf4222db9e1adbb3:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-1965-curl",
           "level": "warning",
           "message": {
@@ -1448,57 +1457,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "dd087a0306298263f0a7f3cee79c5dc6f1bb7c18494f314180cf3bb9a29330b1:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-45582-tar",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: tar, version 1.35+dfsg-3build1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/tar/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/usr/share/doc/tar/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/tar.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/tar.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/tar.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/tar.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "448872803634e3b1d0feab52698d85d4b41dc0210fd5b015cf4222db9e1adbb3:1"
           }
         },
         {
@@ -2037,10 +1995,10 @@
           }
         },
         {
-          "ruleId": "CVE-2026-3784-curl",
-          "level": "note",
+          "ruleId": "CVE-2026-2219-dpkg",
+          "level": "warning",
           "message": {
-            "text": "A low vulnerability in deb package: curl, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+            "text": "A medium vulnerability in deb package: dpkg, version 1.22.6ubuntu6.5 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -2061,61 +2019,34 @@
                   "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
                 },
                 {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/usr/share/doc/curl/copyright"
+                  "name": "/usr/share/doc/dpkg/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/usr/share/doc/dpkg/copyright"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/curl.md5sums"
+                  "name": "/var/lib/dpkg/info/dpkg.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/dpkg.conffiles"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/curl.list"
+                  "name": "/var/lib/dpkg/info/dpkg.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/dpkg.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dpkg.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/dpkg.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dpkg.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/dpkg.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dpkg.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/dpkg.postrm"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "6cde137c42f65993d0e4aeadc9c245c12da738fe0cdc66d3e39d7f550cf175f6:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-3784-libcurl4t64",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/usr/share/doc/libcurl4t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "dd087a0306298263f0a7f3cee79c5dc6f1bb7c18494f314180cf3bb9a29330b1:1"
+            "primaryLocationLineHash": "018589fbd44d3531246cf1c30d60d880cd60d1c1db70dd69d3c58b2941d37b75:1"
           }
         },
         {
@@ -2284,6 +2215,88 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "eff31827b40e2d7c8bb77abcc22549860f0b00af9c1feb42510b9d77b67159fc:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-3784-curl",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: curl, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/curl/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/usr/share/doc/curl/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/curl.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/curl.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "6cde137c42f65993d0e4aeadc9c245c12da738fe0cdc66d3e39d7f550cf175f6:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-3784-libcurl4t64",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libcurl4t64/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/usr/share/doc/libcurl4t64/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "dd087a0306298263f0a7f3cee79c5dc6f1bb7c18494f314180cf3bb9a29330b1:1"
           }
         },
         {
@@ -2484,159 +2497,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "a48f5bf965894a96f8e51e7f05e545ede803401c699733a0286a4ce7e9584b90:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-2219-dpkg",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: dpkg, version 1.22.6ubuntu6.5 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/dpkg/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/usr/share/doc/dpkg/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dpkg.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/dpkg.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dpkg.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/dpkg.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dpkg.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/dpkg.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dpkg.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/dpkg.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dpkg.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/dpkg.postrm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "018589fbd44d3531246cf1c30d60d880cd60d1c1db70dd69d3c58b2941d37b75:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-3904-libc-bin",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libc-bin, version 2.39-0ubuntu8.7 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libc-bin/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/usr/share/doc/libc-bin/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/libc-bin.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/libc-bin.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/libc-bin.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/libc-bin.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.triggers",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/libc-bin.triggers"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "0f4e05ca683c08fd7727a0aaa0d552ba2fcc961fb78a8d4e67501163c63196b5:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-3904-libc6",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libc6, version 2.39-0ubuntu8.7 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:89271143f878ad0b3458de36b114b82624fb1c162021cbe46463c9c99c3c3cb5:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libc6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/usr/share/doc/libc6/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc6:amd64.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/libc6:amd64.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:efafae78d70c98626c521c246827389128e7d7ea442db31bc433934647f0c791:/var/lib/dpkg/info/libc6:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "42a254a0ff30fbe0b6067799ba5df4b5c259924a10f0ab683d76ccf4b54e753c:1"
           }
         },
         {
