@@ -640,6 +640,27 @@
               }
             },
             {
+              "id": "CVE-2026-27135-libnghttp2-14",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-27135 medium vulnerability for libnghttp2-14 package"
+              },
+              "fullDescription": {
+                "text": "Version 1.43.0-1ubuntu0.2 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2026-27135\nSeverity: medium\nPackage: libnghttp2-14\nVersion: 1.43.0-1ubuntu0.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-27135](https://ubuntu.com/security/CVE-2026-27135)",
+                "markdown": "**Vulnerability CVE-2026-27135**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libnghttp2-14  | 1.43.0-1ubuntu0.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-27135](https://ubuntu.com/security/CVE-2026-27135)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libnghttp2-14@1.43.0-1ubuntu0.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=nghttp2"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
               "id": "CVE-2017-11164-libpcre3",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -2103,6 +2124,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "08b227b3669d751179c953ad2ec79ee6385242f1c708fa69d8e2435bc8a23bef:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-27135-libnghttp2-14",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libnghttp2-14, version 1.43.0-1ubuntu0.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:48318b94fd2d5a923b04ea0ee210cb9d9d8e5ad03dd6b1ff9465318cd3be4b51:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libnghttp2-14/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:48318b94fd2d5a923b04ea0ee210cb9d9d8e5ad03dd6b1ff9465318cd3be4b51:/usr/share/doc/libnghttp2-14/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libnghttp2-14:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:48318b94fd2d5a923b04ea0ee210cb9d9d8e5ad03dd6b1ff9465318cd3be4b51:/var/lib/dpkg/info/libnghttp2-14:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "ce298bca551d0b6e1c34b56703cb365c0241990a28e5e7247e51a2dea669ef4c:1"
           }
         },
         {
