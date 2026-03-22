@@ -115,6 +115,27 @@
               }
             },
             {
+              "id": "CVE-2026-2219-dpkg",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-2219 medium vulnerability for dpkg package"
+              },
+              "fullDescription": {
+                "text": "Version 1.22.6ubuntu6.5 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2026-2219\nSeverity: medium\nPackage: dpkg\nVersion: 1.22.6ubuntu6.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-2219](https://ubuntu.com/security/CVE-2026-2219)",
+                "markdown": "**Vulnerability CVE-2026-2219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | dpkg  | 1.22.6ubuntu6.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-2219](https://ubuntu.com/security/CVE-2026-2219)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/dpkg@1.22.6ubuntu6.5?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
               "id": "CVE-2025-69720-libncursesw6",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -199,43 +220,22 @@
               }
             },
             {
-              "id": "CVE-2025-5278-coreutils",
-              "name": "DpkgMatcherExactDirectMatch",
+              "id": "CVE-2026-27135-libnghttp2-14",
+              "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2025-5278 low vulnerability for coreutils package"
+                "text": "CVE-2026-27135 medium vulnerability for libnghttp2-14 package"
               },
               "fullDescription": {
-                "text": "Version 9.4-3ubuntu6.1 is affected with no fixes reported yet."
+                "text": "Version 1.59.0-1ubuntu0.2 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2025-5278\nSeverity: low\nPackage: coreutils\nVersion: 9.4-3ubuntu6.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)",
-                "markdown": "**Vulnerability CVE-2025-5278**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 9.4-3ubuntu6.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)  |\n"
+                "text": "Vulnerability CVE-2026-27135\nSeverity: medium\nPackage: libnghttp2-14\nVersion: 1.59.0-1ubuntu0.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-27135](https://ubuntu.com/security/CVE-2026-27135)",
+                "markdown": "**Vulnerability CVE-2026-27135**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libnghttp2-14  | 1.59.0-1ubuntu0.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-27135](https://ubuntu.com/security/CVE-2026-27135)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/coreutils@9.4-3ubuntu6.1?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "4.4"
-              }
-            },
-            {
-              "id": "CVE-2026-2219-dpkg",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-2219 medium vulnerability for dpkg package"
-              },
-              "fullDescription": {
-                "text": "Version 1.22.6ubuntu6.5 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2026-2219\nSeverity: medium\nPackage: dpkg\nVersion: 1.22.6ubuntu6.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-2219](https://ubuntu.com/security/CVE-2026-2219)",
-                "markdown": "**Vulnerability CVE-2026-2219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | dpkg  | 1.22.6ubuntu6.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-2219](https://ubuntu.com/security/CVE-2026-2219)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/dpkg@1.22.6ubuntu6.5?arch=amd64\u0026distro=ubuntu-24.04"
+                  "pkg:deb/ubuntu/libnghttp2-14@1.59.0-1ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=nghttp2"
                 ],
                 "security-severity": "7.5"
               }
@@ -409,24 +409,24 @@
               }
             },
             {
-              "id": "CVE-2026-27135-libnghttp2-14",
-              "name": "DpkgMatcherExactIndirectMatch",
+              "id": "CVE-2025-5278-coreutils",
+              "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-27135 medium vulnerability for libnghttp2-14 package"
+                "text": "CVE-2025-5278 low vulnerability for coreutils package"
               },
               "fullDescription": {
-                "text": "Version 1.59.0-1ubuntu0.2 is affected with no fixes reported yet."
+                "text": "Version 9.4-3ubuntu6.1 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2026-27135\nSeverity: medium\nPackage: libnghttp2-14\nVersion: 1.59.0-1ubuntu0.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-27135](https://ubuntu.com/security/CVE-2026-27135)",
-                "markdown": "**Vulnerability CVE-2026-27135**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libnghttp2-14  | 1.59.0-1ubuntu0.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-27135](https://ubuntu.com/security/CVE-2026-27135)  |\n"
+                "text": "Vulnerability CVE-2025-5278\nSeverity: low\nPackage: coreutils\nVersion: 9.4-3ubuntu6.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)",
+                "markdown": "**Vulnerability CVE-2025-5278**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 9.4-3ubuntu6.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/libnghttp2-14@1.59.0-1ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=nghttp2"
+                  "pkg:deb/ubuntu/coreutils@9.4-3ubuntu6.1?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
-                "security-severity": "7.5"
+                "security-severity": "4.4"
               }
             },
             {
@@ -756,6 +756,61 @@
           }
         },
         {
+          "ruleId": "CVE-2026-2219-dpkg",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: dpkg, version 1.22.6ubuntu6.5 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/dpkg/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/dpkg/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dpkg.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/dpkg.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dpkg.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/dpkg.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dpkg.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/dpkg.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dpkg.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/dpkg.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dpkg.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/dpkg.postrm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "018589fbd44d3531246cf1c30d60d880cd60d1c1db70dd69d3c58b2941d37b75:1"
+          }
+        },
+        {
           "ruleId": "CVE-2025-69720-libncursesw6",
           "level": "warning",
           "message": {
@@ -924,53 +979,10 @@
           }
         },
         {
-          "ruleId": "CVE-2025-5278-coreutils",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: coreutils, version 9.4-3ubuntu6.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/coreutils/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/coreutils/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/coreutils.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/coreutils.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d302fcb16ddb88c98d0477f96af952c897c9693c10356ae34f2d4940c834798e:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-2219-dpkg",
+          "ruleId": "CVE-2026-27135-libnghttp2-14",
           "level": "warning",
           "message": {
-            "text": "A medium vulnerability in deb package: dpkg, version 1.22.6ubuntu6.5 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+            "text": "A medium vulnerability in deb package: libnghttp2-14, version 1.59.0-1ubuntu0.2 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -991,34 +1003,18 @@
                   "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
                 },
                 {
-                  "name": "/usr/share/doc/dpkg/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/dpkg/copyright"
+                  "name": "/usr/share/doc/libnghttp2-14/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/usr/share/doc/libnghttp2-14/copyright"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/dpkg.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/dpkg.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dpkg.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/dpkg.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dpkg.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/dpkg.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dpkg.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/dpkg.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dpkg.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/dpkg.postrm"
+                  "name": "/var/lib/dpkg/info/libnghttp2-14:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/libnghttp2-14:amd64.md5sums"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "018589fbd44d3531246cf1c30d60d880cd60d1c1db70dd69d3c58b2941d37b75:1"
+            "primaryLocationLineHash": "89fbeb3e3d76e4d1865425357b65b45a949711b2e322fe488aa68144f938db7d:1"
           }
         },
         {
@@ -1390,10 +1386,10 @@
           }
         },
         {
-          "ruleId": "CVE-2026-27135-libnghttp2-14",
-          "level": "warning",
+          "ruleId": "CVE-2025-5278-coreutils",
+          "level": "note",
           "message": {
-            "text": "A medium vulnerability in deb package: libnghttp2-14, version 1.59.0-1ubuntu0.2 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: coreutils, version 9.4-3ubuntu6.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -1414,18 +1410,22 @@
                   "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
                 },
                 {
-                  "name": "/usr/share/doc/libnghttp2-14/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/usr/share/doc/libnghttp2-14/copyright"
+                  "name": "/usr/share/doc/coreutils/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/coreutils/copyright"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/libnghttp2-14:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/libnghttp2-14:amd64.md5sums"
+                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/coreutils.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/coreutils.list"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "89fbeb3e3d76e4d1865425357b65b45a949711b2e322fe488aa68144f938db7d:1"
+            "primaryLocationLineHash": "d302fcb16ddb88c98d0477f96af952c897c9693c10356ae34f2d4940c834798e:1"
           }
         },
         {
