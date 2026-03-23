@@ -808,27 +808,6 @@
               }
             },
             {
-              "id": "CVE-2025-68972-gpgv",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-68972 medium vulnerability for gpgv package"
-              },
-              "fullDescription": {
-                "text": "Version 2.2.27-3ubuntu2.5 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2025-68972\nSeverity: medium\nPackage: gpgv\nVersion: 2.2.27-3ubuntu2.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-68972](https://ubuntu.com/security/CVE-2025-68972)",
-                "markdown": "**Vulnerability CVE-2025-68972**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gpgv  | 2.2.27-3ubuntu2.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-68972](https://ubuntu.com/security/CVE-2025-68972)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnupg2"
-                ],
-                "security-severity": "5.9"
-              }
-            },
-            {
               "id": "CVE-2026-27171-zlib1g",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -847,6 +826,27 @@
                   "pkg:deb/ubuntu/zlib1g@1%3A1.2.11.dfsg-2ubuntu9.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=zlib"
                 ],
                 "security-severity": "5.5"
+              }
+            },
+            {
+              "id": "CVE-2025-68972-gpgv",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-68972 medium vulnerability for gpgv package"
+              },
+              "fullDescription": {
+                "text": "Version 2.2.27-3ubuntu2.5 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://github.com/anchore/grype",
+              "help": {
+                "text": "Vulnerability CVE-2025-68972\nSeverity: medium\nPackage: gpgv\nVersion: 2.2.27-3ubuntu2.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-68972](https://ubuntu.com/security/CVE-2025-68972)",
+                "markdown": "**Vulnerability CVE-2025-68972**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gpgv  | 2.2.27-3ubuntu2.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-68972](https://ubuntu.com/security/CVE-2025-68972)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnupg2"
+                ],
+                "security-severity": "5.9"
               }
             }
           ]
@@ -2560,6 +2560,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-27171-zlib1g",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: zlib1g, version 1:1.2.11.dfsg-2ubuntu9.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:48318b94fd2d5a923b04ea0ee210cb9d9d8e5ad03dd6b1ff9465318cd3be4b51:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/zlib1g/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fd7b85c1b84e3dcd6e601489a9676aeb7126f78d71babf9637fab93280660536:/usr/share/doc/zlib1g/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/zlib1g:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fd7b85c1b84e3dcd6e601489a9676aeb7126f78d71babf9637fab93280660536:/var/lib/dpkg/info/zlib1g:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "f65e87535b5e14fb2f4ea86fc5e0e24855daf0a13361460a36c3113f12df0794:1"
+          }
+        },
+        {
           "ruleId": "CVE-2025-68972-gpgv",
           "level": "warning",
           "message": {
@@ -2600,45 +2639,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "bd783673eac9120da5bf221fb768630cf9ee9292075e70b1892dece867631f11:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-27171-zlib1g",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: zlib1g, version 1:1.2.11.dfsg-2ubuntu9.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:48318b94fd2d5a923b04ea0ee210cb9d9d8e5ad03dd6b1ff9465318cd3be4b51:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/zlib1g/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fd7b85c1b84e3dcd6e601489a9676aeb7126f78d71babf9637fab93280660536:/usr/share/doc/zlib1g/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/zlib1g:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:fd7b85c1b84e3dcd6e601489a9676aeb7126f78d71babf9637fab93280660536:/var/lib/dpkg/info/zlib1g:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "f65e87535b5e14fb2f4ea86fc5e0e24855daf0a13361460a36c3113f12df0794:1"
           }
         }
       ]
