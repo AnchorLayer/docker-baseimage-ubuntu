@@ -724,11 +724,6 @@
     
     
     
-    
-    
-    
-    
-    
 
 <body>
     <div class="main-container">
@@ -743,7 +738,7 @@
                     <dd id="typeValue">image</dd><dt>Checksum:</dt>
                     <dd id="checksumValue">sha256:5b5528e2f5c05a29c89d435933c1c25b4ecabd37ace91bd3c1b630f0d86a3e97</dd><dt>Date:</dt>
                     <dd>
-                        <span id="dateElement">2026-04-01T06:58:49.667758453Z</span>
+                        <span id="dateElement">2026-04-01T08:17:26.558007125Z</span>
                         <span id="prettyDateElement" style="display: none;"></span>
                     </dd>
                 </dl>
@@ -764,11 +759,11 @@
             </div>
             <div class="severity-box" id="medium">
                 <div class="severity-title">Medium</div>
-                <div class="severity-count" id="mediumCount">20</div>
+                <div class="severity-count" id="mediumCount">17</div>
             </div>
             <div class="severity-box" id="low">
                 <div class="severity-title">Low</div>
-                <div class="severity-count" id="lowCount">26</div>
+                <div class="severity-count" id="lowCount">24</div>
             </div>
             <div class="severity-box" id="unknown">
                 <div class="severity-title">Unknown</div>
@@ -953,20 +948,36 @@
                         <td>pkg:deb/ubuntu/libc6@2.35-0ubuntu3.13?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
                     </tr>
                     <tr>
-                        <td>coreutils</td>
-                        <td>8.32-4.1ubuntu1.2</td>
+                        <td>libc-bin</td>
+                        <td>2.35-0ubuntu3.13</td>
                         <td>deb</td>
                         <td>
-                            <a href="https://ubuntu.com/security/CVE-2016-2781">CVE-2016-2781</a>
+                            <a href="https://ubuntu.com/security/CVE-2026-4046">CVE-2026-4046</a>
                         </td>
-                        <td>Low</td>
+                        <td>Medium</td>
                         <td>not-fixed</td>
                         <td>
                             N/A
                         </td>
                         <td></td>
                         <td>[]</td>
-                        <td>pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.2?arch=amd64&distro=ubuntu-22.04</td>
+                        <td>pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.13?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
+                    </tr>
+                    <tr>
+                        <td>libc6</td>
+                        <td>2.35-0ubuntu3.13</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2026-4046">CVE-2026-4046</a>
+                        </td>
+                        <td>Medium</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libc6@2.35-0ubuntu3.13?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
                     </tr>
                     <tr>
                         <td>coreutils</td>
@@ -1385,70 +1396,6 @@
                         <td>pkg:deb/ubuntu/ncurses-bin@6.3-2ubuntu0.1?arch=amd64&distro=ubuntu-22.04&upstream=ncurses</td>
                     </tr>
                     <tr>
-                        <td>libpam-modules</td>
-                        <td>1.4.0-11ubuntu2.6</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2025-8941">CVE-2025-8941</a>
-                        </td>
-                        <td>Medium</td>
-                        <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libpam-modules@1.4.0-11ubuntu2.6?arch=amd64&distro=ubuntu-22.04&upstream=pam</td>
-                    </tr>
-                    <tr>
-                        <td>libpam-modules-bin</td>
-                        <td>1.4.0-11ubuntu2.6</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2025-8941">CVE-2025-8941</a>
-                        </td>
-                        <td>Medium</td>
-                        <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libpam-modules-bin@1.4.0-11ubuntu2.6?arch=amd64&distro=ubuntu-22.04&upstream=pam</td>
-                    </tr>
-                    <tr>
-                        <td>libpam-runtime</td>
-                        <td>1.4.0-11ubuntu2.6</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2025-8941">CVE-2025-8941</a>
-                        </td>
-                        <td>Medium</td>
-                        <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libpam-runtime@1.4.0-11ubuntu2.6?arch=all&distro=ubuntu-22.04&upstream=pam</td>
-                    </tr>
-                    <tr>
-                        <td>libpam0g</td>
-                        <td>1.4.0-11ubuntu2.6</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2025-8941">CVE-2025-8941</a>
-                        </td>
-                        <td>Medium</td>
-                        <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libpam0g@1.4.0-11ubuntu2.6?arch=amd64&distro=ubuntu-22.04&upstream=pam</td>
-                    </tr>
-                    <tr>
                         <td>libsystemd0</td>
                         <td>249.11-0ubuntu3.17</td>
                         <td>deb</td>
@@ -1485,22 +1432,6 @@
                         <td>pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.17?arch=amd64&distro=ubuntu-22.04&upstream=systemd</td>
                     </tr>
                     <tr>
-                        <td>gpgv</td>
-                        <td>2.2.27-3ubuntu2.5</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2022-3219">CVE-2022-3219</a>
-                        </td>
-                        <td>Low</td>
-                        <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.5?arch=amd64&distro=ubuntu-22.04&upstream=gnupg2</td>
-                    </tr>
-                    <tr>
                         <td>zlib1g</td>
                         <td>1:1.2.11.dfsg-2ubuntu9.2</td>
                         <td>deb</td>
@@ -1515,22 +1446,6 @@
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/zlib1g@1%3A1.2.11.dfsg-2ubuntu9.2?arch=amd64&distro=ubuntu-22.04&upstream=zlib</td>
-                    </tr>
-                    <tr>
-                        <td>gpgv</td>
-                        <td>2.2.27-3ubuntu2.5</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2025-68972">CVE-2025-68972</a>
-                        </td>
-                        <td>Medium</td>
-                        <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.5?arch=amd64&distro=ubuntu-22.04&upstream=gnupg2</td>
                     </tr>
                 </tbody>
             </table>
