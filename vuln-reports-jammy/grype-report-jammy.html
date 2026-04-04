@@ -722,6 +722,13 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
 
 <body>
     <div class="main-container">
@@ -736,13 +743,13 @@
                     <dd id="typeValue">image</dd><dt>Checksum:</dt>
                     <dd id="checksumValue">sha256:09b80e8ab5394878a24d26f2a355694c97dc24d728bb2f86d113e3ed320625ce</dd><dt>Date:</dt>
                     <dd>
-                        <span id="dateElement">2026-04-04T05:41:25.836238153Z</span>
+                        <span id="dateElement">2026-04-04T06:59:33.150447962Z</span>
                         <span id="prettyDateElement" style="display: none;"></span>
                     </dd>
                     <dt>Grype Version:</dt>
                     <dd>0.110.0</dd>
                     <dt>DB Built:</dt>
-                    <dd>2026-04-03 06:37:34 +0000 UTC</dd>
+                    <dd>2026-04-04 06:31:54 +0000 UTC</dd>
                 </dl>
             </div>
             <div class="heading-right">
@@ -761,7 +768,7 @@
             </div>
             <div class="severity-box" id="medium">
                 <div class="severity-title">Medium</div>
-                <div class="severity-count" id="mediumCount">9</div>
+                <div class="severity-count" id="mediumCount">16</div>
             </div>
             <div class="severity-box" id="low">
                 <div class="severity-title">Low</div>
@@ -1158,6 +1165,22 @@
                         <td>pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64&distro=ubuntu-22.04&upstream=pcre2</td>
                     </tr>
                     <tr>
+                        <td>liblzma5</td>
+                        <td>5.2.5-2ubuntu1</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2026-34743">CVE-2026-34743</a>
+                        </td>
+                        <td>Low</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/liblzma5@5.2.5-2ubuntu1?arch=amd64&distro=ubuntu-22.04&upstream=xz-utils</td>
+                    </tr>
+                    <tr>
                         <td>dpkg</td>
                         <td>1.21.1ubuntu2.6</td>
                         <td>deb</td>
@@ -1398,20 +1421,116 @@
                         <td>pkg:deb/ubuntu/zlib1g@1%3A1.2.11.dfsg-2ubuntu9.2?arch=amd64&distro=ubuntu-22.04&upstream=zlib</td>
                     </tr>
                     <tr>
-                        <td>liblzma5</td>
-                        <td>5.2.5-2ubuntu1</td>
+                        <td>bsdutils</td>
+                        <td>1:2.37.2-4ubuntu3.5</td>
                         <td>deb</td>
                         <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-34743">CVE-2026-34743</a>
+                            <a href="https://ubuntu.com/security/CVE-2026-27456">CVE-2026-27456</a>
                         </td>
-                        <td>Low</td>
+                        <td>Medium</td>
                         <td>not-fixed</td>
                         <td>
                             N/A
                         </td>
                         <td></td>
                         <td>[]</td>
-                        <td>pkg:deb/ubuntu/liblzma5@5.2.5-2ubuntu1?arch=amd64&distro=ubuntu-22.04&upstream=xz-utils</td>
+                        <td>pkg:deb/ubuntu/bsdutils@1%3A2.37.2-4ubuntu3.5?arch=amd64&distro=ubuntu-22.04&upstream=util-linux%402.37.2-4ubuntu3.5</td>
+                    </tr>
+                    <tr>
+                        <td>libblkid1</td>
+                        <td>2.37.2-4ubuntu3.5</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2026-27456">CVE-2026-27456</a>
+                        </td>
+                        <td>Medium</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libblkid1@2.37.2-4ubuntu3.5?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                    </tr>
+                    <tr>
+                        <td>libmount1</td>
+                        <td>2.37.2-4ubuntu3.5</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2026-27456">CVE-2026-27456</a>
+                        </td>
+                        <td>Medium</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3.5?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                    </tr>
+                    <tr>
+                        <td>libsmartcols1</td>
+                        <td>2.37.2-4ubuntu3.5</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2026-27456">CVE-2026-27456</a>
+                        </td>
+                        <td>Medium</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3.5?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                    </tr>
+                    <tr>
+                        <td>libuuid1</td>
+                        <td>2.37.2-4ubuntu3.5</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2026-27456">CVE-2026-27456</a>
+                        </td>
+                        <td>Medium</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3.5?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                    </tr>
+                    <tr>
+                        <td>mount</td>
+                        <td>2.37.2-4ubuntu3.5</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2026-27456">CVE-2026-27456</a>
+                        </td>
+                        <td>Medium</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/mount@2.37.2-4ubuntu3.5?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                    </tr>
+                    <tr>
+                        <td>util-linux</td>
+                        <td>2.37.2-4ubuntu3.5</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2026-27456">CVE-2026-27456</a>
+                        </td>
+                        <td>Medium</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.5?arch=amd64&distro=ubuntu-22.04</td>
                     </tr>
                 </tbody>
             </table>
