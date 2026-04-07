@@ -79,16 +79,16 @@
                 "text": "CVE-2025-5278 low vulnerability for coreutils package"
               },
               "fullDescription": {
-                "text": "Version 9.4-3ubuntu6.1 is affected with no fixes reported yet."
+                "text": "Version 9.4-3ubuntu6.2 is affected with no fixes reported yet."
               },
               "helpUri": "https://github.com/anchore/grype",
               "help": {
-                "text": "Vulnerability CVE-2025-5278\nSeverity: low\nPackage: coreutils\nVersion: 9.4-3ubuntu6.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)",
-                "markdown": "**Vulnerability CVE-2025-5278**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 9.4-3ubuntu6.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)  |\n"
+                "text": "Vulnerability CVE-2025-5278\nSeverity: low\nPackage: coreutils\nVersion: 9.4-3ubuntu6.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)",
+                "markdown": "**Vulnerability CVE-2025-5278**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 9.4-3ubuntu6.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/coreutils@9.4-3ubuntu6.1?arch=amd64\u0026distro=ubuntu-24.04"
+                  "pkg:deb/ubuntu/coreutils@9.4-3ubuntu6.2?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
                 "security-severity": "4.4"
               }
@@ -472,48 +472,6 @@
               }
             },
             {
-              "id": "CVE-2026-29111-libsystemd0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-29111 medium vulnerability for libsystemd0 package"
-              },
-              "fullDescription": {
-                "text": "Version 255.4-1ubuntu8.12 is affected with an available fix in versions 255.4-1ubuntu8.14"
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2026-29111\nSeverity: medium\nPackage: libsystemd0\nVersion: 255.4-1ubuntu8.12\nFix Version: 255.4-1ubuntu8.14\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-29111](https://ubuntu.com/security/CVE-2026-29111)",
-                "markdown": "**Vulnerability CVE-2026-29111**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsystemd0  | 255.4-1ubuntu8.12  | 255.4-1ubuntu8.14  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-29111](https://ubuntu.com/security/CVE-2026-29111)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libsystemd0@255.4-1ubuntu8.12?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=systemd"
-                ],
-                "security-severity": "5.5"
-              }
-            },
-            {
-              "id": "CVE-2026-29111-libudev1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-29111 medium vulnerability for libudev1 package"
-              },
-              "fullDescription": {
-                "text": "Version 255.4-1ubuntu8.12 is affected with an available fix in versions 255.4-1ubuntu8.14"
-              },
-              "helpUri": "https://github.com/anchore/grype",
-              "help": {
-                "text": "Vulnerability CVE-2026-29111\nSeverity: medium\nPackage: libudev1\nVersion: 255.4-1ubuntu8.12\nFix Version: 255.4-1ubuntu8.14\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-29111](https://ubuntu.com/security/CVE-2026-29111)",
-                "markdown": "**Vulnerability CVE-2026-29111**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libudev1  | 255.4-1ubuntu8.12  | 255.4-1ubuntu8.14  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-29111](https://ubuntu.com/security/CVE-2026-29111)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libudev1@255.4-1ubuntu8.12?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=systemd"
-                ],
-                "security-severity": "5.5"
-              }
-            },
-            {
               "id": "CVE-2026-27456-bsdutils",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -707,39 +665,39 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/login/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/login/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/login/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/login.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/login.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/login.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/login.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/login.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/login.list"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/login.postinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/login.postinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/login.postrm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/login.postrm"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/login.preinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/login.preinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/login.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/login.prerm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/login.prerm"
                 }
               ]
             }
@@ -770,39 +728,39 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/passwd/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/passwd/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/passwd/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/passwd.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/passwd.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/passwd.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/passwd.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/passwd.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/passwd.list"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/passwd.postinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/passwd.postinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/passwd.postrm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/passwd.postrm"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/passwd.preinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/passwd.preinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/passwd.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/passwd.prerm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/passwd.prerm"
                 }
               ]
             }
@@ -833,15 +791,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libgcrypt20/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libgcrypt20/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/libgcrypt20/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libgcrypt20:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libgcrypt20:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libgcrypt20:amd64.md5sums"
                 }
               ]
             }
@@ -854,7 +812,7 @@
           "ruleId": "CVE-2025-5278-coreutils",
           "level": "note",
           "message": {
-            "text": "A low vulnerability in deb package: coreutils, version 9.4-3ubuntu6.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: coreutils, version 9.4-3ubuntu6.2 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -872,25 +830,25 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/coreutils/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/coreutils/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/coreutils/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/coreutils.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/coreutils.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/coreutils.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/coreutils.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/coreutils.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/coreutils.list"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "d302fcb16ddb88c98d0477f96af952c897c9693c10356ae34f2d4940c834798e:1"
+            "primaryLocationLineHash": "f019c53a0b59f11c70847b04ddd5516f889e8da8fe16a0b21a29673f6c89f6c7:1"
           }
         },
         {
@@ -915,27 +873,27 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/tar/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/tar/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/tar/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/tar.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/tar.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/tar.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/tar.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/tar.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/tar.list"
                 },
                 {
                   "name": "/var/lib/dpkg/info/tar.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/tar.postinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/tar.postinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/tar.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/tar.prerm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/tar.prerm"
                 }
               ]
             }
@@ -966,31 +924,31 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libc-bin/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libc-bin/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/libc-bin/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc-bin.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc-bin.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc-bin.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc-bin.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc-bin.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc-bin.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc-bin.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc-bin.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc-bin.list"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc-bin.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc-bin.postinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc-bin.postinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc-bin.triggers",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc-bin.triggers"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc-bin.triggers"
                 }
               ]
             }
@@ -1021,31 +979,31 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libc-bin/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libc-bin/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/libc-bin/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc-bin.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc-bin.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc-bin.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc-bin.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc-bin.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc-bin.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc-bin.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc-bin.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc-bin.list"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc-bin.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc-bin.postinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc-bin.postinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc-bin.triggers",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc-bin.triggers"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc-bin.triggers"
                 }
               ]
             }
@@ -1076,19 +1034,19 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libc6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libc6/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/libc6/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc6:amd64.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc6:amd64.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc6:amd64.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc6:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc6:amd64.md5sums"
                 }
               ]
             }
@@ -1119,19 +1077,19 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libc6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libc6/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/libc6/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc6:amd64.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc6:amd64.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc6:amd64.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc6:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc6:amd64.md5sums"
                 }
               ]
             }
@@ -1162,31 +1120,31 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libc-bin/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libc-bin/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/libc-bin/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc-bin.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc-bin.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc-bin.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc-bin.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc-bin.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc-bin.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc-bin.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc-bin.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc-bin.list"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc-bin.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc-bin.postinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc-bin.postinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc-bin.triggers",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc-bin.triggers"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc-bin.triggers"
                 }
               ]
             }
@@ -1217,19 +1175,19 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libc6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libc6/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/libc6/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc6:amd64.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc6:amd64.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc6:amd64.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libc6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libc6:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libc6:amd64.md5sums"
                 }
               ]
             }
@@ -1260,15 +1218,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/liblzma5/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/liblzma5/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/liblzma5/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/liblzma5:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/liblzma5:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/liblzma5:amd64.md5sums"
                 }
               ]
             }
@@ -1299,31 +1257,31 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/dpkg/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/dpkg/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/dpkg/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/dpkg.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/dpkg.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/dpkg.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/dpkg.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/dpkg.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/dpkg.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/dpkg.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/dpkg.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/dpkg.list"
                 },
                 {
                   "name": "/var/lib/dpkg/info/dpkg.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/dpkg.postinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/dpkg.postinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/dpkg.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/dpkg.postrm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/dpkg.postrm"
                 }
               ]
             }
@@ -1354,15 +1312,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libnghttp2-14/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/usr/share/doc/libnghttp2-14/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/usr/share/doc/libnghttp2-14/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libnghttp2-14:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/libnghttp2-14:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/info/libnghttp2-14:amd64.md5sums"
                 }
               ]
             }
@@ -1393,15 +1351,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libtinfo6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libncursesw6/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/libncursesw6/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libncursesw6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libncursesw6:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libncursesw6:amd64.md5sums"
                 }
               ]
             }
@@ -1432,15 +1390,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libtinfo6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libtinfo6/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/libtinfo6/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libtinfo6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libtinfo6:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libtinfo6:amd64.md5sums"
                 }
               ]
             }
@@ -1471,23 +1429,23 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/ncurses-base/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/ncurses-base/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/ncurses-base/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-base.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/ncurses-base.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/ncurses-base.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-base.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/ncurses-base.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/ncurses-base.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-base.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/ncurses-base.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/ncurses-base.list"
                 }
               ]
             }
@@ -1518,19 +1476,19 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/ncurses-bin/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/ncurses-bin/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/ncurses-bin/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-bin.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/ncurses-bin.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/ncurses-bin.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-bin.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/ncurses-bin.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/ncurses-bin.list"
                 }
               ]
             }
@@ -1561,15 +1519,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libtinfo6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libncursesw6/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/libncursesw6/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libncursesw6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libncursesw6:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libncursesw6:amd64.md5sums"
                 }
               ]
             }
@@ -1600,15 +1558,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libtinfo6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libtinfo6/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/libtinfo6/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/libtinfo6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libtinfo6:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libtinfo6:amd64.md5sums"
                 }
               ]
             }
@@ -1639,23 +1597,23 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/ncurses-base/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/ncurses-base/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/ncurses-base/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-base.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/ncurses-base.conffiles"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/ncurses-base.conffiles"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-base.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/ncurses-base.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/ncurses-base.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-base.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/ncurses-base.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/ncurses-base.list"
                 }
               ]
             }
@@ -1686,103 +1644,25 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/ncurses-bin/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/ncurses-bin/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/ncurses-bin/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-bin.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/ncurses-bin.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/ncurses-bin.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/ncurses-bin.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/ncurses-bin.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/ncurses-bin.list"
                 }
               ]
             }
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "eff31827b40e2d7c8bb77abcc22549860f0b00af9c1feb42510b9d77b67159fc:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-29111-libsystemd0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libsystemd0, version 255.4-1ubuntu8.12 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libsystemd0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libsystemd0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libsystemd0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libsystemd0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "55bf4feefcad9288aadf8f9ad966bd961a626700ab1c01d7e18be7a7cfbdc332:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-29111-libudev1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libudev1, version 255.4-1ubuntu8.12 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libudev1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libudev1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libudev1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/libudev1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "123df833563dd125a97428635772d989ae16827da7a5545cff5e8e986f19d630:1"
           }
         },
         {
@@ -1807,19 +1687,19 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/bsdutils.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/bsdutils.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/bsdutils/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/bsdutils/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/bsdutils/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/bsdutils.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/bsdutils.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/bsdutils.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/bsdutils.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/bsdutils.list"
                 }
               ]
             }
@@ -1850,15 +1730,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libblkid1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/libblkid1:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libblkid1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libblkid1/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/libblkid1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libblkid1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libblkid1:amd64.md5sums"
                 }
               ]
             }
@@ -1889,15 +1769,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libmount1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/libmount1:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libmount1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libmount1/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/libmount1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libmount1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libmount1:amd64.md5sums"
                 }
               ]
             }
@@ -1928,15 +1808,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libsmartcols1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/libsmartcols1:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libsmartcols1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libsmartcols1/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/libsmartcols1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libsmartcols1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libsmartcols1:amd64.md5sums"
                 }
               ]
             }
@@ -1967,15 +1847,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libuuid1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/libuuid1:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/libuuid1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/libuuid1/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/libuuid1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libuuid1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/libuuid1:amd64.md5sums"
                 }
               ]
             }
@@ -2006,19 +1886,19 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/mount.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/mount.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/mount/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/mount/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/mount/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/mount.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/mount.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/mount.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/mount.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/mount.list"
                 }
               ]
             }
@@ -2049,35 +1929,35 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/util-linux.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/util-linux.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/util-linux/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/util-linux/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/util-linux/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/util-linux.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/util-linux.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/util-linux.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/util-linux.md5sums"
                 },
                 {
                   "name": "/var/lib/dpkg/info/util-linux.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/util-linux.list"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/util-linux.list"
                 },
                 {
                   "name": "/var/lib/dpkg/info/util-linux.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/util-linux.postinst"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/util-linux.postinst"
                 },
                 {
                   "name": "/var/lib/dpkg/info/util-linux.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/util-linux.postrm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/util-linux.postrm"
                 },
                 {
                   "name": "/var/lib/dpkg/info/util-linux.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/info/util-linux.prerm"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/util-linux.prerm"
                 }
               ]
             }
@@ -2108,15 +1988,15 @@
               "logicalLocations": [
                 {
                   "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c6ae2155ccf72ab21ea79bf4b9fd5160cc1314ae730d650ab763ce21f40c31f8:/var/lib/dpkg/status"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:3deb0e87bfeab3bfea3f0b7665eddd342c7d41fce6942aef2b6fd88d56511228:/var/lib/dpkg/status"
                 },
                 {
                   "name": "/usr/share/doc/zlib1g/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/usr/share/doc/zlib1g/copyright"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/usr/share/doc/zlib1g/copyright"
                 },
                 {
                   "name": "/var/lib/dpkg/info/zlib1g:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f2a7f072635332d307212e318e07284948b89f4167fce5c4d7c9cfb7590b74b6:/var/lib/dpkg/info/zlib1g:amd64.md5sums"
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:5e732af9e7c568c9b41ecabc76ac93a58471934d5155070dfd64a9567667fd9d:/var/lib/dpkg/info/zlib1g:amd64.md5sums"
                 }
               ]
             }
