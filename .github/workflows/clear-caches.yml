@@ -1,0 +1,35 @@
+name: Clear Caches
+
+on:
+  workflow_dispatch:
+
+jobs:
+  clear-cache:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: Clear GitHub Actions Cache
+        uses: actions/github-script@v6
+        with:
+          script: |
+            let page = 1;
+            let caches;
+            do {
+              caches = await github.rest.actions.getActionsCacheList({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                per_page: 100, // Fetch 100 caches per page
+                page: page,
+              });
+
+              for (const cache of caches.data.actions_caches) {
+                console.log(`Attempting to delete cache with ID: ${cache.id} and Key: ${cache.key}`);
+                await github.rest.actions.deleteActionsCacheById({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  cache_id: cache.id,
+                });
+              }
+              page++;
+            } while (caches.data.actions_caches.length === 100);

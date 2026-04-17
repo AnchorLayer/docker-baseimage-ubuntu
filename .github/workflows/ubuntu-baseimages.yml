@@ -1,121 +1,338 @@
+# Workflow name
 name: 'Check Ubuntu Repos and Rebuild Base Images'
 
+
+# Triggers for the workflow
 on:
+  # Runs on a schedule (at 1 and 31 minutes past the hour)
   schedule:
-    - cron: '0,20,40 * * * *'
+    - cron: '01,31 * * * *'
+  # Allows manual triggering of the workflow
   workflow_dispatch:
 
+# Defines the jobs to be run
 jobs:
-  check-and-build:
+  # Job to determine the latest version and matrix
+  prepare:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-      security-events: write
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - os_version: "24.04"
-            os_name: "noble"
-          - os_version: "22.04"
-            os_name: "jammy"
-          - os_version: "20.04"
-            os_name: "focal"
-          - os_version: "18.04"
-            os_name: "bionic"
-          - os_version: "16.04"
-            os_name: "xenial"
-          - os_version: "14.04"
-            os_name: "trusty"
-
+    outputs:
+      latest_version: ${{ steps.get_versions.outputs.latest_version }}
+      matrix: ${{ steps.get_versions.outputs.matrix }}
     steps:
       - name: 'Check out the repo'
         uses: actions/checkout@v4
-
-      - name: 'Cache APT state hash for Ubuntu ${{ matrix.os_version }}'
-        uses: actions/cache@v4
-        id: cache-apt-state
-        with:
-          path: apt-state-${{ matrix.os_version }}.hash
-          key: ubuntu-repo-state-${{ matrix.os_version }}
-
-      - name: 'Generate current APT state hash for Ubuntu ${{ matrix.os_version }}'
-        id: generate_hash
+      - name: 'Generate matrix and get latest version'
+        id: get_versions
         run: |
-          echo "Checking APT lists for Ubuntu:${{ matrix.os_version }}..."
-          CURRENT_HASH=$(docker run --rm ubuntu:${{ matrix.os_version }} bash -c "apt-get update > /dev/null && find /var/lib/apt/lists/ -type f -print0 | xargs -0 sha256sum | sort | sha256sum | awk '{print \$1}'")
-          echo "Current state hash: $CURRENT_HASH"
-          echo "new_hash=$CURRENT_HASH" >> $GITHUB_OUTPUT
+          MATRIX=$(jq -c '{include: .}' versions.env)
+          LATEST_VERSION=$(jq -r '.[0].version' versions.env)
+          echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
+          echo "latest_version=$LATEST_VERSION" >> $GITHUB_OUTPUT
+          echo "The latest version is $LATEST_VERSION"
 
-      - name: 'Compare hashes for Ubuntu ${{ matrix.os_version }}'
-        id: check_changes
-        run: |
-          OLD_HASH=$(cat apt-state-${{ matrix.os_version }}.hash 2>/dev/null || echo "no-previous-hash")
-          NEW_HASH="${{ steps.generate_hash.outputs.new_hash }}"
-          if [ "$OLD_HASH" == "$NEW_HASH" ]; then
-            echo "✅ No changes detected for Ubuntu ${{ matrix.os_version }}."
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "🚨 Changes detected for Ubuntu ${{ matrix.os_version }}! Triggering rebuild."
-            echo "changed=true" >> $GITHUB_OUTPUT
-            echo $NEW_HASH > apt-state-${{ matrix.os_version }}.hash
-          fi
+  # Job to check for updates and build images
+  check-and-build:
+    needs: prepare
+    # Runner environment
+    runs-on: ubuntu-latest
+    # Permissions for the job
+    permissions:
+      contents: write
+      packages: write
+      security-events: write
+    # Strategy for running the job
+    strategy:
+      # Don't cancel other jobs if one fails
+      fail-fast: false
+      # Matrix of OS versions to run the job against
+      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
 
+    # Steps to be executed in the job
+    steps:
+      # Checks out the repository code
+      - name: 'Check out the repo'
+        uses: actions/checkout@v4
+
+      # Sets up Docker Buildx for building images
       - name: 'Set up Docker Buildx'
-        if: steps.check_changes.outputs.changed == 'true'
         uses: docker/setup-buildx-action@v3
 
-      - name: 'Log in to Docker Hub'
-        if: steps.check_changes.outputs.changed == 'true'
+      # Logs in to GitHub Container Registry
+      - name: 'Log in to GitHub Container Registry'
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
           
+      # Gets the current date for tagging
       - name: Get current date
-        if: steps.check_changes.outputs.changed == 'true'
         id: get_date
         run: echo "date=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
 
+      # Convert repository owner to lowercase
+      - name: 'Convert repository owner to lowercase'
+        id: lowercase_owner
+        run: echo "owner=$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_OUTPUT
+
+      # Generate Docker tags
+      - name: 'Generate Docker tags'
+        id: docker_tags
+        run: |
+          tags="ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.codename }}:latest
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.codename }}:${{ steps.get_date.outputs.date }}
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.version }}:latest
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.version }}:${{ steps.get_date.outputs.date }}
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.version }}-latest
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.version }}-${{ steps.get_date.outputs.date }}
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.codename }}-latest
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:${{ matrix.codename }}-${{ steps.get_date.outputs.date }}"
+          if [ "${{ matrix.version }}" == "${{ needs.prepare.outputs.latest_version }}" ]; then
+            tags="$tags
+          ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu:latest"
+          fi
+          {
+            echo "tags<<EOF"
+            echo "$tags"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      # Builds the Docker image but does not push it
       - name: 'Build Docker image'
-        if: steps.check_changes.outputs.changed == 'true'
         id: build-image
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: ./Dockerfile.ubuntu
+          context: ./docker
+          file: ./docker/Dockerfile.ubuntu
           push: false
           load: true
           build-args: |
-            UBUNTU_VERSION=${{ matrix.os_version }}
-          tags: |
-            anchorlayer/ubuntu-${{ matrix.os_name }}:latest
-            anchorlayer/ubuntu-${{ matrix.os_name }}:${{ steps.get_date.outputs.date }}
-            anchorlayer/ubuntu-${{ matrix.os_version }}:latest
-            anchorlayer/ubuntu-${{ matrix.os_version }}:${{ steps.get_date.outputs.date }}
-            anchorlayer/ubuntu:${{ matrix.os_version }}-latest
-            anchorlayer/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
-            anchorlayer/ubuntu:${{ matrix.os_name }}-latest
-            anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
+            UBUNTU_VERSION=${{ matrix.version }}
+          tags: ${{ steps.docker_tags.outputs.tags }}
+          cache-from: type=gha,scope=${{ github.workflow }}-${{ matrix.version }}
 
+      # Caches the package list hash to speed up subsequent runs
+      - name: 'Cache package list hash for Ubuntu ${{ matrix.version }}'
+        uses: actions/cache@v4
+        id: cache-pkg-state
+        with:
+          path: package-state-${{ matrix.version }}.hash
+          key: ubuntu-pkg-state-${{ matrix.version }}
+
+      # Generates the current package list hash
+      - name: 'Generate package list hash for Ubuntu ${{ matrix.version }}'
+        id: generate_hash
+        run: |
+          echo "Generating package list hash for ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.codename }}:latest..."
+          CURRENT_HASH=$(docker run --rm ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.codename }}:latest dpkg-query -W -f='%P\t${Version}\n' | sort | sha256sum | cut -d' ' -f1)
+          echo "Current package hash: $CURRENT_HASH"
+          echo "new_hash=$CURRENT_HASH" >> $GITHUB_OUTPUT
+
+      # Compares the new hash with the old one to detect changes
+      - name: 'Compare hashes for Ubuntu ${{ matrix.version }}'
+        id: check_changes
+        run: |
+          OLD_HASH=$(cat package-state-${{ matrix.version }}.hash 2>/dev/null || echo "no-previous-hash")
+          NEW_HASH="${{ steps.generate_hash.outputs.new_hash }}"
+          if [ "$OLD_HASH" == "$NEW_HASH" ]; then
+            echo "✅ No package changes detected for Ubuntu ${{ matrix.version }}."
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "🚨 Package changes detected for Ubuntu ${{ matrix.version }}! Triggering rebuild."
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo $NEW_HASH > package-state-${{ matrix.version }}.hash
+          fi
+      
+      # Installs Grype and clones templates for vulnerability scanning
+      - name: 'Install Grype and clone templates'
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
+          git clone --depth 1 https://github.com/anchore/grype.git
+          
+      # Scans the image with Grype and generates various vulnerability reports
+      - name: 'Scan image with Grype and generate all reports'
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          IMAGE_TAG="ghcr.io/${{ steps.lowercase_owner.outputs.owner }}/ubuntu-${{ matrix.codename }}:latest"
+        
+          # Human-readable summary for the logs (doesn't save a file)
+          echo "--- Generating Grype Table Report (for logs) ---"
+          grype --scope all-layers $IMAGE_TAG -o table
+
+          # JSON report (machine-readable, most detailed)
+          echo "--- Generating Grype JSON Report ---"
+          grype --scope all-layers $IMAGE_TAG -o json > grype-report-${{ matrix.codename }}.json
+
+          # SARIF report for security dashboards (e.g., GitHub Security tab)
+          echo "--- Generating Grype SARIF Report ---"
+          grype --scope all-layers $IMAGE_TAG -o sarif > grype-report-${{ matrix.codename }}.sarif
+
+          # CycloneDX XML report (SBOM format)
+          echo "--- Generating Grype CycloneDX XML Report ---"
+          grype --scope all-layers $IMAGE_TAG -o cyclonedx > grype-report-${{ matrix.codename }}.cyclonedx.xml
+
+          # CycloneDX JSON report (SBOM format)
+          echo "--- Generating Grype CycloneDX JSON Report ---"
+          grype --scope all-layers $IMAGE_TAG -o cyclonedx-json > grype-report-${{ matrix.codename }}.cyclonedx.json
+
+          # Custom CSV template report
+          echo "--- Generating Grype Custom CSV Report ---"
+          grype --scope all-layers $IMAGE_TAG -o template -t grype/templates/csv.tmpl > grype-report-${{ matrix.codename }}.csv
+
+          # Custom HTML template report
+          echo "--- Generating Grype Custom HTML Report ---"
+          grype --scope all-layers $IMAGE_TAG -o template -t grype/templates/html.tmpl > grype-report-${{ matrix.codename }}.html
+
+      # Uploads the generated vulnerability reports as artifacts
+      - name: 'Upload vulnerability reports'
+        if: steps.check_changes.outputs.changed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: vuln-reports-${{ matrix.codename }}
+          path: |
+            grype-report-${{ matrix.codename }}.json
+            grype-report-${{ matrix.codename }}.sarif
+            grype-report-${{ matrix.codename }}.cyclonedx.xml
+            grype-report-${{ matrix.codename }}.cyclonedx.json
+            grype-report-${{ matrix.codename }}.csv
+            grype-report-${{ matrix.codename }}.html
+
+      # Pushes the Docker image to the registry
       - name: 'Push Docker image'
         if: ${{ steps.check_changes.outputs.changed == 'true' && success() }}
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: ./Dockerfile.ubuntu
+          context: ./docker
+          file: ./docker/Dockerfile.ubuntu
           push: true
-          load: true
           build-args: |
-            UBUNTU_VERSION=${{ matrix.os_version }}
-          # The tag remains dynamic as before
-          tags: |
-            anchorlayer/ubuntu-${{ matrix.os_name }}:latest
-            anchorlayer/ubuntu-${{ matrix.os_name }}:${{ steps.get_date.outputs.date }}
-            anchorlayer/ubuntu-${{ matrix.os_version }}:latest
-            anchorlayer/ubuntu-${{ matrix.os_version }}:${{ steps.get_date.outputs.date }}
-            anchorlayer/ubuntu:${{ matrix.os_version }}-latest
-            anchorlayer/ubuntu:${{ matrix.os_version }}-${{ steps.get_date.outputs.date }}
-            anchorlayer/ubuntu:${{ matrix.os_name }}-latest
-            anchorlayer/ubuntu:${{ matrix.os_name }}-${{ steps.get_date.outputs.date }}
+            UBUNTU_VERSION=${{ matrix.version }}
+          tags: ${{ steps.docker_tags.outputs.tags }}
+          cache-from: type=gha,scope=${{ github.workflow }}-${{ matrix.version }}
+          cache-to: type=gha,mode=max,scope=${{ github.workflow }}-${{ matrix.version }}
+
+  make-packages-public:
+    name: Make Packages Public
+    runs-on: ubuntu-latest
+    needs: check-and-build
+    permissions:
+      packages: write
+    steps:
+      - name: 'Check out the repo'
+        uses: actions/checkout@v4
+      - name: 'Convert repository owner to lowercase'
+        id: lowercase_owner
+        run: echo "owner=$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_OUTPUT
+
+      - name: Get repository owner type
+        id: owner_type
+        run: |
+          OWNER_TYPE=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/users/${{ github.repository_owner }}" | jq -r .type)
+          echo "type=${OWNER_TYPE}" >> $GITHUB_OUTPUT
+
+      - name: Make packages public
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          LOWERCASE_OWNER="${{ steps.lowercase_owner.outputs.owner }}"
+          PACKAGE_NAMES="ubuntu $(jq -r '.[] | "ubuntu-" + .codename, "ubuntu-" + .version' versions.env | tr '\n' ' ')"
+
+          if [ "${{ steps.owner_type.outputs.type }}" == "Organization" ]; then
+            API_BASE_URL="https://api.github.com/orgs/$LOWERCASE_OWNER/packages/container"
+          else
+            API_BASE_URL="https://api.github.com/user/packages/container"
+          fi
+
+          for PACKAGE_NAME in $PACKAGE_NAMES; do
+            echo "Making $PACKAGE_NAME public..."
+            curl -s -f -X PATCH \
+              -H "Authorization: token $GITHUB_TOKEN" \
+              -H "Accept: application/vnd.github.v3+json" \
+              "$API_BASE_URL/$PACKAGE_NAME" \
+              -d '{"visibility":"public"}' || echo "Could not make package $PACKAGE_NAME public. It may not exist or is already public."
+          done
+            
+  # Job to update the README file
+  update-readme:
+    # Depends on the completion of the check-and-build job
+    needs: check-and-build
+    # Runner environment
+    runs-on: ubuntu-latest
+    # Permissions for the job
+    permissions:
+      contents: write
+    # Steps to be executed in the job
+    steps:
+      # Checks out the repository code
+      - name: 'Check out the repo'
+        uses: actions/checkout@v4
+
+      # Downloads the vulnerability reports from the previous job
+      - name: 'Download vulnerability reports'
+        uses: actions/download-artifact@v4
+        with:
+          path: ./reports-tmp
+        continue-on-error: true
+
+      - name: 'Check for downloaded reports'
+        id: check_reports
+        run: |
+          if [ -d "reports-tmp" ] && [ -n "$(ls -A reports-tmp)" ]; then
+            echo "reports_downloaded=true"
+            echo "reports_downloaded=true" >> $GITHUB_OUTPUT
+          else
+            echo "reports_downloaded=false"
+            echo "reports_downloaded=false" >> $GITHUB_OUTPUT
+          fi
+
+      # Moves the reports into the repository for processing
+      - name: 'Move reports into repo'
+        if: steps.check_reports.outputs.reports_downloaded == 'true'
+        run: |
+          mkdir -p vuln-reports
+          for report_dir in reports-tmp/vuln-reports-*; do
+            OS_NAME=$(basename "$report_dir" | sed 's/vuln-reports-//')
+            TARGET_DIR="vuln-reports-$OS_NAME"
+            rm -rf "$TARGET_DIR"
+            mv "$report_dir" "$TARGET_DIR"
+          done
+          rm -rf reports-tmp
+
+      # Updates the README with vulnerability badges based on the scan results
+      - name: 'Update README with vuln badges'
+        if: steps.check_reports.outputs.reports_downloaded == 'true'
+        run: |
+          for report_dir in vuln-reports-*; do
+              OS_NAME=$(echo "$report_dir" | sed 's/vuln-reports-//')
+              OS_VERSION=$(jq -r --arg OS_NAME "$OS_NAME" '.[] | select(.codename == $OS_NAME) | .version' versions.env)
+              if [ -z "$OS_VERSION" ]; then
+                  echo "Could not find version for OS name $OS_NAME. Skipping."
+                  continue
+              fi
+              OS_NAME_CAPITALIZED="$(tr '[:lower:]' '[:upper:]' <<< ${OS_NAME:0:1})${OS_NAME:1}"
+              report_path="$report_dir/grype-report-$OS_NAME.csv"
+
+              if [ ! -f "$report_path" ]; then
+                echo "Vulnerability report not found for $OS_NAME. Skipping."
+                continue
+              fi
+
+              CRITICAL=$(grep -c "Critical" "$report_path" || true)
+              HIGH=$(grep -c "High" "$report_path" || true)
+              MEDIUM=$(grep -c "Medium" "$report_path" || true)
+              LOW=$(grep -c "Low" "$report_path" || true)
+
+              REPORT_URL="https://htmlpreview.github.io/?https://github.com/${{ github.repository }}/blob/main/$report_dir/grype-report-$OS_NAME.html"
+              VULN_BADGES_LINE="[![Critical Vulns](https://img.shields.io/badge/Critical-$CRITICAL-red.svg)]($REPORT_URL) [![High Vulns](https://img.shields.io/badge/High-$HIGH-orange.svg)]($REPORT_URL) [![Medium Vulns](https://img.shields.io/badge/Medium-$MEDIUM-yellow.svg)]($REPORT_URL) [![Low Vulns](https://img.shields.io/badge/Low-$LOW-blue.svg)]($REPORT_URL)"
+
+              sed -i "/### Ubuntu $OS_VERSION $OS_NAME_CAPITALIZED/!b;n;c$VULN_BADGES_LINE" README.md
+          done
+
+      # Commits and pushes the changes to the repository
+      - name: 'Commit and push changes'
+        if: steps.check_reports.outputs.reports_downloaded == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update vulnerability badges and reports"
+          file_pattern: "README.md vuln-reports-*"
