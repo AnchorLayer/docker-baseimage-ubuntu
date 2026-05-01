@@ -6,7 +6,7 @@
       "tool": {
         "driver": {
           "name": "grype",
-          "version": "0.111.1",
+          "version": "0.112.0",
           "informationUri": "https://github.com/anchore/grype",
           "rules": [
             {
@@ -493,27 +493,6 @@
               }
             },
             {
-              "id": "CVE-2016-2781-coreutils",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2016-2781 low vulnerability for coreutils package"
-              },
-              "fullDescription": {
-                "text": "Version 8.32-4.1ubuntu1.3 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2016-2781",
-              "help": {
-                "text": "Vulnerability CVE-2016-2781\nSeverity: low\nPackage: coreutils\nVersion: 8.32-4.1ubuntu1.3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)",
-                "markdown": "**Vulnerability CVE-2016-2781**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 8.32-4.1ubuntu1.3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.3?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "6.5"
-              }
-            },
-            {
               "id": "CVE-2026-4437-libc-bin",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -553,6 +532,27 @@
                   "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.13?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
                 ],
                 "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2016-2781-coreutils",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2016-2781 low vulnerability for coreutils package"
+              },
+              "fullDescription": {
+                "text": "Version 8.32-4.1ubuntu1.3 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2016-2781",
+              "help": {
+                "text": "Vulnerability CVE-2016-2781\nSeverity: low\nPackage: coreutils\nVersion: 8.32-4.1ubuntu1.3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)",
+                "markdown": "**Vulnerability CVE-2016-2781**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 8.32-4.1ubuntu1.3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.3?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "6.5"
               }
             },
             {
@@ -598,6 +598,48 @@
               }
             },
             {
+              "id": "CVE-2026-4046-libc-bin",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-4046 medium vulnerability for libc-bin package"
+              },
+              "fullDescription": {
+                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-4046",
+              "help": {
+                "text": "Vulnerability CVE-2026-4046\nSeverity: medium\nPackage: libc-bin\nVersion: 2.35-0ubuntu3.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-4046](https://ubuntu.com/security/CVE-2026-4046)",
+                "markdown": "**Vulnerability CVE-2026-4046**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.35-0ubuntu3.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-4046](https://ubuntu.com/security/CVE-2026-4046)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.13?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2026-4046-libc6",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-4046 medium vulnerability for libc6 package"
+              },
+              "fullDescription": {
+                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-4046",
+              "help": {
+                "text": "Vulnerability CVE-2026-4046\nSeverity: medium\nPackage: libc6\nVersion: 2.35-0ubuntu3.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-4046](https://ubuntu.com/security/CVE-2026-4046)",
+                "markdown": "**Vulnerability CVE-2026-4046**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.35-0ubuntu3.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-4046](https://ubuntu.com/security/CVE-2026-4046)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.13?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
               "id": "CVE-2026-5928-libc-bin",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -640,45 +682,45 @@
               }
             },
             {
-              "id": "CVE-2026-4046-libc-bin",
+              "id": "CVE-2026-4438-libc-bin",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-4046 medium vulnerability for libc-bin package"
+                "text": "CVE-2026-4438 medium vulnerability for libc-bin package"
               },
               "fullDescription": {
                 "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
               },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-4046",
+              "helpUri": "https://ubuntu.com/security/CVE-2026-4438",
               "help": {
-                "text": "Vulnerability CVE-2026-4046\nSeverity: medium\nPackage: libc-bin\nVersion: 2.35-0ubuntu3.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-4046](https://ubuntu.com/security/CVE-2026-4046)",
-                "markdown": "**Vulnerability CVE-2026-4046**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.35-0ubuntu3.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-4046](https://ubuntu.com/security/CVE-2026-4046)  |\n"
+                "text": "Vulnerability CVE-2026-4438\nSeverity: medium\nPackage: libc-bin\nVersion: 2.35-0ubuntu3.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-4438](https://ubuntu.com/security/CVE-2026-4438)",
+                "markdown": "**Vulnerability CVE-2026-4438**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.35-0ubuntu3.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-4438](https://ubuntu.com/security/CVE-2026-4438)  |\n"
               },
               "properties": {
                 "purls": [
                   "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.13?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
                 ],
-                "security-severity": "7.5"
+                "security-severity": "5.4"
               }
             },
             {
-              "id": "CVE-2026-4046-libc6",
+              "id": "CVE-2026-4438-libc6",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-4046 medium vulnerability for libc6 package"
+                "text": "CVE-2026-4438 medium vulnerability for libc6 package"
               },
               "fullDescription": {
                 "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
               },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-4046",
+              "helpUri": "https://ubuntu.com/security/CVE-2026-4438",
               "help": {
-                "text": "Vulnerability CVE-2026-4046\nSeverity: medium\nPackage: libc6\nVersion: 2.35-0ubuntu3.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-4046](https://ubuntu.com/security/CVE-2026-4046)",
-                "markdown": "**Vulnerability CVE-2026-4046**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.35-0ubuntu3.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-4046](https://ubuntu.com/security/CVE-2026-4046)  |\n"
+                "text": "Vulnerability CVE-2026-4438\nSeverity: medium\nPackage: libc6\nVersion: 2.35-0ubuntu3.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-4438](https://ubuntu.com/security/CVE-2026-4438)",
+                "markdown": "**Vulnerability CVE-2026-4438**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.35-0ubuntu3.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-4438](https://ubuntu.com/security/CVE-2026-4438)  |\n"
               },
               "properties": {
                 "purls": [
                   "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.13?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
                 ],
-                "security-severity": "7.5"
+                "security-severity": "5.4"
               }
             },
             {
@@ -913,6 +955,27 @@
               }
             },
             {
+              "id": "CVE-2026-33845-libgnutls30",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-33845 medium vulnerability for libgnutls30 package"
+              },
+              "fullDescription": {
+                "text": "Version 3.7.3-4ubuntu1.8 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-33845",
+              "help": {
+                "text": "Vulnerability CVE-2026-33845\nSeverity: medium\nPackage: libgnutls30\nVersion: 3.7.3-4ubuntu1.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-33845](https://ubuntu.com/security/CVE-2026-33845)",
+                "markdown": "**Vulnerability CVE-2026-33845**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30  | 3.7.3-4ubuntu1.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-33845](https://ubuntu.com/security/CVE-2026-33845)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
               "id": "CVE-2026-5435-libc-bin",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -994,48 +1057,6 @@
                   "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.13?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
                 ],
                 "security-severity": "6.5"
-              }
-            },
-            {
-              "id": "CVE-2026-4438-libc-bin",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-4438 medium vulnerability for libc-bin package"
-              },
-              "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-4438",
-              "help": {
-                "text": "Vulnerability CVE-2026-4438\nSeverity: medium\nPackage: libc-bin\nVersion: 2.35-0ubuntu3.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-4438](https://ubuntu.com/security/CVE-2026-4438)",
-                "markdown": "**Vulnerability CVE-2026-4438**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.35-0ubuntu3.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-4438](https://ubuntu.com/security/CVE-2026-4438)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.13?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
-                ],
-                "security-severity": "5.4"
-              }
-            },
-            {
-              "id": "CVE-2026-4438-libc6",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-4438 medium vulnerability for libc6 package"
-              },
-              "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-4438",
-              "help": {
-                "text": "Vulnerability CVE-2026-4438\nSeverity: medium\nPackage: libc6\nVersion: 2.35-0ubuntu3.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-4438](https://ubuntu.com/security/CVE-2026-4438)",
-                "markdown": "**Vulnerability CVE-2026-4438**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.35-0ubuntu3.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-4438](https://ubuntu.com/security/CVE-2026-4438)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.13?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
-                ],
-                "security-severity": "5.4"
               }
             },
             {
@@ -1207,6 +1228,27 @@
               }
             },
             {
+              "id": "CVE-2026-3833-libgnutls30",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-3833 medium vulnerability for libgnutls30 package"
+              },
+              "fullDescription": {
+                "text": "Version 3.7.3-4ubuntu1.8 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-3833",
+              "help": {
+                "text": "Vulnerability CVE-2026-3833\nSeverity: medium\nPackage: libgnutls30\nVersion: 3.7.3-4ubuntu1.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-3833](https://ubuntu.com/security/CVE-2026-3833)",
+                "markdown": "**Vulnerability CVE-2026-3833**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30  | 3.7.3-4ubuntu1.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-3833](https://ubuntu.com/security/CVE-2026-3833)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
+                ],
+                "security-severity": "6.5"
+              }
+            },
+            {
               "id": "CVE-2022-27943-gcc-12-base",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1333,6 +1375,48 @@
               }
             },
             {
+              "id": "CVE-2023-29383-login",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2023-29383 low vulnerability for login package"
+              },
+              "fullDescription": {
+                "text": "Version 1:4.8.1-2ubuntu2.2 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2023-29383",
+              "help": {
+                "text": "Vulnerability CVE-2023-29383\nSeverity: low\nPackage: login\nVersion: 1:4.8.1-2ubuntu2.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2023-29383](https://ubuntu.com/security/CVE-2023-29383)",
+                "markdown": "**Vulnerability CVE-2023-29383**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | login  | 1:4.8.1-2ubuntu2.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2023-29383](https://ubuntu.com/security/CVE-2023-29383)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/login@1%3A4.8.1-2ubuntu2.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=shadow"
+                ],
+                "security-severity": "3.3"
+              }
+            },
+            {
+              "id": "CVE-2023-29383-passwd",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2023-29383 low vulnerability for passwd package"
+              },
+              "fullDescription": {
+                "text": "Version 1:4.8.1-2ubuntu2.2 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2023-29383",
+              "help": {
+                "text": "Vulnerability CVE-2023-29383\nSeverity: low\nPackage: passwd\nVersion: 1:4.8.1-2ubuntu2.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2023-29383](https://ubuntu.com/security/CVE-2023-29383)",
+                "markdown": "**Vulnerability CVE-2023-29383**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | passwd  | 1:4.8.1-2ubuntu2.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2023-29383](https://ubuntu.com/security/CVE-2023-29383)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/passwd@1%3A4.8.1-2ubuntu2.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=shadow"
+                ],
+                "security-severity": "3.3"
+              }
+            },
+            {
               "id": "CVE-2026-2219-dpkg",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -1393,48 +1477,6 @@
                   "pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.20?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=systemd"
                 ],
                 "security-severity": "6.2"
-              }
-            },
-            {
-              "id": "CVE-2023-29383-login",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2023-29383 low vulnerability for login package"
-              },
-              "fullDescription": {
-                "text": "Version 1:4.8.1-2ubuntu2.2 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2023-29383",
-              "help": {
-                "text": "Vulnerability CVE-2023-29383\nSeverity: low\nPackage: login\nVersion: 1:4.8.1-2ubuntu2.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2023-29383](https://ubuntu.com/security/CVE-2023-29383)",
-                "markdown": "**Vulnerability CVE-2023-29383**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | login  | 1:4.8.1-2ubuntu2.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2023-29383](https://ubuntu.com/security/CVE-2023-29383)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/login@1%3A4.8.1-2ubuntu2.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=shadow"
-                ],
-                "security-severity": "3.3"
-              }
-            },
-            {
-              "id": "CVE-2023-29383-passwd",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2023-29383 low vulnerability for passwd package"
-              },
-              "fullDescription": {
-                "text": "Version 1:4.8.1-2ubuntu2.2 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2023-29383",
-              "help": {
-                "text": "Vulnerability CVE-2023-29383\nSeverity: low\nPackage: passwd\nVersion: 1:4.8.1-2ubuntu2.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2023-29383](https://ubuntu.com/security/CVE-2023-29383)",
-                "markdown": "**Vulnerability CVE-2023-29383**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | passwd  | 1:4.8.1-2ubuntu2.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2023-29383](https://ubuntu.com/security/CVE-2023-29383)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/passwd@1%3A4.8.1-2ubuntu2.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=shadow"
-                ],
-                "security-severity": "3.3"
               }
             },
             {
@@ -1816,27 +1858,6 @@
               }
             },
             {
-              "id": "CVE-2022-3219-gpgv",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2022-3219 low vulnerability for gpgv package"
-              },
-              "fullDescription": {
-                "text": "Version 2.2.27-3ubuntu2.5 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2022-3219",
-              "help": {
-                "text": "Vulnerability CVE-2022-3219\nSeverity: low\nPackage: gpgv\nVersion: 2.2.27-3ubuntu2.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)",
-                "markdown": "**Vulnerability CVE-2022-3219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | gpgv  | 2.2.27-3ubuntu2.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnupg2"
-                ],
-                "security-severity": "3.3"
-              }
-            },
-            {
               "id": "CVE-2026-4878-libcap2",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -1855,6 +1876,27 @@
                   "pkg:deb/ubuntu/libcap2@1%3A2.44-1ubuntu0.22.04.2?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
                 "security-severity": "7.0"
+              }
+            },
+            {
+              "id": "CVE-2022-3219-gpgv",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-3219 low vulnerability for gpgv package"
+              },
+              "fullDescription": {
+                "text": "Version 2.2.27-3ubuntu2.5 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2022-3219",
+              "help": {
+                "text": "Vulnerability CVE-2022-3219\nSeverity: low\nPackage: gpgv\nVersion: 2.2.27-3ubuntu2.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)",
+                "markdown": "**Vulnerability CVE-2022-3219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | gpgv  | 2.2.27-3ubuntu2.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnupg2"
+                ],
+                "security-severity": "3.3"
               }
             },
             {
@@ -2236,27 +2278,6 @@
               }
             },
             {
-              "id": "CVE-2026-33845-libgnutls30",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-33845 medium vulnerability for libgnutls30 package"
-              },
-              "fullDescription": {
-                "text": "Version 3.7.3-4ubuntu1.8 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-33845",
-              "help": {
-                "text": "Vulnerability CVE-2026-33845\nSeverity: medium\nPackage: libgnutls30\nVersion: 3.7.3-4ubuntu1.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-33845](https://ubuntu.com/security/CVE-2026-33845)",
-                "markdown": "**Vulnerability CVE-2026-33845**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30  | 3.7.3-4ubuntu1.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-33845](https://ubuntu.com/security/CVE-2026-33845)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
               "id": "CVE-2026-33846-libgnutls30",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -2275,27 +2296,6 @@
                   "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
                 ],
                 "security-severity": "4.0"
-              }
-            },
-            {
-              "id": "CVE-2026-3833-libgnutls30",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-3833 medium vulnerability for libgnutls30 package"
-              },
-              "fullDescription": {
-                "text": "Version 3.7.3-4ubuntu1.8 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-3833",
-              "help": {
-                "text": "Vulnerability CVE-2026-3833\nSeverity: medium\nPackage: libgnutls30\nVersion: 3.7.3-4ubuntu1.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-3833](https://ubuntu.com/security/CVE-2026-3833)",
-                "markdown": "**Vulnerability CVE-2026-3833**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30  | 3.7.3-4ubuntu1.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-3833](https://ubuntu.com/security/CVE-2026-3833)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
-                ],
-                "security-severity": "6.5"
               }
             },
             {
@@ -3607,57 +3607,6 @@
           }
         },
         {
-          "ruleId": "CVE-2016-2781-coreutils",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: coreutils, version 8.32-4.1ubuntu1.3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/coreutils/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/coreutils/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/coreutils.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/coreutils.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/coreutils.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/coreutils.postrm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "18259262bc0c1fb7ca3ffc774567ccaf1689ab49577292f569a5df8597ed5ffd:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-4437-libc-bin",
           "level": "warning",
           "message": {
@@ -3756,6 +3705,57 @@
           }
         },
         {
+          "ruleId": "CVE-2016-2781-coreutils",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: coreutils, version 8.32-4.1ubuntu1.3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/coreutils/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/coreutils/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/coreutils.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/coreutils.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/coreutils.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/coreutils.postrm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "18259262bc0c1fb7ca3ffc774567ccaf1689ab49577292f569a5df8597ed5ffd:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-5450-libc-bin",
           "level": "warning",
           "message": {
@@ -3812,6 +3812,104 @@
         },
         {
           "ruleId": "CVE-2026-5450-libc6",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libc6, version 2.35-0ubuntu3.13 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libc6/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/libc6/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc6:amd64.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libc6:amd64.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc6:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libc6:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "ef83900d38972e962fadfcb5b24acd49c42b219d40fac2a0b082a1ff479be143:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-4046-libc-bin",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libc-bin, version 2.35-0ubuntu3.13 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libc-bin/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/libc-bin/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libc-bin.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libc-bin.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libc-bin.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libc-bin.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.triggers",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libc-bin.triggers"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "e1686db003952d098df4bd6736d51491e94b5c8a2b6f436cb25b7f1bf6a96e34:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-4046-libc6",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libc6, version 2.35-0ubuntu3.13 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
@@ -3952,7 +4050,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-4046-libc-bin",
+          "ruleId": "CVE-2026-4438-libc-bin",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libc-bin, version 2.35-0ubuntu3.13 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
@@ -4007,7 +4105,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-4046-libc6",
+          "ruleId": "CVE-2026-4438-libc6",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libc6, version 2.35-0ubuntu3.13 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
@@ -4523,6 +4621,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-33845-libgnutls30",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libgnutls30/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/libgnutls30/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libgnutls30:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libgnutls30:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d1f903b74f3bac3eddbc16c526ba304d74a0864c90717a11108408c2323d1b7f:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-5435-libc-bin",
           "level": "warning",
           "message": {
@@ -4677,104 +4814,6 @@
         },
         {
           "ruleId": "CVE-2026-6238-libc6",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libc6, version 2.35-0ubuntu3.13 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libc6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/libc6/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc6:amd64.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libc6:amd64.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libc6:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "ef83900d38972e962fadfcb5b24acd49c42b219d40fac2a0b082a1ff479be143:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-4438-libc-bin",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libc-bin, version 2.35-0ubuntu3.13 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libc-bin/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/libc-bin/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libc-bin.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libc-bin.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libc-bin.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libc-bin.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.triggers",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libc-bin.triggers"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e1686db003952d098df4bd6736d51491e94b5c8a2b6f436cb25b7f1bf6a96e34:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-4438-libc6",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libc6, version 2.35-0ubuntu3.13 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
@@ -5161,6 +5200,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-3833-libgnutls30",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libgnutls30/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/libgnutls30/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libgnutls30:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libgnutls30:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d1f903b74f3bac3eddbc16c526ba304d74a0864c90717a11108408c2323d1b7f:1"
+          }
+        },
+        {
           "ruleId": "CVE-2022-27943-gcc-12-base",
           "level": "note",
           "message": {
@@ -5407,6 +5485,132 @@
           }
         },
         {
+          "ruleId": "CVE-2023-29383-login",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: login, version 1:4.8.1-2ubuntu2.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/login/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/login/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/login.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/login.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/login.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/login.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/login.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/login.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/login.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/login.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/login.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/login.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/login.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/login.preinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/login.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/login.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d11cc2cb30e4e6a24a3fc98982ee7f266d7a2435a6f331ec34a6b5bb2216a78f:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2023-29383-passwd",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: passwd, version 1:4.8.1-2ubuntu2.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/passwd/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/passwd/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/passwd.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/passwd.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/passwd.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/passwd.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/passwd.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/passwd.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/passwd.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/passwd.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/passwd.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/passwd.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/passwd.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/passwd.preinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/passwd.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/passwd.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "cc167791f8b11d1202651f2e4331be7d979fe61fc8c832a52af396093187a7be:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-2219-dpkg",
           "level": "warning",
           "message": {
@@ -5541,132 +5745,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "822e770dfda4d19029066db7c4101b029790c1633e739be5c7b2ae2f1ca15026:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2023-29383-login",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: login, version 1:4.8.1-2ubuntu2.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/login/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/login/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/login.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/login.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/login.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/login.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/login.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/login.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/login.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/login.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/login.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/login.postrm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/login.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/login.preinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/login.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/login.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d11cc2cb30e4e6a24a3fc98982ee7f266d7a2435a6f331ec34a6b5bb2216a78f:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2023-29383-passwd",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: passwd, version 1:4.8.1-2ubuntu2.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/passwd/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/passwd/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/passwd.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/passwd.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/passwd.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/passwd.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/passwd.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/passwd.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/passwd.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/passwd.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/passwd.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/passwd.postrm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/passwd.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/passwd.preinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/passwd.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/passwd.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "cc167791f8b11d1202651f2e4331be7d979fe61fc8c832a52af396093187a7be:1"
           }
         },
         {
@@ -6404,6 +6482,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-4878-libcap2",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libcap2, version 1:2.44-1ubuntu0.22.04.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libcap2/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/libcap2/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libcap2:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libcap2:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "73eea11c8dd92eb0caf1dd76ee0e3daa0b0aed8edd0b78a2cd3228767d3ef424:1"
+          }
+        },
+        {
           "ruleId": "CVE-2022-3219-gpgv",
           "level": "note",
           "message": {
@@ -6444,45 +6561,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "bd783673eac9120da5bf221fb768630cf9ee9292075e70b1892dece867631f11:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-4878-libcap2",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libcap2, version 1:2.44-1ubuntu0.22.04.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcap2/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/libcap2/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcap2:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libcap2:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "73eea11c8dd92eb0caf1dd76ee0e3daa0b0aed8edd0b78a2cd3228767d3ef424:1"
           }
         },
         {
@@ -7260,85 +7338,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-33845-libgnutls30",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libgnutls30/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/libgnutls30/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libgnutls30:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libgnutls30:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d1f903b74f3bac3eddbc16c526ba304d74a0864c90717a11108408c2323d1b7f:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-33846-libgnutls30",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:b57bc958bb590ce31f9779b591d7821b87a19b7eba75b6e611bb65e171c969b8:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libgnutls30/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/usr/share/doc/libgnutls30/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libgnutls30:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:39fbf5f8fe523b2ea819cd8eb2bf68807d8eaee383549f7ab80a44503ed6860b:/var/lib/dpkg/info/libgnutls30:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d1f903b74f3bac3eddbc16c526ba304d74a0864c90717a11108408c2323d1b7f:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-3833-libgnutls30",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
