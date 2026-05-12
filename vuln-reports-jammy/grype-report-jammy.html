@@ -819,13 +819,13 @@
                     <dd id="typeValue">image</dd><dt>Checksum:</dt>
                     <dd id="checksumValue">sha256:d1103864f15ae86d23db3942a9c711ccf5fb59d75442ca5bd6fdfa6734372216</dd><dt>Date:</dt>
                     <dd>
-                        <span id="dateElement">2026-05-12T07:48:52.13466224Z</span>
+                        <span id="dateElement">2026-05-12T10:30:37.749104241Z</span>
                         <span id="prettyDateElement" style="display: none;"></span>
                     </dd>
                     <dt>Grype Version:</dt>
                     <dd>0.112.0</dd>
                     <dt>DB Built:</dt>
-                    <dd>2026-05-11 07:35:01 +0000 UTC</dd>
+                    <dd>2026-05-12 07:21:17 +0000 UTC</dd>
                 </dl>
             </div>
             <div class="heading-right">
@@ -1257,6 +1257,38 @@
                         <td>pkg:deb/ubuntu/libc6@2.35-0ubuntu3.13?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
                     </tr>
                     <tr>
+                        <td>libc-bin</td>
+                        <td>2.35-0ubuntu3.13</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2026-4046">CVE-2026-4046</a>
+                        </td>
+                        <td>Medium</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.13?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
+                    </tr>
+                    <tr>
+                        <td>libc6</td>
+                        <td>2.35-0ubuntu3.13</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2026-4046">CVE-2026-4046</a>
+                        </td>
+                        <td>Medium</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libc6@2.35-0ubuntu3.13?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
+                    </tr>
+                    <tr>
                         <td>coreutils</td>
                         <td>8.32-4.1ubuntu1.3</td>
                         <td>deb</td>
@@ -1294,38 +1326,6 @@
                         <td>deb</td>
                         <td>
                             <a href="https://ubuntu.com/security/CVE-2026-5450">CVE-2026-5450</a>
-                        </td>
-                        <td>Medium</td>
-                        <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libc6@2.35-0ubuntu3.13?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
-                    </tr>
-                    <tr>
-                        <td>libc-bin</td>
-                        <td>2.35-0ubuntu3.13</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-4046">CVE-2026-4046</a>
-                        </td>
-                        <td>Medium</td>
-                        <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.13?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
-                    </tr>
-                    <tr>
-                        <td>libc6</td>
-                        <td>2.35-0ubuntu3.13</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-4046">CVE-2026-4046</a>
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
@@ -2187,6 +2187,24 @@
                         <td>pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.20?arch=amd64&distro=ubuntu-22.04&upstream=systemd</td>
                     </tr>
                     <tr>
+                        <td>libcap2</td>
+                        <td>1:2.44-1ubuntu0.22.04.2</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2026-4878">CVE-2026-4878</a>
+                        </td>
+                        <td>Medium</td>
+                        <td>fixed</td>
+                        <td>
+                            <ul>
+                                <li>1:2.44-1ubuntu0.22.04.3</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libcap2@1%3A2.44-1ubuntu0.22.04.2?arch=amd64&distro=ubuntu-22.04</td>
+                    </tr>
+                    <tr>
                         <td>libsystemd0</td>
                         <td>249.11-0ubuntu3.20</td>
                         <td>deb</td>
@@ -2233,24 +2251,6 @@
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.5?arch=amd64&distro=ubuntu-22.04&upstream=gnupg2</td>
-                    </tr>
-                    <tr>
-                        <td>libcap2</td>
-                        <td>1:2.44-1ubuntu0.22.04.2</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-4878">CVE-2026-4878</a>
-                        </td>
-                        <td>Medium</td>
-                        <td>fixed</td>
-                        <td>
-                            <ul>
-                                <li>1:2.44-1ubuntu0.22.04.3</li>
-                            </ul>
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libcap2@1%3A2.44-1ubuntu0.22.04.2?arch=amd64&distro=ubuntu-22.04</td>
                     </tr>
                     <tr>
                         <td>libncurses6</td>
