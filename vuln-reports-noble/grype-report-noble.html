@@ -781,6 +781,7 @@
     
     
     
+    
 
 <body>
     <div class="main-container">
@@ -795,13 +796,13 @@
                     <dd id="typeValue">image</dd><dt>Checksum:</dt>
                     <dd id="checksumValue">sha256:b8f7e9c162f283b1aeb0c6db2cb50bb913d31709394eed14c8a02c9004e9b190</dd><dt>Date:</dt>
                     <dd>
-                        <span id="dateElement">2026-05-24T05:41:42.831223056Z</span>
+                        <span id="dateElement">2026-05-24T08:27:49.512098968Z</span>
                         <span id="prettyDateElement" style="display: none;"></span>
                     </dd>
                     <dt>Grype Version:</dt>
                     <dd>0.112.0</dd>
                     <dt>DB Built:</dt>
-                    <dd>2026-05-23 07:12:43 +0000 UTC</dd>
+                    <dd>2026-05-24 07:23:56 +0000 UTC</dd>
                 </dl>
             </div>
             <div class="heading-right">
@@ -820,7 +821,7 @@
             </div>
             <div class="severity-box" id="medium">
                 <div class="severity-title">Medium</div>
-                <div class="severity-count" id="mediumCount">73</div>
+                <div class="severity-count" id="mediumCount">74</div>
             </div>
             <div class="severity-box" id="low">
                 <div class="severity-title">Low</div>
@@ -881,6 +882,22 @@
                         <td>pkg:deb/ubuntu/passwd@1%3A4.13%2Bdfsg1-4ubuntu3.2?arch=amd64&distro=ubuntu-24.04&upstream=shadow</td>
                     </tr>
                     <tr>
+                        <td>libgcrypt20</td>
+                        <td>1.10.3-2build1</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2024-2236">CVE-2024-2236</a>
+                        </td>
+                        <td>Low</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libgcrypt20@1.10.3-2build1?arch=amd64&distro=ubuntu-24.04</td>
+                    </tr>
+                    <tr>
                         <td>libssl3t64</td>
                         <td>3.0.13-0ubuntu3.9</td>
                         <td>deb</td>
@@ -897,20 +914,22 @@
                         <td>pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.9?arch=amd64&distro=ubuntu-24.04&upstream=openssl</td>
                     </tr>
                     <tr>
-                        <td>libgcrypt20</td>
-                        <td>1.10.3-2build1</td>
+                        <td>libgnutls30t64</td>
+                        <td>3.8.3-1.1ubuntu3.5</td>
                         <td>deb</td>
                         <td>
-                            <a href="https://ubuntu.com/security/CVE-2024-2236">CVE-2024-2236</a>
+                            <a href="https://ubuntu.com/security/CVE-2026-42009">CVE-2026-42009</a>
                         </td>
-                        <td>Low</td>
-                        <td>not-fixed</td>
+                        <td>Medium</td>
+                        <td>fixed</td>
                         <td>
-                            N/A
+                            <ul>
+                                <li>3.8.3-1.1ubuntu3.6</li>
+                            </ul>
                         </td>
                         <td></td>
                         <td>[]</td>
-                        <td>pkg:deb/ubuntu/libgcrypt20@1.10.3-2build1?arch=amd64&distro=ubuntu-24.04</td>
+                        <td>pkg:deb/ubuntu/libgnutls30t64@3.8.3-1.1ubuntu3.5?arch=amd64&distro=ubuntu-24.04&upstream=gnutls28</td>
                     </tr>
                     <tr>
                         <td>tar</td>
@@ -949,7 +968,7 @@
                         <td>3.8.3-1.1ubuntu3.5</td>
                         <td>deb</td>
                         <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-42009">CVE-2026-42009</a>
+                            <a href="https://ubuntu.com/security/CVE-2026-3833">CVE-2026-3833</a>
                         </td>
                         <td>Medium</td>
                         <td>fixed</td>
@@ -1121,24 +1140,6 @@
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libc6@2.39-0ubuntu8.7?arch=amd64&distro=ubuntu-24.04&upstream=glibc</td>
-                    </tr>
-                    <tr>
-                        <td>libgnutls30t64</td>
-                        <td>3.8.3-1.1ubuntu3.5</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-3833">CVE-2026-3833</a>
-                        </td>
-                        <td>Medium</td>
-                        <td>fixed</td>
-                        <td>
-                            <ul>
-                                <li>3.8.3-1.1ubuntu3.6</li>
-                            </ul>
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libgnutls30t64@3.8.3-1.1ubuntu3.5?arch=amd64&distro=ubuntu-24.04&upstream=gnutls28</td>
                     </tr>
                     <tr>
                         <td>libc-bin</td>
@@ -1225,6 +1226,24 @@
                         <td>pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.8?arch=amd64&distro=ubuntu-24.04&upstream=curl</td>
                     </tr>
                     <tr>
+                        <td>libgnutls30t64</td>
+                        <td>3.8.3-1.1ubuntu3.5</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2026-42010">CVE-2026-42010</a>
+                        </td>
+                        <td>Medium</td>
+                        <td>fixed</td>
+                        <td>
+                            <ul>
+                                <li>3.8.3-1.1ubuntu3.6</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libgnutls30t64@3.8.3-1.1ubuntu3.5?arch=amd64&distro=ubuntu-24.04&upstream=gnutls28</td>
+                    </tr>
+                    <tr>
                         <td>libc-bin</td>
                         <td>2.39-0ubuntu8.7</td>
                         <td>deb</td>
@@ -1261,7 +1280,7 @@
                         <td>3.8.3-1.1ubuntu3.5</td>
                         <td>deb</td>
                         <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-42010">CVE-2026-42010</a>
+                            <a href="https://ubuntu.com/security/CVE-2026-33845">CVE-2026-33845</a>
                         </td>
                         <td>Medium</td>
                         <td>fixed</td>
@@ -1353,24 +1372,6 @@
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libc6@2.39-0ubuntu8.7?arch=amd64&distro=ubuntu-24.04&upstream=glibc</td>
-                    </tr>
-                    <tr>
-                        <td>libgnutls30t64</td>
-                        <td>3.8.3-1.1ubuntu3.5</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-33845">CVE-2026-33845</a>
-                        </td>
-                        <td>Medium</td>
-                        <td>fixed</td>
-                        <td>
-                            <ul>
-                                <li>3.8.3-1.1ubuntu3.6</li>
-                            </ul>
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libgnutls30t64@3.8.3-1.1ubuntu3.5?arch=amd64&distro=ubuntu-24.04&upstream=gnutls28</td>
                     </tr>
                     <tr>
                         <td>libc-bin</td>
@@ -1633,6 +1634,24 @@
                         <td>pkg:deb/ubuntu/tar@1.35%2Bdfsg-3build1?arch=amd64&distro=ubuntu-24.04</td>
                     </tr>
                     <tr>
+                        <td>libgnutls30t64</td>
+                        <td>3.8.3-1.1ubuntu3.5</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2026-33846">CVE-2026-33846</a>
+                        </td>
+                        <td>Medium</td>
+                        <td>fixed</td>
+                        <td>
+                            <ul>
+                                <li>3.8.3-1.1ubuntu3.6</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libgnutls30t64@3.8.3-1.1ubuntu3.5?arch=amd64&distro=ubuntu-24.04&upstream=gnutls28</td>
+                    </tr>
+                    <tr>
                         <td>curl</td>
                         <td>8.5.0-2ubuntu10.8</td>
                         <td>deb</td>
@@ -1685,24 +1704,6 @@
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libnghttp2-14@1.59.0-1ubuntu0.2?arch=amd64&distro=ubuntu-24.04&upstream=nghttp2</td>
-                    </tr>
-                    <tr>
-                        <td>libgnutls30t64</td>
-                        <td>3.8.3-1.1ubuntu3.5</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-33846">CVE-2026-33846</a>
-                        </td>
-                        <td>Medium</td>
-                        <td>fixed</td>
-                        <td>
-                            <ul>
-                                <li>3.8.3-1.1ubuntu3.6</li>
-                            </ul>
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libgnutls30t64@3.8.3-1.1ubuntu3.5?arch=amd64&distro=ubuntu-24.04&upstream=gnutls28</td>
                     </tr>
                     <tr>
                         <td>libsystemd0</td>
@@ -1953,6 +1954,24 @@
                         <td>pkg:deb/ubuntu/libgnutls30t64@3.8.3-1.1ubuntu3.5?arch=amd64&distro=ubuntu-24.04&upstream=gnutls28</td>
                     </tr>
                     <tr>
+                        <td>libcap2</td>
+                        <td>1:2.66-5ubuntu2.2</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2026-4878">CVE-2026-4878</a>
+                        </td>
+                        <td>Medium</td>
+                        <td>fixed</td>
+                        <td>
+                            <ul>
+                                <li>1:2.66-5ubuntu2.4</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libcap2@1%3A2.66-5ubuntu2.2?arch=amd64&distro=ubuntu-24.04</td>
+                    </tr>
+                    <tr>
                         <td>libgcrypt20</td>
                         <td>1.10.3-2build1</td>
                         <td>deb</td>
@@ -2033,22 +2052,22 @@
                         <td>pkg:deb/ubuntu/libudev1@255.4-1ubuntu8.15?arch=amd64&distro=ubuntu-24.04&upstream=systemd</td>
                     </tr>
                     <tr>
-                        <td>libcap2</td>
-                        <td>1:2.66-5ubuntu2.2</td>
+                        <td>libgnutls30t64</td>
+                        <td>3.8.3-1.1ubuntu3.5</td>
                         <td>deb</td>
                         <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-4878">CVE-2026-4878</a>
+                            <a href="https://ubuntu.com/security/CVE-2026-42011">CVE-2026-42011</a>
                         </td>
                         <td>Medium</td>
                         <td>fixed</td>
                         <td>
                             <ul>
-                                <li>1:2.66-5ubuntu2.4</li>
+                                <li>3.8.3-1.1ubuntu3.6</li>
                             </ul>
                         </td>
                         <td></td>
                         <td>[]</td>
-                        <td>pkg:deb/ubuntu/libcap2@1%3A2.66-5ubuntu2.2?arch=amd64&distro=ubuntu-24.04</td>
+                        <td>pkg:deb/ubuntu/libgnutls30t64@3.8.3-1.1ubuntu3.5?arch=amd64&distro=ubuntu-24.04&upstream=gnutls28</td>
                     </tr>
                     <tr>
                         <td>curl</td>
@@ -2085,24 +2104,6 @@
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.8?arch=amd64&distro=ubuntu-24.04&upstream=curl</td>
-                    </tr>
-                    <tr>
-                        <td>libgnutls30t64</td>
-                        <td>3.8.3-1.1ubuntu3.5</td>
-                        <td>deb</td>
-                        <td>
-                            <a href="https://ubuntu.com/security/CVE-2026-42011">CVE-2026-42011</a>
-                        </td>
-                        <td>Medium</td>
-                        <td>fixed</td>
-                        <td>
-                            <ul>
-                                <li>3.8.3-1.1ubuntu3.6</li>
-                            </ul>
-                        </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libgnutls30t64@3.8.3-1.1ubuntu3.5?arch=amd64&distro=ubuntu-24.04&upstream=gnutls28</td>
                     </tr>
                     <tr>
                         <td>libsystemd0</td>
@@ -2461,6 +2462,22 @@
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libgnutls30t64@3.8.3-1.1ubuntu3.5?arch=amd64&distro=ubuntu-24.04&upstream=gnutls28</td>
+                    </tr>
+                    <tr>
+                        <td>perl-base</td>
+                        <td>5.38.2-3.2ubuntu0.2</td>
+                        <td>deb</td>
+                        <td>
+                            <a href="https://ubuntu.com/security/CVE-2026-8376">CVE-2026-8376</a>
+                        </td>
+                        <td>Medium</td>
+                        <td>not-fixed</td>
+                        <td>
+                            N/A
+                        </td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.2?arch=amd64&distro=ubuntu-24.04&upstream=perl</td>
                     </tr>
                 </tbody>
             </table>
