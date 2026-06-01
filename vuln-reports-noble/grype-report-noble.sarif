@@ -682,6 +682,27 @@
               }
             },
             {
+              "id": "CVE-2026-8376-perl-base",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-8376 medium vulnerability for perl-base package"
+              },
+              "fullDescription": {
+                "text": "Version 5.38.2-3.2ubuntu0.2 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-8376",
+              "help": {
+                "text": "Vulnerability CVE-2026-8376\nSeverity: medium\nPackage: perl-base\nVersion: 5.38.2-3.2ubuntu0.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8376](https://ubuntu.com/security/CVE-2026-8376)",
+                "markdown": "**Vulnerability CVE-2026-8376**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.38.2-3.2ubuntu0.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8376](https://ubuntu.com/security/CVE-2026-8376)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=perl"
+                ],
+                "security-severity": "9.8"
+              }
+            },
+            {
               "id": "CVE-2016-2781-coreutils",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -1015,27 +1036,6 @@
                   "pkg:deb/ubuntu/libpam0g@1.5.3-5ubuntu5.5?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pam"
                 ],
                 "security-severity": "4.7"
-              }
-            },
-            {
-              "id": "CVE-2026-8376-perl-base",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-8376 medium vulnerability for perl-base package"
-              },
-              "fullDescription": {
-                "text": "Version 5.38.2-3.2ubuntu0.2 is affected with no fixes reported yet."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-8376",
-              "help": {
-                "text": "Vulnerability CVE-2026-8376\nSeverity: medium\nPackage: perl-base\nVersion: 5.38.2-3.2ubuntu0.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8376](https://ubuntu.com/security/CVE-2026-8376)",
-                "markdown": "**Vulnerability CVE-2026-8376**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.38.2-3.2ubuntu0.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8376](https://ubuntu.com/security/CVE-2026-8376)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=perl"
-                ],
-                "security-severity": "9.8"
               }
             },
             {
@@ -3722,6 +3722,65 @@
           }
         },
         {
+          "ruleId": "CVE-2026-8376-perl-base",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: perl-base, version 5.38.2-3.2ubuntu0.2 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:6c879d050b17758a6497f0c6e0b2f690b83f1ea93c48d3dddfdbd2dbd0386383:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/perl-base/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475:/usr/share/doc/perl-base/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475:/var/lib/dpkg/info/perl-base.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475:/var/lib/dpkg/info/perl-base.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475:/var/lib/dpkg/info/perl-base.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475:/var/lib/dpkg/info/perl-base.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475:/var/lib/dpkg/info/perl-base.preinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475:/var/lib/dpkg/info/perl-base.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d3bb6a1b99c4b4746a4d2b910490d5309489bc88d04be98f333d7ea55acbdbb8:1"
+          }
+        },
+        {
           "ruleId": "CVE-2016-2781-coreutils",
           "level": "note",
           "message": {
@@ -4447,65 +4506,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "a48f5bf965894a96f8e51e7f05e545ede803401c699733a0286a4ce7e9584b90:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-8376-perl-base",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: perl-base, version 5.38.2-3.2ubuntu0.2 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:6c879d050b17758a6497f0c6e0b2f690b83f1ea93c48d3dddfdbd2dbd0386383:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/perl-base/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475:/usr/share/doc/perl-base/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475:/var/lib/dpkg/info/perl-base.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475:/var/lib/dpkg/info/perl-base.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475:/var/lib/dpkg/info/perl-base.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475:/var/lib/dpkg/info/perl-base.postrm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475:/var/lib/dpkg/info/perl-base.preinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:538812a4b9bd45adaac2b5e5b967daa6999aa44eb110aa32ae7c69702b906475:/var/lib/dpkg/info/perl-base.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d3bb6a1b99c4b4746a4d2b910490d5309489bc88d04be98f333d7ea55acbdbb8:1"
           }
         },
         {
