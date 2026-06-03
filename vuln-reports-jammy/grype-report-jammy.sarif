@@ -6,7 +6,7 @@
       "tool": {
         "driver": {
           "name": "grype",
-          "version": "0.112.0",
+          "version": "0.113.0",
           "informationUri": "https://github.com/anchore/grype",
           "rules": [
             {
@@ -16,7 +16,7 @@
                 "text": "CVE-2024-56433 low vulnerability for login package"
               },
               "fullDescription": {
-                "text": "Version 1:4.8.1-2ubuntu2.2 is affected with no fixes reported yet."
+                "text": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2024-56433",
               "help": {
@@ -37,7 +37,7 @@
                 "text": "CVE-2024-56433 low vulnerability for passwd package"
               },
               "fullDescription": {
-                "text": "Version 1:4.8.1-2ubuntu2.2 is affected with no fixes reported yet."
+                "text": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2024-56433",
               "help": {
@@ -58,7 +58,7 @@
                 "text": "CVE-2023-31486 medium vulnerability for perl-base package"
               },
               "fullDescription": {
-                "text": "Version 5.34.0-3ubuntu1.5 is affected with no fixes reported yet."
+                "text": "HTTP::Tiny before 0.083, a Perl core module since 5.13.9 and available standalone on CPAN, has an insecure default TLS configuration where users must opt in to verify certificates."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2023-31486",
               "help": {
@@ -79,7 +79,7 @@
                 "text": "CVE-2024-2236 low vulnerability for libgcrypt20 package"
               },
               "fullDescription": {
-                "text": "Version 1.9.4-3ubuntu3 is affected with no fixes reported yet."
+                "text": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2024-2236",
               "help": {
@@ -100,7 +100,7 @@
                 "text": "CVE-2024-41996 low vulnerability for libssl3 package"
               },
               "fullDescription": {
-                "text": "Version 3.0.2-0ubuntu1.23 is affected with no fixes reported yet."
+                "text": "Validating the order of the public keys in the Diffie-Hellman Key Agreement Protocol, when an approved safe prime is used, allows remote attackers (from the client side) to trigger unnecessarily expensive server-side DHE modular-exponentiation calculations. The client may cause asymmetric resource consumption. The basic attack scenario is that the client must claim that it can only communicate with DHE, and the server must be configured to allow DHE and validate the order of the public key."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2024-41996",
               "help": {
@@ -121,7 +121,7 @@
                 "text": "CVE-2026-42009 medium vulnerability for libgnutls30 package"
               },
               "fullDescription": {
-                "text": "Version 3.7.3-4ubuntu1.8 is affected with an available fix in versions 3.7.3-4ubuntu1.9"
+                "text": "A flaw was found in gnutls. A remote attacker could exploit an issue in the Datagram Transport Layer Security (DTLS) packet reordering logic. The comparator function, responsible for ordering DTLS packets by sequence numbers, did not correctly handle packets with duplicate sequence numbers. This could lead to unstable packet ordering or undefined behavior, resulting in a denial of service."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-42009",
               "help": {
@@ -142,7 +142,7 @@
                 "text": "CVE-2023-7008 low vulnerability for libsystemd0 package"
               },
               "fullDescription": {
-                "text": "Version 249.11-0ubuntu3.20 is affected with no fixes reported yet."
+                "text": "A vulnerability was found in systemd-resolved. This issue may allow systemd-resolved to accept records of DNSSEC-signed domains even when they have no signature, allowing man-in-the-middles (or the upstream DNS resolver) to manipulate records."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2023-7008",
               "help": {
@@ -163,7 +163,7 @@
                 "text": "CVE-2023-7008 low vulnerability for libudev1 package"
               },
               "fullDescription": {
-                "text": "Version 249.11-0ubuntu3.20 is affected with no fixes reported yet."
+                "text": "A vulnerability was found in systemd-resolved. This issue may allow systemd-resolved to accept records of DNSSEC-signed domains even when they have no signature, allowing man-in-the-middles (or the upstream DNS resolver) to manipulate records."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2023-7008",
               "help": {
@@ -184,7 +184,7 @@
                 "text": "CVE-2026-42015 medium vulnerability for libgnutls30 package"
               },
               "fullDescription": {
-                "text": "Version 3.7.3-4ubuntu1.8 is affected with an available fix in versions 3.7.3-4ubuntu1.9"
+                "text": "A flaw was found in gnutls. An off-by-one error exists in the PKCS#12 bag element bounds check. This vulnerability allows an remote attacker to write past the internal array of a PKCS#12 bag when appending to a bag that already contains 32 elements. This memory corruption could lead to a denial of service (DoS) or potentially other unspecified impacts."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-42015",
               "help": {
@@ -205,7 +205,7 @@
                 "text": "CVE-2026-5260 medium vulnerability for libgnutls30 package"
               },
               "fullDescription": {
-                "text": "Version 3.7.3-4ubuntu1.8 is affected with an available fix in versions 3.7.3-4ubuntu1.9"
+                "text": "A flaw was found in libgnutls. A remote attacker, by sending an extremely short premaster secret during an RSA key exchange to a server using an RSA key backed by a PKCS#11 token, could trigger a short heap overread. This memory corruption vulnerability could lead to information disclosure."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-5260",
               "help": {
@@ -226,7 +226,7 @@
                 "text": "CVE-2018-5709 low vulnerability for libgssapi-krb5-2 package"
               },
               "fullDescription": {
-                "text": "Version 1.19.2-2ubuntu0.7 is affected with no fixes reported yet."
+                "text": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry-\u003en_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2018-5709",
               "help": {
@@ -247,7 +247,7 @@
                 "text": "CVE-2018-5709 low vulnerability for libk5crypto3 package"
               },
               "fullDescription": {
-                "text": "Version 1.19.2-2ubuntu0.7 is affected with no fixes reported yet."
+                "text": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry-\u003en_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2018-5709",
               "help": {
@@ -268,7 +268,7 @@
                 "text": "CVE-2018-5709 low vulnerability for libkrb5-3 package"
               },
               "fullDescription": {
-                "text": "Version 1.19.2-2ubuntu0.7 is affected with no fixes reported yet."
+                "text": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry-\u003en_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2018-5709",
               "help": {
@@ -289,7 +289,7 @@
                 "text": "CVE-2018-5709 low vulnerability for libkrb5support0 package"
               },
               "fullDescription": {
-                "text": "Version 1.19.2-2ubuntu0.7 is affected with no fixes reported yet."
+                "text": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry-\u003en_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2018-5709",
               "help": {
@@ -310,7 +310,7 @@
                 "text": "CVE-2022-4899 low vulnerability for libzstd1 package"
               },
               "fullDescription": {
-                "text": "Version 1.4.8+dfsg-3build1 is affected with no fixes reported yet."
+                "text": "A vulnerability was found in zstd v1.4.10, where an attacker can supply empty string as an argument to the command line tool to cause buffer overrun."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2022-4899",
               "help": {
@@ -331,7 +331,7 @@
                 "text": "CVE-2025-27587 low vulnerability for libssl3 package"
               },
               "fullDescription": {
-                "text": "Version 3.0.2-0ubuntu1.23 is affected with no fixes reported yet."
+                "text": "OpenSSL 3.0.0 through 3.3.2 on the PowerPC architecture is vulnerable to a Minerva attack, exploitable by measuring the time of signing of random messages using the EVP_DigestSign API, and then using the private key to extract the K value (nonce) from the signatures. Next, based on the bit size of the extracted nonce, one can compare the signing time of full-sized nonces to signatures that used smaller nonces, via statistical tests. There is a side-channel in the P-364 curve that allows private key extraction (also, there is a dependency between the bit size of K and the size of the side channel). NOTE: This CVE is disputed because the OpenSSL security policy explicitly notes that any side channels which require same physical system to be detected are outside of the threat model for the software. The timing signal is so small that it is infeasible to be detected without having the attacking process running on the same physical system."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-27587",
               "help": {
@@ -352,7 +352,7 @@
                 "text": "CVE-2025-45582 medium vulnerability for tar package"
               },
               "fullDescription": {
-                "text": "Version 1.34+dfsg-1ubuntu0.1.22.04.2 is affected with no fixes reported yet."
+                "text": "GNU Tar through 1.35 allows file overwrite via directory traversal in crafted TAR archives, with a certain two-step process. First, the victim must extract an archive that contains a ../ symlink to a critical directory. Second, the victim must extract an archive that contains a critical file, specified via a relative pathname that begins with the symlink name and ends with that critical file's name. Here, the extraction follows the symlink and overwrites the critical file. This bypasses the protection mechanism of \"Member name contains '..'\" that would occur for a single TAR archive that attempted to specify the critical file via a ../ approach. For example, the first archive can contain \"x -\u003e ../../../../../home/victim/.ssh\" and the second archive can contain x/authorized_keys. This can affect server applications that automatically extract any number of user-supplied TAR archives, and were relying on the blocking of traversal. This can also affect software installation processes in which \"tar xf\" is run more than once (e.g., when installing a package can automatically install two dependencies that are set up as untrusted tarballs instead of official packages). NOTE: the official GNU Tar manual has an otherwise-empty directory for each \"tar xf\" in its Security Rules of Thumb; however, third-party advice leads users to run \"tar xf\" more than once into the same directory."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-45582",
               "help": {
@@ -373,7 +373,7 @@
                 "text": "CVE-2026-3833 medium vulnerability for libgnutls30 package"
               },
               "fullDescription": {
-                "text": "Version 3.7.3-4ubuntu1.8 is affected with an available fix in versions 3.7.3-4ubuntu1.9"
+                "text": "A flaw was found in gnutls. This vulnerability occurs because gnutls performs case-sensitive comparisons of `nameConstraints` labels, specifically for `dNSName` (DNS) or `rfc822Name` (email) constraints within `excludedSubtrees` or `permittedSubtrees`. A remote attacker can exploit this by crafting a leaf certificate with casing differences in the Subject Alternative Name (SAN), leading to a policy bypass where a certificate that should be rejected is instead accepted. This could result in unauthorized access or information disclosure."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-3833",
               "help": {
@@ -394,7 +394,7 @@
                 "text": "CVE-2026-40355 medium vulnerability for libgssapi-krb5-2 package"
               },
               "fullDescription": {
-                "text": "Version 1.19.2-2ubuntu0.7 is affected with no fixes reported yet."
+                "text": "In MIT Kerberos 5 (aka krb5) before 1.22.3, there is a NULL pointer dereference if an application calls gss_accept_sec_context() on a system with a NegoEx mechanism registered in /etc/gss/mech. An unauthenticated remote attacker can trigger this, causing the process to terminate in parse_nego_message."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40355",
               "help": {
@@ -415,7 +415,7 @@
                 "text": "CVE-2026-40355 medium vulnerability for libk5crypto3 package"
               },
               "fullDescription": {
-                "text": "Version 1.19.2-2ubuntu0.7 is affected with no fixes reported yet."
+                "text": "In MIT Kerberos 5 (aka krb5) before 1.22.3, there is a NULL pointer dereference if an application calls gss_accept_sec_context() on a system with a NegoEx mechanism registered in /etc/gss/mech. An unauthenticated remote attacker can trigger this, causing the process to terminate in parse_nego_message."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40355",
               "help": {
@@ -436,7 +436,7 @@
                 "text": "CVE-2026-40355 medium vulnerability for libkrb5-3 package"
               },
               "fullDescription": {
-                "text": "Version 1.19.2-2ubuntu0.7 is affected with no fixes reported yet."
+                "text": "In MIT Kerberos 5 (aka krb5) before 1.22.3, there is a NULL pointer dereference if an application calls gss_accept_sec_context() on a system with a NegoEx mechanism registered in /etc/gss/mech. An unauthenticated remote attacker can trigger this, causing the process to terminate in parse_nego_message."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40355",
               "help": {
@@ -457,7 +457,7 @@
                 "text": "CVE-2026-40355 medium vulnerability for libkrb5support0 package"
               },
               "fullDescription": {
-                "text": "Version 1.19.2-2ubuntu0.7 is affected with no fixes reported yet."
+                "text": "In MIT Kerberos 5 (aka krb5) before 1.22.3, there is a NULL pointer dereference if an application calls gss_accept_sec_context() on a system with a NegoEx mechanism registered in /etc/gss/mech. An unauthenticated remote attacker can trigger this, causing the process to terminate in parse_nego_message."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40355",
               "help": {
@@ -478,7 +478,7 @@
                 "text": "CVE-2026-40356 medium vulnerability for libgssapi-krb5-2 package"
               },
               "fullDescription": {
-                "text": "Version 1.19.2-2ubuntu0.7 is affected with no fixes reported yet."
+                "text": "In MIT Kerberos 5 (aka krb5) before 1.22.3, there is an integer underflow and resultant out-of-bounds read if an application calls gss_accept_sec_context() on a system with a NegoEx mechanism registered in /etc/gss/mech. An unauthenticated remote attacker can trigger this, possibly causing the process to terminate in parse_message."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40356",
               "help": {
@@ -499,7 +499,7 @@
                 "text": "CVE-2026-40356 medium vulnerability for libk5crypto3 package"
               },
               "fullDescription": {
-                "text": "Version 1.19.2-2ubuntu0.7 is affected with no fixes reported yet."
+                "text": "In MIT Kerberos 5 (aka krb5) before 1.22.3, there is an integer underflow and resultant out-of-bounds read if an application calls gss_accept_sec_context() on a system with a NegoEx mechanism registered in /etc/gss/mech. An unauthenticated remote attacker can trigger this, possibly causing the process to terminate in parse_message."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40356",
               "help": {
@@ -520,7 +520,7 @@
                 "text": "CVE-2026-40356 medium vulnerability for libkrb5-3 package"
               },
               "fullDescription": {
-                "text": "Version 1.19.2-2ubuntu0.7 is affected with no fixes reported yet."
+                "text": "In MIT Kerberos 5 (aka krb5) before 1.22.3, there is an integer underflow and resultant out-of-bounds read if an application calls gss_accept_sec_context() on a system with a NegoEx mechanism registered in /etc/gss/mech. An unauthenticated remote attacker can trigger this, possibly causing the process to terminate in parse_message."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40356",
               "help": {
@@ -541,7 +541,7 @@
                 "text": "CVE-2026-40356 medium vulnerability for libkrb5support0 package"
               },
               "fullDescription": {
-                "text": "Version 1.19.2-2ubuntu0.7 is affected with no fixes reported yet."
+                "text": "In MIT Kerberos 5 (aka krb5) before 1.22.3, there is an integer underflow and resultant out-of-bounds read if an application calls gss_accept_sec_context() on a system with a NegoEx mechanism registered in /etc/gss/mech. An unauthenticated remote attacker can trigger this, possibly causing the process to terminate in parse_message."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40356",
               "help": {
@@ -562,7 +562,7 @@
                 "text": "CVE-2026-42010 medium vulnerability for libgnutls30 package"
               },
               "fullDescription": {
-                "text": "Version 3.7.3-4ubuntu1.8 is affected with an available fix in versions 3.7.3-4ubuntu1.9"
+                "text": "A flaw was found in gnutls. Servers configured with RSA-PSK (Rivest–Shamir–Adleman – Pre-Shared Key) wrongfully matched usernames containing a NUL character with truncated usernames. A remote attacker could exploit this by sending a specially crafted username, leading to an authentication bypass. This vulnerability allows an attacker to gain unauthorized access by circumventing the authentication process."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-42010",
               "help": {
@@ -583,7 +583,7 @@
                 "text": "CVE-2025-5278 low vulnerability for coreutils package"
               },
               "fullDescription": {
-                "text": "Version 8.32-4.1ubuntu1.3 is affected with no fixes reported yet."
+                "text": "A flaw was found in GNU Coreutils. The sort utility's begfield() function is vulnerable to a heap buffer under-read. The program may access memory outside the allocated buffer if a user runs a crafted command using the traditional key format. A malicious input could lead to a crash or leak sensitive data."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-5278",
               "help": {
@@ -604,7 +604,7 @@
                 "text": "CVE-2026-48962 medium vulnerability for perl-base package"
               },
               "fullDescription": {
-                "text": "Version 5.34.0-3ubuntu1.5 is affected with no fixes reported yet."
+                "text": "IO::Compress versions before 2.220 for Perl can execute arbitrary code in File::GlobMapper via an attacker-controlled output glob.\n\n_parseOutputGlob() wraps the caller-supplied output glob string in double quotes and stores it in the parser state; _getFiles() then runs the stored expression through eval STRING. A literal double quote in the output glob closes the dquote wrapper, and the characters that follow are evaluated as Perl.\n\nArbitrary Perl in the output glob executes at the calling process's privilege."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-48962",
               "help": {
@@ -625,7 +625,7 @@
                 "text": "CVE-2026-4046 medium vulnerability for libc-bin package"
               },
               "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
+                "text": "The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when converting inputs from the IBM1390 or IBM1399 character sets, which may be used to remotely crash an application.\n\n\n\nThis vulnerability can be trivially mitigated by removing the IBM1390 and IBM1399 character sets from systems that do not need them."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-4046",
               "help": {
@@ -646,7 +646,7 @@
                 "text": "CVE-2026-4046 medium vulnerability for libc6 package"
               },
               "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
+                "text": "The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when converting inputs from the IBM1390 or IBM1399 character sets, which may be used to remotely crash an application.\n\n\n\nThis vulnerability can be trivially mitigated by removing the IBM1390 and IBM1399 character sets from systems that do not need them."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-4046",
               "help": {
@@ -667,7 +667,7 @@
                 "text": "CVE-2026-5450 medium vulnerability for libc-bin package"
               },
               "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
+                "text": "Calling the scanf family of functions with a %mc (malloc'd character match) in the GNU C Library version 2.7 to version 2.43 with a format width specifier with an explicit width greater than 1024 could result in a one byte heap buffer overflow."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-5450",
               "help": {
@@ -688,7 +688,7 @@
                 "text": "CVE-2026-5450 medium vulnerability for libc6 package"
               },
               "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
+                "text": "Calling the scanf family of functions with a %mc (malloc'd character match) in the GNU C Library version 2.7 to version 2.43 with a format width specifier with an explicit width greater than 1024 could result in a one byte heap buffer overflow."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-5450",
               "help": {
@@ -709,7 +709,7 @@
                 "text": "CVE-2026-5928 medium vulnerability for libc-bin package"
               },
               "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
+                "text": "Calling the ungetwc function on a FILE stream with wide characters encoded in a character set that has overlaps between its single byte and multi-byte character encodings, in the GNU C Library version 2.43 or earlier, may result in an attempt to read bytes before an allocated buffer, potentially resulting in unintentional disclosure of neighboring data in the heap, or a program crash.\n\nA bug in the wide character pushback implementation (_IO_wdefault_pbackfail in libio/wgenops.c) causes ungetwc() to operate on the regular character buffer (fp-\u003e_IO_read_ptr) instead of the actual wide-stream read pointer (fp-\u003e_wide_data-\u003e_IO_read_ptr). The program crash may happen in cases where fp-\u003e_IO_read_ptr is not initialized and hence points to NULL. The buffer under-read requires a special situation where the input character encoding is such that there are overlaps between single byte representations and multibyte representations in that encoding, resulting in spurious matches. The spurious match case is not possible in the standard Unicode character sets."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-5928",
               "help": {
@@ -730,7 +730,7 @@
                 "text": "CVE-2026-5928 medium vulnerability for libc6 package"
               },
               "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
+                "text": "Calling the ungetwc function on a FILE stream with wide characters encoded in a character set that has overlaps between its single byte and multi-byte character encodings, in the GNU C Library version 2.43 or earlier, may result in an attempt to read bytes before an allocated buffer, potentially resulting in unintentional disclosure of neighboring data in the heap, or a program crash.\n\nA bug in the wide character pushback implementation (_IO_wdefault_pbackfail in libio/wgenops.c) causes ungetwc() to operate on the regular character buffer (fp-\u003e_IO_read_ptr) instead of the actual wide-stream read pointer (fp-\u003e_wide_data-\u003e_IO_read_ptr). The program crash may happen in cases where fp-\u003e_IO_read_ptr is not initialized and hence points to NULL. The buffer under-read requires a special situation where the input character encoding is such that there are overlaps between single byte representations and multibyte representations in that encoding, resulting in spurious matches. The spurious match case is not possible in the standard Unicode character sets."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-5928",
               "help": {
@@ -751,7 +751,7 @@
                 "text": "CVE-2026-33845 medium vulnerability for libgnutls30 package"
               },
               "fullDescription": {
-                "text": "Version 3.7.3-4ubuntu1.8 is affected with an available fix in versions 3.7.3-4ubuntu1.9"
+                "text": "A flaw in GnuTLS DTLS handshake parsing allows malformed fragments with zero length and non-zero offset, leading to an integer underflow during reassembly and resulting in an out-of-bounds read. This issue is remotely exploitable and may cause information disclosure or denial of service."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-33845",
               "help": {
@@ -772,7 +772,7 @@
                 "text": "CVE-2026-33846 medium vulnerability for libgnutls30 package"
               },
               "fullDescription": {
-                "text": "Version 3.7.3-4ubuntu1.8 is affected with an available fix in versions 3.7.3-4ubuntu1.9"
+                "text": "A heap buffer overflow vulnerability exists in the DTLS handshake fragment reassembly logic of GnuTLS. The issue arises in merge_handshake_packet() where incoming handshake fragments are matched and merged based solely on handshake type, without validating that the message_length field remains consistent across all fragments of the same logical message. An attacker can exploit this by sending crafted DTLS fragments with conflicting message_length values, causing the implementation to allocate a buffer based on a smaller initial fragment and subsequently write beyond its bounds using larger, inconsistent fragments. Because the merge operation does not enforce proper bounds checking against the allocated buffer size, this results in an out-of-bounds write on the heap. The vulnerability is remotely exploitable without authentication via the DTLS handshake path and can lead to application crashes or potential memory corruption."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-33846",
               "help": {
@@ -793,7 +793,7 @@
                 "text": "CVE-2026-8376 medium vulnerability for perl-base package"
               },
               "fullDescription": {
-                "text": "Version 5.34.0-3ubuntu1.5 is affected with no fixes reported yet."
+                "text": "Perl versions through 5.43.10 have a heap buffer overflow when compiling regular expressions with a repeated fixed string on 32-bit builds.\n\nPerl_study_chunk in regcomp_study.c checked the size of the joined substring buffer in characters rather than bytes. For a quantified fixed substring with a large minimum count, the byte length mincount * l could overflow SSize_t, producing an undersized SvGROW allocation; the subsequent copy writes past the end of the buffer.\n\nA caller that compiles an attacker-controlled regular expression on a 32-bit perl build triggers a heap buffer overflow at compile time."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-8376",
               "help": {
@@ -814,7 +814,7 @@
                 "text": "CVE-2026-42496 medium vulnerability for perl-base package"
               },
               "fullDescription": {
-                "text": "Version 5.34.0-3ubuntu1.5 is affected with no fixes reported yet."
+                "text": "Archive::Tar versions before 3.08 for Perl extract symlinks with attacker controlled targets outside the extraction directory.\n\n_make_special_file() passes the tar header's linkname to symlink() without validating it against absolute paths or .. segments. The secure-extract mode check that guards regular file extraction does not cover the symlink target.\n\nA subsequent open through the extracted name reads or writes the attacker chosen path."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-42496",
               "help": {
@@ -835,7 +835,7 @@
                 "text": "CVE-2016-2781 low vulnerability for coreutils package"
               },
               "fullDescription": {
-                "text": "Version 8.32-4.1ubuntu1.3 is affected with no fixes reported yet."
+                "text": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2016-2781",
               "help": {
@@ -856,7 +856,7 @@
                 "text": "CVE-2026-48959 medium vulnerability for perl-base package"
               },
               "fullDescription": {
-                "text": "Version 5.34.0-3ubuntu1.5 is affected with no fixes reported yet."
+                "text": "IO::Uncompress::Unzip versions before 2.220 for Perl allow CPU exhaustion via per-byte read loop in fastForward.\n\nfastForward() compares length $offset (the digit count of the offset, 1 to 19) against the chunk size $c instead of $offset itself, so $c shrinks from 16 KiB to 1-19 bytes per iteration.\n\nExtracting a named entry from an attacker supplied zip via IO::Uncompress::Unzip-\u003enew($zip, Name =\u003e $target) drives a per-byte read loop scaling with the entry's compressed size, up to the non-Zip64 4 GiB cap."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-48959",
               "help": {
@@ -877,7 +877,7 @@
                 "text": "CVE-2026-5435 medium vulnerability for libc-bin package"
               },
               "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
+                "text": "The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to enforce the caller-supplied buffer length, and can result in an out-of-bounds write when printing TSIG records."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-5435",
               "help": {
@@ -898,7 +898,7 @@
                 "text": "CVE-2026-5435 medium vulnerability for libc6 package"
               },
               "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
+                "text": "The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to enforce the caller-supplied buffer length, and can result in an out-of-bounds write when printing TSIG records."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-5435",
               "help": {
@@ -919,7 +919,7 @@
                 "text": "CVE-2026-48961 medium vulnerability for perl-base package"
               },
               "fullDescription": {
-                "text": "Version 5.34.0-3ubuntu1.5 is affected with no fixes reported yet."
+                "text": "IO::Compress versions from 2.207 before 2.220 for Perl ship a zipdetails CLI tool that crashes with undefined subroutine on Info-ZIP Unix Extra Field with 8-byte UID or GID.\n\nWhen decode_ux() in bin/zipdetails handles an Info-ZIP Unix Extra Field (tag 0x7875) with UID Size or GID Size set to 8, causing zipdetails to decode an 8-byte UID or GID value, it dispatches through decodeLitteEndian(), which calls a misnamed helper unpackValueQ. The actual function defined in the same file is unpackValue_Q (with underscore); the call raises 'Undefined subroutine \u0026main::unpackValueQ' and the script exits with status 255.\n\nLibrary callers of IO::Compress and IO::Uncompress are not affected; the defect is in the bundled CLI tool."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-48961",
               "help": {
@@ -940,7 +940,7 @@
                 "text": "CVE-2026-42497 medium vulnerability for perl-base package"
               },
               "fullDescription": {
-                "text": "Version 5.34.0-3ubuntu1.5 is affected with no fixes reported yet."
+                "text": "Archive::Tar versions before 3.08 for Perl extract hardlinks to attacker controlled paths outside the extraction directory.\n\n_make_special_file() passes the tar header's linkname to link() without validating it against absolute paths or .. segments, creating a hardlink that shares the victim file's inode.\n\nA subsequent write through the extracted name modifies the victim file, and the post-extraction chmod, chown, and utime block in _extract_file() (guarded only against symlinks via -l) applies the tar header's mode, owner, and timestamps to the shared inode during extraction alone."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-42497",
               "help": {
@@ -961,7 +961,7 @@
                 "text": "CVE-2026-40225 medium vulnerability for libsystemd0 package"
               },
               "fullDescription": {
-                "text": "Version 249.11-0ubuntu3.20 is affected with no fixes reported yet."
+                "text": "In udev in systemd before 260, local root execution can occur via malicious hardware devices and unsanitized kernel output."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40225",
               "help": {
@@ -982,7 +982,7 @@
                 "text": "CVE-2026-40225 medium vulnerability for libudev1 package"
               },
               "fullDescription": {
-                "text": "Version 249.11-0ubuntu3.20 is affected with no fixes reported yet."
+                "text": "In udev in systemd before 260, local root execution can occur via malicious hardware devices and unsanitized kernel output."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40225",
               "help": {
@@ -1003,7 +1003,7 @@
                 "text": "CVE-2025-6141 low vulnerability for libncurses6 package"
               },
               "fullDescription": {
-                "text": "Version 6.3-2ubuntu0.1 is affected with no fixes reported yet."
+                "text": "A vulnerability has been found in GNU ncurses up to 6.5-20250322 and classified as problematic. This vulnerability affects the function postprocess_termcap of the file tinfo/parse_entry.c. The manipulation leads to stack-based buffer overflow. The attack needs to be approached locally. Upgrading to version 6.5-20250329 is able to address this issue. It is recommended to upgrade the affected component."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-6141",
               "help": {
@@ -1024,7 +1024,7 @@
                 "text": "CVE-2025-6141 low vulnerability for libncursesw6 package"
               },
               "fullDescription": {
-                "text": "Version 6.3-2ubuntu0.1 is affected with no fixes reported yet."
+                "text": "A vulnerability has been found in GNU ncurses up to 6.5-20250322 and classified as problematic. This vulnerability affects the function postprocess_termcap of the file tinfo/parse_entry.c. The manipulation leads to stack-based buffer overflow. The attack needs to be approached locally. Upgrading to version 6.5-20250329 is able to address this issue. It is recommended to upgrade the affected component."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-6141",
               "help": {
@@ -1045,7 +1045,7 @@
                 "text": "CVE-2025-6141 low vulnerability for libtinfo6 package"
               },
               "fullDescription": {
-                "text": "Version 6.3-2ubuntu0.1 is affected with no fixes reported yet."
+                "text": "A vulnerability has been found in GNU ncurses up to 6.5-20250322 and classified as problematic. This vulnerability affects the function postprocess_termcap of the file tinfo/parse_entry.c. The manipulation leads to stack-based buffer overflow. The attack needs to be approached locally. Upgrading to version 6.5-20250329 is able to address this issue. It is recommended to upgrade the affected component."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-6141",
               "help": {
@@ -1066,7 +1066,7 @@
                 "text": "CVE-2025-6141 low vulnerability for ncurses-base package"
               },
               "fullDescription": {
-                "text": "Version 6.3-2ubuntu0.1 is affected with no fixes reported yet."
+                "text": "A vulnerability has been found in GNU ncurses up to 6.5-20250322 and classified as problematic. This vulnerability affects the function postprocess_termcap of the file tinfo/parse_entry.c. The manipulation leads to stack-based buffer overflow. The attack needs to be approached locally. Upgrading to version 6.5-20250329 is able to address this issue. It is recommended to upgrade the affected component."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-6141",
               "help": {
@@ -1087,7 +1087,7 @@
                 "text": "CVE-2025-6141 low vulnerability for ncurses-bin package"
               },
               "fullDescription": {
-                "text": "Version 6.3-2ubuntu0.1 is affected with no fixes reported yet."
+                "text": "A vulnerability has been found in GNU ncurses up to 6.5-20250322 and classified as problematic. This vulnerability affects the function postprocess_termcap of the file tinfo/parse_entry.c. The manipulation leads to stack-based buffer overflow. The attack needs to be approached locally. Upgrading to version 6.5-20250329 is able to address this issue. It is recommended to upgrade the affected component."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-6141",
               "help": {
@@ -1108,7 +1108,7 @@
                 "text": "CVE-2024-10041 medium vulnerability for libpam-modules package"
               },
               "fullDescription": {
-                "text": "Version 1.4.0-11ubuntu2.6 is affected with no fixes reported yet."
+                "text": "A vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2024-10041",
               "help": {
@@ -1129,7 +1129,7 @@
                 "text": "CVE-2024-10041 medium vulnerability for libpam-modules-bin package"
               },
               "fullDescription": {
-                "text": "Version 1.4.0-11ubuntu2.6 is affected with no fixes reported yet."
+                "text": "A vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2024-10041",
               "help": {
@@ -1150,7 +1150,7 @@
                 "text": "CVE-2024-10041 medium vulnerability for libpam-runtime package"
               },
               "fullDescription": {
-                "text": "Version 1.4.0-11ubuntu2.6 is affected with no fixes reported yet."
+                "text": "A vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2024-10041",
               "help": {
@@ -1171,7 +1171,7 @@
                 "text": "CVE-2024-10041 medium vulnerability for libpam0g package"
               },
               "fullDescription": {
-                "text": "Version 1.4.0-11ubuntu2.6 is affected with no fixes reported yet."
+                "text": "A vulnerability was found in PAM. The secret information is stored in memory, where the attacker can trigger the victim program to execute by sending characters to its standard input (stdin). As this occurs, the attacker can train the branch predictor to execute an ROP chain speculatively. This flaw could result in leaked passwords, such as those found in /etc/shadow while performing authentications."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2024-10041",
               "help": {
@@ -1192,7 +1192,7 @@
                 "text": "CVE-2026-42013 medium vulnerability for libgnutls30 package"
               },
               "fullDescription": {
-                "text": "Version 3.7.3-4ubuntu1.8 is affected with an available fix in versions 3.7.3-4ubuntu1.9"
+                "text": "A flaw was found in gnutls. When validating certificates, an oversized Subject Alternative Name (SAN) could cause the validation process to incorrectly fall back to checking the Common Name (CN) field. This could allow a remote attacker to bypass proper certificate validation, potentially leading to spoofing or man-in-the-middle attacks."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-42013",
               "help": {
@@ -1213,7 +1213,7 @@
                 "text": "CVE-2026-9538 medium vulnerability for perl-base package"
               },
               "fullDescription": {
-                "text": "Version 5.34.0-3ubuntu1.5 is affected with no fixes reported yet."
+                "text": "Archive::Tar versions before 3.10 for Perl allow memory exhaustion via attacker controlled entry size field in tar header.\n\n_read_tar() reads each entry's payload with $handle-\u003eread($$data, $block), where $block is derived from the entry's 12-byte size field in the tar header with no upper bound on that value.\n\nA crafted header declaring a multi-gigabyte size causes Perl to allocate a scalar of that size."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-9538",
               "help": {
@@ -1234,7 +1234,7 @@
                 "text": "CVE-2026-34743 low vulnerability for liblzma5 package"
               },
               "fullDescription": {
-                "text": "Version 5.2.5-2ubuntu1 is affected with an available fix in versions 5.2.5-2ubuntu1.1"
+                "text": "XZ Utils provide a general-purpose data-compression library plus command-line tools. Prior to version 5.8.3, if lzma_index_decoder() was used to decode an Index that contained no Records, the resulting lzma_index was left in a state where where a subsequent lzma_index_append() would allocate too little memory, and a buffer overflow would occur. This issue has been patched in version 5.8.3."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-34743",
               "help": {
@@ -1255,7 +1255,7 @@
                 "text": "CVE-2026-42012 medium vulnerability for libgnutls30 package"
               },
               "fullDescription": {
-                "text": "Version 3.7.3-4ubuntu1.8 is affected with an available fix in versions 3.7.3-4ubuntu1.9"
+                "text": "A flaw was found in gnutls. A remote attacker could exploit this vulnerability by presenting a specially crafted certificate that contains Uniform Resource Identifier (URI) or Service (SRV) Subject Alternative Names (SANs). This could cause the certificate validation process to incorrectly fall back to checking DNS hostnames against the Common Name (CN), potentially allowing the attacker to spoof legitimate services or intercept sensitive information."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-42012",
               "help": {
@@ -1276,7 +1276,7 @@
                 "text": "CVE-2026-5704 medium vulnerability for tar package"
               },
               "fullDescription": {
-                "text": "Version 1.34+dfsg-1ubuntu0.1.22.04.2 is affected with no fixes reported yet."
+                "text": "A flaw was found in tar. A remote attacker could exploit this vulnerability by crafting a malicious archive, leading to hidden file injection with fully attacker-controlled content. This bypasses pre-extraction inspection mechanisms, potentially allowing an attacker to introduce malicious files onto a system without detection."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-5704",
               "help": {
@@ -1297,7 +1297,7 @@
                 "text": "CVE-2023-29383 low vulnerability for login package"
               },
               "fullDescription": {
-                "text": "Version 1:4.8.1-2ubuntu2.2 is affected with no fixes reported yet."
+                "text": "In Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that \"cat /etc/passwd\" shows a rogue user account."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2023-29383",
               "help": {
@@ -1318,7 +1318,7 @@
                 "text": "CVE-2023-29383 low vulnerability for passwd package"
               },
               "fullDescription": {
-                "text": "Version 1:4.8.1-2ubuntu2.2 is affected with no fixes reported yet."
+                "text": "In Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that \"cat /etc/passwd\" shows a rogue user account."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2023-29383",
               "help": {
@@ -1339,7 +1339,7 @@
                 "text": "CVE-2016-20013 low vulnerability for libc-bin package"
               },
               "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
+                "text": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2016-20013",
               "help": {
@@ -1360,7 +1360,7 @@
                 "text": "CVE-2016-20013 low vulnerability for libc6 package"
               },
               "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
+                "text": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2016-20013",
               "help": {
@@ -1381,7 +1381,7 @@
                 "text": "CVE-2023-50495 low vulnerability for libncurses6 package"
               },
               "fullDescription": {
-                "text": "Version 6.3-2ubuntu0.1 is affected with no fixes reported yet."
+                "text": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry()."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2023-50495",
               "help": {
@@ -1402,7 +1402,7 @@
                 "text": "CVE-2023-50495 low vulnerability for libncursesw6 package"
               },
               "fullDescription": {
-                "text": "Version 6.3-2ubuntu0.1 is affected with no fixes reported yet."
+                "text": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry()."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2023-50495",
               "help": {
@@ -1423,7 +1423,7 @@
                 "text": "CVE-2023-50495 low vulnerability for libtinfo6 package"
               },
               "fullDescription": {
-                "text": "Version 6.3-2ubuntu0.1 is affected with no fixes reported yet."
+                "text": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry()."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2023-50495",
               "help": {
@@ -1444,7 +1444,7 @@
                 "text": "CVE-2023-50495 low vulnerability for ncurses-base package"
               },
               "fullDescription": {
-                "text": "Version 6.3-2ubuntu0.1 is affected with no fixes reported yet."
+                "text": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry()."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2023-50495",
               "help": {
@@ -1465,7 +1465,7 @@
                 "text": "CVE-2023-50495 low vulnerability for ncurses-bin package"
               },
               "fullDescription": {
-                "text": "Version 6.3-2ubuntu0.1 is affected with no fixes reported yet."
+                "text": "NCurse v6.4-20230418 was discovered to contain a segmentation fault via the component _nc_wrap_entry()."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2023-50495",
               "help": {
@@ -1486,7 +1486,7 @@
                 "text": "CVE-2022-41409 low vulnerability for libpcre2-8-0 package"
               },
               "fullDescription": {
-                "text": "Version 10.39-3ubuntu0.1 is affected with no fixes reported yet."
+                "text": "Integer overflow vulnerability in pcre2test before 10.41 allows attackers to cause a denial of service or other unspecified impacts via negative input."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2022-41409",
               "help": {
@@ -1507,7 +1507,7 @@
                 "text": "CVE-2022-27943 low vulnerability for gcc-12-base package"
               },
               "fullDescription": {
-                "text": "Version 12.3.0-1ubuntu1~22.04.3 is affected with no fixes reported yet."
+                "text": "libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2022-27943",
               "help": {
@@ -1528,7 +1528,7 @@
                 "text": "CVE-2022-27943 low vulnerability for libgcc-s1 package"
               },
               "fullDescription": {
-                "text": "Version 12.3.0-1ubuntu1~22.04.3 is affected with no fixes reported yet."
+                "text": "libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2022-27943",
               "help": {
@@ -1549,7 +1549,7 @@
                 "text": "CVE-2022-27943 low vulnerability for libstdc++6 package"
               },
               "fullDescription": {
-                "text": "Version 12.3.0-1ubuntu1~22.04.3 is affected with no fixes reported yet."
+                "text": "libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2022-27943",
               "help": {
@@ -1570,7 +1570,7 @@
                 "text": "CVE-2026-40227 medium vulnerability for libsystemd0 package"
               },
               "fullDescription": {
-                "text": "Version 249.11-0ubuntu3.20 is affected with no fixes reported yet."
+                "text": "In systemd 260 before 261, a local unprivileged user can trigger an assert via an IPC API call with an array or map that has a null element."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40227",
               "help": {
@@ -1591,7 +1591,7 @@
                 "text": "CVE-2026-40227 medium vulnerability for libudev1 package"
               },
               "fullDescription": {
-                "text": "Version 249.11-0ubuntu3.20 is affected with no fixes reported yet."
+                "text": "In systemd 260 before 261, a local unprivileged user can trigger an assert via an IPC API call with an array or map that has a null element."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40227",
               "help": {
@@ -1612,7 +1612,7 @@
                 "text": "CVE-2026-3832 medium vulnerability for libgnutls30 package"
               },
               "fullDescription": {
-                "text": "Version 3.7.3-4ubuntu1.8 is affected with an available fix in versions 3.7.3-4ubuntu1.9"
+                "text": "A flaw was found in gnutls. A remote attacker could exploit this vulnerability by presenting a specially crafted Online Certificate Status Protocol (OCSP) response during a TLS handshake. Due to a logic error in how gnutls processes multi-record OCSP responses, a client with OCSP verification enabled may incorrectly accept a revoked server certificate, potentially leading to a compromise of trust."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-3832",
               "help": {
@@ -1633,7 +1633,7 @@
                 "text": "CVE-2026-40223 medium vulnerability for libsystemd0 package"
               },
               "fullDescription": {
-                "text": "Version 249.11-0ubuntu3.20 is affected with no fixes reported yet."
+                "text": "In systemd 258 before 260, a local unprivileged user can trigger an assert when a Delegate=yes and User=\u003cunset\u003e unit exists and is running."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40223",
               "help": {
@@ -1654,7 +1654,7 @@
                 "text": "CVE-2026-40223 medium vulnerability for libudev1 package"
               },
               "fullDescription": {
-                "text": "Version 249.11-0ubuntu3.20 is affected with no fixes reported yet."
+                "text": "In systemd 258 before 260, a local unprivileged user can trigger an assert when a Delegate=yes and User=\u003cunset\u003e unit exists and is running."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40223",
               "help": {
@@ -1675,7 +1675,7 @@
                 "text": "CVE-2026-6238 medium vulnerability for libc-bin package"
               },
               "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
+                "text": "The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to validate the RDATA content against the RDATA length in a DNS response when processing LOC, CERT, TKEY or TSIG records, which may allow an attacker to craft a DNS response, causing a target application to crash or read uninitialized memory.\n\nThese functions are for application debugging only and hence not in the path of code executed by the DNS resolver.  Further, they have been deprecated since version 2.34 and should not be used by any new applications.  Applications should consider porting away from these interfaces since they may be removed in future versions."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-6238",
               "help": {
@@ -1696,7 +1696,7 @@
                 "text": "CVE-2026-6238 medium vulnerability for libc6 package"
               },
               "fullDescription": {
-                "text": "Version 2.35-0ubuntu3.13 is affected with no fixes reported yet."
+                "text": "The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to validate the RDATA content against the RDATA length in a DNS response when processing LOC, CERT, TKEY or TSIG records, which may allow an attacker to craft a DNS response, causing a target application to crash or read uninitialized memory.\n\nThese functions are for application debugging only and hence not in the path of code executed by the DNS resolver.  Further, they have been deprecated since version 2.34 and should not be used by any new applications.  Applications should consider porting away from these interfaces since they may be removed in future versions."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-6238",
               "help": {
@@ -1717,7 +1717,7 @@
                 "text": "CVE-2026-42011 medium vulnerability for libgnutls30 package"
               },
               "fullDescription": {
-                "text": "Version 3.7.3-4ubuntu1.8 is affected with an available fix in versions 3.7.3-4ubuntu1.9"
+                "text": "A flaw was found in gnutls. This vulnerability occurs because permitted name constraints were incorrectly ignored when previous Certificate Authorities (CAs) only had excluded name constraints. A remote attacker could exploit this to bypass critical name constraint checks during certificate validation. This bypass could lead to the acceptance of invalid certificates, potentially enabling spoofing or man-in-the-middle attacks against affected systems."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-42011",
               "help": {
@@ -1738,7 +1738,7 @@
                 "text": "CVE-2026-40224 medium vulnerability for libsystemd0 package"
               },
               "fullDescription": {
-                "text": "Version 249.11-0ubuntu3.20 is affected with no fixes reported yet."
+                "text": "In systemd 259 before 260, there is local privilege escalation in systemd-machined because varlink can be used to reach the root namespace."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40224",
               "help": {
@@ -1759,7 +1759,7 @@
                 "text": "CVE-2026-40224 medium vulnerability for libudev1 package"
               },
               "fullDescription": {
-                "text": "Version 249.11-0ubuntu3.20 is affected with no fixes reported yet."
+                "text": "In systemd 259 before 260, there is local privilege escalation in systemd-machined because varlink can be used to reach the root namespace."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40224",
               "help": {
@@ -1780,7 +1780,7 @@
                 "text": "CVE-2026-27456 medium vulnerability for bsdutils package"
               },
               "fullDescription": {
-                "text": "Version 1:2.37.2-4ubuntu3.5 is affected with no fixes reported yet."
+                "text": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-27456",
               "help": {
@@ -1801,7 +1801,7 @@
                 "text": "CVE-2026-27456 medium vulnerability for libblkid1 package"
               },
               "fullDescription": {
-                "text": "Version 2.37.2-4ubuntu3.5 is affected with no fixes reported yet."
+                "text": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-27456",
               "help": {
@@ -1822,7 +1822,7 @@
                 "text": "CVE-2026-27456 medium vulnerability for libmount1 package"
               },
               "fullDescription": {
-                "text": "Version 2.37.2-4ubuntu3.5 is affected with no fixes reported yet."
+                "text": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-27456",
               "help": {
@@ -1843,7 +1843,7 @@
                 "text": "CVE-2026-27456 medium vulnerability for libsmartcols1 package"
               },
               "fullDescription": {
-                "text": "Version 2.37.2-4ubuntu3.5 is affected with no fixes reported yet."
+                "text": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-27456",
               "help": {
@@ -1864,7 +1864,7 @@
                 "text": "CVE-2026-27456 medium vulnerability for libuuid1 package"
               },
               "fullDescription": {
-                "text": "Version 2.37.2-4ubuntu3.5 is affected with no fixes reported yet."
+                "text": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-27456",
               "help": {
@@ -1885,7 +1885,7 @@
                 "text": "CVE-2026-27456 medium vulnerability for mount package"
               },
               "fullDescription": {
-                "text": "Version 2.37.2-4ubuntu3.5 is affected with no fixes reported yet."
+                "text": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-27456",
               "help": {
@@ -1906,7 +1906,7 @@
                 "text": "CVE-2026-27456 medium vulnerability for util-linux package"
               },
               "fullDescription": {
-                "text": "Version 2.37.2-4ubuntu3.5 is affected with no fixes reported yet."
+                "text": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-27456",
               "help": {
@@ -1927,7 +1927,7 @@
                 "text": "CVE-2022-3219 low vulnerability for gpgv package"
               },
               "fullDescription": {
-                "text": "Version 2.2.27-3ubuntu2.5 is affected with no fixes reported yet."
+                "text": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2022-3219",
               "help": {
@@ -1948,7 +1948,7 @@
                 "text": "CVE-2025-15649 medium vulnerability for perl-base package"
               },
               "fullDescription": {
-                "text": "Version 5.34.0-3ubuntu1.5 is affected with no fixes reported yet."
+                "text": "IO::Uncompress::Unzip versions before 2.215 for Perl propagate uncaught exception when parsing zip header with malformed DOS date.\n\n_dosToUnixTime() decodes the local-file-header last-modification date field and calls Time::Local::timelocal() without an eval guard. A header whose date field decodes to an out-of-range month, day, or hour causes timelocal() to die.\n\nThe exception propagates out of IO::Uncompress::Unzip-\u003enew($file) where callers expect undef plus $UnzipError."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-15649",
               "help": {
@@ -1969,7 +1969,7 @@
                 "text": "CVE-2017-11164 low vulnerability for libpcre3 package"
               },
               "fullDescription": {
-                "text": "Version 2:8.39-13ubuntu0.22.04.1 is affected with no fixes reported yet."
+                "text": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2017-11164",
               "help": {
@@ -1990,7 +1990,7 @@
                 "text": "CVE-2026-40226 medium vulnerability for libsystemd0 package"
               },
               "fullDescription": {
-                "text": "Version 249.11-0ubuntu3.20 is affected with no fixes reported yet."
+                "text": "In nspawn in systemd 233 through 259 before 260, an escape-to-host action can occur via a crafted optional config file."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40226",
               "help": {
@@ -2011,7 +2011,7 @@
                 "text": "CVE-2026-40226 medium vulnerability for libudev1 package"
               },
               "fullDescription": {
-                "text": "Version 249.11-0ubuntu3.20 is affected with no fixes reported yet."
+                "text": "In nspawn in systemd 233 through 259 before 260, an escape-to-host action can occur via a crafted optional config file."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40226",
               "help": {
@@ -2032,7 +2032,7 @@
                 "text": "CVE-2026-42250 low vulnerability for libbz2-1.0 package"
               },
               "fullDescription": {
-                "text": "Version 1.0.8-5build1 is affected with no fixes reported yet."
+                "text": "bzip2 contains an off‑by‑one error in the bzip2recover utility. When processing a specially crafted file, the application performs an out‑of‑bounds write to a global buffer, resulting in memory corruption and a crash (denial of service).\n\nThis issue was fixed in bzip2 patch 35d122a3df8b0cc4082a4d89fdc6ee99f375fe67"
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-42250",
               "help": {
@@ -2053,7 +2053,7 @@
                 "text": "CVE-2023-47039 low vulnerability for perl-base package"
               },
               "fullDescription": {
-                "text": "Version 5.34.0-3ubuntu1.5 is affected with no fixes reported yet."
+                "text": "A vulnerability was found in Perl. This security issue occurs while Perl for Windows relies on the system path environment variable to find the shell (`cmd.exe`). When running an executable that uses the Windows Perl interpreter, Perl attempts to find and execute `cmd.exe` within the operating system. However, due to path search order issues, Perl initially looks for cmd.exe in the current working directory. This flaw allows an attacker with limited privileges to place`cmd.exe` in locations with weak permissions, such as `C:\\ProgramData`. By doing so, arbitrary code can be executed when an administrator attempts to use this executable from these compromised locations."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2023-47039",
               "help": {
@@ -2074,7 +2074,7 @@
                 "text": "CVE-2025-69720 low vulnerability for libncurses6 package"
               },
               "fullDescription": {
-                "text": "Version 6.3-2ubuntu0.1 is affected with no fixes reported yet."
+                "text": "The infocmp command-line tool in ncurses before 6.5-20251213 has a stack-based buffer overflow in analyze_string in progs/infocmp.c."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-69720",
               "help": {
@@ -2095,7 +2095,7 @@
                 "text": "CVE-2025-69720 low vulnerability for libncursesw6 package"
               },
               "fullDescription": {
-                "text": "Version 6.3-2ubuntu0.1 is affected with no fixes reported yet."
+                "text": "The infocmp command-line tool in ncurses before 6.5-20251213 has a stack-based buffer overflow in analyze_string in progs/infocmp.c."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-69720",
               "help": {
@@ -2116,7 +2116,7 @@
                 "text": "CVE-2025-69720 low vulnerability for libtinfo6 package"
               },
               "fullDescription": {
-                "text": "Version 6.3-2ubuntu0.1 is affected with no fixes reported yet."
+                "text": "The infocmp command-line tool in ncurses before 6.5-20251213 has a stack-based buffer overflow in analyze_string in progs/infocmp.c."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-69720",
               "help": {
@@ -2137,7 +2137,7 @@
                 "text": "CVE-2025-69720 low vulnerability for ncurses-base package"
               },
               "fullDescription": {
-                "text": "Version 6.3-2ubuntu0.1 is affected with no fixes reported yet."
+                "text": "The infocmp command-line tool in ncurses before 6.5-20251213 has a stack-based buffer overflow in analyze_string in progs/infocmp.c."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-69720",
               "help": {
@@ -2158,7 +2158,7 @@
                 "text": "CVE-2025-69720 low vulnerability for ncurses-bin package"
               },
               "fullDescription": {
-                "text": "Version 6.3-2ubuntu0.1 is affected with no fixes reported yet."
+                "text": "The infocmp command-line tool in ncurses before 6.5-20251213 has a stack-based buffer overflow in analyze_string in progs/infocmp.c."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-69720",
               "help": {
@@ -2179,7 +2179,7 @@
                 "text": "CVE-2026-41989 medium vulnerability for libgcrypt20 package"
               },
               "fullDescription": {
-                "text": "Version 1.9.4-3ubuntu3 is affected with an available fix in versions 1.9.4-3ubuntu3.2"
+                "text": "Libgcrypt before 1.12.2 sometimes allows a heap-based buffer overflow and denial of service via crafted ECDH ciphertext to gcry_pk_decrypt."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-41989",
               "help": {
@@ -2200,7 +2200,7 @@
                 "text": "CVE-2026-27171 low vulnerability for zlib1g package"
               },
               "fullDescription": {
-                "text": "Version 1:1.2.11.dfsg-2ubuntu9.2 is affected with no fixes reported yet."
+                "text": "zlib before 1.3.2 allows CPU consumption via crc32_combine64 and crc32_combine_gen64 because x2nmodp can do right shifts within a loop that has no termination condition."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-27171",
               "help": {
@@ -2221,7 +2221,7 @@
                 "text": "CVE-2026-40228 medium vulnerability for libsystemd0 package"
               },
               "fullDescription": {
-                "text": "Version 249.11-0ubuntu3.20 is affected with no fixes reported yet."
+                "text": "In systemd 259, systemd-journald can send ANSI escape sequences to the terminals of arbitrary users when a \"logger -p emerg\" command is executed, if ForwardToWall=yes is set."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40228",
               "help": {
@@ -2242,7 +2242,7 @@
                 "text": "CVE-2026-40228 medium vulnerability for libudev1 package"
               },
               "fullDescription": {
-                "text": "Version 249.11-0ubuntu3.20 is affected with no fixes reported yet."
+                "text": "In systemd 259, systemd-journald can send ANSI escape sequences to the terminals of arbitrary users when a \"logger -p emerg\" command is executed, if ForwardToWall=yes is set."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40228",
               "help": {
