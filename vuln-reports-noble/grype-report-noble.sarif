@@ -892,48 +892,6 @@
               }
             },
             {
-              "id": "CVE-2026-40225-libsystemd0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-40225 medium vulnerability for libsystemd0 package"
-              },
-              "fullDescription": {
-                "text": "In udev in systemd before 260, local root execution can occur via malicious hardware devices and unsanitized kernel output."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-40225",
-              "help": {
-                "text": "Vulnerability CVE-2026-40225\nSeverity: medium\nPackage: libsystemd0\nVersion: 255.4-1ubuntu8.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40225](https://ubuntu.com/security/CVE-2026-40225)",
-                "markdown": "**Vulnerability CVE-2026-40225**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsystemd0  | 255.4-1ubuntu8.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40225](https://ubuntu.com/security/CVE-2026-40225)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libsystemd0@255.4-1ubuntu8.15?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=systemd"
-                ],
-                "security-severity": "6.4"
-              }
-            },
-            {
-              "id": "CVE-2026-40225-libudev1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-40225 medium vulnerability for libudev1 package"
-              },
-              "fullDescription": {
-                "text": "In udev in systemd before 260, local root execution can occur via malicious hardware devices and unsanitized kernel output."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-40225",
-              "help": {
-                "text": "Vulnerability CVE-2026-40225\nSeverity: medium\nPackage: libudev1\nVersion: 255.4-1ubuntu8.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40225](https://ubuntu.com/security/CVE-2026-40225)",
-                "markdown": "**Vulnerability CVE-2026-40225**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libudev1  | 255.4-1ubuntu8.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40225](https://ubuntu.com/security/CVE-2026-40225)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libudev1@255.4-1ubuntu8.15?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=systemd"
-                ],
-                "security-severity": "6.4"
-              }
-            },
-            {
               "id": "CVE-2026-9538-perl-base",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -952,6 +910,27 @@
                   "pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=perl"
                 ],
                 "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2026-5704-tar",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-5704 medium vulnerability for tar package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in tar. A remote attacker could exploit this vulnerability by crafting a malicious archive, leading to hidden file injection with fully attacker-controlled content. This bypasses pre-extraction inspection mechanisms, potentially allowing an attacker to introduce malicious files onto a system without detection."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-5704",
+              "help": {
+                "text": "Vulnerability CVE-2026-5704\nSeverity: medium\nPackage: tar\nVersion: 1.35+dfsg-3build1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704)",
+                "markdown": "**Vulnerability CVE-2026-5704**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.35+dfsg-3build1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/tar@1.35%2Bdfsg-3build1?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "5.5"
               }
             },
             {
@@ -997,111 +976,6 @@
               }
             },
             {
-              "id": "CVE-2026-5704-tar",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-5704 medium vulnerability for tar package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in tar. A remote attacker could exploit this vulnerability by crafting a malicious archive, leading to hidden file injection with fully attacker-controlled content. This bypasses pre-extraction inspection mechanisms, potentially allowing an attacker to introduce malicious files onto a system without detection."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-5704",
-              "help": {
-                "text": "Vulnerability CVE-2026-5704\nSeverity: medium\nPackage: tar\nVersion: 1.35+dfsg-3build1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704)",
-                "markdown": "**Vulnerability CVE-2026-5704**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.35+dfsg-3build1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/tar@1.35%2Bdfsg-3build1?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "5.5"
-              }
-            },
-            {
-              "id": "CVE-2026-40227-libsystemd0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-40227 medium vulnerability for libsystemd0 package"
-              },
-              "fullDescription": {
-                "text": "In systemd 260 before 261, a local unprivileged user can trigger an assert via an IPC API call with an array or map that has a null element."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-40227",
-              "help": {
-                "text": "Vulnerability CVE-2026-40227\nSeverity: medium\nPackage: libsystemd0\nVersion: 255.4-1ubuntu8.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40227](https://ubuntu.com/security/CVE-2026-40227)",
-                "markdown": "**Vulnerability CVE-2026-40227**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsystemd0  | 255.4-1ubuntu8.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40227](https://ubuntu.com/security/CVE-2026-40227)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libsystemd0@255.4-1ubuntu8.15?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=systemd"
-                ],
-                "security-severity": "6.2"
-              }
-            },
-            {
-              "id": "CVE-2026-40227-libudev1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-40227 medium vulnerability for libudev1 package"
-              },
-              "fullDescription": {
-                "text": "In systemd 260 before 261, a local unprivileged user can trigger an assert via an IPC API call with an array or map that has a null element."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-40227",
-              "help": {
-                "text": "Vulnerability CVE-2026-40227\nSeverity: medium\nPackage: libudev1\nVersion: 255.4-1ubuntu8.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40227](https://ubuntu.com/security/CVE-2026-40227)",
-                "markdown": "**Vulnerability CVE-2026-40227**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libudev1  | 255.4-1ubuntu8.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40227](https://ubuntu.com/security/CVE-2026-40227)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libudev1@255.4-1ubuntu8.15?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=systemd"
-                ],
-                "security-severity": "6.2"
-              }
-            },
-            {
-              "id": "CVE-2026-40223-libsystemd0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-40223 medium vulnerability for libsystemd0 package"
-              },
-              "fullDescription": {
-                "text": "In systemd 258 before 260, a local unprivileged user can trigger an assert when a Delegate=yes and User=\u003cunset\u003e unit exists and is running."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-40223",
-              "help": {
-                "text": "Vulnerability CVE-2026-40223\nSeverity: medium\nPackage: libsystemd0\nVersion: 255.4-1ubuntu8.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40223](https://ubuntu.com/security/CVE-2026-40223)",
-                "markdown": "**Vulnerability CVE-2026-40223**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsystemd0  | 255.4-1ubuntu8.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40223](https://ubuntu.com/security/CVE-2026-40223)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libsystemd0@255.4-1ubuntu8.15?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=systemd"
-                ],
-                "security-severity": "5.5"
-              }
-            },
-            {
-              "id": "CVE-2026-40223-libudev1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-40223 medium vulnerability for libudev1 package"
-              },
-              "fullDescription": {
-                "text": "In systemd 258 before 260, a local unprivileged user can trigger an assert when a Delegate=yes and User=\u003cunset\u003e unit exists and is running."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-40223",
-              "help": {
-                "text": "Vulnerability CVE-2026-40223\nSeverity: medium\nPackage: libudev1\nVersion: 255.4-1ubuntu8.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40223](https://ubuntu.com/security/CVE-2026-40223)",
-                "markdown": "**Vulnerability CVE-2026-40223**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libudev1  | 255.4-1ubuntu8.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40223](https://ubuntu.com/security/CVE-2026-40223)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libudev1@255.4-1ubuntu8.15?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=systemd"
-                ],
-                "security-severity": "5.5"
-              }
-            },
-            {
               "id": "CVE-2026-6238-libc-bin",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1141,48 +1015,6 @@
                   "pkg:deb/ubuntu/libc6@2.39-0ubuntu8.7?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=glibc"
                 ],
                 "security-severity": "6.5"
-              }
-            },
-            {
-              "id": "CVE-2026-40224-libsystemd0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-40224 medium vulnerability for libsystemd0 package"
-              },
-              "fullDescription": {
-                "text": "In systemd 259 before 260, there is local privilege escalation in systemd-machined because varlink can be used to reach the root namespace."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-40224",
-              "help": {
-                "text": "Vulnerability CVE-2026-40224\nSeverity: medium\nPackage: libsystemd0\nVersion: 255.4-1ubuntu8.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40224](https://ubuntu.com/security/CVE-2026-40224)",
-                "markdown": "**Vulnerability CVE-2026-40224**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsystemd0  | 255.4-1ubuntu8.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40224](https://ubuntu.com/security/CVE-2026-40224)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libsystemd0@255.4-1ubuntu8.15?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=systemd"
-                ],
-                "security-severity": "7.3"
-              }
-            },
-            {
-              "id": "CVE-2026-40224-libudev1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-40224 medium vulnerability for libudev1 package"
-              },
-              "fullDescription": {
-                "text": "In systemd 259 before 260, there is local privilege escalation in systemd-machined because varlink can be used to reach the root namespace."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-40224",
-              "help": {
-                "text": "Vulnerability CVE-2026-40224\nSeverity: medium\nPackage: libudev1\nVersion: 255.4-1ubuntu8.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40224](https://ubuntu.com/security/CVE-2026-40224)",
-                "markdown": "**Vulnerability CVE-2026-40224**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libudev1  | 255.4-1ubuntu8.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40224](https://ubuntu.com/security/CVE-2026-40224)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libudev1@255.4-1ubuntu8.15?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=systemd"
-                ],
-                "security-severity": "7.3"
               }
             },
             {
@@ -1392,7 +1224,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libbz2-1.0@1.0.8-5.1build0.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=bzip2"
                 ],
-                "security-severity": "5.1"
+                "security-severity": "4.8"
               }
             },
             {
@@ -1546,15 +1378,15 @@
               "id": "CVE-2026-40228-libsystemd0",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-40228 medium vulnerability for libsystemd0 package"
+                "text": "CVE-2026-40228 low vulnerability for libsystemd0 package"
               },
               "fullDescription": {
                 "text": "In systemd 259, systemd-journald can send ANSI escape sequences to the terminals of arbitrary users when a \"logger -p emerg\" command is executed, if ForwardToWall=yes is set."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40228",
               "help": {
-                "text": "Vulnerability CVE-2026-40228\nSeverity: medium\nPackage: libsystemd0\nVersion: 255.4-1ubuntu8.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40228](https://ubuntu.com/security/CVE-2026-40228)",
-                "markdown": "**Vulnerability CVE-2026-40228**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsystemd0  | 255.4-1ubuntu8.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40228](https://ubuntu.com/security/CVE-2026-40228)  |\n"
+                "text": "Vulnerability CVE-2026-40228\nSeverity: low\nPackage: libsystemd0\nVersion: 255.4-1ubuntu8.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40228](https://ubuntu.com/security/CVE-2026-40228)",
+                "markdown": "**Vulnerability CVE-2026-40228**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libsystemd0  | 255.4-1ubuntu8.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40228](https://ubuntu.com/security/CVE-2026-40228)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1567,15 +1399,15 @@
               "id": "CVE-2026-40228-libudev1",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-40228 medium vulnerability for libudev1 package"
+                "text": "CVE-2026-40228 low vulnerability for libudev1 package"
               },
               "fullDescription": {
                 "text": "In systemd 259, systemd-journald can send ANSI escape sequences to the terminals of arbitrary users when a \"logger -p emerg\" command is executed, if ForwardToWall=yes is set."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40228",
               "help": {
-                "text": "Vulnerability CVE-2026-40228\nSeverity: medium\nPackage: libudev1\nVersion: 255.4-1ubuntu8.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40228](https://ubuntu.com/security/CVE-2026-40228)",
-                "markdown": "**Vulnerability CVE-2026-40228**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libudev1  | 255.4-1ubuntu8.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40228](https://ubuntu.com/security/CVE-2026-40228)  |\n"
+                "text": "Vulnerability CVE-2026-40228\nSeverity: low\nPackage: libudev1\nVersion: 255.4-1ubuntu8.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40228](https://ubuntu.com/security/CVE-2026-40228)",
+                "markdown": "**Vulnerability CVE-2026-40228**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libudev1  | 255.4-1ubuntu8.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40228](https://ubuntu.com/security/CVE-2026-40228)  |\n"
               },
               "properties": {
                 "purls": [
@@ -3591,84 +3423,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-40225-libsystemd0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libsystemd0, version 255.4-1ubuntu8.15 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libsystemd0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/libsystemd0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libsystemd0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/libsystemd0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "30d49c60d8c705b5ddaf7f1395828f4a6ab642a289527dc9f94b2e8af53bfcdc:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-40225-libudev1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libudev1, version 255.4-1ubuntu8.15 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libudev1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/libudev1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libudev1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/libudev1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "a985958f901dd70341a31a5772c11349594e9118f5452b6c8243e7b9e5412bdb:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-9538-perl-base",
           "level": "warning",
           "message": {
@@ -3725,6 +3479,57 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "d3bb6a1b99c4b4746a4d2b910490d5309489bc88d04be98f333d7ea55acbdbb8:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-5704-tar",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: tar, version 1.35+dfsg-3build1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/tar/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/tar/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/tar.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/tar.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/tar.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/tar.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "448872803634e3b1d0feab52698d85d4b41dc0210fd5b015cf4222db9e1adbb3:1"
           }
         },
         {
@@ -3826,213 +3631,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-5704-tar",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: tar, version 1.35+dfsg-3build1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/tar/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/tar/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/tar.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/tar.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/tar.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/tar.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "448872803634e3b1d0feab52698d85d4b41dc0210fd5b015cf4222db9e1adbb3:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-40227-libsystemd0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libsystemd0, version 255.4-1ubuntu8.15 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libsystemd0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/libsystemd0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libsystemd0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/libsystemd0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "30d49c60d8c705b5ddaf7f1395828f4a6ab642a289527dc9f94b2e8af53bfcdc:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-40227-libudev1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libudev1, version 255.4-1ubuntu8.15 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libudev1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/libudev1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libudev1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/libudev1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "a985958f901dd70341a31a5772c11349594e9118f5452b6c8243e7b9e5412bdb:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-40223-libsystemd0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libsystemd0, version 255.4-1ubuntu8.15 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libsystemd0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/libsystemd0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libsystemd0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/libsystemd0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "30d49c60d8c705b5ddaf7f1395828f4a6ab642a289527dc9f94b2e8af53bfcdc:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-40223-libudev1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libudev1, version 255.4-1ubuntu8.15 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libudev1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/libudev1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libudev1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/libudev1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "a985958f901dd70341a31a5772c11349594e9118f5452b6c8243e7b9e5412bdb:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-6238-libc-bin",
           "level": "warning",
           "message": {
@@ -4128,84 +3726,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "42a254a0ff30fbe0b6067799ba5df4b5c259924a10f0ab683d76ccf4b54e753c:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-40224-libsystemd0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libsystemd0, version 255.4-1ubuntu8.15 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libsystemd0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/libsystemd0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libsystemd0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/libsystemd0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "30d49c60d8c705b5ddaf7f1395828f4a6ab642a289527dc9f94b2e8af53bfcdc:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-40224-libudev1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libudev1, version 255.4-1ubuntu8.15 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libudev1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/libudev1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libudev1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/libudev1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "a985958f901dd70341a31a5772c11349594e9118f5452b6c8243e7b9e5412bdb:1"
           }
         },
         {
@@ -4937,9 +4457,9 @@
         },
         {
           "ruleId": "CVE-2026-40228-libsystemd0",
-          "level": "warning",
+          "level": "note",
           "message": {
-            "text": "A medium vulnerability in deb package: libsystemd0, version 255.4-1ubuntu8.15 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: libsystemd0, version 255.4-1ubuntu8.15 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -4976,9 +4496,9 @@
         },
         {
           "ruleId": "CVE-2026-40228-libudev1",
-          "level": "warning",
+          "level": "note",
           "message": {
-            "text": "A medium vulnerability in deb package: libudev1, version 255.4-1ubuntu8.15 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: libudev1, version 255.4-1ubuntu8.15 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
