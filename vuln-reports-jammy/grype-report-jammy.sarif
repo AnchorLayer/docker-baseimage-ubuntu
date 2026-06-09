@@ -73,27 +73,6 @@
               }
             },
             {
-              "id": "CVE-2026-42009-libgnutls30",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-42009 medium vulnerability for libgnutls30 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in gnutls. A remote attacker could exploit an issue in the Datagram Transport Layer Security (DTLS) packet reordering logic. The comparator function, responsible for ordering DTLS packets by sequence numbers, did not correctly handle packets with duplicate sequence numbers. This could lead to unstable packet ordering or undefined behavior, resulting in a denial of service."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-42009",
-              "help": {
-                "text": "Vulnerability CVE-2026-42009\nSeverity: medium\nPackage: libgnutls30\nVersion: 3.7.3-4ubuntu1.8\nFix Version: 3.7.3-4ubuntu1.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-42009](https://ubuntu.com/security/CVE-2026-42009)",
-                "markdown": "**Vulnerability CVE-2026-42009**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30  | 3.7.3-4ubuntu1.8  | 3.7.3-4ubuntu1.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-42009](https://ubuntu.com/security/CVE-2026-42009)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
               "id": "CVE-2024-2236-libgcrypt20",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -112,6 +91,27 @@
                   "pkg:deb/ubuntu/libgcrypt20@1.9.4-3ubuntu3?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
                 "security-severity": "5.9"
+              }
+            },
+            {
+              "id": "CVE-2026-42009-libgnutls30",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-42009 medium vulnerability for libgnutls30 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in gnutls. A remote attacker could exploit an issue in the Datagram Transport Layer Security (DTLS) packet reordering logic. The comparator function, responsible for ordering DTLS packets by sequence numbers, did not correctly handle packets with duplicate sequence numbers. This could lead to unstable packet ordering or undefined behavior, resulting in a denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-42009",
+              "help": {
+                "text": "Vulnerability CVE-2026-42009\nSeverity: medium\nPackage: libgnutls30\nVersion: 3.7.3-4ubuntu1.8\nFix Version: 3.7.3-4ubuntu1.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-42009](https://ubuntu.com/security/CVE-2026-42009)",
+                "markdown": "**Vulnerability CVE-2026-42009**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30  | 3.7.3-4ubuntu1.8  | 3.7.3-4ubuntu1.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-42009](https://ubuntu.com/security/CVE-2026-42009)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
+                ],
+                "security-severity": "7.5"
               }
             },
             {
@@ -146,8 +146,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2023-7008",
               "help": {
-                "text": "Vulnerability CVE-2023-7008\nSeverity: low\nPackage: libsystemd0\nVersion: 249.11-0ubuntu3.20\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2023-7008](https://ubuntu.com/security/CVE-2023-7008)",
-                "markdown": "**Vulnerability CVE-2023-7008**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libsystemd0  | 249.11-0ubuntu3.20  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2023-7008](https://ubuntu.com/security/CVE-2023-7008)  |\n"
+                "text": "Vulnerability CVE-2023-7008\nSeverity: low\nPackage: libsystemd0\nVersion: 249.11-0ubuntu3.20\nFix Version: 249.11-0ubuntu3.21\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2023-7008](https://ubuntu.com/security/CVE-2023-7008)",
+                "markdown": "**Vulnerability CVE-2023-7008**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libsystemd0  | 249.11-0ubuntu3.20  | 249.11-0ubuntu3.21  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2023-7008](https://ubuntu.com/security/CVE-2023-7008)  |\n"
               },
               "properties": {
                 "purls": [
@@ -167,8 +167,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2023-7008",
               "help": {
-                "text": "Vulnerability CVE-2023-7008\nSeverity: low\nPackage: libudev1\nVersion: 249.11-0ubuntu3.20\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2023-7008](https://ubuntu.com/security/CVE-2023-7008)",
-                "markdown": "**Vulnerability CVE-2023-7008**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libudev1  | 249.11-0ubuntu3.20  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2023-7008](https://ubuntu.com/security/CVE-2023-7008)  |\n"
+                "text": "Vulnerability CVE-2023-7008\nSeverity: low\nPackage: libudev1\nVersion: 249.11-0ubuntu3.20\nFix Version: 249.11-0ubuntu3.21\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2023-7008](https://ubuntu.com/security/CVE-2023-7008)",
+                "markdown": "**Vulnerability CVE-2023-7008**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libudev1  | 249.11-0ubuntu3.20  | 249.11-0ubuntu3.21  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2023-7008](https://ubuntu.com/security/CVE-2023-7008)  |\n"
               },
               "properties": {
                 "purls": [
@@ -325,6 +325,27 @@
               }
             },
             {
+              "id": "CVE-2026-42010-libgnutls30",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-42010 medium vulnerability for libgnutls30 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in gnutls. Servers configured with RSA-PSK (Rivest–Shamir–Adleman – Pre-Shared Key) wrongfully matched usernames containing a NUL character with truncated usernames. A remote attacker could exploit this by sending a specially crafted username, leading to an authentication bypass. This vulnerability allows an attacker to gain unauthorized access by circumventing the authentication process."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-42010",
+              "help": {
+                "text": "Vulnerability CVE-2026-42010\nSeverity: medium\nPackage: libgnutls30\nVersion: 3.7.3-4ubuntu1.8\nFix Version: 3.7.3-4ubuntu1.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-42010](https://ubuntu.com/security/CVE-2026-42010)",
+                "markdown": "**Vulnerability CVE-2026-42010**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30  | 3.7.3-4ubuntu1.8  | 3.7.3-4ubuntu1.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-42010](https://ubuntu.com/security/CVE-2026-42010)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
+                ],
+                "security-severity": "9.8"
+              }
+            },
+            {
               "id": "CVE-2025-27587-libssl3",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -385,27 +406,6 @@
                   "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
                 ],
                 "security-severity": "7.4"
-              }
-            },
-            {
-              "id": "CVE-2026-42010-libgnutls30",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-42010 medium vulnerability for libgnutls30 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in gnutls. Servers configured with RSA-PSK (Rivest–Shamir–Adleman – Pre-Shared Key) wrongfully matched usernames containing a NUL character with truncated usernames. A remote attacker could exploit this by sending a specially crafted username, leading to an authentication bypass. This vulnerability allows an attacker to gain unauthorized access by circumventing the authentication process."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-42010",
-              "help": {
-                "text": "Vulnerability CVE-2026-42010\nSeverity: medium\nPackage: libgnutls30\nVersion: 3.7.3-4ubuntu1.8\nFix Version: 3.7.3-4ubuntu1.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-42010](https://ubuntu.com/security/CVE-2026-42010)",
-                "markdown": "**Vulnerability CVE-2026-42010**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30  | 3.7.3-4ubuntu1.8  | 3.7.3-4ubuntu1.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-42010](https://ubuntu.com/security/CVE-2026-42010)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
-                ],
-                "security-severity": "9.8"
               }
             },
             {
@@ -1543,6 +1543,27 @@
               }
             },
             {
+              "id": "CVE-2026-42011-libgnutls30",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-42011 medium vulnerability for libgnutls30 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in gnutls. This vulnerability occurs because permitted name constraints were incorrectly ignored when previous Certificate Authorities (CAs) only had excluded name constraints. A remote attacker could exploit this to bypass critical name constraint checks during certificate validation. This bypass could lead to the acceptance of invalid certificates, potentially enabling spoofing or man-in-the-middle attacks against affected systems."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-42011",
+              "help": {
+                "text": "Vulnerability CVE-2026-42011\nSeverity: medium\nPackage: libgnutls30\nVersion: 3.7.3-4ubuntu1.8\nFix Version: 3.7.3-4ubuntu1.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-42011](https://ubuntu.com/security/CVE-2026-42011)",
+                "markdown": "**Vulnerability CVE-2026-42011**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30  | 3.7.3-4ubuntu1.8  | 3.7.3-4ubuntu1.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-42011](https://ubuntu.com/security/CVE-2026-42011)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
+                ],
+                "security-severity": "7.4"
+              }
+            },
+            {
               "id": "CVE-2026-6238-libc-bin",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1582,27 +1603,6 @@
                   "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.13?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
                 ],
                 "security-severity": "6.5"
-              }
-            },
-            {
-              "id": "CVE-2026-42011-libgnutls30",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-42011 medium vulnerability for libgnutls30 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in gnutls. This vulnerability occurs because permitted name constraints were incorrectly ignored when previous Certificate Authorities (CAs) only had excluded name constraints. A remote attacker could exploit this to bypass critical name constraint checks during certificate validation. This bypass could lead to the acceptance of invalid certificates, potentially enabling spoofing or man-in-the-middle attacks against affected systems."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-42011",
-              "help": {
-                "text": "Vulnerability CVE-2026-42011\nSeverity: medium\nPackage: libgnutls30\nVersion: 3.7.3-4ubuntu1.8\nFix Version: 3.7.3-4ubuntu1.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-42011](https://ubuntu.com/security/CVE-2026-42011)",
-                "markdown": "**Vulnerability CVE-2026-42011**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30  | 3.7.3-4ubuntu1.8  | 3.7.3-4ubuntu1.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-42011](https://ubuntu.com/security/CVE-2026-42011)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
-                ],
-                "security-severity": "7.4"
               }
             },
             {
@@ -1847,8 +1847,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40226",
               "help": {
-                "text": "Vulnerability CVE-2026-40226\nSeverity: medium\nPackage: libsystemd0\nVersion: 249.11-0ubuntu3.20\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-40226](https://ubuntu.com/security/CVE-2026-40226)",
-                "markdown": "**Vulnerability CVE-2026-40226**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsystemd0  | 249.11-0ubuntu3.20  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-40226](https://ubuntu.com/security/CVE-2026-40226)  |\n"
+                "text": "Vulnerability CVE-2026-40226\nSeverity: medium\nPackage: libsystemd0\nVersion: 249.11-0ubuntu3.20\nFix Version: 249.11-0ubuntu3.21\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-40226](https://ubuntu.com/security/CVE-2026-40226)",
+                "markdown": "**Vulnerability CVE-2026-40226**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsystemd0  | 249.11-0ubuntu3.20  | 249.11-0ubuntu3.21  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-40226](https://ubuntu.com/security/CVE-2026-40226)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1868,8 +1868,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40226",
               "help": {
-                "text": "Vulnerability CVE-2026-40226\nSeverity: medium\nPackage: libudev1\nVersion: 249.11-0ubuntu3.20\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-40226](https://ubuntu.com/security/CVE-2026-40226)",
-                "markdown": "**Vulnerability CVE-2026-40226**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libudev1  | 249.11-0ubuntu3.20  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-40226](https://ubuntu.com/security/CVE-2026-40226)  |\n"
+                "text": "Vulnerability CVE-2026-40226\nSeverity: medium\nPackage: libudev1\nVersion: 249.11-0ubuntu3.20\nFix Version: 249.11-0ubuntu3.21\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-40226](https://ubuntu.com/security/CVE-2026-40226)",
+                "markdown": "**Vulnerability CVE-2026-40226**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libudev1  | 249.11-0ubuntu3.20  | 249.11-0ubuntu3.21  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-40226](https://ubuntu.com/security/CVE-2026-40226)  |\n"
               },
               "properties": {
                 "purls": [
@@ -2299,45 +2299,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-42009-libgnutls30",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libgnutls30/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libgnutls30/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libgnutls30:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libgnutls30:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d1f903b74f3bac3eddbc16c526ba304d74a0864c90717a11108408c2323d1b7f:1"
-          }
-        },
-        {
           "ruleId": "CVE-2024-2236-libgcrypt20",
           "level": "note",
           "message": {
@@ -2374,6 +2335,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "6b304b33b2ccb0eda8f4166272c6be39a81dfbfcbbb64a7ed7c0cf6a16ba3729:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-42009-libgnutls30",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libgnutls30/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libgnutls30/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libgnutls30:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libgnutls30:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d1f903b74f3bac3eddbc16c526ba304d74a0864c90717a11108408c2323d1b7f:1"
           }
         },
         {
@@ -2767,6 +2767,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-42010-libgnutls30",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libgnutls30/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libgnutls30/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libgnutls30:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libgnutls30:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d1f903b74f3bac3eddbc16c526ba304d74a0864c90717a11108408c2323d1b7f:1"
+          }
+        },
+        {
           "ruleId": "CVE-2025-27587-libssl3",
           "level": "note",
           "message": {
@@ -2858,45 +2897,6 @@
         },
         {
           "ruleId": "CVE-2026-3833-libgnutls30",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libgnutls30/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libgnutls30/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libgnutls30:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libgnutls30:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d1f903b74f3bac3eddbc16c526ba304d74a0864c90717a11108408c2323d1b7f:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-42010-libgnutls30",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
@@ -5421,6 +5421,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-42011-libgnutls30",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libgnutls30/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libgnutls30/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libgnutls30:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libgnutls30:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d1f903b74f3bac3eddbc16c526ba304d74a0864c90717a11108408c2323d1b7f:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-6238-libc-bin",
           "level": "warning",
           "message": {
@@ -5516,45 +5555,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "ef83900d38972e962fadfcb5b24acd49c42b219d40fac2a0b082a1ff479be143:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-42011-libgnutls30",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libgnutls30/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libgnutls30/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libgnutls30:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libgnutls30:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d1f903b74f3bac3eddbc16c526ba304d74a0864c90717a11108408c2323d1b7f:1"
           }
         },
         {
