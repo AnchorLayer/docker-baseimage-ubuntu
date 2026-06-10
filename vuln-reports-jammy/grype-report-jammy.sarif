@@ -73,27 +73,6 @@
               }
             },
             {
-              "id": "CVE-2024-2236-libgcrypt20",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2024-2236 low vulnerability for libgcrypt20 package"
-              },
-              "fullDescription": {
-                "text": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2024-2236",
-              "help": {
-                "text": "Vulnerability CVE-2024-2236\nSeverity: low\nPackage: libgcrypt20\nVersion: 1.9.4-3ubuntu3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2024-2236](https://ubuntu.com/security/CVE-2024-2236)",
-                "markdown": "**Vulnerability CVE-2024-2236**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libgcrypt20  | 1.9.4-3ubuntu3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2024-2236](https://ubuntu.com/security/CVE-2024-2236)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libgcrypt20@1.9.4-3ubuntu3?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "5.9"
-              }
-            },
-            {
               "id": "CVE-2026-42009-libgnutls30",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -112,6 +91,27 @@
                   "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
                 ],
                 "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2024-2236-libgcrypt20",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2024-2236 low vulnerability for libgcrypt20 package"
+              },
+              "fullDescription": {
+                "text": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2024-2236",
+              "help": {
+                "text": "Vulnerability CVE-2024-2236\nSeverity: low\nPackage: libgcrypt20\nVersion: 1.9.4-3ubuntu3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2024-2236](https://ubuntu.com/security/CVE-2024-2236)",
+                "markdown": "**Vulnerability CVE-2024-2236**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libgcrypt20  | 1.9.4-3ubuntu3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2024-2236](https://ubuntu.com/security/CVE-2024-2236)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libgcrypt20@1.9.4-3ubuntu3?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "5.9"
               }
             },
             {
@@ -829,27 +829,6 @@
               }
             },
             {
-              "id": "CVE-2016-2781-coreutils",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2016-2781 low vulnerability for coreutils package"
-              },
-              "fullDescription": {
-                "text": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2016-2781",
-              "help": {
-                "text": "Vulnerability CVE-2016-2781\nSeverity: low\nPackage: coreutils\nVersion: 8.32-4.1ubuntu1.3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)",
-                "markdown": "**Vulnerability CVE-2016-2781**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 8.32-4.1ubuntu1.3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.3?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "6.5"
-              }
-            },
-            {
               "id": "CVE-2026-48959-perl-base",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -973,6 +952,27 @@
                   "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
                 ],
                 "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2016-2781-coreutils",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2016-2781 low vulnerability for coreutils package"
+              },
+              "fullDescription": {
+                "text": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2016-2781",
+              "help": {
+                "text": "Vulnerability CVE-2016-2781\nSeverity: low\nPackage: coreutils\nVersion: 8.32-4.1ubuntu1.3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)",
+                "markdown": "**Vulnerability CVE-2016-2781**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 8.32-4.1ubuntu1.3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2016-2781](https://ubuntu.com/security/CVE-2016-2781)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.3?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "6.5"
               }
             },
             {
@@ -1186,27 +1186,6 @@
               }
             },
             {
-              "id": "CVE-2026-9538-perl-base",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-9538 medium vulnerability for perl-base package"
-              },
-              "fullDescription": {
-                "text": "Archive::Tar versions before 3.10 for Perl allow memory exhaustion via attacker controlled entry size field in tar header.\n\n_read_tar() reads each entry's payload with $handle-\u003eread($$data, $block), where $block is derived from the entry's 12-byte size field in the tar header with no upper bound on that value.\n\nA crafted header declaring a multi-gigabyte size causes Perl to allocate a scalar of that size."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-9538",
-              "help": {
-                "text": "Vulnerability CVE-2026-9538\nSeverity: medium\nPackage: perl-base\nVersion: 5.34.0-3ubuntu1.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-9538](https://ubuntu.com/security/CVE-2026-9538)",
-                "markdown": "**Vulnerability CVE-2026-9538**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.34.0-3ubuntu1.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-9538](https://ubuntu.com/security/CVE-2026-9538)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
               "id": "CVE-2026-34743-liblzma5",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1225,6 +1204,27 @@
                   "pkg:deb/ubuntu/liblzma5@5.2.5-2ubuntu1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=xz-utils"
                 ],
                 "security-severity": "5.3"
+              }
+            },
+            {
+              "id": "CVE-2026-9538-perl-base",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-9538 medium vulnerability for perl-base package"
+              },
+              "fullDescription": {
+                "text": "Archive::Tar versions before 3.10 for Perl allow memory exhaustion via attacker controlled entry size field in tar header.\n\n_read_tar() reads each entry's payload with $handle-\u003eread($$data, $block), where $block is derived from the entry's 12-byte size field in the tar header with no upper bound on that value.\n\nA crafted header declaring a multi-gigabyte size causes Perl to allocate a scalar of that size."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-9538",
+              "help": {
+                "text": "Vulnerability CVE-2026-9538\nSeverity: medium\nPackage: perl-base\nVersion: 5.34.0-3ubuntu1.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-9538](https://ubuntu.com/security/CVE-2026-9538)",
+                "markdown": "**Vulnerability CVE-2026-9538**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.34.0-3ubuntu1.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-9538](https://ubuntu.com/security/CVE-2026-9538)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
+                ],
+                "security-severity": "7.5"
               }
             },
             {
@@ -2089,6 +2089,27 @@
               }
             },
             {
+              "id": "CVE-2026-45447-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-45447 high vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "Issue summary: A specially crafted PKCS#7 or S/MIME signed message could\ntrigger a use-after-free during PKCS#7 signature verification.\n\nImpact summary: A use-after-free may result in process crashes, heap\ncorruption, or potentially remote code execution.\n\nWhen processing a PKCS#7 or S/MIME signed message, if the SignedData\ndigestAlgorithms field is present as an empty ASN.1 SET, OpenSSL may\nincorrectly free a caller-owned BIO during PKCS7_verify(). A subsequent\nuse of the BIO by the calling application results in a use-after-free\ncondition.\n\nIn the common case this occurs when the application later calls\nBIO_free() on the BIO originally passed to PKCS7_verify(). Depending\non allocator behavior and application-specific BIO usage patterns, this\nmay result in a crash or other memory corruption. In some application\ncontexts this may potentially be exploitable for remote code execution.\n\nApplications that process PKCS#7 or S/MIME signed messages using OpenSSL\nPKCS#7 APIs may be affected. Applications using the CMS APIs for this\nprocessing are not affected.\n\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-45447",
+              "help": {
+                "text": "Vulnerability CVE-2026-45447\nSeverity: high\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: 3.0.2-0ubuntu1.25\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-45447](https://ubuntu.com/security/CVE-2026-45447)",
+                "markdown": "**Vulnerability CVE-2026-45447**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| high  | libssl3  | 3.0.2-0ubuntu1.23  | 3.0.2-0ubuntu1.25  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-45447](https://ubuntu.com/security/CVE-2026-45447)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                ],
+                "security-severity": "9.8"
+              }
+            },
+            {
               "id": "CVE-2026-42014-libgnutls30",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -2107,6 +2128,195 @@
                   "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
                 ],
                 "security-severity": "4.0"
+              }
+            },
+            {
+              "id": "CVE-2026-34182-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-34182 medium vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "Issue Summary: Cryptographic Message Services (CMS) processing fails to perform\nsufficient input validation on the cipher and tag length fields of\nAuthEnvelopedData containers, leading to various potential compromises.\n\nImpact Summary: Attackers making use of these vulnerabilities may achieve\nkey-equivalent functionality for a given CMS recipient and/or bypass integrity\nvalidation for a given message.\n\nIn one use case, an attacker may send a CMS message containing\nAuthEnvelopedData with the cipher specified as a non-AEAD cipher.  OpenSSL\nerroneously allows this selection, and attempts to decrypt and validate the\nmessage.\n\nAn on-path attacker who captures one legitimate AES-GCM AuthEnvelopedData\naddressed to the victim can re-emit it with the recipientInfos set left\nbyte-for-byte intact, so the victim's private key still unwraps the genuine CEK\n(the content-encryption key), but with the inner OID rewritten to AES-256-OFB\n(Output Feedback Mode, an unauthenticated keystream mode) and with an\nattacker-chosen IV and ciphertext. The victim initializes AES-256-OFB under the\nreal CEK, never consults the MAC field, and CMS_decrypt() returns success.\n\nIf the application under attack responds to the attacker with any indicator\nshowing success or failure of the decryption effort, it is possible for the\nattacker to use this as an oracle to obtain key equivalent functionality for the\nCEK used for the chosen recipient of the message.\n\nIn another use case, an attacker can reduce the tag length of the chosen AEAD\ncipher for a given AuthEnvelopedData container to be a single byte long,\nallowing an attacker to brute force CMS decryption, producing an integrity\nbypass for applications that trust CMS_decrypt() to reject modified content.\n\nThe FIPS modules are not affected by this issue."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-34182",
+              "help": {
+                "text": "Vulnerability CVE-2026-34182\nSeverity: medium\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: 3.0.2-0ubuntu1.25\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-34182](https://ubuntu.com/security/CVE-2026-34182)",
+                "markdown": "**Vulnerability CVE-2026-34182**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssl3  | 3.0.2-0ubuntu1.23  | 3.0.2-0ubuntu1.25  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-34182](https://ubuntu.com/security/CVE-2026-34182)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                ],
+                "security-severity": "4.0"
+              }
+            },
+            {
+              "id": "CVE-2026-45445-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-45445 medium vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "Issue summary: When an application drives an AES-OCB context through the\npublic EVP_Cipher() one-shot interface, the application-supplied\ninitialisation vector (IV) is silently discarded.\n\nImpact summary: Every message encrypted under the same key uses the\nsame effective nonce regardless of the IV supplied by the caller,\nresulting in (key, nonce) reuse and loss of confidentiality.  If the\nsame code path is used to compute the authentication tag, the tag\ndepends only on the (key, IV) pair and not on the plaintext or\nciphertext, allowing universal forgery of arbitrary ciphertext from a\nsingle captured message.\n\nOpenSSL provides two ways to drive a cipher: the documented streaming\ninterface (EVP_CipherUpdate / EVP_CipherFinal_ex) and a lower-level\none-shot, EVP_Cipher(), whose documentation explicitly recommends\nagainst use by applications in favour of EVP_CipherUpdate() and\nEVP_CipherFinal_ex().  The OCB provider's streaming handler flushes\nthe application-supplied IV into the OCB context before processing\ndata; the one-shot handler did not.  Every call to EVP_Cipher() on an\nAES-OCB context therefore ran with the all-zero key-derived offset\nstate left by cipher initialisation, regardless of the caller's IV.\n\nIf EVP_EncryptFinal_ex() is subsequently used to obtain the\nauthentication tag, the deferred IV setup runs at that point and\nclears the running checksum that should have been accumulated over the\nplaintext.  The resulting tag is a function of (key, IV) only and\nverifies against any ciphertext produced under the same (key, IV)\npair.\n\nThe OpenSSL SSL/TLS implementation is not affected: AES-OCB is not a\nTLS cipher suite, and libssl does not call EVP_Cipher() in any case.\nApplications that drive AES-OCB through the documented streaming AEAD\nAPI (EVP_CipherUpdate / EVP_CipherFinal_ex) are not affected.  Only\napplications that combine the AES-OCB cipher with the EVP_Cipher()\none-shot API are vulnerable.\n\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4 and 3.0 are not affected by\nthis issue, as AES-OCB is outside the OpenSSL FIPS module boundary."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-45445",
+              "help": {
+                "text": "Vulnerability CVE-2026-45445\nSeverity: medium\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: 3.0.2-0ubuntu1.25\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-45445](https://ubuntu.com/security/CVE-2026-45445)",
+                "markdown": "**Vulnerability CVE-2026-45445**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssl3  | 3.0.2-0ubuntu1.23  | 3.0.2-0ubuntu1.25  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-45445](https://ubuntu.com/security/CVE-2026-45445)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2026-34180-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-34180 low vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "Issue summary: Parsing a crafted DER-encoded ASN.1 structure with a primitive\nelement whose content exceeds 2 gigabytes in length may cause a heap buffer\nover-read on 64-bit Unix and Unix-like platforms.\n\nImpact summary: The heap buffer over-read may crash the application (Denial of\nService) or to load into the decoded ASN.1 object contents of memory beyond the\nend of the input buffer.  More typically such ASN.1 elements would instead be\ntruncated.\n\nAn integer truncation in OpenSSL's ASN.1 decoder causes the content length of\nan ASN.1 primitive element to be mishandled when it exceeds 2 gigabytes. In the\nworst case the truncated length is treated as a request to scan the binary\ncontent for a terminating zero byte, possibly causing OpenSSL to read either\nless than or beyond the end of the allocated buffer.\n\nApplications that pass attacker-supplied data to d2i_X509(), d2i_PKCS7(), or\nany other d2i_* decoding function are affected. OpenSSL's own command-line\ntools are not vulnerable, as data read through the BIO layer is checked before\nit reaches the affected code. The issue only affects 64-bit Unix and Unix-like\nplatforms; 32-bit platforms and 64-bit Windows are not affected.\n\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4 and 3.0 are not affected by this issue,\nas the affected code is outside the OpenSSL FIPS module boundary."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-34180",
+              "help": {
+                "text": "Vulnerability CVE-2026-34180\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: 3.0.2-0ubuntu1.25\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-34180](https://ubuntu.com/security/CVE-2026-34180)",
+                "markdown": "**Vulnerability CVE-2026-34180**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.23  | 3.0.2-0ubuntu1.25  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-34180](https://ubuntu.com/security/CVE-2026-34180)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2026-42766-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-42766 low vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "Issue summary: A specially crafted password-encrypted CMS message\ncan trigger a NULL pointer dereference during CMS decryption.\n\nImpact summary: This NULL pointer dereference leads to an application crash\nand a Denial of Service.\n\nThe CMS PasswordRecipientInfo.keyDerivationAlgorithm field is defined as\nOPTIONAL in the ASN.1 specification and may therefore be absent in specially\ncrafted inputs. During the password-based CMS decryption the OpenSSL\nCMS implementation dereferences this field without first checking whether it\nwas present.\n\nAn attacker who supplies such a CMS message to an application performing\npassword-based CMS decryption can trigger an application crash, leading to\na Denial of Service.\n\nApplications that process password-encrypted CMS messages may be affected.\n\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-42766",
+              "help": {
+                "text": "Vulnerability CVE-2026-42766\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: 3.0.2-0ubuntu1.25\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-42766](https://ubuntu.com/security/CVE-2026-42766)",
+                "markdown": "**Vulnerability CVE-2026-42766**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.23  | 3.0.2-0ubuntu1.25  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-42766](https://ubuntu.com/security/CVE-2026-42766)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                ],
+                "security-severity": "5.9"
+              }
+            },
+            {
+              "id": "CVE-2026-42767-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-42767 low vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "Issue summary: An attacker-controlled CMP (Certificate Management Protocol)\nserver could trigger a NULL pointer dereference in a CMP client application.\n\nImpact summary: A NULL pointer dereference causes a crash of the\napplication and a Denial of Service.\n\nAn attacker controlling a CMP server (or acting as a man-in-the-middle) could\ncraft a CMP response containing a CRMF (Certificate Request Message Format)\nCertRepMessage with an EncryptedValue structure where the symmAlg field\nhas an algorithm OID but no parameters field. When the OpenSSL CMP client\nprocesses this response, the NULL dereference occurs, causing a crash of\nthe CMP client.\n\nApplications that process untrusted CMP/CRMF messages may be affected.\n\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-42767",
+              "help": {
+                "text": "Vulnerability CVE-2026-42767\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: 3.0.2-0ubuntu1.25\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-42767](https://ubuntu.com/security/CVE-2026-42767)",
+                "markdown": "**Vulnerability CVE-2026-42767**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.23  | 3.0.2-0ubuntu1.25  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-42767](https://ubuntu.com/security/CVE-2026-42767)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                ],
+                "security-severity": "5.9"
+              }
+            },
+            {
+              "id": "CVE-2026-42770-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-42770 low vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "Issue summary: When EVP_PKEY_derive_set_peer() is called with a DHX (X9.42)\npeer key, the peer key is not properly checked for the subgroup membership.\n\nImpact summary: A malicious peer which presents an X9.42 key carrying the\nvictim's p and g parameters, a forged q = r (a small prime factor of the\ncofactor (p−1)/q_local), and a public value Y of order r can recover the\nvictim's private key after a small number of key exchange attempts.\n\nWhen EVP_PKEY_derive_set_peer() is called with a DHX (X9.42) peer key, the\nsubgroup membership check Y^q ≡ 1 (mod p) is performed using the peer's\nown q parameter, not the local key's q. The peer's domain parameters are\nthen matched against the domain parameters of the private key, but the value\nof q is not compared.\n\nA malicious peer who presents an X9.42 key carrying the victim's p, g,\na forged q = r (a small prime factor of the cofactor), and a public\nvalue Y of order r passes all checks. The shared secret then takes only\nr distinct values, leaking priv mod r. Repeating for each small-prime\nfactor of the cofactor and combining via CRT recovers the full private\nkey (Lim–Lee / small-subgroup-confinement attack).\n\nThe realistic attack surface is narrow: principally CMP deployments with\nlong-lived RA/CA DHX keys and bespoke enterprise or government applications\nusing X9.42 DHX static keys with interactive protocols and therefore this\nissue was assigned Low severity.\n\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are affected by this\nissue."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-42770",
+              "help": {
+                "text": "Vulnerability CVE-2026-42770\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: 3.0.2-0ubuntu1.25\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-42770](https://ubuntu.com/security/CVE-2026-42770)",
+                "markdown": "**Vulnerability CVE-2026-42770**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.23  | 3.0.2-0ubuntu1.25  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-42770](https://ubuntu.com/security/CVE-2026-42770)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                ],
+                "security-severity": "3.7"
+              }
+            },
+            {
+              "id": "CVE-2026-45446-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-45446 low vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "Issue summary: The implementations of AES-SIV (RFC 5297) and AES-GCM-SIV\n(RFC 8452) mishandle the authentication of AAD (Additional Authenticated\nData) with an empty ciphertext allowing a forgery of such messages.\n\nImpact summary: An attacker can forge empty messages with arbitrary AAD\nto the victim's application using these ciphers.\n\nAES-SIV (RFC 5297) and AES-GCM-SIV (RFC 8452) are nonce-misuse-resistant AEAD\nmodes: they accept a key, nonce, optional AAD (bytes that are authenticated\nbut not encrypted), and plaintext, and produces ciphertext plus a 16-byte\ntag. On decrypt, `EVP_DecryptFinal_ex()` is documented to return success only\nif the tag is verified succesfully.\n\nIn OpenSSL's provider implementation of these ciphers, the expected tag is\ncomputed only when decryption function is invoked with non-empty data.\nIf the caller supplies AAD and then calls `EVP_DecryptFinal_ex()` without\ninvocation of the ciphertext update, which can happen when the received\nciphertext length is zero, the tag is never recalculated and still holds its\nall-zeros value.\n\nWhen AES-GCM-SIV is used, an attacker who sends arbitrary AAD, empty\nciphertext, and all-zeros tag passes authentication under any key they do not\nknow, single-shot. When AES-SIV is used, for mounting the attack it's\nnecessary for the application to reuse the decryption context without\nresetting the key.\n\nAES-SIV is implemented since OpenSSL 3.0. AES-GCM-SIV is implemented since\nOpenSSL 3.2.\n\nNo protocols implemented in OpenSSL itself (TLS/CMS/PKCS7/HPKE/QUIC) support\neither AES-GCM-SIV or AES-SIV. To mount an attack, the applications must\nimplement their own protocol and use the EVP interface. Also they must skip the\nciphertext update when a message with an empty ciphertext arrives.\n\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not affected by this\nissue, as these algorithms are not FIPS approved and the affected code is\noutside the OpenSSL FIPS module boundary."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-45446",
+              "help": {
+                "text": "Vulnerability CVE-2026-45446\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: 3.0.2-0ubuntu1.25\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-45446](https://ubuntu.com/security/CVE-2026-45446)",
+                "markdown": "**Vulnerability CVE-2026-45446**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.23  | 3.0.2-0ubuntu1.25  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-45446](https://ubuntu.com/security/CVE-2026-45446)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                ],
+                "security-severity": "4.8"
+              }
+            },
+            {
+              "id": "CVE-2026-7383-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-7383 low vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "Issue summary: A signed integer overflow when sizing the destination\nbuffer for Unicode output in ASN1_mbstring_ncopy() can lead to a heap\nbuffer overflow.\n\nImpact summary: A heap buffer overflow may lead to a crash or possibly\nattacker controlled code execution or other undefined behaviour.\n\nIn ASN1_mbstring_copy() and ASN1_mbstring_ncopy() the destination\nsize for Unicode output is computed in a signed int: by left shift\nof the input character count for BMPSTRING (UTF-16) and\nUNIVERSALSTRING (UTF-32), and by summing per-character byte counts\nfor UTF8STRING. The calculation overflows when the input reaches\naround 2^30 characters. In the worst case (UNIVERSALSTRING at 2^30\ncharacters) the size wraps to zero, OPENSSL_malloc(1) is called, and\nthe subsequent character copy writes several gigabytes past the\none-byte allocation.\n\nX.509 certificate processing routes through ASN1_STRING_set_by_NID(),\nwhose DIRSTRING_TYPE mask excludes UNIVERSALSTRING and whose per-NID\nsize limits cap the input length; no network protocol or\ncertificate-handling path in OpenSSL exercises the overflow.\nTriggering the bug requires an application that calls\nASN1_mbstring_copy() or ASN1_mbstring_ncopy() directly, or registers\na custom string type via ASN1_STRING_TABLE_add(), with\nattacker-controlled input on the order of half a gigabyte or more.\nFor these reasons this issue was assigned Low severity.\n\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4 and 3.0 are not affected by\nthis issue, as the affected code is outside the OpenSSL FIPS module\nboundary."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-7383",
+              "help": {
+                "text": "Vulnerability CVE-2026-7383\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: 3.0.2-0ubuntu1.25\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-7383](https://ubuntu.com/security/CVE-2026-7383)",
+                "markdown": "**Vulnerability CVE-2026-7383**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.23  | 3.0.2-0ubuntu1.25  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-7383](https://ubuntu.com/security/CVE-2026-7383)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                ],
+                "security-severity": "8.1"
+              }
+            },
+            {
+              "id": "CVE-2026-9076-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-9076 low vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "Issue summary: When CMS password-based decryption (RFC 3211 / PWRI key unwrap)\nprocesses attacker-supplied CMS data, an attacker-chosen stream-mode KEK\ncipher can trigger a heap out-of-bounds read in kek_unwrap_key().\n\nImpact summary: A heap buffer over-read may trigger a crash which leads to\nDenial of Service for an application if the input buffer ends at a memory\npage boundary and the following page is unmapped. There is no information\ndisclosure as the over-read bytes are not revealed to the attacker.\n\nThe key unwrapping function performs a check-byte test as specified in the\nRFC that reads 7 bytes from a heap allocation that is based on the wrapped\nkey length from the message. There is a minimum length check based on the\nblock length of the wrapping cipher. However the cipher is selected from\nan OID carried in the attacker's PWRI keyEncryptionAlgorithm with no\nrequirement that the cipher be a block cipher. When an attacker selects\na stream-mode cipher the guard will be ineffective and the allocated buffer\ncontaining the unwrapped key can be too small to fit the check-bytes\nspecified in the RFC and a buffer over-read can happen.\n\nApplications calling CMS_decrypt() or CMS_decrypt_set1_password()\n(equivalently openssl cms -decrypt -pwri_password ...) on untrusted CMS\ndata are vulnerable to this issue. No password knowledge is required: the\nover-read happens during the unwrap attempt before any authentication\nsucceeds.\n\nThe over-read is limited to a few bytes and is not written to output, so\nthere is no information disclosure. Triggering a crash requires the\nallocation to border unmapped memory, which is unlikely with the normal\nallocator.\n\nThe FIPS modules are not affected by this issue."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-9076",
+              "help": {
+                "text": "Vulnerability CVE-2026-9076\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: 3.0.2-0ubuntu1.25\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-9076](https://ubuntu.com/security/CVE-2026-9076)",
+                "markdown": "**Vulnerability CVE-2026-9076**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.23  | 3.0.2-0ubuntu1.25  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-9076](https://ubuntu.com/security/CVE-2026-9076)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                ],
+                "security-severity": "7.5"
               }
             }
           ]
@@ -2299,45 +2509,6 @@
           }
         },
         {
-          "ruleId": "CVE-2024-2236-libgcrypt20",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libgcrypt20, version 1.9.4-3ubuntu3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libgcrypt20/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libgcrypt20/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libgcrypt20:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libgcrypt20:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "6b304b33b2ccb0eda8f4166272c6be39a81dfbfcbbb64a7ed7c0cf6a16ba3729:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-42009-libgnutls30",
           "level": "warning",
           "message": {
@@ -2374,6 +2545,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "d1f903b74f3bac3eddbc16c526ba304d74a0864c90717a11108408c2323d1b7f:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2024-2236-libgcrypt20",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libgcrypt20, version 1.9.4-3ubuntu3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libgcrypt20/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libgcrypt20/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libgcrypt20:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libgcrypt20:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "6b304b33b2ccb0eda8f4166272c6be39a81dfbfcbbb64a7ed7c0cf6a16ba3729:1"
           }
         },
         {
@@ -3827,57 +4037,6 @@
           }
         },
         {
-          "ruleId": "CVE-2016-2781-coreutils",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: coreutils, version 8.32-4.1ubuntu1.3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/coreutils/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/coreutils/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/coreutils.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/coreutils.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/coreutils.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/coreutils.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/coreutils.postrm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "18259262bc0c1fb7ca3ffc774567ccaf1689ab49577292f569a5df8597ed5ffd:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-48959-perl-base",
           "level": "warning",
           "message": {
@@ -4209,6 +4368,57 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "1c98596e0befd3b882477166a4a7880922e82e9371018b138e171c8a0c2a395c:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2016-2781-coreutils",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: coreutils, version 8.32-4.1ubuntu1.3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/coreutils/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/coreutils/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/coreutils.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/coreutils.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/coreutils.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/coreutils.postrm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "18259262bc0c1fb7ca3ffc774567ccaf1689ab49577292f569a5df8597ed5ffd:1"
           }
         },
         {
@@ -4646,6 +4856,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-34743-liblzma5",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: liblzma5, version 5.2.5-2ubuntu1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/liblzma5/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/liblzma5/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/liblzma5:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/liblzma5:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "0841a6e26f62cf33d66747ddd24d236b849deb3d26fa4d3b9a1fcbbe5b9e7bf5:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-9538-perl-base",
           "level": "warning",
           "message": {
@@ -4702,45 +4951,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "1c98596e0befd3b882477166a4a7880922e82e9371018b138e171c8a0c2a395c:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-34743-liblzma5",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: liblzma5, version 5.2.5-2ubuntu1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/liblzma5/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/liblzma5/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/liblzma5:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/liblzma5:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "0841a6e26f62cf33d66747ddd24d236b849deb3d26fa4d3b9a1fcbbe5b9e7bf5:1"
           }
         },
         {
@@ -6543,6 +6753,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-45447-libssl3",
+          "level": "error",
+          "message": {
+            "text": "A high vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-42014-libgnutls30",
           "level": "warning",
           "message": {
@@ -6579,6 +6828,357 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "d1f903b74f3bac3eddbc16c526ba304d74a0864c90717a11108408c2323d1b7f:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-34182-libssl3",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-45445-libssl3",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-34180-libssl3",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-42766-libssl3",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-42767-libssl3",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-42770-libssl3",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-45446-libssl3",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-7383-libssl3",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-9076-libssl3",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
           }
         }
       ]
