@@ -1522,6 +1522,27 @@
               }
             },
             {
+              "id": "CVE-2026-34182-libssl3t64",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-34182 medium vulnerability for libssl3t64 package"
+              },
+              "fullDescription": {
+                "text": "Issue Summary: Cryptographic Message Services (CMS) processing fails to perform\nsufficient input validation on the cipher and tag length fields of\nAuthEnvelopedData containers, leading to various potential compromises.\n\nImpact Summary: Attackers making use of these vulnerabilities may achieve\nkey-equivalent functionality for a given CMS recipient and/or bypass integrity\nvalidation for a given message.\n\nIn one use case, an attacker may send a CMS message containing\nAuthEnvelopedData with the cipher specified as a non-AEAD cipher.  OpenSSL\nerroneously allows this selection, and attempts to decrypt and validate the\nmessage.\n\nAn on-path attacker who captures one legitimate AES-GCM AuthEnvelopedData\naddressed to the victim can re-emit it with the recipientInfos set left\nbyte-for-byte intact, so the victim's private key still unwraps the genuine CEK\n(the content-encryption key), but with the inner OID rewritten to AES-256-OFB\n(Output Feedback Mode, an unauthenticated keystream mode) and with an\nattacker-chosen IV and ciphertext. The victim initializes AES-256-OFB under the\nreal CEK, never consults the MAC field, and CMS_decrypt() returns success.\n\nIf the application under attack responds to the attacker with any indicator\nshowing success or failure of the decryption effort, it is possible for the\nattacker to use this as an oracle to obtain key equivalent functionality for the\nCEK used for the chosen recipient of the message.\n\nIn another use case, an attacker can reduce the tag length of the chosen AEAD\ncipher for a given AuthEnvelopedData container to be a single byte long,\nallowing an attacker to brute force CMS decryption, producing an integrity\nbypass for applications that trust CMS_decrypt() to reject modified content.\n\nThe FIPS modules are not affected by this issue."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-34182",
+              "help": {
+                "text": "Vulnerability CVE-2026-34182\nSeverity: medium\nPackage: libssl3t64\nVersion: 3.0.13-0ubuntu3.9\nFix Version: 3.0.13-0ubuntu3.11\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-34182](https://ubuntu.com/security/CVE-2026-34182)",
+                "markdown": "**Vulnerability CVE-2026-34182**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssl3t64  | 3.0.13-0ubuntu3.9  | 3.0.13-0ubuntu3.11  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-34182](https://ubuntu.com/security/CVE-2026-34182)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.9?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
+                ],
+                "security-severity": "9.1"
+              }
+            },
+            {
               "id": "CVE-2026-42770-libssl3t64",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1561,27 +1582,6 @@
                   "pkg:deb/ubuntu/zlib1g@1%3A1.3.dfsg-3.1ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=zlib"
                 ],
                 "security-severity": "5.5"
-              }
-            },
-            {
-              "id": "CVE-2026-34182-libssl3t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-34182 medium vulnerability for libssl3t64 package"
-              },
-              "fullDescription": {
-                "text": "Issue Summary: Cryptographic Message Services (CMS) processing fails to perform\nsufficient input validation on the cipher and tag length fields of\nAuthEnvelopedData containers, leading to various potential compromises.\n\nImpact Summary: Attackers making use of these vulnerabilities may achieve\nkey-equivalent functionality for a given CMS recipient and/or bypass integrity\nvalidation for a given message.\n\nIn one use case, an attacker may send a CMS message containing\nAuthEnvelopedData with the cipher specified as a non-AEAD cipher.  OpenSSL\nerroneously allows this selection, and attempts to decrypt and validate the\nmessage.\n\nAn on-path attacker who captures one legitimate AES-GCM AuthEnvelopedData\naddressed to the victim can re-emit it with the recipientInfos set left\nbyte-for-byte intact, so the victim's private key still unwraps the genuine CEK\n(the content-encryption key), but with the inner OID rewritten to AES-256-OFB\n(Output Feedback Mode, an unauthenticated keystream mode) and with an\nattacker-chosen IV and ciphertext. The victim initializes AES-256-OFB under the\nreal CEK, never consults the MAC field, and CMS_decrypt() returns success.\n\nIf the application under attack responds to the attacker with any indicator\nshowing success or failure of the decryption effort, it is possible for the\nattacker to use this as an oracle to obtain key equivalent functionality for the\nCEK used for the chosen recipient of the message.\n\nIn another use case, an attacker can reduce the tag length of the chosen AEAD\ncipher for a given AuthEnvelopedData container to be a single byte long,\nallowing an attacker to brute force CMS decryption, producing an integrity\nbypass for applications that trust CMS_decrypt() to reject modified content.\n\nThe FIPS modules are not affected by this issue."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-34182",
-              "help": {
-                "text": "Vulnerability CVE-2026-34182\nSeverity: medium\nPackage: libssl3t64\nVersion: 3.0.13-0ubuntu3.9\nFix Version: 3.0.13-0ubuntu3.11\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-34182](https://ubuntu.com/security/CVE-2026-34182)",
-                "markdown": "**Vulnerability CVE-2026-34182**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssl3t64  | 3.0.13-0ubuntu3.9  | 3.0.13-0ubuntu3.11  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-34182](https://ubuntu.com/security/CVE-2026-34182)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.9?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
-                ],
-                "security-severity": "9.1"
               }
             },
             {
@@ -4939,6 +4939,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-34182-libssl3t64",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libssl3t64, version 3.0.13-0ubuntu3.9 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3t64/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/libssl3t64/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3t64:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/libssl3t64:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "b0f5e962651203d8c7addb1516834e378843c2a91f8de004b6cf15e3ff53ec87:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-42770-libssl3t64",
           "level": "note",
           "message": {
@@ -5014,45 +5053,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "d27c1e0cdc3fe703dd6cc9bf8a6e04730f3af0116eb2378f1d1b057606da727d:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-34182-libssl3t64",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libssl3t64, version 3.0.13-0ubuntu3.9 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssl3t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/libssl3t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssl3t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/libssl3t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "b0f5e962651203d8c7addb1516834e378843c2a91f8de004b6cf15e3ff53ec87:1"
           }
         },
         {
