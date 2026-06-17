@@ -1690,27 +1690,6 @@
               }
             },
             {
-              "id": "CVE-2026-34182-libssl3",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-34182 medium vulnerability for libssl3 package"
-              },
-              "fullDescription": {
-                "text": "Issue Summary: Cryptographic Message Services (CMS) processing fails to perform\nsufficient input validation on the cipher and tag length fields of\nAuthEnvelopedData containers, leading to various potential compromises.\n\nImpact Summary: Attackers making use of these vulnerabilities may achieve\nkey-equivalent functionality for a given CMS recipient and/or bypass integrity\nvalidation for a given message.\n\nIn one use case, an attacker may send a CMS message containing\nAuthEnvelopedData with the cipher specified as a non-AEAD cipher.  OpenSSL\nerroneously allows this selection, and attempts to decrypt and validate the\nmessage.\n\nAn on-path attacker who captures one legitimate AES-GCM AuthEnvelopedData\naddressed to the victim can re-emit it with the recipientInfos set left\nbyte-for-byte intact, so the victim's private key still unwraps the genuine CEK\n(the content-encryption key), but with the inner OID rewritten to AES-256-OFB\n(Output Feedback Mode, an unauthenticated keystream mode) and with an\nattacker-chosen IV and ciphertext. The victim initializes AES-256-OFB under the\nreal CEK, never consults the MAC field, and CMS_decrypt() returns success.\n\nIf the application under attack responds to the attacker with any indicator\nshowing success or failure of the decryption effort, it is possible for the\nattacker to use this as an oracle to obtain key equivalent functionality for the\nCEK used for the chosen recipient of the message.\n\nIn another use case, an attacker can reduce the tag length of the chosen AEAD\ncipher for a given AuthEnvelopedData container to be a single byte long,\nallowing an attacker to brute force CMS decryption, producing an integrity\nbypass for applications that trust CMS_decrypt() to reject modified content.\n\nThe FIPS modules are not affected by this issue."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-34182",
-              "help": {
-                "text": "Vulnerability CVE-2026-34182\nSeverity: medium\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: 3.0.2-0ubuntu1.25\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-34182](https://ubuntu.com/security/CVE-2026-34182)",
-                "markdown": "**Vulnerability CVE-2026-34182**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssl3  | 3.0.2-0ubuntu1.23  | 3.0.2-0ubuntu1.25  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-34182](https://ubuntu.com/security/CVE-2026-34182)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
-                ],
-                "security-severity": "9.1"
-              }
-            },
-            {
               "id": "CVE-2025-27587-libssl3",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1837,6 +1816,27 @@
               }
             },
             {
+              "id": "CVE-2026-34182-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-34182 medium vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "Issue Summary: Cryptographic Message Services (CMS) processing fails to perform\nsufficient input validation on the cipher and tag length fields of\nAuthEnvelopedData containers, leading to various potential compromises.\n\nImpact Summary: Attackers making use of these vulnerabilities may achieve\nkey-equivalent functionality for a given CMS recipient and/or bypass integrity\nvalidation for a given message.\n\nIn one use case, an attacker may send a CMS message containing\nAuthEnvelopedData with the cipher specified as a non-AEAD cipher.  OpenSSL\nerroneously allows this selection, and attempts to decrypt and validate the\nmessage.\n\nAn on-path attacker who captures one legitimate AES-GCM AuthEnvelopedData\naddressed to the victim can re-emit it with the recipientInfos set left\nbyte-for-byte intact, so the victim's private key still unwraps the genuine CEK\n(the content-encryption key), but with the inner OID rewritten to AES-256-OFB\n(Output Feedback Mode, an unauthenticated keystream mode) and with an\nattacker-chosen IV and ciphertext. The victim initializes AES-256-OFB under the\nreal CEK, never consults the MAC field, and CMS_decrypt() returns success.\n\nIf the application under attack responds to the attacker with any indicator\nshowing success or failure of the decryption effort, it is possible for the\nattacker to use this as an oracle to obtain key equivalent functionality for the\nCEK used for the chosen recipient of the message.\n\nIn another use case, an attacker can reduce the tag length of the chosen AEAD\ncipher for a given AuthEnvelopedData container to be a single byte long,\nallowing an attacker to brute force CMS decryption, producing an integrity\nbypass for applications that trust CMS_decrypt() to reject modified content.\n\nThe FIPS modules are not affected by this issue."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-34182",
+              "help": {
+                "text": "Vulnerability CVE-2026-34182\nSeverity: medium\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: 3.0.2-0ubuntu1.25\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-34182](https://ubuntu.com/security/CVE-2026-34182)",
+                "markdown": "**Vulnerability CVE-2026-34182**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssl3  | 3.0.2-0ubuntu1.23  | 3.0.2-0ubuntu1.25  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-34182](https://ubuntu.com/security/CVE-2026-34182)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                ],
+                "security-severity": "9.1"
+              }
+            },
+            {
               "id": "CVE-2026-42767-libssl3",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1918,6 +1918,27 @@
                   "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
                 ],
                 "security-severity": "8.1"
+              }
+            },
+            {
+              "id": "CVE-2026-42014-libgnutls30",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-42014 medium vulnerability for libgnutls30 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in GnuTLS. The `gnutls_pkcs11_token_set_pin` function, used for changing the Security Officer PIN, can lead to a use-after-free vulnerability. This occurs when an attacker attempts to change the PIN with a NULL old PIN for a token that lacks a protected authentication path."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-42014",
+              "help": {
+                "text": "Vulnerability CVE-2026-42014\nSeverity: medium\nPackage: libgnutls30\nVersion: 3.7.3-4ubuntu1.8\nFix Version: 3.7.3-4ubuntu1.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-42014](https://ubuntu.com/security/CVE-2026-42014)",
+                "markdown": "**Vulnerability CVE-2026-42014**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30  | 3.7.3-4ubuntu1.8  | 3.7.3-4ubuntu1.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-42014](https://ubuntu.com/security/CVE-2026-42014)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
+                ],
+                "security-severity": "6.6"
               }
             },
             {
@@ -2464,27 +2485,6 @@
                   "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
                 ],
                 "security-severity": "7.8"
-              }
-            },
-            {
-              "id": "CVE-2026-42014-libgnutls30",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-42014 medium vulnerability for libgnutls30 package"
-              },
-              "fullDescription": {
-                "text": "Version 3.7.3-4ubuntu1.8 is affected with an available fix in versions 3.7.3-4ubuntu1.9"
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-42014",
-              "help": {
-                "text": "Vulnerability CVE-2026-42014\nSeverity: medium\nPackage: libgnutls30\nVersion: 3.7.3-4ubuntu1.8\nFix Version: 3.7.3-4ubuntu1.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-42014](https://ubuntu.com/security/CVE-2026-42014)",
-                "markdown": "**Vulnerability CVE-2026-42014**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgnutls30  | 3.7.3-4ubuntu1.8  | 3.7.3-4ubuntu1.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-42014](https://ubuntu.com/security/CVE-2026-42014)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnutls28"
-                ],
-                "security-severity": "4.0"
               }
             }
           ]
@@ -6092,45 +6092,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-34182-libssl3",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssl3/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
-          }
-        },
-        {
           "ruleId": "CVE-2025-27587-libssl3",
           "level": "note",
           "message": {
@@ -6365,6 +6326,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-34182-libssl3",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-42767-libssl3",
           "level": "note",
           "message": {
@@ -6538,6 +6538,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-42014-libgnutls30",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libgnutls30/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libgnutls30/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libgnutls30:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libgnutls30:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d1f903b74f3bac3eddbc16c526ba304d74a0864c90717a11108408c2323d1b7f:1"
           }
         },
         {
@@ -7652,45 +7691,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "1c98596e0befd3b882477166a4a7880922e82e9371018b138e171c8a0c2a395c:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-42014-libgnutls30",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libgnutls30, version 3.7.3-4ubuntu1.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libgnutls30/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libgnutls30/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libgnutls30:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libgnutls30:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d1f903b74f3bac3eddbc16c526ba304d74a0864c90717a11108408c2323d1b7f:1"
           }
         }
       ]
