@@ -83,8 +83,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-42496",
               "help": {
-                "text": "Vulnerability CVE-2026-42496\nSeverity: medium\nPackage: perl-base\nVersion: 5.38.2-3.2ubuntu0.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-42496](https://ubuntu.com/security/CVE-2026-42496)",
-                "markdown": "**Vulnerability CVE-2026-42496**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.38.2-3.2ubuntu0.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-42496](https://ubuntu.com/security/CVE-2026-42496)  |\n"
+                "text": "Vulnerability CVE-2026-42496\nSeverity: medium\nPackage: perl-base\nVersion: 5.38.2-3.2ubuntu0.2\nFix Version: 5.38.2-3.2ubuntu0.3\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-42496](https://ubuntu.com/security/CVE-2026-42496)",
+                "markdown": "**Vulnerability CVE-2026-42496**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.38.2-3.2ubuntu0.2  | 5.38.2-3.2ubuntu0.3  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-42496](https://ubuntu.com/security/CVE-2026-42496)  |\n"
               },
               "properties": {
                 "purls": [
@@ -398,8 +398,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-8376",
               "help": {
-                "text": "Vulnerability CVE-2026-8376\nSeverity: medium\nPackage: perl-base\nVersion: 5.38.2-3.2ubuntu0.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8376](https://ubuntu.com/security/CVE-2026-8376)",
-                "markdown": "**Vulnerability CVE-2026-8376**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.38.2-3.2ubuntu0.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8376](https://ubuntu.com/security/CVE-2026-8376)  |\n"
+                "text": "Vulnerability CVE-2026-8376\nSeverity: medium\nPackage: perl-base\nVersion: 5.38.2-3.2ubuntu0.2\nFix Version: 5.38.2-3.2ubuntu0.3\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8376](https://ubuntu.com/security/CVE-2026-8376)",
+                "markdown": "**Vulnerability CVE-2026-8376**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.38.2-3.2ubuntu0.2  | 5.38.2-3.2ubuntu0.3  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8376](https://ubuntu.com/security/CVE-2026-8376)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1417,27 +1417,6 @@
               }
             },
             {
-              "id": "CVE-2026-45446-libssl3t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-45446 low vulnerability for libssl3t64 package"
-              },
-              "fullDescription": {
-                "text": "Issue summary: The implementations of AES-SIV (RFC 5297) and AES-GCM-SIV\n(RFC 8452) mishandle the authentication of AAD (Additional Authenticated\nData) with an empty ciphertext allowing a forgery of such messages.\n\nImpact summary: An attacker can forge empty messages with arbitrary AAD\nto the victim's application using these ciphers.\n\nAES-SIV (RFC 5297) and AES-GCM-SIV (RFC 8452) are nonce-misuse-resistant AEAD\nmodes: they accept a key, nonce, optional AAD (bytes that are authenticated\nbut not encrypted), and plaintext, and produces ciphertext plus a 16-byte\ntag. On decrypt, `EVP_DecryptFinal_ex()` is documented to return success only\nif the tag is verified succesfully.\n\nIn OpenSSL's provider implementation of these ciphers, the expected tag is\ncomputed only when decryption function is invoked with non-empty data.\nIf the caller supplies AAD and then calls `EVP_DecryptFinal_ex()` without\ninvocation of the ciphertext update, which can happen when the received\nciphertext length is zero, the tag is never recalculated and still holds its\nall-zeros value.\n\nWhen AES-GCM-SIV is used, an attacker who sends arbitrary AAD, empty\nciphertext, and all-zeros tag passes authentication under any key they do not\nknow, single-shot. When AES-SIV is used, for mounting the attack it's\nnecessary for the application to reuse the decryption context without\nresetting the key.\n\nAES-SIV is implemented since OpenSSL 3.0. AES-GCM-SIV is implemented since\nOpenSSL 3.2.\n\nNo protocols implemented in OpenSSL itself (TLS/CMS/PKCS7/HPKE/QUIC) support\neither AES-GCM-SIV or AES-SIV. To mount an attack, the applications must\nimplement their own protocol and use the EVP interface. Also they must skip the\nciphertext update when a message with an empty ciphertext arrives.\n\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not affected by this\nissue, as these algorithms are not FIPS approved and the affected code is\noutside the OpenSSL FIPS module boundary."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-45446",
-              "help": {
-                "text": "Vulnerability CVE-2026-45446\nSeverity: low\nPackage: libssl3t64\nVersion: 3.0.13-0ubuntu3.9\nFix Version: 3.0.13-0ubuntu3.11\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-45446](https://ubuntu.com/security/CVE-2026-45446)",
-                "markdown": "**Vulnerability CVE-2026-45446**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3t64  | 3.0.13-0ubuntu3.9  | 3.0.13-0ubuntu3.11  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-45446](https://ubuntu.com/security/CVE-2026-45446)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.9?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
-                ],
-                "security-severity": "4.8"
-              }
-            },
-            {
               "id": "CVE-2025-5278-coreutils",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -1456,6 +1435,27 @@
                   "pkg:deb/ubuntu/coreutils@9.4-3ubuntu6.2?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
                 "security-severity": "4.4"
+              }
+            },
+            {
+              "id": "CVE-2026-45446-libssl3t64",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-45446 low vulnerability for libssl3t64 package"
+              },
+              "fullDescription": {
+                "text": "Issue summary: The implementations of AES-SIV (RFC 5297) and AES-GCM-SIV\n(RFC 8452) mishandle the authentication of AAD (Additional Authenticated\nData) with an empty ciphertext allowing a forgery of such messages.\n\nImpact summary: An attacker can forge empty messages with arbitrary AAD\nto the victim's application using these ciphers.\n\nAES-SIV (RFC 5297) and AES-GCM-SIV (RFC 8452) are nonce-misuse-resistant AEAD\nmodes: they accept a key, nonce, optional AAD (bytes that are authenticated\nbut not encrypted), and plaintext, and produces ciphertext plus a 16-byte\ntag. On decrypt, `EVP_DecryptFinal_ex()` is documented to return success only\nif the tag is verified succesfully.\n\nIn OpenSSL's provider implementation of these ciphers, the expected tag is\ncomputed only when decryption function is invoked with non-empty data.\nIf the caller supplies AAD and then calls `EVP_DecryptFinal_ex()` without\ninvocation of the ciphertext update, which can happen when the received\nciphertext length is zero, the tag is never recalculated and still holds its\nall-zeros value.\n\nWhen AES-GCM-SIV is used, an attacker who sends arbitrary AAD, empty\nciphertext, and all-zeros tag passes authentication under any key they do not\nknow, single-shot. When AES-SIV is used, for mounting the attack it's\nnecessary for the application to reuse the decryption context without\nresetting the key.\n\nAES-SIV is implemented since OpenSSL 3.0. AES-GCM-SIV is implemented since\nOpenSSL 3.2.\n\nNo protocols implemented in OpenSSL itself (TLS/CMS/PKCS7/HPKE/QUIC) support\neither AES-GCM-SIV or AES-SIV. To mount an attack, the applications must\nimplement their own protocol and use the EVP interface. Also they must skip the\nciphertext update when a message with an empty ciphertext arrives.\n\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not affected by this\nissue, as these algorithms are not FIPS approved and the affected code is\noutside the OpenSSL FIPS module boundary."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-45446",
+              "help": {
+                "text": "Vulnerability CVE-2026-45446\nSeverity: low\nPackage: libssl3t64\nVersion: 3.0.13-0ubuntu3.9\nFix Version: 3.0.13-0ubuntu3.11\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-45446](https://ubuntu.com/security/CVE-2026-45446)",
+                "markdown": "**Vulnerability CVE-2026-45446**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3t64  | 3.0.13-0ubuntu3.9  | 3.0.13-0ubuntu3.11  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-45446](https://ubuntu.com/security/CVE-2026-45446)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.9?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
+                ],
+                "security-severity": "4.8"
               }
             },
             {
@@ -1624,6 +1624,27 @@
                   "pkg:deb/ubuntu/util-linux@2.39.3-9ubuntu6.5?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
                 "security-severity": "4.7"
+              }
+            },
+            {
+              "id": "CVE-2026-57062-gpgv",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-57062 medium vulnerability for gpgv package"
+              },
+              "fullDescription": {
+                "text": "CMS (Cryptographic Message Syntax) parsing in gpgsm in GnuPG through 2.5.20 mishandles the CMS format for AES-GCM because aes-ICVlen is supposed to be 12 bytes but 4 bytes is accepted. NOTE: this is related to CVE-2026-34182."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-57062",
+              "help": {
+                "text": "Vulnerability CVE-2026-57062\nSeverity: medium\nPackage: gpgv\nVersion: 2.4.4-2ubuntu17.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-57062](https://ubuntu.com/security/CVE-2026-57062)",
+                "markdown": "**Vulnerability CVE-2026-57062**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gpgv  | 2.4.4-2ubuntu17.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-57062](https://ubuntu.com/security/CVE-2026-57062)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnupg2"
+                ],
+                "security-severity": "2.9"
               }
             },
             {
@@ -5541,45 +5562,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-45446-libssl3t64",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libssl3t64, version 3.0.13-0ubuntu3.9 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssl3t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/libssl3t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssl3t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/libssl3t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "b0f5e962651203d8c7addb1516834e378843c2a91f8de004b6cf15e3ff53ec87:1"
-          }
-        },
-        {
           "ruleId": "CVE-2025-5278-coreutils",
           "level": "note",
           "message": {
@@ -5620,6 +5602,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "f019c53a0b59f11c70847b04ddd5516f889e8da8fe16a0b21a29673f6c89f6c7:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-45446-libssl3t64",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssl3t64, version 3.0.13-0ubuntu3.9 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3t64/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/libssl3t64/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3t64:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/libssl3t64:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "b0f5e962651203d8c7addb1516834e378843c2a91f8de004b6cf15e3ff53ec87:1"
           }
         },
         {
@@ -5960,6 +5981,49 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "842d71fc79f54a4237074a00a2c154dc39b07dbdbddb4ec65f570af4f9acfddb:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-57062-gpgv",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: gpgv, version 2.4.4-2ubuntu17.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/gpgv/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/gpgv/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/gpgv.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/gpgv.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "0602e32bad6cb4809b22006401a465e1606bcbf282e43a725a2d73e129575186:1"
           }
         },
         {
