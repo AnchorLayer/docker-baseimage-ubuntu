@@ -1795,6 +1795,27 @@
               }
             },
             {
+              "id": "CVE-2026-42767-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-42767 low vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "Issue summary: An attacker-controlled CMP (Certificate Management Protocol)\nserver could trigger a NULL pointer dereference in a CMP client application.\n\nImpact summary: A NULL pointer dereference causes a crash of the\napplication and a Denial of Service.\n\nAn attacker controlling a CMP server (or acting as a man-in-the-middle) could\ncraft a CMP response containing a CRMF (Certificate Request Message Format)\nCertRepMessage with an EncryptedValue structure where the symmAlg field\nhas an algorithm OID but no parameters field. When the OpenSSL CMP client\nprocesses this response, the NULL dereference occurs, causing a crash of\nthe CMP client.\n\nApplications that process untrusted CMP/CRMF messages may be affected.\n\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-42767",
+              "help": {
+                "text": "Vulnerability CVE-2026-42767\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: 3.0.2-0ubuntu1.25\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-42767](https://ubuntu.com/security/CVE-2026-42767)",
+                "markdown": "**Vulnerability CVE-2026-42767**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.23  | 3.0.2-0ubuntu1.25  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-42767](https://ubuntu.com/security/CVE-2026-42767)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                ],
+                "security-severity": "5.9"
+              }
+            },
+            {
               "id": "CVE-2018-5709-libgssapi-krb5-2",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1879,27 +1900,6 @@
               }
             },
             {
-              "id": "CVE-2026-42767-libssl3",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-42767 low vulnerability for libssl3 package"
-              },
-              "fullDescription": {
-                "text": "Issue summary: An attacker-controlled CMP (Certificate Management Protocol)\nserver could trigger a NULL pointer dereference in a CMP client application.\n\nImpact summary: A NULL pointer dereference causes a crash of the\napplication and a Denial of Service.\n\nAn attacker controlling a CMP server (or acting as a man-in-the-middle) could\ncraft a CMP response containing a CRMF (Certificate Request Message Format)\nCertRepMessage with an EncryptedValue structure where the symmAlg field\nhas an algorithm OID but no parameters field. When the OpenSSL CMP client\nprocesses this response, the NULL dereference occurs, causing a crash of\nthe CMP client.\n\nApplications that process untrusted CMP/CRMF messages may be affected.\n\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-42767",
-              "help": {
-                "text": "Vulnerability CVE-2026-42767\nSeverity: low\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: 3.0.2-0ubuntu1.25\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-42767](https://ubuntu.com/security/CVE-2026-42767)",
-                "markdown": "**Vulnerability CVE-2026-42767**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3  | 3.0.2-0ubuntu1.23  | 3.0.2-0ubuntu1.25  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-42767](https://ubuntu.com/security/CVE-2026-42767)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
-                ],
-                "security-severity": "5.9"
-              }
-            },
-            {
               "id": "CVE-2026-5435-libc-bin",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1939,27 +1939,6 @@
                   "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.13?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
                 ],
                 "security-severity": "7.3"
-              }
-            },
-            {
-              "id": "CVE-2026-11999-libssl3",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-11999 medium vulnerability for libssl3 package"
-              },
-              "fullDescription": {
-                "text": "X.509 trust-chain bypass (path-depth exhaustion) in the OpenSSL compatibility certificate verifier (wolfSSL_X509_verify_cert()). This affects only builds with --enable-opensslextra whose application calls X509_verify_cert() with caller-supplied untrusted intermediates; for those users it is critical, otherwise the library is unaffected. Native wolfSSL TLS/DTLS usage is not impacted. X509_verify_cert() returned success based only on the last verified link rather than on reaching a trust anchor: when the supplied chain is deeper than the verifier's maximum path depth (default 100), path building runs out of depth while still walking untrusted intermediates and the chain is accepted even though it never reaches a configured trust anchor, allowing acceptance of an attacker-controlled certificate. The default TLS handshake (WOLFSSL_VERIFY_PEER) is not affected; only applications doing manual or deferred verification through this API are."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-11999",
-              "help": {
-                "text": "Vulnerability CVE-2026-11999\nSeverity: medium\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-11999](https://ubuntu.com/security/CVE-2026-11999)",
-                "markdown": "**Vulnerability CVE-2026-11999**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssl3  | 3.0.2-0ubuntu1.23  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-11999](https://ubuntu.com/security/CVE-2026-11999)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
-                ],
-                "security-severity": "8.2"
               }
             },
             {
@@ -2044,6 +2023,27 @@
                   "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
                 ],
                 "security-severity": "3.7"
+              }
+            },
+            {
+              "id": "CVE-2026-11999-libssl3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-11999 medium vulnerability for libssl3 package"
+              },
+              "fullDescription": {
+                "text": "X.509 trust-chain bypass (path-depth exhaustion) in the OpenSSL compatibility certificate verifier (wolfSSL_X509_verify_cert()). This affects only builds with --enable-opensslextra whose application calls X509_verify_cert() with caller-supplied untrusted intermediates; for those users it is critical, otherwise the library is unaffected. Native wolfSSL TLS/DTLS usage is not impacted. X509_verify_cert() returned success based only on the last verified link rather than on reaching a trust anchor: when the supplied chain is deeper than the verifier's maximum path depth (default 100), path building runs out of depth while still walking untrusted intermediates and the chain is accepted even though it never reaches a configured trust anchor, allowing acceptance of an attacker-controlled certificate. The default TLS handshake (WOLFSSL_VERIFY_PEER) is not affected; only applications doing manual or deferred verification through this API are."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-11999",
+              "help": {
+                "text": "Vulnerability CVE-2026-11999\nSeverity: medium\nPackage: libssl3\nVersion: 3.0.2-0ubuntu1.23\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-11999](https://ubuntu.com/security/CVE-2026-11999)",
+                "markdown": "**Vulnerability CVE-2026-11999**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssl3  | 3.0.2-0ubuntu1.23  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-11999](https://ubuntu.com/security/CVE-2026-11999)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.23?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
+                ],
+                "security-severity": "8.2"
               }
             },
             {
@@ -7273,6 +7273,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-42767-libssl3",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
+          }
+        },
+        {
           "ruleId": "CVE-2018-5709-libgssapi-krb5-2",
           "level": "note",
           "message": {
@@ -7429,45 +7468,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-42767-libssl3",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssl3/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-5435-libc-bin",
           "level": "warning",
           "message": {
@@ -7563,45 +7563,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "ef83900d38972e962fadfcb5b24acd49c42b219d40fac2a0b082a1ff479be143:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-11999-libssl3",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssl3/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
           }
         },
         {
@@ -7730,6 +7691,45 @@
           "level": "note",
           "message": {
             "text": "A low vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:653d1802208bfa4412f9179bea39f7e785646e1bb8afb8d40a57d273b0b9bf15:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/usr/share/doc/libssl3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:8bba68e7621928237aa6d6e2c680cb9572c942ee23c2adabd22016bb67cb938d:/var/lib/dpkg/info/libssl3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c9fcff6acd05e09bac7206b7a9e47b5255496b5e65c0000b82cae74f7b2006bf:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-11999-libssl3",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libssl3, version 3.0.2-0ubuntu1.23 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
