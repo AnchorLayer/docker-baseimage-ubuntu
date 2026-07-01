@@ -73,27 +73,6 @@
               }
             },
             {
-              "id": "CVE-2026-42496-perl-base",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-42496 medium vulnerability for perl-base package"
-              },
-              "fullDescription": {
-                "text": "Archive::Tar versions before 3.08 for Perl extract symlinks with attacker controlled targets outside the extraction directory.\n\n_make_special_file() passes the tar header's linkname to symlink() without validating it against absolute paths or .. segments. The secure-extract mode check that guards regular file extraction does not cover the symlink target.\n\nA subsequent open through the extracted name reads or writes the attacker chosen path."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-42496",
-              "help": {
-                "text": "Vulnerability CVE-2026-42496\nSeverity: medium\nPackage: perl-base\nVersion: 5.38.2-3.2ubuntu0.2\nFix Version: 5.38.2-3.2ubuntu0.3\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-42496](https://ubuntu.com/security/CVE-2026-42496)",
-                "markdown": "**Vulnerability CVE-2026-42496**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.38.2-3.2ubuntu0.2  | 5.38.2-3.2ubuntu0.3  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-42496](https://ubuntu.com/security/CVE-2026-42496)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=perl"
-                ],
-                "security-severity": "9.1"
-              }
-            },
-            {
               "id": "CVE-2026-40355-libgssapi-krb5-2",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -364,6 +343,27 @@
                   "pkg:deb/ubuntu/tar@1.35%2Bdfsg-3build1?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
                 "security-severity": "5.5"
+              }
+            },
+            {
+              "id": "CVE-2026-42496-perl-base",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-42496 medium vulnerability for perl-base package"
+              },
+              "fullDescription": {
+                "text": "Archive::Tar versions before 3.08 for Perl extract symlinks with attacker controlled targets outside the extraction directory.\n\n_make_special_file() passes the tar header's linkname to symlink() without validating it against absolute paths or .. segments. The secure-extract mode check that guards regular file extraction does not cover the symlink target.\n\nA subsequent open through the extracted name reads or writes the attacker chosen path."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-42496",
+              "help": {
+                "text": "Vulnerability CVE-2026-42496\nSeverity: medium\nPackage: perl-base\nVersion: 5.38.2-3.2ubuntu0.2\nFix Version: 5.38.2-3.2ubuntu0.3\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-42496](https://ubuntu.com/security/CVE-2026-42496)",
+                "markdown": "**Vulnerability CVE-2026-42496**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.38.2-3.2ubuntu0.2  | 5.38.2-3.2ubuntu0.3  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-42496](https://ubuntu.com/security/CVE-2026-42496)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=perl"
+                ],
+                "security-severity": "9.1"
               }
             },
             {
@@ -724,27 +724,6 @@
               }
             },
             {
-              "id": "CVE-2026-48962-perl-base",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-48962 medium vulnerability for perl-base package"
-              },
-              "fullDescription": {
-                "text": "IO::Compress versions before 2.220 for Perl can execute arbitrary code in File::GlobMapper via an attacker-controlled output glob.\n\n_parseOutputGlob() wraps the caller-supplied output glob string in double quotes and stores it in the parser state; _getFiles() then runs the stored expression through eval STRING. A literal double quote in the output glob closes the dquote wrapper, and the characters that follow are evaluated as Perl.\n\nArbitrary Perl in the output glob executes at the calling process's privilege."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-48962",
-              "help": {
-                "text": "Vulnerability CVE-2026-48962\nSeverity: medium\nPackage: perl-base\nVersion: 5.38.2-3.2ubuntu0.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-48962](https://ubuntu.com/security/CVE-2026-48962)",
-                "markdown": "**Vulnerability CVE-2026-48962**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.38.2-3.2ubuntu0.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-48962](https://ubuntu.com/security/CVE-2026-48962)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=perl"
-                ],
-                "security-severity": "7.3"
-              }
-            },
-            {
               "id": "CVE-2026-4437-libc-bin",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -784,6 +763,27 @@
                   "pkg:deb/ubuntu/libc6@2.39-0ubuntu8.7?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=glibc"
                 ],
                 "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2026-48962-perl-base",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-48962 medium vulnerability for perl-base package"
+              },
+              "fullDescription": {
+                "text": "IO::Compress versions before 2.220 for Perl can execute arbitrary code in File::GlobMapper via an attacker-controlled output glob.\n\n_parseOutputGlob() wraps the caller-supplied output glob string in double quotes and stores it in the parser state; _getFiles() then runs the stored expression through eval STRING. A literal double quote in the output glob closes the dquote wrapper, and the characters that follow are evaluated as Perl.\n\nArbitrary Perl in the output glob executes at the calling process's privilege."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-48962",
+              "help": {
+                "text": "Vulnerability CVE-2026-48962\nSeverity: medium\nPackage: perl-base\nVersion: 5.38.2-3.2ubuntu0.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-48962](https://ubuntu.com/security/CVE-2026-48962)",
+                "markdown": "**Vulnerability CVE-2026-48962**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.38.2-3.2ubuntu0.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-48962](https://ubuntu.com/security/CVE-2026-48962)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.2?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=perl"
+                ],
+                "security-severity": "7.8"
               }
             },
             {
@@ -1249,6 +1249,27 @@
               }
             },
             {
+              "id": "CVE-2026-58055-libnghttp2-14",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-58055 medium vulnerability for libnghttp2-14 package"
+              },
+              "fullDescription": {
+                "text": "nghttp2's nghttpx proxy through 1.69.0 forwards an HTTP/1.1 Upgrade request that also carries a Content-Length header and body onto reusable keep-alive backend connections, re-adding the Upgrade and Connection headers while passing Content-Length verbatim. A backend that resolves the resulting ambiguous message in the attacker's favor enables HTTP request/response smuggling and cross-client response-queue poisoning."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-58055",
+              "help": {
+                "text": "Vulnerability CVE-2026-58055\nSeverity: medium\nPackage: libnghttp2-14\nVersion: 1.59.0-1ubuntu0.3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-58055](https://ubuntu.com/security/CVE-2026-58055)",
+                "markdown": "**Vulnerability CVE-2026-58055**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libnghttp2-14  | 1.59.0-1ubuntu0.3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-58055](https://ubuntu.com/security/CVE-2026-58055)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libnghttp2-14@1.59.0-1ubuntu0.3?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=nghttp2"
+                ],
+                "security-severity": "6.3"
+              }
+            },
+            {
               "id": "CVE-2026-5435-libc-bin",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1393,27 +1414,6 @@
                   "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.9?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
                 ],
                 "security-severity": "3.7"
-              }
-            },
-            {
-              "id": "CVE-2026-11999-libssl3t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-11999 medium vulnerability for libssl3t64 package"
-              },
-              "fullDescription": {
-                "text": "X.509 trust-chain bypass (path-depth exhaustion) in the OpenSSL compatibility certificate verifier (wolfSSL_X509_verify_cert()). This affects only builds with --enable-opensslextra whose application calls X509_verify_cert() with caller-supplied untrusted intermediates; for those users it is critical, otherwise the library is unaffected. Native wolfSSL TLS/DTLS usage is not impacted. X509_verify_cert() returned success based only on the last verified link rather than on reaching a trust anchor: when the supplied chain is deeper than the verifier's maximum path depth (default 100), path building runs out of depth while still walking untrusted intermediates and the chain is accepted even though it never reaches a configured trust anchor, allowing acceptance of an attacker-controlled certificate. The default TLS handshake (WOLFSSL_VERIFY_PEER) is not affected; only applications doing manual or deferred verification through this API are."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-11999",
-              "help": {
-                "text": "Vulnerability CVE-2026-11999\nSeverity: medium\nPackage: libssl3t64\nVersion: 3.0.13-0ubuntu3.9\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-11999](https://ubuntu.com/security/CVE-2026-11999)",
-                "markdown": "**Vulnerability CVE-2026-11999**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssl3t64  | 3.0.13-0ubuntu3.9  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-11999](https://ubuntu.com/security/CVE-2026-11999)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.9?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
-                ],
-                "security-severity": "8.2"
               }
             },
             {
@@ -1648,27 +1648,6 @@
               }
             },
             {
-              "id": "CVE-2026-57062-gpgv",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-57062 medium vulnerability for gpgv package"
-              },
-              "fullDescription": {
-                "text": "CMS (Cryptographic Message Syntax) parsing in gpgsm in GnuPG through 2.5.20 mishandles the CMS format for AES-GCM because aes-ICVlen is supposed to be 12 bytes but 4 bytes is accepted. NOTE: this is related to CVE-2026-34182."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-57062",
-              "help": {
-                "text": "Vulnerability CVE-2026-57062\nSeverity: medium\nPackage: gpgv\nVersion: 2.4.4-2ubuntu17.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-57062](https://ubuntu.com/security/CVE-2026-57062)",
-                "markdown": "**Vulnerability CVE-2026-57062**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gpgv  | 2.4.4-2ubuntu17.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-57062](https://ubuntu.com/security/CVE-2026-57062)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnupg2"
-                ],
-                "security-severity": "2.9"
-              }
-            },
-            {
               "id": "CVE-2026-40228-libsystemd0",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1858,6 +1837,27 @@
               }
             },
             {
+              "id": "CVE-2026-57062-gpgv",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-57062 low vulnerability for gpgv package"
+              },
+              "fullDescription": {
+                "text": "CMS (Cryptographic Message Syntax) parsing in gpgsm in GnuPG through 2.5.20 mishandles the CMS format for AES-GCM because aes-ICVlen is supposed to be 12 bytes but 4 bytes is accepted. NOTE: this is related to CVE-2026-34182."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-57062",
+              "help": {
+                "text": "Vulnerability CVE-2026-57062\nSeverity: low\nPackage: gpgv\nVersion: 2.4.4-2ubuntu17.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-57062](https://ubuntu.com/security/CVE-2026-57062)",
+                "markdown": "**Vulnerability CVE-2026-57062**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | gpgv  | 2.4.4-2ubuntu17.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-57062](https://ubuntu.com/security/CVE-2026-57062)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnupg2"
+                ],
+                "security-severity": "2.9"
+              }
+            },
+            {
               "id": "CVE-2026-53612-bsdutils",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1954,6 +1954,27 @@
               "help": {
                 "text": "Vulnerability CVE-2026-11856\nSeverity: medium\nPackage: curl\nVersion: 8.5.0-2ubuntu10.9\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)",
                 "markdown": "**Vulnerability CVE-2026-11856**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 8.5.0-2ubuntu10.9  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.9?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "4.0"
+              }
+            },
+            {
+              "id": "CVE-2026-8925-curl",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-8925 medium vulnerability for curl package"
+              },
+              "fullDescription": {
+                "text": "Version 8.5.0-2ubuntu10.9 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-8925",
+              "help": {
+                "text": "Vulnerability CVE-2026-8925\nSeverity: medium\nPackage: curl\nVersion: 8.5.0-2ubuntu10.9\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8925](https://ubuntu.com/security/CVE-2026-8925)",
+                "markdown": "**Vulnerability CVE-2026-8925**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 8.5.0-2ubuntu10.9  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8925](https://ubuntu.com/security/CVE-2026-8925)  |\n"
               },
               "properties": {
                 "purls": [
@@ -2080,6 +2101,27 @@
               "help": {
                 "text": "Vulnerability CVE-2026-11856\nSeverity: medium\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.9\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)",
                 "markdown": "**Vulnerability CVE-2026-11856**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4t64  | 8.5.0-2ubuntu10.9  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.9?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
+                ],
+                "security-severity": "4.0"
+              }
+            },
+            {
+              "id": "CVE-2026-8925-libcurl4t64",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-8925 medium vulnerability for libcurl4t64 package"
+              },
+              "fullDescription": {
+                "text": "Version 8.5.0-2ubuntu10.9 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-8925",
+              "help": {
+                "text": "Vulnerability CVE-2026-8925\nSeverity: medium\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.9\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8925](https://ubuntu.com/security/CVE-2026-8925)",
+                "markdown": "**Vulnerability CVE-2026-8925**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4t64  | 8.5.0-2ubuntu10.9  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8925](https://ubuntu.com/security/CVE-2026-8925)  |\n"
               },
               "properties": {
                 "purls": [
@@ -2945,65 +2987,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-42496-perl-base",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: perl-base, version 5.38.2-3.2ubuntu0.2 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/perl-base/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/perl-base/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.postrm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.preinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d3bb6a1b99c4b4746a4d2b910490d5309489bc88d04be98f333d7ea55acbdbb8:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-40355-libgssapi-krb5-2",
           "level": "warning",
           "message": {
@@ -3572,6 +3555,65 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "448872803634e3b1d0feab52698d85d4b41dc0210fd5b015cf4222db9e1adbb3:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-42496-perl-base",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: perl-base, version 5.38.2-3.2ubuntu0.2 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/perl-base/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/perl-base/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.preinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d3bb6a1b99c4b4746a4d2b910490d5309489bc88d04be98f333d7ea55acbdbb8:1"
           }
         },
         {
@@ -4422,65 +4464,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-48962-perl-base",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: perl-base, version 5.38.2-3.2ubuntu0.2 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/perl-base/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/perl-base/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.postrm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.preinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d3bb6a1b99c4b4746a4d2b910490d5309489bc88d04be98f333d7ea55acbdbb8:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-4437-libc-bin",
           "level": "warning",
           "message": {
@@ -4576,6 +4559,65 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "42a254a0ff30fbe0b6067799ba5df4b5c259924a10f0ab683d76ccf4b54e753c:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-48962-perl-base",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: perl-base, version 5.38.2-3.2ubuntu0.2 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/perl-base/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/perl-base/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.preinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/perl-base.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d3bb6a1b99c4b4746a4d2b910490d5309489bc88d04be98f333d7ea55acbdbb8:1"
           }
         },
         {
@@ -5585,6 +5627,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-58055-libnghttp2-14",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libnghttp2-14, version 1.59.0-1ubuntu0.3 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libnghttp2-14/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/usr/share/doc/libnghttp2-14/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libnghttp2-14:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/info/libnghttp2-14:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "1e8acae2c0e2003532f2389b554127c62d4e52dc1c4658986e52c6908e72383f:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-5435-libc-bin",
           "level": "warning",
           "message": {
@@ -5867,45 +5948,6 @@
           "level": "note",
           "message": {
             "text": "A low vulnerability in deb package: libssl3t64, version 3.0.13-0ubuntu3.9 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssl3t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/libssl3t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssl3t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/libssl3t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "b0f5e962651203d8c7addb1516834e378843c2a91f8de004b6cf15e3ff53ec87:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-11999-libssl3t64",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libssl3t64, version 3.0.13-0ubuntu3.9 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -6422,49 +6464,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-57062-gpgv",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: gpgv, version 2.4.4-2ubuntu17.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/gpgv/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/gpgv/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/gpgv.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gpgv.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/gpgv.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "0602e32bad6cb4809b22006401a465e1606bcbf282e43a725a2d73e129575186:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-40228-libsystemd0",
           "level": "note",
           "message": {
@@ -6828,6 +6827,49 @@
           }
         },
         {
+          "ruleId": "CVE-2026-57062-gpgv",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: gpgv, version 2.4.4-2ubuntu17.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/gpgv/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/usr/share/doc/gpgv/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/gpgv.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:98effb2dfe85d4c431f97d90482075f19e5fc3a57c2dd423d8bdfd4813620043:/var/lib/dpkg/info/gpgv.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "0602e32bad6cb4809b22006401a465e1606bcbf282e43a725a2d73e129575186:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-53612-bsdutils",
           "level": "warning",
           "message": {
@@ -7001,6 +7043,49 @@
         },
         {
           "ruleId": "CVE-2026-11856-curl",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: curl, version 8.5.0-2ubuntu10.9 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/curl/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/usr/share/doc/curl/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/info/curl.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/info/curl.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c94af31b3bdf27974b88de5fc0e25911405cab53f2c3838f57a22b9797bca23e:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-8925-curl",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: curl, version 8.5.0-2ubuntu10.9 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
@@ -7243,6 +7328,45 @@
         },
         {
           "ruleId": "CVE-2026-11856-libcurl4t64",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.9 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libcurl4t64/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/usr/share/doc/libcurl4t64/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:31961b485bfec00cf3b70c4acc1903c1562d2e01e92ecf590a9d5ac943a95b39:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "be19eb3968a5f81513d694822ea0b42eaf7a2a5cf7c43919e199f8e31f06e6ce:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-8925-libcurl4t64",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.9 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
