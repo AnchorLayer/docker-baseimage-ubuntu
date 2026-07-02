@@ -1165,6 +1165,69 @@
               }
             },
             {
+              "id": "CVE-2026-41992-gzip",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-41992 medium vulnerability for gzip package"
+              },
+              "fullDescription": {
+                "text": "GNU gzip contains a global buffer overflow vulnerability in the LZH decompression logic caused by improper reuse of shared global state between different decompression formats within a single execution. GNU gzip maintains a global array that is shared across the LZ77, LZW, and LZH decompression routines and is not reinitialized between files processed in the same invocation.\nBy decompressing a specially crafted LZW file followed by a specially crafted LZH file in a single gzip -d command, an attacker can poison the shared global state and subsequently trigger an out‑of‑bounds read in the LZH decoder. The LZH decompression logic follows stale values left in the shared array, causing reads past the end of the allocated global buffer.\n\nThis issue has been fixed in the commit 63dbf6b3b9e6e781df1a6a64e609b10e23969681"
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-41992",
+              "help": {
+                "text": "Vulnerability CVE-2026-41992\nSeverity: medium\nPackage: gzip\nVersion: 1.12-1ubuntu3.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-41992](https://ubuntu.com/security/CVE-2026-41992)",
+                "markdown": "**Vulnerability CVE-2026-41992**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gzip  | 1.12-1ubuntu3.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-41992](https://ubuntu.com/security/CVE-2026-41992)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gzip@1.12-1ubuntu3.1?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2026-54371-libattr1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-54371 medium vulnerability for libattr1 package"
+              },
+              "fullDescription": {
+                "text": "attr before version 2.6.0 contains a symlink traversal vulnerability in the getfattr and setfattr utilities that allows local attackers to escalate privileges by replacing a pathname component with a symbolic link during directory hierarchy traversal. Attackers who control a pathname component can redirect getfattr and setfattr operations to arbitrary files by substituting a symlink, leading to local privilege escalation when getfattr or setfattr is invoked by a privileged process over an attacker-controlled path."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-54371",
+              "help": {
+                "text": "Vulnerability CVE-2026-54371\nSeverity: medium\nPackage: libattr1\nVersion: 1:2.5.2-1build1.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-54371](https://ubuntu.com/security/CVE-2026-54371)",
+                "markdown": "**Vulnerability CVE-2026-54371**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libattr1  | 1:2.5.2-1build1.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-54371](https://ubuntu.com/security/CVE-2026-54371)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libattr1@1%3A2.5.2-1build1.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=attr"
+                ],
+                "security-severity": "8.4"
+              }
+            },
+            {
+              "id": "CVE-2026-54369-libacl1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-54369 medium vulnerability for libacl1 package"
+              },
+              "fullDescription": {
+                "text": "acl before version 2.4.0 contains a symlink traversal vulnerability in the libacl pathname-based functions acl_get_file(), acl_set_file(), acl_extended_file(), and acl_delete_def_file() that allows local attackers to escalate privileges by replacing any pathname component with a symbolic link. Attackers who control any component of a pathname processed by a privileged caller can redirect ACL read or write operations to arbitrary files or directories, enabling unauthorized manipulation of access control lists and local privilege escalation."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-54369",
+              "help": {
+                "text": "Vulnerability CVE-2026-54369\nSeverity: medium\nPackage: libacl1\nVersion: 2.3.2-1build1.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)",
+                "markdown": "**Vulnerability CVE-2026-54369**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libacl1  | 2.3.2-1build1.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libacl1@2.3.2-1build1.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=acl"
+                ],
+                "security-severity": "8.4"
+              }
+            },
+            {
               "id": "CVE-2025-5278-coreutils",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -1183,6 +1246,153 @@
                   "pkg:deb/ubuntu/coreutils@9.4-3ubuntu6.2?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
                 "security-severity": "4.4"
+              }
+            },
+            {
+              "id": "CVE-2026-13595-bsdutils",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13595 medium vulnerability for bsdutils package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
+              "help": {
+                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: bsdutils\nVersion: 1:2.39.3-9ubuntu6.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
+                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | bsdutils  | 1:2.39.3-9ubuntu6.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/bsdutils@1%3A2.39.3-9ubuntu6.5?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=util-linux%402.39.3-9ubuntu6.5"
+                ],
+                "security-severity": "6.8"
+              }
+            },
+            {
+              "id": "CVE-2026-13595-libblkid1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13595 medium vulnerability for libblkid1 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
+              "help": {
+                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: libblkid1\nVersion: 2.39.3-9ubuntu6.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
+                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libblkid1  | 2.39.3-9ubuntu6.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libblkid1@2.39.3-9ubuntu6.5?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=util-linux"
+                ],
+                "security-severity": "6.8"
+              }
+            },
+            {
+              "id": "CVE-2026-13595-libmount1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13595 medium vulnerability for libmount1 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
+              "help": {
+                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: libmount1\nVersion: 2.39.3-9ubuntu6.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
+                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libmount1  | 2.39.3-9ubuntu6.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libmount1@2.39.3-9ubuntu6.5?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=util-linux"
+                ],
+                "security-severity": "6.8"
+              }
+            },
+            {
+              "id": "CVE-2026-13595-libsmartcols1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13595 medium vulnerability for libsmartcols1 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
+              "help": {
+                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: libsmartcols1\nVersion: 2.39.3-9ubuntu6.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
+                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsmartcols1  | 2.39.3-9ubuntu6.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libsmartcols1@2.39.3-9ubuntu6.5?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=util-linux"
+                ],
+                "security-severity": "6.8"
+              }
+            },
+            {
+              "id": "CVE-2026-13595-libuuid1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13595 medium vulnerability for libuuid1 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
+              "help": {
+                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: libuuid1\nVersion: 2.39.3-9ubuntu6.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
+                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libuuid1  | 2.39.3-9ubuntu6.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libuuid1@2.39.3-9ubuntu6.5?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=util-linux"
+                ],
+                "security-severity": "6.8"
+              }
+            },
+            {
+              "id": "CVE-2026-13595-mount",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13595 medium vulnerability for mount package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
+              "help": {
+                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: mount\nVersion: 2.39.3-9ubuntu6.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
+                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | mount  | 2.39.3-9ubuntu6.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/mount@2.39.3-9ubuntu6.5?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=util-linux"
+                ],
+                "security-severity": "6.8"
+              }
+            },
+            {
+              "id": "CVE-2026-13595-util-linux",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13595 medium vulnerability for util-linux package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
+              "help": {
+                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: util-linux\nVersion: 2.39.3-9ubuntu6.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
+                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | util-linux  | 2.39.3-9ubuntu6.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/util-linux@2.39.3-9ubuntu6.5?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "6.8"
               }
             },
             {
@@ -1225,6 +1435,27 @@
                   "pkg:deb/ubuntu/zlib1g@1%3A1.3.dfsg-3.1ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=zlib"
                 ],
                 "security-severity": "5.5"
+              }
+            },
+            {
+              "id": "CVE-2026-13757-libp11-kit0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13757 medium vulnerability for libp11-kit0 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in p11-kit. The RPC message attribute parsing functions p11_rpc_message_get_attribute() and p11_rpc_message_get_attribute_array_value() form a mutually-recursive call chain with no recursion depth limit when processing nested CKA_WRAP_TEMPLATE, CKA_UNWRAP_TEMPLATE, and CKA_DERIVE_TEMPLATE attributes. An unauthenticated attacker with local access to the p11-kit RPC Unix domain socket can send a specially crafted request with deeply nested template attributes, causing stack exhaustion and crashing the p11-kit server process and its dependent services."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13757",
+              "help": {
+                "text": "Vulnerability CVE-2026-13757\nSeverity: medium\nPackage: libp11-kit0\nVersion: 0.25.3-4ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-13757](https://ubuntu.com/security/CVE-2026-13757)",
+                "markdown": "**Vulnerability CVE-2026-13757**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libp11-kit0  | 0.25.3-4ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-13757](https://ubuntu.com/security/CVE-2026-13757)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libp11-kit0@0.25.3-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=p11-kit"
+                ],
+                "security-severity": "6.2"
               }
             },
             {
@@ -1375,6 +1606,27 @@
               }
             },
             {
+              "id": "CVE-2026-41991-gzip",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-41991 medium vulnerability for gzip package"
+              },
+              "fullDescription": {
+                "text": "GNU gzip contains a vulnerability in the gzexe utility related to insecure temporary file handling. When the mktemp utility is not available in the user’s PATH, gzexe falls back to constructing a temporary file path based solely on the process ID (PID). This predictable filename is created without exclusive access or existence checks.\nA local attacker can pre‑create the predicted temporary file path as a symbolic link pointing to an arbitrary file writable by the victim. When gzexe runs, it follows the symlink and overwrites the target file, resulting in a time‑of‑check to time‑of‑use (TOCTOU) condition that allows arbitrary file overwrite.\n\nThis issue has been fixed in the commit 4e6f8b24ab823146ab8776f0b7fe486ab34d4269"
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-41991",
+              "help": {
+                "text": "Vulnerability CVE-2026-41991\nSeverity: medium\nPackage: gzip\nVersion: 1.12-1ubuntu3.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-41991](https://ubuntu.com/security/CVE-2026-41991)",
+                "markdown": "**Vulnerability CVE-2026-41991**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gzip  | 1.12-1ubuntu3.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-41991](https://ubuntu.com/security/CVE-2026-41991)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gzip@1.12-1ubuntu3.1?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "4.7"
+              }
+            },
+            {
               "id": "CVE-2026-40228-libsystemd0",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1498,6 +1750,27 @@
                   "pkg:deb/ubuntu/ncurses-bin@6.4%2B20240113-1ubuntu2?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=ncurses"
                 ],
                 "security-severity": "4.8"
+              }
+            },
+            {
+              "id": "CVE-2026-54370-libacl1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-54370 medium vulnerability for libacl1 package"
+              },
+              "fullDescription": {
+                "text": "acl before version 2.4.0 contains a time-of-check to time-of-use (TOCTOU) race condition vulnerability that allows local attackers to escalate privileges by replacing a pathname component with a symbolic link between an lstat() check and subsequent symlink-following operations such as stat(), chown(), chmod(), acl_get_file(), and acl_set_file(). Attackers who control a pathname component can redirect file access control list operations to arbitrary files when getfacl, setfacl, or chacl is invoked by a privileged process over an attacker-controlled path, resulting in local privilege escalation."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-54370",
+              "help": {
+                "text": "Vulnerability CVE-2026-54370\nSeverity: medium\nPackage: libacl1\nVersion: 2.3.2-1build1.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-54370](https://ubuntu.com/security/CVE-2026-54370)",
+                "markdown": "**Vulnerability CVE-2026-54370**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libacl1  | 2.3.2-1build1.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-54370](https://ubuntu.com/security/CVE-2026-54370)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libacl1@2.3.2-1build1.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=acl"
+                ],
+                "security-severity": "7.2"
               }
             },
             {
@@ -5148,6 +5421,139 @@
           }
         },
         {
+          "ruleId": "CVE-2026-41992-gzip",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: gzip, version 1.12-1ubuntu3.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/gzip/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/gzip/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gzip.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gzip.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gzip.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gzip.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.preinst"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "3f58d3dd1f41cd4c29dda3a2e327048b03f016439ca354d5e21c9ae930693a26:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-54371-libattr1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libattr1, version 1:2.5.2-1build1.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libattr1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libattr1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libattr1:amd64.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libattr1:amd64.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libattr1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libattr1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "b3beb64e3fead96a6ab0c9d4adbfad1cb0352a2d5e91d840e32f2fe98de77c5b:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-54369-libacl1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libacl1, version 2.3.2-1build1.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libacl1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libacl1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libacl1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libacl1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "4e5cdb291c0422da66902644ce641a7f5ec733c6f5c883d0e608957538ec376a:1"
+          }
+        },
+        {
           "ruleId": "CVE-2025-5278-coreutils",
           "level": "note",
           "message": {
@@ -5188,6 +5594,307 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "f019c53a0b59f11c70847b04ddd5516f889e8da8fe16a0b21a29673f6c89f6c7:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13595-bsdutils",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: bsdutils, version 1:2.39.3-9ubuntu6.5 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/bsdutils/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/bsdutils/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/bsdutils.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/bsdutils.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/bsdutils.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/bsdutils.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "52be23ebdaea02950c5795005e845814aa8ce6d9394aac04c4417d37abff81f6:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13595-libblkid1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libblkid1, version 2.39.3-9ubuntu6.5 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libblkid1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libblkid1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libblkid1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libblkid1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "5fbc692253849acfe1b3f174ab3f5b0f871d9016578dcf4bcbe5379204ad238f:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13595-libmount1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libmount1, version 2.39.3-9ubuntu6.5 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libmount1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libmount1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libmount1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libmount1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "372012e15f42a8c1ac14a68c3ccd10996d89548344c691384a4cf02c857a238a:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13595-libsmartcols1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libsmartcols1, version 2.39.3-9ubuntu6.5 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libsmartcols1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libsmartcols1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libsmartcols1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libsmartcols1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "7436dd4c610aff7597c1039590729a748e107410b9367ded1b7ee528cd45f381:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13595-libuuid1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libuuid1, version 2.39.3-9ubuntu6.5 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libuuid1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libuuid1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libuuid1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libuuid1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "f0d1931efcb79bb480ebeb8ea805efe0da00aba10e210fb123b59cf42867b790:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13595-mount",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: mount, version 2.39.3-9ubuntu6.5 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/mount/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/mount/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/mount.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/mount.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/mount.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/mount.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "f9ef0ccfb71d4ab9c32e60af45d32b46231952c4fd2a1434973dc7adef9b6ffc:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13595-util-linux",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: util-linux, version 2.39.3-9ubuntu6.5 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/util-linux/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/util-linux/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/util-linux.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/util-linux.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/util-linux.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/util-linux.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/util-linux.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/util-linux.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/util-linux.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/util-linux.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/util-linux.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/util-linux.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/util-linux.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/util-linux.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "842d71fc79f54a4237074a00a2c154dc39b07dbdbddb4ec65f570af4f9acfddb:1"
           }
         },
         {
@@ -5286,6 +5993,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "d27c1e0cdc3fe703dd6cc9bf8a6e04730f3af0116eb2378f1d1b057606da727d:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13757-libp11-kit0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libp11-kit0, version 0.25.3-4ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libp11-kit0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libp11-kit0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libp11-kit0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libp11-kit0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "ddbabe5434b5d76e516375bee3f2d9c586ac6ac85fb9644b536a1d48d2e507d0:1"
           }
         },
         {
@@ -5590,6 +6336,57 @@
           }
         },
         {
+          "ruleId": "CVE-2026-41991-gzip",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: gzip, version 1.12-1ubuntu3.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/gzip/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/gzip/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gzip.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gzip.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gzip.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gzip.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.preinst"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "3f58d3dd1f41cd4c29dda3a2e327048b03f016439ca354d5e21c9ae930693a26:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-40228-libsystemd0",
           "level": "note",
           "message": {
@@ -5833,6 +6630,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "eff31827b40e2d7c8bb77abcc22549860f0b00af9c1feb42510b9d77b67159fc:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-54370-libacl1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libacl1, version 2.3.2-1build1.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libacl1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libacl1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libacl1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libacl1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "4e5cdb291c0422da66902644ce641a7f5ec733c6f5c883d0e608957538ec376a:1"
           }
         },
         {
