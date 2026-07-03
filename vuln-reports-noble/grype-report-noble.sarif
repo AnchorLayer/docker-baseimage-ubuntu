@@ -577,6 +577,27 @@
               }
             },
             {
+              "id": "CVE-2026-41992-gzip",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-41992 medium vulnerability for gzip package"
+              },
+              "fullDescription": {
+                "text": "GNU gzip contains a global buffer overflow vulnerability in the LZH decompression logic caused by improper reuse of shared global state between different decompression formats within a single execution. GNU gzip maintains a global array that is shared across the LZ77, LZW, and LZH decompression routines and is not reinitialized between files processed in the same invocation.\nBy decompressing a specially crafted LZW file followed by a specially crafted LZH file in a single gzip -d command, an attacker can poison the shared global state and subsequently trigger an out‑of‑bounds read in the LZH decoder. The LZH decompression logic follows stale values left in the shared array, causing reads past the end of the allocated global buffer.\n\nThis issue has been fixed in the commit 63dbf6b3b9e6e781df1a6a64e609b10e23969681"
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-41992",
+              "help": {
+                "text": "Vulnerability CVE-2026-41992\nSeverity: medium\nPackage: gzip\nVersion: 1.12-1ubuntu3.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-41992](https://ubuntu.com/security/CVE-2026-41992)",
+                "markdown": "**Vulnerability CVE-2026-41992**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gzip  | 1.12-1ubuntu3.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-41992](https://ubuntu.com/security/CVE-2026-41992)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gzip@1.12-1ubuntu3.1?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
               "id": "CVE-2026-4437-libc-bin",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1165,24 +1186,24 @@
               }
             },
             {
-              "id": "CVE-2026-41992-gzip",
-              "name": "DpkgMatcherExactDirectMatch",
+              "id": "CVE-2026-54369-libacl1",
+              "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-41992 medium vulnerability for gzip package"
+                "text": "CVE-2026-54369 medium vulnerability for libacl1 package"
               },
               "fullDescription": {
-                "text": "GNU gzip contains a global buffer overflow vulnerability in the LZH decompression logic caused by improper reuse of shared global state between different decompression formats within a single execution. GNU gzip maintains a global array that is shared across the LZ77, LZW, and LZH decompression routines and is not reinitialized between files processed in the same invocation.\nBy decompressing a specially crafted LZW file followed by a specially crafted LZH file in a single gzip -d command, an attacker can poison the shared global state and subsequently trigger an out‑of‑bounds read in the LZH decoder. The LZH decompression logic follows stale values left in the shared array, causing reads past the end of the allocated global buffer.\n\nThis issue has been fixed in the commit 63dbf6b3b9e6e781df1a6a64e609b10e23969681"
+                "text": "acl before version 2.4.0 contains a symlink traversal vulnerability in the libacl pathname-based functions acl_get_file(), acl_set_file(), acl_extended_file(), and acl_delete_def_file() that allows local attackers to escalate privileges by replacing any pathname component with a symbolic link. Attackers who control any component of a pathname processed by a privileged caller can redirect ACL read or write operations to arbitrary files or directories, enabling unauthorized manipulation of access control lists and local privilege escalation."
               },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-41992",
+              "helpUri": "https://ubuntu.com/security/CVE-2026-54369",
               "help": {
-                "text": "Vulnerability CVE-2026-41992\nSeverity: medium\nPackage: gzip\nVersion: 1.12-1ubuntu3.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-41992](https://ubuntu.com/security/CVE-2026-41992)",
-                "markdown": "**Vulnerability CVE-2026-41992**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gzip  | 1.12-1ubuntu3.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-41992](https://ubuntu.com/security/CVE-2026-41992)  |\n"
+                "text": "Vulnerability CVE-2026-54369\nSeverity: medium\nPackage: libacl1\nVersion: 2.3.2-1build1.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)",
+                "markdown": "**Vulnerability CVE-2026-54369**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libacl1  | 2.3.2-1build1.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/gzip@1.12-1ubuntu3.1?arch=amd64\u0026distro=ubuntu-24.04"
+                  "pkg:deb/ubuntu/libacl1@2.3.2-1build1.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=acl"
                 ],
-                "security-severity": "7.5"
+                "security-severity": "8.4"
               }
             },
             {
@@ -1202,27 +1223,6 @@
               "properties": {
                 "purls": [
                   "pkg:deb/ubuntu/libattr1@1%3A2.5.2-1build1.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=attr"
-                ],
-                "security-severity": "8.4"
-              }
-            },
-            {
-              "id": "CVE-2026-54369-libacl1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-54369 medium vulnerability for libacl1 package"
-              },
-              "fullDescription": {
-                "text": "acl before version 2.4.0 contains a symlink traversal vulnerability in the libacl pathname-based functions acl_get_file(), acl_set_file(), acl_extended_file(), and acl_delete_def_file() that allows local attackers to escalate privileges by replacing any pathname component with a symbolic link. Attackers who control any component of a pathname processed by a privileged caller can redirect ACL read or write operations to arbitrary files or directories, enabling unauthorized manipulation of access control lists and local privilege escalation."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-54369",
-              "help": {
-                "text": "Vulnerability CVE-2026-54369\nSeverity: medium\nPackage: libacl1\nVersion: 2.3.2-1build1.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)",
-                "markdown": "**Vulnerability CVE-2026-54369**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libacl1  | 2.3.2-1build1.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libacl1@2.3.2-1build1.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=acl"
                 ],
                 "security-severity": "8.4"
               }
@@ -4097,6 +4097,57 @@
           }
         },
         {
+          "ruleId": "CVE-2026-41992-gzip",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: gzip, version 1.12-1ubuntu3.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/gzip/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/gzip/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gzip.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gzip.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gzip.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gzip.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.preinst"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "3f58d3dd1f41cd4c29dda3a2e327048b03f016439ca354d5e21c9ae930693a26:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-4437-libc-bin",
           "level": "warning",
           "message": {
@@ -5421,10 +5472,10 @@
           }
         },
         {
-          "ruleId": "CVE-2026-41992-gzip",
+          "ruleId": "CVE-2026-54369-libacl1",
           "level": "warning",
           "message": {
-            "text": "A medium vulnerability in deb package: gzip, version 1.12-1ubuntu3.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+            "text": "A medium vulnerability in deb package: libacl1, version 2.3.2-1build1.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -5445,30 +5496,18 @@
                   "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
                 },
                 {
-                  "name": "/usr/share/doc/gzip/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/gzip/copyright"
+                  "name": "/usr/share/doc/libacl1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libacl1/copyright"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/gzip.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gzip.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gzip.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gzip.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/gzip.preinst"
+                  "name": "/var/lib/dpkg/info/libacl1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libacl1:amd64.md5sums"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "3f58d3dd1f41cd4c29dda3a2e327048b03f016439ca354d5e21c9ae930693a26:1"
+            "primaryLocationLineHash": "4e5cdb291c0422da66902644ce641a7f5ec733c6f5c883d0e608957538ec376a:1"
           }
         },
         {
@@ -5512,45 +5551,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "b3beb64e3fead96a6ab0c9d4adbfad1cb0352a2d5e91d840e32f2fe98de77c5b:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-54369-libacl1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libacl1, version 2.3.2-1build1.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libacl1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libacl1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libacl1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libacl1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "4e5cdb291c0422da66902644ce641a7f5ec733c6f5c883d0e608957538ec376a:1"
           }
         },
         {
