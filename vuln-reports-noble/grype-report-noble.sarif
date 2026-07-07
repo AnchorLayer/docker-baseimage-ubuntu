@@ -293,8 +293,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-45582",
               "help": {
-                "text": "Vulnerability CVE-2025-45582\nSeverity: medium\nPackage: tar\nVersion: 1.35+dfsg-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)",
-                "markdown": "**Vulnerability CVE-2025-45582**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.35+dfsg-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)  |\n"
+                "text": "Vulnerability CVE-2025-45582\nSeverity: medium\nPackage: tar\nVersion: 1.35+dfsg-3ubuntu0.1\nFix Version: 1.35+dfsg-3ubuntu0.2\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)",
+                "markdown": "**Vulnerability CVE-2025-45582**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.35+dfsg-3ubuntu0.1  | 1.35+dfsg-3ubuntu0.2  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582)  |\n"
               },
               "properties": {
                 "purls": [
@@ -888,28 +888,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
-                "security-severity": "4.0"
-              }
-            },
-            {
-              "id": "CVE-2026-8927-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-8927 medium vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "When reusing a libcurl handle for sequential transfers driven by\nenvironment-variable proxy configuration, libcurl fails to clear the proxy\nauthentication state between requests. Specifically, if the initial transfer\nauthenticates against `proxyA` using Digest auth, a subsequent transfer routed\nthrough `proxyB` erroneously leaks the `Proxy-Authorization:` header intended\nsolely for `proxyA`."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-8927",
-              "help": {
-                "text": "Vulnerability CVE-2026-8927\nSeverity: medium\nPackage: curl\nVersion: 8.5.0-2ubuntu10.10\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8927](https://ubuntu.com/security/CVE-2026-8927)",
-                "markdown": "**Vulnerability CVE-2026-8927**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 8.5.0-2ubuntu10.10  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8927](https://ubuntu.com/security/CVE-2026-8927)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "4.0"
+                "security-severity": "9.8"
               }
             },
             {
@@ -930,28 +909,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
                 ],
-                "security-severity": "4.0"
-              }
-            },
-            {
-              "id": "CVE-2026-8927-libcurl4t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-8927 medium vulnerability for libcurl4t64 package"
-              },
-              "fullDescription": {
-                "text": "When reusing a libcurl handle for sequential transfers driven by\nenvironment-variable proxy configuration, libcurl fails to clear the proxy\nauthentication state between requests. Specifically, if the initial transfer\nauthenticates against `proxyA` using Digest auth, a subsequent transfer routed\nthrough `proxyB` erroneously leaks the `Proxy-Authorization:` header intended\nsolely for `proxyA`."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-8927",
-              "help": {
-                "text": "Vulnerability CVE-2026-8927\nSeverity: medium\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.10\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8927](https://ubuntu.com/security/CVE-2026-8927)",
-                "markdown": "**Vulnerability CVE-2026-8927**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4t64  | 8.5.0-2ubuntu10.10  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8927](https://ubuntu.com/security/CVE-2026-8927)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
-                ],
-                "security-severity": "4.0"
+                "security-severity": "9.8"
               }
             },
             {
@@ -965,8 +923,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-69720",
               "help": {
-                "text": "Vulnerability CVE-2025-69720\nSeverity: low\nPackage: libncursesw6\nVersion: 6.4+20240113-1ubuntu2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)",
-                "markdown": "**Vulnerability CVE-2025-69720**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libncursesw6  | 6.4+20240113-1ubuntu2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)  |\n"
+                "text": "Vulnerability CVE-2025-69720\nSeverity: low\nPackage: libncursesw6\nVersion: 6.4+20240113-1ubuntu2\nFix Version: 6.4+20240113-1ubuntu2.1\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)",
+                "markdown": "**Vulnerability CVE-2025-69720**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libncursesw6  | 6.4+20240113-1ubuntu2  | 6.4+20240113-1ubuntu2.1  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)  |\n"
               },
               "properties": {
                 "purls": [
@@ -986,8 +944,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-69720",
               "help": {
-                "text": "Vulnerability CVE-2025-69720\nSeverity: low\nPackage: libtinfo6\nVersion: 6.4+20240113-1ubuntu2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)",
-                "markdown": "**Vulnerability CVE-2025-69720**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libtinfo6  | 6.4+20240113-1ubuntu2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)  |\n"
+                "text": "Vulnerability CVE-2025-69720\nSeverity: low\nPackage: libtinfo6\nVersion: 6.4+20240113-1ubuntu2\nFix Version: 6.4+20240113-1ubuntu2.1\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)",
+                "markdown": "**Vulnerability CVE-2025-69720**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libtinfo6  | 6.4+20240113-1ubuntu2  | 6.4+20240113-1ubuntu2.1  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1007,8 +965,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-69720",
               "help": {
-                "text": "Vulnerability CVE-2025-69720\nSeverity: low\nPackage: ncurses-base\nVersion: 6.4+20240113-1ubuntu2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)",
-                "markdown": "**Vulnerability CVE-2025-69720**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | ncurses-base  | 6.4+20240113-1ubuntu2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)  |\n"
+                "text": "Vulnerability CVE-2025-69720\nSeverity: low\nPackage: ncurses-base\nVersion: 6.4+20240113-1ubuntu2\nFix Version: 6.4+20240113-1ubuntu2.1\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)",
+                "markdown": "**Vulnerability CVE-2025-69720**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | ncurses-base  | 6.4+20240113-1ubuntu2  | 6.4+20240113-1ubuntu2.1  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1028,56 +986,14 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2025-69720",
               "help": {
-                "text": "Vulnerability CVE-2025-69720\nSeverity: low\nPackage: ncurses-bin\nVersion: 6.4+20240113-1ubuntu2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)",
-                "markdown": "**Vulnerability CVE-2025-69720**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | ncurses-bin  | 6.4+20240113-1ubuntu2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)  |\n"
+                "text": "Vulnerability CVE-2025-69720\nSeverity: low\nPackage: ncurses-bin\nVersion: 6.4+20240113-1ubuntu2\nFix Version: 6.4+20240113-1ubuntu2.1\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)",
+                "markdown": "**Vulnerability CVE-2025-69720**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | ncurses-bin  | 6.4+20240113-1ubuntu2  | 6.4+20240113-1ubuntu2.1  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720)  |\n"
               },
               "properties": {
                 "purls": [
                   "pkg:deb/ubuntu/ncurses-bin@6.4%2B20240113-1ubuntu2?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=ncurses"
                 ],
                 "security-severity": "9.8"
-              }
-            },
-            {
-              "id": "CVE-2026-8925-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-8925 medium vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "The curl logic that works with SASL authentication could end up cleaning up\nthe GSASL context *twice* without clearing the pointer in between, making it\n`free()` the same pointer twice."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-8925",
-              "help": {
-                "text": "Vulnerability CVE-2026-8925\nSeverity: medium\nPackage: curl\nVersion: 8.5.0-2ubuntu10.10\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8925](https://ubuntu.com/security/CVE-2026-8925)",
-                "markdown": "**Vulnerability CVE-2026-8925**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 8.5.0-2ubuntu10.10  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8925](https://ubuntu.com/security/CVE-2026-8925)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "4.0"
-              }
-            },
-            {
-              "id": "CVE-2026-8925-libcurl4t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-8925 medium vulnerability for libcurl4t64 package"
-              },
-              "fullDescription": {
-                "text": "The curl logic that works with SASL authentication could end up cleaning up\nthe GSASL context *twice* without clearing the pointer in between, making it\n`free()` the same pointer twice."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-8925",
-              "help": {
-                "text": "Vulnerability CVE-2026-8925\nSeverity: medium\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.10\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8925](https://ubuntu.com/security/CVE-2026-8925)",
-                "markdown": "**Vulnerability CVE-2026-8925**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4t64  | 8.5.0-2ubuntu10.10  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8925](https://ubuntu.com/security/CVE-2026-8925)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
-                ],
-                "security-severity": "4.0"
               }
             },
             {
@@ -1123,6 +1039,27 @@
               }
             },
             {
+              "id": "CVE-2025-27587-libssl3t64",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-27587 low vulnerability for libssl3t64 package"
+              },
+              "fullDescription": {
+                "text": "OpenSSL 3.0.0 through 3.3.2 on the PowerPC architecture is vulnerable to a Minerva attack, exploitable by measuring the time of signing of random messages using the EVP_DigestSign API, and then using the private key to extract the K value (nonce) from the signatures. Next, based on the bit size of the extracted nonce, one can compare the signing time of full-sized nonces to signatures that used smaller nonces, via statistical tests. There is a side-channel in the P-364 curve that allows private key extraction (also, there is a dependency between the bit size of K and the size of the side channel). NOTE: This CVE is disputed because the OpenSSL security policy explicitly notes that any side channels which require same physical system to be detected are outside of the threat model for the software. The timing signal is so small that it is infeasible to be detected without having the attacking process running on the same physical system."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2025-27587",
+              "help": {
+                "text": "Vulnerability CVE-2025-27587\nSeverity: low\nPackage: libssl3t64\nVersion: 3.0.13-0ubuntu3.11\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-27587](https://ubuntu.com/security/CVE-2025-27587)",
+                "markdown": "**Vulnerability CVE-2025-27587**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3t64  | 3.0.13-0ubuntu3.11  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-27587](https://ubuntu.com/security/CVE-2025-27587)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.11?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
+                ],
+                "security-severity": "5.3"
+              }
+            },
+            {
               "id": "CVE-2016-20013-libc-bin",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1165,27 +1102,6 @@
               }
             },
             {
-              "id": "CVE-2025-27587-libssl3t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2025-27587 low vulnerability for libssl3t64 package"
-              },
-              "fullDescription": {
-                "text": "OpenSSL 3.0.0 through 3.3.2 on the PowerPC architecture is vulnerable to a Minerva attack, exploitable by measuring the time of signing of random messages using the EVP_DigestSign API, and then using the private key to extract the K value (nonce) from the signatures. Next, based on the bit size of the extracted nonce, one can compare the signing time of full-sized nonces to signatures that used smaller nonces, via statistical tests. There is a side-channel in the P-364 curve that allows private key extraction (also, there is a dependency between the bit size of K and the size of the side channel). NOTE: This CVE is disputed because the OpenSSL security policy explicitly notes that any side channels which require same physical system to be detected are outside of the threat model for the software. The timing signal is so small that it is infeasible to be detected without having the attacking process running on the same physical system."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2025-27587",
-              "help": {
-                "text": "Vulnerability CVE-2025-27587\nSeverity: low\nPackage: libssl3t64\nVersion: 3.0.13-0ubuntu3.11\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2025-27587](https://ubuntu.com/security/CVE-2025-27587)",
-                "markdown": "**Vulnerability CVE-2025-27587**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3t64  | 3.0.13-0ubuntu3.11  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2025-27587](https://ubuntu.com/security/CVE-2025-27587)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.11?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
-                ],
-                "security-severity": "5.3"
-              }
-            },
-            {
               "id": "CVE-2026-58055-libnghttp2-14",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1196,8 +1112,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-58055",
               "help": {
-                "text": "Vulnerability CVE-2026-58055\nSeverity: medium\nPackage: libnghttp2-14\nVersion: 1.59.0-1ubuntu0.3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-58055](https://ubuntu.com/security/CVE-2026-58055)",
-                "markdown": "**Vulnerability CVE-2026-58055**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libnghttp2-14  | 1.59.0-1ubuntu0.3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-58055](https://ubuntu.com/security/CVE-2026-58055)  |\n"
+                "text": "Vulnerability CVE-2026-58055\nSeverity: medium\nPackage: libnghttp2-14\nVersion: 1.59.0-1ubuntu0.3\nFix Version: 1.59.0-1ubuntu0.4\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-58055](https://ubuntu.com/security/CVE-2026-58055)",
+                "markdown": "**Vulnerability CVE-2026-58055**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libnghttp2-14  | 1.59.0-1ubuntu0.3  | 1.59.0-1ubuntu0.4  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-58055](https://ubuntu.com/security/CVE-2026-58055)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1372,48 +1288,6 @@
                   "pkg:deb/ubuntu/coreutils@9.4-3ubuntu6.2?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
                 "security-severity": "4.4"
-              }
-            },
-            {
-              "id": "CVE-2026-8924-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-8924 low vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "A flaw in curl’s cookie parsing logic allows a malicious HTTP server to set\n'super cookies' that bypass the Public Suffix List check. This enables an\nattacker-controlled origin to inject cookies that curl subsequently scopes and\ntransmits to unrelated third-party domains."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-8924",
-              "help": {
-                "text": "Vulnerability CVE-2026-8924\nSeverity: low\nPackage: curl\nVersion: 8.5.0-2ubuntu10.10\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8924](https://ubuntu.com/security/CVE-2026-8924)",
-                "markdown": "**Vulnerability CVE-2026-8924**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 8.5.0-2ubuntu10.10  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8924](https://ubuntu.com/security/CVE-2026-8924)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "1.0"
-              }
-            },
-            {
-              "id": "CVE-2026-8924-libcurl4t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-8924 low vulnerability for libcurl4t64 package"
-              },
-              "fullDescription": {
-                "text": "A flaw in curl’s cookie parsing logic allows a malicious HTTP server to set\n'super cookies' that bypass the Public Suffix List check. This enables an\nattacker-controlled origin to inject cookies that curl subsequently scopes and\ntransmits to unrelated third-party domains."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-8924",
-              "help": {
-                "text": "Vulnerability CVE-2026-8924\nSeverity: low\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.10\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8924](https://ubuntu.com/security/CVE-2026-8924)",
-                "markdown": "**Vulnerability CVE-2026-8924**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4t64  | 8.5.0-2ubuntu10.10  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8924](https://ubuntu.com/security/CVE-2026-8924)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
-                ],
-                "security-severity": "1.0"
               }
             },
             {
@@ -1602,7 +1476,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
-                "security-severity": "1.0"
+                "security-severity": "7.5"
               }
             },
             {
@@ -1623,7 +1497,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
                 ],
-                "security-severity": "1.0"
+                "security-severity": "7.5"
               }
             },
             {
@@ -1644,28 +1518,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
-                "security-severity": "1.0"
-              }
-            },
-            {
-              "id": "CVE-2026-8458-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-8458 low vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "libcurl might in some circumstances reuse the wrong connection when asked to\ndo Negotiate-authenticated ones, even when they are set to use different\n'services'.\n\nlibcurl features a pool of recent connections so that subsequent requests can\nreuse an existing connection to avoid overhead.\n\nWhen reusing a connection a range of criteria must be met. Due to a logical\nerror in the code, a request that was issued by an application could\nwrongfully reuse an existing connection to the same server that was\nauthenticated using different services."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-8458",
-              "help": {
-                "text": "Vulnerability CVE-2026-8458\nSeverity: low\nPackage: curl\nVersion: 8.5.0-2ubuntu10.10\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8458](https://ubuntu.com/security/CVE-2026-8458)",
-                "markdown": "**Vulnerability CVE-2026-8458**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 8.5.0-2ubuntu10.10  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8458](https://ubuntu.com/security/CVE-2026-8458)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "1.0"
+                "security-severity": "9.8"
               }
             },
             {
@@ -1686,28 +1539,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
                 ],
-                "security-severity": "1.0"
-              }
-            },
-            {
-              "id": "CVE-2026-8458-libcurl4t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-8458 low vulnerability for libcurl4t64 package"
-              },
-              "fullDescription": {
-                "text": "libcurl might in some circumstances reuse the wrong connection when asked to\ndo Negotiate-authenticated ones, even when they are set to use different\n'services'.\n\nlibcurl features a pool of recent connections so that subsequent requests can\nreuse an existing connection to avoid overhead.\n\nWhen reusing a connection a range of criteria must be met. Due to a logical\nerror in the code, a request that was issued by an application could\nwrongfully reuse an existing connection to the same server that was\nauthenticated using different services."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-8458",
-              "help": {
-                "text": "Vulnerability CVE-2026-8458\nSeverity: low\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.10\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8458](https://ubuntu.com/security/CVE-2026-8458)",
-                "markdown": "**Vulnerability CVE-2026-8458**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4t64  | 8.5.0-2ubuntu10.10  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8458](https://ubuntu.com/security/CVE-2026-8458)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
-                ],
-                "security-severity": "1.0"
+                "security-severity": "9.8"
               }
             },
             {
@@ -1900,90 +1732,6 @@
               }
             },
             {
-              "id": "CVE-2026-8286-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-8286 low vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "A vulnerability exists where a new transfer that uses STARTTLS to upgrade the\nconnection might reuse an existing live connection even though the TLS\nconfiguration mismatches so it should not."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-8286",
-              "help": {
-                "text": "Vulnerability CVE-2026-8286\nSeverity: low\nPackage: curl\nVersion: 8.5.0-2ubuntu10.10\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8286](https://ubuntu.com/security/CVE-2026-8286)",
-                "markdown": "**Vulnerability CVE-2026-8286**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 8.5.0-2ubuntu10.10  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8286](https://ubuntu.com/security/CVE-2026-8286)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "1.0"
-              }
-            },
-            {
-              "id": "CVE-2026-8286-libcurl4t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-8286 low vulnerability for libcurl4t64 package"
-              },
-              "fullDescription": {
-                "text": "A vulnerability exists where a new transfer that uses STARTTLS to upgrade the\nconnection might reuse an existing live connection even though the TLS\nconfiguration mismatches so it should not."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-8286",
-              "help": {
-                "text": "Vulnerability CVE-2026-8286\nSeverity: low\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.10\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-8286](https://ubuntu.com/security/CVE-2026-8286)",
-                "markdown": "**Vulnerability CVE-2026-8286**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4t64  | 8.5.0-2ubuntu10.10  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-8286](https://ubuntu.com/security/CVE-2026-8286)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
-                ],
-                "security-severity": "1.0"
-              }
-            },
-            {
-              "id": "CVE-2026-9547-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-9547 low vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "When a libcurl-based application performs transfers via `SCP://` or `SFTP://`\nand utilizes the `CURLOPT_SSH_KEYFUNCTION` callback, it may silently accept an\nuntrusted server. This vulnerability occurs when a server presents a host key\ntype that does not match the specific key type already recorded for that host\nin the `known_hosts` file. Instead of rejecting the mismatch, the callback\nmechanism fails to properly enforce the restriction, allowing the connection\nto succeed without warning and risking a potential man-in-the-middle attack."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-9547",
-              "help": {
-                "text": "Vulnerability CVE-2026-9547\nSeverity: low\nPackage: curl\nVersion: 8.5.0-2ubuntu10.10\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-9547](https://ubuntu.com/security/CVE-2026-9547)",
-                "markdown": "**Vulnerability CVE-2026-9547**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 8.5.0-2ubuntu10.10  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-9547](https://ubuntu.com/security/CVE-2026-9547)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "1.0"
-              }
-            },
-            {
-              "id": "CVE-2026-9547-libcurl4t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-9547 low vulnerability for libcurl4t64 package"
-              },
-              "fullDescription": {
-                "text": "When a libcurl-based application performs transfers via `SCP://` or `SFTP://`\nand utilizes the `CURLOPT_SSH_KEYFUNCTION` callback, it may silently accept an\nuntrusted server. This vulnerability occurs when a server presents a host key\ntype that does not match the specific key type already recorded for that host\nin the `known_hosts` file. Instead of rejecting the mismatch, the callback\nmechanism fails to properly enforce the restriction, allowing the connection\nto succeed without warning and risking a potential man-in-the-middle attack."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-9547",
-              "help": {
-                "text": "Vulnerability CVE-2026-9547\nSeverity: low\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.10\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-9547](https://ubuntu.com/security/CVE-2026-9547)",
-                "markdown": "**Vulnerability CVE-2026-9547**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4t64  | 8.5.0-2ubuntu10.10  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-9547](https://ubuntu.com/security/CVE-2026-9547)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
-                ],
-                "security-severity": "1.0"
-              }
-            },
-            {
               "id": "CVE-2026-41991-gzip",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -2169,7 +1917,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
-                "security-severity": "1.0"
+                "security-severity": "7.5"
               }
             },
             {
@@ -2190,7 +1938,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.10?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
                 ],
-                "security-severity": "1.0"
+                "security-severity": "7.5"
               }
             },
             {
@@ -4806,89 +4554,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-8927-curl",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: curl, version 8.5.0-2ubuntu10.10 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "311bbf232c462ca6230ba7d363208aa15d000863bc8c0dba6b48678bcd9f1cf4:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-11856-libcurl4t64",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.10 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libcurl4t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "185a4ef3bd5de4a8917d53b52ce95ee14800bdb9ed51443e88bb1d2a2c3f6b1d:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-8927-libcurl4t64",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.10 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
@@ -5095,88 +4761,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-8925-curl",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: curl, version 8.5.0-2ubuntu10.10 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "311bbf232c462ca6230ba7d363208aa15d000863bc8c0dba6b48678bcd9f1cf4:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-8925-libcurl4t64",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.10 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libcurl4t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "185a4ef3bd5de4a8917d53b52ce95ee14800bdb9ed51443e88bb1d2a2c3f6b1d:1"
-          }
-        },
-        {
           "ruleId": "CVE-2024-56433-login",
           "level": "note",
           "message": {
@@ -5303,6 +4887,45 @@
           }
         },
         {
+          "ruleId": "CVE-2025-27587-libssl3t64",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssl3t64, version 3.0.13-0ubuntu3.11 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3t64/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libssl3t64/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3t64:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libssl3t64:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "671b025b5715d5d8cccc74186981006e54691fd6f4b9b082a7e245fed3fedb14:1"
+          }
+        },
+        {
           "ruleId": "CVE-2016-20013-libc-bin",
           "level": "note",
           "message": {
@@ -5398,45 +5021,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "42a254a0ff30fbe0b6067799ba5df4b5c259924a10f0ab683d76ccf4b54e753c:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2025-27587-libssl3t64",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libssl3t64, version 3.0.13-0ubuntu3.11 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssl3t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libssl3t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssl3t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libssl3t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "671b025b5715d5d8cccc74186981006e54691fd6f4b9b082a7e245fed3fedb14:1"
           }
         },
         {
@@ -5840,88 +5424,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "f019c53a0b59f11c70847b04ddd5516f889e8da8fe16a0b21a29673f6c89f6c7:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-8924-curl",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: curl, version 8.5.0-2ubuntu10.10 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "311bbf232c462ca6230ba7d363208aa15d000863bc8c0dba6b48678bcd9f1cf4:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-8924-libcurl4t64",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.10 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libcurl4t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "185a4ef3bd5de4a8917d53b52ce95ee14800bdb9ed51443e88bb1d2a2c3f6b1d:1"
           }
         },
         {
@@ -6410,89 +5912,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-8458-curl",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: curl, version 8.5.0-2ubuntu10.10 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "311bbf232c462ca6230ba7d363208aa15d000863bc8c0dba6b48678bcd9f1cf4:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-10536-libcurl4t64",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.10 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libcurl4t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "185a4ef3bd5de4a8917d53b52ce95ee14800bdb9ed51443e88bb1d2a2c3f6b1d:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-8458-libcurl4t64",
           "level": "note",
           "message": {
             "text": "A low vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.10 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
@@ -6907,170 +6327,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "842d71fc79f54a4237074a00a2c154dc39b07dbdbddb4ec65f570af4f9acfddb:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-8286-curl",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: curl, version 8.5.0-2ubuntu10.10 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "311bbf232c462ca6230ba7d363208aa15d000863bc8c0dba6b48678bcd9f1cf4:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-8286-libcurl4t64",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.10 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libcurl4t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "185a4ef3bd5de4a8917d53b52ce95ee14800bdb9ed51443e88bb1d2a2c3f6b1d:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-9547-curl",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: curl, version 8.5.0-2ubuntu10.10 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "311bbf232c462ca6230ba7d363208aa15d000863bc8c0dba6b48678bcd9f1cf4:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-9547-libcurl4t64",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.10 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libcurl4t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "185a4ef3bd5de4a8917d53b52ce95ee14800bdb9ed51443e88bb1d2a2c3f6b1d:1"
           }
         },
         {
