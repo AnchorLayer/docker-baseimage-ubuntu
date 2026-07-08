@@ -52,6 +52,48 @@
               }
             },
             {
+              "id": "CVE-2026-11856-curl",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-11856 medium vulnerability for curl package"
+              },
+              "fullDescription": {
+                "text": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-11856",
+              "help": {
+                "text": "Vulnerability CVE-2026-11856\nSeverity: medium\nPackage: curl\nVersion: 7.81.0-1ubuntu1.25\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)",
+                "markdown": "**Vulnerability CVE-2026-11856**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 7.81.0-1ubuntu1.25  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "9.8"
+              }
+            },
+            {
+              "id": "CVE-2026-11856-libcurl4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-11856 medium vulnerability for libcurl4 package"
+              },
+              "fullDescription": {
+                "text": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-11856",
+              "help": {
+                "text": "Vulnerability CVE-2026-11856\nSeverity: medium\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.25\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)",
+                "markdown": "**Vulnerability CVE-2026-11856**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4  | 7.81.0-1ubuntu1.25  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
+                ],
+                "security-severity": "9.8"
+              }
+            },
+            {
               "id": "CVE-2024-2236-libgcrypt20",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -839,8 +881,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-41992",
               "help": {
-                "text": "Vulnerability CVE-2026-41992\nSeverity: medium\nPackage: gzip\nVersion: 1.10-4ubuntu4.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-41992](https://ubuntu.com/security/CVE-2026-41992)",
-                "markdown": "**Vulnerability CVE-2026-41992**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gzip  | 1.10-4ubuntu4.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-41992](https://ubuntu.com/security/CVE-2026-41992)  |\n"
+                "text": "Vulnerability CVE-2026-41992\nSeverity: medium\nPackage: gzip\nVersion: 1.10-4ubuntu4.1\nFix Version: 1.10-4ubuntu4.2\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-41992](https://ubuntu.com/security/CVE-2026-41992)",
+                "markdown": "**Vulnerability CVE-2026-41992**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gzip  | 1.10-4ubuntu4.1  | 1.10-4ubuntu4.2  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-41992](https://ubuntu.com/security/CVE-2026-41992)  |\n"
               },
               "properties": {
                 "purls": [
@@ -868,6 +910,48 @@
                   "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
                 ],
                 "security-severity": "7.8"
+              }
+            },
+            {
+              "id": "CVE-2026-12064-curl",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-12064 low vulnerability for curl package"
+              },
+              "fullDescription": {
+                "text": "When a user invokes curl using a schemeless URL combined with\n`--proto-default` sftp (or scp), a disconnect occurs between the tool layer\nand libcurl. The tool layer incorrectly infers the URL scheme, which\nerroneously bypasses the initialization of critical SSH security options like\nCURLOPT_SSH_HOST_PUBLIC_KEY_SHA256 and CURLOPT_SSH_KNOWNHOSTS. Conversely, the\nlibcurl runtime successfully honors CURLOPT_DEFAULT_PROTOCOL and establishes\nthe connection via SFTP/SCP as specified. Because the tool layer skipped the\nsecurity configuration, these SSH host verification options are silently\nomitted, causing curl to connect to an unverified SSH remote host without\nthrowing an error."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-12064",
+              "help": {
+                "text": "Vulnerability CVE-2026-12064\nSeverity: low\nPackage: curl\nVersion: 7.81.0-1ubuntu1.25\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-12064](https://ubuntu.com/security/CVE-2026-12064)",
+                "markdown": "**Vulnerability CVE-2026-12064**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 7.81.0-1ubuntu1.25  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-12064](https://ubuntu.com/security/CVE-2026-12064)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2026-12064-libcurl4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-12064 low vulnerability for libcurl4 package"
+              },
+              "fullDescription": {
+                "text": "When a user invokes curl using a schemeless URL combined with\n`--proto-default` sftp (or scp), a disconnect occurs between the tool layer\nand libcurl. The tool layer incorrectly infers the URL scheme, which\nerroneously bypasses the initialization of critical SSH security options like\nCURLOPT_SSH_HOST_PUBLIC_KEY_SHA256 and CURLOPT_SSH_KNOWNHOSTS. Conversely, the\nlibcurl runtime successfully honors CURLOPT_DEFAULT_PROTOCOL and establishes\nthe connection via SFTP/SCP as specified. Because the tool layer skipped the\nsecurity configuration, these SSH host verification options are silently\nomitted, causing curl to connect to an unverified SSH remote host without\nthrowing an error."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-12064",
+              "help": {
+                "text": "Vulnerability CVE-2026-12064\nSeverity: low\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.25\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-12064](https://ubuntu.com/security/CVE-2026-12064)",
+                "markdown": "**Vulnerability CVE-2026-12064**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4  | 7.81.0-1ubuntu1.25  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-12064](https://ubuntu.com/security/CVE-2026-12064)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
+                ],
+                "security-severity": "7.5"
               }
             },
             {
@@ -1120,48 +1204,6 @@
                   "pkg:deb/ubuntu/passwd@1%3A4.8.1-2ubuntu2.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=shadow"
                 ],
                 "security-severity": "3.3"
-              }
-            },
-            {
-              "id": "CVE-2026-11856-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-11856 medium vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-11856",
-              "help": {
-                "text": "Vulnerability CVE-2026-11856\nSeverity: medium\nPackage: curl\nVersion: 7.81.0-1ubuntu1.25\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)",
-                "markdown": "**Vulnerability CVE-2026-11856**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 7.81.0-1ubuntu1.25  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "9.8"
-              }
-            },
-            {
-              "id": "CVE-2026-11856-libcurl4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-11856 medium vulnerability for libcurl4 package"
-              },
-              "fullDescription": {
-                "text": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-11856",
-              "help": {
-                "text": "Vulnerability CVE-2026-11856\nSeverity: medium\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.25\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)",
-                "markdown": "**Vulnerability CVE-2026-11856**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4  | 7.81.0-1ubuntu1.25  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
-                ],
-                "security-severity": "9.8"
               }
             },
             {
@@ -1543,6 +1585,48 @@
               }
             },
             {
+              "id": "CVE-2026-8932-curl",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-8932 low vulnerability for curl package"
+              },
+              "fullDescription": {
+                "text": "libcurl would reuse a previously created connection even when some mTLS config\nrelated option had been changed that should have prohibited reuse.\n\nlibcurl keeps previously used connections in a connection pool for subsequent\ntransfers to reuse if one of them matches the setup. However, some TLS\nsettings related to client certificates were left out from the configuration\nmatch checks, making them match too easily. In particular options related to\nthe private key."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-8932",
+              "help": {
+                "text": "Vulnerability CVE-2026-8932\nSeverity: low\nPackage: curl\nVersion: 7.81.0-1ubuntu1.25\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-8932](https://ubuntu.com/security/CVE-2026-8932)",
+                "markdown": "**Vulnerability CVE-2026-8932**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 7.81.0-1ubuntu1.25  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-8932](https://ubuntu.com/security/CVE-2026-8932)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2026-8932-libcurl4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-8932 low vulnerability for libcurl4 package"
+              },
+              "fullDescription": {
+                "text": "libcurl would reuse a previously created connection even when some mTLS config\nrelated option had been changed that should have prohibited reuse.\n\nlibcurl keeps previously used connections in a connection pool for subsequent\ntransfers to reuse if one of them matches the setup. However, some TLS\nsettings related to client certificates were left out from the configuration\nmatch checks, making them match too easily. In particular options related to\nthe private key."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-8932",
+              "help": {
+                "text": "Vulnerability CVE-2026-8932\nSeverity: low\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.25\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-8932](https://ubuntu.com/security/CVE-2026-8932)",
+                "markdown": "**Vulnerability CVE-2026-8932**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4  | 7.81.0-1ubuntu1.25  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-8932](https://ubuntu.com/security/CVE-2026-8932)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
               "id": "CVE-2026-54369-libacl1",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1774,48 +1858,6 @@
               }
             },
             {
-              "id": "CVE-2026-12064-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-12064 low vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "When a user invokes curl using a schemeless URL combined with\n`--proto-default` sftp (or scp), a disconnect occurs between the tool layer\nand libcurl. The tool layer incorrectly infers the URL scheme, which\nerroneously bypasses the initialization of critical SSH security options like\nCURLOPT_SSH_HOST_PUBLIC_KEY_SHA256 and CURLOPT_SSH_KNOWNHOSTS. Conversely, the\nlibcurl runtime successfully honors CURLOPT_DEFAULT_PROTOCOL and establishes\nthe connection via SFTP/SCP as specified. Because the tool layer skipped the\nsecurity configuration, these SSH host verification options are silently\nomitted, causing curl to connect to an unverified SSH remote host without\nthrowing an error."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-12064",
-              "help": {
-                "text": "Vulnerability CVE-2026-12064\nSeverity: low\nPackage: curl\nVersion: 7.81.0-1ubuntu1.25\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-12064](https://ubuntu.com/security/CVE-2026-12064)",
-                "markdown": "**Vulnerability CVE-2026-12064**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 7.81.0-1ubuntu1.25  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-12064](https://ubuntu.com/security/CVE-2026-12064)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-12064-libcurl4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-12064 low vulnerability for libcurl4 package"
-              },
-              "fullDescription": {
-                "text": "When a user invokes curl using a schemeless URL combined with\n`--proto-default` sftp (or scp), a disconnect occurs between the tool layer\nand libcurl. The tool layer incorrectly infers the URL scheme, which\nerroneously bypasses the initialization of critical SSH security options like\nCURLOPT_SSH_HOST_PUBLIC_KEY_SHA256 and CURLOPT_SSH_KNOWNHOSTS. Conversely, the\nlibcurl runtime successfully honors CURLOPT_DEFAULT_PROTOCOL and establishes\nthe connection via SFTP/SCP as specified. Because the tool layer skipped the\nsecurity configuration, these SSH host verification options are silently\nomitted, causing curl to connect to an unverified SSH remote host without\nthrowing an error."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-12064",
-              "help": {
-                "text": "Vulnerability CVE-2026-12064\nSeverity: low\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.25\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-12064](https://ubuntu.com/security/CVE-2026-12064)",
-                "markdown": "**Vulnerability CVE-2026-12064**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4  | 7.81.0-1ubuntu1.25  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-12064](https://ubuntu.com/security/CVE-2026-12064)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
               "id": "CVE-2026-13757-libp11-kit0",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1994,8 +2036,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-41991",
               "help": {
-                "text": "Vulnerability CVE-2026-41991\nSeverity: medium\nPackage: gzip\nVersion: 1.10-4ubuntu4.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-41991](https://ubuntu.com/security/CVE-2026-41991)",
-                "markdown": "**Vulnerability CVE-2026-41991**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gzip  | 1.10-4ubuntu4.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-41991](https://ubuntu.com/security/CVE-2026-41991)  |\n"
+                "text": "Vulnerability CVE-2026-41991\nSeverity: medium\nPackage: gzip\nVersion: 1.10-4ubuntu4.1\nFix Version: 1.10-4ubuntu4.2\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-41991](https://ubuntu.com/security/CVE-2026-41991)",
+                "markdown": "**Vulnerability CVE-2026-41991**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gzip  | 1.10-4ubuntu4.1  | 1.10-4ubuntu4.2  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-41991](https://ubuntu.com/security/CVE-2026-41991)  |\n"
               },
               "properties": {
                 "purls": [
@@ -2170,48 +2212,6 @@
                   "pkg:deb/ubuntu/libacl1@2.3.1-1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=acl"
                 ],
                 "security-severity": "7.2"
-              }
-            },
-            {
-              "id": "CVE-2026-8932-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-8932 low vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "libcurl would reuse a previously created connection even when some mTLS config\nrelated option had been changed that should have prohibited reuse.\n\nlibcurl keeps previously used connections in a connection pool for subsequent\ntransfers to reuse if one of them matches the setup. However, some TLS\nsettings related to client certificates were left out from the configuration\nmatch checks, making them match too easily. In particular options related to\nthe private key."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-8932",
-              "help": {
-                "text": "Vulnerability CVE-2026-8932\nSeverity: low\nPackage: curl\nVersion: 7.81.0-1ubuntu1.25\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-8932](https://ubuntu.com/security/CVE-2026-8932)",
-                "markdown": "**Vulnerability CVE-2026-8932**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 7.81.0-1ubuntu1.25  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-8932](https://ubuntu.com/security/CVE-2026-8932)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-8932-libcurl4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-8932 low vulnerability for libcurl4 package"
-              },
-              "fullDescription": {
-                "text": "libcurl would reuse a previously created connection even when some mTLS config\nrelated option had been changed that should have prohibited reuse.\n\nlibcurl keeps previously used connections in a connection pool for subsequent\ntransfers to reuse if one of them matches the setup. However, some TLS\nsettings related to client certificates were left out from the configuration\nmatch checks, making them match too easily. In particular options related to\nthe private key."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-8932",
-              "help": {
-                "text": "Vulnerability CVE-2026-8932\nSeverity: low\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.25\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-8932](https://ubuntu.com/security/CVE-2026-8932)",
-                "markdown": "**Vulnerability CVE-2026-8932**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4  | 7.81.0-1ubuntu1.25  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-8932](https://ubuntu.com/security/CVE-2026-8932)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
-                ],
-                "security-severity": "7.5"
               }
             },
             {
@@ -2965,6 +2965,88 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "8a260d886d2647af2db4d40886722e24759502990f9e5fc951586886c53ce715:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-11856-curl",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: curl, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/curl/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/usr/share/doc/curl/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/curl.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/curl.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "1d8e5f46e9c2e955a7738cdae0e88526a64fde4287a28ef9ce8419ee2fb1ae44:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-11856-libcurl4",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libcurl4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/usr/share/doc/libcurl4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "35ab299753150113f0e0c71d1f3a1a34986e6a4765d491ef2a2c9bfb3b615075:1"
           }
         },
         {
@@ -4729,6 +4811,88 @@
           }
         },
         {
+          "ruleId": "CVE-2026-12064-curl",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/curl/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/usr/share/doc/curl/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/curl.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/curl.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "1d8e5f46e9c2e955a7738cdae0e88526a64fde4287a28ef9ce8419ee2fb1ae44:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-12064-libcurl4",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libcurl4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/usr/share/doc/libcurl4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "35ab299753150113f0e0c71d1f3a1a34986e6a4765d491ef2a2c9bfb3b615075:1"
+          }
+        },
+        {
           "ruleId": "CVE-2024-10041-libpam-modules",
           "level": "warning",
           "message": {
@@ -5306,88 +5470,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "cc167791f8b11d1202651f2e4331be7d979fe61fc8c832a52af396093187a7be:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-11856-curl",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: curl, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "1d8e5f46e9c2e955a7738cdae0e88526a64fde4287a28ef9ce8419ee2fb1ae44:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-11856-libcurl4",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/usr/share/doc/libcurl4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "35ab299753150113f0e0c71d1f3a1a34986e6a4765d491ef2a2c9bfb3b615075:1"
           }
         },
         {
@@ -6197,6 +6279,88 @@
           }
         },
         {
+          "ruleId": "CVE-2026-8932-curl",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/curl/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/usr/share/doc/curl/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/curl.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/curl.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "1d8e5f46e9c2e955a7738cdae0e88526a64fde4287a28ef9ce8419ee2fb1ae44:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-8932-libcurl4",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libcurl4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/usr/share/doc/libcurl4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "35ab299753150113f0e0c71d1f3a1a34986e6a4765d491ef2a2c9bfb3b615075:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-54369-libacl1",
           "level": "warning",
           "message": {
@@ -6691,88 +6855,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "69ae01465f84fa5d8777ee771b1587a719cdc357475946a8160dfb43b952a39d:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-12064-curl",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "1d8e5f46e9c2e955a7738cdae0e88526a64fde4287a28ef9ce8419ee2fb1ae44:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-12064-libcurl4",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/usr/share/doc/libcurl4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "35ab299753150113f0e0c71d1f3a1a34986e6a4765d491ef2a2c9bfb3b615075:1"
           }
         },
         {
@@ -7484,88 +7566,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "1360695183098a9deb6c0140cbe16458b7eec28a1127bb4884dc06af49057a68:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-8932-curl",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "1d8e5f46e9c2e955a7738cdae0e88526a64fde4287a28ef9ce8419ee2fb1ae44:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-8932-libcurl4",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/usr/share/doc/libcurl4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "35ab299753150113f0e0c71d1f3a1a34986e6a4765d491ef2a2c9bfb3b615075:1"
           }
         },
         {
