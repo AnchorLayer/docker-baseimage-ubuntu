@@ -342,7 +342,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libgssapi-krb5-2@1.19.2-2ubuntu0.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
                 ],
-                "security-severity": "5.9"
+                "security-severity": "7.5"
               }
             },
             {
@@ -363,7 +363,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libk5crypto3@1.19.2-2ubuntu0.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
                 ],
-                "security-severity": "5.9"
+                "security-severity": "7.5"
               }
             },
             {
@@ -384,7 +384,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libkrb5-3@1.19.2-2ubuntu0.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
                 ],
-                "security-severity": "5.9"
+                "security-severity": "7.5"
               }
             },
             {
@@ -405,7 +405,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libkrb5support0@1.19.2-2ubuntu0.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
                 ],
-                "security-severity": "5.9"
+                "security-severity": "7.5"
               }
             },
             {
@@ -426,7 +426,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libgssapi-krb5-2@1.19.2-2ubuntu0.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
                 ],
-                "security-severity": "5.9"
+                "security-severity": "7.5"
               }
             },
             {
@@ -447,7 +447,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libk5crypto3@1.19.2-2ubuntu0.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
                 ],
-                "security-severity": "5.9"
+                "security-severity": "7.5"
               }
             },
             {
@@ -468,7 +468,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libkrb5-3@1.19.2-2ubuntu0.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
                 ],
-                "security-severity": "5.9"
+                "security-severity": "7.5"
               }
             },
             {
@@ -489,7 +489,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libkrb5support0@1.19.2-2ubuntu0.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
                 ],
-                "security-severity": "5.9"
+                "security-severity": "7.5"
               }
             },
             {
@@ -910,48 +910,6 @@
                   "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
                 ],
                 "security-severity": "7.8"
-              }
-            },
-            {
-              "id": "CVE-2026-12064-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-12064 low vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "When a user invokes curl using a schemeless URL combined with\n`--proto-default` sftp (or scp), a disconnect occurs between the tool layer\nand libcurl. The tool layer incorrectly infers the URL scheme, which\nerroneously bypasses the initialization of critical SSH security options like\nCURLOPT_SSH_HOST_PUBLIC_KEY_SHA256 and CURLOPT_SSH_KNOWNHOSTS. Conversely, the\nlibcurl runtime successfully honors CURLOPT_DEFAULT_PROTOCOL and establishes\nthe connection via SFTP/SCP as specified. Because the tool layer skipped the\nsecurity configuration, these SSH host verification options are silently\nomitted, causing curl to connect to an unverified SSH remote host without\nthrowing an error."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-12064",
-              "help": {
-                "text": "Vulnerability CVE-2026-12064\nSeverity: low\nPackage: curl\nVersion: 7.81.0-1ubuntu1.25\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-12064](https://ubuntu.com/security/CVE-2026-12064)",
-                "markdown": "**Vulnerability CVE-2026-12064**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | curl  | 7.81.0-1ubuntu1.25  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-12064](https://ubuntu.com/security/CVE-2026-12064)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-12064-libcurl4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-12064 low vulnerability for libcurl4 package"
-              },
-              "fullDescription": {
-                "text": "When a user invokes curl using a schemeless URL combined with\n`--proto-default` sftp (or scp), a disconnect occurs between the tool layer\nand libcurl. The tool layer incorrectly infers the URL scheme, which\nerroneously bypasses the initialization of critical SSH security options like\nCURLOPT_SSH_HOST_PUBLIC_KEY_SHA256 and CURLOPT_SSH_KNOWNHOSTS. Conversely, the\nlibcurl runtime successfully honors CURLOPT_DEFAULT_PROTOCOL and establishes\nthe connection via SFTP/SCP as specified. Because the tool layer skipped the\nsecurity configuration, these SSH host verification options are silently\nomitted, causing curl to connect to an unverified SSH remote host without\nthrowing an error."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-12064",
-              "help": {
-                "text": "Vulnerability CVE-2026-12064\nSeverity: low\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.25\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-12064](https://ubuntu.com/security/CVE-2026-12064)",
-                "markdown": "**Vulnerability CVE-2026-12064**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libcurl4  | 7.81.0-1ubuntu1.25  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-12064](https://ubuntu.com/security/CVE-2026-12064)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
-                ],
-                "security-severity": "7.5"
               }
             },
             {
@@ -1690,153 +1648,6 @@
               }
             },
             {
-              "id": "CVE-2026-13595-bsdutils",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-13595 medium vulnerability for bsdutils package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
-              "help": {
-                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: bsdutils\nVersion: 1:2.37.2-4ubuntu3.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
-                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | bsdutils  | 1:2.37.2-4ubuntu3.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/bsdutils@1%3A2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux%402.37.2-4ubuntu3.5"
-                ],
-                "security-severity": "6.8"
-              }
-            },
-            {
-              "id": "CVE-2026-13595-libblkid1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-13595 medium vulnerability for libblkid1 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
-              "help": {
-                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: libblkid1\nVersion: 2.37.2-4ubuntu3.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
-                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libblkid1  | 2.37.2-4ubuntu3.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libblkid1@2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux"
-                ],
-                "security-severity": "6.8"
-              }
-            },
-            {
-              "id": "CVE-2026-13595-libmount1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-13595 medium vulnerability for libmount1 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
-              "help": {
-                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: libmount1\nVersion: 2.37.2-4ubuntu3.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
-                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libmount1  | 2.37.2-4ubuntu3.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux"
-                ],
-                "security-severity": "6.8"
-              }
-            },
-            {
-              "id": "CVE-2026-13595-libsmartcols1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-13595 medium vulnerability for libsmartcols1 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
-              "help": {
-                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: libsmartcols1\nVersion: 2.37.2-4ubuntu3.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
-                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsmartcols1  | 2.37.2-4ubuntu3.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux"
-                ],
-                "security-severity": "6.8"
-              }
-            },
-            {
-              "id": "CVE-2026-13595-libuuid1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-13595 medium vulnerability for libuuid1 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
-              "help": {
-                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: libuuid1\nVersion: 2.37.2-4ubuntu3.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
-                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libuuid1  | 2.37.2-4ubuntu3.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux"
-                ],
-                "security-severity": "6.8"
-              }
-            },
-            {
-              "id": "CVE-2026-13595-mount",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-13595 medium vulnerability for mount package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
-              "help": {
-                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: mount\nVersion: 2.37.2-4ubuntu3.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
-                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | mount  | 2.37.2-4ubuntu3.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/mount@2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux"
-                ],
-                "security-severity": "6.8"
-              }
-            },
-            {
-              "id": "CVE-2026-13595-util-linux",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-13595 medium vulnerability for util-linux package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
-              "help": {
-                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: util-linux\nVersion: 2.37.2-4ubuntu3.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
-                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | util-linux  | 2.37.2-4ubuntu3.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "6.8"
-              }
-            },
-            {
               "id": "CVE-2025-15649-perl-base",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1855,27 +1666,6 @@
                   "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
                 ],
                 "security-severity": "5.5"
-              }
-            },
-            {
-              "id": "CVE-2026-13757-libp11-kit0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-13757 medium vulnerability for libp11-kit0 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in p11-kit. The RPC message attribute parsing functions p11_rpc_message_get_attribute() and p11_rpc_message_get_attribute_array_value() form a mutually-recursive call chain with no recursion depth limit when processing nested CKA_WRAP_TEMPLATE, CKA_UNWRAP_TEMPLATE, and CKA_DERIVE_TEMPLATE attributes. An unauthenticated attacker with local access to the p11-kit RPC Unix domain socket can send a specially crafted request with deeply nested template attributes, causing stack exhaustion and crashing the p11-kit server process and its dependent services."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-13757",
-              "help": {
-                "text": "Vulnerability CVE-2026-13757\nSeverity: medium\nPackage: libp11-kit0\nVersion: 0.24.0-6build1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13757](https://ubuntu.com/security/CVE-2026-13757)",
-                "markdown": "**Vulnerability CVE-2026-13757**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libp11-kit0  | 0.24.0-6build1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13757](https://ubuntu.com/security/CVE-2026-13757)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libp11-kit0@0.24.0-6build1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=p11-kit"
-                ],
-                "security-severity": "6.2"
               }
             },
             {
@@ -2023,6 +1813,174 @@
                   "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
                 "security-severity": "4.7"
+              }
+            },
+            {
+              "id": "CVE-2026-13757-libp11-kit0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13757 medium vulnerability for libp11-kit0 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in p11-kit. The RPC message attribute parsing functions p11_rpc_message_get_attribute() and p11_rpc_message_get_attribute_array_value() form a mutually-recursive call chain with no recursion depth limit when processing nested CKA_WRAP_TEMPLATE, CKA_UNWRAP_TEMPLATE, and CKA_DERIVE_TEMPLATE attributes. An unauthenticated attacker with local access to the p11-kit RPC Unix domain socket can send a specially crafted request with deeply nested template attributes, causing stack exhaustion and crashing the p11-kit server process and its dependent services."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13757",
+              "help": {
+                "text": "Vulnerability CVE-2026-13757\nSeverity: medium\nPackage: libp11-kit0\nVersion: 0.24.0-6build1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13757](https://ubuntu.com/security/CVE-2026-13757)",
+                "markdown": "**Vulnerability CVE-2026-13757**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libp11-kit0  | 0.24.0-6build1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13757](https://ubuntu.com/security/CVE-2026-13757)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libp11-kit0@0.24.0-6build1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=p11-kit"
+                ],
+                "security-severity": "6.2"
+              }
+            },
+            {
+              "id": "CVE-2026-13595-bsdutils",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13595 medium vulnerability for bsdutils package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
+              "help": {
+                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: bsdutils\nVersion: 1:2.37.2-4ubuntu3.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
+                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | bsdutils  | 1:2.37.2-4ubuntu3.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/bsdutils@1%3A2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux%402.37.2-4ubuntu3.5"
+                ],
+                "security-severity": "6.8"
+              }
+            },
+            {
+              "id": "CVE-2026-13595-libblkid1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13595 medium vulnerability for libblkid1 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
+              "help": {
+                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: libblkid1\nVersion: 2.37.2-4ubuntu3.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
+                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libblkid1  | 2.37.2-4ubuntu3.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libblkid1@2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux"
+                ],
+                "security-severity": "6.8"
+              }
+            },
+            {
+              "id": "CVE-2026-13595-libmount1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13595 medium vulnerability for libmount1 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
+              "help": {
+                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: libmount1\nVersion: 2.37.2-4ubuntu3.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
+                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libmount1  | 2.37.2-4ubuntu3.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux"
+                ],
+                "security-severity": "6.8"
+              }
+            },
+            {
+              "id": "CVE-2026-13595-libsmartcols1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13595 medium vulnerability for libsmartcols1 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
+              "help": {
+                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: libsmartcols1\nVersion: 2.37.2-4ubuntu3.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
+                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsmartcols1  | 2.37.2-4ubuntu3.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux"
+                ],
+                "security-severity": "6.8"
+              }
+            },
+            {
+              "id": "CVE-2026-13595-libuuid1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13595 medium vulnerability for libuuid1 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
+              "help": {
+                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: libuuid1\nVersion: 2.37.2-4ubuntu3.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
+                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libuuid1  | 2.37.2-4ubuntu3.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux"
+                ],
+                "security-severity": "6.8"
+              }
+            },
+            {
+              "id": "CVE-2026-13595-mount",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13595 medium vulnerability for mount package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
+              "help": {
+                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: mount\nVersion: 2.37.2-4ubuntu3.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
+                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | mount  | 2.37.2-4ubuntu3.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/mount@2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=util-linux"
+                ],
+                "security-severity": "6.8"
+              }
+            },
+            {
+              "id": "CVE-2026-13595-util-linux",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13595 medium vulnerability for util-linux package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the libblkid library of util-linux. During nested partition probing, the BSD, Minix, Solaris x86, and UnixWare partition probers cache a raw pointer to a parent partition entry in a dynamically allocated array. When subsequent partition additions cause the array to be reallocated, this pointer becomes stale, leading to a heap use-after-free read. An attacker who can present a crafted block device image (for example, via USB insertion or a loop-mounted disk image) can trigger this flaw without user interaction, as libblkid is invoked automatically by udev/udisks as root on block-device hot-plug events. This could lead to limited information disclosure or denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13595",
+              "help": {
+                "text": "Vulnerability CVE-2026-13595\nSeverity: medium\nPackage: util-linux\nVersion: 2.37.2-4ubuntu3.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)",
+                "markdown": "**Vulnerability CVE-2026-13595**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | util-linux  | 2.37.2-4ubuntu3.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13595](https://ubuntu.com/security/CVE-2026-13595)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "6.8"
               }
             },
             {
@@ -4811,88 +4769,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-12064-curl",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: curl, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "1d8e5f46e9c2e955a7738cdae0e88526a64fde4287a28ef9ce8419ee2fb1ae44:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-12064-libcurl4",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/usr/share/doc/libcurl4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "35ab299753150113f0e0c71d1f3a1a34986e6a4765d491ef2a2c9bfb3b615075:1"
-          }
-        },
-        {
           "ruleId": "CVE-2024-10041-libpam-modules",
           "level": "warning",
           "message": {
@@ -6494,311 +6370,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-13595-bsdutils",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: bsdutils, version 1:2.37.2-4ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/bsdutils/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/bsdutils/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/bsdutils.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/bsdutils.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/bsdutils.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/bsdutils.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "176ee4bea6d7f0fb2057acb6ba4ec366313d128a608b6348677f5661487a76e9:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-13595-libblkid1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libblkid1, version 2.37.2-4ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libblkid1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/libblkid1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libblkid1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/libblkid1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "89677a2809db3a9e8e985ca1500dc97536c234920387f5fdb8711a21b9c6d5a0:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-13595-libmount1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libmount1, version 2.37.2-4ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libmount1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/libmount1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libmount1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/libmount1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "06b9383bfe0b965b4d7c43fcfdf6c1b1b46858c30ec770a1ea7153beadfb57a3:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-13595-libsmartcols1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libsmartcols1, version 2.37.2-4ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libsmartcols1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/libsmartcols1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libsmartcols1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/libsmartcols1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "32da0fdc0c9e0962fc2587b7f28ad97f0b73ce8eb1c315c46f304811eff6a6c5:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-13595-libuuid1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libuuid1, version 2.37.2-4ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libuuid1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/libuuid1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libuuid1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/libuuid1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "e89844db680656e9fd0d071a5ae70b810ab399d200bafdf58303752abc5ebaca:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-13595-mount",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: mount, version 2.37.2-4ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/mount/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/mount/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/mount.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/mount.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/mount.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/mount.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "cc0b655bfd63d7e706a5d1795e47c2b03c1c02c38ceb20b817150f021b181527:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-13595-util-linux",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: util-linux, version 2.37.2-4ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/util-linux/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/util-linux/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/util-linux.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/util-linux.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/util-linux.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/util-linux.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/util-linux.postrm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/util-linux.preinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/util-linux.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/util-linux.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "3e9259de8ff587934e9ea4770a56b48f1da2969f5dc72401964f2653c4a7e6e3:1"
-          }
-        },
-        {
           "ruleId": "CVE-2025-15649-perl-base",
           "level": "warning",
           "message": {
@@ -6855,45 +6426,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "69ae01465f84fa5d8777ee771b1587a719cdc357475946a8160dfb43b952a39d:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-13757-libp11-kit0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libp11-kit0, version 0.24.0-6build1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libp11-kit0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/libp11-kit0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libp11-kit0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/libp11-kit0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "625d071d1ee9531f51559913dfc7511c22aa8282d6bdea13860fb80237a08c4f:1"
           }
         },
         {
@@ -7140,6 +6672,350 @@
         },
         {
           "ruleId": "CVE-2026-27456-util-linux",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: util-linux, version 2.37.2-4ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/util-linux/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/util-linux/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/util-linux.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/util-linux.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/util-linux.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/util-linux.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/util-linux.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/util-linux.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/util-linux.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/util-linux.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/util-linux.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/util-linux.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/util-linux.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/util-linux.preinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/util-linux.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/util-linux.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "3e9259de8ff587934e9ea4770a56b48f1da2969f5dc72401964f2653c4a7e6e3:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13757-libp11-kit0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libp11-kit0, version 0.24.0-6build1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libp11-kit0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/libp11-kit0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libp11-kit0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/libp11-kit0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "625d071d1ee9531f51559913dfc7511c22aa8282d6bdea13860fb80237a08c4f:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13595-bsdutils",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: bsdutils, version 1:2.37.2-4ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/bsdutils/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/bsdutils/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/bsdutils.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/bsdutils.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/bsdutils.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/bsdutils.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "176ee4bea6d7f0fb2057acb6ba4ec366313d128a608b6348677f5661487a76e9:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13595-libblkid1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libblkid1, version 2.37.2-4ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libblkid1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/libblkid1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libblkid1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/libblkid1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "89677a2809db3a9e8e985ca1500dc97536c234920387f5fdb8711a21b9c6d5a0:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13595-libmount1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libmount1, version 2.37.2-4ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libmount1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/libmount1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libmount1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/libmount1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "06b9383bfe0b965b4d7c43fcfdf6c1b1b46858c30ec770a1ea7153beadfb57a3:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13595-libsmartcols1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libsmartcols1, version 2.37.2-4ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libsmartcols1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/libsmartcols1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libsmartcols1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/libsmartcols1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "32da0fdc0c9e0962fc2587b7f28ad97f0b73ce8eb1c315c46f304811eff6a6c5:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13595-libuuid1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libuuid1, version 2.37.2-4ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libuuid1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/libuuid1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libuuid1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/libuuid1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "e89844db680656e9fd0d071a5ae70b810ab399d200bafdf58303752abc5ebaca:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13595-mount",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: mount, version 2.37.2-4ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/mount/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/mount/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/mount.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/mount.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/mount.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/mount.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "cc0b655bfd63d7e706a5d1795e47c2b03c1c02c38ceb20b817150f021b181527:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-13595-util-linux",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: util-linux, version 2.37.2-4ubuntu3.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
