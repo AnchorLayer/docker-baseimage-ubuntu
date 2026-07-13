@@ -1627,6 +1627,27 @@
               }
             },
             {
+              "id": "CVE-2026-13757-libp11-kit0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-13757 medium vulnerability for libp11-kit0 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in p11-kit. The RPC message attribute parsing functions p11_rpc_message_get_attribute() and p11_rpc_message_get_attribute_array_value() form a mutually-recursive call chain with no recursion depth limit when processing nested CKA_WRAP_TEMPLATE, CKA_UNWRAP_TEMPLATE, and CKA_DERIVE_TEMPLATE attributes. An unauthenticated attacker with local access to the p11-kit RPC Unix domain socket can send a specially crafted request with deeply nested template attributes, causing stack exhaustion and crashing the p11-kit server process and its dependent services."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-13757",
+              "help": {
+                "text": "Vulnerability CVE-2026-13757\nSeverity: medium\nPackage: libp11-kit0\nVersion: 0.24.0-6build1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13757](https://ubuntu.com/security/CVE-2026-13757)",
+                "markdown": "**Vulnerability CVE-2026-13757**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libp11-kit0  | 0.24.0-6build1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13757](https://ubuntu.com/security/CVE-2026-13757)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libp11-kit0@0.24.0-6build1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=p11-kit"
+                ],
+                "security-severity": "6.2"
+              }
+            },
+            {
               "id": "CVE-2026-54371-libattr1",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1666,27 +1687,6 @@
                   "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.3?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
                 "security-severity": "4.4"
-              }
-            },
-            {
-              "id": "CVE-2026-13757-libp11-kit0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-13757 medium vulnerability for libp11-kit0 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in p11-kit. The RPC message attribute parsing functions p11_rpc_message_get_attribute() and p11_rpc_message_get_attribute_array_value() form a mutually-recursive call chain with no recursion depth limit when processing nested CKA_WRAP_TEMPLATE, CKA_UNWRAP_TEMPLATE, and CKA_DERIVE_TEMPLATE attributes. An unauthenticated attacker with local access to the p11-kit RPC Unix domain socket can send a specially crafted request with deeply nested template attributes, causing stack exhaustion and crashing the p11-kit server process and its dependent services."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-13757",
-              "help": {
-                "text": "Vulnerability CVE-2026-13757\nSeverity: medium\nPackage: libp11-kit0\nVersion: 0.24.0-6build1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-13757](https://ubuntu.com/security/CVE-2026-13757)",
-                "markdown": "**Vulnerability CVE-2026-13757**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libp11-kit0  | 0.24.0-6build1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-13757](https://ubuntu.com/security/CVE-2026-13757)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libp11-kit0@0.24.0-6build1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=p11-kit"
-                ],
-                "security-severity": "6.2"
               }
             },
             {
@@ -6356,6 +6356,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-13757-libp11-kit0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libp11-kit0, version 0.24.0-6build1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libp11-kit0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/libp11-kit0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libp11-kit0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/libp11-kit0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "625d071d1ee9531f51559913dfc7511c22aa8282d6bdea13860fb80237a08c4f:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-54371-libattr1",
           "level": "warning",
           "message": {
@@ -6447,45 +6486,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "18259262bc0c1fb7ca3ffc774567ccaf1689ab49577292f569a5df8597ed5ffd:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-13757-libp11-kit0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libp11-kit0, version 0.24.0-6build1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libp11-kit0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/libp11-kit0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libp11-kit0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/libp11-kit0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "625d071d1ee9531f51559913dfc7511c22aa8282d6bdea13860fb80237a08c4f:1"
           }
         },
         {
