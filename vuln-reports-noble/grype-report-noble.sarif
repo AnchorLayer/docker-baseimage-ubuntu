@@ -409,6 +409,27 @@
               }
             },
             {
+              "id": "CVE-2026-5704-tar",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-5704 medium vulnerability for tar package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in tar. A remote attacker could exploit this vulnerability by crafting a malicious archive, leading to hidden file injection with fully attacker-controlled content. This bypasses pre-extraction inspection mechanisms, potentially allowing an attacker to introduce malicious files onto a system without detection."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-5704",
+              "help": {
+                "text": "Vulnerability CVE-2026-5704\nSeverity: medium\nPackage: tar\nVersion: 1.35+dfsg-3ubuntu0.1\nFix Version: 1.35+dfsg-3ubuntu0.3\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704)",
+                "markdown": "**Vulnerability CVE-2026-5704**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.35+dfsg-3ubuntu0.1  | 1.35+dfsg-3ubuntu0.3  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/tar@1.35%2Bdfsg-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "5.5"
+              }
+            },
+            {
               "id": "CVE-2026-42497-perl-base",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -3389,6 +3410,57 @@
         },
         {
           "ruleId": "CVE-2025-45582-tar",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: tar, version 1.35+dfsg-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/tar.md5sums"
+                },
+                {
+                  "name": "/usr/share/doc/tar/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/tar/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/tar.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/tar.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/tar.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "bc95d60443a898fae8d3b0f3eb9aa144c182b4ff6ba993b269489282030721ef:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-5704-tar",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: tar, version 1.35+dfsg-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
