@@ -640,48 +640,6 @@
               }
             },
             {
-              "id": "CVE-2026-4437-libc-bin",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-4437 medium vulnerability for libc-bin package"
-              },
-              "fullDescription": {
-                "text": "Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C Library version 2.34 to version 2.43 could, with a crafted response from the configured DNS server, result in a violation of the DNS specification that causes the application to treat a non-answer section of the DNS response as a valid answer."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-4437",
-              "help": {
-                "text": "Vulnerability CVE-2026-4437\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-4437](https://ubuntu.com/security/CVE-2026-4437)",
-                "markdown": "**Vulnerability CVE-2026-4437**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-4437](https://ubuntu.com/security/CVE-2026-4437)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libc-bin@2.39-0ubuntu8.7?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=glibc"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-4437-libc6",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-4437 medium vulnerability for libc6 package"
-              },
-              "fullDescription": {
-                "text": "Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C Library version 2.34 to version 2.43 could, with a crafted response from the configured DNS server, result in a violation of the DNS specification that causes the application to treat a non-answer section of the DNS response as a valid answer."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-4437",
-              "help": {
-                "text": "Vulnerability CVE-2026-4437\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-4437](https://ubuntu.com/security/CVE-2026-4437)",
-                "markdown": "**Vulnerability CVE-2026-4437**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-4437](https://ubuntu.com/security/CVE-2026-4437)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libc6@2.39-0ubuntu8.7?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=glibc"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
               "id": "CVE-2026-54411-libpam-modules",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -763,6 +721,48 @@
                   "pkg:deb/ubuntu/libpam0g@1.5.3-5ubuntu5.5?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pam"
                 ],
                 "security-severity": "6.9"
+              }
+            },
+            {
+              "id": "CVE-2026-4437-libc-bin",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-4437 medium vulnerability for libc-bin package"
+              },
+              "fullDescription": {
+                "text": "Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C Library version 2.34 to version 2.43 could, with a crafted response from the configured DNS server, result in a violation of the DNS specification that causes the application to treat a non-answer section of the DNS response as a valid answer."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-4437",
+              "help": {
+                "text": "Vulnerability CVE-2026-4437\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-4437](https://ubuntu.com/security/CVE-2026-4437)",
+                "markdown": "**Vulnerability CVE-2026-4437**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-4437](https://ubuntu.com/security/CVE-2026-4437)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libc-bin@2.39-0ubuntu8.7?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=glibc"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2026-4437-libc6",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-4437 medium vulnerability for libc6 package"
+              },
+              "fullDescription": {
+                "text": "Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C Library version 2.34 to version 2.43 could, with a crafted response from the configured DNS server, result in a violation of the DNS specification that causes the application to treat a non-answer section of the DNS response as a valid answer."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-4437",
+              "help": {
+                "text": "Vulnerability CVE-2026-4437\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-4437](https://ubuntu.com/security/CVE-2026-4437)",
+                "markdown": "**Vulnerability CVE-2026-4437**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-4437](https://ubuntu.com/security/CVE-2026-4437)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libc6@2.39-0ubuntu8.7?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=glibc"
+                ],
+                "security-severity": "7.5"
               }
             },
             {
@@ -4041,104 +4041,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-4437-libc-bin",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libc-bin, version 2.39-0ubuntu8.7 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libc-bin/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libc-bin/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libc-bin.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libc-bin.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libc-bin.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libc-bin.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc-bin.triggers",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libc-bin.triggers"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "0f4e05ca683c08fd7727a0aaa0d552ba2fcc961fb78a8d4e67501163c63196b5:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-4437-libc6",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libc6, version 2.39-0ubuntu8.7 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libc6/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libc6/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc6:amd64.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libc6:amd64.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libc6:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libc6:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "42a254a0ff30fbe0b6067799ba5df4b5c259924a10f0ab683d76ccf4b54e753c:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-54411-libpam-modules",
           "level": "warning",
           "message": {
@@ -4336,6 +4238,104 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "a48f5bf965894a96f8e51e7f05e545ede803401c699733a0286a4ce7e9584b90:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-4437-libc-bin",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libc-bin, version 2.39-0ubuntu8.7 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libc-bin/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libc-bin/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libc-bin.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libc-bin.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libc-bin.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libc-bin.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.triggers",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libc-bin.triggers"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "0f4e05ca683c08fd7727a0aaa0d552ba2fcc961fb78a8d4e67501163c63196b5:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-4437-libc6",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libc6, version 2.39-0ubuntu8.7 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libc6/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/usr/share/doc/libc6/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc6:amd64.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libc6:amd64.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc6:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f103cd120fdd6cbc7f3d0e1d5bfb3e16290c32ead7b822d15c34460ecdf64b29:/var/lib/dpkg/info/libc6:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "42a254a0ff30fbe0b6067799ba5df4b5c259924a10f0ab683d76ccf4b54e753c:1"
           }
         },
         {
