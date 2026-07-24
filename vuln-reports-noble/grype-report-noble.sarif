@@ -94,6 +94,48 @@
               }
             },
             {
+              "id": "CVE-2026-59843-libssh-4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-59843 medium vulnerability for libssh-4 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in libssh. A remote authenticated peer can advertise a zero maximum packet size in SSH_MSG_CHANNEL_OPEN, causing later channel writes to loop indefinitely and consume CPU, leading to denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-59843",
+              "help": {
+                "text": "Vulnerability CVE-2026-59843\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59843](https://ubuntu.com/security/CVE-2026-59843)",
+                "markdown": "**Vulnerability CVE-2026-59843**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59843](https://ubuntu.com/security/CVE-2026-59843)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
+                ],
+                "security-severity": "6.5"
+              }
+            },
+            {
+              "id": "CVE-2026-59844-libssh-4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-59844 medium vulnerability for libssh-4 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in libssh. A remote authenticated client can issue SSH_FXP_READ requests with an arbitrarily large length, causing a libssh SFTP server to allocate excessive memory and potentially exhaust it through repeated requests."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-59844",
+              "help": {
+                "text": "Vulnerability CVE-2026-59844\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59844](https://ubuntu.com/security/CVE-2026-59844)",
+                "markdown": "**Vulnerability CVE-2026-59844**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59844](https://ubuntu.com/security/CVE-2026-59844)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
+                ],
+                "security-severity": "6.5"
+              }
+            },
+            {
               "id": "CVE-2026-10536-curl",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -146,8 +188,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40355",
               "help": {
-                "text": "Vulnerability CVE-2026-40355\nSeverity: medium\nPackage: libgssapi-krb5-2\nVersion: 1.20.1-6ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)",
-                "markdown": "**Vulnerability CVE-2026-40355**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgssapi-krb5-2  | 1.20.1-6ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)  |\n"
+                "text": "Vulnerability CVE-2026-40355\nSeverity: medium\nPackage: libgssapi-krb5-2\nVersion: 1.20.1-6ubuntu2.6\nFix Version: 1.20.1-6ubuntu2.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)",
+                "markdown": "**Vulnerability CVE-2026-40355**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgssapi-krb5-2  | 1.20.1-6ubuntu2.6  | 1.20.1-6ubuntu2.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)  |\n"
               },
               "properties": {
                 "purls": [
@@ -167,8 +209,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40355",
               "help": {
-                "text": "Vulnerability CVE-2026-40355\nSeverity: medium\nPackage: libk5crypto3\nVersion: 1.20.1-6ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)",
-                "markdown": "**Vulnerability CVE-2026-40355**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libk5crypto3  | 1.20.1-6ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)  |\n"
+                "text": "Vulnerability CVE-2026-40355\nSeverity: medium\nPackage: libk5crypto3\nVersion: 1.20.1-6ubuntu2.6\nFix Version: 1.20.1-6ubuntu2.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)",
+                "markdown": "**Vulnerability CVE-2026-40355**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libk5crypto3  | 1.20.1-6ubuntu2.6  | 1.20.1-6ubuntu2.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)  |\n"
               },
               "properties": {
                 "purls": [
@@ -188,8 +230,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40355",
               "help": {
-                "text": "Vulnerability CVE-2026-40355\nSeverity: medium\nPackage: libkrb5-3\nVersion: 1.20.1-6ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)",
-                "markdown": "**Vulnerability CVE-2026-40355**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libkrb5-3  | 1.20.1-6ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)  |\n"
+                "text": "Vulnerability CVE-2026-40355\nSeverity: medium\nPackage: libkrb5-3\nVersion: 1.20.1-6ubuntu2.6\nFix Version: 1.20.1-6ubuntu2.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)",
+                "markdown": "**Vulnerability CVE-2026-40355**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libkrb5-3  | 1.20.1-6ubuntu2.6  | 1.20.1-6ubuntu2.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)  |\n"
               },
               "properties": {
                 "purls": [
@@ -209,8 +251,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40355",
               "help": {
-                "text": "Vulnerability CVE-2026-40355\nSeverity: medium\nPackage: libkrb5support0\nVersion: 1.20.1-6ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)",
-                "markdown": "**Vulnerability CVE-2026-40355**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libkrb5support0  | 1.20.1-6ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)  |\n"
+                "text": "Vulnerability CVE-2026-40355\nSeverity: medium\nPackage: libkrb5support0\nVersion: 1.20.1-6ubuntu2.6\nFix Version: 1.20.1-6ubuntu2.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)",
+                "markdown": "**Vulnerability CVE-2026-40355**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libkrb5support0  | 1.20.1-6ubuntu2.6  | 1.20.1-6ubuntu2.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40355](https://ubuntu.com/security/CVE-2026-40355)  |\n"
               },
               "properties": {
                 "purls": [
@@ -272,8 +314,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40356",
               "help": {
-                "text": "Vulnerability CVE-2026-40356\nSeverity: medium\nPackage: libgssapi-krb5-2\nVersion: 1.20.1-6ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)",
-                "markdown": "**Vulnerability CVE-2026-40356**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgssapi-krb5-2  | 1.20.1-6ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)  |\n"
+                "text": "Vulnerability CVE-2026-40356\nSeverity: medium\nPackage: libgssapi-krb5-2\nVersion: 1.20.1-6ubuntu2.6\nFix Version: 1.20.1-6ubuntu2.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)",
+                "markdown": "**Vulnerability CVE-2026-40356**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgssapi-krb5-2  | 1.20.1-6ubuntu2.6  | 1.20.1-6ubuntu2.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)  |\n"
               },
               "properties": {
                 "purls": [
@@ -293,8 +335,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40356",
               "help": {
-                "text": "Vulnerability CVE-2026-40356\nSeverity: medium\nPackage: libk5crypto3\nVersion: 1.20.1-6ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)",
-                "markdown": "**Vulnerability CVE-2026-40356**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libk5crypto3  | 1.20.1-6ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)  |\n"
+                "text": "Vulnerability CVE-2026-40356\nSeverity: medium\nPackage: libk5crypto3\nVersion: 1.20.1-6ubuntu2.6\nFix Version: 1.20.1-6ubuntu2.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)",
+                "markdown": "**Vulnerability CVE-2026-40356**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libk5crypto3  | 1.20.1-6ubuntu2.6  | 1.20.1-6ubuntu2.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)  |\n"
               },
               "properties": {
                 "purls": [
@@ -314,8 +356,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40356",
               "help": {
-                "text": "Vulnerability CVE-2026-40356\nSeverity: medium\nPackage: libkrb5-3\nVersion: 1.20.1-6ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)",
-                "markdown": "**Vulnerability CVE-2026-40356**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libkrb5-3  | 1.20.1-6ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)  |\n"
+                "text": "Vulnerability CVE-2026-40356\nSeverity: medium\nPackage: libkrb5-3\nVersion: 1.20.1-6ubuntu2.6\nFix Version: 1.20.1-6ubuntu2.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)",
+                "markdown": "**Vulnerability CVE-2026-40356**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libkrb5-3  | 1.20.1-6ubuntu2.6  | 1.20.1-6ubuntu2.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)  |\n"
               },
               "properties": {
                 "purls": [
@@ -335,56 +377,14 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-40356",
               "help": {
-                "text": "Vulnerability CVE-2026-40356\nSeverity: medium\nPackage: libkrb5support0\nVersion: 1.20.1-6ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)",
-                "markdown": "**Vulnerability CVE-2026-40356**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libkrb5support0  | 1.20.1-6ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)  |\n"
+                "text": "Vulnerability CVE-2026-40356\nSeverity: medium\nPackage: libkrb5support0\nVersion: 1.20.1-6ubuntu2.6\nFix Version: 1.20.1-6ubuntu2.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)",
+                "markdown": "**Vulnerability CVE-2026-40356**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libkrb5support0  | 1.20.1-6ubuntu2.6  | 1.20.1-6ubuntu2.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-40356](https://ubuntu.com/security/CVE-2026-40356)  |\n"
               },
               "properties": {
                 "purls": [
                   "pkg:deb/ubuntu/libkrb5support0@1.20.1-6ubuntu2.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=krb5"
                 ],
                 "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-59843-libssh-4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-59843 medium vulnerability for libssh-4 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in libssh. A remote authenticated peer can advertise a zero maximum packet size in SSH_MSG_CHANNEL_OPEN, causing later channel writes to loop indefinitely and consume CPU, leading to denial of service."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-59843",
-              "help": {
-                "text": "Vulnerability CVE-2026-59843\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59843](https://ubuntu.com/security/CVE-2026-59843)",
-                "markdown": "**Vulnerability CVE-2026-59843**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59843](https://ubuntu.com/security/CVE-2026-59843)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
-                ],
-                "security-severity": "6.5"
-              }
-            },
-            {
-              "id": "CVE-2026-59844-libssh-4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-59844 medium vulnerability for libssh-4 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in libssh. A remote authenticated client can issue SSH_FXP_READ requests with an arbitrarily large length, causing a libssh SFTP server to allocate excessive memory and potentially exhaust it through repeated requests."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-59844",
-              "help": {
-                "text": "Vulnerability CVE-2026-59844\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59844](https://ubuntu.com/security/CVE-2026-59844)",
-                "markdown": "**Vulnerability CVE-2026-59844**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59844](https://ubuntu.com/security/CVE-2026-59844)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
-                ],
-                "security-severity": "6.5"
               }
             },
             {
@@ -440,14 +440,35 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-5704",
               "help": {
-                "text": "Vulnerability CVE-2026-5704\nSeverity: medium\nPackage: tar\nVersion: 1.35+dfsg-3ubuntu0.1\nFix Version: 1.35+dfsg-3ubuntu0.3\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704)",
-                "markdown": "**Vulnerability CVE-2026-5704**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.35+dfsg-3ubuntu0.1  | 1.35+dfsg-3ubuntu0.3  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704)  |\n"
+                "text": "Vulnerability CVE-2026-5704\nSeverity: medium\nPackage: tar\nVersion: 1.35+dfsg-3ubuntu0.1\nFix Version: 1.35+dfsg-3ubuntu0.4\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704)",
+                "markdown": "**Vulnerability CVE-2026-5704**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.35+dfsg-3ubuntu0.1  | 1.35+dfsg-3ubuntu0.4  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704)  |\n"
               },
               "properties": {
                 "purls": [
                   "pkg:deb/ubuntu/tar@1.35%2Bdfsg-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
                 "security-severity": "5.5"
+              }
+            },
+            {
+              "id": "CVE-2026-59842-libssh-4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-59842 medium vulnerability for libssh-4 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in libssh. During server-side GSSAPI key exchange, a client-supplied Curve25519 public key shorter than the expected length is copied without proper length validation, leading to an out-of-bounds heap read. This could allow a remote unauthenticated attacker to disclose small amounts of server memory."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-59842",
+              "help": {
+                "text": "Vulnerability CVE-2026-59842\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59842](https://ubuntu.com/security/CVE-2026-59842)",
+                "markdown": "**Vulnerability CVE-2026-59842**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59842](https://ubuntu.com/security/CVE-2026-59842)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
+                ],
+                "security-severity": "3.7"
               }
             },
             {
@@ -661,27 +682,6 @@
               }
             },
             {
-              "id": "CVE-2026-59842-libssh-4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-59842 medium vulnerability for libssh-4 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in libssh. During server-side GSSAPI key exchange, a client-supplied Curve25519 public key shorter than the expected length is copied without proper length validation, leading to an out-of-bounds heap read. This could allow a remote unauthenticated attacker to disclose small amounts of server memory."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-59842",
-              "help": {
-                "text": "Vulnerability CVE-2026-59842\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59842](https://ubuntu.com/security/CVE-2026-59842)",
-                "markdown": "**Vulnerability CVE-2026-59842**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59842](https://ubuntu.com/security/CVE-2026-59842)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
-                ],
-                "security-severity": "3.7"
-              }
-            },
-            {
               "id": "CVE-2026-54411-libpam-modules",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -808,6 +808,48 @@
               }
             },
             {
+              "id": "CVE-2026-59848-libssh-4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-59848 medium vulnerability for libssh-4 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in libssh. A malicious SFTP server can send responses for unknown request IDs that libssh clients keep queued indefinitely, causing unbounded memory growth and client-side denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-59848",
+              "help": {
+                "text": "Vulnerability CVE-2026-59848\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59848](https://ubuntu.com/security/CVE-2026-59848)",
+                "markdown": "**Vulnerability CVE-2026-59848**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59848](https://ubuntu.com/security/CVE-2026-59848)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
+                ],
+                "security-severity": "5.3"
+              }
+            },
+            {
+              "id": "CVE-2026-59847-libssh-4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-59847 medium vulnerability for libssh-4 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in libssh. Incorrect AES-GCM finalization checks in builds using the OpenSSL backend can effectively remove integrity protection, allowing an in-path attacker to modify plaintext on the wire without detection."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-59847",
+              "help": {
+                "text": "Vulnerability CVE-2026-59847\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59847](https://ubuntu.com/security/CVE-2026-59847)",
+                "markdown": "**Vulnerability CVE-2026-59847**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59847](https://ubuntu.com/security/CVE-2026-59847)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
+                ],
+                "security-severity": "5.9"
+              }
+            },
+            {
               "id": "CVE-2026-41992-gzip",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -850,45 +892,45 @@
               }
             },
             {
-              "id": "CVE-2026-59848-libssh-4",
+              "id": "CVE-2026-59851-libssh-4",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-59848 medium vulnerability for libssh-4 package"
+                "text": "CVE-2026-59851 medium vulnerability for libssh-4 package"
               },
               "fullDescription": {
-                "text": "A flaw was found in libssh. A malicious SFTP server can send responses for unknown request IDs that libssh clients keep queued indefinitely, causing unbounded memory growth and client-side denial of service."
+                "text": "A flaw was found in libssh. On servers with GSSAPIKeyExchange enabled, the gssapi-keyex path does not verify whether the authenticated Kerberos principal is authorized for the requested local user, allowing authenticated clients to log in as arbitrary users."
               },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-59848",
+              "helpUri": "https://ubuntu.com/security/CVE-2026-59851",
               "help": {
-                "text": "Vulnerability CVE-2026-59848\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59848](https://ubuntu.com/security/CVE-2026-59848)",
-                "markdown": "**Vulnerability CVE-2026-59848**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59848](https://ubuntu.com/security/CVE-2026-59848)  |\n"
+                "text": "Vulnerability CVE-2026-59851\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59851](https://ubuntu.com/security/CVE-2026-59851)",
+                "markdown": "**Vulnerability CVE-2026-59851**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59851](https://ubuntu.com/security/CVE-2026-59851)  |\n"
               },
               "properties": {
                 "purls": [
                   "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
                 ],
-                "security-severity": "5.3"
+                "security-severity": "8.8"
               }
             },
             {
-              "id": "CVE-2026-59847-libssh-4",
+              "id": "CVE-2026-59850-libssh-4",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-59847 medium vulnerability for libssh-4 package"
+                "text": "CVE-2026-59850 medium vulnerability for libssh-4 package"
               },
               "fullDescription": {
-                "text": "A flaw was found in libssh. Incorrect AES-GCM finalization checks in builds using the OpenSSL backend can effectively remove integrity protection, allowing an in-path attacker to modify plaintext on the wire without detection."
+                "text": "A flaw was found in libssh. If data packets are processed after a channel is closed, channel data callbacks can be invoked after the associated data has already been freed, leading to crashes or possible use-after-free conditions."
               },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-59847",
+              "helpUri": "https://ubuntu.com/security/CVE-2026-59850",
               "help": {
-                "text": "Vulnerability CVE-2026-59847\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59847](https://ubuntu.com/security/CVE-2026-59847)",
-                "markdown": "**Vulnerability CVE-2026-59847**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59847](https://ubuntu.com/security/CVE-2026-59847)  |\n"
+                "text": "Vulnerability CVE-2026-59850\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59850](https://ubuntu.com/security/CVE-2026-59850)",
+                "markdown": "**Vulnerability CVE-2026-59850**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59850](https://ubuntu.com/security/CVE-2026-59850)  |\n"
               },
               "properties": {
                 "purls": [
                   "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
                 ],
-                "security-severity": "5.9"
+                "security-severity": "4.3"
               }
             },
             {
@@ -1007,8 +1049,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-11850",
               "help": {
-                "text": "Vulnerability CVE-2026-11850\nSeverity: medium\nPackage: libgssapi-krb5-2\nVersion: 1.20.1-6ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)",
-                "markdown": "**Vulnerability CVE-2026-11850**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgssapi-krb5-2  | 1.20.1-6ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)  |\n"
+                "text": "Vulnerability CVE-2026-11850\nSeverity: medium\nPackage: libgssapi-krb5-2\nVersion: 1.20.1-6ubuntu2.6\nFix Version: 1.20.1-6ubuntu2.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)",
+                "markdown": "**Vulnerability CVE-2026-11850**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgssapi-krb5-2  | 1.20.1-6ubuntu2.6  | 1.20.1-6ubuntu2.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1028,8 +1070,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-11850",
               "help": {
-                "text": "Vulnerability CVE-2026-11850\nSeverity: medium\nPackage: libk5crypto3\nVersion: 1.20.1-6ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)",
-                "markdown": "**Vulnerability CVE-2026-11850**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libk5crypto3  | 1.20.1-6ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)  |\n"
+                "text": "Vulnerability CVE-2026-11850\nSeverity: medium\nPackage: libk5crypto3\nVersion: 1.20.1-6ubuntu2.6\nFix Version: 1.20.1-6ubuntu2.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)",
+                "markdown": "**Vulnerability CVE-2026-11850**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libk5crypto3  | 1.20.1-6ubuntu2.6  | 1.20.1-6ubuntu2.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1049,8 +1091,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-11850",
               "help": {
-                "text": "Vulnerability CVE-2026-11850\nSeverity: medium\nPackage: libkrb5-3\nVersion: 1.20.1-6ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)",
-                "markdown": "**Vulnerability CVE-2026-11850**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libkrb5-3  | 1.20.1-6ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)  |\n"
+                "text": "Vulnerability CVE-2026-11850\nSeverity: medium\nPackage: libkrb5-3\nVersion: 1.20.1-6ubuntu2.6\nFix Version: 1.20.1-6ubuntu2.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)",
+                "markdown": "**Vulnerability CVE-2026-11850**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libkrb5-3  | 1.20.1-6ubuntu2.6  | 1.20.1-6ubuntu2.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1070,8 +1112,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-11850",
               "help": {
-                "text": "Vulnerability CVE-2026-11850\nSeverity: medium\nPackage: libkrb5support0\nVersion: 1.20.1-6ubuntu2.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)",
-                "markdown": "**Vulnerability CVE-2026-11850**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libkrb5support0  | 1.20.1-6ubuntu2.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)  |\n"
+                "text": "Vulnerability CVE-2026-11850\nSeverity: medium\nPackage: libkrb5support0\nVersion: 1.20.1-6ubuntu2.6\nFix Version: 1.20.1-6ubuntu2.7\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)",
+                "markdown": "**Vulnerability CVE-2026-11850**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libkrb5support0  | 1.20.1-6ubuntu2.6  | 1.20.1-6ubuntu2.7  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-11850](https://ubuntu.com/security/CVE-2026-11850)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1099,48 +1141,6 @@
                   "pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.3?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=perl"
                 ],
                 "security-severity": "7.1"
-              }
-            },
-            {
-              "id": "CVE-2026-59851-libssh-4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-59851 medium vulnerability for libssh-4 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in libssh. On servers with GSSAPIKeyExchange enabled, the gssapi-keyex path does not verify whether the authenticated Kerberos principal is authorized for the requested local user, allowing authenticated clients to log in as arbitrary users."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-59851",
-              "help": {
-                "text": "Vulnerability CVE-2026-59851\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59851](https://ubuntu.com/security/CVE-2026-59851)",
-                "markdown": "**Vulnerability CVE-2026-59851**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59851](https://ubuntu.com/security/CVE-2026-59851)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
-                ],
-                "security-severity": "8.8"
-              }
-            },
-            {
-              "id": "CVE-2026-59850-libssh-4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-59850 medium vulnerability for libssh-4 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in libssh. If data packets are processed after a channel is closed, channel data callbacks can be invoked after the associated data has already been freed, leading to crashes or possible use-after-free conditions."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-59850",
-              "help": {
-                "text": "Vulnerability CVE-2026-59850\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59850](https://ubuntu.com/security/CVE-2026-59850)",
-                "markdown": "**Vulnerability CVE-2026-59850**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59850](https://ubuntu.com/security/CVE-2026-59850)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
-                ],
-                "security-severity": "4.3"
               }
             },
             {
@@ -1501,27 +1501,6 @@
               }
             },
             {
-              "id": "CVE-2022-3219-gpgv",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2022-3219 low vulnerability for gpgv package"
-              },
-              "fullDescription": {
-                "text": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2022-3219",
-              "help": {
-                "text": "Vulnerability CVE-2022-3219\nSeverity: low\nPackage: gpgv\nVersion: 2.4.4-2ubuntu17.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)",
-                "markdown": "**Vulnerability CVE-2022-3219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | gpgv  | 2.4.4-2ubuntu17.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnupg2"
-                ],
-                "security-severity": "3.3"
-              }
-            },
-            {
               "id": "CVE-2026-59849-libssh-4",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1540,6 +1519,27 @@
                   "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
                 ],
                 "security-severity": "3.1"
+              }
+            },
+            {
+              "id": "CVE-2022-3219-gpgv",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2022-3219 low vulnerability for gpgv package"
+              },
+              "fullDescription": {
+                "text": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2022-3219",
+              "help": {
+                "text": "Vulnerability CVE-2022-3219\nSeverity: low\nPackage: gpgv\nVersion: 2.4.4-2ubuntu17.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)",
+                "markdown": "**Vulnerability CVE-2022-3219**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | gpgv  | 2.4.4-2ubuntu17.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2022-3219](https://ubuntu.com/security/CVE-2022-3219)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnupg2"
+                ],
+                "security-severity": "3.3"
               }
             },
             {
@@ -1816,6 +1816,27 @@
               }
             },
             {
+              "id": "CVE-2026-59846-libssh-4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-59846 medium vulnerability for libssh-4 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in libssh. A malicious username expanded through %r in ProxyCommand handling can inject shell metacharacters, exposing environment variables and causing unintended shell behavior."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-59846",
+              "help": {
+                "text": "Vulnerability CVE-2026-59846\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59846](https://ubuntu.com/security/CVE-2026-59846)",
+                "markdown": "**Vulnerability CVE-2026-59846**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59846](https://ubuntu.com/security/CVE-2026-59846)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
+                ],
+                "security-severity": "3.9"
+              }
+            },
+            {
               "id": "CVE-2026-13595-bsdutils",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -2023,27 +2044,6 @@
                   "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
                 ],
                 "security-severity": "6.7"
-              }
-            },
-            {
-              "id": "CVE-2026-59846-libssh-4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-59846 medium vulnerability for libssh-4 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in libssh. A malicious username expanded through %r in ProxyCommand handling can inject shell metacharacters, exposing environment variables and causing unintended shell behavior."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-59846",
-              "help": {
-                "text": "Vulnerability CVE-2026-59846\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-59846](https://ubuntu.com/security/CVE-2026-59846)",
-                "markdown": "**Vulnerability CVE-2026-59846**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-59846](https://ubuntu.com/security/CVE-2026-59846)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
-                ],
-                "security-severity": "3.9"
               }
             },
             {
@@ -3008,6 +3008,84 @@
           }
         },
         {
+          "ruleId": "CVE-2026-59843-libssh-4",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssh-4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-59844-libssh-4",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssh-4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-10536-curl",
           "level": "note",
           "message": {
@@ -3500,84 +3578,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-59843-libssh-4",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssh-4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-59844-libssh-4",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssh-4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-9538-perl-base",
           "level": "warning",
           "message": {
@@ -3736,6 +3736,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "bc95d60443a898fae8d3b0f3eb9aa144c182b4ff6ba993b269489282030721ef:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-59842-libssh-4",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssh-4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
           }
         },
         {
@@ -4269,45 +4308,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-59842-libssh-4",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssh-4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-54411-libpam-modules",
           "level": "warning",
           "message": {
@@ -4606,6 +4606,84 @@
           }
         },
         {
+          "ruleId": "CVE-2026-59848-libssh-4",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssh-4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-59847-libssh-4",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssh-4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-41992-gzip",
           "level": "warning",
           "message": {
@@ -4716,7 +4794,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-59848-libssh-4",
+          "ruleId": "CVE-2026-59851-libssh-4",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
@@ -4755,7 +4833,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-59847-libssh-4",
+          "ruleId": "CVE-2026-59850-libssh-4",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
@@ -5265,84 +5343,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "b9c69449248734e4eecc18f21b61c21bffc92b0a5a67b57fe3d0b01d27ee95d8:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-59851-libssh-4",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssh-4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-59850-libssh-4",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssh-4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
           }
         },
         {
@@ -6157,6 +6157,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-59849-libssh-4",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssh-4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
+          }
+        },
+        {
           "ruleId": "CVE-2022-3219-gpgv",
           "level": "note",
           "message": {
@@ -6197,45 +6236,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "0602e32bad6cb4809b22006401a465e1606bcbf282e43a725a2d73e129575186:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-59849-libssh-4",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssh-4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
           }
         },
         {
@@ -6802,6 +6802,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-59846-libssh-4",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssh-4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-13595-bsdutils",
           "level": "warning",
           "message": {
@@ -7194,45 +7233,6 @@
         },
         {
           "ruleId": "CVE-2026-15370-libssh-4",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssh-4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-59846-libssh-4",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
