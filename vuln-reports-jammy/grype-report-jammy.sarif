@@ -409,27 +409,6 @@
               }
             },
             {
-              "id": "CVE-2026-59843-libssh-4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-59843 medium vulnerability for libssh-4 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in libssh. A remote authenticated peer can advertise a zero maximum packet size in SSH_MSG_CHANNEL_OPEN, causing later channel writes to loop indefinitely and consume CPU, leading to denial of service."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-59843",
-              "help": {
-                "text": "Vulnerability CVE-2026-59843\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-59843](https://ubuntu.com/security/CVE-2026-59843)",
-                "markdown": "**Vulnerability CVE-2026-59843**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-59843](https://ubuntu.com/security/CVE-2026-59843)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=libssh"
-                ],
-                "security-severity": "6.5"
-              }
-            },
-            {
               "id": "CVE-2026-59844-libssh-4",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -442,6 +421,27 @@
               "help": {
                 "text": "Vulnerability CVE-2026-59844\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-59844](https://ubuntu.com/security/CVE-2026-59844)",
                 "markdown": "**Vulnerability CVE-2026-59844**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-59844](https://ubuntu.com/security/CVE-2026-59844)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=libssh"
+                ],
+                "security-severity": "6.5"
+              }
+            },
+            {
+              "id": "CVE-2026-59843-libssh-4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-59843 medium vulnerability for libssh-4 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in libssh. A remote authenticated peer can advertise a zero maximum packet size in SSH_MSG_CHANNEL_OPEN, causing later channel writes to loop indefinitely and consume CPU, leading to denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-59843",
+              "help": {
+                "text": "Vulnerability CVE-2026-59843\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-59843](https://ubuntu.com/security/CVE-2026-59843)",
+                "markdown": "**Vulnerability CVE-2026-59843**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-59843](https://ubuntu.com/security/CVE-2026-59843)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1486,7 +1486,7 @@
                 "text": "CVE-2026-53910 medium vulnerability for diffutils package"
               },
               "fullDescription": {
-                "text": "diff3 tool from GNU diffutils is vulnerable to a heap‑based buffer overflow due to multiple signed integer overflows in line‑mapping calculations. Incorrect arithmetic in mapping line ranges can result in corrupted values being used for memory allocation and loop bounds.\nWhen processing crafted diff output, these overflows may cause the application to allocate insufficient memory and subsequently perform out‑of‑bounds writes during internal processing. \nAn attacker who can control the output of the diff program used by diff3 (e.g. via --diff-program pointing to a malicious script) can trigger out-of-bounds writes, resulting in a crash and potentially remote code execution depending on the environment.\n\n\nThis issue has been fixed in commit 9ff04d5b84743e331e80b589335a52c5480d1815"
+                "text": "diff3 tool from GNU diffutils is vulnerable to a heap‑based buffer overflow due to multiple signed integer overflows in line‑mapping calculations. Incorrect arithmetic in mapping line ranges can result in corrupted values being used for memory allocation and loop bounds.\nWhen processing crafted diff output, these overflows may cause the application to allocate insufficient memory and subsequently perform out‑of‑bounds writes during internal processing. \nAn attacker who can control the output of the diff program used by diff3 (e.g. via --diff-program pointing to a malicious script) can trigger out-of-bounds writes, resulting in a crash and potentially remote code execution depending on the environment.\n\n\nThis issue has been fixed in commit 9ff04d5b84743e331e80b589335a52c5480d1815 \n\nNOTE:\nThe project maintainers claim that this is not a security issue. They state that the worst outcome this issue can cause is a crash of diff and that it cannot be used to escalate privileges."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-53910",
               "help": {
@@ -1837,6 +1837,27 @@
               }
             },
             {
+              "id": "CVE-2026-56392-coreutils",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-56392 medium vulnerability for coreutils package"
+              },
+              "fullDescription": {
+                "text": "GNU coreutils unexpand is vulnerable to a heap-based buffer overflow due to an integer overflow during buffer allocation when processing large tab stop (-t) values. The multiplication used to calculate the allocation size can wrap around, resulting in an undersized buffer.\nWhen processing crafted input, subsequent writes exceed the allocated memory, leading to an out‑of‑bounds heap write.\n\nWhen running GNU coreutils unexpand with attacker-provided large tab stop (-t) arguments, this behavior leads to a crash and potentially achieve a heap write primitive depending on memory layout.\n\n\n\n\n\n\n\n\n\n\nThis issue has been fixed in the commit b60a159fdc5bfcf9988d3a4cb6f53abe8ad5d35d"
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-56392",
+              "help": {
+                "text": "Vulnerability CVE-2026-56392\nSeverity: medium\nPackage: coreutils\nVersion: 8.32-4.1ubuntu1.3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-56392](https://ubuntu.com/security/CVE-2026-56392)",
+                "markdown": "**Vulnerability CVE-2026-56392**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | coreutils  | 8.32-4.1ubuntu1.3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-56392](https://ubuntu.com/security/CVE-2026-56392)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.3?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "1.8"
+              }
+            },
+            {
               "id": "CVE-2026-54369-libacl1",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1879,6 +1900,27 @@
               }
             },
             {
+              "id": "CVE-2025-5278-coreutils",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2025-5278 low vulnerability for coreutils package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in GNU Coreutils. The sort utility's begfield() function is vulnerable to a heap buffer under-read. The program may access memory outside the allocated buffer if a user runs a crafted command using the traditional key format. A malicious input could lead to a crash or leak sensitive data."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2025-5278",
+              "help": {
+                "text": "Vulnerability CVE-2025-5278\nSeverity: low\nPackage: coreutils\nVersion: 8.32-4.1ubuntu1.3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)",
+                "markdown": "**Vulnerability CVE-2025-5278**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 8.32-4.1ubuntu1.3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.3?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "4.4"
+              }
+            },
+            {
               "id": "CVE-2026-13757-libp11-kit0",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1900,24 +1942,24 @@
               }
             },
             {
-              "id": "CVE-2025-5278-coreutils",
+              "id": "CVE-2026-56391-coreutils",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
-                "text": "CVE-2025-5278 low vulnerability for coreutils package"
+                "text": "CVE-2026-56391 medium vulnerability for coreutils package"
               },
               "fullDescription": {
-                "text": "A flaw was found in GNU Coreutils. The sort utility's begfield() function is vulnerable to a heap buffer under-read. The program may access memory outside the allocated buffer if a user runs a crafted command using the traditional key format. A malicious input could lead to a crash or leak sensitive data."
+                "text": "GNU coreutils uniq is vulnerable to an out‑of‑bounds read due to incorrect handling of multibyte input when the -w (--check-chars) option is used. The find_field() function miscalculates the byte length of characters by repeatedly processing a fixed pointer instead of advancing through the input, resulting in an inflated length value. \nThis incorrect length is later used in a memcmp operation, causing reads beyond the allocated buffer when processing crafted multibyte input.\n\nWhen running GNU coreutils uniq with attacker-provided arguments, this behavior leads to a crash and potential adjacent heap memory exposure.\n\n\nThis issue has been fixed in the commit d64e35a8a4c0e4608321433e0d84d917e4e36371."
               },
-              "helpUri": "https://ubuntu.com/security/CVE-2025-5278",
+              "helpUri": "https://ubuntu.com/security/CVE-2026-56391",
               "help": {
-                "text": "Vulnerability CVE-2025-5278\nSeverity: low\nPackage: coreutils\nVersion: 8.32-4.1ubuntu1.3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)",
-                "markdown": "**Vulnerability CVE-2025-5278**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | coreutils  | 8.32-4.1ubuntu1.3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2025-5278](https://ubuntu.com/security/CVE-2025-5278)  |\n"
+                "text": "Vulnerability CVE-2026-56391\nSeverity: medium\nPackage: coreutils\nVersion: 8.32-4.1ubuntu1.3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-56391](https://ubuntu.com/security/CVE-2026-56391)",
+                "markdown": "**Vulnerability CVE-2026-56391**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | coreutils  | 8.32-4.1ubuntu1.3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-56391](https://ubuntu.com/security/CVE-2026-56391)  |\n"
               },
               "properties": {
                 "purls": [
                   "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.3?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
-                "security-severity": "4.4"
+                "security-severity": "4.6"
               }
             },
             {
@@ -3920,7 +3962,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-59843-libssh-4",
+          "ruleId": "CVE-2026-59844-libssh-4",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libssh-4, version 0.9.6-2ubuntu0.22.04.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
@@ -3959,7 +4001,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-59844-libssh-4",
+          "ruleId": "CVE-2026-59843-libssh-4",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libssh-4, version 0.9.6-2ubuntu0.22.04.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
@@ -7116,6 +7158,57 @@
           }
         },
         {
+          "ruleId": "CVE-2026-56392-coreutils",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: coreutils, version 8.32-4.1ubuntu1.3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/coreutils/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/coreutils/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/coreutils.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/coreutils.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/coreutils.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/coreutils.postrm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "18259262bc0c1fb7ca3ffc774567ccaf1689ab49577292f569a5df8597ed5ffd:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-54369-libacl1",
           "level": "warning",
           "message": {
@@ -7194,6 +7287,57 @@
           }
         },
         {
+          "ruleId": "CVE-2025-5278-coreutils",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: coreutils, version 8.32-4.1ubuntu1.3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:29e5a90a8f4686633686b26f8104b2b8ecd828cb96e4f39081b869095941249b:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/coreutils/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/usr/share/doc/coreutils/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/coreutils.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/coreutils.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/coreutils.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/coreutils.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:10f9108f6cebf96e05cadfab3c188071f3c6d084abe680fd0bc9f61c268e854d:/var/lib/dpkg/info/coreutils.postrm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "18259262bc0c1fb7ca3ffc774567ccaf1689ab49577292f569a5df8597ed5ffd:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-13757-libp11-kit0",
           "level": "warning",
           "message": {
@@ -7233,10 +7377,10 @@
           }
         },
         {
-          "ruleId": "CVE-2025-5278-coreutils",
-          "level": "note",
+          "ruleId": "CVE-2026-56391-coreutils",
+          "level": "warning",
           "message": {
-            "text": "A low vulnerability in deb package: coreutils, version 8.32-4.1ubuntu1.3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+            "text": "A medium vulnerability in deb package: coreutils, version 8.32-4.1ubuntu1.3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
