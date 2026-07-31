@@ -405,7 +405,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
                 ],
-                "security-severity": "3.7"
+                "security-severity": "5.3"
               }
             },
             {
@@ -909,7 +909,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
                 ],
-                "security-severity": "5.9"
+                "security-severity": "7.5"
               }
             },
             {
@@ -972,7 +972,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
                 ],
-                "security-severity": "4.3"
+                "security-severity": "7.5"
               }
             },
             {
@@ -1539,7 +1539,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
                 ],
-                "security-severity": "3.1"
+                "security-severity": "7.5"
               }
             },
             {
@@ -1561,6 +1561,27 @@
                   "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnupg2"
                 ],
                 "security-severity": "3.3"
+              }
+            },
+            {
+              "id": "CVE-2026-15370-libssh-4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-15370 medium vulnerability for libssh-4 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in libssh. During SFTP server directory listing, the longname field is constructed with unsafe concatenation into a fixed-size stack buffer. When a client causes the server to list attacker-controlled filenames, sufficiently long names can overflow that stack buffer and may lead to crashes or possible code execution on the server."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-15370",
+              "help": {
+                "text": "Vulnerability CVE-2026-15370\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-15370](https://ubuntu.com/security/CVE-2026-15370)",
+                "markdown": "**Vulnerability CVE-2026-15370**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-15370](https://ubuntu.com/security/CVE-2026-15370)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
+                ],
+                "security-severity": "7.3"
               }
             },
             {
@@ -1603,27 +1624,6 @@
                   "pkg:deb/ubuntu/libacl1@2.3.2-1build1.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=acl"
                 ],
                 "security-severity": "8.4"
-              }
-            },
-            {
-              "id": "CVE-2026-15370-libssh-4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-15370 medium vulnerability for libssh-4 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in libssh. During SFTP server directory listing, the longname field is constructed with unsafe concatenation into a fixed-size stack buffer. When a client causes the server to list attacker-controlled filenames, sufficiently long names can overflow that stack buffer and may lead to crashes or possible code execution on the server."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-15370",
-              "help": {
-                "text": "Vulnerability CVE-2026-15370\nSeverity: medium\nPackage: libssh-4\nVersion: 0.10.6-2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-15370](https://ubuntu.com/security/CVE-2026-15370)",
-                "markdown": "**Vulnerability CVE-2026-15370**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.10.6-2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-15370](https://ubuntu.com/security/CVE-2026-15370)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
-                ],
-                "security-severity": "6.7"
               }
             },
             {
@@ -2106,7 +2106,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=libssh"
                 ],
-                "security-severity": "5.3"
+                "security-severity": "5.9"
               }
             },
             {
@@ -6345,6 +6345,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-15370-libssh-4",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssh-4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-56392-coreutils",
           "level": "warning",
           "message": {
@@ -6424,45 +6463,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "4e5cdb291c0422da66902644ce641a7f5ec733c6f5c883d0e608957538ec376a:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-15370-libssh-4",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libssh-4, version 0.10.6-2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libssh-4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/usr/share/doc/libssh-4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libssh-4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:c2c960ebd0c593e47a6423a6dbcf759552c283843ff7effcceb993d15e732f3d:/var/lib/dpkg/info/libssh-4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "f0c20762fe9d136051f34c52f3525437bbc2bcb2c0e7ebb8b8c8ae95dd9d63ae:1"
           }
         },
         {
