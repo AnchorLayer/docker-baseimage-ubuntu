@@ -808,6 +808,27 @@
               }
             },
             {
+              "id": "CVE-2026-18508-tar",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-18508 medium vulnerability for tar package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in GNU tar. When extracting an archive with the --one-top-level option, hardlink targets are not confined to the designated top-level directory and may resolve relative to the extraction working directory. A crafted archive can create hardlinks that escape the intended boundary and, when combined with a preexisting symbolic link under the working directory, may allow writing outside that boundary during a single extraction."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-18508",
+              "help": {
+                "text": "Vulnerability CVE-2026-18508\nSeverity: medium\nPackage: tar\nVersion: 1.35+dfsg-3ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-18508](https://ubuntu.com/security/CVE-2026-18508)",
+                "markdown": "**Vulnerability CVE-2026-18508**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.35+dfsg-3ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-18508](https://ubuntu.com/security/CVE-2026-18508)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/tar@1.35%2Bdfsg-3ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "4.4"
+              }
+            },
+            {
               "id": "CVE-2026-13757-libp11-kit0",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -847,27 +868,6 @@
                   "pkg:deb/ubuntu/coreutils@9.4-3ubuntu6.2?arch=amd64\u0026distro=ubuntu-24.04"
                 ],
                 "security-severity": "4.6"
-              }
-            },
-            {
-              "id": "CVE-2026-18508-tar",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-18508 medium vulnerability for tar package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in GNU tar. When extracting an archive with the --one-top-level option, hardlink targets are not confined to the designated top-level directory and may resolve relative to the extraction working directory. A crafted archive can create hardlinks that escape the intended boundary and, when combined with a preexisting symbolic link under the working directory, may allow writing outside that boundary during a single extraction."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-18508",
-              "help": {
-                "text": "Vulnerability CVE-2026-18508\nSeverity: medium\nPackage: tar\nVersion: 1.35+dfsg-3ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-18508](https://ubuntu.com/security/CVE-2026-18508)",
-                "markdown": "**Vulnerability CVE-2026-18508**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.35+dfsg-3ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-18508](https://ubuntu.com/security/CVE-2026-18508)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/tar@1.35%2Bdfsg-3ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "4.4"
               }
             },
             {
@@ -3894,6 +3894,57 @@
           }
         },
         {
+          "ruleId": "CVE-2026-18508-tar",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: tar, version 1.35+dfsg-3ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:b143b58a83d446b695718f99fac912e0ec25398962078cc7141d31343018b626:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/tar/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:42724e448bf499ec7d4b3c21d6cc68fe665ef677ed393c3dbb5357394e89ff91:/usr/share/doc/tar/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:42724e448bf499ec7d4b3c21d6cc68fe665ef677ed393c3dbb5357394e89ff91:/var/lib/dpkg/info/tar.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:42724e448bf499ec7d4b3c21d6cc68fe665ef677ed393c3dbb5357394e89ff91:/var/lib/dpkg/info/tar.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:42724e448bf499ec7d4b3c21d6cc68fe665ef677ed393c3dbb5357394e89ff91:/var/lib/dpkg/info/tar.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/tar.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:42724e448bf499ec7d4b3c21d6cc68fe665ef677ed393c3dbb5357394e89ff91:/var/lib/dpkg/info/tar.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "3dd5c7e25559fd3b95c5df554bdfbc95146db06d527946835261ed3b0a417f64:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-13757-libp11-kit0",
           "level": "warning",
           "message": {
@@ -3973,57 +4024,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "f019c53a0b59f11c70847b04ddd5516f889e8da8fe16a0b21a29673f6c89f6c7:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-18508-tar",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: tar, version 1.35+dfsg-3ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:b143b58a83d446b695718f99fac912e0ec25398962078cc7141d31343018b626:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/tar/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:42724e448bf499ec7d4b3c21d6cc68fe665ef677ed393c3dbb5357394e89ff91:/usr/share/doc/tar/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:42724e448bf499ec7d4b3c21d6cc68fe665ef677ed393c3dbb5357394e89ff91:/var/lib/dpkg/info/tar.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:42724e448bf499ec7d4b3c21d6cc68fe665ef677ed393c3dbb5357394e89ff91:/var/lib/dpkg/info/tar.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:42724e448bf499ec7d4b3c21d6cc68fe665ef677ed393c3dbb5357394e89ff91:/var/lib/dpkg/info/tar.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/tar.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:42724e448bf499ec7d4b3c21d6cc68fe665ef677ed393c3dbb5357394e89ff91:/var/lib/dpkg/info/tar.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "3dd5c7e25559fd3b95c5df554bdfbc95146db06d527946835261ed3b0a417f64:1"
           }
         },
         {
