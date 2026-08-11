@@ -304,27 +304,6 @@
               }
             },
             {
-              "id": "CVE-2026-59844-libssh-4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-59844 medium vulnerability for libssh-4 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in libssh. A remote authenticated client can issue SSH_FXP_READ requests with an arbitrarily large length, causing a libssh SFTP server to allocate excessive memory and potentially exhaust it through repeated requests."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-59844",
-              "help": {
-                "text": "Vulnerability CVE-2026-59844\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-59844](https://ubuntu.com/security/CVE-2026-59844)",
-                "markdown": "**Vulnerability CVE-2026-59844**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-59844](https://ubuntu.com/security/CVE-2026-59844)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=libssh"
-                ],
-                "security-severity": "6.5"
-              }
-            },
-            {
               "id": "CVE-2026-59843-libssh-4",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -337,6 +316,27 @@
               "help": {
                 "text": "Vulnerability CVE-2026-59843\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-59843](https://ubuntu.com/security/CVE-2026-59843)",
                 "markdown": "**Vulnerability CVE-2026-59843**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-59843](https://ubuntu.com/security/CVE-2026-59843)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=libssh"
+                ],
+                "security-severity": "6.5"
+              }
+            },
+            {
+              "id": "CVE-2026-59844-libssh-4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-59844 medium vulnerability for libssh-4 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in libssh. A remote authenticated client can issue SSH_FXP_READ requests with an arbitrarily large length, causing a libssh SFTP server to allocate excessive memory and potentially exhaust it through repeated requests."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-59844",
+              "help": {
+                "text": "Vulnerability CVE-2026-59844\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-59844](https://ubuntu.com/security/CVE-2026-59844)",
+                "markdown": "**Vulnerability CVE-2026-59844**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-59844](https://ubuntu.com/security/CVE-2026-59844)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1603,6 +1603,27 @@
                   "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.5?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
                 "security-severity": "6.8"
+              }
+            },
+            {
+              "id": "CVE-2026-18938-libp11-kit0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-18938 medium vulnerability for libp11-kit0 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in p11-kit. A local attacker, or one with equivalent access to a reachable RPC channel, could exploit an integer overflow vulnerability. By sending specially crafted messages, the attacker can cause the system to miscalculate memory allocation for nested attributes. This leads to a memory corruption issue, specifically a heap out-of-bounds write, which can crash the p11-kit RPC parsing process, resulting in a Denial of Service (DoS). This vulnerability is only exploitable on 32 bit systems."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-18938",
+              "help": {
+                "text": "Vulnerability CVE-2026-18938\nSeverity: medium\nPackage: libp11-kit0\nVersion: 0.24.0-6build1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-18938](https://ubuntu.com/security/CVE-2026-18938)",
+                "markdown": "**Vulnerability CVE-2026-18938**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libp11-kit0  | 0.24.0-6build1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-18938](https://ubuntu.com/security/CVE-2026-18938)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libp11-kit0@0.24.0-6build1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=p11-kit"
+                ],
+                "security-severity": "6.2"
               }
             },
             {
@@ -3053,7 +3074,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-59844-libssh-4",
+          "ruleId": "CVE-2026-59843-libssh-4",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libssh-4, version 0.9.6-2ubuntu0.22.04.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
@@ -3092,7 +3113,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-59843-libssh-4",
+          "ruleId": "CVE-2026-59844-libssh-4",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libssh-4, version 0.9.6-2ubuntu0.22.04.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
@@ -5976,6 +5997,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "3e9259de8ff587934e9ea4770a56b48f1da2969f5dc72401964f2653c4a7e6e3:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-18938-libp11-kit0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libp11-kit0, version 0.24.0-6build1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:7eb7319f734b8789b8a9347935f49c9f4e91f79c36a4ddcdcbcbd69c84353211:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libp11-kit0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:beb59027b96ddbf30ac9c80b527668fe7011f4f553fe83f5e59199e9a84fb5ca:/usr/share/doc/libp11-kit0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libp11-kit0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:beb59027b96ddbf30ac9c80b527668fe7011f4f553fe83f5e59199e9a84fb5ca:/var/lib/dpkg/info/libp11-kit0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "625d071d1ee9531f51559913dfc7511c22aa8282d6bdea13860fb80237a08c4f:1"
           }
         },
         {
