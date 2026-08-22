@@ -2192,6 +2192,27 @@
                 ],
                 "security-severity": "4.0"
               }
+            },
+            {
+              "id": "CVE-2026-75803-libssl3t64",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-75803 low vulnerability for libssl3t64 package"
+              },
+              "fullDescription": {
+                "text": "Version 3.0.13-0ubuntu3.12 is affected with no fixes reported yet."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-75803",
+              "help": {
+                "text": "Vulnerability CVE-2026-75803\nSeverity: low\nPackage: libssl3t64\nVersion: 3.0.13-0ubuntu3.12\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-75803](https://ubuntu.com/security/CVE-2026-75803)",
+                "markdown": "**Vulnerability CVE-2026-75803**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libssl3t64  | 3.0.13-0ubuntu3.12  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-75803](https://ubuntu.com/security/CVE-2026-75803)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.12?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=openssl"
+                ],
+                "security-severity": "1.0"
+              }
             }
           ]
         }
@@ -6907,6 +6928,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "842d71fc79f54a4237074a00a2c154dc39b07dbdbddb4ec65f570af4f9acfddb:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-75803-libssl3t64",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libssl3t64, version 3.0.13-0ubuntu3.12 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:cf2e30aff98e4f7b973814dd16553383aefb347321476d0247f8619d97368571:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libssl3t64/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:b9a65b3c65ab22d490085bd0bf5490e2409da8748b406870f2463bdc41cd6795:/usr/share/doc/libssl3t64/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libssl3t64:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:b9a65b3c65ab22d490085bd0bf5490e2409da8748b406870f2463bdc41cd6795:/var/lib/dpkg/info/libssl3t64:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "b6d7ec3963f2e2ff343f64b474fe22698a2d994db12371f81ca4cfe4e86be8eb:1"
           }
         }
       ]
