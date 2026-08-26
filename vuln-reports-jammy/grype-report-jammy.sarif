@@ -325,27 +325,6 @@
               }
             },
             {
-              "id": "CVE-2026-59843-libssh-4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-59843 medium vulnerability for libssh-4 package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in libssh. A remote authenticated peer can advertise a zero maximum packet size in SSH_MSG_CHANNEL_OPEN, causing later channel writes to loop indefinitely and consume CPU, leading to denial of service."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-59843",
-              "help": {
-                "text": "Vulnerability CVE-2026-59843\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-59843](https://ubuntu.com/security/CVE-2026-59843)",
-                "markdown": "**Vulnerability CVE-2026-59843**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-59843](https://ubuntu.com/security/CVE-2026-59843)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=libssh"
-                ],
-                "security-severity": "6.5"
-              }
-            },
-            {
               "id": "CVE-2026-59844-libssh-4",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -358,6 +337,27 @@
               "help": {
                 "text": "Vulnerability CVE-2026-59844\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-59844](https://ubuntu.com/security/CVE-2026-59844)",
                 "markdown": "**Vulnerability CVE-2026-59844**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-59844](https://ubuntu.com/security/CVE-2026-59844)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libssh-4@0.9.6-2ubuntu0.22.04.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=libssh"
+                ],
+                "security-severity": "6.5"
+              }
+            },
+            {
+              "id": "CVE-2026-59843-libssh-4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-59843 medium vulnerability for libssh-4 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in libssh. A remote authenticated peer can advertise a zero maximum packet size in SSH_MSG_CHANNEL_OPEN, causing later channel writes to loop indefinitely and consume CPU, leading to denial of service."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-59843",
+              "help": {
+                "text": "Vulnerability CVE-2026-59843\nSeverity: medium\nPackage: libssh-4\nVersion: 0.9.6-2ubuntu0.22.04.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-59843](https://ubuntu.com/security/CVE-2026-59843)",
+                "markdown": "**Vulnerability CVE-2026-59843**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libssh-4  | 0.9.6-2ubuntu0.22.04.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-59843](https://ubuntu.com/security/CVE-2026-59843)  |\n"
               },
               "properties": {
                 "purls": [
@@ -2305,7 +2305,7 @@
                 "text": "CVE-2026-75803 low vulnerability for libssl3 package"
               },
               "fullDescription": {
-                "text": "Version 3.0.2-0ubuntu1.26 is affected with no fixes reported yet."
+                "text": "Issue summary: ChaCha20-Poly1305 and AES-OCB decryption with an empty\nciphertext can report success without verifying the supplied authentication\ntag when the operation is finalized by calling the EVP_Cipher() function.\n\nImpact summary: Applications calling EVP_Cipher() on an empty ciphertext and\nexpecting the call to check the AEAD tag may accept forged messages.\n\nCWE: CWE-354 (Improper Validation of Integrity Check Value)\n\nDescription: The EVP_Cipher() API call for AEAD ciphers behaves like a one\nshot encryption and decryption call. It also verifies the AEAD tag after the\ndecryption operation. However for AES-OCB and ChaCha20-Poly1305 ciphers\nit skipped the AEAD tag verification when an empty ciphertext was passed to\nthe function. The callers of this function might believe that a successful\nreturn indicates a valid AEAD tag for these ciphers, even when that has not\ntruly been validated in this case.\n\nFIPS impact: no\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not affected by this CVE\nas the affected algorithms are not FIPS approved and thus not implemented\nin the FIPS module."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-75803",
               "help": {
@@ -2965,7 +2965,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-59843-libssh-4",
+          "ruleId": "CVE-2026-59844-libssh-4",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libssh-4, version 0.9.6-2ubuntu0.22.04.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
@@ -3004,7 +3004,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-59844-libssh-4",
+          "ruleId": "CVE-2026-59843-libssh-4",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libssh-4, version 0.9.6-2ubuntu0.22.04.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
