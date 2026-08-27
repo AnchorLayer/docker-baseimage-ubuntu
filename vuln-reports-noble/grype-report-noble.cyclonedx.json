@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:27bb481a-d8fa-4eae-9ebd-c45291f459ed",
+  "serialNumber": "urn:uuid:b7b4ffba-f9a3-4bf7-98a7-6e36009c572e",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-08-27T00:27:39Z",
+    "timestamp": "2026-08-27T10:08:23Z",
     "tools": {
       "components": [
         {
@@ -37783,7 +37783,53 @@
   ],
   "vulnerabilities": [
     {
-      "bom-ref": "urn:uuid:86003c6c-0a6c-4cd4-afab-df7c8b5c9db0",
+      "bom-ref": "urn:uuid:ed1eca46-4f94-416a-93c8-6b4504b291ef",
+      "id": "CVE-2026-63076",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-63076"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-63076",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-63076"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        },
+        {
+          "source": {
+            "name": "FIRST",
+            "url": "https://www.first.org/epss/"
+          },
+          "score": 0.0133,
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.12?arch=amd64&distro=ubuntu-24.04&package-id=dadaa29a63de436b&upstream=openssl",
+          "versions": [
+            {
+              "version": "3.0.13-0ubuntu3.12",
+              "status": "affected"
+            },
+            {
+              "range": "vers:deb/>=3.0.13-0ubuntu3.15",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:8f037eba-031b-40c3-a597-4799057ba03b",
       "id": "CVE-2024-2236",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -37825,7 +37871,53 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:74163458-d2fd-445d-9cd6-c093b275e73f",
+      "bom-ref": "urn:uuid:4cdfd063-0100-4c27-a3d0-932d1cc58038",
+      "id": "CVE-2026-63072",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-63072"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-63072",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-63072"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        },
+        {
+          "source": {
+            "name": "FIRST",
+            "url": "https://www.first.org/epss/"
+          },
+          "score": 0.00612,
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.12?arch=amd64&distro=ubuntu-24.04&package-id=dadaa29a63de436b&upstream=openssl",
+          "versions": [
+            {
+              "version": "3.0.13-0ubuntu3.12",
+              "status": "affected"
+            },
+            {
+              "range": "vers:deb/>=3.0.13-0ubuntu3.15",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:7d2165f8-2972-4593-bd68-4de0bc09f8f9",
       "id": "CVE-2026-11856",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -37871,7 +37963,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:6a58125f-d203-49a3-9fed-c5dc29dfb516",
+      "bom-ref": "urn:uuid:34dc9712-3d84-45db-9f01-7363a6e20893",
       "id": "CVE-2026-11856",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -37917,7 +38009,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:3a2005f6-7212-48ea-ba7c-fdad0220d189",
+      "bom-ref": "urn:uuid:a7dfba12-937f-40fe-9f70-1bdf6cc88e88",
       "id": "CVE-2026-57433",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -37959,49 +38051,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:0906453b-1cf3-4605-8fc9-7cb2be1b7fa1",
-      "id": "CVE-2026-59844",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-59844"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-59844",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-59844"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        },
-        {
-          "source": {
-            "name": "FIRST",
-            "url": "https://www.first.org/epss/"
-          },
-          "score": 0.00526,
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64&distro=ubuntu-24.04&package-id=8316d9307af50d93&upstream=libssh",
-          "versions": [
-            {
-              "version": "0.10.6-2ubuntu0.4",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:1f196502-e8e9-4ed2-a471-0f29d41207e3",
+      "bom-ref": "urn:uuid:a25b07df-99b9-4979-b878-7fc27a931a20",
       "id": "CVE-2026-59843",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38043,7 +38093,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:1ae0e251-9aa4-4fc3-a0af-f584d3910d89",
+      "bom-ref": "urn:uuid:07e9e78c-0637-4b09-9931-64d586230a84",
       "id": "CVE-2026-9538",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38085,7 +38135,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:34ed06b2-6d5c-4d21-8c1b-ddfb8cb02a3b",
+      "bom-ref": "urn:uuid:0cb01f85-a254-467a-8a3c-981ce295c802",
       "id": "CVE-2026-13221",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38127,7 +38177,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:6d5dc89f-c90d-44b0-aa70-963f7e2daa84",
+      "bom-ref": "urn:uuid:81060ed6-faa9-4afd-9c27-5ee2778f28da",
       "id": "CVE-2026-19487",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38169,7 +38219,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:0f5c66c0-176c-4c20-9515-4b27f18191ed",
+      "bom-ref": "urn:uuid:75d62a04-5e77-482f-a42d-fcf3a5590f9a",
       "id": "CVE-2026-7017",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38211,7 +38261,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:5bf14a94-9708-4efe-ab90-1d73d6d99b9e",
+      "bom-ref": "urn:uuid:4f81845d-9da3-4c8f-8a5e-c429c228c569",
       "id": "CVE-2026-12087",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38253,7 +38303,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:29df0a97-3fa2-41f0-80a5-c4569769fc60",
+      "bom-ref": "urn:uuid:cc0611e3-dbbe-4e40-8edb-4b85f72b1ce4",
       "id": "CVE-2026-48959",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38295,7 +38345,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:72fef0a5-adbb-404f-b45f-f07bb62fc7df",
+      "bom-ref": "urn:uuid:0e68d0ec-f85c-49ce-8cc6-2688b6dafcec",
       "id": "CVE-2026-53910",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38337,7 +38387,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:103d93ab-78fb-44af-a453-757c084e1528",
+      "bom-ref": "urn:uuid:13cb2406-c383-4518-9922-a65ee0439bcb",
       "id": "CVE-2026-59850",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38379,7 +38429,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:a0ad49e8-8cc3-46dd-bcae-8e298010b238",
+      "bom-ref": "urn:uuid:217c8b46-d207-4975-a5a8-cf8a42b569d7",
       "id": "CVE-2026-59848",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38421,7 +38471,53 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:379c752b-1074-4c79-8a14-64f5200d6a1f",
+      "bom-ref": "urn:uuid:04d1b5ee-9138-4d42-837a-ce870f117ebb",
+      "id": "CVE-2026-54874",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-54874"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-54874",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-54874"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "low",
+          "method": "other"
+        },
+        {
+          "source": {
+            "name": "FIRST",
+            "url": "https://www.first.org/epss/"
+          },
+          "score": 0.00516,
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.12?arch=amd64&distro=ubuntu-24.04&package-id=dadaa29a63de436b&upstream=openssl",
+          "versions": [
+            {
+              "version": "3.0.13-0ubuntu3.12",
+              "status": "affected"
+            },
+            {
+              "range": "vers:deb/>=3.0.13-0ubuntu3.15",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:7677bfc5-8de1-45c3-9f85-0c6a13e73cff",
       "id": "CVE-2026-59847",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38463,7 +38559,53 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:4ca517f1-e83f-45e1-b39f-9c561beccd53",
+      "bom-ref": "urn:uuid:841e3417-1ee5-455a-a74b-1cdee5087ce8",
+      "id": "CVE-2026-63074",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-63074"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-63074",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-63074"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "low",
+          "method": "other"
+        },
+        {
+          "source": {
+            "name": "FIRST",
+            "url": "https://www.first.org/epss/"
+          },
+          "score": 0.00488,
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libssl3t64@3.0.13-0ubuntu3.12?arch=amd64&distro=ubuntu-24.04&package-id=dadaa29a63de436b&upstream=openssl",
+          "versions": [
+            {
+              "version": "3.0.13-0ubuntu3.12",
+              "status": "affected"
+            },
+            {
+              "range": "vers:deb/>=3.0.13-0ubuntu3.15",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:c5d31497-ad4e-45a0-bea7-5d5363f103a8",
       "id": "CVE-2026-48962",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38505,49 +38647,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:bd7d2b14-8372-43f4-abf1-d0b007f50af9",
-      "id": "CVE-2026-59851",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-59851"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-59851",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-59851"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        },
-        {
-          "source": {
-            "name": "FIRST",
-            "url": "https://www.first.org/epss/"
-          },
-          "score": 0.0029,
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64&distro=ubuntu-24.04&package-id=8316d9307af50d93&upstream=libssh",
-          "versions": [
-            {
-              "version": "0.10.6-2ubuntu0.4",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:deab0f74-fbe9-42a5-998a-04f73e386639",
+      "bom-ref": "urn:uuid:6724e359-ca43-45fd-aed0-e3ed8405e240",
       "id": "CVE-2024-10041",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38589,7 +38689,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:0dee7520-fa78-4895-aeaa-1e766c100bcd",
+      "bom-ref": "urn:uuid:92e4b928-263a-4ca1-a238-5222561e3b5c",
       "id": "CVE-2024-10041",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38631,7 +38731,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:817960af-ae7b-4e41-b56f-1b71eae975e2",
+      "bom-ref": "urn:uuid:0d4235d6-9260-4f6d-bcaa-7b0999e4e983",
       "id": "CVE-2024-10041",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38673,7 +38773,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:d5f1c3b9-049c-4355-b990-ccd4cadc3a5a",
+      "bom-ref": "urn:uuid:42b836b7-d0f9-42bb-9d89-a5ac7c796675",
       "id": "CVE-2024-10041",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38715,7 +38815,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:dc3e94d6-e24c-401c-a6b1-6e2487b1413b",
+      "bom-ref": "urn:uuid:96657e1f-c15b-4838-9f98-ff4da9c4e872",
       "id": "CVE-2016-2781",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38757,7 +38857,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:2cf64a33-dc5e-47fb-9cab-6fcdf355823a",
+      "bom-ref": "urn:uuid:903da10e-cea9-4554-886b-2e7228041739",
       "id": "CVE-2024-56433",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38799,7 +38899,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:7a27bfeb-c6d1-4dea-b95a-92258cac387e",
+      "bom-ref": "urn:uuid:3661a86f-9f59-4b25-aecf-c805c799dca0",
       "id": "CVE-2024-56433",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38841,49 +38941,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:e3c563ee-4da9-49f0-91b5-3c968b4d1116",
-      "id": "CVE-2026-59849",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-59849"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-59849",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-59849"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        },
-        {
-          "source": {
-            "name": "FIRST",
-            "url": "https://www.first.org/epss/"
-          },
-          "score": 0.00244,
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64&distro=ubuntu-24.04&package-id=8316d9307af50d93&upstream=libssh",
-          "versions": [
-            {
-              "version": "0.10.6-2ubuntu0.4",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:b5ab0512-1349-44a3-9e7f-b6dfa4ef2566",
+      "bom-ref": "urn:uuid:d8f6660c-3027-4a43-b7c9-7f72483997e7",
       "id": "CVE-2026-8932",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38919,13 +38977,17 @@
             {
               "version": "8.5.0-2ubuntu10.11",
               "status": "affected"
+            },
+            {
+              "range": "vers:deb/>=8.5.0-2ubuntu10.13",
+              "status": "unaffected"
             }
           ]
         }
       ]
     },
     {
-      "bom-ref": "urn:uuid:672b7cd6-2f60-403b-a960-f3b1255fed68",
+      "bom-ref": "urn:uuid:c6c02e87-dfb8-4f9d-843c-18522a5f9091",
       "id": "CVE-2026-8932",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -38961,13 +39023,17 @@
             {
               "version": "8.5.0-2ubuntu10.11",
               "status": "affected"
+            },
+            {
+              "range": "vers:deb/>=8.5.0-2ubuntu10.13",
+              "status": "unaffected"
             }
           ]
         }
       ]
     },
     {
-      "bom-ref": "urn:uuid:bfb4816f-72f0-460b-a696-0c628410704f",
+      "bom-ref": "urn:uuid:5d4cce6e-ae54-4a28-8f58-4ceef232bac0",
       "id": "CVE-2016-20013",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39009,7 +39075,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:58126bb5-b32a-4a1e-a59f-e1482ec71f3f",
+      "bom-ref": "urn:uuid:9115ba57-5f5a-4748-bea3-c0abde52c0f8",
       "id": "CVE-2016-20013",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39051,7 +39117,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:b93463e8-992f-48d5-bec2-c9fea6051004",
+      "bom-ref": "urn:uuid:812ebbc9-950b-4e38-9852-185419256ec3",
       "id": "CVE-2026-57432",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39093,7 +39159,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:e5215c76-8a1c-4cfb-81ed-9f313b0edfdf",
+      "bom-ref": "urn:uuid:db087be9-8f44-4ee4-a627-1903c8140a07",
       "id": "CVE-2026-6791",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39135,7 +39201,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:c89bf282-554c-431a-b274-b6a42d528c61",
+      "bom-ref": "urn:uuid:cbf7761c-ef4a-425a-b4be-2d85f65be5bc",
       "id": "CVE-2026-6791",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39177,7 +39243,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:c021f4f2-4929-4b6a-9786-201636e75626",
+      "bom-ref": "urn:uuid:eaee19db-b1ca-4db5-b82f-fd5ada7ec905",
       "id": "CVE-2022-3219",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39219,7 +39285,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:8b0ce6d3-3e78-417f-b844-70db07268b9a",
+      "bom-ref": "urn:uuid:a1029741-a2cd-433a-a09c-e30448a81887",
       "id": "CVE-2026-15534",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39261,49 +39327,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:43f5f9aa-1e53-4d88-ab5d-f8160a906583",
-      "id": "CVE-2026-56392",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-56392"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-56392",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-56392"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        },
-        {
-          "source": {
-            "name": "FIRST",
-            "url": "https://www.first.org/epss/"
-          },
-          "score": 0.00155,
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/coreutils@9.4-3ubuntu6.2?arch=amd64&distro=ubuntu-24.04&package-id=063550efa23293f6",
-          "versions": [
-            {
-              "version": "9.4-3ubuntu6.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:24ddeb34-0b46-41a7-85eb-fbecb264edc5",
+      "bom-ref": "urn:uuid:37b25539-ff6e-4673-a224-9e4add8a967f",
       "id": "CVE-2026-54369",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39345,49 +39369,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:e367526a-7653-46b0-bd8b-a30a2ff65fc1",
-      "id": "CVE-2026-15370",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-15370"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-15370",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-15370"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        },
-        {
-          "source": {
-            "name": "FIRST",
-            "url": "https://www.first.org/epss/"
-          },
-          "score": 0.00153,
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libssh-4@0.10.6-2ubuntu0.4?arch=amd64&distro=ubuntu-24.04&package-id=8316d9307af50d93&upstream=libssh",
-          "versions": [
-            {
-              "version": "0.10.6-2ubuntu0.4",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:693477e5-57a5-4125-890e-5199b2be3b7b",
+      "bom-ref": "urn:uuid:443dc7e3-813d-4ae4-8e52-f48e976c339a",
       "id": "CVE-2026-13595",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39429,7 +39411,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:eeb1df0a-f044-4c5f-8216-8095f75b53a0",
+      "bom-ref": "urn:uuid:34ac24ef-f3ba-4686-864d-e026f562414d",
       "id": "CVE-2026-13595",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39471,7 +39453,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:3cab62ae-aecc-490b-aee0-4d0ee935a199",
+      "bom-ref": "urn:uuid:697ba5e3-3217-4810-a1ca-00d198dbe221",
       "id": "CVE-2026-13595",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39513,7 +39495,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:4cc94fba-84f2-43c4-993c-fd5d70c80318",
+      "bom-ref": "urn:uuid:5bab6435-7a6d-4880-8ea9-b530261d777f",
       "id": "CVE-2026-13595",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39555,7 +39537,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:09abf8e3-6f42-4641-bbf0-87186c4681f2",
+      "bom-ref": "urn:uuid:3c7535aa-9b35-4ac2-98e6-0acfa36459dc",
       "id": "CVE-2026-13595",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39597,7 +39579,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:5cc5b793-c294-4fd2-9ea6-648552618daf",
+      "bom-ref": "urn:uuid:9dd253c9-8d2e-4a3a-95e2-c0a8d27a92c6",
       "id": "CVE-2026-13595",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39639,7 +39621,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:f0e84bed-859e-4fe9-9c59-c6f541e37c04",
+      "bom-ref": "urn:uuid:2262e9aa-7f78-40db-ab19-c4900b11c13c",
       "id": "CVE-2026-13595",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39681,7 +39663,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:863c254c-23a6-4347-b332-b67411fe0cb8",
+      "bom-ref": "urn:uuid:21d409cf-2e9e-4927-91f9-101cde20dea1",
       "id": "CVE-2025-5278",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39723,7 +39705,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:64e9fc61-aeae-4723-80fe-49f9ad5f517d",
+      "bom-ref": "urn:uuid:0efd2e38-ff7b-48c4-aaef-7b116bbd4d41",
       "id": "CVE-2026-13757",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39765,49 +39747,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:c2698250-7142-49ba-945a-a7fe2eb5756b",
-      "id": "CVE-2026-56391",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-56391"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-56391",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-56391"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        },
-        {
-          "source": {
-            "name": "FIRST",
-            "url": "https://www.first.org/epss/"
-          },
-          "score": 0.0014,
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/coreutils@9.4-3ubuntu6.2?arch=amd64&distro=ubuntu-24.04&package-id=063550efa23293f6",
-          "versions": [
-            {
-              "version": "9.4-3ubuntu6.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:dc85c27a-90ae-4f11-8ea7-8b71f105507f",
+      "bom-ref": "urn:uuid:fefbabad-f537-41dc-8581-07a3792bfb16",
       "id": "CVE-2026-18508",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39849,7 +39789,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:73b31e82-cb81-429d-9203-027f522818e0",
+      "bom-ref": "urn:uuid:435e3a2b-b26d-4192-ad24-45db9cb366fe",
       "id": "CVE-2026-54371",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39891,7 +39831,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:31f12aad-8ecb-416f-9ecf-8e5a95f5cba0",
+      "bom-ref": "urn:uuid:8119b1ba-81ae-468c-bfc7-e6c5ed1d9b7d",
       "id": "CVE-2026-27171",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39933,7 +39873,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:9e929020-edc5-4ad9-bd29-338f9f9d99dc",
+      "bom-ref": "urn:uuid:d8b112ed-12a1-4126-b9c4-0933762cdfb4",
       "id": "CVE-2025-15649",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -39975,7 +39915,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:01fdffed-228c-4ff2-ace4-899d6094f178",
+      "bom-ref": "urn:uuid:323f7dc0-486c-4886-b699-634a564b7dc9",
       "id": "CVE-2026-59846",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40017,7 +39957,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:a1b8c80b-a188-4fcb-a3e7-a872ff19d0d0",
+      "bom-ref": "urn:uuid:febb7eaf-bc4c-479e-a9dd-22c28d081bab",
       "id": "CVE-2026-27456",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40059,7 +39999,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:2188a034-8af3-4e17-8f5b-28a1301e6d34",
+      "bom-ref": "urn:uuid:bf290de5-8a69-4346-ae63-34cbbe4580cb",
       "id": "CVE-2026-27456",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40101,7 +40041,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:91da0f97-8738-4354-afb4-acb61395950f",
+      "bom-ref": "urn:uuid:7ce02525-7a24-40a8-9890-85715d7264d6",
       "id": "CVE-2026-27456",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40143,7 +40083,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:29da5a9d-ac11-4ef2-bdb4-a6fe81ddf14c",
+      "bom-ref": "urn:uuid:82f2593d-206b-404c-9530-6e81412f0fb5",
       "id": "CVE-2026-27456",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40185,7 +40125,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:a72e9a64-6ac3-415a-922a-38260a29eb00",
+      "bom-ref": "urn:uuid:79b508a5-b5d0-4ba9-b523-aa82dd11dabd",
       "id": "CVE-2026-27456",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40227,7 +40167,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:d9d1bdad-2816-4094-a95a-1673ad97eca4",
+      "bom-ref": "urn:uuid:9eff6bc6-1549-4441-bc93-070fba451639",
       "id": "CVE-2026-27456",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40269,7 +40209,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:3b5ea29e-158d-4e1e-b656-8dc40f2d2cef",
+      "bom-ref": "urn:uuid:7f786bea-47f0-4bcb-897d-4e2244113697",
       "id": "CVE-2026-27456",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40311,7 +40251,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:b483389e-2345-4f94-ae2e-07d889c9d8bb",
+      "bom-ref": "urn:uuid:c71b63f2-ab09-4acf-bac4-432db825a60e",
       "id": "CVE-2026-6368",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40353,7 +40293,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:8cd634c6-db52-4186-9433-ed8026efb4f3",
+      "bom-ref": "urn:uuid:1532a85d-2d66-4df0-b87c-6fe36d14281b",
       "id": "CVE-2026-6368",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40395,7 +40335,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:db250a0a-f006-4cfc-b51d-db16e60bddc4",
+      "bom-ref": "urn:uuid:205e39db-a090-4752-b8b3-bfa46cac71ce",
       "id": "CVE-2026-18938",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40437,7 +40377,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:a1fe6b28-8e0d-4b09-9e40-d9f31ed89581",
+      "bom-ref": "urn:uuid:c1f0cea7-c927-4fdd-8d28-be35228cc748",
       "id": "CVE-2026-59845",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40479,7 +40419,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:bc6e4094-006b-4a9b-b31b-3801312540ea",
+      "bom-ref": "urn:uuid:f9a6ef9b-cc05-420e-abcc-21e46ae544c2",
       "id": "CVE-2026-40228",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40521,7 +40461,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:71b519e3-7f75-4fb9-bd33-49e962cf978b",
+      "bom-ref": "urn:uuid:ccd947a4-8e33-4315-a872-3fc5df7bc3ca",
       "id": "CVE-2026-40228",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40563,7 +40503,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:3986c805-e7b9-48e6-9da0-c24188e35e60",
+      "bom-ref": "urn:uuid:15effcdc-2aa2-43a4-969b-658aebbfbc01",
       "id": "CVE-2025-6141",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40605,7 +40545,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:a57507d8-f5f8-4621-a1fa-6b6782166645",
+      "bom-ref": "urn:uuid:a2523d65-23b2-4b95-832d-80f8d518b812",
       "id": "CVE-2025-6141",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40647,7 +40587,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:5c94ef4c-c96a-4330-9dbc-66d5c180d4b0",
+      "bom-ref": "urn:uuid:e0607e8a-a30a-40fb-abc8-fccbf9de39eb",
       "id": "CVE-2025-6141",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40689,7 +40629,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:718489ca-e00f-45ce-a0f7-8ee5b17d5f4f",
+      "bom-ref": "urn:uuid:9e84e0db-5dcc-42da-b36d-b5c028cdcfda",
       "id": "CVE-2025-6141",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40731,7 +40671,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:287aa74c-49b1-4d36-8f8a-67cb7e2e04cd",
+      "bom-ref": "urn:uuid:daebd719-01f9-4ecf-9eff-381a1e38c029",
       "id": "CVE-2026-54370",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40773,7 +40713,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:756802bc-b464-46e4-957b-d09e6dce4ed9",
+      "bom-ref": "urn:uuid:5c445e1b-8d8c-41ab-a470-e15fed5a9e61",
       "id": "CVE-2026-57062",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40815,7 +40755,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:b105751e-2102-499f-8bc1-32c0b43065d6",
+      "bom-ref": "urn:uuid:4544abdd-3939-4058-ba4b-4a7cc82aa2f8",
       "id": "CVE-2026-18477",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40857,7 +40797,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:f6bd8f8e-225c-45a7-9f7c-b7a49d6b1890",
+      "bom-ref": "urn:uuid:951267ed-e23a-4bb5-abaf-a085074ad116",
       "id": "CVE-2026-42250",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -40899,959 +40839,7 @@
       ]
     },
     {
-      "bom-ref": "urn:uuid:ef61c578-36bb-4d63-8782-699ebfb67451",
-      "id": "CVE-2026-53612",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53612"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53612",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53612"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/bsdutils@1%3A2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=3c0ad287e54229a6&upstream=util-linux%402.39.3-9ubuntu6.5",
-          "versions": [
-            {
-              "version": "1:2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:9e3d2f23-8a70-4864-8fd0-e30838f177f2",
-      "id": "CVE-2026-53613",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53613"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53613",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53613"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/bsdutils@1%3A2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=3c0ad287e54229a6&upstream=util-linux%402.39.3-9ubuntu6.5",
-          "versions": [
-            {
-              "version": "1:2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:1ebc399b-f376-4cc0-aa1c-e5d12c6eb354",
-      "id": "CVE-2026-53614",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53614"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53614",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53614"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/bsdutils@1%3A2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=3c0ad287e54229a6&upstream=util-linux%402.39.3-9ubuntu6.5",
-          "versions": [
-            {
-              "version": "1:2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:f0d810f7-6eef-48d1-b952-dc1d0b2ea309",
-      "id": "CVE-2026-53615",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53615"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53615",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53615"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/bsdutils@1%3A2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=3c0ad287e54229a6&upstream=util-linux%402.39.3-9ubuntu6.5",
-          "versions": [
-            {
-              "version": "1:2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:6c9f8c59-7c5d-453b-ad5c-ee6ac5da176a",
-      "id": "CVE-2026-53612",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53612"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53612",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53612"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libblkid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=39ee0553a5289e3b&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:dfbff246-0896-46dd-936c-8630a76a7871",
-      "id": "CVE-2026-53613",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53613"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53613",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53613"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libblkid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=39ee0553a5289e3b&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:6b9e94fd-8fd3-4965-8557-8aa67220cbcf",
-      "id": "CVE-2026-53614",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53614"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53614",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53614"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libblkid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=39ee0553a5289e3b&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:bd5ff1a6-562c-4cb3-a0bf-60aa0f1bd226",
-      "id": "CVE-2026-53615",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53615"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53615",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53615"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libblkid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=39ee0553a5289e3b&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:a2494f74-c2d6-4c81-9b15-36e2ffbf38d3",
-      "id": "CVE-2026-53612",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53612"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53612",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53612"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libmount1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=9c3ce62925a3c63c&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:7ccb83f2-e175-4692-a29e-c1abe9bf44cc",
-      "id": "CVE-2026-53613",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53613"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53613",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53613"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libmount1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=9c3ce62925a3c63c&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:34d3be6f-570b-434c-b124-c1246e2852c7",
-      "id": "CVE-2026-53614",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53614"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53614",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53614"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libmount1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=9c3ce62925a3c63c&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:da251834-79a8-44aa-9770-45838763618a",
-      "id": "CVE-2026-53615",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53615"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53615",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53615"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libmount1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=9c3ce62925a3c63c&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:416e0fe3-eaba-465f-8c82-81773e81ced6",
-      "id": "CVE-2026-53612",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53612"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53612",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53612"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libsmartcols1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=e9ce5bacf834f391&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:70314f27-dccc-48af-8d6e-b7a9aea76940",
-      "id": "CVE-2026-53613",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53613"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53613",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53613"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libsmartcols1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=e9ce5bacf834f391&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:b34fe520-bf22-45e7-a05c-b2911535b01b",
-      "id": "CVE-2026-53614",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53614"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53614",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53614"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libsmartcols1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=e9ce5bacf834f391&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:463cea70-d7f0-4a4d-80d3-14e5a8e0ad5c",
-      "id": "CVE-2026-53615",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53615"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53615",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53615"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libsmartcols1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=e9ce5bacf834f391&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:22bfd2ef-8b1f-49a8-8f30-35b8228185bb",
-      "id": "CVE-2026-53612",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53612"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53612",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53612"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libuuid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=12e93d3f2a68625a&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:ea568405-611c-4b89-83ff-1ed674e76457",
-      "id": "CVE-2026-53613",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53613"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53613",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53613"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libuuid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=12e93d3f2a68625a&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:42e7bd9e-27c3-4c96-8a06-2498e11b9edb",
-      "id": "CVE-2026-53614",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53614"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53614",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53614"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libuuid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=12e93d3f2a68625a&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:c8e18b7e-6434-40f0-9c8c-d188688c77c8",
-      "id": "CVE-2026-53615",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53615"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53615",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53615"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/libuuid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=12e93d3f2a68625a&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:5e0612ea-da61-4b6a-8f8a-07700bbca63f",
-      "id": "CVE-2026-53612",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53612"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53612",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53612"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/mount@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=acbdafc6d61c681f&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:2e9c9163-37de-4742-b485-dc44caf5f913",
-      "id": "CVE-2026-53613",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53613"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53613",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53613"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/mount@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=acbdafc6d61c681f&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:5edc4127-4042-4276-a86c-c91934469397",
-      "id": "CVE-2026-53614",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53614"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53614",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53614"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/mount@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=acbdafc6d61c681f&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:fde1b84b-7afe-4227-ab86-b31587f09c63",
-      "id": "CVE-2026-53615",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53615"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53615",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53615"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/mount@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=acbdafc6d61c681f&upstream=util-linux",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:11bf9c83-8272-4edd-927c-18154752b926",
-      "id": "CVE-2026-53612",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53612"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53612",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53612"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/util-linux@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=5b3469dc9628ba1a",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:c9394f08-cb45-43d8-bbde-37bf81b26c70",
-      "id": "CVE-2026-53613",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53613"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53613",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53613"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/util-linux@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=5b3469dc9628ba1a",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:0b2e547f-4e7e-4826-91c5-7eec029f8d44",
-      "id": "CVE-2026-53614",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53614"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53614",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53614"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/util-linux@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=5b3469dc9628ba1a",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:c09aeda6-976f-4b11-b15b-f2deff877b6f",
-      "id": "CVE-2026-53615",
-      "source": {
-        "name": "ubuntu-distro-ubuntu-24.04",
-        "url": "https://ubuntu.com/security/CVE-2026-53615"
-      },
-      "references": [
-        {
-          "id": "CVE-2026-53615",
-          "source": {
-            "name": "ubuntu-distro-ubuntu-24.04",
-            "url": "https://ubuntu.com/security/CVE-2026-53615"
-          }
-        }
-      ],
-      "ratings": [
-        {
-          "severity": "medium",
-          "method": "other"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:deb/ubuntu/util-linux@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=5b3469dc9628ba1a",
-          "versions": [
-            {
-              "version": "2.39.3-9ubuntu6.5",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bom-ref": "urn:uuid:fdba2058-c9e7-426a-ba3e-4d755a400859",
+      "bom-ref": "urn:uuid:13582788-ee7f-4e3e-977b-b8f69aad4502",
       "id": "CVE-2026-75803",
       "source": {
         "name": "ubuntu-distro-ubuntu-24.04",
@@ -41870,6 +40858,14 @@
         {
           "severity": "low",
           "method": "other"
+        },
+        {
+          "source": {
+            "name": "FIRST",
+            "url": "https://www.first.org/epss/"
+          },
+          "score": 0.00116,
+          "method": "other"
         }
       ],
       "affects": [
@@ -41878,6 +40874,962 @@
           "versions": [
             {
               "version": "3.0.13-0ubuntu3.12",
+              "status": "affected"
+            },
+            {
+              "range": "vers:deb/>=3.0.13-0ubuntu3.15",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:e3d32ade-eb9d-4c40-83b2-fa537e68ac6a",
+      "id": "CVE-2026-53612",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53612"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53612",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53612"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/bsdutils@1%3A2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=3c0ad287e54229a6&upstream=util-linux%402.39.3-9ubuntu6.5",
+          "versions": [
+            {
+              "version": "1:2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:4acb3156-8b8d-4479-999a-acc66bf6d885",
+      "id": "CVE-2026-53613",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53613"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53613",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53613"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/bsdutils@1%3A2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=3c0ad287e54229a6&upstream=util-linux%402.39.3-9ubuntu6.5",
+          "versions": [
+            {
+              "version": "1:2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:44cb9f8e-36f8-4185-9865-b346ed5bd9fc",
+      "id": "CVE-2026-53614",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53614"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53614",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53614"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/bsdutils@1%3A2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=3c0ad287e54229a6&upstream=util-linux%402.39.3-9ubuntu6.5",
+          "versions": [
+            {
+              "version": "1:2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:f1009686-018c-443c-8575-9ca5ef3e3ffa",
+      "id": "CVE-2026-53615",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53615"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53615",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53615"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/bsdutils@1%3A2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=3c0ad287e54229a6&upstream=util-linux%402.39.3-9ubuntu6.5",
+          "versions": [
+            {
+              "version": "1:2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:2aa7f349-c41d-4d40-b528-cd1f50b533b1",
+      "id": "CVE-2026-53612",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53612"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53612",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53612"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libblkid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=39ee0553a5289e3b&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:a8623738-e819-439f-9cf4-4991b8248fb8",
+      "id": "CVE-2026-53613",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53613"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53613",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53613"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libblkid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=39ee0553a5289e3b&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:eb7f7569-74a5-4a46-9a30-18ed0852edb8",
+      "id": "CVE-2026-53614",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53614"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53614",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53614"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libblkid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=39ee0553a5289e3b&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:25124423-3104-4a43-bdaf-ee0f87eee568",
+      "id": "CVE-2026-53615",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53615"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53615",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53615"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libblkid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=39ee0553a5289e3b&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:1c4dc389-c982-4f45-ba76-65bdd377b288",
+      "id": "CVE-2026-53612",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53612"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53612",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53612"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libmount1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=9c3ce62925a3c63c&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:39b219af-4f03-4185-8784-299112a07d77",
+      "id": "CVE-2026-53613",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53613"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53613",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53613"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libmount1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=9c3ce62925a3c63c&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:4bd43d6f-1e3f-475b-bbab-4f627afb5585",
+      "id": "CVE-2026-53614",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53614"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53614",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53614"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libmount1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=9c3ce62925a3c63c&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:d9afa1d3-9e20-4b58-9f89-a1f596aeef94",
+      "id": "CVE-2026-53615",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53615"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53615",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53615"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libmount1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=9c3ce62925a3c63c&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:bbf8f803-8159-423e-8a3e-3307e93c9d38",
+      "id": "CVE-2026-53612",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53612"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53612",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53612"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libsmartcols1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=e9ce5bacf834f391&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:a4a32cf9-5017-4b79-bee0-1c809c9776b4",
+      "id": "CVE-2026-53613",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53613"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53613",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53613"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libsmartcols1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=e9ce5bacf834f391&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:a7fa5d0e-8a94-4f9e-8216-a91377b5ff3b",
+      "id": "CVE-2026-53614",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53614"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53614",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53614"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libsmartcols1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=e9ce5bacf834f391&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:d8c800f8-94e3-4429-a505-091db4ccba6f",
+      "id": "CVE-2026-53615",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53615"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53615",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53615"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libsmartcols1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=e9ce5bacf834f391&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:18615ac1-d6ee-4256-b7db-aea0a01939d5",
+      "id": "CVE-2026-53612",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53612"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53612",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53612"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libuuid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=12e93d3f2a68625a&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:28f30182-3d62-4d88-92d3-3dc4000b23a1",
+      "id": "CVE-2026-53613",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53613"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53613",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53613"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libuuid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=12e93d3f2a68625a&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:77e24d68-6602-4be9-812e-6e545d57baad",
+      "id": "CVE-2026-53614",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53614"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53614",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53614"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libuuid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=12e93d3f2a68625a&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:2c2a32ca-a42a-4057-9497-cea090882a30",
+      "id": "CVE-2026-53615",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53615"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53615",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53615"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/libuuid1@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=12e93d3f2a68625a&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:723f7157-f0a8-4829-b506-20840b57b486",
+      "id": "CVE-2026-53612",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53612"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53612",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53612"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/mount@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=acbdafc6d61c681f&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:b88e2c76-7883-4f34-ba30-8c27055f3e79",
+      "id": "CVE-2026-53613",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53613"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53613",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53613"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/mount@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=acbdafc6d61c681f&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:b3c42048-6e20-43b9-bed0-793e1cf5b073",
+      "id": "CVE-2026-53614",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53614"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53614",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53614"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/mount@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=acbdafc6d61c681f&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:0bbcb0ff-9c7e-483b-bf05-3ed08ef582e8",
+      "id": "CVE-2026-53615",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53615"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53615",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53615"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/mount@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=acbdafc6d61c681f&upstream=util-linux",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:03f21b70-2c3c-4a45-82be-4e6e7d546022",
+      "id": "CVE-2026-53612",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53612"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53612",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53612"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/util-linux@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=5b3469dc9628ba1a",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:71ffa569-9412-489e-a710-efa28bb5c20a",
+      "id": "CVE-2026-53613",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53613"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53613",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53613"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/util-linux@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=5b3469dc9628ba1a",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:5152e339-4469-48a0-b987-7967f1fa6ae7",
+      "id": "CVE-2026-53614",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53614"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53614",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53614"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/util-linux@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=5b3469dc9628ba1a",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bom-ref": "urn:uuid:4682b644-27bc-4574-8daf-a1f30fa65222",
+      "id": "CVE-2026-53615",
+      "source": {
+        "name": "ubuntu-distro-ubuntu-24.04",
+        "url": "https://ubuntu.com/security/CVE-2026-53615"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-53615",
+          "source": {
+            "name": "ubuntu-distro-ubuntu-24.04",
+            "url": "https://ubuntu.com/security/CVE-2026-53615"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "other"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:deb/ubuntu/util-linux@2.39.3-9ubuntu6.5?arch=amd64&distro=ubuntu-24.04&package-id=5b3469dc9628ba1a",
+          "versions": [
+            {
+              "version": "2.39.3-9ubuntu6.5",
               "status": "affected"
             }
           ]
