@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.7" serialNumber="urn:uuid:4f58a4a4-9b74-4a72-b032-5743d8bcb274" version="1">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.7" serialNumber="urn:uuid:f6396d60-18b2-4193-8d24-69f10a87d0a9" version="1">
   <metadata>
-    <timestamp>2026-08-28T05:07:11Z</timestamp>
+    <timestamp>2026-08-28T17:37:29Z</timestamp>
     <tools>
       <components>
         <component type="application">
@@ -19376,7 +19376,7 @@
     </dependency>
   </dependencies>
   <vulnerabilities>
-    <vulnerability bom-ref="urn:uuid:6bb11ad4-68f4-47ef-925e-d2ac58b0469f">
+    <vulnerability bom-ref="urn:uuid:e9603c5a-de63-469e-97bc-f747d2aa9fbd">
       <id>CVE-2026-63076</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19421,7 +19421,97 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:646f9db8-3983-4870-8e8f-c2c3571102fa">
+    <vulnerability bom-ref="urn:uuid:4d5ad6da-3550-47d4-8a41-b487cbcd679a">
+      <id>CVE-2026-11856</id>
+      <source>
+        <name>ubuntu-distro-ubuntu-24.04</name>
+        <url>https://ubuntu.com/security/CVE-2026-11856</url>
+      </source>
+      <references>
+        <reference>
+          <id>CVE-2026-11856</id>
+          <source>
+            <name>ubuntu-distro-ubuntu-24.04</name>
+            <url>https://ubuntu.com/security/CVE-2026-11856</url>
+          </source>
+        </reference>
+      </references>
+      <ratings>
+        <rating>
+          <severity>medium</severity>
+          <method>other</method>
+        </rating>
+        <rating>
+          <source>
+            <name>FIRST</name>
+            <url>https://www.first.org/epss/</url>
+          </source>
+          <score>0.00688</score>
+          <method>other</method>
+        </rating>
+      </ratings>
+      <affects>
+        <target>
+          <ref>pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.11?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=4e44815b16375016</ref>
+          <versions>
+            <version>
+              <version>8.5.0-2ubuntu10.11</version>
+              <status>affected</status>
+            </version>
+            <version>
+              <range>vers:deb/&gt;=8.5.0-2ubuntu10.12</range>
+              <status>unaffected</status>
+            </version>
+          </versions>
+        </target>
+      </affects>
+    </vulnerability>
+    <vulnerability bom-ref="urn:uuid:33048cac-c4c9-4ed8-ba19-005ef296ea2e">
+      <id>CVE-2026-11856</id>
+      <source>
+        <name>ubuntu-distro-ubuntu-24.04</name>
+        <url>https://ubuntu.com/security/CVE-2026-11856</url>
+      </source>
+      <references>
+        <reference>
+          <id>CVE-2026-11856</id>
+          <source>
+            <name>ubuntu-distro-ubuntu-24.04</name>
+            <url>https://ubuntu.com/security/CVE-2026-11856</url>
+          </source>
+        </reference>
+      </references>
+      <ratings>
+        <rating>
+          <severity>medium</severity>
+          <method>other</method>
+        </rating>
+        <rating>
+          <source>
+            <name>FIRST</name>
+            <url>https://www.first.org/epss/</url>
+          </source>
+          <score>0.00688</score>
+          <method>other</method>
+        </rating>
+      </ratings>
+      <affects>
+        <target>
+          <ref>pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.11?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=e9ac01a38580c34f&amp;upstream=curl</ref>
+          <versions>
+            <version>
+              <version>8.5.0-2ubuntu10.11</version>
+              <status>affected</status>
+            </version>
+            <version>
+              <range>vers:deb/&gt;=8.5.0-2ubuntu10.12</range>
+              <status>unaffected</status>
+            </version>
+          </versions>
+        </target>
+      </affects>
+    </vulnerability>
+    <vulnerability bom-ref="urn:uuid:ca9df184-d63b-4901-82d1-0dc8b1377208">
       <id>CVE-2024-2236</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19462,7 +19552,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:358b0042-f95d-4a65-9c34-1f9b3a6c6d3b">
+    <vulnerability bom-ref="urn:uuid:db985f34-c92b-4d6c-873c-ff3a73cbe079">
       <id>CVE-2026-63072</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19507,138 +19597,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:bf7f43c4-c8d4-496f-849f-7ca05d832e00">
-      <id>CVE-2026-11856</id>
-      <source>
-        <name>ubuntu-distro-ubuntu-24.04</name>
-        <url>https://ubuntu.com/security/CVE-2026-11856</url>
-      </source>
-      <references>
-        <reference>
-          <id>CVE-2026-11856</id>
-          <source>
-            <name>ubuntu-distro-ubuntu-24.04</name>
-            <url>https://ubuntu.com/security/CVE-2026-11856</url>
-          </source>
-        </reference>
-      </references>
-      <ratings>
-        <rating>
-          <severity>medium</severity>
-          <method>other</method>
-        </rating>
-        <rating>
-          <source>
-            <name>FIRST</name>
-            <url>https://www.first.org/epss/</url>
-          </source>
-          <score>0.00604</score>
-          <method>other</method>
-        </rating>
-      </ratings>
-      <affects>
-        <target>
-          <ref>pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.11?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=4e44815b16375016</ref>
-          <versions>
-            <version>
-              <version>8.5.0-2ubuntu10.11</version>
-              <status>affected</status>
-            </version>
-            <version>
-              <range>vers:deb/&gt;=8.5.0-2ubuntu10.12</range>
-              <status>unaffected</status>
-            </version>
-          </versions>
-        </target>
-      </affects>
-    </vulnerability>
-    <vulnerability bom-ref="urn:uuid:9bc81836-6f4f-4677-8236-8a4e0aba2b35">
-      <id>CVE-2026-11856</id>
-      <source>
-        <name>ubuntu-distro-ubuntu-24.04</name>
-        <url>https://ubuntu.com/security/CVE-2026-11856</url>
-      </source>
-      <references>
-        <reference>
-          <id>CVE-2026-11856</id>
-          <source>
-            <name>ubuntu-distro-ubuntu-24.04</name>
-            <url>https://ubuntu.com/security/CVE-2026-11856</url>
-          </source>
-        </reference>
-      </references>
-      <ratings>
-        <rating>
-          <severity>medium</severity>
-          <method>other</method>
-        </rating>
-        <rating>
-          <source>
-            <name>FIRST</name>
-            <url>https://www.first.org/epss/</url>
-          </source>
-          <score>0.00604</score>
-          <method>other</method>
-        </rating>
-      </ratings>
-      <affects>
-        <target>
-          <ref>pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.11?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=e9ac01a38580c34f&amp;upstream=curl</ref>
-          <versions>
-            <version>
-              <version>8.5.0-2ubuntu10.11</version>
-              <status>affected</status>
-            </version>
-            <version>
-              <range>vers:deb/&gt;=8.5.0-2ubuntu10.12</range>
-              <status>unaffected</status>
-            </version>
-          </versions>
-        </target>
-      </affects>
-    </vulnerability>
-    <vulnerability bom-ref="urn:uuid:db7c36c7-96f2-43f5-b198-983fa63d9cde">
-      <id>CVE-2026-57433</id>
-      <source>
-        <name>ubuntu-distro-ubuntu-24.04</name>
-        <url>https://ubuntu.com/security/CVE-2026-57433</url>
-      </source>
-      <references>
-        <reference>
-          <id>CVE-2026-57433</id>
-          <source>
-            <name>ubuntu-distro-ubuntu-24.04</name>
-            <url>https://ubuntu.com/security/CVE-2026-57433</url>
-          </source>
-        </reference>
-      </references>
-      <ratings>
-        <rating>
-          <severity>medium</severity>
-          <method>other</method>
-        </rating>
-        <rating>
-          <source>
-            <name>FIRST</name>
-            <url>https://www.first.org/epss/</url>
-          </source>
-          <score>0.00559</score>
-          <method>other</method>
-        </rating>
-      </ratings>
-      <affects>
-        <target>
-          <ref>pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.3?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=fa96e1f25c487296&amp;upstream=perl</ref>
-          <versions>
-            <version>
-              <version>5.38.2-3.2ubuntu0.3</version>
-              <status>affected</status>
-            </version>
-          </versions>
-        </target>
-      </affects>
-    </vulnerability>
-    <vulnerability bom-ref="urn:uuid:9c9c86d6-d2b6-4e9b-bdff-7b6babca225c">
+    <vulnerability bom-ref="urn:uuid:e7e9c191-de4b-48d2-afe2-ca1ad5359de1">
       <id>CVE-2026-59843</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19679,7 +19638,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:fd35c2ff-df4d-46d6-bdad-8289463eea39">
+    <vulnerability bom-ref="urn:uuid:4f36f1ca-2788-41c5-9714-01dbfd020beb">
       <id>CVE-2026-9538</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19720,7 +19679,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:74afdf02-6cd4-4e1d-9a7e-0259c064a3ae">
+    <vulnerability bom-ref="urn:uuid:8bbbc6c3-db27-4b1e-a260-a4727a188666">
       <id>CVE-2026-13221</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19761,7 +19720,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:dd7acf17-1745-4fa9-8c1b-dbc7b0e3f63e">
+    <vulnerability bom-ref="urn:uuid:5b1ba3c9-b178-47da-a2e0-5d73c6892238">
       <id>CVE-2026-19487</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19802,7 +19761,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:83078ac9-4d17-4866-b679-4a3b074dca0b">
+    <vulnerability bom-ref="urn:uuid:b76034d5-85a1-4c9c-8f81-ee93c16d3e49">
       <id>CVE-2026-7017</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19843,7 +19802,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:02872cf5-d999-4b43-9a26-9a89ba221208">
+    <vulnerability bom-ref="urn:uuid:ac230f82-33a5-4bd3-bc8e-2a23cb0aeaef">
       <id>CVE-2026-12087</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19884,7 +19843,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:9f749744-b5b7-4b8b-b1bd-cc62928e26f9">
+    <vulnerability bom-ref="urn:uuid:6342d456-dcfb-476a-9bdb-9e0c50b6a8db">
       <id>CVE-2026-48959</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19925,7 +19884,48 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:bfcde320-b53b-4e4a-918e-52049225abaa">
+    <vulnerability bom-ref="urn:uuid:1ef1bad7-47e4-4fd3-bae4-cb74b89c2f9b">
+      <id>CVE-2026-57433</id>
+      <source>
+        <name>ubuntu-distro-ubuntu-24.04</name>
+        <url>https://ubuntu.com/security/CVE-2026-57433</url>
+      </source>
+      <references>
+        <reference>
+          <id>CVE-2026-57433</id>
+          <source>
+            <name>ubuntu-distro-ubuntu-24.04</name>
+            <url>https://ubuntu.com/security/CVE-2026-57433</url>
+          </source>
+        </reference>
+      </references>
+      <ratings>
+        <rating>
+          <severity>medium</severity>
+          <method>other</method>
+        </rating>
+        <rating>
+          <source>
+            <name>FIRST</name>
+            <url>https://www.first.org/epss/</url>
+          </source>
+          <score>0.00357</score>
+          <method>other</method>
+        </rating>
+      </ratings>
+      <affects>
+        <target>
+          <ref>pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.3?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=fa96e1f25c487296&amp;upstream=perl</ref>
+          <versions>
+            <version>
+              <version>5.38.2-3.2ubuntu0.3</version>
+              <status>affected</status>
+            </version>
+          </versions>
+        </target>
+      </affects>
+    </vulnerability>
+    <vulnerability bom-ref="urn:uuid:0f2fe690-f201-4e9e-b7df-0f7f9be3c6e8">
       <id>CVE-2026-53910</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -19966,7 +19966,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:338b4c44-9eaf-42be-baff-651a6d55c223">
+    <vulnerability bom-ref="urn:uuid:73901d9e-8bc8-4efc-aae5-dc93ccab2bf9">
       <id>CVE-2026-59850</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20007,7 +20007,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:2afcfdda-4cb0-456f-9680-de57580b7eb0">
+    <vulnerability bom-ref="urn:uuid:1b62e2a3-d0ab-47e5-9995-2f05feda28c3">
       <id>CVE-2026-59848</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20048,7 +20048,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:4ebf07a6-fb70-4bae-b679-18cb783a7b9c">
+    <vulnerability bom-ref="urn:uuid:20b8200a-54b9-4bd1-a40f-8db3b2e28d91">
       <id>CVE-2026-54874</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20093,7 +20093,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:bbadf0e7-7dc3-4b7d-b3c2-17f8e8f32bf0">
+    <vulnerability bom-ref="urn:uuid:8ae83852-07d6-4a52-ac38-24cc990c9025">
       <id>CVE-2026-59847</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20134,7 +20134,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:1a1e2862-277c-4a1b-8da8-7ad8e5abab55">
+    <vulnerability bom-ref="urn:uuid:e4d323b6-7b52-4e2d-8f7b-dd7ec44dc5d5">
       <id>CVE-2026-63074</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20179,7 +20179,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:7d2d8564-75ef-4def-a757-e593338ad7b4">
+    <vulnerability bom-ref="urn:uuid:8d689cd5-43d6-4a7c-aaa5-0001bd0adab6">
       <id>CVE-2026-48962</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20220,7 +20220,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:46fbf5f2-22da-44dc-bdc1-ec8a27a482f6">
+    <vulnerability bom-ref="urn:uuid:4910b185-919a-490b-8e78-a5981cb06bb0">
       <id>CVE-2024-10041</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20261,7 +20261,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:0b68920d-c353-4e8b-af6c-da6ae7b73bd9">
+    <vulnerability bom-ref="urn:uuid:b2581bf2-aeff-4239-8faa-33f77942463c">
       <id>CVE-2024-10041</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20302,7 +20302,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:c2836740-a5aa-4470-8751-b2724d230505">
+    <vulnerability bom-ref="urn:uuid:917df360-ec53-4570-aa19-d62de9a2e089">
       <id>CVE-2024-10041</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20343,7 +20343,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:511c093d-fc86-44a8-b8d5-0766691f9a1e">
+    <vulnerability bom-ref="urn:uuid:68fbe7a3-1b7c-4420-b9a9-2b656f0ea968">
       <id>CVE-2024-10041</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20384,7 +20384,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:db3e4298-b7ae-4edb-8679-836656ad9e27">
+    <vulnerability bom-ref="urn:uuid:c2f00d5f-47bd-4a30-af8e-30fe4851d877">
       <id>CVE-2016-2781</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20425,7 +20425,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:8db997f5-c42d-443a-9da4-8ef0a88bd870">
+    <vulnerability bom-ref="urn:uuid:3340d124-6e9a-454e-838d-df70dce59a44">
       <id>CVE-2024-56433</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20466,7 +20466,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:0b4dc127-c1f1-4e23-8141-0f430bf6f813">
+    <vulnerability bom-ref="urn:uuid:f3b6f7a0-b5ba-4693-a875-9d9de87f154f">
       <id>CVE-2024-56433</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20507,7 +20507,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:aa90f967-0368-4287-96ef-87eb8933dfbc">
+    <vulnerability bom-ref="urn:uuid:eaf5c99c-be0f-452c-a436-6b959621bd69">
       <id>CVE-2026-8932</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20552,7 +20552,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:6987d21d-98d4-4486-bff0-7f52eb19d18b">
+    <vulnerability bom-ref="urn:uuid:dfd105f2-3241-4ac9-933a-d6830381f3da">
       <id>CVE-2026-8932</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20597,7 +20597,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:f89ae06c-bba2-4149-b9bc-f3b2a2b24c85">
+    <vulnerability bom-ref="urn:uuid:a9f5fbc7-c647-4299-9716-559769487e7f">
       <id>CVE-2016-20013</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20638,7 +20638,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:4443560a-1227-4a99-afdf-ac8475711f0f">
+    <vulnerability bom-ref="urn:uuid:a9e8d5ed-099d-4c3f-b1cb-01ded56f472e">
       <id>CVE-2016-20013</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20679,7 +20679,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:3aae78e3-53ae-487b-ae95-58358a1a5f80">
+    <vulnerability bom-ref="urn:uuid:5e5a02c3-1c3e-49c6-9270-d85c093987cb">
       <id>CVE-2026-57432</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20720,7 +20720,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:5f70349f-c1fc-40a3-852e-8259db099e83">
+    <vulnerability bom-ref="urn:uuid:61ae9602-0fb1-4e08-9996-fb5124f4b324">
       <id>CVE-2026-6791</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20761,7 +20761,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:6644058d-5d8a-47b1-976e-678dc2849af4">
+    <vulnerability bom-ref="urn:uuid:53b62d3b-10cb-4ce7-a234-8c75ea7cfa31">
       <id>CVE-2026-6791</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20802,7 +20802,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:1856cf56-25c6-42bf-ac6a-10e8ac697d03">
+    <vulnerability bom-ref="urn:uuid:9000bcbf-82ae-4b44-b672-d9e9657503fa">
       <id>CVE-2022-3219</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20843,7 +20843,294 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:ab143dcd-bf19-415d-8104-092b3c3f7b1b">
+    <vulnerability bom-ref="urn:uuid:4188ac84-a6b8-498b-9466-b42af0245c57">
+      <id>CVE-2026-13595</id>
+      <source>
+        <name>ubuntu-distro-ubuntu-24.04</name>
+        <url>https://ubuntu.com/security/CVE-2026-13595</url>
+      </source>
+      <references>
+        <reference>
+          <id>CVE-2026-13595</id>
+          <source>
+            <name>ubuntu-distro-ubuntu-24.04</name>
+            <url>https://ubuntu.com/security/CVE-2026-13595</url>
+          </source>
+        </reference>
+      </references>
+      <ratings>
+        <rating>
+          <severity>medium</severity>
+          <method>other</method>
+        </rating>
+        <rating>
+          <source>
+            <name>FIRST</name>
+            <url>https://www.first.org/epss/</url>
+          </source>
+          <score>0.00168</score>
+          <method>other</method>
+        </rating>
+      </ratings>
+      <affects>
+        <target>
+          <ref>pkg:deb/ubuntu/bsdutils@1%3A2.39.3-9ubuntu6.5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=3c0ad287e54229a6&amp;upstream=util-linux%402.39.3-9ubuntu6.5</ref>
+          <versions>
+            <version>
+              <version>1:2.39.3-9ubuntu6.5</version>
+              <status>affected</status>
+            </version>
+          </versions>
+        </target>
+      </affects>
+    </vulnerability>
+    <vulnerability bom-ref="urn:uuid:d961f678-5f2d-45e8-946e-2da031874d9d">
+      <id>CVE-2026-13595</id>
+      <source>
+        <name>ubuntu-distro-ubuntu-24.04</name>
+        <url>https://ubuntu.com/security/CVE-2026-13595</url>
+      </source>
+      <references>
+        <reference>
+          <id>CVE-2026-13595</id>
+          <source>
+            <name>ubuntu-distro-ubuntu-24.04</name>
+            <url>https://ubuntu.com/security/CVE-2026-13595</url>
+          </source>
+        </reference>
+      </references>
+      <ratings>
+        <rating>
+          <severity>medium</severity>
+          <method>other</method>
+        </rating>
+        <rating>
+          <source>
+            <name>FIRST</name>
+            <url>https://www.first.org/epss/</url>
+          </source>
+          <score>0.00168</score>
+          <method>other</method>
+        </rating>
+      </ratings>
+      <affects>
+        <target>
+          <ref>pkg:deb/ubuntu/libblkid1@2.39.3-9ubuntu6.5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=39ee0553a5289e3b&amp;upstream=util-linux</ref>
+          <versions>
+            <version>
+              <version>2.39.3-9ubuntu6.5</version>
+              <status>affected</status>
+            </version>
+          </versions>
+        </target>
+      </affects>
+    </vulnerability>
+    <vulnerability bom-ref="urn:uuid:c8ff3a40-7c84-4324-aa96-f32a8afae814">
+      <id>CVE-2026-13595</id>
+      <source>
+        <name>ubuntu-distro-ubuntu-24.04</name>
+        <url>https://ubuntu.com/security/CVE-2026-13595</url>
+      </source>
+      <references>
+        <reference>
+          <id>CVE-2026-13595</id>
+          <source>
+            <name>ubuntu-distro-ubuntu-24.04</name>
+            <url>https://ubuntu.com/security/CVE-2026-13595</url>
+          </source>
+        </reference>
+      </references>
+      <ratings>
+        <rating>
+          <severity>medium</severity>
+          <method>other</method>
+        </rating>
+        <rating>
+          <source>
+            <name>FIRST</name>
+            <url>https://www.first.org/epss/</url>
+          </source>
+          <score>0.00168</score>
+          <method>other</method>
+        </rating>
+      </ratings>
+      <affects>
+        <target>
+          <ref>pkg:deb/ubuntu/libmount1@2.39.3-9ubuntu6.5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=9c3ce62925a3c63c&amp;upstream=util-linux</ref>
+          <versions>
+            <version>
+              <version>2.39.3-9ubuntu6.5</version>
+              <status>affected</status>
+            </version>
+          </versions>
+        </target>
+      </affects>
+    </vulnerability>
+    <vulnerability bom-ref="urn:uuid:d75f9ddf-b1b8-475c-be29-3f8915f31010">
+      <id>CVE-2026-13595</id>
+      <source>
+        <name>ubuntu-distro-ubuntu-24.04</name>
+        <url>https://ubuntu.com/security/CVE-2026-13595</url>
+      </source>
+      <references>
+        <reference>
+          <id>CVE-2026-13595</id>
+          <source>
+            <name>ubuntu-distro-ubuntu-24.04</name>
+            <url>https://ubuntu.com/security/CVE-2026-13595</url>
+          </source>
+        </reference>
+      </references>
+      <ratings>
+        <rating>
+          <severity>medium</severity>
+          <method>other</method>
+        </rating>
+        <rating>
+          <source>
+            <name>FIRST</name>
+            <url>https://www.first.org/epss/</url>
+          </source>
+          <score>0.00168</score>
+          <method>other</method>
+        </rating>
+      </ratings>
+      <affects>
+        <target>
+          <ref>pkg:deb/ubuntu/libsmartcols1@2.39.3-9ubuntu6.5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=e9ce5bacf834f391&amp;upstream=util-linux</ref>
+          <versions>
+            <version>
+              <version>2.39.3-9ubuntu6.5</version>
+              <status>affected</status>
+            </version>
+          </versions>
+        </target>
+      </affects>
+    </vulnerability>
+    <vulnerability bom-ref="urn:uuid:f5fc055f-5b41-4198-bda3-85ea7cf8f947">
+      <id>CVE-2026-13595</id>
+      <source>
+        <name>ubuntu-distro-ubuntu-24.04</name>
+        <url>https://ubuntu.com/security/CVE-2026-13595</url>
+      </source>
+      <references>
+        <reference>
+          <id>CVE-2026-13595</id>
+          <source>
+            <name>ubuntu-distro-ubuntu-24.04</name>
+            <url>https://ubuntu.com/security/CVE-2026-13595</url>
+          </source>
+        </reference>
+      </references>
+      <ratings>
+        <rating>
+          <severity>medium</severity>
+          <method>other</method>
+        </rating>
+        <rating>
+          <source>
+            <name>FIRST</name>
+            <url>https://www.first.org/epss/</url>
+          </source>
+          <score>0.00168</score>
+          <method>other</method>
+        </rating>
+      </ratings>
+      <affects>
+        <target>
+          <ref>pkg:deb/ubuntu/libuuid1@2.39.3-9ubuntu6.5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=12e93d3f2a68625a&amp;upstream=util-linux</ref>
+          <versions>
+            <version>
+              <version>2.39.3-9ubuntu6.5</version>
+              <status>affected</status>
+            </version>
+          </versions>
+        </target>
+      </affects>
+    </vulnerability>
+    <vulnerability bom-ref="urn:uuid:ae7c801b-3d8f-42f9-aa0f-6e3361d21339">
+      <id>CVE-2026-13595</id>
+      <source>
+        <name>ubuntu-distro-ubuntu-24.04</name>
+        <url>https://ubuntu.com/security/CVE-2026-13595</url>
+      </source>
+      <references>
+        <reference>
+          <id>CVE-2026-13595</id>
+          <source>
+            <name>ubuntu-distro-ubuntu-24.04</name>
+            <url>https://ubuntu.com/security/CVE-2026-13595</url>
+          </source>
+        </reference>
+      </references>
+      <ratings>
+        <rating>
+          <severity>medium</severity>
+          <method>other</method>
+        </rating>
+        <rating>
+          <source>
+            <name>FIRST</name>
+            <url>https://www.first.org/epss/</url>
+          </source>
+          <score>0.00168</score>
+          <method>other</method>
+        </rating>
+      </ratings>
+      <affects>
+        <target>
+          <ref>pkg:deb/ubuntu/mount@2.39.3-9ubuntu6.5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=acbdafc6d61c681f&amp;upstream=util-linux</ref>
+          <versions>
+            <version>
+              <version>2.39.3-9ubuntu6.5</version>
+              <status>affected</status>
+            </version>
+          </versions>
+        </target>
+      </affects>
+    </vulnerability>
+    <vulnerability bom-ref="urn:uuid:90b3bb77-748a-4165-b1d9-79014747f441">
+      <id>CVE-2026-13595</id>
+      <source>
+        <name>ubuntu-distro-ubuntu-24.04</name>
+        <url>https://ubuntu.com/security/CVE-2026-13595</url>
+      </source>
+      <references>
+        <reference>
+          <id>CVE-2026-13595</id>
+          <source>
+            <name>ubuntu-distro-ubuntu-24.04</name>
+            <url>https://ubuntu.com/security/CVE-2026-13595</url>
+          </source>
+        </reference>
+      </references>
+      <ratings>
+        <rating>
+          <severity>medium</severity>
+          <method>other</method>
+        </rating>
+        <rating>
+          <source>
+            <name>FIRST</name>
+            <url>https://www.first.org/epss/</url>
+          </source>
+          <score>0.00168</score>
+          <method>other</method>
+        </rating>
+      </ratings>
+      <affects>
+        <target>
+          <ref>pkg:deb/ubuntu/util-linux@2.39.3-9ubuntu6.5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=5b3469dc9628ba1a</ref>
+          <versions>
+            <version>
+              <version>2.39.3-9ubuntu6.5</version>
+              <status>affected</status>
+            </version>
+          </versions>
+        </target>
+      </affects>
+    </vulnerability>
+    <vulnerability bom-ref="urn:uuid:8113e8af-e0d9-4753-b44e-b89799765457">
       <id>CVE-2026-15534</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20884,7 +21171,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:975bf577-215a-4028-b6c9-0e14ac00fa20">
+    <vulnerability bom-ref="urn:uuid:8fadac10-7e46-4ff8-bd3b-bd89ae222d5a">
       <id>CVE-2026-54369</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -20925,294 +21212,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:c0665be0-6109-4a3e-849d-b12c2b746c26">
-      <id>CVE-2026-13595</id>
-      <source>
-        <name>ubuntu-distro-ubuntu-24.04</name>
-        <url>https://ubuntu.com/security/CVE-2026-13595</url>
-      </source>
-      <references>
-        <reference>
-          <id>CVE-2026-13595</id>
-          <source>
-            <name>ubuntu-distro-ubuntu-24.04</name>
-            <url>https://ubuntu.com/security/CVE-2026-13595</url>
-          </source>
-        </reference>
-      </references>
-      <ratings>
-        <rating>
-          <severity>medium</severity>
-          <method>other</method>
-        </rating>
-        <rating>
-          <source>
-            <name>FIRST</name>
-            <url>https://www.first.org/epss/</url>
-          </source>
-          <score>0.00153</score>
-          <method>other</method>
-        </rating>
-      </ratings>
-      <affects>
-        <target>
-          <ref>pkg:deb/ubuntu/bsdutils@1%3A2.39.3-9ubuntu6.5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=3c0ad287e54229a6&amp;upstream=util-linux%402.39.3-9ubuntu6.5</ref>
-          <versions>
-            <version>
-              <version>1:2.39.3-9ubuntu6.5</version>
-              <status>affected</status>
-            </version>
-          </versions>
-        </target>
-      </affects>
-    </vulnerability>
-    <vulnerability bom-ref="urn:uuid:6f832440-3140-4a1a-ad23-506973284295">
-      <id>CVE-2026-13595</id>
-      <source>
-        <name>ubuntu-distro-ubuntu-24.04</name>
-        <url>https://ubuntu.com/security/CVE-2026-13595</url>
-      </source>
-      <references>
-        <reference>
-          <id>CVE-2026-13595</id>
-          <source>
-            <name>ubuntu-distro-ubuntu-24.04</name>
-            <url>https://ubuntu.com/security/CVE-2026-13595</url>
-          </source>
-        </reference>
-      </references>
-      <ratings>
-        <rating>
-          <severity>medium</severity>
-          <method>other</method>
-        </rating>
-        <rating>
-          <source>
-            <name>FIRST</name>
-            <url>https://www.first.org/epss/</url>
-          </source>
-          <score>0.00153</score>
-          <method>other</method>
-        </rating>
-      </ratings>
-      <affects>
-        <target>
-          <ref>pkg:deb/ubuntu/libblkid1@2.39.3-9ubuntu6.5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=39ee0553a5289e3b&amp;upstream=util-linux</ref>
-          <versions>
-            <version>
-              <version>2.39.3-9ubuntu6.5</version>
-              <status>affected</status>
-            </version>
-          </versions>
-        </target>
-      </affects>
-    </vulnerability>
-    <vulnerability bom-ref="urn:uuid:8d499183-4e50-4add-aca2-1a9c39f3d2ab">
-      <id>CVE-2026-13595</id>
-      <source>
-        <name>ubuntu-distro-ubuntu-24.04</name>
-        <url>https://ubuntu.com/security/CVE-2026-13595</url>
-      </source>
-      <references>
-        <reference>
-          <id>CVE-2026-13595</id>
-          <source>
-            <name>ubuntu-distro-ubuntu-24.04</name>
-            <url>https://ubuntu.com/security/CVE-2026-13595</url>
-          </source>
-        </reference>
-      </references>
-      <ratings>
-        <rating>
-          <severity>medium</severity>
-          <method>other</method>
-        </rating>
-        <rating>
-          <source>
-            <name>FIRST</name>
-            <url>https://www.first.org/epss/</url>
-          </source>
-          <score>0.00153</score>
-          <method>other</method>
-        </rating>
-      </ratings>
-      <affects>
-        <target>
-          <ref>pkg:deb/ubuntu/libmount1@2.39.3-9ubuntu6.5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=9c3ce62925a3c63c&amp;upstream=util-linux</ref>
-          <versions>
-            <version>
-              <version>2.39.3-9ubuntu6.5</version>
-              <status>affected</status>
-            </version>
-          </versions>
-        </target>
-      </affects>
-    </vulnerability>
-    <vulnerability bom-ref="urn:uuid:9db05acd-77bd-475f-857c-73ca3019fabd">
-      <id>CVE-2026-13595</id>
-      <source>
-        <name>ubuntu-distro-ubuntu-24.04</name>
-        <url>https://ubuntu.com/security/CVE-2026-13595</url>
-      </source>
-      <references>
-        <reference>
-          <id>CVE-2026-13595</id>
-          <source>
-            <name>ubuntu-distro-ubuntu-24.04</name>
-            <url>https://ubuntu.com/security/CVE-2026-13595</url>
-          </source>
-        </reference>
-      </references>
-      <ratings>
-        <rating>
-          <severity>medium</severity>
-          <method>other</method>
-        </rating>
-        <rating>
-          <source>
-            <name>FIRST</name>
-            <url>https://www.first.org/epss/</url>
-          </source>
-          <score>0.00153</score>
-          <method>other</method>
-        </rating>
-      </ratings>
-      <affects>
-        <target>
-          <ref>pkg:deb/ubuntu/libsmartcols1@2.39.3-9ubuntu6.5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=e9ce5bacf834f391&amp;upstream=util-linux</ref>
-          <versions>
-            <version>
-              <version>2.39.3-9ubuntu6.5</version>
-              <status>affected</status>
-            </version>
-          </versions>
-        </target>
-      </affects>
-    </vulnerability>
-    <vulnerability bom-ref="urn:uuid:388aa227-9cfd-43e3-8677-2e36dd1254ab">
-      <id>CVE-2026-13595</id>
-      <source>
-        <name>ubuntu-distro-ubuntu-24.04</name>
-        <url>https://ubuntu.com/security/CVE-2026-13595</url>
-      </source>
-      <references>
-        <reference>
-          <id>CVE-2026-13595</id>
-          <source>
-            <name>ubuntu-distro-ubuntu-24.04</name>
-            <url>https://ubuntu.com/security/CVE-2026-13595</url>
-          </source>
-        </reference>
-      </references>
-      <ratings>
-        <rating>
-          <severity>medium</severity>
-          <method>other</method>
-        </rating>
-        <rating>
-          <source>
-            <name>FIRST</name>
-            <url>https://www.first.org/epss/</url>
-          </source>
-          <score>0.00153</score>
-          <method>other</method>
-        </rating>
-      </ratings>
-      <affects>
-        <target>
-          <ref>pkg:deb/ubuntu/libuuid1@2.39.3-9ubuntu6.5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=12e93d3f2a68625a&amp;upstream=util-linux</ref>
-          <versions>
-            <version>
-              <version>2.39.3-9ubuntu6.5</version>
-              <status>affected</status>
-            </version>
-          </versions>
-        </target>
-      </affects>
-    </vulnerability>
-    <vulnerability bom-ref="urn:uuid:224c4b1d-06cd-4c60-b8f6-fe867479d9d8">
-      <id>CVE-2026-13595</id>
-      <source>
-        <name>ubuntu-distro-ubuntu-24.04</name>
-        <url>https://ubuntu.com/security/CVE-2026-13595</url>
-      </source>
-      <references>
-        <reference>
-          <id>CVE-2026-13595</id>
-          <source>
-            <name>ubuntu-distro-ubuntu-24.04</name>
-            <url>https://ubuntu.com/security/CVE-2026-13595</url>
-          </source>
-        </reference>
-      </references>
-      <ratings>
-        <rating>
-          <severity>medium</severity>
-          <method>other</method>
-        </rating>
-        <rating>
-          <source>
-            <name>FIRST</name>
-            <url>https://www.first.org/epss/</url>
-          </source>
-          <score>0.00153</score>
-          <method>other</method>
-        </rating>
-      </ratings>
-      <affects>
-        <target>
-          <ref>pkg:deb/ubuntu/mount@2.39.3-9ubuntu6.5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=acbdafc6d61c681f&amp;upstream=util-linux</ref>
-          <versions>
-            <version>
-              <version>2.39.3-9ubuntu6.5</version>
-              <status>affected</status>
-            </version>
-          </versions>
-        </target>
-      </affects>
-    </vulnerability>
-    <vulnerability bom-ref="urn:uuid:98a48a1f-2115-4179-9339-42c88e88ca67">
-      <id>CVE-2026-13595</id>
-      <source>
-        <name>ubuntu-distro-ubuntu-24.04</name>
-        <url>https://ubuntu.com/security/CVE-2026-13595</url>
-      </source>
-      <references>
-        <reference>
-          <id>CVE-2026-13595</id>
-          <source>
-            <name>ubuntu-distro-ubuntu-24.04</name>
-            <url>https://ubuntu.com/security/CVE-2026-13595</url>
-          </source>
-        </reference>
-      </references>
-      <ratings>
-        <rating>
-          <severity>medium</severity>
-          <method>other</method>
-        </rating>
-        <rating>
-          <source>
-            <name>FIRST</name>
-            <url>https://www.first.org/epss/</url>
-          </source>
-          <score>0.00153</score>
-          <method>other</method>
-        </rating>
-      </ratings>
-      <affects>
-        <target>
-          <ref>pkg:deb/ubuntu/util-linux@2.39.3-9ubuntu6.5?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=5b3469dc9628ba1a</ref>
-          <versions>
-            <version>
-              <version>2.39.3-9ubuntu6.5</version>
-              <status>affected</status>
-            </version>
-          </versions>
-        </target>
-      </affects>
-    </vulnerability>
-    <vulnerability bom-ref="urn:uuid:230d0102-7c66-403e-b854-cbf14092ca6e">
+    <vulnerability bom-ref="urn:uuid:db8c7a89-ed5e-47fc-ac50-af92cf59578c">
       <id>CVE-2025-5278</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21253,7 +21253,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:1d205c14-a51a-4f9d-9058-fba25abf29ed">
+    <vulnerability bom-ref="urn:uuid:651ada2f-64e3-41a8-8562-f17840d05df7">
       <id>CVE-2026-13757</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21294,7 +21294,48 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:e6c80ae5-b1a6-47ae-b9a5-62f8856bfbe9">
+    <vulnerability bom-ref="urn:uuid:ba0f2c11-8e65-424b-a076-5b476912d0dd">
+      <id>CVE-2026-54371</id>
+      <source>
+        <name>ubuntu-distro-ubuntu-24.04</name>
+        <url>https://ubuntu.com/security/CVE-2026-54371</url>
+      </source>
+      <references>
+        <reference>
+          <id>CVE-2026-54371</id>
+          <source>
+            <name>ubuntu-distro-ubuntu-24.04</name>
+            <url>https://ubuntu.com/security/CVE-2026-54371</url>
+          </source>
+        </reference>
+      </references>
+      <ratings>
+        <rating>
+          <severity>medium</severity>
+          <method>other</method>
+        </rating>
+        <rating>
+          <source>
+            <name>FIRST</name>
+            <url>https://www.first.org/epss/</url>
+          </source>
+          <score>0.00137</score>
+          <method>other</method>
+        </rating>
+      </ratings>
+      <affects>
+        <target>
+          <ref>pkg:deb/ubuntu/libattr1@1%3A2.5.2-1build1.1?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=f220b53ee9e82286&amp;upstream=attr</ref>
+          <versions>
+            <version>
+              <version>1:2.5.2-1build1.1</version>
+              <status>affected</status>
+            </version>
+          </versions>
+        </target>
+      </affects>
+    </vulnerability>
+    <vulnerability bom-ref="urn:uuid:cb29f12e-44ca-481c-ac5b-c7b959d0ca0d">
       <id>CVE-2026-18508</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21335,48 +21376,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:6784955d-3c36-44ce-a458-c5987c6a6807">
-      <id>CVE-2026-54371</id>
-      <source>
-        <name>ubuntu-distro-ubuntu-24.04</name>
-        <url>https://ubuntu.com/security/CVE-2026-54371</url>
-      </source>
-      <references>
-        <reference>
-          <id>CVE-2026-54371</id>
-          <source>
-            <name>ubuntu-distro-ubuntu-24.04</name>
-            <url>https://ubuntu.com/security/CVE-2026-54371</url>
-          </source>
-        </reference>
-      </references>
-      <ratings>
-        <rating>
-          <severity>medium</severity>
-          <method>other</method>
-        </rating>
-        <rating>
-          <source>
-            <name>FIRST</name>
-            <url>https://www.first.org/epss/</url>
-          </source>
-          <score>0.00131</score>
-          <method>other</method>
-        </rating>
-      </ratings>
-      <affects>
-        <target>
-          <ref>pkg:deb/ubuntu/libattr1@1%3A2.5.2-1build1.1?arch=amd64&amp;distro=ubuntu-24.04&amp;package-id=f220b53ee9e82286&amp;upstream=attr</ref>
-          <versions>
-            <version>
-              <version>1:2.5.2-1build1.1</version>
-              <status>affected</status>
-            </version>
-          </versions>
-        </target>
-      </affects>
-    </vulnerability>
-    <vulnerability bom-ref="urn:uuid:cd2be406-5723-4880-940d-2e6b3732788d">
+    <vulnerability bom-ref="urn:uuid:8b0aab0a-3751-4855-b7a1-a3bdda69c773">
       <id>CVE-2026-27171</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21417,7 +21417,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:9b3e308d-8807-4951-8f88-b63bc7cf8836">
+    <vulnerability bom-ref="urn:uuid:25539931-03d6-4d81-9f06-d0b68345e75b">
       <id>CVE-2025-15649</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21458,7 +21458,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:1d971013-e80d-41e7-a74a-27fb3eb9935a">
+    <vulnerability bom-ref="urn:uuid:e7a1f834-ff60-40a6-ada8-b6bb101878d6">
       <id>CVE-2026-59846</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21499,7 +21499,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:05226026-e79e-4414-9bb6-a2e97aadd4d6">
+    <vulnerability bom-ref="urn:uuid:da7df13e-ba73-4ff9-84e5-ec7db1c5c316">
       <id>CVE-2026-27456</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21540,7 +21540,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:5c8ff970-424d-4d71-8674-cbdf9d2545e1">
+    <vulnerability bom-ref="urn:uuid:7f55572d-44c7-49f9-a6c7-00782d17a7ae">
       <id>CVE-2026-27456</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21581,7 +21581,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:1697de03-2c12-4041-bb69-f778d33df133">
+    <vulnerability bom-ref="urn:uuid:ef45a1ed-8aa5-4459-9612-4a008ea71bf0">
       <id>CVE-2026-27456</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21622,7 +21622,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:92807f23-d244-4cbc-a026-be0a65a18aac">
+    <vulnerability bom-ref="urn:uuid:2b6b8f81-50e4-4ec6-b457-1f908bdecaa5">
       <id>CVE-2026-27456</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21663,7 +21663,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:3db231e3-9ee3-48dc-b83d-efe871fcaaa2">
+    <vulnerability bom-ref="urn:uuid:c1a74354-d8db-44d7-833a-aba48f495504">
       <id>CVE-2026-27456</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21704,7 +21704,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:669f0923-573a-4414-8526-a8db206fa002">
+    <vulnerability bom-ref="urn:uuid:eb6bef11-e7a3-443a-b7d6-21ec849ae58c">
       <id>CVE-2026-27456</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21745,7 +21745,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:9091db9a-953f-4246-807b-c9b6190766a7">
+    <vulnerability bom-ref="urn:uuid:78feab41-0a1e-4624-b3e3-0ff37d1a5809">
       <id>CVE-2026-27456</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21786,7 +21786,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:ff19e78c-44ca-4929-b2f2-4723f98a815d">
+    <vulnerability bom-ref="urn:uuid:eeac1cc6-8afe-4bde-9c0a-6ba61beec5fc">
       <id>CVE-2026-6368</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21827,7 +21827,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:6a19480a-daa1-4c01-867c-8c844a7194cc">
+    <vulnerability bom-ref="urn:uuid:acbaad6c-cf15-4a30-9b20-33b69468282d">
       <id>CVE-2026-6368</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21868,7 +21868,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:fc94cb16-8da0-411f-8672-206b4260c133">
+    <vulnerability bom-ref="urn:uuid:7024b6d7-c3ca-4e58-bbcb-bddb4ed61cee">
       <id>CVE-2026-18938</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21909,7 +21909,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:cd03d863-ef39-4a9a-9b82-380db1f3c199">
+    <vulnerability bom-ref="urn:uuid:3e64f356-4e9a-4da8-b257-72c7b5722c2f">
       <id>CVE-2026-59845</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21950,7 +21950,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:ba391fd9-acc1-41f3-97d7-fed5536ef86a">
+    <vulnerability bom-ref="urn:uuid:e20c0edb-26da-4599-a434-0e9dc2b6abe5">
       <id>CVE-2026-40228</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -21991,7 +21991,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:9b90a9a2-631d-4806-b045-a60457465387">
+    <vulnerability bom-ref="urn:uuid:aa6dc8ba-1690-43ea-ba41-3c0570a67442">
       <id>CVE-2026-40228</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22032,7 +22032,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:d9bbc32c-2321-4edb-a896-833bf3eb277a">
+    <vulnerability bom-ref="urn:uuid:fb38ade9-b5a2-49bf-b87c-63a3fa0ebe93">
       <id>CVE-2025-6141</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22073,7 +22073,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:be2b8d0c-d6d4-4522-9cf6-0729a5b90786">
+    <vulnerability bom-ref="urn:uuid:2a0a45f2-bd5d-4284-a3ff-fe45b96aec36">
       <id>CVE-2025-6141</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22114,7 +22114,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:83e5fa75-543a-482a-84a0-9212baa9edd3">
+    <vulnerability bom-ref="urn:uuid:9f934be0-e24c-4052-8e0b-3b65afd37b1a">
       <id>CVE-2025-6141</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22155,7 +22155,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:d2b2ef2f-d19a-4241-a977-fc06b53450ec">
+    <vulnerability bom-ref="urn:uuid:33fe08b6-5b5b-4e12-b86c-a13e59f08be4">
       <id>CVE-2025-6141</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22196,7 +22196,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:62333fa0-7850-4c92-9ec7-2727fa901788">
+    <vulnerability bom-ref="urn:uuid:b5a9eb55-57cd-4a48-9b24-13a3ecb3185f">
       <id>CVE-2026-54370</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22237,7 +22237,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:2e46a864-c9ae-4a4a-a4f3-2b98e7560c28">
+    <vulnerability bom-ref="urn:uuid:b58cd543-1104-4c0f-a40f-3e967a43d979">
       <id>CVE-2026-57062</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22278,7 +22278,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:e35c80b8-be78-4ffc-bdfe-9db9991fa10e">
+    <vulnerability bom-ref="urn:uuid:4fe31129-af83-42bb-a321-b85bc8397d53">
       <id>CVE-2026-18477</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22319,7 +22319,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:42f64dfe-8079-44fb-a36a-f1d5e952cacb">
+    <vulnerability bom-ref="urn:uuid:ab7aceea-98fc-4f75-bef2-a5095b64aab8">
       <id>CVE-2026-42250</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22360,7 +22360,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:c42132ad-58e9-4bdd-afd8-324887079994">
+    <vulnerability bom-ref="urn:uuid:5b747b9b-aa80-47d5-b7f5-afda99f642ef">
       <id>CVE-2026-75803</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22405,7 +22405,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:8695e80f-4205-4231-8102-2247bd0d0855">
+    <vulnerability bom-ref="urn:uuid:047719be-4f3f-43ed-afb9-03ef246fc7b4">
       <id>CVE-2026-53612</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22438,7 +22438,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:f19696b3-8065-46d1-bc13-127eaff8b722">
+    <vulnerability bom-ref="urn:uuid:b5ed5947-bb14-4998-a4d2-32739b7fab99">
       <id>CVE-2026-53613</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22471,7 +22471,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:4c4a9afd-99e5-4f6b-ac4c-bf97612411e7">
+    <vulnerability bom-ref="urn:uuid:9e1e65b5-e92a-46d4-8379-1ce07861e0ef">
       <id>CVE-2026-53614</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22504,7 +22504,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:ea2398e8-5156-48f5-a353-e4c6f4596158">
+    <vulnerability bom-ref="urn:uuid:1ebbbedc-f8d8-4bdb-9188-d96a2aa9115a">
       <id>CVE-2026-53615</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22537,7 +22537,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:b4c5ba9a-2bc6-4717-ac82-9d6e80cda04c">
+    <vulnerability bom-ref="urn:uuid:194643e5-7faa-46e0-8bdb-ae93d6440bac">
       <id>CVE-2026-53612</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22570,7 +22570,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:285f677e-2725-4848-ae1e-9331a8db5409">
+    <vulnerability bom-ref="urn:uuid:6db5413e-311b-4803-aaae-4bec53dcde6e">
       <id>CVE-2026-53613</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22603,7 +22603,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:9494dbec-5b50-4350-8d36-1d052699b918">
+    <vulnerability bom-ref="urn:uuid:957f3285-6789-4f16-9147-de36b9ca63b3">
       <id>CVE-2026-53614</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22636,7 +22636,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:4403f16e-b134-4b98-8dd7-6586dc1d2377">
+    <vulnerability bom-ref="urn:uuid:477b0f7d-29d9-4fc5-a0e3-19a398b56f91">
       <id>CVE-2026-53615</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22669,7 +22669,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:aa3dcfc1-11c4-4fc1-a701-8988a0142168">
+    <vulnerability bom-ref="urn:uuid:5339a6a2-94f5-4fa5-a58c-9cd7f07595c4">
       <id>CVE-2026-53612</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22702,7 +22702,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:700cdf1d-611f-4aef-8c7e-8b813611f170">
+    <vulnerability bom-ref="urn:uuid:133c94c9-32df-4738-abc0-4bf67d1c7e4f">
       <id>CVE-2026-53613</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22735,7 +22735,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:e00bad52-890f-4642-b6b0-b1c4c059c9e5">
+    <vulnerability bom-ref="urn:uuid:6eb859e4-c931-47b8-9ac5-f5bec40e5fc7">
       <id>CVE-2026-53614</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22768,7 +22768,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:32c42067-cb7a-4858-9297-cf18535469cc">
+    <vulnerability bom-ref="urn:uuid:80dedca1-b0a5-4deb-b9b4-1e51977fa6b4">
       <id>CVE-2026-53615</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22801,7 +22801,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:63447f85-da41-414d-9dae-f501b966090f">
+    <vulnerability bom-ref="urn:uuid:6e3b5645-7f31-4548-86cb-23c63f461e47">
       <id>CVE-2026-53612</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22834,7 +22834,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:0357ed20-f175-4fc5-bae9-7f58fcdf0fa1">
+    <vulnerability bom-ref="urn:uuid:e0fbeaa2-feb3-4107-8681-8bbf88247a5b">
       <id>CVE-2026-53613</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22867,7 +22867,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:1330fb96-3a53-4a7b-9d1b-ee47af76eaa2">
+    <vulnerability bom-ref="urn:uuid:e02ef228-1bdd-4d72-a6f9-0f59b2bfc49a">
       <id>CVE-2026-53614</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22900,7 +22900,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:740490c2-c691-4872-bdb3-8fa6b896f01c">
+    <vulnerability bom-ref="urn:uuid:30cd2380-2398-4db9-9f09-107bbdca3f65">
       <id>CVE-2026-53615</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22933,7 +22933,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:59daf3a8-5a3a-41e6-8d00-932a9e4d7fd8">
+    <vulnerability bom-ref="urn:uuid:7c27350f-ce6a-44f5-94ca-60006754ef23">
       <id>CVE-2026-53612</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22966,7 +22966,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:ff8bced4-eb05-4157-b706-84f08d53774c">
+    <vulnerability bom-ref="urn:uuid:55aa3736-2c13-4884-808c-c82a22cbf401">
       <id>CVE-2026-53613</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -22999,7 +22999,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:2a25a87d-b681-4c35-8d59-c38fad8899a7">
+    <vulnerability bom-ref="urn:uuid:84aeaee5-d43c-48f4-ac67-26b995ba7d4a">
       <id>CVE-2026-53614</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -23032,7 +23032,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:04c46f8b-a697-4e28-baca-42869470a21e">
+    <vulnerability bom-ref="urn:uuid:a3c0a1c4-c899-4ef4-9af2-7f05639c20fe">
       <id>CVE-2026-53615</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -23065,7 +23065,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:f67ff76f-27d7-4323-aa01-9b3dd8a8e1e6">
+    <vulnerability bom-ref="urn:uuid:3faff27d-1c29-49a3-8b4b-ff871f6d3d6f">
       <id>CVE-2026-53612</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -23098,7 +23098,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:bdfb3b60-cd82-491b-a3f0-a664041d263b">
+    <vulnerability bom-ref="urn:uuid:fe7679b6-d49d-4b93-9608-9291c82359b5">
       <id>CVE-2026-53613</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -23131,7 +23131,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:b68fcd52-b578-4c5f-ad09-be3196d963ed">
+    <vulnerability bom-ref="urn:uuid:9e446a1b-3aa9-4133-85af-ef393f9cb6ec">
       <id>CVE-2026-53614</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -23164,7 +23164,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:e189b609-dd1f-4af4-8b9f-5514ca3d9b1f">
+    <vulnerability bom-ref="urn:uuid:ab89f066-a35c-4c52-b4b7-897b0a3e51e3">
       <id>CVE-2026-53615</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -23197,7 +23197,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:d8669ec4-31c8-4854-a1f1-23d8b5fb0c88">
+    <vulnerability bom-ref="urn:uuid:e289d57e-396d-45bb-8c94-69c63ddbff36">
       <id>CVE-2026-53612</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -23230,7 +23230,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:6d9b9749-7f71-4971-b8f8-dba6fe654c2f">
+    <vulnerability bom-ref="urn:uuid:e598a1a8-4100-4bd9-b226-017f108af466">
       <id>CVE-2026-53613</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -23263,7 +23263,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:1999d732-fc12-4378-af01-e81ddf19dd8d">
+    <vulnerability bom-ref="urn:uuid:af54126a-9648-4ef4-bc2c-5088a316a440">
       <id>CVE-2026-53614</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>
@@ -23296,7 +23296,7 @@
         </target>
       </affects>
     </vulnerability>
-    <vulnerability bom-ref="urn:uuid:c259e70d-e67d-4764-beaf-eac49c4ebe6a">
+    <vulnerability bom-ref="urn:uuid:59dafb7b-1213-4d89-92bb-087c406ce1c6">
       <id>CVE-2026-53615</id>
       <source>
         <name>ubuntu-distro-ubuntu-24.04</name>

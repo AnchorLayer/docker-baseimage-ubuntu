@@ -73,6 +73,48 @@
               }
             },
             {
+              "id": "CVE-2026-11856-curl",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-11856 medium vulnerability for curl package"
+              },
+              "fullDescription": {
+                "text": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-11856",
+              "help": {
+                "text": "Vulnerability CVE-2026-11856\nSeverity: medium\nPackage: curl\nVersion: 7.81.0-1ubuntu1.25\nFix Version: 7.81.0-1ubuntu1.26\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)",
+                "markdown": "**Vulnerability CVE-2026-11856**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 7.81.0-1ubuntu1.25  | 7.81.0-1ubuntu1.26  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "9.8"
+              }
+            },
+            {
+              "id": "CVE-2026-11856-libcurl4",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-11856 medium vulnerability for libcurl4 package"
+              },
+              "fullDescription": {
+                "text": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-11856",
+              "help": {
+                "text": "Vulnerability CVE-2026-11856\nSeverity: medium\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.25\nFix Version: 7.81.0-1ubuntu1.26\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)",
+                "markdown": "**Vulnerability CVE-2026-11856**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4  | 7.81.0-1ubuntu1.25  | 7.81.0-1ubuntu1.26  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
+                ],
+                "security-severity": "9.8"
+              }
+            },
+            {
               "id": "CVE-2022-41409-libpcre2-8-0",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -133,48 +175,6 @@
                   "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.26?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
                 ],
                 "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-11856-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-11856 medium vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-11856",
-              "help": {
-                "text": "Vulnerability CVE-2026-11856\nSeverity: medium\nPackage: curl\nVersion: 7.81.0-1ubuntu1.25\nFix Version: 7.81.0-1ubuntu1.26\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)",
-                "markdown": "**Vulnerability CVE-2026-11856**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 7.81.0-1ubuntu1.25  | 7.81.0-1ubuntu1.26  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "9.8"
-              }
-            },
-            {
-              "id": "CVE-2026-11856-libcurl4",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-11856 medium vulnerability for libcurl4 package"
-              },
-              "fullDescription": {
-                "text": "Successfully using libcurl to do a transfer to a specific HTTP origin\n(`hostA`) with **Digest** authentication and then changing the origin to a\ndifferent one (`hostB`) for a second transfer, reusing the same handle, makes\nlibcurl wrongly pass on the  `Authorization:` header field meant for `hostA`,\nto `hostB`."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-11856",
-              "help": {
-                "text": "Vulnerability CVE-2026-11856\nSeverity: medium\nPackage: libcurl4\nVersion: 7.81.0-1ubuntu1.25\nFix Version: 7.81.0-1ubuntu1.26\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)",
-                "markdown": "**Vulnerability CVE-2026-11856**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4  | 7.81.0-1ubuntu1.25  | 7.81.0-1ubuntu1.26  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-11856](https://ubuntu.com/security/CVE-2026-11856)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
-                ],
-                "security-severity": "9.8"
               }
             },
             {
@@ -280,27 +280,6 @@
                   "pkg:deb/ubuntu/ncurses-bin@6.3-2ubuntu0.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=ncurses"
                 ],
                 "security-severity": "6.5"
-              }
-            },
-            {
-              "id": "CVE-2026-57433-perl-base",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-57433 medium vulnerability for perl-base package"
-              },
-              "fullDescription": {
-                "text": "Storable versions before 3.41 for Perl have a signed integer overflow when deserializing a crafted SX_HOOK record.\n\nretrieve_hook_common reads a signed 32-bit item count from an SX_HOOK record and calls av_extend with that count plus one. A count of I32_MAX wraps the addition to a negative value.\n\nA crafted blob passed to thaw or retrieve triggers the overflow; av_extend receives the negative count and dies with a panic, terminating the deserialization."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-57433",
-              "help": {
-                "text": "Vulnerability CVE-2026-57433\nSeverity: medium\nPackage: perl-base\nVersion: 5.34.0-3ubuntu1.7\nFix Version: 5.34.0-3ubuntu1.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-57433](https://ubuntu.com/security/CVE-2026-57433)",
-                "markdown": "**Vulnerability CVE-2026-57433**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.34.0-3ubuntu1.7  | 5.34.0-3ubuntu1.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-57433](https://ubuntu.com/security/CVE-2026-57433)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
-                ],
-                "security-severity": "9.8"
               }
             },
             {
@@ -532,6 +511,27 @@
                   "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
                 ],
                 "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2026-57433-perl-base",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-57433 medium vulnerability for perl-base package"
+              },
+              "fullDescription": {
+                "text": "Storable versions before 3.41 for Perl have a signed integer overflow when deserializing a crafted SX_HOOK record.\n\nretrieve_hook_common reads a signed 32-bit item count from an SX_HOOK record and calls av_extend with that count plus one. A count of I32_MAX wraps the addition to a negative value.\n\nA crafted blob passed to thaw or retrieve triggers the overflow; av_extend receives the negative count and dies with a panic, terminating the deserialization."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-57433",
+              "help": {
+                "text": "Vulnerability CVE-2026-57433\nSeverity: medium\nPackage: perl-base\nVersion: 5.34.0-3ubuntu1.7\nFix Version: 5.34.0-3ubuntu1.8\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-57433](https://ubuntu.com/security/CVE-2026-57433)",
+                "markdown": "**Vulnerability CVE-2026-57433**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.34.0-3ubuntu1.7  | 5.34.0-3ubuntu1.8  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-57433](https://ubuntu.com/security/CVE-2026-57433)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
+                ],
+                "security-severity": "9.8"
               }
             },
             {
@@ -1165,48 +1165,6 @@
               }
             },
             {
-              "id": "CVE-2026-15534-perl-base",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-15534 medium vulnerability for perl-base package"
-              },
-              "fullDescription": {
-                "text": "Perl versions through 5.45.1 have out-of-bounds heap reads and writes during regular expression matching via an undersized superlinear cache in S_regmatch.\n\nThe regex engine's superlinear cache holds one bit per subject position for each participating WHILEM node, so the bit count is the subject length plus one times the number of nodes. Nothing checks that product for positive overflow of the signed 32-bit count: a 286331153 byte subject matched against a pattern with 15 participating nodes stores the count as 14, leaving a two byte cache. The cache is then indexed from the real match position and node number, so reads go past the end of the allocation, and on failure CACHEsayNO sets a bit past it.\n\nA caller that matches an attacker controlled subject of this size against a pattern of this shape can crash the process or corrupt heap memory."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-15534",
-              "help": {
-                "text": "Vulnerability CVE-2026-15534\nSeverity: medium\nPackage: perl-base\nVersion: 5.34.0-3ubuntu1.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-15534](https://ubuntu.com/security/CVE-2026-15534)",
-                "markdown": "**Vulnerability CVE-2026-15534**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.34.0-3ubuntu1.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-15534](https://ubuntu.com/security/CVE-2026-15534)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
-                ],
-                "security-severity": "5.7"
-              }
-            },
-            {
-              "id": "CVE-2026-54369-libacl1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-54369 medium vulnerability for libacl1 package"
-              },
-              "fullDescription": {
-                "text": "acl before version 2.4.0 contains a symlink traversal vulnerability in the libacl pathname-based functions acl_get_file(), acl_set_file(), acl_extended_file(), and acl_delete_def_file() that allows local attackers to escalate privileges by replacing any pathname component with a symbolic link. Attackers who control any component of a pathname processed by a privileged caller can redirect ACL read or write operations to arbitrary files or directories, enabling unauthorized manipulation of access control lists and local privilege escalation."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-54369",
-              "help": {
-                "text": "Vulnerability CVE-2026-54369\nSeverity: medium\nPackage: libacl1\nVersion: 2.3.1-1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)",
-                "markdown": "**Vulnerability CVE-2026-54369**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libacl1  | 2.3.1-1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libacl1@2.3.1-1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=acl"
-                ],
-                "security-severity": "8.4"
-              }
-            },
-            {
               "id": "CVE-2026-13595-bsdutils",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1354,6 +1312,48 @@
               }
             },
             {
+              "id": "CVE-2026-15534-perl-base",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-15534 medium vulnerability for perl-base package"
+              },
+              "fullDescription": {
+                "text": "Perl versions through 5.45.1 have out-of-bounds heap reads and writes during regular expression matching via an undersized superlinear cache in S_regmatch.\n\nThe regex engine's superlinear cache holds one bit per subject position for each participating WHILEM node, so the bit count is the subject length plus one times the number of nodes. Nothing checks that product for positive overflow of the signed 32-bit count: a 286331153 byte subject matched against a pattern with 15 participating nodes stores the count as 14, leaving a two byte cache. The cache is then indexed from the real match position and node number, so reads go past the end of the allocation, and on failure CACHEsayNO sets a bit past it.\n\nA caller that matches an attacker controlled subject of this size against a pattern of this shape can crash the process or corrupt heap memory."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-15534",
+              "help": {
+                "text": "Vulnerability CVE-2026-15534\nSeverity: medium\nPackage: perl-base\nVersion: 5.34.0-3ubuntu1.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-15534](https://ubuntu.com/security/CVE-2026-15534)",
+                "markdown": "**Vulnerability CVE-2026-15534**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.34.0-3ubuntu1.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-15534](https://ubuntu.com/security/CVE-2026-15534)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
+                ],
+                "security-severity": "5.7"
+              }
+            },
+            {
+              "id": "CVE-2026-54369-libacl1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-54369 medium vulnerability for libacl1 package"
+              },
+              "fullDescription": {
+                "text": "acl before version 2.4.0 contains a symlink traversal vulnerability in the libacl pathname-based functions acl_get_file(), acl_set_file(), acl_extended_file(), and acl_delete_def_file() that allows local attackers to escalate privileges by replacing any pathname component with a symbolic link. Attackers who control any component of a pathname processed by a privileged caller can redirect ACL read or write operations to arbitrary files or directories, enabling unauthorized manipulation of access control lists and local privilege escalation."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-54369",
+              "help": {
+                "text": "Vulnerability CVE-2026-54369\nSeverity: medium\nPackage: libacl1\nVersion: 2.3.1-1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)",
+                "markdown": "**Vulnerability CVE-2026-54369**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libacl1  | 2.3.1-1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libacl1@2.3.1-1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=acl"
+                ],
+                "security-severity": "8.4"
+              }
+            },
+            {
               "id": "CVE-2025-5278-coreutils",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -1396,27 +1396,6 @@
               }
             },
             {
-              "id": "CVE-2026-18508-tar",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-18508 medium vulnerability for tar package"
-              },
-              "fullDescription": {
-                "text": "A flaw was found in GNU tar. When extracting an archive with the --one-top-level option, hardlink targets are not confined to the designated top-level directory and may resolve relative to the extraction working directory. A crafted archive can create hardlinks that escape the intended boundary and, when combined with a preexisting symbolic link under the working directory, may allow writing outside that boundary during a single extraction."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-18508",
-              "help": {
-                "text": "Vulnerability CVE-2026-18508\nSeverity: medium\nPackage: tar\nVersion: 1.34+dfsg-1ubuntu0.1.22.04.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-18508](https://ubuntu.com/security/CVE-2026-18508)",
-                "markdown": "**Vulnerability CVE-2026-18508**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.34+dfsg-1ubuntu0.1.22.04.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-18508](https://ubuntu.com/security/CVE-2026-18508)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/tar@1.34%2Bdfsg-1ubuntu0.1.22.04.6?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "4.4"
-              }
-            },
-            {
               "id": "CVE-2026-54371-libattr1",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1435,6 +1414,27 @@
                   "pkg:deb/ubuntu/libattr1@1%3A2.5.1-1build1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=attr"
                 ],
                 "security-severity": "8.4"
+              }
+            },
+            {
+              "id": "CVE-2026-18508-tar",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-18508 medium vulnerability for tar package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in GNU tar. When extracting an archive with the --one-top-level option, hardlink targets are not confined to the designated top-level directory and may resolve relative to the extraction working directory. A crafted archive can create hardlinks that escape the intended boundary and, when combined with a preexisting symbolic link under the working directory, may allow writing outside that boundary during a single extraction."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-18508",
+              "help": {
+                "text": "Vulnerability CVE-2026-18508\nSeverity: medium\nPackage: tar\nVersion: 1.34+dfsg-1ubuntu0.1.22.04.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-18508](https://ubuntu.com/security/CVE-2026-18508)",
+                "markdown": "**Vulnerability CVE-2026-18508**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | tar  | 1.34+dfsg-1ubuntu0.1.22.04.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-18508](https://ubuntu.com/security/CVE-2026-18508)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/tar@1.34%2Bdfsg-1ubuntu0.1.22.04.6?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "4.4"
               }
             },
             {
@@ -2419,6 +2419,88 @@
           }
         },
         {
+          "ruleId": "CVE-2026-11856-curl",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: curl, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/curl/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/usr/share/doc/curl/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/info/curl.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/curl.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/info/curl.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "1d8e5f46e9c2e955a7738cdae0e88526a64fde4287a28ef9ce8419ee2fb1ae44:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-11856-libcurl4",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libcurl4/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/usr/share/doc/libcurl4/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "35ab299753150113f0e0c71d1f3a1a34986e6a4765d491ef2a2c9bfb3b615075:1"
+          }
+        },
+        {
           "ruleId": "CVE-2022-41409-libpcre2-8-0",
           "level": "note",
           "message": {
@@ -2533,88 +2615,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "de59b64fd7941119e869cbd42a0a8cafe416b7baf329d253c1d9d993cf5c3699:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-11856-curl",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: curl, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "1d8e5f46e9c2e955a7738cdae0e88526a64fde4287a28ef9ce8419ee2fb1ae44:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-11856-libcurl4",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libcurl4, version 7.81.0-1ubuntu1.25 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/usr/share/doc/libcurl4/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/info/libcurl4:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "35ab299753150113f0e0c71d1f3a1a34986e6a4765d491ef2a2c9bfb3b615075:1"
           }
         },
         {
@@ -2822,65 +2822,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "4734e6cbeedbaef216f4ec52e79d2c1ad2b485454722d390df46f8358ac7f1e1:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-57433-perl-base",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: perl-base, version 5.34.0-3ubuntu1.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/perl-base/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/usr/share/doc/perl-base/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.postrm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.preinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "69ae01465f84fa5d8777ee771b1587a719cdc357475946a8160dfb43b952a39d:1"
           }
         },
         {
@@ -3395,6 +3336,65 @@
         },
         {
           "ruleId": "CVE-2026-48959-perl-base",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: perl-base, version 5.34.0-3ubuntu1.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/perl-base/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/usr/share/doc/perl-base/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.preinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "69ae01465f84fa5d8777ee771b1587a719cdc357475946a8160dfb43b952a39d:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-57433-perl-base",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: perl-base, version 5.34.0-3ubuntu1.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
@@ -4875,104 +4875,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-15534-perl-base",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: perl-base, version 5.34.0-3ubuntu1.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/perl-base/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/usr/share/doc/perl-base/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.postrm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.preinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "69ae01465f84fa5d8777ee771b1587a719cdc357475946a8160dfb43b952a39d:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-54369-libacl1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libacl1, version 2.3.1-1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libacl1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/usr/share/doc/libacl1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libacl1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/libacl1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "1360695183098a9deb6c0140cbe16458b7eec28a1127bb4884dc06af49057a68:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-13595-bsdutils",
           "level": "warning",
           "message": {
@@ -5278,6 +5180,104 @@
           }
         },
         {
+          "ruleId": "CVE-2026-15534-perl-base",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: perl-base, version 5.34.0-3ubuntu1.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/perl-base/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/usr/share/doc/perl-base/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.preinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "69ae01465f84fa5d8777ee771b1587a719cdc357475946a8160dfb43b952a39d:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-54369-libacl1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libacl1, version 2.3.1-1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libacl1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/usr/share/doc/libacl1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libacl1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/libacl1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "1360695183098a9deb6c0140cbe16458b7eec28a1127bb4884dc06af49057a68:1"
+          }
+        },
+        {
           "ruleId": "CVE-2025-5278-coreutils",
           "level": "note",
           "message": {
@@ -5368,6 +5368,49 @@
           }
         },
         {
+          "ruleId": "CVE-2026-54371-libattr1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libattr1, version 1:2.5.1-1build1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libattr1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/usr/share/doc/libattr1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libattr1:amd64.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/libattr1:amd64.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libattr1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/libattr1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "196940cd98b7291bad0c96c386691168f4c9806856228360002524753b0d7fd0:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-18508-tar",
           "level": "warning",
           "message": {
@@ -5416,49 +5459,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "7d884d19695fd532fabd8d1affae98614a2539b771fbe6047e8f1e9fadda7c0d:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-54371-libattr1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libattr1, version 1:2.5.1-1build1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libattr1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/usr/share/doc/libattr1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libattr1:amd64.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/libattr1:amd64.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libattr1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/libattr1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "196940cd98b7291bad0c96c386691168f4c9806856228360002524753b0d7fd0:1"
           }
         },
         {
