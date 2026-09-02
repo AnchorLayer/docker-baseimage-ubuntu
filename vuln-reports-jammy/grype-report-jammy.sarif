@@ -1396,27 +1396,6 @@
               }
             },
             {
-              "id": "CVE-2026-54371-libattr1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-54371 medium vulnerability for libattr1 package"
-              },
-              "fullDescription": {
-                "text": "attr before version 2.6.0 contains a symlink traversal vulnerability in the getfattr and setfattr utilities that allows local attackers to escalate privileges by replacing a pathname component with a symbolic link during directory hierarchy traversal. Attackers who control a pathname component can redirect getfattr and setfattr operations to arbitrary files by substituting a symlink, leading to local privilege escalation when getfattr or setfattr is invoked by a privileged process over an attacker-controlled path."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-54371",
-              "help": {
-                "text": "Vulnerability CVE-2026-54371\nSeverity: medium\nPackage: libattr1\nVersion: 1:2.5.1-1build1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-54371](https://ubuntu.com/security/CVE-2026-54371)",
-                "markdown": "**Vulnerability CVE-2026-54371**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libattr1  | 1:2.5.1-1build1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-54371](https://ubuntu.com/security/CVE-2026-54371)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libattr1@1%3A2.5.1-1build1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=attr"
-                ],
-                "security-severity": "8.4"
-              }
-            },
-            {
               "id": "CVE-2026-18508-tar",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -1435,6 +1414,27 @@
                   "pkg:deb/ubuntu/tar@1.34%2Bdfsg-1ubuntu0.1.22.04.6?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
                 "security-severity": "4.4"
+              }
+            },
+            {
+              "id": "CVE-2026-54371-libattr1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-54371 medium vulnerability for libattr1 package"
+              },
+              "fullDescription": {
+                "text": "attr before version 2.6.0 contains a symlink traversal vulnerability in the getfattr and setfattr utilities that allows local attackers to escalate privileges by replacing a pathname component with a symbolic link during directory hierarchy traversal. Attackers who control a pathname component can redirect getfattr and setfattr operations to arbitrary files by substituting a symlink, leading to local privilege escalation when getfattr or setfattr is invoked by a privileged process over an attacker-controlled path."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-54371",
+              "help": {
+                "text": "Vulnerability CVE-2026-54371\nSeverity: medium\nPackage: libattr1\nVersion: 1:2.5.1-1build1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-54371](https://ubuntu.com/security/CVE-2026-54371)",
+                "markdown": "**Vulnerability CVE-2026-54371**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libattr1  | 1:2.5.1-1build1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-54371](https://ubuntu.com/security/CVE-2026-54371)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libattr1@1%3A2.5.1-1build1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=attr"
+                ],
+                "security-severity": "8.4"
               }
             },
             {
@@ -1959,7 +1959,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.26?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=openssl"
                 ],
-                "security-severity": "1.0"
+                "security-severity": "9.1"
               }
             },
             {
@@ -5368,49 +5368,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-54371-libattr1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libattr1, version 1:2.5.1-1build1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libattr1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/usr/share/doc/libattr1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libattr1:amd64.conffiles",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/libattr1:amd64.conffiles"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libattr1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/libattr1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "196940cd98b7291bad0c96c386691168f4c9806856228360002524753b0d7fd0:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-18508-tar",
           "level": "warning",
           "message": {
@@ -5459,6 +5416,49 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "7d884d19695fd532fabd8d1affae98614a2539b771fbe6047e8f1e9fadda7c0d:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-54371-libattr1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libattr1, version 1:2.5.1-1build1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libattr1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/usr/share/doc/libattr1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libattr1:amd64.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/libattr1:amd64.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libattr1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/libattr1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "196940cd98b7291bad0c96c386691168f4c9806856228360002524753b0d7fd0:1"
           }
         },
         {
