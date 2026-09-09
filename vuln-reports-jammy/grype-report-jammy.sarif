@@ -415,7 +415,7 @@
                 "text": "CVE-2026-13221 medium vulnerability for perl-base package"
               },
               "fullDescription": {
-                "text": "Perl versions through 5.43.9 produce silently incorrect regular expression matches when an alternation of more than 65535 fixed string branches is compiled into a trie in Perl_study_chunk.\n\nWhen such branches are combined into a trie, the delta between the first branch and the shared tail is stored in a 16-bit field. A branch count above 65535 overflows the field, and the trie's match decision table is truncated with no warning or error.\n\nA pattern of this shape produces false positive matches (matching strings it should not) and false negative matches (failing to match strings it should). When such a pattern gates an access or filtering decision, the result is wrong."
+                "text": "Perl versions before 5.40.5-RC1, from 5.41.0 before 5.42.3-RC1, from 5.43.0 before 5.43.10 produce silently incorrect regular expression matches when an alternation of more than 65535 fixed string branches is compiled into a trie in Perl_study_chunk.\n\nWhen such branches are combined into a trie, the delta between the first branch and the shared tail is stored in a 16-bit field. A branch count above 65535 overflows the field, and the trie's match decision table is truncated with no warning or error.\n\nA pattern of this shape produces false positive matches (matching strings it should not) and false negative matches (failing to match strings it should). When such a pattern gates an access or filtering decision, the result is wrong."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-13221",
               "help": {
@@ -469,27 +469,6 @@
                   "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
                 ],
                 "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-7017-perl-base",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-7017 medium vulnerability for perl-base package"
-              },
-              "fullDescription": {
-                "text": "HTTP::Tiny versions before 0.095 for Perl forward credential headers to cross-origin redirect targets.\n\nWhen the server returns a 3xx redirect, `_maybe_redirect` follows the `Location:` header and `_prepare_headers_and_cb` re-merges the caller's `headers` argument into the new request, without checking whether the redirect target shares an origin with the original URL. Caller-supplied `Authorization`, `Cookie` and `Proxy-Authorization` headers are therefore re-sent to whatever host the redirect names, across scheme, host or port boundaries, and including `https` to `http` downgrades that expose them in plaintext on the wire.\n\nThe HTTP::Tiny POD note that \"Authorization headers will not be included in a redirected request\" applied only to the URL-userinfo Basic-auth path, not to headers passed explicitly by the caller."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-7017",
-              "help": {
-                "text": "Vulnerability CVE-2026-7017\nSeverity: medium\nPackage: perl-base\nVersion: 5.34.0-3ubuntu1.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-7017](https://ubuntu.com/security/CVE-2026-7017)",
-                "markdown": "**Vulnerability CVE-2026-7017**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.34.0-3ubuntu1.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-7017](https://ubuntu.com/security/CVE-2026-7017)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
-                ],
-                "security-severity": "7.1"
               }
             },
             {
@@ -762,7 +741,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "7.4"
               }
             },
             {
@@ -783,7 +762,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "7.4"
               }
             },
             {
@@ -909,7 +888,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "9.8"
               }
             },
             {
@@ -930,7 +909,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "9.8"
               }
             },
             {
@@ -1039,6 +1018,27 @@
               }
             },
             {
+              "id": "CVE-2026-7017-perl-base",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-7017 medium vulnerability for perl-base package"
+              },
+              "fullDescription": {
+                "text": "HTTP::Tiny versions before 0.095 for Perl forward credential headers to cross-origin redirect targets.\n\nWhen the server returns a 3xx redirect, `_maybe_redirect` follows the `Location:` header and `_prepare_headers_and_cb` re-merges the caller's `headers` argument into the new request, without checking whether the redirect target shares an origin with the original URL. Caller-supplied `Authorization`, `Cookie` and `Proxy-Authorization` headers are therefore re-sent to whatever host the redirect names, across scheme, host or port boundaries, and including `https` to `http` downgrades that expose them in plaintext on the wire.\n\nThe HTTP::Tiny POD note that \"Authorization headers will not be included in a redirected request\" applied only to the URL-userinfo Basic-auth path, not to headers passed explicitly by the caller."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-7017",
+              "help": {
+                "text": "Vulnerability CVE-2026-7017\nSeverity: medium\nPackage: perl-base\nVersion: 5.34.0-3ubuntu1.7\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-7017](https://ubuntu.com/security/CVE-2026-7017)",
+                "markdown": "**Vulnerability CVE-2026-7017**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.34.0-3ubuntu1.7  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-7017](https://ubuntu.com/security/CVE-2026-7017)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.7?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
+                ],
+                "security-severity": "7.1"
+              }
+            },
+            {
               "id": "CVE-2026-8932-curl",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -1140,7 +1140,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "7.5"
               }
             },
             {
@@ -1161,7 +1161,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "7.5"
               }
             },
             {
@@ -1182,7 +1182,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "8.2"
               }
             },
             {
@@ -1203,7 +1203,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "7.5"
               }
             },
             {
@@ -1224,7 +1224,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "7.5"
               }
             },
             {
@@ -1245,7 +1245,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "8.2"
               }
             },
             {
@@ -1266,7 +1266,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "7.5"
               }
             },
             {
@@ -1287,7 +1287,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "7.5"
               }
             },
             {
@@ -1297,7 +1297,7 @@
                 "text": "CVE-2026-57432 medium vulnerability for perl-base package"
               },
               "fullDescription": {
-                "text": "Perl versions through 5.43.10 have an integer overflow in S_measure_struct leading to an out-of-bounds heap read in pack and unpack.\n\nS_measure_struct adds each item's size times its repeat count to a running total with no overflow check, so a large repeat count in a pack or unpack template wraps the signed SSize_t total negative. The @, X, and x position codes then guard their moves with a signed length comparison that passes when the length is negative, advancing the buffer pointer out of bounds.\n\nA template derived from untrusted input can read heap memory past the buffer and return it to the caller."
+                "text": "Perl versions before 5.40.5-RC1, from 5.41.0 before 5.42.3-RC1, from 5.43.0 before 5.43.11 have an integer overflow in S_measure_struct leading to an out-of-bounds heap read in pack and unpack.\n\nS_measure_struct adds each item's size times its repeat count to a running total with no overflow check, so a large repeat count in a pack or unpack template wraps the signed SSize_t total negative. The @, X, and x position codes then guard their moves with a signed length comparison that passes when the length is negative, advancing the buffer pointer out of bounds.\n\nA template derived from untrusted input can read heap memory past the buffer and return it to the caller."
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-57432",
               "help": {
@@ -1455,7 +1455,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "9.1"
               }
             },
             {
@@ -1476,7 +1476,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "9.1"
               }
             },
             {
@@ -1938,7 +1938,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "7.5"
               }
             },
             {
@@ -1959,7 +1959,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "7.5"
               }
             },
             {
@@ -2022,7 +2022,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "7.5"
               }
             },
             {
@@ -2043,7 +2043,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.25?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=curl"
                 ],
-                "security-severity": "4.0"
+                "security-severity": "7.5"
               }
             },
             {
@@ -4411,65 +4411,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-7017-perl-base",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: perl-base, version 5.34.0-3ubuntu1.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/perl-base/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/usr/share/doc/perl-base/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.postrm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.preinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "69ae01465f84fa5d8777ee771b1587a719cdc357475946a8160dfb43b952a39d:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-12087-perl-base",
           "level": "warning",
           "message": {
@@ -5733,6 +5674,65 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "cc167791f8b11d1202651f2e4331be7d979fe61fc8c832a52af396093187a7be:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-7017-perl-base",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: perl-base, version 5.34.0-3ubuntu1.7 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:387322177230539817606c3c5eb6c0753b5ca71e266bc61c52622fddca81d91e:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/perl-base/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/usr/share/doc/perl-base/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.preinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:c0359c5b6ede84d4a083d06d35ee77f0b338dfb17423771854d007d89953fb3e:/var/lib/dpkg/info/perl-base.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "69ae01465f84fa5d8777ee771b1587a719cdc357475946a8160dfb43b952a39d:1"
           }
         },
         {
