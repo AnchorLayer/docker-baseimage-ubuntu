@@ -52,90 +52,6 @@
               }
             },
             {
-              "id": "CVE-2026-80231-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-80231 medium vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "A flaw in libcurl makes it wrongly reuse an existing HTTPS connection setup\nfor a given hostname even when using a different Native CA Store setting\n(`CURLSSLOPT_NATIVE_CA`) than when the connection was created."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-80231",
-              "help": {
-                "text": "Vulnerability CVE-2026-80231\nSeverity: medium\nPackage: curl\nVersion: 8.5.0-2ubuntu10.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-80231](https://ubuntu.com/security/CVE-2026-80231)",
-                "markdown": "**Vulnerability CVE-2026-80231**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 8.5.0-2ubuntu10.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-80231](https://ubuntu.com/security/CVE-2026-80231)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.13?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-80231-libcurl4t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-80231 medium vulnerability for libcurl4t64 package"
-              },
-              "fullDescription": {
-                "text": "A flaw in libcurl makes it wrongly reuse an existing HTTPS connection setup\nfor a given hostname even when using a different Native CA Store setting\n(`CURLSSLOPT_NATIVE_CA`) than when the connection was created."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-80231",
-              "help": {
-                "text": "Vulnerability CVE-2026-80231\nSeverity: medium\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-80231](https://ubuntu.com/security/CVE-2026-80231)",
-                "markdown": "**Vulnerability CVE-2026-80231**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4t64  | 8.5.0-2ubuntu10.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-80231](https://ubuntu.com/security/CVE-2026-80231)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.13?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-80229-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-80229 medium vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "When performing transfers via libcurl’s multi interface, pooled TLS\nconnections can outlive their originating easy handles. In OpenSSL 3 provider\nconfigurations, libcurl attaches an allocated library context to the easy\nhandle's state and passes it to OpenSSL without acquiring an ownership\nreference; destroying the easy handle prematurely frees this context while the\nactive connection retains a dangling pointer, leading to a heap-use-after-free\nupon subsequent I/O or post-handshake operations."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-80229",
-              "help": {
-                "text": "Vulnerability CVE-2026-80229\nSeverity: medium\nPackage: curl\nVersion: 8.5.0-2ubuntu10.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-80229](https://ubuntu.com/security/CVE-2026-80229)",
-                "markdown": "**Vulnerability CVE-2026-80229**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 8.5.0-2ubuntu10.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-80229](https://ubuntu.com/security/CVE-2026-80229)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.13?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-80229-libcurl4t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-80229 medium vulnerability for libcurl4t64 package"
-              },
-              "fullDescription": {
-                "text": "When performing transfers via libcurl’s multi interface, pooled TLS\nconnections can outlive their originating easy handles. In OpenSSL 3 provider\nconfigurations, libcurl attaches an allocated library context to the easy\nhandle's state and passes it to OpenSSL without acquiring an ownership\nreference; destroying the easy handle prematurely frees this context while the\nactive connection retains a dangling pointer, leading to a heap-use-after-free\nupon subsequent I/O or post-handshake operations."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-80229",
-              "help": {
-                "text": "Vulnerability CVE-2026-80229\nSeverity: medium\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-80229](https://ubuntu.com/security/CVE-2026-80229)",
-                "markdown": "**Vulnerability CVE-2026-80229**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4t64  | 8.5.0-2ubuntu10.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-80229](https://ubuntu.com/security/CVE-2026-80229)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.13?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
               "id": "CVE-2026-18924-curl",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -175,48 +91,6 @@
                   "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.13?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
                 ],
                 "security-severity": "9.1"
-              }
-            },
-            {
-              "id": "CVE-2026-80255-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-80255 medium vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "A `Set-Cookie:` header using tab (horizontal tab, ASCII code 9) instead of\nspace (ascii code 32) immediately before the `Secure` attribute causes curl to\nstore the cookie without its Secure flag. The cookie might then wrongfully be\nsent over plaintext HTTP on subsequent requests to the same host."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-80255",
-              "help": {
-                "text": "Vulnerability CVE-2026-80255\nSeverity: medium\nPackage: curl\nVersion: 8.5.0-2ubuntu10.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-80255](https://ubuntu.com/security/CVE-2026-80255)",
-                "markdown": "**Vulnerability CVE-2026-80255**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 8.5.0-2ubuntu10.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-80255](https://ubuntu.com/security/CVE-2026-80255)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.13?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-80255-libcurl4t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-80255 medium vulnerability for libcurl4t64 package"
-              },
-              "fullDescription": {
-                "text": "A `Set-Cookie:` header using tab (horizontal tab, ASCII code 9) instead of\nspace (ascii code 32) immediately before the `Secure` attribute causes curl to\nstore the cookie without its Secure flag. The cookie might then wrongfully be\nsent over plaintext HTTP on subsequent requests to the same host."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-80255",
-              "help": {
-                "text": "Vulnerability CVE-2026-80255\nSeverity: medium\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-80255](https://ubuntu.com/security/CVE-2026-80255)",
-                "markdown": "**Vulnerability CVE-2026-80255**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4t64  | 8.5.0-2ubuntu10.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-80255](https://ubuntu.com/security/CVE-2026-80255)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.13?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
-                ],
-                "security-severity": "7.5"
               }
             },
             {
@@ -406,48 +280,6 @@
                   "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
                 ],
                 "security-severity": "8.2"
-              }
-            },
-            {
-              "id": "CVE-2026-82208-curl",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-82208 medium vulnerability for curl package"
-              },
-              "fullDescription": {
-                "text": "With the wolfSSL backend, when CA caching is enabled and an\n`CURLOPT_SSL_CTX_FUNCTION` callback replaces the trust store, libcurl can\nsilently reinstall the cached store after the callback returns. A certificate\ntrusted by the cached store but rejected by the callback-selected store is\nthen incorrectly accepted."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-82208",
-              "help": {
-                "text": "Vulnerability CVE-2026-82208\nSeverity: medium\nPackage: curl\nVersion: 8.5.0-2ubuntu10.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-82208](https://ubuntu.com/security/CVE-2026-82208)",
-                "markdown": "**Vulnerability CVE-2026-82208**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | curl  | 8.5.0-2ubuntu10.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-82208](https://ubuntu.com/security/CVE-2026-82208)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/curl@8.5.0-2ubuntu10.13?arch=amd64\u0026distro=ubuntu-24.04"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-82208-libcurl4t64",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-82208 medium vulnerability for libcurl4t64 package"
-              },
-              "fullDescription": {
-                "text": "With the wolfSSL backend, when CA caching is enabled and an\n`CURLOPT_SSL_CTX_FUNCTION` callback replaces the trust store, libcurl can\nsilently reinstall the cached store after the callback returns. A certificate\ntrusted by the cached store but rejected by the callback-selected store is\nthen incorrectly accepted."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-82208",
-              "help": {
-                "text": "Vulnerability CVE-2026-82208\nSeverity: medium\nPackage: libcurl4t64\nVersion: 8.5.0-2ubuntu10.13\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-82208](https://ubuntu.com/security/CVE-2026-82208)",
-                "markdown": "**Vulnerability CVE-2026-82208**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libcurl4t64  | 8.5.0-2ubuntu10.13  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-82208](https://ubuntu.com/security/CVE-2026-82208)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libcurl4t64@8.5.0-2ubuntu10.13?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=curl"
-                ],
-                "security-severity": "7.5"
               }
             },
             {
@@ -650,8 +482,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-6791",
               "help": {
-                "text": "Vulnerability CVE-2026-6791\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-6791](https://ubuntu.com/security/CVE-2026-6791)",
-                "markdown": "**Vulnerability CVE-2026-6791**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-6791](https://ubuntu.com/security/CVE-2026-6791)  |\n"
+                "text": "Vulnerability CVE-2026-6791\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.8\nFix Version: 2.39-0ubuntu8.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-6791](https://ubuntu.com/security/CVE-2026-6791)",
+                "markdown": "**Vulnerability CVE-2026-6791**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.8  | 2.39-0ubuntu8.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-6791](https://ubuntu.com/security/CVE-2026-6791)  |\n"
               },
               "properties": {
                 "purls": [
@@ -671,8 +503,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-6791",
               "help": {
-                "text": "Vulnerability CVE-2026-6791\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-6791](https://ubuntu.com/security/CVE-2026-6791)",
-                "markdown": "**Vulnerability CVE-2026-6791**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-6791](https://ubuntu.com/security/CVE-2026-6791)  |\n"
+                "text": "Vulnerability CVE-2026-6791\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.8\nFix Version: 2.39-0ubuntu8.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-6791](https://ubuntu.com/security/CVE-2026-6791)",
+                "markdown": "**Vulnerability CVE-2026-6791**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.8  | 2.39-0ubuntu8.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-6791](https://ubuntu.com/security/CVE-2026-6791)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1259,8 +1091,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-6368",
               "help": {
-                "text": "Vulnerability CVE-2026-6368\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-6368](https://ubuntu.com/security/CVE-2026-6368)",
-                "markdown": "**Vulnerability CVE-2026-6368**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-6368](https://ubuntu.com/security/CVE-2026-6368)  |\n"
+                "text": "Vulnerability CVE-2026-6368\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.8\nFix Version: 2.39-0ubuntu8.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-6368](https://ubuntu.com/security/CVE-2026-6368)",
+                "markdown": "**Vulnerability CVE-2026-6368**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.8  | 2.39-0ubuntu8.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-6368](https://ubuntu.com/security/CVE-2026-6368)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1280,8 +1112,8 @@
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-6368",
               "help": {
-                "text": "Vulnerability CVE-2026-6368\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-6368](https://ubuntu.com/security/CVE-2026-6368)",
-                "markdown": "**Vulnerability CVE-2026-6368**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-6368](https://ubuntu.com/security/CVE-2026-6368)  |\n"
+                "text": "Vulnerability CVE-2026-6368\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.8\nFix Version: 2.39-0ubuntu8.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-6368](https://ubuntu.com/security/CVE-2026-6368)",
+                "markdown": "**Vulnerability CVE-2026-6368**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.8  | 2.39-0ubuntu8.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-6368](https://ubuntu.com/security/CVE-2026-6368)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1528,12 +1360,12 @@
                 "text": "CVE-2026-19499 medium vulnerability for libc-bin package"
               },
               "fullDescription": {
-                "text": "Version 2.39-0ubuntu8.8 is affected with no fixes reported yet."
+                "text": "Version 2.39-0ubuntu8.8 is affected with an available fix in versions 2.39-0ubuntu8.9"
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-19499",
               "help": {
-                "text": "Vulnerability CVE-2026-19499\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-19499](https://ubuntu.com/security/CVE-2026-19499)",
-                "markdown": "**Vulnerability CVE-2026-19499**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-19499](https://ubuntu.com/security/CVE-2026-19499)  |\n"
+                "text": "Vulnerability CVE-2026-19499\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.8\nFix Version: 2.39-0ubuntu8.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-19499](https://ubuntu.com/security/CVE-2026-19499)",
+                "markdown": "**Vulnerability CVE-2026-19499**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.8  | 2.39-0ubuntu8.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-19499](https://ubuntu.com/security/CVE-2026-19499)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1549,12 +1381,12 @@
                 "text": "CVE-2026-19542 medium vulnerability for libc-bin package"
               },
               "fullDescription": {
-                "text": "Version 2.39-0ubuntu8.8 is affected with no fixes reported yet."
+                "text": "Version 2.39-0ubuntu8.8 is affected with an available fix in versions 2.39-0ubuntu8.9"
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-19542",
               "help": {
-                "text": "Vulnerability CVE-2026-19542\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-19542](https://ubuntu.com/security/CVE-2026-19542)",
-                "markdown": "**Vulnerability CVE-2026-19542**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-19542](https://ubuntu.com/security/CVE-2026-19542)  |\n"
+                "text": "Vulnerability CVE-2026-19542\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.8\nFix Version: 2.39-0ubuntu8.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-19542](https://ubuntu.com/security/CVE-2026-19542)",
+                "markdown": "**Vulnerability CVE-2026-19542**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.8  | 2.39-0ubuntu8.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-19542](https://ubuntu.com/security/CVE-2026-19542)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1570,12 +1402,12 @@
                 "text": "CVE-2026-77117 medium vulnerability for libc-bin package"
               },
               "fullDescription": {
-                "text": "Version 2.39-0ubuntu8.8 is affected with no fixes reported yet."
+                "text": "Version 2.39-0ubuntu8.8 is affected with an available fix in versions 2.39-0ubuntu8.9"
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-77117",
               "help": {
-                "text": "Vulnerability CVE-2026-77117\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-77117](https://ubuntu.com/security/CVE-2026-77117)",
-                "markdown": "**Vulnerability CVE-2026-77117**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-77117](https://ubuntu.com/security/CVE-2026-77117)  |\n"
+                "text": "Vulnerability CVE-2026-77117\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.8\nFix Version: 2.39-0ubuntu8.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-77117](https://ubuntu.com/security/CVE-2026-77117)",
+                "markdown": "**Vulnerability CVE-2026-77117**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.8  | 2.39-0ubuntu8.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-77117](https://ubuntu.com/security/CVE-2026-77117)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1591,12 +1423,12 @@
                 "text": "CVE-2026-80489 medium vulnerability for libc-bin package"
               },
               "fullDescription": {
-                "text": "Version 2.39-0ubuntu8.8 is affected with no fixes reported yet."
+                "text": "Version 2.39-0ubuntu8.8 is affected with an available fix in versions 2.39-0ubuntu8.9"
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-80489",
               "help": {
-                "text": "Vulnerability CVE-2026-80489\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-80489](https://ubuntu.com/security/CVE-2026-80489)",
-                "markdown": "**Vulnerability CVE-2026-80489**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-80489](https://ubuntu.com/security/CVE-2026-80489)  |\n"
+                "text": "Vulnerability CVE-2026-80489\nSeverity: medium\nPackage: libc-bin\nVersion: 2.39-0ubuntu8.8\nFix Version: 2.39-0ubuntu8.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-80489](https://ubuntu.com/security/CVE-2026-80489)",
+                "markdown": "**Vulnerability CVE-2026-80489**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.39-0ubuntu8.8  | 2.39-0ubuntu8.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-80489](https://ubuntu.com/security/CVE-2026-80489)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1612,12 +1444,12 @@
                 "text": "CVE-2026-19499 medium vulnerability for libc6 package"
               },
               "fullDescription": {
-                "text": "Version 2.39-0ubuntu8.8 is affected with no fixes reported yet."
+                "text": "Version 2.39-0ubuntu8.8 is affected with an available fix in versions 2.39-0ubuntu8.9"
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-19499",
               "help": {
-                "text": "Vulnerability CVE-2026-19499\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-19499](https://ubuntu.com/security/CVE-2026-19499)",
-                "markdown": "**Vulnerability CVE-2026-19499**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-19499](https://ubuntu.com/security/CVE-2026-19499)  |\n"
+                "text": "Vulnerability CVE-2026-19499\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.8\nFix Version: 2.39-0ubuntu8.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-19499](https://ubuntu.com/security/CVE-2026-19499)",
+                "markdown": "**Vulnerability CVE-2026-19499**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.8  | 2.39-0ubuntu8.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-19499](https://ubuntu.com/security/CVE-2026-19499)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1633,12 +1465,12 @@
                 "text": "CVE-2026-19542 medium vulnerability for libc6 package"
               },
               "fullDescription": {
-                "text": "Version 2.39-0ubuntu8.8 is affected with no fixes reported yet."
+                "text": "Version 2.39-0ubuntu8.8 is affected with an available fix in versions 2.39-0ubuntu8.9"
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-19542",
               "help": {
-                "text": "Vulnerability CVE-2026-19542\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-19542](https://ubuntu.com/security/CVE-2026-19542)",
-                "markdown": "**Vulnerability CVE-2026-19542**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-19542](https://ubuntu.com/security/CVE-2026-19542)  |\n"
+                "text": "Vulnerability CVE-2026-19542\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.8\nFix Version: 2.39-0ubuntu8.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-19542](https://ubuntu.com/security/CVE-2026-19542)",
+                "markdown": "**Vulnerability CVE-2026-19542**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.8  | 2.39-0ubuntu8.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-19542](https://ubuntu.com/security/CVE-2026-19542)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1654,12 +1486,12 @@
                 "text": "CVE-2026-77117 medium vulnerability for libc6 package"
               },
               "fullDescription": {
-                "text": "Version 2.39-0ubuntu8.8 is affected with no fixes reported yet."
+                "text": "Version 2.39-0ubuntu8.8 is affected with an available fix in versions 2.39-0ubuntu8.9"
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-77117",
               "help": {
-                "text": "Vulnerability CVE-2026-77117\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-77117](https://ubuntu.com/security/CVE-2026-77117)",
-                "markdown": "**Vulnerability CVE-2026-77117**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-77117](https://ubuntu.com/security/CVE-2026-77117)  |\n"
+                "text": "Vulnerability CVE-2026-77117\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.8\nFix Version: 2.39-0ubuntu8.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-77117](https://ubuntu.com/security/CVE-2026-77117)",
+                "markdown": "**Vulnerability CVE-2026-77117**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.8  | 2.39-0ubuntu8.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-77117](https://ubuntu.com/security/CVE-2026-77117)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1675,12 +1507,12 @@
                 "text": "CVE-2026-80489 medium vulnerability for libc6 package"
               },
               "fullDescription": {
-                "text": "Version 2.39-0ubuntu8.8 is affected with no fixes reported yet."
+                "text": "Version 2.39-0ubuntu8.8 is affected with an available fix in versions 2.39-0ubuntu8.9"
               },
               "helpUri": "https://ubuntu.com/security/CVE-2026-80489",
               "help": {
-                "text": "Vulnerability CVE-2026-80489\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-80489](https://ubuntu.com/security/CVE-2026-80489)",
-                "markdown": "**Vulnerability CVE-2026-80489**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-80489](https://ubuntu.com/security/CVE-2026-80489)  |\n"
+                "text": "Vulnerability CVE-2026-80489\nSeverity: medium\nPackage: libc6\nVersion: 2.39-0ubuntu8.8\nFix Version: 2.39-0ubuntu8.9\nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-80489](https://ubuntu.com/security/CVE-2026-80489)",
+                "markdown": "**Vulnerability CVE-2026-80489**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.39-0ubuntu8.8  | 2.39-0ubuntu8.9  | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-80489](https://ubuntu.com/security/CVE-2026-80489)  |\n"
               },
               "properties": {
                 "purls": [
@@ -1776,170 +1608,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-80231-curl",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: curl, version 8.5.0-2ubuntu10.13 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "dc3b087b0a9f1b172722d2236a822622d2216f0a31f999cd683c561c98652a55:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-80231-libcurl4t64",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.13 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/usr/share/doc/libcurl4t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "1a7c9bb36d75e95c2cb8bfaaf1a60ed5d744fa8eaa1efbc0c9bb87a6718a3b24:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-80229-curl",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: curl, version 8.5.0-2ubuntu10.13 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "dc3b087b0a9f1b172722d2236a822622d2216f0a31f999cd683c561c98652a55:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-80229-libcurl4t64",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.13 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/usr/share/doc/libcurl4t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "1a7c9bb36d75e95c2cb8bfaaf1a60ed5d744fa8eaa1efbc0c9bb87a6718a3b24:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-18924-curl",
           "level": "warning",
           "message": {
@@ -1984,88 +1652,6 @@
         },
         {
           "ruleId": "CVE-2026-18924-libcurl4t64",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.13 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/usr/share/doc/libcurl4t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "1a7c9bb36d75e95c2cb8bfaaf1a60ed5d744fa8eaa1efbc0c9bb87a6718a3b24:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-80255-curl",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: curl, version 8.5.0-2ubuntu10.13 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "dc3b087b0a9f1b172722d2236a822622d2216f0a31f999cd683c561c98652a55:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-80255-libcurl4t64",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.13 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
@@ -2484,88 +2070,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "c00175b2e6d49452df3cc4d6d66af7f2d242e72964d3db494b159a45b692ce2b:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-82208-curl",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: curl, version 8.5.0-2ubuntu10.13 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/curl/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/usr/share/doc/curl/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/info/curl.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/curl.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/info/curl.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "dc3b087b0a9f1b172722d2236a822622d2216f0a31f999cd683c561c98652a55:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-82208-libcurl4t64",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libcurl4t64, version 8.5.0-2ubuntu10.13 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libcurl4t64/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/usr/share/doc/libcurl4t64/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libcurl4t64:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:9d5fb86858402e1807704c943521b19c6d0bd9569afb99d5946c63923daed5ed:/var/lib/dpkg/info/libcurl4t64:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "1a7c9bb36d75e95c2cb8bfaaf1a60ed5d744fa8eaa1efbc0c9bb87a6718a3b24:1"
           }
         },
         {
