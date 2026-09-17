@@ -552,7 +552,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
                 ],
-                "security-severity": "3.7"
+                "security-severity": "6.5"
               }
             },
             {
@@ -1140,7 +1140,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
                 ],
-                "security-severity": "7.4"
+                "security-severity": "7.8"
               }
             },
             {
@@ -1161,7 +1161,7 @@
                 "purls": [
                   "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
                 ],
-                "security-severity": "2.9"
+                "security-severity": "3.3"
               }
             },
             {
@@ -1207,27 +1207,6 @@
               }
             },
             {
-              "id": "CVE-2026-89157-libpcre2-8-0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-89157 medium vulnerability for libpcre2-8-0 package"
-              },
-              "fullDescription": {
-                "text": "PCRE2 before 10.48, on 32-bit platforms, has a pcre2_pattern_convert out-of-bounds write when an attacker can provide a large pattern."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-89157",
-              "help": {
-                "text": "Vulnerability CVE-2026-89157\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.42-4ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-89157](https://ubuntu.com/security/CVE-2026-89157)",
-                "markdown": "**Vulnerability CVE-2026-89157**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.42-4ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-89157](https://ubuntu.com/security/CVE-2026-89157)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
-                ],
-                "security-severity": "5.7"
-              }
-            },
-            {
               "id": "CVE-2026-89156-libpcre2-8-0",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1245,7 +1224,28 @@
                 "purls": [
                   "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
                 ],
-                "security-severity": "2.9"
+                "security-severity": "5.9"
+              }
+            },
+            {
+              "id": "CVE-2026-89157-libpcre2-8-0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-89157 medium vulnerability for libpcre2-8-0 package"
+              },
+              "fullDescription": {
+                "text": "PCRE2 before 10.48, on 32-bit platforms, has a pcre2_pattern_convert out-of-bounds write when an attacker can provide a large pattern."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-89157",
+              "help": {
+                "text": "Vulnerability CVE-2026-89157\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.42-4ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-89157](https://ubuntu.com/security/CVE-2026-89157)",
+                "markdown": "**Vulnerability CVE-2026-89157**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.42-4ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-89157](https://ubuntu.com/security/CVE-2026-89157)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
+                ],
+                "security-severity": "7.4"
               }
             },
             {
@@ -3981,7 +3981,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-89157-libpcre2-8-0",
+          "ruleId": "CVE-2026-89156-libpcre2-8-0",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.42-4ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
@@ -4020,7 +4020,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-89156-libpcre2-8-0",
+          "ruleId": "CVE-2026-89157-libpcre2-8-0",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.42-4ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
