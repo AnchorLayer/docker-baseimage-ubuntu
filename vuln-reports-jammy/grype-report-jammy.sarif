@@ -535,6 +535,48 @@
               }
             },
             {
+              "id": "CVE-2026-8674-libc-bin",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-8674 medium vulnerability for libc-bin package"
+              },
+              "fullDescription": {
+                "text": "Initializing the DNS stub resolver from an /etc/resolv.conf file, or a LOCALDOMAIN environment variable, whose search list contains a domain of roughly 200 characters or more in the GNU C Library version 2.26 to 2.44 results in an assertion failure which aborts the process.\n\nThe resolver truncates the search list when copying it into the fixed-size _res.defdname buffer, then asserts that the copy is consistent with the full configuration.  The consistency check compared against the wrong size and did not handle a first entry that does not fit, so a correctly truncated list failed the assertion.  Any process that resolves names through the library is affected, including long-running processes that reload /etc/resolv.conf on the next query after it changes.  Search domains are commonly written to /etc/resolv.conf from data received over DHCP or from a VPN server, so an attacker on the local network may be able to trigger this without privileges on the target system, subject to validation by the network configuration software."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-8674",
+              "help": {
+                "text": "Vulnerability CVE-2026-8674\nSeverity: medium\nPackage: libc-bin\nVersion: 2.35-0ubuntu3.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-8674](https://ubuntu.com/security/CVE-2026-8674)",
+                "markdown": "**Vulnerability CVE-2026-8674**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.35-0ubuntu3.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-8674](https://ubuntu.com/security/CVE-2026-8674)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.15?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
+                ],
+                "security-severity": "5.3"
+              }
+            },
+            {
+              "id": "CVE-2026-8674-libc6",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-8674 medium vulnerability for libc6 package"
+              },
+              "fullDescription": {
+                "text": "Initializing the DNS stub resolver from an /etc/resolv.conf file, or a LOCALDOMAIN environment variable, whose search list contains a domain of roughly 200 characters or more in the GNU C Library version 2.26 to 2.44 results in an assertion failure which aborts the process.\n\nThe resolver truncates the search list when copying it into the fixed-size _res.defdname buffer, then asserts that the copy is consistent with the full configuration.  The consistency check compared against the wrong size and did not handle a first entry that does not fit, so a correctly truncated list failed the assertion.  Any process that resolves names through the library is affected, including long-running processes that reload /etc/resolv.conf on the next query after it changes.  Search domains are commonly written to /etc/resolv.conf from data received over DHCP or from a VPN server, so an attacker on the local network may be able to trigger this without privileges on the target system, subject to validation by the network configuration software."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-8674",
+              "help": {
+                "text": "Vulnerability CVE-2026-8674\nSeverity: medium\nPackage: libc6\nVersion: 2.35-0ubuntu3.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-8674](https://ubuntu.com/security/CVE-2026-8674)",
+                "markdown": "**Vulnerability CVE-2026-8674**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.35-0ubuntu3.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-8674](https://ubuntu.com/security/CVE-2026-8674)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.15?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
+                ],
+                "security-severity": "5.3"
+              }
+            },
+            {
               "id": "CVE-2026-48962-perl-base",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -2984,6 +3026,104 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "b6bc3a09697de67083081963dadc5ee23a7fd77cecd81e5eb59f4086c5ddf260:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-8674-libc-bin",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libc-bin, version 2.35-0ubuntu3.15 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/info/libc-bin.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/info/libc-bin.md5sums"
+                },
+                {
+                  "name": "/usr/share/doc/libc-bin/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libc-bin/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/info/libc-bin.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/info/libc-bin.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.triggers",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/info/libc-bin.triggers"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "0d4458840ea231c24498bbc40b5d7972276582486604ef8c3558ba17d93cc63c:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-8674-libc6",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libc6, version 2.35-0ubuntu3.15 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc6:amd64.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/info/libc6:amd64.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc6:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/info/libc6:amd64.md5sums"
+                },
+                {
+                  "name": "/usr/share/doc/libc6/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libc6/copyright"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "43c9fa8e5e7353e069b74ce9028e1bbd8cd33a784cc3290f2dea47d6bea61d39:1"
           }
         },
         {
