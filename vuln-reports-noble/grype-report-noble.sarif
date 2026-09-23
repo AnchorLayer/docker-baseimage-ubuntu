@@ -136,6 +136,27 @@
               }
             },
             {
+              "id": "CVE-2026-82560-perl-base",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-82560 medium vulnerability for perl-base package"
+              },
+              "fullDescription": {
+                "text": "Pod::Text versions before 6.1.1 for Perl allow CPU and memory exhaustion formatting a POD document whose =over nesting drives the margin to the output width.\n\nEach =over adds its indent to the margin, which wrap() subtracts from the output width to get the space available for text. When that space reaches zero, the line-splitting substitution matches the empty string, and the loop consumes no input while appending the margin padding on every pass.\n\nFormatting an attacker-supplied POD document never returns, and the output grows until memory is exhausted."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-82560",
+              "help": {
+                "text": "Vulnerability CVE-2026-82560\nSeverity: medium\nPackage: perl-base\nVersion: 5.38.2-3.2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-82560](https://ubuntu.com/security/CVE-2026-82560)",
+                "markdown": "**Vulnerability CVE-2026-82560**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.38.2-3.2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-82560](https://ubuntu.com/security/CVE-2026-82560)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=perl"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
               "id": "CVE-2026-80230-curl",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -1478,6 +1499,48 @@
                 ],
                 "security-severity": "4.4"
               }
+            },
+            {
+              "id": "CVE-2026-68914-perl-base",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-68914 medium vulnerability for perl-base package"
+              },
+              "fullDescription": {
+                "text": "Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2026-14803. Reason: This candidate is a duplicate of CVE-2026-14803. Notes: All CVE users should reference CVE-2026-14803 instead of this candidate."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-68914",
+              "help": {
+                "text": "Vulnerability CVE-2026-68914\nSeverity: medium\nPackage: perl-base\nVersion: 5.38.2-3.2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-68914](https://ubuntu.com/security/CVE-2026-68914)",
+                "markdown": "**Vulnerability CVE-2026-68914**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.38.2-3.2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-68914](https://ubuntu.com/security/CVE-2026-68914)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=perl"
+                ],
+                "security-severity": "4.0"
+              }
+            },
+            {
+              "id": "CVE-2026-77568-perl-base",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-77568 medium vulnerability for perl-base package"
+              },
+              "fullDescription": {
+                "text": "Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2026-15747. Reason: This candidate is a duplicate of CVE-2026-15747. Notes: All CVE users should reference CVE-2026-15747 instead of this candidate."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-77568",
+              "help": {
+                "text": "Vulnerability CVE-2026-77568\nSeverity: medium\nPackage: perl-base\nVersion: 5.38.2-3.2ubuntu0.4\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-77568](https://ubuntu.com/security/CVE-2026-77568)",
+                "markdown": "**Vulnerability CVE-2026-77568**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.38.2-3.2ubuntu0.4  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-77568](https://ubuntu.com/security/CVE-2026-77568)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/perl-base@5.38.2-3.2ubuntu0.4?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=perl"
+                ],
+                "security-severity": "4.0"
+              }
             }
           ]
         }
@@ -1727,6 +1790,65 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "1a7c9bb36d75e95c2cb8bfaaf1a60ed5d744fa8eaa1efbc0c9bb87a6718a3b24:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-82560-perl-base",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: perl-base, version 5.38.2-3.2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f70b423436f63d60af599fe5e61621dded4fbb1d7c05ec6fba2436e447d11d5a:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/perl-base/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/perl-base/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.preinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "eab0d44a96cd7d94a1a9d0c9c8d9f7bb0e89865ac260378d00fd423ebe66c42f:1"
           }
         },
         {
@@ -4587,6 +4709,124 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "3dd5c7e25559fd3b95c5df554bdfbc95146db06d527946835261ed3b0a417f64:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-68914-perl-base",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: perl-base, version 5.38.2-3.2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f70b423436f63d60af599fe5e61621dded4fbb1d7c05ec6fba2436e447d11d5a:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/perl-base/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/perl-base/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.preinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "eab0d44a96cd7d94a1a9d0c9c8d9f7bb0e89865ac260378d00fd423ebe66c42f:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-77568-perl-base",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: perl-base, version 5.38.2-3.2ubuntu0.4 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f70b423436f63d60af599fe5e61621dded4fbb1d7c05ec6fba2436e447d11d5a:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/perl-base/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/perl-base/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.preinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/perl-base.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "eab0d44a96cd7d94a1a9d0c9c8d9f7bb0e89865ac260378d00fd423ebe66c42f:1"
           }
         }
       ]
