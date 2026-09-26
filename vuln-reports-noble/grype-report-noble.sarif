@@ -178,27 +178,6 @@
               }
             },
             {
-              "id": "CVE-2026-86145-libpcre2-8-0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-86145 medium vulnerability for libpcre2-8-0 package"
-              },
-              "fullDescription": {
-                "text": "PCRE2 before 10.48 allows a pcre2_dfa_match out-of-bounds write because reuse of a cached workspace block, in a recursive DFA matching workspace, lacks a size check (even though a newly allocated block, for the same purpose, does have a size check). This outcome requires an attacker-controlled regular expression, or a recursive pattern in conjunction with a small heap limit (this can be set through the API)."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-86145",
-              "help": {
-                "text": "Vulnerability CVE-2026-86145\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.42-4ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-86145](https://ubuntu.com/security/CVE-2026-86145)",
-                "markdown": "**Vulnerability CVE-2026-86145**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.42-4ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-86145](https://ubuntu.com/security/CVE-2026-86145)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
-                ],
-                "security-severity": "8.2"
-              }
-            },
-            {
               "id": "CVE-2026-82209-curl",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -304,87 +283,24 @@
               }
             },
             {
-              "id": "CVE-2026-89158-libpcre2-8-0",
+              "id": "CVE-2026-86145-libpcre2-8-0",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-89158 medium vulnerability for libpcre2-8-0 package"
+                "text": "CVE-2026-86145 medium vulnerability for libpcre2-8-0 package"
               },
               "fullDescription": {
-                "text": "PCRE2 before 10.48, on 32-bit platforms, has a pcre2_compile_32 integer overflow and resultant out-of-bounds write."
+                "text": "PCRE2 before 10.48 allows a pcre2_dfa_match out-of-bounds write because reuse of a cached workspace block, in a recursive DFA matching workspace, lacks a size check (even though a newly allocated block, for the same purpose, does have a size check). This outcome requires an attacker-controlled regular expression, or a recursive pattern in conjunction with a small heap limit (this can be set through the API)."
               },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-89158",
+              "helpUri": "https://ubuntu.com/security/CVE-2026-86145",
               "help": {
-                "text": "Vulnerability CVE-2026-89158\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.42-4ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-89158](https://ubuntu.com/security/CVE-2026-89158)",
-                "markdown": "**Vulnerability CVE-2026-89158**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.42-4ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-89158](https://ubuntu.com/security/CVE-2026-89158)  |\n"
+                "text": "Vulnerability CVE-2026-86145\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.42-4ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-86145](https://ubuntu.com/security/CVE-2026-86145)",
+                "markdown": "**Vulnerability CVE-2026-86145**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.42-4ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-86145](https://ubuntu.com/security/CVE-2026-86145)  |\n"
               },
               "properties": {
                 "purls": [
                   "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
                 ],
-                "security-severity": "6.5"
-              }
-            },
-            {
-              "id": "CVE-2026-89156-libpcre2-8-0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-89156 medium vulnerability for libpcre2-8-0 package"
-              },
-              "fullDescription": {
-                "text": "PCRE2 before 10.48 has a pcre2_match out-of-bounds read after a JIT fallback when an attacker can provide invalid UTF data."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-89156",
-              "help": {
-                "text": "Vulnerability CVE-2026-89156\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.42-4ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-89156](https://ubuntu.com/security/CVE-2026-89156)",
-                "markdown": "**Vulnerability CVE-2026-89156**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.42-4ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-89156](https://ubuntu.com/security/CVE-2026-89156)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
-                ],
-                "security-severity": "5.9"
-              }
-            },
-            {
-              "id": "CVE-2026-89160-libpcre2-8-0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-89160 medium vulnerability for libpcre2-8-0 package"
-              },
-              "fullDescription": {
-                "text": "PCRE2 before 10.48 has a pcre2_match out-of-bounds read during the PCRE2_MATCH_INVALID_UTF matching of an invalid UTF subject."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-89160",
-              "help": {
-                "text": "Vulnerability CVE-2026-89160\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.42-4ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-89160](https://ubuntu.com/security/CVE-2026-89160)",
-                "markdown": "**Vulnerability CVE-2026-89160**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.42-4ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-89160](https://ubuntu.com/security/CVE-2026-89160)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
-                ],
-                "security-severity": "6.5"
-              }
-            },
-            {
-              "id": "CVE-2026-89157-libpcre2-8-0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-89157 medium vulnerability for libpcre2-8-0 package"
-              },
-              "fullDescription": {
-                "text": "PCRE2 before 10.48, on 32-bit platforms, has a pcre2_pattern_convert out-of-bounds write when an attacker can provide a large pattern."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-89157",
-              "help": {
-                "text": "Vulnerability CVE-2026-89157\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.42-4ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-89157](https://ubuntu.com/security/CVE-2026-89157)",
-                "markdown": "**Vulnerability CVE-2026-89157**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.42-4ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-89157](https://ubuntu.com/security/CVE-2026-89157)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
-                ],
-                "security-severity": "7.4"
+                "security-severity": "8.2"
               }
             },
             {
@@ -427,6 +343,90 @@
                   "pkg:deb/ubuntu/libc6@2.39-0ubuntu8.9?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=glibc"
                 ],
                 "security-severity": "5.3"
+              }
+            },
+            {
+              "id": "CVE-2026-91187-dash",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-91187 medium vulnerability for dash package"
+              },
+              "fullDescription": {
+                "text": "Improper Verification of Cryptographic Signature vulnerability in dashbit nimble_zta allows an unauthenticated remote attacker to authenticate as an arbitrary Cloudflare service token. Applications using the Cloudflare Zero Trust authentication strategy are affected.\n\nverify_token/2 in lib/nimble_zta/cloudflare.ex matches the result of JOSE.JWT.verify/2 against {_, token, _s}, which discards the boolean verification result and returns the decoded token after a failed signature check. The attacker sends a forged JWT in the cf-access-jwt-assertion header, carrying the expected iss claim and the seven service token claims. verify_iss/2 reads the iss claim from the forged token, so it rejects nothing, and the service token path then returns those claims as the authenticated identity.\n\nThis issue affects nimble_zta: from 0.1.2 before 0.1.3."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-91187",
+              "help": {
+                "text": "Vulnerability CVE-2026-91187\nSeverity: medium\nPackage: dash\nVersion: 0.5.12-6ubuntu5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-91187](https://ubuntu.com/security/CVE-2026-91187)",
+                "markdown": "**Vulnerability CVE-2026-91187**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | dash  | 0.5.12-6ubuntu5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-91187](https://ubuntu.com/security/CVE-2026-91187)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/dash@0.5.12-6ubuntu5?arch=amd64\u0026distro=ubuntu-24.04"
+                ],
+                "security-severity": "9.3"
+              }
+            },
+            {
+              "id": "CVE-2026-89156-libpcre2-8-0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-89156 medium vulnerability for libpcre2-8-0 package"
+              },
+              "fullDescription": {
+                "text": "PCRE2 before 10.48 has a pcre2_match out-of-bounds read after a JIT fallback when an attacker can provide invalid UTF data."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-89156",
+              "help": {
+                "text": "Vulnerability CVE-2026-89156\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.42-4ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-89156](https://ubuntu.com/security/CVE-2026-89156)",
+                "markdown": "**Vulnerability CVE-2026-89156**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.42-4ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-89156](https://ubuntu.com/security/CVE-2026-89156)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
+                ],
+                "security-severity": "5.9"
+              }
+            },
+            {
+              "id": "CVE-2026-89157-libpcre2-8-0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-89157 medium vulnerability for libpcre2-8-0 package"
+              },
+              "fullDescription": {
+                "text": "PCRE2 before 10.48, on 32-bit platforms, has a pcre2_pattern_convert out-of-bounds write when an attacker can provide a large pattern."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-89157",
+              "help": {
+                "text": "Vulnerability CVE-2026-89157\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.42-4ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-89157](https://ubuntu.com/security/CVE-2026-89157)",
+                "markdown": "**Vulnerability CVE-2026-89157**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.42-4ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-89157](https://ubuntu.com/security/CVE-2026-89157)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
+                ],
+                "security-severity": "7.4"
+              }
+            },
+            {
+              "id": "CVE-2026-89160-libpcre2-8-0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-89160 medium vulnerability for libpcre2-8-0 package"
+              },
+              "fullDescription": {
+                "text": "PCRE2 before 10.48 has a pcre2_match out-of-bounds read during the PCRE2_MATCH_INVALID_UTF matching of an invalid UTF subject."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-89160",
+              "help": {
+                "text": "Vulnerability CVE-2026-89160\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.42-4ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-89160](https://ubuntu.com/security/CVE-2026-89160)",
+                "markdown": "**Vulnerability CVE-2026-89160**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.42-4ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-89160](https://ubuntu.com/security/CVE-2026-89160)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
+                ],
+                "security-severity": "6.5"
               }
             },
             {
@@ -640,6 +640,27 @@
               }
             },
             {
+              "id": "CVE-2026-89158-libpcre2-8-0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-89158 medium vulnerability for libpcre2-8-0 package"
+              },
+              "fullDescription": {
+                "text": "PCRE2 before 10.48, on 32-bit platforms, has a pcre2_compile_32 integer overflow and resultant out-of-bounds write."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-89158",
+              "help": {
+                "text": "Vulnerability CVE-2026-89158\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.42-4ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-89158](https://ubuntu.com/security/CVE-2026-89158)",
+                "markdown": "**Vulnerability CVE-2026-89158**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.42-4ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-89158](https://ubuntu.com/security/CVE-2026-89158)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
+                ],
+                "security-severity": "6.5"
+              }
+            },
+            {
               "id": "CVE-2016-20013-libc-bin",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -679,27 +700,6 @@
                   "pkg:deb/ubuntu/libc6@2.39-0ubuntu8.9?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=glibc"
                 ],
                 "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-54369-libacl1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-54369 medium vulnerability for libacl1 package"
-              },
-              "fullDescription": {
-                "text": "acl before version 2.4.0 contains a symlink traversal vulnerability in the libacl pathname-based functions acl_get_file(), acl_set_file(), acl_extended_file(), and acl_delete_def_file() that allows local attackers to escalate privileges by replacing any pathname component with a symbolic link. Attackers who control any component of a pathname processed by a privileged caller can redirect ACL read or write operations to arbitrary files or directories, enabling unauthorized manipulation of access control lists and local privilege escalation."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-54369",
-              "help": {
-                "text": "Vulnerability CVE-2026-54369\nSeverity: medium\nPackage: libacl1\nVersion: 2.3.2-1build1.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)",
-                "markdown": "**Vulnerability CVE-2026-54369**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libacl1  | 2.3.2-1build1.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libacl1@2.3.2-1build1.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=acl"
-                ],
-                "security-severity": "8.4"
               }
             },
             {
@@ -850,24 +850,24 @@
               }
             },
             {
-              "id": "CVE-2026-89161-libpcre2-8-0",
+              "id": "CVE-2026-54369-libacl1",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-89161 medium vulnerability for libpcre2-8-0 package"
+                "text": "CVE-2026-54369 medium vulnerability for libacl1 package"
               },
               "fullDescription": {
-                "text": "In PCRE2 before 10.48, pcre2_jit_match mishandles a previously copied subject being passed in as a context. An incorrect free operation can occur."
+                "text": "acl before version 2.4.0 contains a symlink traversal vulnerability in the libacl pathname-based functions acl_get_file(), acl_set_file(), acl_extended_file(), and acl_delete_def_file() that allows local attackers to escalate privileges by replacing any pathname component with a symbolic link. Attackers who control any component of a pathname processed by a privileged caller can redirect ACL read or write operations to arbitrary files or directories, enabling unauthorized manipulation of access control lists and local privilege escalation."
               },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-89161",
+              "helpUri": "https://ubuntu.com/security/CVE-2026-54369",
               "help": {
-                "text": "Vulnerability CVE-2026-89161\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.42-4ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-89161](https://ubuntu.com/security/CVE-2026-89161)",
-                "markdown": "**Vulnerability CVE-2026-89161**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.42-4ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-89161](https://ubuntu.com/security/CVE-2026-89161)  |\n"
+                "text": "Vulnerability CVE-2026-54369\nSeverity: medium\nPackage: libacl1\nVersion: 2.3.2-1build1.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)",
+                "markdown": "**Vulnerability CVE-2026-54369**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libacl1  | 2.3.2-1build1.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
+                  "pkg:deb/ubuntu/libacl1@2.3.2-1build1.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=acl"
                 ],
-                "security-severity": "7.8"
+                "security-severity": "8.4"
               }
             },
             {
@@ -1459,6 +1459,27 @@
               }
             },
             {
+              "id": "CVE-2026-89161-libpcre2-8-0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-89161 medium vulnerability for libpcre2-8-0 package"
+              },
+              "fullDescription": {
+                "text": "In PCRE2 before 10.48, pcre2_jit_match mishandles a previously copied subject being passed in as a context. An incorrect free operation can occur."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-89161",
+              "help": {
+                "text": "Vulnerability CVE-2026-89161\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.42-4ubuntu2.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-89161](https://ubuntu.com/security/CVE-2026-89161)",
+                "markdown": "**Vulnerability CVE-2026-89161**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.42-4ubuntu2.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-89161](https://ubuntu.com/security/CVE-2026-89161)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libpcre2-8-0@10.42-4ubuntu2.1?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=pcre2"
+                ],
+                "security-severity": "7.8"
+              }
+            },
+            {
               "id": "CVE-2026-86805-libc-bin",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1933,45 +1954,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-86145-libpcre2-8-0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.42-4ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f70b423436f63d60af599fe5e61621dded4fbb1d7c05ec6fba2436e447d11d5a:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/libpcre2-8-0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "c00175b2e6d49452df3cc4d6d66af7f2d242e72964d3db494b159a45b692ce2b:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-82209-curl",
           "level": "warning",
           "message": {
@@ -2195,124 +2177,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-89158-libpcre2-8-0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.42-4ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f70b423436f63d60af599fe5e61621dded4fbb1d7c05ec6fba2436e447d11d5a:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/libpcre2-8-0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "c00175b2e6d49452df3cc4d6d66af7f2d242e72964d3db494b159a45b692ce2b:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-89156-libpcre2-8-0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.42-4ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f70b423436f63d60af599fe5e61621dded4fbb1d7c05ec6fba2436e447d11d5a:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/libpcre2-8-0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "c00175b2e6d49452df3cc4d6d66af7f2d242e72964d3db494b159a45b692ce2b:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-89160-libpcre2-8-0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.42-4ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f70b423436f63d60af599fe5e61621dded4fbb1d7c05ec6fba2436e447d11d5a:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/libpcre2-8-0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "c00175b2e6d49452df3cc4d6d66af7f2d242e72964d3db494b159a45b692ce2b:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-89157-libpcre2-8-0",
+          "ruleId": "CVE-2026-86145-libpcre2-8-0",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.42-4ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
@@ -2446,6 +2311,178 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "374d207586bf479621aef1e2222ff136103a75f5ff64f2d45f7a92e8420f9a97:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-91187-dash",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: dash, version 0.5.12-6ubuntu5 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f70b423436f63d60af599fe5e61621dded4fbb1d7c05ec6fba2436e447d11d5a:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/dash/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/dash/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dash.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/dash.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dash.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/dash.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dash.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/dash.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dash.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/dash.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dash.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/dash.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "f3765095b51016c93bdc0dfbd6c82a1cdcf7a8687f745a0cf01f7225b843f3e1:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-89156-libpcre2-8-0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.42-4ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f70b423436f63d60af599fe5e61621dded4fbb1d7c05ec6fba2436e447d11d5a:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/libpcre2-8-0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c00175b2e6d49452df3cc4d6d66af7f2d242e72964d3db494b159a45b692ce2b:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-89157-libpcre2-8-0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.42-4ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f70b423436f63d60af599fe5e61621dded4fbb1d7c05ec6fba2436e447d11d5a:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/libpcre2-8-0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c00175b2e6d49452df3cc4d6d66af7f2d242e72964d3db494b159a45b692ce2b:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-89160-libpcre2-8-0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.42-4ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f70b423436f63d60af599fe5e61621dded4fbb1d7c05ec6fba2436e447d11d5a:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/libpcre2-8-0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c00175b2e6d49452df3cc4d6d66af7f2d242e72964d3db494b159a45b692ce2b:1"
           }
         },
         {
@@ -2975,6 +3012,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-89158-libpcre2-8-0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.42-4ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f70b423436f63d60af599fe5e61621dded4fbb1d7c05ec6fba2436e447d11d5a:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/libpcre2-8-0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c00175b2e6d49452df3cc4d6d66af7f2d242e72964d3db494b159a45b692ce2b:1"
+          }
+        },
+        {
           "ruleId": "CVE-2016-20013-libc-bin",
           "level": "note",
           "message": {
@@ -3070,45 +3146,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "374d207586bf479621aef1e2222ff136103a75f5ff64f2d45f7a92e8420f9a97:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-54369-libacl1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libacl1, version 2.3.2-1build1.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-noble//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f70b423436f63d60af599fe5e61621dded4fbb1d7c05ec6fba2436e447d11d5a:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libacl1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/libacl1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libacl1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/libacl1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "4e5cdb291c0422da66902644ce641a7f5ec733c6f5c883d0e608957538ec376a:1"
           }
         },
         {
@@ -3413,10 +3450,10 @@
           }
         },
         {
-          "ruleId": "CVE-2026-89161-libpcre2-8-0",
+          "ruleId": "CVE-2026-54369-libacl1",
           "level": "warning",
           "message": {
-            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.42-4ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+            "text": "A medium vulnerability in deb package: libacl1, version 2.3.2-1build1.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -3437,18 +3474,18 @@
                   "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f70b423436f63d60af599fe5e61621dded4fbb1d7c05ec6fba2436e447d11d5a:/var/lib/dpkg/status"
                 },
                 {
-                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/libpcre2-8-0/copyright"
+                  "name": "/usr/share/doc/libacl1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/libacl1/copyright"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                  "name": "/var/lib/dpkg/info/libacl1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/libacl1:amd64.md5sums"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "c00175b2e6d49452df3cc4d6d66af7f2d242e72964d3db494b159a45b692ce2b:1"
+            "primaryLocationLineHash": "4e5cdb291c0422da66902644ce641a7f5ec733c6f5c883d0e608957538ec376a:1"
           }
         },
         {
@@ -4681,6 +4718,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "374d207586bf479621aef1e2222ff136103a75f5ff64f2d45f7a92e8420f9a97:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-89161-libpcre2-8-0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.42-4ubuntu2.1 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:f70b423436f63d60af599fe5e61621dded4fbb1d7c05ec6fba2436e447d11d5a:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/usr/share/doc/libpcre2-8-0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:65e5d715ea720349e6475f91651a0956279fc295a45fd73aa04f1cec046281a1:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "c00175b2e6d49452df3cc4d6d66af7f2d242e72964d3db494b159a45b692ce2b:1"
           }
         },
         {

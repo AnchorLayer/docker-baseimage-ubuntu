@@ -451,27 +451,6 @@
               }
             },
             {
-              "id": "CVE-2026-86145-libpcre2-8-0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-86145 medium vulnerability for libpcre2-8-0 package"
-              },
-              "fullDescription": {
-                "text": "PCRE2 before 10.48 allows a pcre2_dfa_match out-of-bounds write because reuse of a cached workspace block, in a recursive DFA matching workspace, lacks a size check (even though a newly allocated block, for the same purpose, does have a size check). This outcome requires an attacker-controlled regular expression, or a recursive pattern in conjunction with a small heap limit (this can be set through the API)."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-86145",
-              "help": {
-                "text": "Vulnerability CVE-2026-86145\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.39-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-86145](https://ubuntu.com/security/CVE-2026-86145)",
-                "markdown": "**Vulnerability CVE-2026-86145**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.39-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-86145](https://ubuntu.com/security/CVE-2026-86145)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
-                ],
-                "security-severity": "8.2"
-              }
-            },
-            {
               "id": "CVE-2026-82209-curl",
               "name": "DpkgMatcherExactDirectMatch",
               "shortDescription": {
@@ -598,6 +577,27 @@
               }
             },
             {
+              "id": "CVE-2026-86145-libpcre2-8-0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-86145 medium vulnerability for libpcre2-8-0 package"
+              },
+              "fullDescription": {
+                "text": "PCRE2 before 10.48 allows a pcre2_dfa_match out-of-bounds write because reuse of a cached workspace block, in a recursive DFA matching workspace, lacks a size check (even though a newly allocated block, for the same purpose, does have a size check). This outcome requires an attacker-controlled regular expression, or a recursive pattern in conjunction with a small heap limit (this can be set through the API)."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-86145",
+              "help": {
+                "text": "Vulnerability CVE-2026-86145\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.39-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-86145](https://ubuntu.com/security/CVE-2026-86145)",
+                "markdown": "**Vulnerability CVE-2026-86145**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.39-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-86145](https://ubuntu.com/security/CVE-2026-86145)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
+                ],
+                "security-severity": "8.2"
+              }
+            },
+            {
               "id": "CVE-2026-95619-gcc-12-base",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -661,90 +661,6 @@
               }
             },
             {
-              "id": "CVE-2026-89158-libpcre2-8-0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-89158 medium vulnerability for libpcre2-8-0 package"
-              },
-              "fullDescription": {
-                "text": "PCRE2 before 10.48, on 32-bit platforms, has a pcre2_compile_32 integer overflow and resultant out-of-bounds write."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-89158",
-              "help": {
-                "text": "Vulnerability CVE-2026-89158\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.39-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-89158](https://ubuntu.com/security/CVE-2026-89158)",
-                "markdown": "**Vulnerability CVE-2026-89158**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.39-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-89158](https://ubuntu.com/security/CVE-2026-89158)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
-                ],
-                "security-severity": "6.5"
-              }
-            },
-            {
-              "id": "CVE-2026-89156-libpcre2-8-0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-89156 medium vulnerability for libpcre2-8-0 package"
-              },
-              "fullDescription": {
-                "text": "PCRE2 before 10.48 has a pcre2_match out-of-bounds read after a JIT fallback when an attacker can provide invalid UTF data."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-89156",
-              "help": {
-                "text": "Vulnerability CVE-2026-89156\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.39-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-89156](https://ubuntu.com/security/CVE-2026-89156)",
-                "markdown": "**Vulnerability CVE-2026-89156**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.39-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-89156](https://ubuntu.com/security/CVE-2026-89156)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
-                ],
-                "security-severity": "5.9"
-              }
-            },
-            {
-              "id": "CVE-2026-89160-libpcre2-8-0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-89160 medium vulnerability for libpcre2-8-0 package"
-              },
-              "fullDescription": {
-                "text": "PCRE2 before 10.48 has a pcre2_match out-of-bounds read during the PCRE2_MATCH_INVALID_UTF matching of an invalid UTF subject."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-89160",
-              "help": {
-                "text": "Vulnerability CVE-2026-89160\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.39-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-89160](https://ubuntu.com/security/CVE-2026-89160)",
-                "markdown": "**Vulnerability CVE-2026-89160**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.39-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-89160](https://ubuntu.com/security/CVE-2026-89160)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
-                ],
-                "security-severity": "6.5"
-              }
-            },
-            {
-              "id": "CVE-2026-89157-libpcre2-8-0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-89157 medium vulnerability for libpcre2-8-0 package"
-              },
-              "fullDescription": {
-                "text": "PCRE2 before 10.48, on 32-bit platforms, has a pcre2_pattern_convert out-of-bounds write when an attacker can provide a large pattern."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-89157",
-              "help": {
-                "text": "Vulnerability CVE-2026-89157\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.39-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-89157](https://ubuntu.com/security/CVE-2026-89157)",
-                "markdown": "**Vulnerability CVE-2026-89157**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.39-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-89157](https://ubuntu.com/security/CVE-2026-89157)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
-                ],
-                "security-severity": "7.4"
-              }
-            },
-            {
               "id": "CVE-2026-8674-libc-bin",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -805,6 +721,90 @@
                   "pkg:deb/ubuntu/libpcre3@2%3A8.39-13ubuntu0.22.04.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre3"
                 ],
                 "security-severity": "7.8"
+              }
+            },
+            {
+              "id": "CVE-2026-91187-dash",
+              "name": "DpkgMatcherExactDirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-91187 medium vulnerability for dash package"
+              },
+              "fullDescription": {
+                "text": "Improper Verification of Cryptographic Signature vulnerability in dashbit nimble_zta allows an unauthenticated remote attacker to authenticate as an arbitrary Cloudflare service token. Applications using the Cloudflare Zero Trust authentication strategy are affected.\n\nverify_token/2 in lib/nimble_zta/cloudflare.ex matches the result of JOSE.JWT.verify/2 against {_, token, _s}, which discards the boolean verification result and returns the decoded token after a failed signature check. The attacker sends a forged JWT in the cf-access-jwt-assertion header, carrying the expected iss claim and the seven service token claims. verify_iss/2 reads the iss claim from the forged token, so it rejects nothing, and the service token path then returns those claims as the authenticated identity.\n\nThis issue affects nimble_zta: from 0.1.2 before 0.1.3."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-91187",
+              "help": {
+                "text": "Vulnerability CVE-2026-91187\nSeverity: medium\nPackage: dash\nVersion: 0.5.11+git20210903+057cd650a4ed-3build1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-91187](https://ubuntu.com/security/CVE-2026-91187)",
+                "markdown": "**Vulnerability CVE-2026-91187**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | dash  | 0.5.11+git20210903+057cd650a4ed-3build1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-91187](https://ubuntu.com/security/CVE-2026-91187)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/dash@0.5.11%2Bgit20210903%2B057cd650a4ed-3build1?arch=amd64\u0026distro=ubuntu-22.04"
+                ],
+                "security-severity": "9.3"
+              }
+            },
+            {
+              "id": "CVE-2026-89156-libpcre2-8-0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-89156 medium vulnerability for libpcre2-8-0 package"
+              },
+              "fullDescription": {
+                "text": "PCRE2 before 10.48 has a pcre2_match out-of-bounds read after a JIT fallback when an attacker can provide invalid UTF data."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-89156",
+              "help": {
+                "text": "Vulnerability CVE-2026-89156\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.39-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-89156](https://ubuntu.com/security/CVE-2026-89156)",
+                "markdown": "**Vulnerability CVE-2026-89156**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.39-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-89156](https://ubuntu.com/security/CVE-2026-89156)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
+                ],
+                "security-severity": "5.9"
+              }
+            },
+            {
+              "id": "CVE-2026-89157-libpcre2-8-0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-89157 medium vulnerability for libpcre2-8-0 package"
+              },
+              "fullDescription": {
+                "text": "PCRE2 before 10.48, on 32-bit platforms, has a pcre2_pattern_convert out-of-bounds write when an attacker can provide a large pattern."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-89157",
+              "help": {
+                "text": "Vulnerability CVE-2026-89157\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.39-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-89157](https://ubuntu.com/security/CVE-2026-89157)",
+                "markdown": "**Vulnerability CVE-2026-89157**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.39-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-89157](https://ubuntu.com/security/CVE-2026-89157)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
+                ],
+                "security-severity": "7.4"
+              }
+            },
+            {
+              "id": "CVE-2026-89160-libpcre2-8-0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-89160 medium vulnerability for libpcre2-8-0 package"
+              },
+              "fullDescription": {
+                "text": "PCRE2 before 10.48 has a pcre2_match out-of-bounds read during the PCRE2_MATCH_INVALID_UTF matching of an invalid UTF subject."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-89160",
+              "help": {
+                "text": "Vulnerability CVE-2026-89160\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.39-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-89160](https://ubuntu.com/security/CVE-2026-89160)",
+                "markdown": "**Vulnerability CVE-2026-89160**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.39-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-89160](https://ubuntu.com/security/CVE-2026-89160)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
+                ],
+                "security-severity": "6.5"
               }
             },
             {
@@ -1039,6 +1039,27 @@
               }
             },
             {
+              "id": "CVE-2026-89158-libpcre2-8-0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-89158 medium vulnerability for libpcre2-8-0 package"
+              },
+              "fullDescription": {
+                "text": "PCRE2 before 10.48, on 32-bit platforms, has a pcre2_compile_32 integer overflow and resultant out-of-bounds write."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-89158",
+              "help": {
+                "text": "Vulnerability CVE-2026-89158\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.39-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-89158](https://ubuntu.com/security/CVE-2026-89158)",
+                "markdown": "**Vulnerability CVE-2026-89158**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.39-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-89158](https://ubuntu.com/security/CVE-2026-89158)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
+                ],
+                "security-severity": "6.5"
+              }
+            },
+            {
               "id": "CVE-2016-20013-libc-bin",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1078,111 +1099,6 @@
                   "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.15?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
                 ],
                 "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2018-5709-libgssapi-krb5-2",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2018-5709 low vulnerability for libgssapi-krb5-2 package"
-              },
-              "fullDescription": {
-                "text": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry-\u003en_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2018-5709",
-              "help": {
-                "text": "Vulnerability CVE-2018-5709\nSeverity: low\nPackage: libgssapi-krb5-2\nVersion: 1.19.2-2ubuntu0.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)",
-                "markdown": "**Vulnerability CVE-2018-5709**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libgssapi-krb5-2  | 1.19.2-2ubuntu0.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libgssapi-krb5-2@1.19.2-2ubuntu0.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2018-5709-libk5crypto3",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2018-5709 low vulnerability for libk5crypto3 package"
-              },
-              "fullDescription": {
-                "text": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry-\u003en_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2018-5709",
-              "help": {
-                "text": "Vulnerability CVE-2018-5709\nSeverity: low\nPackage: libk5crypto3\nVersion: 1.19.2-2ubuntu0.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)",
-                "markdown": "**Vulnerability CVE-2018-5709**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libk5crypto3  | 1.19.2-2ubuntu0.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libk5crypto3@1.19.2-2ubuntu0.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2018-5709-libkrb5-3",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2018-5709 low vulnerability for libkrb5-3 package"
-              },
-              "fullDescription": {
-                "text": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry-\u003en_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2018-5709",
-              "help": {
-                "text": "Vulnerability CVE-2018-5709\nSeverity: low\nPackage: libkrb5-3\nVersion: 1.19.2-2ubuntu0.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)",
-                "markdown": "**Vulnerability CVE-2018-5709**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libkrb5-3  | 1.19.2-2ubuntu0.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libkrb5-3@1.19.2-2ubuntu0.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2018-5709-libkrb5support0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2018-5709 low vulnerability for libkrb5support0 package"
-              },
-              "fullDescription": {
-                "text": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry-\u003en_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2018-5709",
-              "help": {
-                "text": "Vulnerability CVE-2018-5709\nSeverity: low\nPackage: libkrb5support0\nVersion: 1.19.2-2ubuntu0.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)",
-                "markdown": "**Vulnerability CVE-2018-5709**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libkrb5support0  | 1.19.2-2ubuntu0.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libkrb5support0@1.19.2-2ubuntu0.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-54369-libacl1",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-54369 medium vulnerability for libacl1 package"
-              },
-              "fullDescription": {
-                "text": "acl before version 2.4.0 contains a symlink traversal vulnerability in the libacl pathname-based functions acl_get_file(), acl_set_file(), acl_extended_file(), and acl_delete_def_file() that allows local attackers to escalate privileges by replacing any pathname component with a symbolic link. Attackers who control any component of a pathname processed by a privileged caller can redirect ACL read or write operations to arbitrary files or directories, enabling unauthorized manipulation of access control lists and local privilege escalation."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-54369",
-              "help": {
-                "text": "Vulnerability CVE-2026-54369\nSeverity: medium\nPackage: libacl1\nVersion: 2.3.1-1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)",
-                "markdown": "**Vulnerability CVE-2026-54369**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libacl1  | 2.3.1-1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libacl1@2.3.1-1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=acl"
-                ],
-                "security-severity": "8.4"
               }
             },
             {
@@ -1333,24 +1249,108 @@
               }
             },
             {
-              "id": "CVE-2026-89161-libpcre2-8-0",
+              "id": "CVE-2018-5709-libgssapi-krb5-2",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-89161 medium vulnerability for libpcre2-8-0 package"
+                "text": "CVE-2018-5709 low vulnerability for libgssapi-krb5-2 package"
               },
               "fullDescription": {
-                "text": "In PCRE2 before 10.48, pcre2_jit_match mishandles a previously copied subject being passed in as a context. An incorrect free operation can occur."
+                "text": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry-\u003en_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
               },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-89161",
+              "helpUri": "https://ubuntu.com/security/CVE-2018-5709",
               "help": {
-                "text": "Vulnerability CVE-2026-89161\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.39-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-89161](https://ubuntu.com/security/CVE-2026-89161)",
-                "markdown": "**Vulnerability CVE-2026-89161**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.39-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-89161](https://ubuntu.com/security/CVE-2026-89161)  |\n"
+                "text": "Vulnerability CVE-2018-5709\nSeverity: low\nPackage: libgssapi-krb5-2\nVersion: 1.19.2-2ubuntu0.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)",
+                "markdown": "**Vulnerability CVE-2018-5709**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libgssapi-krb5-2  | 1.19.2-2ubuntu0.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
+                  "pkg:deb/ubuntu/libgssapi-krb5-2@1.19.2-2ubuntu0.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
                 ],
-                "security-severity": "7.8"
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2018-5709-libk5crypto3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2018-5709 low vulnerability for libk5crypto3 package"
+              },
+              "fullDescription": {
+                "text": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry-\u003en_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2018-5709",
+              "help": {
+                "text": "Vulnerability CVE-2018-5709\nSeverity: low\nPackage: libk5crypto3\nVersion: 1.19.2-2ubuntu0.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)",
+                "markdown": "**Vulnerability CVE-2018-5709**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libk5crypto3  | 1.19.2-2ubuntu0.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libk5crypto3@1.19.2-2ubuntu0.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2018-5709-libkrb5-3",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2018-5709 low vulnerability for libkrb5-3 package"
+              },
+              "fullDescription": {
+                "text": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry-\u003en_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2018-5709",
+              "help": {
+                "text": "Vulnerability CVE-2018-5709\nSeverity: low\nPackage: libkrb5-3\nVersion: 1.19.2-2ubuntu0.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)",
+                "markdown": "**Vulnerability CVE-2018-5709**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libkrb5-3  | 1.19.2-2ubuntu0.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libkrb5-3@1.19.2-2ubuntu0.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2018-5709-libkrb5support0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2018-5709 low vulnerability for libkrb5support0 package"
+              },
+              "fullDescription": {
+                "text": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry-\u003en_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2018-5709",
+              "help": {
+                "text": "Vulnerability CVE-2018-5709\nSeverity: low\nPackage: libkrb5support0\nVersion: 1.19.2-2ubuntu0.8\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)",
+                "markdown": "**Vulnerability CVE-2018-5709**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | libkrb5support0  | 1.19.2-2ubuntu0.8  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2018-5709](https://ubuntu.com/security/CVE-2018-5709)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libkrb5support0@1.19.2-2ubuntu0.8?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=krb5"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2026-54369-libacl1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-54369 medium vulnerability for libacl1 package"
+              },
+              "fullDescription": {
+                "text": "acl before version 2.4.0 contains a symlink traversal vulnerability in the libacl pathname-based functions acl_get_file(), acl_set_file(), acl_extended_file(), and acl_delete_def_file() that allows local attackers to escalate privileges by replacing any pathname component with a symbolic link. Attackers who control any component of a pathname processed by a privileged caller can redirect ACL read or write operations to arbitrary files or directories, enabling unauthorized manipulation of access control lists and local privilege escalation."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-54369",
+              "help": {
+                "text": "Vulnerability CVE-2026-54369\nSeverity: medium\nPackage: libacl1\nVersion: 2.3.1-1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)",
+                "markdown": "**Vulnerability CVE-2026-54369**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libacl1  | 2.3.1-1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libacl1@2.3.1-1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=acl"
+                ],
+                "security-severity": "8.4"
               }
             },
             {
@@ -1960,6 +1960,27 @@
                   "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.9?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
                 ],
                 "security-severity": "5.5"
+              }
+            },
+            {
+              "id": "CVE-2026-89161-libpcre2-8-0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-89161 medium vulnerability for libpcre2-8-0 package"
+              },
+              "fullDescription": {
+                "text": "In PCRE2 before 10.48, pcre2_jit_match mishandles a previously copied subject being passed in as a context. An incorrect free operation can occur."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-89161",
+              "help": {
+                "text": "Vulnerability CVE-2026-89161\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.39-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-89161](https://ubuntu.com/security/CVE-2026-89161)",
+                "markdown": "**Vulnerability CVE-2026-89161**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.39-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-89161](https://ubuntu.com/security/CVE-2026-89161)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
+                ],
+                "security-severity": "7.8"
               }
             },
             {
@@ -3037,45 +3058,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-86145-libpcre2-8-0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.39-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libpcre2-8-0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-82209-curl",
           "level": "warning",
           "message": {
@@ -3394,6 +3376,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-86145-libpcre2-8-0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.39-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libpcre2-8-0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-95619-gcc-12-base",
           "level": "warning",
           "message": {
@@ -3508,162 +3529,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "ff2ca4fd07f228bb373cfada131c09077ae05f668290f1f477ecfc13b3b41467:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-89158-libpcre2-8-0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.39-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libpcre2-8-0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-89156-libpcre2-8-0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.39-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libpcre2-8-0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-89160-libpcre2-8-0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.39-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libpcre2-8-0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-89157-libpcre2-8-0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.39-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libpcre2-8-0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
           }
         },
         {
@@ -3801,6 +3666,186 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "b6bc3a09697de67083081963dadc5ee23a7fd77cecd81e5eb59f4086c5ddf260:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-91187-dash",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: dash, version 0.5.11+git20210903+057cd650a4ed-3build1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/dash/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/dash/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dash.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/dash.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dash.config",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/dash.config"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dash.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/dash.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dash.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/dash.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dash.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/dash.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dash.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/dash.prerm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/dash.templates",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/dash.templates"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "9c26c0d7a122658aab7d5518caca6db7bdca9f5b5f7779eddb45b006cc9d21d1:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-89156-libpcre2-8-0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.39-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libpcre2-8-0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-89157-libpcre2-8-0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.39-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libpcre2-8-0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-89160-libpcre2-8-0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.39-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libpcre2-8-0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
           }
         },
         {
@@ -4393,6 +4438,45 @@
           }
         },
         {
+          "ruleId": "CVE-2026-89158-libpcre2-8-0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.39-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libpcre2-8-0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
+          }
+        },
+        {
           "ruleId": "CVE-2016-20013-libc-bin",
           "level": "note",
           "message": {
@@ -4488,201 +4572,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "43c9fa8e5e7353e069b74ce9028e1bbd8cd33a784cc3290f2dea47d6bea61d39:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2018-5709-libgssapi-krb5-2",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libgssapi-krb5-2, version 1.19.2-2ubuntu0.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libgssapi-krb5-2/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libgssapi-krb5-2/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libgssapi-krb5-2:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libgssapi-krb5-2:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d050c359a9e6274575a40ebb84f22e37b3257f021921a36dedd0735de3b5262a:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2018-5709-libk5crypto3",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libk5crypto3, version 1.19.2-2ubuntu0.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libk5crypto3/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libk5crypto3/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libk5crypto3:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libk5crypto3:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "904b3e46626a8cfd694bed90df53ed4c4ae121fad5a63b681c78b5869fe3c505:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2018-5709-libkrb5-3",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libkrb5-3, version 1.19.2-2ubuntu0.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libkrb5-3/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libkrb5-3/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libkrb5-3:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libkrb5-3:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "ef7ababdc1d0d102baefc01c95a994c480fbbd04868a2becf3a84013ddd0ab00:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2018-5709-libkrb5support0",
-          "level": "note",
-          "message": {
-            "text": "A low vulnerability in deb package: libkrb5support0, version 1.19.2-2ubuntu0.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libkrb5support0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libkrb5support0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libkrb5support0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libkrb5support0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "f8997ba03286dabe9db0b4adb27908a0f883cc91b77ed369bd0f616b1fa97c7b:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-54369-libacl1",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libacl1, version 2.3.1-1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libacl1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libacl1/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libacl1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libacl1:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "1360695183098a9deb6c0140cbe16458b7eec28a1127bb4884dc06af49057a68:1"
           }
         },
         {
@@ -4991,10 +4880,10 @@
           }
         },
         {
-          "ruleId": "CVE-2026-89161-libpcre2-8-0",
-          "level": "warning",
+          "ruleId": "CVE-2018-5709-libgssapi-krb5-2",
+          "level": "note",
           "message": {
-            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.39-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+            "text": "A low vulnerability in deb package: libgssapi-krb5-2, version 1.19.2-2ubuntu0.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -5015,18 +4904,174 @@
                   "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
                 },
                 {
-                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libpcre2-8-0/copyright"
+                  "name": "/usr/share/doc/libgssapi-krb5-2/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libgssapi-krb5-2/copyright"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                  "name": "/var/lib/dpkg/info/libgssapi-krb5-2:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libgssapi-krb5-2:amd64.md5sums"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
+            "primaryLocationLineHash": "d050c359a9e6274575a40ebb84f22e37b3257f021921a36dedd0735de3b5262a:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2018-5709-libk5crypto3",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libk5crypto3, version 1.19.2-2ubuntu0.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libk5crypto3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libk5crypto3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libk5crypto3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libk5crypto3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "904b3e46626a8cfd694bed90df53ed4c4ae121fad5a63b681c78b5869fe3c505:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2018-5709-libkrb5-3",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libkrb5-3, version 1.19.2-2ubuntu0.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libkrb5-3/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libkrb5-3/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libkrb5-3:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libkrb5-3:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "ef7ababdc1d0d102baefc01c95a994c480fbbd04868a2becf3a84013ddd0ab00:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2018-5709-libkrb5support0",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: libkrb5support0, version 1.19.2-2ubuntu0.8 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libkrb5support0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libkrb5support0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libkrb5support0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libkrb5support0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "f8997ba03286dabe9db0b4adb27908a0f883cc91b77ed369bd0f616b1fa97c7b:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-54369-libacl1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libacl1, version 2.3.1-1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libacl1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libacl1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libacl1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libacl1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "1360695183098a9deb6c0140cbe16458b7eec28a1127bb4884dc06af49057a68:1"
           }
         },
         {
@@ -6330,6 +6375,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "d283a7655107bd320b4372e57fe83c15a3bf4064ed5f8991d1d1aaf429370642:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-89161-libpcre2-8-0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.39-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libpcre2-8-0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
           }
         },
         {
