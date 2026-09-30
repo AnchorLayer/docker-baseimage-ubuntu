@@ -682,27 +682,6 @@
               }
             },
             {
-              "id": "CVE-2026-91187-dash",
-              "name": "DpkgMatcherExactDirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-91187 medium vulnerability for dash package"
-              },
-              "fullDescription": {
-                "text": "Improper Verification of Cryptographic Signature vulnerability in dashbit nimble_zta allows an unauthenticated remote attacker to authenticate as an arbitrary Cloudflare service token. Applications using the Cloudflare Zero Trust authentication strategy are affected.\n\nverify_token/2 in lib/nimble_zta/cloudflare.ex matches the result of JOSE.JWT.verify/2 against {_, token, _s}, which discards the boolean verification result and returns the decoded token after a failed signature check. The attacker sends a forged JWT in the cf-access-jwt-assertion header, carrying the expected iss claim and the seven service token claims. verify_iss/2 reads the iss claim from the forged token, so it rejects nothing, and the service token path then returns those claims as the authenticated identity.\n\nThis issue affects nimble_zta: from 0.1.2 before 0.1.3."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-91187",
-              "help": {
-                "text": "Vulnerability CVE-2026-91187\nSeverity: medium\nPackage: dash\nVersion: 0.5.11+git20210903+057cd650a4ed-3build1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-91187](https://ubuntu.com/security/CVE-2026-91187)",
-                "markdown": "**Vulnerability CVE-2026-91187**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | dash  | 0.5.11+git20210903+057cd650a4ed-3build1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-91187](https://ubuntu.com/security/CVE-2026-91187)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/dash@0.5.11%2Bgit20210903%2B057cd650a4ed-3build1?arch=amd64\u0026distro=ubuntu-22.04"
-                ],
-                "security-severity": "9.3"
-              }
-            },
-            {
               "id": "CVE-2026-89156-libpcre2-8-0",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -3542,69 +3521,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "b6bc3a09697de67083081963dadc5ee23a7fd77cecd81e5eb59f4086c5ddf260:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-91187-dash",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: dash, version 0.5.11+git20210903+057cd650a4ed-3build1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:94565eaeb0690548214b4a615781e21288ae6129cdf05b1829c637066472d71f:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/dash/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/dash/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dash.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/dash.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dash.config",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/dash.config"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dash.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/dash.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dash.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/dash.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dash.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/dash.postrm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dash.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/dash.prerm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/dash.templates",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/dash.templates"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "9c26c0d7a122658aab7d5518caca6db7bdca9f5b5f7779eddb45b006cc9d21d1:1"
           }
         },
         {
