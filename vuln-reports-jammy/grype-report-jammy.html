@@ -125,7 +125,7 @@
         /* Main container styling */
         .main-container {
             width: 90%;
-            max-width: 1200px;
+            max-width: 1600px;
             background-color: var(--container-bg);
             padding: 20px;
             box-shadow: 0 4px 8px var(--container-shadow);
@@ -796,7 +796,7 @@
                     <dd>grype 0.119.0</dd><dt>Vulnerability DB:</dt>
                     <dd>{"status":{"schemaVersion":"v6.1.9","from":"https://grype.anchore.io/databases/v6/vulnerability-db_v6.1.9_2026-09-30T00:35:37Z_1790749967.tar.zst?checksum=sha256%3Aac0db74474a11c2850db2376e4838c1bc5444097d21b277ad9dec767b6d39869","built":"2026-09-30T06:32:47Z","path":"/home/runner/.cache/grype/db/6/vulnerability.db","valid":true},"providers":{"alma":{"captured":"2026-09-30T00:35:44Z","input":"xxh64:0466d3ec59fa4427"},"alpine":{"captured":"2026-09-30T00:36:08Z","input":"xxh64:a958708635c66176"},"amazon":{"captured":"2026-09-30T00:35:41Z","input":"xxh64:4aa0321875a051dd"},"arch":{"captured":"2026-09-30T00:35:49Z","input":"xxh64:1628aed84a2c33e5"},"bitnami":{"captured":"2026-09-30T00:36:04Z","input":"xxh64:aaec35e29fc22c6f"},"chainguard":{"captured":"2026-09-30T00:35:37Z","input":"xxh64:5775a182479efd8d"},"chainguard-libraries":{"captured":"2026-09-30T00:35:58Z","input":"xxh64:b1101e386da6a6ee"},"debian":{"captured":"2026-09-30T00:36:23Z","input":"xxh64:ed1bbb0a99eaea62"},"echo":{"captured":"2026-09-30T00:35:50Z","input":"xxh64:6303c3b88cadf45e"},"eol":{"captured":"2026-09-30T00:35:43Z","input":"xxh64:aa16464268fee3a0"},"epss":{"captured":"2026-09-30T00:36:02Z","input":"xxh64:bab1979e5f1f2a20"},"fedora":{"captured":"2026-09-30T00:35:46Z","input":"xxh64:97fd16c233f0ee03"},"github":{"captured":"2026-09-30T00:36:23Z","input":"xxh64:41ecf967f5e6cf98"},"govulndb":{"captured":"2026-09-30T00:36:26Z","input":"xxh64:d571630b41cfafd5"},"hummingbird":{"captured":"2026-09-30T00:38:21Z","input":"xxh64:78e8a0d2c307535c"},"kev":{"captured":"2026-09-30T00:35:56Z","input":"xxh64:f39ceed9164cf1b3"},"mariner":{"captured":"2026-09-30T00:35:37Z","input":"xxh64:90f580c3b8fd8be0"},"minimos":{"captured":"2026-09-30T00:35:57Z","input":"xxh64:4963a572bb6465ad"},"nvd":{"captured":"2026-09-30T00:36:41Z","input":"xxh64:7354a4da9354a22b"},"oracle":{"captured":"2026-09-30T00:35:39Z","input":"xxh64:7256c49ec857cd62"},"photon":{"captured":"2026-09-30T00:35:39Z","input":"xxh64:ce1ef1151294f5ac"},"rhel":{"captured":"2026-09-30T01:19:56Z","input":"xxh64:410c369c6c520ebc"},"secureos":{"captured":"2026-09-30T00:35:37Z","input":"xxh64:6c05ee0a9ab85cfd"},"sles":{"captured":"2026-09-30T01:20:32Z","input":"xxh64:b87ca072a646d5b6"},"ubuntu":{"captured":"2026-09-30T00:36:36Z","input":"xxh64:98b99728e4aad191"},"wolfi":{"captured":"2026-09-30T00:35:58Z","input":"xxh64:e260bb2461b65cfa"}}}</dd><dt>Date:</dt>
                     <dd>
-                        <span id="dateElement">2026-09-30T08:53:23.503393965Z</span>
+                        <span id="dateElement">2026-09-30T15:38:40.316874276Z</span>
                         <span id="prettyDateElement" style="display: none;"></span>
                     </dd>
                     <dt>Grype Version:</dt>
@@ -837,20 +837,33 @@
                 <thead>
                     <tr>
                         <th>Name</th>
+                        <th>Locations</th>
                         <th>Version</th>
                         <th>Type</th>
                         <th>Vulnerability</th>
                         <th>Severity</th>
                         <th>State</th>
-                        <th>Fixed In</th>
                         <th>Description</th>
                         <th>Related URLs</th>
                         <th>PURL</th>
+                        <th>Fixed In</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>perl-base</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/perl-base.md5sums</li>
+                                <li>/usr/share/doc/perl-base/copyright</li>
+                                <li>/var/lib/dpkg/info/perl-base.list</li>
+                                <li>/var/lib/dpkg/info/perl-base.postinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.postrm</li>
+                                <li>/var/lib/dpkg/info/perl-base.preinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.prerm</li>
+                            </ul>
+                        </td>
                         <td>5.34.0-3ubuntu1.9</td>
                         <td>deb</td>
                         <td>
@@ -858,15 +871,22 @@
                         </td>
                         <td>Medium</td>
                         <td>wont-fix</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.9?arch=amd64&distro=ubuntu-22.04&upstream=perl</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libzstd1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libzstd1/copyright</li>
+                                <li>/var/lib/dpkg/info/libzstd1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>1.4.8+dfsg-3build1</td>
                         <td>deb</td>
                         <td>
@@ -874,15 +894,22 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libzstd1@1.4.8%2Bdfsg-3build1?arch=amd64&distro=ubuntu-22.04&upstream=libzstd</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libpcre2-8-0</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libpcre2-8-0/copyright</li>
+                                <li>/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>10.39-3ubuntu0.1</td>
                         <td>deb</td>
                         <td>
@@ -890,15 +917,27 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64&distro=ubuntu-22.04&upstream=pcre2</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>perl-base</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/perl-base.md5sums</li>
+                                <li>/usr/share/doc/perl-base/copyright</li>
+                                <li>/var/lib/dpkg/info/perl-base.list</li>
+                                <li>/var/lib/dpkg/info/perl-base.postinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.postrm</li>
+                                <li>/var/lib/dpkg/info/perl-base.preinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.prerm</li>
+                            </ul>
+                        </td>
                         <td>5.34.0-3ubuntu1.9</td>
                         <td>deb</td>
                         <td>
@@ -906,15 +945,27 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.9?arch=amd64&distro=ubuntu-22.04&upstream=perl</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>perl-base</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/perl-base.md5sums</li>
+                                <li>/usr/share/doc/perl-base/copyright</li>
+                                <li>/var/lib/dpkg/info/perl-base.list</li>
+                                <li>/var/lib/dpkg/info/perl-base.postinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.postrm</li>
+                                <li>/var/lib/dpkg/info/perl-base.preinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.prerm</li>
+                            </ul>
+                        </td>
                         <td>5.34.0-3ubuntu1.9</td>
                         <td>deb</td>
                         <td>
@@ -922,15 +973,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.9?arch=amd64&distro=ubuntu-22.04&upstream=perl</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>zlib1g</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/zlib1g/copyright</li>
+                                <li>/var/lib/dpkg/info/zlib1g:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>1:1.2.11.dfsg-2ubuntu9.2</td>
                         <td>deb</td>
                         <td>
@@ -938,15 +996,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/zlib1g@1%3A1.2.11.dfsg-2ubuntu9.2?arch=amd64&distro=ubuntu-22.04&upstream=zlib</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>curl</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/curl/copyright</li>
+                                <li>/var/lib/dpkg/info/curl.md5sums</li>
+                                <li>/var/lib/dpkg/info/curl.list</li>
+                            </ul>
+                        </td>
                         <td>7.81.0-1ubuntu1.27</td>
                         <td>deb</td>
                         <td>
@@ -954,17 +1020,24 @@
                         </td>
                         <td>Medium</td>
                         <td>fixed</td>
-                        <td>
-                            <ul>
-                                <li>7.81.0-1ubuntu1.29</li>
-                            </ul>
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.27?arch=amd64&distro=ubuntu-22.04</td>
+                        <td>
+                            <ul>
+                                <li>7.81.0-1ubuntu1.29</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
                         <td>libcurl4</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libcurl4/copyright</li>
+                                <li>/var/lib/dpkg/info/libcurl4:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>7.81.0-1ubuntu1.27</td>
                         <td>deb</td>
                         <td>
@@ -972,17 +1045,24 @@
                         </td>
                         <td>Medium</td>
                         <td>fixed</td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.27?arch=amd64&distro=ubuntu-22.04&upstream=curl</td>
                         <td>
                             <ul>
                                 <li>7.81.0-1ubuntu1.29</li>
                             </ul>
                         </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.27?arch=amd64&distro=ubuntu-22.04&upstream=curl</td>
                     </tr>
                     <tr>
                         <td>libncurses6</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libtinfo6/copyright</li>
+                                <li>/var/lib/dpkg/info/libncurses6:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>6.3-2ubuntu0.3</td>
                         <td>deb</td>
                         <td>
@@ -990,15 +1070,22 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libncurses6@6.3-2ubuntu0.3?arch=amd64&distro=ubuntu-22.04&upstream=ncurses</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libncursesw6</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libtinfo6/copyright</li>
+                                <li>/var/lib/dpkg/info/libncursesw6:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>6.3-2ubuntu0.3</td>
                         <td>deb</td>
                         <td>
@@ -1006,15 +1093,22 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libncursesw6@6.3-2ubuntu0.3?arch=amd64&distro=ubuntu-22.04&upstream=ncurses</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libtinfo6</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libtinfo6/copyright</li>
+                                <li>/var/lib/dpkg/info/libtinfo6:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>6.3-2ubuntu0.3</td>
                         <td>deb</td>
                         <td>
@@ -1022,15 +1116,24 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libtinfo6@6.3-2ubuntu0.3?arch=amd64&distro=ubuntu-22.04&upstream=ncurses</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>ncurses-base</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/ncurses-base/copyright</li>
+                                <li>/var/lib/dpkg/info/ncurses-base.conffiles</li>
+                                <li>/var/lib/dpkg/info/ncurses-base.md5sums</li>
+                                <li>/var/lib/dpkg/info/ncurses-base.list</li>
+                            </ul>
+                        </td>
                         <td>6.3-2ubuntu0.3</td>
                         <td>deb</td>
                         <td>
@@ -1038,15 +1141,23 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/ncurses-base@6.3-2ubuntu0.3?arch=all&distro=ubuntu-22.04&upstream=ncurses</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>ncurses-bin</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/ncurses-bin/copyright</li>
+                                <li>/var/lib/dpkg/info/ncurses-bin.md5sums</li>
+                                <li>/var/lib/dpkg/info/ncurses-bin.list</li>
+                            </ul>
+                        </td>
                         <td>6.3-2ubuntu0.3</td>
                         <td>deb</td>
                         <td>
@@ -1054,15 +1165,27 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/ncurses-bin@6.3-2ubuntu0.3?arch=amd64&distro=ubuntu-22.04&upstream=ncurses</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>perl-base</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/perl-base.md5sums</li>
+                                <li>/usr/share/doc/perl-base/copyright</li>
+                                <li>/var/lib/dpkg/info/perl-base.list</li>
+                                <li>/var/lib/dpkg/info/perl-base.postinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.postrm</li>
+                                <li>/var/lib/dpkg/info/perl-base.preinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.prerm</li>
+                            </ul>
+                        </td>
                         <td>5.34.0-3ubuntu1.9</td>
                         <td>deb</td>
                         <td>
@@ -1070,15 +1193,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.9?arch=amd64&distro=ubuntu-22.04&upstream=perl</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>gcc-12-base</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/gcc-12-base/copyright</li>
+                                <li>/var/lib/dpkg/info/gcc-12-base:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>12.3.0-1ubuntu1~22.04.3</td>
                         <td>deb</td>
                         <td>
@@ -1086,15 +1216,22 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/gcc-12-base@12.3.0-1ubuntu1~22.04.3?arch=amd64&distro=ubuntu-22.04&upstream=gcc-12</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libgcc-s1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/gcc-12-base/copyright</li>
+                                <li>/var/lib/dpkg/info/libgcc-s1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>12.3.0-1ubuntu1~22.04.3</td>
                         <td>deb</td>
                         <td>
@@ -1102,15 +1239,22 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libgcc-s1@12.3.0-1ubuntu1~22.04.3?arch=amd64&distro=ubuntu-22.04&upstream=gcc-12</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libstdc++6</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/gcc-12-base/copyright</li>
+                                <li>/var/lib/dpkg/info/libstdc++6:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>12.3.0-1ubuntu1~22.04.3</td>
                         <td>deb</td>
                         <td>
@@ -1118,15 +1262,27 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libstdc%2B%2B6@12.3.0-1ubuntu1~22.04.3?arch=amd64&distro=ubuntu-22.04&upstream=gcc-12</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>perl-base</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/perl-base.md5sums</li>
+                                <li>/usr/share/doc/perl-base/copyright</li>
+                                <li>/var/lib/dpkg/info/perl-base.list</li>
+                                <li>/var/lib/dpkg/info/perl-base.postinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.postrm</li>
+                                <li>/var/lib/dpkg/info/perl-base.preinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.prerm</li>
+                            </ul>
+                        </td>
                         <td>5.34.0-3ubuntu1.9</td>
                         <td>deb</td>
                         <td>
@@ -1134,15 +1290,27 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.9?arch=amd64&distro=ubuntu-22.04&upstream=perl</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>perl-base</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/perl-base.md5sums</li>
+                                <li>/usr/share/doc/perl-base/copyright</li>
+                                <li>/var/lib/dpkg/info/perl-base.list</li>
+                                <li>/var/lib/dpkg/info/perl-base.postinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.postrm</li>
+                                <li>/var/lib/dpkg/info/perl-base.preinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.prerm</li>
+                            </ul>
+                        </td>
                         <td>5.34.0-3ubuntu1.9</td>
                         <td>deb</td>
                         <td>
@@ -1150,15 +1318,27 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.9?arch=amd64&distro=ubuntu-22.04&upstream=perl</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>perl-base</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/perl-base.md5sums</li>
+                                <li>/usr/share/doc/perl-base/copyright</li>
+                                <li>/var/lib/dpkg/info/perl-base.list</li>
+                                <li>/var/lib/dpkg/info/perl-base.postinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.postrm</li>
+                                <li>/var/lib/dpkg/info/perl-base.preinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.prerm</li>
+                            </ul>
+                        </td>
                         <td>5.34.0-3ubuntu1.9</td>
                         <td>deb</td>
                         <td>
@@ -1166,15 +1346,27 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.9?arch=amd64&distro=ubuntu-22.04&upstream=perl</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>perl-base</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/perl-base.md5sums</li>
+                                <li>/usr/share/doc/perl-base/copyright</li>
+                                <li>/var/lib/dpkg/info/perl-base.list</li>
+                                <li>/var/lib/dpkg/info/perl-base.postinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.postrm</li>
+                                <li>/var/lib/dpkg/info/perl-base.preinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.prerm</li>
+                            </ul>
+                        </td>
                         <td>5.34.0-3ubuntu1.9</td>
                         <td>deb</td>
                         <td>
@@ -1182,15 +1374,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.9?arch=amd64&distro=ubuntu-22.04&upstream=perl</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libpcre2-8-0</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libpcre2-8-0/copyright</li>
+                                <li>/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>10.39-3ubuntu0.1</td>
                         <td>deb</td>
                         <td>
@@ -1198,15 +1397,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64&distro=ubuntu-22.04&upstream=pcre2</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>curl</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/curl/copyright</li>
+                                <li>/var/lib/dpkg/info/curl.md5sums</li>
+                                <li>/var/lib/dpkg/info/curl.list</li>
+                            </ul>
+                        </td>
                         <td>7.81.0-1ubuntu1.27</td>
                         <td>deb</td>
                         <td>
@@ -1214,17 +1421,24 @@
                         </td>
                         <td>Medium</td>
                         <td>fixed</td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.27?arch=amd64&distro=ubuntu-22.04</td>
                         <td>
                             <ul>
                                 <li>7.81.0-1ubuntu1.29</li>
                             </ul>
                         </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.27?arch=amd64&distro=ubuntu-22.04</td>
                     </tr>
                     <tr>
                         <td>libcurl4</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libcurl4/copyright</li>
+                                <li>/var/lib/dpkg/info/libcurl4:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>7.81.0-1ubuntu1.27</td>
                         <td>deb</td>
                         <td>
@@ -1232,17 +1446,25 @@
                         </td>
                         <td>Medium</td>
                         <td>fixed</td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.27?arch=amd64&distro=ubuntu-22.04&upstream=curl</td>
                         <td>
                             <ul>
                                 <li>7.81.0-1ubuntu1.29</li>
                             </ul>
                         </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.27?arch=amd64&distro=ubuntu-22.04&upstream=curl</td>
                     </tr>
                     <tr>
                         <td>curl</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/curl/copyright</li>
+                                <li>/var/lib/dpkg/info/curl.md5sums</li>
+                                <li>/var/lib/dpkg/info/curl.list</li>
+                            </ul>
+                        </td>
                         <td>7.81.0-1ubuntu1.27</td>
                         <td>deb</td>
                         <td>
@@ -1250,17 +1472,24 @@
                         </td>
                         <td>Medium</td>
                         <td>fixed</td>
-                        <td>
-                            <ul>
-                                <li>7.81.0-1ubuntu1.29</li>
-                            </ul>
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/curl@7.81.0-1ubuntu1.27?arch=amd64&distro=ubuntu-22.04</td>
+                        <td>
+                            <ul>
+                                <li>7.81.0-1ubuntu1.29</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
                         <td>libcurl4</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libcurl4/copyright</li>
+                                <li>/var/lib/dpkg/info/libcurl4:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>7.81.0-1ubuntu1.27</td>
                         <td>deb</td>
                         <td>
@@ -1268,17 +1497,24 @@
                         </td>
                         <td>Medium</td>
                         <td>fixed</td>
+                        <td></td>
+                        <td>[]</td>
+                        <td>pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.27?arch=amd64&distro=ubuntu-22.04&upstream=curl</td>
                         <td>
                             <ul>
                                 <li>7.81.0-1ubuntu1.29</li>
                             </ul>
                         </td>
-                        <td></td>
-                        <td>[]</td>
-                        <td>pkg:deb/ubuntu/libcurl4@7.81.0-1ubuntu1.27?arch=amd64&distro=ubuntu-22.04&upstream=curl</td>
                     </tr>
                     <tr>
                         <td>gcc-12-base</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/gcc-12-base/copyright</li>
+                                <li>/var/lib/dpkg/info/gcc-12-base:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>12.3.0-1ubuntu1~22.04.3</td>
                         <td>deb</td>
                         <td>
@@ -1286,15 +1522,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/gcc-12-base@12.3.0-1ubuntu1~22.04.3?arch=amd64&distro=ubuntu-22.04&upstream=gcc-12</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libgcc-s1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/gcc-12-base/copyright</li>
+                                <li>/var/lib/dpkg/info/libgcc-s1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>12.3.0-1ubuntu1~22.04.3</td>
                         <td>deb</td>
                         <td>
@@ -1302,15 +1545,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libgcc-s1@12.3.0-1ubuntu1~22.04.3?arch=amd64&distro=ubuntu-22.04&upstream=gcc-12</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libstdc++6</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/gcc-12-base/copyright</li>
+                                <li>/var/lib/dpkg/info/libstdc++6:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>12.3.0-1ubuntu1~22.04.3</td>
                         <td>deb</td>
                         <td>
@@ -1318,15 +1568,26 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libstdc%2B%2B6@12.3.0-1ubuntu1~22.04.3?arch=amd64&distro=ubuntu-22.04&upstream=gcc-12</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libc-bin</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/libc-bin.conffiles</li>
+                                <li>/var/lib/dpkg/info/libc-bin.md5sums</li>
+                                <li>/usr/share/doc/libc-bin/copyright</li>
+                                <li>/var/lib/dpkg/info/libc-bin.list</li>
+                                <li>/var/lib/dpkg/info/libc-bin.postinst</li>
+                                <li>/var/lib/dpkg/info/libc-bin.triggers</li>
+                            </ul>
+                        </td>
                         <td>2.35-0ubuntu3.15</td>
                         <td>deb</td>
                         <td>
@@ -1334,15 +1595,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.15?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libc6</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/libc6:amd64.conffiles</li>
+                                <li>/var/lib/dpkg/info/libc6:amd64.md5sums</li>
+                                <li>/usr/share/doc/libc6/copyright</li>
+                            </ul>
+                        </td>
                         <td>2.35-0ubuntu3.15</td>
                         <td>deb</td>
                         <td>
@@ -1350,15 +1619,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libc6@2.35-0ubuntu3.15?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libpcre2-8-0</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libpcre2-8-0/copyright</li>
+                                <li>/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>10.39-3ubuntu0.1</td>
                         <td>deb</td>
                         <td>
@@ -1366,15 +1642,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64&distro=ubuntu-22.04&upstream=pcre2</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libpcre2-8-0</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libpcre2-8-0/copyright</li>
+                                <li>/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>10.39-3ubuntu0.1</td>
                         <td>deb</td>
                         <td>
@@ -1382,15 +1665,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64&distro=ubuntu-22.04&upstream=pcre2</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libpcre2-8-0</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libpcre2-8-0/copyright</li>
+                                <li>/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>10.39-3ubuntu0.1</td>
                         <td>deb</td>
                         <td>
@@ -1398,15 +1688,26 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64&distro=ubuntu-22.04&upstream=pcre2</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libc-bin</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/libc-bin.conffiles</li>
+                                <li>/var/lib/dpkg/info/libc-bin.md5sums</li>
+                                <li>/usr/share/doc/libc-bin/copyright</li>
+                                <li>/var/lib/dpkg/info/libc-bin.list</li>
+                                <li>/var/lib/dpkg/info/libc-bin.postinst</li>
+                                <li>/var/lib/dpkg/info/libc-bin.triggers</li>
+                            </ul>
+                        </td>
                         <td>2.35-0ubuntu3.15</td>
                         <td>deb</td>
                         <td>
@@ -1414,15 +1715,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.15?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libc6</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/libc6:amd64.conffiles</li>
+                                <li>/var/lib/dpkg/info/libc6:amd64.md5sums</li>
+                                <li>/usr/share/doc/libc6/copyright</li>
+                            </ul>
+                        </td>
                         <td>2.35-0ubuntu3.15</td>
                         <td>deb</td>
                         <td>
@@ -1430,15 +1739,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libc6@2.35-0ubuntu3.15?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libpam-modules</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libpam-modules/copyright</li>
+                                <li>/var/lib/dpkg/info/libpam-modules:amd64.conffiles</li>
+                                <li>/var/lib/dpkg/info/libpam-modules:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>1.4.0-11ubuntu2.8</td>
                         <td>deb</td>
                         <td>
@@ -1446,15 +1763,23 @@
                         </td>
                         <td>Medium</td>
                         <td>wont-fix</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libpam-modules@1.4.0-11ubuntu2.8?arch=amd64&distro=ubuntu-22.04&upstream=pam</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libpam-modules-bin</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libpam-modules-bin/copyright</li>
+                                <li>/var/lib/dpkg/info/libpam-modules-bin.md5sums</li>
+                                <li>/var/lib/dpkg/info/libpam-modules-bin.list</li>
+                            </ul>
+                        </td>
                         <td>1.4.0-11ubuntu2.8</td>
                         <td>deb</td>
                         <td>
@@ -1462,15 +1787,28 @@
                         </td>
                         <td>Medium</td>
                         <td>wont-fix</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libpam-modules-bin@1.4.0-11ubuntu2.8?arch=amd64&distro=ubuntu-22.04&upstream=pam</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libpam-runtime</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libpam-runtime/copyright</li>
+                                <li>/var/lib/dpkg/info/libpam-runtime.conffiles</li>
+                                <li>/var/lib/dpkg/info/libpam-runtime.md5sums</li>
+                                <li>/var/lib/dpkg/info/libpam-runtime.list</li>
+                                <li>/var/lib/dpkg/info/libpam-runtime.postinst</li>
+                                <li>/var/lib/dpkg/info/libpam-runtime.postrm</li>
+                                <li>/var/lib/dpkg/info/libpam-runtime.prerm</li>
+                                <li>/var/lib/dpkg/info/libpam-runtime.templates</li>
+                            </ul>
+                        </td>
                         <td>1.4.0-11ubuntu2.8</td>
                         <td>deb</td>
                         <td>
@@ -1478,15 +1816,22 @@
                         </td>
                         <td>Medium</td>
                         <td>wont-fix</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libpam-runtime@1.4.0-11ubuntu2.8?arch=all&distro=ubuntu-22.04&upstream=pam</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libpam0g</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libpam0g/copyright</li>
+                                <li>/var/lib/dpkg/info/libpam0g:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>1.4.0-11ubuntu2.8</td>
                         <td>deb</td>
                         <td>
@@ -1494,15 +1839,25 @@
                         </td>
                         <td>Medium</td>
                         <td>wont-fix</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libpam0g@1.4.0-11ubuntu2.8?arch=amd64&distro=ubuntu-22.04&upstream=pam</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>coreutils</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/coreutils/copyright</li>
+                                <li>/var/lib/dpkg/info/coreutils.md5sums</li>
+                                <li>/var/lib/dpkg/info/coreutils.list</li>
+                                <li>/var/lib/dpkg/info/coreutils.postinst</li>
+                                <li>/var/lib/dpkg/info/coreutils.postrm</li>
+                            </ul>
+                        </td>
                         <td>8.32-4.1ubuntu1.4</td>
                         <td>deb</td>
                         <td>
@@ -1510,15 +1865,28 @@
                         </td>
                         <td>Low</td>
                         <td>wont-fix</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.4?arch=amd64&distro=ubuntu-22.04</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>login</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/login/copyright</li>
+                                <li>/var/lib/dpkg/info/login.conffiles</li>
+                                <li>/var/lib/dpkg/info/login.md5sums</li>
+                                <li>/var/lib/dpkg/info/login.list</li>
+                                <li>/var/lib/dpkg/info/login.postinst</li>
+                                <li>/var/lib/dpkg/info/login.postrm</li>
+                                <li>/var/lib/dpkg/info/login.preinst</li>
+                                <li>/var/lib/dpkg/info/login.prerm</li>
+                            </ul>
+                        </td>
                         <td>1:4.8.1-2ubuntu2.2</td>
                         <td>deb</td>
                         <td>
@@ -1526,15 +1894,28 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/login@1%3A4.8.1-2ubuntu2.2?arch=amd64&distro=ubuntu-22.04&upstream=shadow</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>passwd</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/passwd/copyright</li>
+                                <li>/var/lib/dpkg/info/passwd.conffiles</li>
+                                <li>/var/lib/dpkg/info/passwd.md5sums</li>
+                                <li>/var/lib/dpkg/info/passwd.list</li>
+                                <li>/var/lib/dpkg/info/passwd.postinst</li>
+                                <li>/var/lib/dpkg/info/passwd.postrm</li>
+                                <li>/var/lib/dpkg/info/passwd.preinst</li>
+                                <li>/var/lib/dpkg/info/passwd.prerm</li>
+                            </ul>
+                        </td>
                         <td>1:4.8.1-2ubuntu2.2</td>
                         <td>deb</td>
                         <td>
@@ -1542,15 +1923,28 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/passwd@1%3A4.8.1-2ubuntu2.2?arch=amd64&distro=ubuntu-22.04&upstream=shadow</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>login</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/login/copyright</li>
+                                <li>/var/lib/dpkg/info/login.conffiles</li>
+                                <li>/var/lib/dpkg/info/login.md5sums</li>
+                                <li>/var/lib/dpkg/info/login.list</li>
+                                <li>/var/lib/dpkg/info/login.postinst</li>
+                                <li>/var/lib/dpkg/info/login.postrm</li>
+                                <li>/var/lib/dpkg/info/login.preinst</li>
+                                <li>/var/lib/dpkg/info/login.prerm</li>
+                            </ul>
+                        </td>
                         <td>1:4.8.1-2ubuntu2.2</td>
                         <td>deb</td>
                         <td>
@@ -1558,15 +1952,28 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/login@1%3A4.8.1-2ubuntu2.2?arch=amd64&distro=ubuntu-22.04&upstream=shadow</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>passwd</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/passwd/copyright</li>
+                                <li>/var/lib/dpkg/info/passwd.conffiles</li>
+                                <li>/var/lib/dpkg/info/passwd.md5sums</li>
+                                <li>/var/lib/dpkg/info/passwd.list</li>
+                                <li>/var/lib/dpkg/info/passwd.postinst</li>
+                                <li>/var/lib/dpkg/info/passwd.postrm</li>
+                                <li>/var/lib/dpkg/info/passwd.preinst</li>
+                                <li>/var/lib/dpkg/info/passwd.prerm</li>
+                            </ul>
+                        </td>
                         <td>1:4.8.1-2ubuntu2.2</td>
                         <td>deb</td>
                         <td>
@@ -1574,15 +1981,22 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/passwd@1%3A4.8.1-2ubuntu2.2?arch=amd64&distro=ubuntu-22.04&upstream=shadow</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libpcre2-8-0</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libpcre2-8-0/copyright</li>
+                                <li>/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>10.39-3ubuntu0.1</td>
                         <td>deb</td>
                         <td>
@@ -1590,15 +2004,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64&distro=ubuntu-22.04&upstream=pcre2</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>bsdutils</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/bsdutils/copyright</li>
+                                <li>/var/lib/dpkg/info/bsdutils.md5sums</li>
+                                <li>/var/lib/dpkg/info/bsdutils.list</li>
+                            </ul>
+                        </td>
                         <td>1:2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1606,15 +2028,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/bsdutils@1%3A2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux%402.37.2-4ubuntu3.6</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libblkid1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libblkid1/copyright</li>
+                                <li>/var/lib/dpkg/info/libblkid1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1622,15 +2051,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libblkid1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libmount1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libmount1/copyright</li>
+                                <li>/var/lib/dpkg/info/libmount1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1638,15 +2074,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libsmartcols1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libsmartcols1/copyright</li>
+                                <li>/var/lib/dpkg/info/libsmartcols1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1654,15 +2097,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libuuid1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libuuid1/copyright</li>
+                                <li>/var/lib/dpkg/info/libuuid1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1670,15 +2120,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>mount</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/mount/copyright</li>
+                                <li>/var/lib/dpkg/info/mount.md5sums</li>
+                                <li>/var/lib/dpkg/info/mount.list</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1686,15 +2144,28 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/mount@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>util-linux</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/util-linux/copyright</li>
+                                <li>/var/lib/dpkg/info/util-linux.conffiles</li>
+                                <li>/var/lib/dpkg/info/util-linux.md5sums</li>
+                                <li>/var/lib/dpkg/info/util-linux.list</li>
+                                <li>/var/lib/dpkg/info/util-linux.postinst</li>
+                                <li>/var/lib/dpkg/info/util-linux.postrm</li>
+                                <li>/var/lib/dpkg/info/util-linux.preinst</li>
+                                <li>/var/lib/dpkg/info/util-linux.prerm</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1702,15 +2173,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libacl1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libacl1/copyright</li>
+                                <li>/var/lib/dpkg/info/libacl1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.3.1-1</td>
                         <td>deb</td>
                         <td>
@@ -1718,15 +2196,23 @@
                         </td>
                         <td>Medium</td>
                         <td>wont-fix</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libacl1@2.3.1-1?arch=amd64&distro=ubuntu-22.04&upstream=acl</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>bsdutils</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/bsdutils/copyright</li>
+                                <li>/var/lib/dpkg/info/bsdutils.md5sums</li>
+                                <li>/var/lib/dpkg/info/bsdutils.list</li>
+                            </ul>
+                        </td>
                         <td>1:2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1734,15 +2220,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/bsdutils@1%3A2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux%402.37.2-4ubuntu3.6</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libblkid1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libblkid1/copyright</li>
+                                <li>/var/lib/dpkg/info/libblkid1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1750,15 +2243,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libblkid1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libmount1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libmount1/copyright</li>
+                                <li>/var/lib/dpkg/info/libmount1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1766,15 +2266,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libsmartcols1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libsmartcols1/copyright</li>
+                                <li>/var/lib/dpkg/info/libsmartcols1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1782,15 +2289,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libuuid1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libuuid1/copyright</li>
+                                <li>/var/lib/dpkg/info/libuuid1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1798,15 +2312,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>mount</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/mount/copyright</li>
+                                <li>/var/lib/dpkg/info/mount.md5sums</li>
+                                <li>/var/lib/dpkg/info/mount.list</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1814,15 +2336,28 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/mount@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>util-linux</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/util-linux/copyright</li>
+                                <li>/var/lib/dpkg/info/util-linux.conffiles</li>
+                                <li>/var/lib/dpkg/info/util-linux.md5sums</li>
+                                <li>/var/lib/dpkg/info/util-linux.list</li>
+                                <li>/var/lib/dpkg/info/util-linux.postinst</li>
+                                <li>/var/lib/dpkg/info/util-linux.postrm</li>
+                                <li>/var/lib/dpkg/info/util-linux.preinst</li>
+                                <li>/var/lib/dpkg/info/util-linux.prerm</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1830,15 +2365,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>gpgv</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/gpgv/copyright</li>
+                                <li>/var/lib/dpkg/info/gpgv.md5sums</li>
+                                <li>/var/lib/dpkg/info/gpgv.list</li>
+                            </ul>
+                        </td>
                         <td>2.2.27-3ubuntu2.5</td>
                         <td>deb</td>
                         <td>
@@ -1846,15 +2389,22 @@
                         </td>
                         <td>Low</td>
                         <td>wont-fix</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.5?arch=amd64&distro=ubuntu-22.04&upstream=gnupg2</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libpcre2-8-0</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libpcre2-8-0/copyright</li>
+                                <li>/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>10.39-3ubuntu0.1</td>
                         <td>deb</td>
                         <td>
@@ -1862,15 +2412,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64&distro=ubuntu-22.04&upstream=pcre2</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>bsdutils</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/bsdutils/copyright</li>
+                                <li>/var/lib/dpkg/info/bsdutils.md5sums</li>
+                                <li>/var/lib/dpkg/info/bsdutils.list</li>
+                            </ul>
+                        </td>
                         <td>1:2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1878,15 +2436,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/bsdutils@1%3A2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux%402.37.2-4ubuntu3.6</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libblkid1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libblkid1/copyright</li>
+                                <li>/var/lib/dpkg/info/libblkid1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1894,15 +2459,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libblkid1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libmount1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libmount1/copyright</li>
+                                <li>/var/lib/dpkg/info/libmount1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1910,15 +2482,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libsmartcols1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libsmartcols1/copyright</li>
+                                <li>/var/lib/dpkg/info/libsmartcols1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1926,15 +2505,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libuuid1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libuuid1/copyright</li>
+                                <li>/var/lib/dpkg/info/libuuid1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1942,15 +2528,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>mount</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/mount/copyright</li>
+                                <li>/var/lib/dpkg/info/mount.md5sums</li>
+                                <li>/var/lib/dpkg/info/mount.list</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1958,15 +2552,28 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/mount@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>util-linux</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/util-linux/copyright</li>
+                                <li>/var/lib/dpkg/info/util-linux.conffiles</li>
+                                <li>/var/lib/dpkg/info/util-linux.md5sums</li>
+                                <li>/var/lib/dpkg/info/util-linux.list</li>
+                                <li>/var/lib/dpkg/info/util-linux.postinst</li>
+                                <li>/var/lib/dpkg/info/util-linux.postrm</li>
+                                <li>/var/lib/dpkg/info/util-linux.preinst</li>
+                                <li>/var/lib/dpkg/info/util-linux.prerm</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1974,15 +2581,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>bsdutils</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/bsdutils/copyright</li>
+                                <li>/var/lib/dpkg/info/bsdutils.md5sums</li>
+                                <li>/var/lib/dpkg/info/bsdutils.list</li>
+                            </ul>
+                        </td>
                         <td>1:2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -1990,15 +2605,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/bsdutils@1%3A2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux%402.37.2-4ubuntu3.6</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libblkid1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libblkid1/copyright</li>
+                                <li>/var/lib/dpkg/info/libblkid1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -2006,15 +2628,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libblkid1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libmount1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libmount1/copyright</li>
+                                <li>/var/lib/dpkg/info/libmount1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -2022,15 +2651,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libsmartcols1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libsmartcols1/copyright</li>
+                                <li>/var/lib/dpkg/info/libsmartcols1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -2038,15 +2674,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libuuid1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libuuid1/copyright</li>
+                                <li>/var/lib/dpkg/info/libuuid1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -2054,15 +2697,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>mount</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/mount/copyright</li>
+                                <li>/var/lib/dpkg/info/mount.md5sums</li>
+                                <li>/var/lib/dpkg/info/mount.list</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -2070,15 +2721,28 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/mount@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04&upstream=util-linux</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>util-linux</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/util-linux/copyright</li>
+                                <li>/var/lib/dpkg/info/util-linux.conffiles</li>
+                                <li>/var/lib/dpkg/info/util-linux.md5sums</li>
+                                <li>/var/lib/dpkg/info/util-linux.list</li>
+                                <li>/var/lib/dpkg/info/util-linux.postinst</li>
+                                <li>/var/lib/dpkg/info/util-linux.postrm</li>
+                                <li>/var/lib/dpkg/info/util-linux.preinst</li>
+                                <li>/var/lib/dpkg/info/util-linux.prerm</li>
+                            </ul>
+                        </td>
                         <td>2.37.2-4ubuntu3.6</td>
                         <td>deb</td>
                         <td>
@@ -2086,15 +2750,26 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.6?arch=amd64&distro=ubuntu-22.04</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libc-bin</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/libc-bin.conffiles</li>
+                                <li>/var/lib/dpkg/info/libc-bin.md5sums</li>
+                                <li>/usr/share/doc/libc-bin/copyright</li>
+                                <li>/var/lib/dpkg/info/libc-bin.list</li>
+                                <li>/var/lib/dpkg/info/libc-bin.postinst</li>
+                                <li>/var/lib/dpkg/info/libc-bin.triggers</li>
+                            </ul>
+                        </td>
                         <td>2.35-0ubuntu3.15</td>
                         <td>deb</td>
                         <td>
@@ -2102,15 +2777,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.15?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libc6</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/libc6:amd64.conffiles</li>
+                                <li>/var/lib/dpkg/info/libc6:amd64.md5sums</li>
+                                <li>/usr/share/doc/libc6/copyright</li>
+                            </ul>
+                        </td>
                         <td>2.35-0ubuntu3.15</td>
                         <td>deb</td>
                         <td>
@@ -2118,15 +2801,25 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libc6@2.35-0ubuntu3.15?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>tar</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/tar/copyright</li>
+                                <li>/var/lib/dpkg/info/tar.md5sums</li>
+                                <li>/var/lib/dpkg/info/tar.list</li>
+                                <li>/var/lib/dpkg/info/tar.postinst</li>
+                                <li>/var/lib/dpkg/info/tar.prerm</li>
+                            </ul>
+                        </td>
                         <td>1.34+dfsg-1ubuntu0.1.22.04.6</td>
                         <td>deb</td>
                         <td>
@@ -2134,15 +2827,26 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/tar@1.34%2Bdfsg-1ubuntu0.1.22.04.6?arch=amd64&distro=ubuntu-22.04</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libc-bin</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/libc-bin.conffiles</li>
+                                <li>/var/lib/dpkg/info/libc-bin.md5sums</li>
+                                <li>/usr/share/doc/libc-bin/copyright</li>
+                                <li>/var/lib/dpkg/info/libc-bin.list</li>
+                                <li>/var/lib/dpkg/info/libc-bin.postinst</li>
+                                <li>/var/lib/dpkg/info/libc-bin.triggers</li>
+                            </ul>
+                        </td>
                         <td>2.35-0ubuntu3.15</td>
                         <td>deb</td>
                         <td>
@@ -2150,15 +2854,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.15?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libc6</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/libc6:amd64.conffiles</li>
+                                <li>/var/lib/dpkg/info/libc6:amd64.md5sums</li>
+                                <li>/usr/share/doc/libc6/copyright</li>
+                            </ul>
+                        </td>
                         <td>2.35-0ubuntu3.15</td>
                         <td>deb</td>
                         <td>
@@ -2166,15 +2878,27 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libc6@2.35-0ubuntu3.15?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>perl-base</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/perl-base.md5sums</li>
+                                <li>/usr/share/doc/perl-base/copyright</li>
+                                <li>/var/lib/dpkg/info/perl-base.list</li>
+                                <li>/var/lib/dpkg/info/perl-base.postinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.postrm</li>
+                                <li>/var/lib/dpkg/info/perl-base.preinst</li>
+                                <li>/var/lib/dpkg/info/perl-base.prerm</li>
+                            </ul>
+                        </td>
                         <td>5.34.0-3ubuntu1.9</td>
                         <td>deb</td>
                         <td>
@@ -2182,15 +2906,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.9?arch=amd64&distro=ubuntu-22.04&upstream=perl</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libpcre2-8-0</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libpcre2-8-0/copyright</li>
+                                <li>/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>10.39-3ubuntu0.1</td>
                         <td>deb</td>
                         <td>
@@ -2198,15 +2929,26 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64&distro=ubuntu-22.04&upstream=pcre2</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libc-bin</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/libc-bin.conffiles</li>
+                                <li>/var/lib/dpkg/info/libc-bin.md5sums</li>
+                                <li>/usr/share/doc/libc-bin/copyright</li>
+                                <li>/var/lib/dpkg/info/libc-bin.list</li>
+                                <li>/var/lib/dpkg/info/libc-bin.postinst</li>
+                                <li>/var/lib/dpkg/info/libc-bin.triggers</li>
+                            </ul>
+                        </td>
                         <td>2.35-0ubuntu3.15</td>
                         <td>deb</td>
                         <td>
@@ -2214,15 +2956,23 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.15?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libc6</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/var/lib/dpkg/info/libc6:amd64.conffiles</li>
+                                <li>/var/lib/dpkg/info/libc6:amd64.md5sums</li>
+                                <li>/usr/share/doc/libc6/copyright</li>
+                            </ul>
+                        </td>
                         <td>2.35-0ubuntu3.15</td>
                         <td>deb</td>
                         <td>
@@ -2230,15 +2980,22 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libc6@2.35-0ubuntu3.15?arch=amd64&distro=ubuntu-22.04&upstream=glibc</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libacl1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libacl1/copyright</li>
+                                <li>/var/lib/dpkg/info/libacl1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>2.3.1-1</td>
                         <td>deb</td>
                         <td>
@@ -2246,15 +3003,22 @@
                         </td>
                         <td>Medium</td>
                         <td>wont-fix</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libacl1@2.3.1-1?arch=amd64&distro=ubuntu-22.04&upstream=acl</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libsystemd0</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libsystemd0/copyright</li>
+                                <li>/var/lib/dpkg/info/libsystemd0:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>249.11-0ubuntu3.22</td>
                         <td>deb</td>
                         <td>
@@ -2262,15 +3026,22 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libsystemd0@249.11-0ubuntu3.22?arch=amd64&distro=ubuntu-22.04&upstream=systemd</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>libudev1</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/libudev1/copyright</li>
+                                <li>/var/lib/dpkg/info/libudev1:amd64.md5sums</li>
+                            </ul>
+                        </td>
                         <td>249.11-0ubuntu3.22</td>
                         <td>deb</td>
                         <td>
@@ -2278,15 +3049,25 @@
                         </td>
                         <td>Low</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.22?arch=amd64&distro=ubuntu-22.04&upstream=systemd</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                     <tr>
                         <td>tar</td>
+                        <td>
+                            <ul>
+                                <li>/var/lib/dpkg/status</li>
+                                <li>/usr/share/doc/tar/copyright</li>
+                                <li>/var/lib/dpkg/info/tar.md5sums</li>
+                                <li>/var/lib/dpkg/info/tar.list</li>
+                                <li>/var/lib/dpkg/info/tar.postinst</li>
+                                <li>/var/lib/dpkg/info/tar.prerm</li>
+                            </ul>
+                        </td>
                         <td>1.34+dfsg-1ubuntu0.1.22.04.6</td>
                         <td>deb</td>
                         <td>
@@ -2294,12 +3075,12 @@
                         </td>
                         <td>Medium</td>
                         <td>not-fixed</td>
-                        <td>
-                            N/A
-                        </td>
                         <td></td>
                         <td>[]</td>
                         <td>pkg:deb/ubuntu/tar@1.34%2Bdfsg-1ubuntu0.1.22.04.6?arch=amd64&distro=ubuntu-22.04</td>
+                        <td>
+                            N/A
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -2653,10 +3434,10 @@
                 // Create a regex string like "^Critical$|^High$|^Medium$"
                 // This ensures exact matches for each selected severity
                 const filterRegex = activeSeverityFilters.map(sev => `^${sev}$`).join('|');
-                table.column(4).search(filterRegex, true, false); // Enable regex, disable smart search
+                table.column(5).search(filterRegex, true, false); // Enable regex, disable smart search
             } else {
                 // If no filters are active, clear the specific column search
-                table.column(4).search('');
+                table.column(5).search('');
             }
             
             // Redraw the table to apply the filter changes
