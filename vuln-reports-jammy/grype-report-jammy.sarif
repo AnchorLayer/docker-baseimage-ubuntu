@@ -577,6 +577,48 @@
               }
             },
             {
+              "id": "CVE-2026-97399-libc-bin",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-97399 medium vulnerability for libc-bin package"
+              },
+              "fullDescription": {
+                "text": "The strncasecmp function in the GNU C Library 2.24 and later optimized for the Power8 architecture may read one byte beyond the input size limit, which may crash a program when that byte is not readable.\n\nThis condition may happen when the input strings to the strncasecmp function are attacker controlled in an application and they match all the way up to the edge of their page and the neighbouring page is either not mapped or is not readable."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-97399",
+              "help": {
+                "text": "Vulnerability CVE-2026-97399\nSeverity: medium\nPackage: libc-bin\nVersion: 2.35-0ubuntu3.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-97399](https://ubuntu.com/security/CVE-2026-97399)",
+                "markdown": "**Vulnerability CVE-2026-97399**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc-bin  | 2.35-0ubuntu3.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-97399](https://ubuntu.com/security/CVE-2026-97399)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.15?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
+                ],
+                "security-severity": "3.7"
+              }
+            },
+            {
+              "id": "CVE-2026-97399-libc6",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-97399 medium vulnerability for libc6 package"
+              },
+              "fullDescription": {
+                "text": "The strncasecmp function in the GNU C Library 2.24 and later optimized for the Power8 architecture may read one byte beyond the input size limit, which may crash a program when that byte is not readable.\n\nThis condition may happen when the input strings to the strncasecmp function are attacker controlled in an application and they match all the way up to the edge of their page and the neighbouring page is either not mapped or is not readable."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-97399",
+              "help": {
+                "text": "Vulnerability CVE-2026-97399\nSeverity: medium\nPackage: libc6\nVersion: 2.35-0ubuntu3.15\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-97399](https://ubuntu.com/security/CVE-2026-97399)",
+                "markdown": "**Vulnerability CVE-2026-97399**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libc6  | 2.35-0ubuntu3.15  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-97399](https://ubuntu.com/security/CVE-2026-97399)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.15?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=glibc"
+                ],
+                "security-severity": "3.7"
+              }
+            },
+            {
               "id": "CVE-2026-89157-libpcre2-8-0",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -1144,24 +1186,66 @@
               }
             },
             {
-              "id": "CVE-2026-54369-libacl1",
+              "id": "CVE-2026-102010-gcc-12-base",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
-                "text": "CVE-2026-54369 medium vulnerability for libacl1 package"
+                "text": "CVE-2026-102010 medium vulnerability for gcc-12-base package"
               },
               "fullDescription": {
-                "text": "acl before version 2.4.0 contains a symlink traversal vulnerability in the libacl pathname-based functions acl_get_file(), acl_set_file(), acl_extended_file(), and acl_delete_def_file() that allows local attackers to escalate privileges by replacing any pathname component with a symbolic link. Attackers who control any component of a pathname processed by a privileged caller can redirect ACL read or write operations to arbitrary files or directories, enabling unauthorized manipulation of access control lists and local privilege escalation."
+                "text": "A flaw was found in GCC. When an application calls the erase_if function on a binary heap priority queue in libstdc++, the library reallocates storage but fails to update its internal entry pointer. An attacker capable of triggering this operation can exploit this use-after-free condition, leading to a Denial of Service (DoS) via an application crash or potential memory corruption."
               },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-54369",
+              "helpUri": "https://ubuntu.com/security/CVE-2026-102010",
               "help": {
-                "text": "Vulnerability CVE-2026-54369\nSeverity: medium\nPackage: libacl1\nVersion: 2.3.1-1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)",
-                "markdown": "**Vulnerability CVE-2026-54369**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libacl1  | 2.3.1-1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)  |\n"
+                "text": "Vulnerability CVE-2026-102010\nSeverity: medium\nPackage: gcc-12-base\nVersion: 12.3.0-1ubuntu1~22.04.3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-102010](https://ubuntu.com/security/CVE-2026-102010)",
+                "markdown": "**Vulnerability CVE-2026-102010**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gcc-12-base  | 12.3.0-1ubuntu1~22.04.3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-102010](https://ubuntu.com/security/CVE-2026-102010)  |\n"
               },
               "properties": {
                 "purls": [
-                  "pkg:deb/ubuntu/libacl1@2.3.1-1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=acl"
+                  "pkg:deb/ubuntu/gcc-12-base@12.3.0-1ubuntu1~22.04.3?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gcc-12"
                 ],
-                "security-severity": "8.4"
+                "security-severity": "7.0"
+              }
+            },
+            {
+              "id": "CVE-2026-102010-libgcc-s1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-102010 medium vulnerability for libgcc-s1 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in GCC. When an application calls the erase_if function on a binary heap priority queue in libstdc++, the library reallocates storage but fails to update its internal entry pointer. An attacker capable of triggering this operation can exploit this use-after-free condition, leading to a Denial of Service (DoS) via an application crash or potential memory corruption."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-102010",
+              "help": {
+                "text": "Vulnerability CVE-2026-102010\nSeverity: medium\nPackage: libgcc-s1\nVersion: 12.3.0-1ubuntu1~22.04.3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-102010](https://ubuntu.com/security/CVE-2026-102010)",
+                "markdown": "**Vulnerability CVE-2026-102010**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libgcc-s1  | 12.3.0-1ubuntu1~22.04.3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-102010](https://ubuntu.com/security/CVE-2026-102010)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libgcc-s1@12.3.0-1ubuntu1~22.04.3?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gcc-12"
+                ],
+                "security-severity": "7.0"
+              }
+            },
+            {
+              "id": "CVE-2026-102010-libstdc++6",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-102010 medium vulnerability for libstdc++6 package"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in GCC. When an application calls the erase_if function on a binary heap priority queue in libstdc++, the library reallocates storage but fails to update its internal entry pointer. An attacker capable of triggering this operation can exploit this use-after-free condition, leading to a Denial of Service (DoS) via an application crash or potential memory corruption."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-102010",
+              "help": {
+                "text": "Vulnerability CVE-2026-102010\nSeverity: medium\nPackage: libstdc++6\nVersion: 12.3.0-1ubuntu1~22.04.3\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-102010](https://ubuntu.com/security/CVE-2026-102010)",
+                "markdown": "**Vulnerability CVE-2026-102010**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libstdc++6  | 12.3.0-1ubuntu1~22.04.3  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-102010](https://ubuntu.com/security/CVE-2026-102010)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libstdc%2B%2B6@12.3.0-1ubuntu1~22.04.3?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gcc-12"
+                ],
+                "security-severity": "7.0"
               }
             },
             {
@@ -1645,6 +1729,27 @@
                   "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.6?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
                 "security-severity": "7.0"
+              }
+            },
+            {
+              "id": "CVE-2026-54369-libacl1",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-54369 medium vulnerability for libacl1 package"
+              },
+              "fullDescription": {
+                "text": "acl before version 2.4.0 contains a symlink traversal vulnerability in the libacl pathname-based functions acl_get_file(), acl_set_file(), acl_extended_file(), and acl_delete_def_file() that allows local attackers to escalate privileges by replacing any pathname component with a symbolic link. Attackers who control any component of a pathname processed by a privileged caller can redirect ACL read or write operations to arbitrary files or directories, enabling unauthorized manipulation of access control lists and local privilege escalation."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-54369",
+              "help": {
+                "text": "Vulnerability CVE-2026-54369\nSeverity: medium\nPackage: libacl1\nVersion: 2.3.1-1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)",
+                "markdown": "**Vulnerability CVE-2026-54369**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libacl1  | 2.3.1-1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-54369](https://ubuntu.com/security/CVE-2026-54369)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libacl1@2.3.1-1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=acl"
+                ],
+                "security-severity": "8.4"
               }
             },
             {
@@ -3191,6 +3296,104 @@
           }
         },
         {
+          "ruleId": "CVE-2026-97399-libc-bin",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libc-bin, version 2.35-0ubuntu3.15 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ed6f7b985610278315496da73ba09260bb21100f6e5ef1cbaae9670072e7f1e7:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libc-bin/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libc-bin/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ed6f7b985610278315496da73ba09260bb21100f6e5ef1cbaae9670072e7f1e7:/var/lib/dpkg/info/libc-bin.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ed6f7b985610278315496da73ba09260bb21100f6e5ef1cbaae9670072e7f1e7:/var/lib/dpkg/info/libc-bin.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ed6f7b985610278315496da73ba09260bb21100f6e5ef1cbaae9670072e7f1e7:/var/lib/dpkg/info/libc-bin.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ed6f7b985610278315496da73ba09260bb21100f6e5ef1cbaae9670072e7f1e7:/var/lib/dpkg/info/libc-bin.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc-bin.triggers",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ed6f7b985610278315496da73ba09260bb21100f6e5ef1cbaae9670072e7f1e7:/var/lib/dpkg/info/libc-bin.triggers"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "0d4458840ea231c24498bbc40b5d7972276582486604ef8c3558ba17d93cc63c:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-97399-libc6",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libc6, version 2.35-0ubuntu3.15 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ed6f7b985610278315496da73ba09260bb21100f6e5ef1cbaae9670072e7f1e7:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libc6/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libc6/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc6:amd64.conffiles",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ed6f7b985610278315496da73ba09260bb21100f6e5ef1cbaae9670072e7f1e7:/var/lib/dpkg/info/libc6:amd64.conffiles"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libc6:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ed6f7b985610278315496da73ba09260bb21100f6e5ef1cbaae9670072e7f1e7:/var/lib/dpkg/info/libc6:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "43c9fa8e5e7353e069b74ce9028e1bbd8cd33a784cc3290f2dea47d6bea61d39:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-89157-libpcre2-8-0",
           "level": "warning",
           "message": {
@@ -4456,10 +4659,10 @@
           }
         },
         {
-          "ruleId": "CVE-2026-54369-libacl1",
+          "ruleId": "CVE-2026-102010-gcc-12-base",
           "level": "warning",
           "message": {
-            "text": "A medium vulnerability in deb package: libacl1, version 2.3.1-1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+            "text": "A medium vulnerability in deb package: gcc-12-base, version 12.3.0-1ubuntu1~22.04.3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
           },
           "locations": [
             {
@@ -4480,18 +4683,96 @@
                   "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ed6f7b985610278315496da73ba09260bb21100f6e5ef1cbaae9670072e7f1e7:/var/lib/dpkg/status"
                 },
                 {
-                  "name": "/usr/share/doc/libacl1/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libacl1/copyright"
+                  "name": "/usr/share/doc/gcc-12-base/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/gcc-12-base/copyright"
                 },
                 {
-                  "name": "/var/lib/dpkg/info/libacl1:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libacl1:amd64.md5sums"
+                  "name": "/var/lib/dpkg/info/gcc-12-base:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/gcc-12-base:amd64.md5sums"
                 }
               ]
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "1360695183098a9deb6c0140cbe16458b7eec28a1127bb4884dc06af49057a68:1"
+            "primaryLocationLineHash": "123ef5e50bcf1cbfdce2b6e5a5401a53d9f2f5b9b2ccc259506304be19e89d0a:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-102010-libgcc-s1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libgcc-s1, version 12.3.0-1ubuntu1~22.04.3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ed6f7b985610278315496da73ba09260bb21100f6e5ef1cbaae9670072e7f1e7:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/gcc-12-base/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libgcc-s1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libgcc-s1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libgcc-s1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d30bffc7c2b341e6a6a2cc714023587dc125b701a69bc587ccf5f5fdac38ac05:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-102010-libstdc++6",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libstdc++6, version 12.3.0-1ubuntu1~22.04.3 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ed6f7b985610278315496da73ba09260bb21100f6e5ef1cbaae9670072e7f1e7:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/gcc-12-base/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libstdc++6/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libstdc++6:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libstdc++6:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "ff2ca4fd07f228bb373cfada131c09077ae05f668290f1f477ecfc13b3b41467:1"
           }
         },
         {
@@ -5489,6 +5770,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "ff6ba0f37e2710f79dee044034857cbb24eb7bcd718a9010a8ba1f2861f584d2:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-54369-libacl1",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libacl1, version 2.3.1-1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ed6f7b985610278315496da73ba09260bb21100f6e5ef1cbaae9670072e7f1e7:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libacl1/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/usr/share/doc/libacl1/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libacl1:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:ea16cace89338c84eb6bcb91a7efdfcae6838fff359efe951858227436486c34:/var/lib/dpkg/info/libacl1:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "1360695183098a9deb6c0140cbe16458b7eec28a1127bb4884dc06af49057a68:1"
           }
         },
         {
