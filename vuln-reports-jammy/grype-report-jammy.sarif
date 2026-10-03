@@ -241,27 +241,6 @@
               }
             },
             {
-              "id": "CVE-2026-9538-perl-base",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-9538 medium vulnerability for perl-base package"
-              },
-              "fullDescription": {
-                "text": "Archive::Tar versions before 3.10 for Perl allow memory exhaustion via attacker controlled entry size field in tar header.\n\n_read_tar() reads each entry's payload with $handle-\u003eread($$data, $block), where $block is derived from the entry's 12-byte size field in the tar header with no upper bound on that value.\n\nA crafted header declaring a multi-gigabyte size causes Perl to allocate a scalar of that size."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-9538",
-              "help": {
-                "text": "Vulnerability CVE-2026-9538\nSeverity: medium\nPackage: perl-base\nVersion: 5.34.0-3ubuntu1.9\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-9538](https://ubuntu.com/security/CVE-2026-9538)",
-                "markdown": "**Vulnerability CVE-2026-9538**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.34.0-3ubuntu1.9  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-9538](https://ubuntu.com/security/CVE-2026-9538)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.9?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
               "id": "CVE-2022-27943-gcc-12-base",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -367,6 +346,27 @@
               }
             },
             {
+              "id": "CVE-2026-9538-perl-base",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-9538 medium vulnerability for perl-base package"
+              },
+              "fullDescription": {
+                "text": "Archive::Tar versions before 3.10 for Perl allow memory exhaustion via attacker controlled entry size field in tar header.\n\n_read_tar() reads each entry's payload with $handle-\u003eread($$data, $block), where $block is derived from the entry's 12-byte size field in the tar header with no upper bound on that value.\n\nA crafted header declaring a multi-gigabyte size causes Perl to allocate a scalar of that size."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-9538",
+              "help": {
+                "text": "Vulnerability CVE-2026-9538\nSeverity: medium\nPackage: perl-base\nVersion: 5.34.0-3ubuntu1.9\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-9538](https://ubuntu.com/security/CVE-2026-9538)",
+                "markdown": "**Vulnerability CVE-2026-9538**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.34.0-3ubuntu1.9  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-9538](https://ubuntu.com/security/CVE-2026-9538)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.9?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
               "id": "CVE-2026-48961-perl-base",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -385,27 +385,6 @@
                   "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.9?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
                 ],
                 "security-severity": "7.3"
-              }
-            },
-            {
-              "id": "CVE-2026-7017-perl-base",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-7017 medium vulnerability for perl-base package"
-              },
-              "fullDescription": {
-                "text": "HTTP::Tiny versions before 0.095 for Perl forward credential headers to cross-origin redirect targets.\n\nWhen the server returns a 3xx redirect, `_maybe_redirect` follows the `Location:` header and `_prepare_headers_and_cb` re-merges the caller's `headers` argument into the new request, without checking whether the redirect target shares an origin with the original URL. Caller-supplied `Authorization`, `Cookie` and `Proxy-Authorization` headers are therefore re-sent to whatever host the redirect names, across scheme, host or port boundaries, and including `https` to `http` downgrades that expose them in plaintext on the wire.\n\nThe HTTP::Tiny POD note that \"Authorization headers will not be included in a redirected request\" applied only to the URL-userinfo Basic-auth path, not to headers passed explicitly by the caller."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-7017",
-              "help": {
-                "text": "Vulnerability CVE-2026-7017\nSeverity: medium\nPackage: perl-base\nVersion: 5.34.0-3ubuntu1.9\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-7017](https://ubuntu.com/security/CVE-2026-7017)",
-                "markdown": "**Vulnerability CVE-2026-7017**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.34.0-3ubuntu1.9  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-7017](https://ubuntu.com/security/CVE-2026-7017)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.9?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
-                ],
-                "security-severity": "7.1"
               }
             },
             {
@@ -892,27 +871,6 @@
               }
             },
             {
-              "id": "CVE-2026-89158-libpcre2-8-0",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-89158 medium vulnerability for libpcre2-8-0 package"
-              },
-              "fullDescription": {
-                "text": "PCRE2 before 10.48, on 32-bit platforms, has a pcre2_compile_32 integer overflow and resultant out-of-bounds write."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-89158",
-              "help": {
-                "text": "Vulnerability CVE-2026-89158\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.39-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-89158](https://ubuntu.com/security/CVE-2026-89158)",
-                "markdown": "**Vulnerability CVE-2026-89158**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.39-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-89158](https://ubuntu.com/security/CVE-2026-89158)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
-                ],
-                "security-severity": "6.5"
-              }
-            },
-            {
               "id": "CVE-2026-102010-gcc-12-base",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -973,6 +931,48 @@
                   "pkg:deb/ubuntu/libstdc%2B%2B6@12.3.0-1ubuntu1~22.04.3?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gcc-12"
                 ],
                 "security-severity": "7.0"
+              }
+            },
+            {
+              "id": "CVE-2026-7017-perl-base",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-7017 medium vulnerability for perl-base package"
+              },
+              "fullDescription": {
+                "text": "HTTP::Tiny versions before 0.095 for Perl forward credential headers to cross-origin redirect targets.\n\nWhen the server returns a 3xx redirect, `_maybe_redirect` follows the `Location:` header and `_prepare_headers_and_cb` re-merges the caller's `headers` argument into the new request, without checking whether the redirect target shares an origin with the original URL. Caller-supplied `Authorization`, `Cookie` and `Proxy-Authorization` headers are therefore re-sent to whatever host the redirect names, across scheme, host or port boundaries, and including `https` to `http` downgrades that expose them in plaintext on the wire.\n\nThe HTTP::Tiny POD note that \"Authorization headers will not be included in a redirected request\" applied only to the URL-userinfo Basic-auth path, not to headers passed explicitly by the caller."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-7017",
+              "help": {
+                "text": "Vulnerability CVE-2026-7017\nSeverity: medium\nPackage: perl-base\nVersion: 5.34.0-3ubuntu1.9\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-7017](https://ubuntu.com/security/CVE-2026-7017)",
+                "markdown": "**Vulnerability CVE-2026-7017**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | perl-base  | 5.34.0-3ubuntu1.9  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-7017](https://ubuntu.com/security/CVE-2026-7017)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.9?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=perl"
+                ],
+                "security-severity": "7.1"
+              }
+            },
+            {
+              "id": "CVE-2026-89158-libpcre2-8-0",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-89158 medium vulnerability for libpcre2-8-0 package"
+              },
+              "fullDescription": {
+                "text": "PCRE2 before 10.48, on 32-bit platforms, has a pcre2_compile_32 integer overflow and resultant out-of-bounds write."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-89158",
+              "help": {
+                "text": "Vulnerability CVE-2026-89158\nSeverity: medium\nPackage: libpcre2-8-0\nVersion: 10.39-3ubuntu0.1\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-89158](https://ubuntu.com/security/CVE-2026-89158)",
+                "markdown": "**Vulnerability CVE-2026-89158**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libpcre2-8-0  | 10.39-3ubuntu0.1  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-89158](https://ubuntu.com/security/CVE-2026-89158)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
+                ],
+                "security-severity": "6.5"
               }
             },
             {
@@ -2615,65 +2615,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-9538-perl-base",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: perl-base, version 5.34.0-3ubuntu1.9 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:587d77bd5ed6c3b8e668ed26d18ce5e513421d9fc40440cad43805bad78dcb9c:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/perl-base/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/usr/share/doc/perl-base/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/perl-base.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/perl-base.list"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.postinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/perl-base.postinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.postrm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/perl-base.postrm"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.preinst",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/perl-base.preinst"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/perl-base.prerm",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/perl-base.prerm"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "d283a7655107bd320b4372e57fe83c15a3bf4064ed5f8991d1d1aaf429370642:1"
-          }
-        },
-        {
           "ruleId": "CVE-2022-27943-gcc-12-base",
           "level": "note",
           "message": {
@@ -2909,7 +2850,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-48961-perl-base",
+          "ruleId": "CVE-2026-9538-perl-base",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: perl-base, version 5.34.0-3ubuntu1.9 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
@@ -2968,7 +2909,7 @@
           }
         },
         {
-          "ruleId": "CVE-2026-7017-perl-base",
+          "ruleId": "CVE-2026-48961-perl-base",
           "level": "warning",
           "message": {
             "text": "A medium vulnerability in deb package: perl-base, version 5.34.0-3ubuntu1.9 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
@@ -4124,45 +4065,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-89158-libpcre2-8-0",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.39-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:587d77bd5ed6c3b8e668ed26d18ce5e513421d9fc40440cad43805bad78dcb9c:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/usr/share/doc/libpcre2-8-0/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-102010-gcc-12-base",
           "level": "warning",
           "message": {
@@ -4277,6 +4179,104 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "ff2ca4fd07f228bb373cfada131c09077ae05f668290f1f477ecfc13b3b41467:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-7017-perl-base",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: perl-base, version 5.34.0-3ubuntu1.9 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:587d77bd5ed6c3b8e668ed26d18ce5e513421d9fc40440cad43805bad78dcb9c:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/perl-base/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/usr/share/doc/perl-base/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/perl-base.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/perl-base.list"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/perl-base.postinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.postrm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/perl-base.postrm"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.preinst",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/perl-base.preinst"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/perl-base.prerm",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/perl-base.prerm"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "d283a7655107bd320b4372e57fe83c15a3bf4064ed5f8991d1d1aaf429370642:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-89158-libpcre2-8-0",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libpcre2-8-0, version 10.39-3ubuntu0.1 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:587d77bd5ed6c3b8e668ed26d18ce5e513421d9fc40440cad43805bad78dcb9c:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libpcre2-8-0/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/usr/share/doc/libpcre2-8-0/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/libpcre2-8-0:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
           }
         },
         {
