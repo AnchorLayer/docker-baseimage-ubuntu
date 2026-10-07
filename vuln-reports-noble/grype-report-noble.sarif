@@ -1354,6 +1354,27 @@
               }
             },
             {
+              "id": "CVE-2026-105712-gpgv",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-105712 medium vulnerability for gpgv package"
+              },
+              "fullDescription": {
+                "text": "gpgtar in GnuPG before 2.5.19 can allow file overwrite via crafted data in an archive. When extracting an untrusted archive with --directory (aka -C) into an existing directory containing a pre-existing symlink, gpgtar can follow that symlink and create or overwrite a file outside the selected extraction directory. The write is limited by the extraction user's filesystem permissions. An archive extracted into a fresh empty directory does not have this risk."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-105712",
+              "help": {
+                "text": "Vulnerability CVE-2026-105712\nSeverity: medium\nPackage: gpgv\nVersion: 2.4.4-2ubuntu17.6\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:24.04\nLink: [CVE-2026-105712](https://ubuntu.com/security/CVE-2026-105712)",
+                "markdown": "**Vulnerability CVE-2026-105712**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gpgv  | 2.4.4-2ubuntu17.6  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:24.04  | [CVE-2026-105712](https://ubuntu.com/security/CVE-2026-105712)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17.6?arch=amd64\u0026distro=ubuntu-24.04\u0026upstream=gnupg2"
+                ],
+                "security-severity": "3.6"
+              }
+            },
+            {
               "id": "CVE-2026-54370-libacl1",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -4351,6 +4372,49 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "374d207586bf479621aef1e2222ff136103a75f5ff64f2d45f7a92e8420f9a97:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-105712-gpgv",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: gpgv, version 2.4.4-2ubuntu17.6 was found in image ghcr.io/anchorlayer/ubuntu-noble:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-noble//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:12868410b0b28bbf1010704f16e17367e60d21ea45a8e43aad1bb05a6f39d4ad:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/gpgv/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:d81fb2a7c6ee3be05fdefaa7fd223be219c1ab172083ec1b994c3ecda33ac0a8:/usr/share/doc/gpgv/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:d81fb2a7c6ee3be05fdefaa7fd223be219c1ab172083ec1b994c3ecda33ac0a8:/var/lib/dpkg/info/gpgv.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-noble:latest@sha256:d81fb2a7c6ee3be05fdefaa7fd223be219c1ab172083ec1b994c3ecda33ac0a8:/var/lib/dpkg/info/gpgv.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "ddef9babfa83c72837a21be29be8ce8517e614291ed26535ff2fa2edffafd251:1"
           }
         },
         {
