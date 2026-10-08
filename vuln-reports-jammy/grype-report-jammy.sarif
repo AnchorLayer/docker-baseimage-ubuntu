@@ -2005,27 +2005,6 @@
               }
             },
             {
-              "id": "CVE-2026-105712-gpgv",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-105712 medium vulnerability for gpgv package"
-              },
-              "fullDescription": {
-                "text": "gpgtar in GnuPG before 2.5.19 can allow file overwrite via crafted data in an archive. When extracting an untrusted archive with --directory (aka -C) into an existing directory containing a pre-existing symlink, gpgtar can follow that symlink and create or overwrite a file outside the selected extraction directory. The write is limited by the extraction user's filesystem permissions. An archive extracted into a fresh empty directory does not have this risk."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-105712",
-              "help": {
-                "text": "Vulnerability CVE-2026-105712\nSeverity: medium\nPackage: gpgv\nVersion: 2.2.27-3ubuntu2.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-105712](https://ubuntu.com/security/CVE-2026-105712)",
-                "markdown": "**Vulnerability CVE-2026-105712**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | gpgv  | 2.2.27-3ubuntu2.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-105712](https://ubuntu.com/security/CVE-2026-105712)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnupg2"
-                ],
-                "security-severity": "3.6"
-              }
-            },
-            {
               "id": "CVE-2026-54370-libacl1",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -2107,6 +2086,27 @@
                   "pkg:deb/ubuntu/tar@1.34%2Bdfsg-1ubuntu0.1.22.04.6?arch=amd64\u0026distro=ubuntu-22.04"
                 ],
                 "security-severity": "4.4"
+              }
+            },
+            {
+              "id": "CVE-2026-105712-gpgv",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-105712 low vulnerability for gpgv package"
+              },
+              "fullDescription": {
+                "text": "gpgtar in GnuPG before 2.5.19 can allow file overwrite via crafted data in an archive. When extracting an untrusted archive with --directory (aka -C) into an existing directory containing a pre-existing symlink, gpgtar can follow that symlink and create or overwrite a file outside the selected extraction directory. The write is limited by the extraction user's filesystem permissions. An archive extracted into a fresh empty directory does not have this risk."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-105712",
+              "help": {
+                "text": "Vulnerability CVE-2026-105712\nSeverity: low\nPackage: gpgv\nVersion: 2.2.27-3ubuntu2.5\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-105712](https://ubuntu.com/security/CVE-2026-105712)",
+                "markdown": "**Vulnerability CVE-2026-105712**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| low  | gpgv  | 2.2.27-3ubuntu2.5  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-105712](https://ubuntu.com/security/CVE-2026-105712)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.5?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gnupg2"
+                ],
+                "security-severity": "3.6"
               }
             },
             {
@@ -6504,49 +6504,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-105712-gpgv",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: gpgv, version 2.2.27-3ubuntu2.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/gpgv/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/usr/share/doc/gpgv/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/gpgv.md5sums"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/gpgv.list",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/gpgv.list"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "bd783673eac9120da5bf221fb768630cf9ee9292075e70b1892dece867631f11:1"
-          }
-        },
-        {
           "ruleId": "CVE-2026-54370-libacl1",
           "level": "warning",
           "message": {
@@ -6712,6 +6669,49 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "7d884d19695fd532fabd8d1affae98614a2539b771fbe6047e8f1e9fadda7c0d:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-105712-gpgv",
+          "level": "note",
+          "message": {
+            "text": "A low vulnerability in deb package: gpgv, version 2.2.27-3ubuntu2.5 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/gpgv/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/usr/share/doc/gpgv/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/gpgv.md5sums"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/gpgv.list",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/gpgv.list"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "bd783673eac9120da5bf221fb768630cf9ee9292075e70b1892dece867631f11:1"
           }
         },
         {
