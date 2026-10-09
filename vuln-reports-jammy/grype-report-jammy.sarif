@@ -115,27 +115,6 @@
               }
             },
             {
-              "id": "CVE-2026-85091-zlib1g",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-85091 medium vulnerability for zlib1g package"
-              },
-              "fullDescription": {
-                "text": "zlib versions 1.3.1.2 through 1.3.2 contain a heap buffer overflow vulnerability in the gz_vacate() function when processing non-blocking gzwrite() operations with stale external buffer pointers. Attackers can trigger the overflow by calling gzprintf() or gzvprintf() after a write stall, causing an unchecked memmove() to write beyond the internal input buffer boundary."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-85091",
-              "help": {
-                "text": "Vulnerability CVE-2026-85091\nSeverity: medium\nPackage: zlib1g\nVersion: 1:1.2.11.dfsg-2ubuntu9.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-85091](https://ubuntu.com/security/CVE-2026-85091)",
-                "markdown": "**Vulnerability CVE-2026-85091**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | zlib1g  | 1:1.2.11.dfsg-2ubuntu9.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-85091](https://ubuntu.com/security/CVE-2026-85091)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/zlib1g@1%3A1.2.11.dfsg-2ubuntu9.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=zlib"
-                ],
-                "security-severity": "8.3"
-              }
-            },
-            {
               "id": "CVE-2023-50495-libncurses6",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -469,6 +448,27 @@
                   "pkg:deb/ubuntu/libstdc%2B%2B6@12.3.0-1ubuntu1~22.04.3?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=gcc-12"
                 ],
                 "security-severity": "7.7"
+              }
+            },
+            {
+              "id": "CVE-2026-85091-zlib1g",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-85091 medium vulnerability for zlib1g package"
+              },
+              "fullDescription": {
+                "text": "zlib versions 1.3.1.2 through 1.3.2 contain a heap buffer overflow vulnerability in the gz_vacate() function when processing non-blocking gzwrite() operations with stale external buffer pointers. Attackers can trigger the overflow by calling gzprintf() or gzvprintf() after a write stall, causing an unchecked memmove() to write beyond the internal input buffer boundary."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-85091",
+              "help": {
+                "text": "Vulnerability CVE-2026-85091\nSeverity: medium\nPackage: zlib1g\nVersion: 1:1.2.11.dfsg-2ubuntu9.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-85091](https://ubuntu.com/security/CVE-2026-85091)",
+                "markdown": "**Vulnerability CVE-2026-85091**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | zlib1g  | 1:1.2.11.dfsg-2ubuntu9.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-85091](https://ubuntu.com/security/CVE-2026-85091)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/zlib1g@1%3A1.2.11.dfsg-2ubuntu9.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=zlib"
+                ],
+                "security-severity": "8.3"
               }
             },
             {
@@ -2390,45 +2390,6 @@
           }
         },
         {
-          "ruleId": "CVE-2026-85091-zlib1g",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: zlib1g, version 1:1.2.11.dfsg-2ubuntu9.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/zlib1g/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/usr/share/doc/zlib1g/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/zlib1g:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/zlib1g:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "f65e87535b5e14fb2f4ea86fc5e0e24855daf0a13361460a36c3113f12df0794:1"
-          }
-        },
-        {
           "ruleId": "CVE-2023-50495-libncurses6",
           "level": "note",
           "message": {
@@ -3142,6 +3103,45 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "ff2ca4fd07f228bb373cfada131c09077ae05f668290f1f477ecfc13b3b41467:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-85091-zlib1g",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: zlib1g, version 1:1.2.11.dfsg-2ubuntu9.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/zlib1g/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/usr/share/doc/zlib1g/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/zlib1g:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:cbaf391e670933f026c05c7dedec3faf8f194b6c2d83b0d5694ad68323c8077c:/var/lib/dpkg/info/zlib1g:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "f65e87535b5e14fb2f4ea86fc5e0e24855daf0a13361460a36c3113f12df0794:1"
           }
         },
         {
