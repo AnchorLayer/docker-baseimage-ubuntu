@@ -619,6 +619,48 @@
               }
             },
             {
+              "id": "CVE-2026-107161-libsasl2-2",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-107161 medium vulnerability for libsasl2-2 package"
+              },
+              "fullDescription": {
+                "text": "A heap-based buffer overflow flaw was found in Cyrus SASL. The add_to_challenge() function in the DIGEST-MD5 plugin computes the size of the buffer needed for a challenge/response field before DIGEST-MD5 quoting is applied, but does not recompute that size when quoting (escaping special characters) makes the value longer. The under-sized buffer is then passed to strcat(), causing a heap-based out-of-bounds write whose size depends on attacker-controlled input. A malicious or on-path DIGEST-MD5 (or HTTP Digest) server can trigger this flaw in a connecting client by supplying a crafted challenge field, such as realm or nonce, most likely resulting in a crash of the client application."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-107161",
+              "help": {
+                "text": "Vulnerability CVE-2026-107161\nSeverity: medium\nPackage: libsasl2-2\nVersion: 2.1.27+dfsg2-3ubuntu1.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-107161](https://ubuntu.com/security/CVE-2026-107161)",
+                "markdown": "**Vulnerability CVE-2026-107161**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsasl2-2  | 2.1.27+dfsg2-3ubuntu1.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-107161](https://ubuntu.com/security/CVE-2026-107161)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libsasl2-2@2.1.27%2Bdfsg2-3ubuntu1.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=cyrus-sasl2"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
+              "id": "CVE-2026-107161-libsasl2-modules-db",
+              "name": "DpkgMatcherExactIndirectMatch",
+              "shortDescription": {
+                "text": "CVE-2026-107161 medium vulnerability for libsasl2-modules-db package"
+              },
+              "fullDescription": {
+                "text": "A heap-based buffer overflow flaw was found in Cyrus SASL. The add_to_challenge() function in the DIGEST-MD5 plugin computes the size of the buffer needed for a challenge/response field before DIGEST-MD5 quoting is applied, but does not recompute that size when quoting (escaping special characters) makes the value longer. The under-sized buffer is then passed to strcat(), causing a heap-based out-of-bounds write whose size depends on attacker-controlled input. A malicious or on-path DIGEST-MD5 (or HTTP Digest) server can trigger this flaw in a connecting client by supplying a crafted challenge field, such as realm or nonce, most likely resulting in a crash of the client application."
+              },
+              "helpUri": "https://ubuntu.com/security/CVE-2026-107161",
+              "help": {
+                "text": "Vulnerability CVE-2026-107161\nSeverity: medium\nPackage: libsasl2-modules-db\nVersion: 2.1.27+dfsg2-3ubuntu1.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-107161](https://ubuntu.com/security/CVE-2026-107161)",
+                "markdown": "**Vulnerability CVE-2026-107161**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsasl2-modules-db  | 2.1.27+dfsg2-3ubuntu1.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-107161](https://ubuntu.com/security/CVE-2026-107161)  |\n"
+              },
+              "properties": {
+                "purls": [
+                  "pkg:deb/ubuntu/libsasl2-modules-db@2.1.27%2Bdfsg2-3ubuntu1.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=cyrus-sasl2"
+                ],
+                "security-severity": "7.5"
+              }
+            },
+            {
               "id": "CVE-2026-89160-libpcre2-8-0",
               "name": "DpkgMatcherExactIndirectMatch",
               "shortDescription": {
@@ -973,48 +1015,6 @@
                   "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=pcre2"
                 ],
                 "security-severity": "6.5"
-              }
-            },
-            {
-              "id": "CVE-2026-107161-libsasl2-2",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-107161 medium vulnerability for libsasl2-2 package"
-              },
-              "fullDescription": {
-                "text": "A heap-based buffer overflow flaw was found in Cyrus SASL. The add_to_challenge() function in the DIGEST-MD5 plugin computes the size of the buffer needed for a challenge/response field before DIGEST-MD5 quoting is applied, but does not recompute that size when quoting (escaping special characters) makes the value longer. The under-sized buffer is then passed to strcat(), causing a heap-based out-of-bounds write whose size depends on attacker-controlled input. A malicious or on-path DIGEST-MD5 (or HTTP Digest) server can trigger this flaw in a connecting client by supplying a crafted challenge field, such as realm or nonce, most likely resulting in a crash of the client application."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-107161",
-              "help": {
-                "text": "Vulnerability CVE-2026-107161\nSeverity: medium\nPackage: libsasl2-2\nVersion: 2.1.27+dfsg2-3ubuntu1.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-107161](https://ubuntu.com/security/CVE-2026-107161)",
-                "markdown": "**Vulnerability CVE-2026-107161**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsasl2-2  | 2.1.27+dfsg2-3ubuntu1.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-107161](https://ubuntu.com/security/CVE-2026-107161)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libsasl2-2@2.1.27%2Bdfsg2-3ubuntu1.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=cyrus-sasl2"
-                ],
-                "security-severity": "7.5"
-              }
-            },
-            {
-              "id": "CVE-2026-107161-libsasl2-modules-db",
-              "name": "DpkgMatcherExactIndirectMatch",
-              "shortDescription": {
-                "text": "CVE-2026-107161 medium vulnerability for libsasl2-modules-db package"
-              },
-              "fullDescription": {
-                "text": "A heap-based buffer overflow flaw was found in Cyrus SASL. The add_to_challenge() function in the DIGEST-MD5 plugin computes the size of the buffer needed for a challenge/response field before DIGEST-MD5 quoting is applied, but does not recompute that size when quoting (escaping special characters) makes the value longer. The under-sized buffer is then passed to strcat(), causing a heap-based out-of-bounds write whose size depends on attacker-controlled input. A malicious or on-path DIGEST-MD5 (or HTTP Digest) server can trigger this flaw in a connecting client by supplying a crafted challenge field, such as realm or nonce, most likely resulting in a crash of the client application."
-              },
-              "helpUri": "https://ubuntu.com/security/CVE-2026-107161",
-              "help": {
-                "text": "Vulnerability CVE-2026-107161\nSeverity: medium\nPackage: libsasl2-modules-db\nVersion: 2.1.27+dfsg2-3ubuntu1.2\nFix Version: \nType: deb\nLocation: /var/lib/dpkg/status\nData Namespace: ubuntu:distro:ubuntu:22.04\nLink: [CVE-2026-107161](https://ubuntu.com/security/CVE-2026-107161)",
-                "markdown": "**Vulnerability CVE-2026-107161**\n| Severity | Package | Version | Fix Version | Type | Location | Data Namespace | Link |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| medium  | libsasl2-modules-db  | 2.1.27+dfsg2-3ubuntu1.2  |   | deb  | /var/lib/dpkg/status  | ubuntu:distro:ubuntu:22.04  | [CVE-2026-107161](https://ubuntu.com/security/CVE-2026-107161)  |\n"
-              },
-              "properties": {
-                "purls": [
-                  "pkg:deb/ubuntu/libsasl2-modules-db@2.1.27%2Bdfsg2-3ubuntu1.2?arch=amd64\u0026distro=ubuntu-22.04\u0026upstream=cyrus-sasl2"
-                ],
-                "security-severity": "7.5"
               }
             },
             {
@@ -3500,6 +3500,84 @@
           }
         },
         {
+          "ruleId": "CVE-2026-107161-libsasl2-2",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libsasl2-2, version 2.1.27+dfsg2-3ubuntu1.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libsasl2-2/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/usr/share/doc/libsasl2-2/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libsasl2-2:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/var/lib/dpkg/info/libsasl2-2:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "260a7b7a14e86235c2a2b47466b50cfa5310c7e64ff0bfe059f04119127ecef1:1"
+          }
+        },
+        {
+          "ruleId": "CVE-2026-107161-libsasl2-modules-db",
+          "level": "warning",
+          "message": {
+            "text": "A medium vulnerability in deb package: libsasl2-modules-db, version 2.1.27+dfsg2-3ubuntu1.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "name": "/var/lib/dpkg/status",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/var/lib/dpkg/status"
+                },
+                {
+                  "name": "/usr/share/doc/libsasl2-modules-db/copyright",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/usr/share/doc/libsasl2-modules-db/copyright"
+                },
+                {
+                  "name": "/var/lib/dpkg/info/libsasl2-modules-db:amd64.md5sums",
+                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/var/lib/dpkg/info/libsasl2-modules-db:amd64.md5sums"
+                }
+              ]
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "b0cd1d853ff9248b34c45a06404549cd9ad3a664ffc08e9a3bb996388067b059:1"
+          }
+        },
+        {
           "ruleId": "CVE-2026-89160-libpcre2-8-0",
           "level": "warning",
           "message": {
@@ -4340,84 +4418,6 @@
           ],
           "partialFingerprints": {
             "primaryLocationLineHash": "89d456d327390aa97dc5fcb43ba02cc71f1f48e3766fb45d55aae817c16af86c:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-107161-libsasl2-2",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libsasl2-2, version 2.1.27+dfsg2-3ubuntu1.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libsasl2-2/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/usr/share/doc/libsasl2-2/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libsasl2-2:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/var/lib/dpkg/info/libsasl2-2:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "260a7b7a14e86235c2a2b47466b50cfa5310c7e64ff0bfe059f04119127ecef1:1"
-          }
-        },
-        {
-          "ruleId": "CVE-2026-107161-libsasl2-modules-db",
-          "level": "warning",
-          "message": {
-            "text": "A medium vulnerability in deb package: libsasl2-modules-db, version 2.1.27+dfsg2-3ubuntu1.2 was found in image ghcr.io/anchorlayer/ubuntu-jammy:latest at: /var/lib/dpkg/status"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ubuntu-jammy//var/lib/dpkg/status"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "logicalLocations": [
-                {
-                  "name": "/var/lib/dpkg/status",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/var/lib/dpkg/status"
-                },
-                {
-                  "name": "/usr/share/doc/libsasl2-modules-db/copyright",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/usr/share/doc/libsasl2-modules-db/copyright"
-                },
-                {
-                  "name": "/var/lib/dpkg/info/libsasl2-modules-db:amd64.md5sums",
-                  "fullyQualifiedName": "ghcr.io/anchorlayer/ubuntu-jammy:latest@sha256:efef19fc479e1fe590eab412863bf2e9e689d8565976fad994f0cbecf2bcb82d:/var/lib/dpkg/info/libsasl2-modules-db:amd64.md5sums"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "b0cd1d853ff9248b34c45a06404549cd9ad3a664ffc08e9a3bb996388067b059:1"
           }
         },
         {
